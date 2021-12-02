@@ -81,7 +81,7 @@ title: "量子力学与统计物理"
 1. Newtonian mechanics 
 2. Maxwell's electromagnetism          
 3. Thermodynamic laws  
-----
+>
 <img src="images/2021-12-01-22-37-50.png" width=200, height=200>
 <img src="images/2021-12-01-22-40-38.png" width=200, height=200>
 <img src="images/2021-12-01-22-44-42.png" width=200, height=200>
