@@ -34,7 +34,7 @@ The unit of the energy determined by the oscillator' frequency
 可以导出普朗克公式：
 > $$\rho(\nu, T) d \nu=\frac{8 \pi}{c^{3}} \frac{h \nu^{3}}{e^{h \nu / K T}-1} d \nu $$
 
-它准确描述黑体辐射现象
+准确描述了黑体辐射现象
 
 ---
 
@@ -66,7 +66,7 @@ The unit of the energy determined by the oscillator' frequency
 
 --
 
-<img src="images/2021-12-02-15-26-40.png" width=500, height=360>
+<img src="images/2021-12-02-15-26-40.png" width=500, height=340>
 
 - 一个物体要么是粒子，要么是波
 
@@ -103,7 +103,7 @@ The unit of the energy determined by the oscillator' frequency
 
 ### 光电效应
 
-<img src="images/2021-12-02-16-01-21.png" width=550, height=350>
+<img src="images/2021-12-02-16-01-21.png" width=500, height=300>
 
 >
 - 具有瞬时性
@@ -127,7 +127,7 @@ In 1905, Einstein considered the derivation of Planck's Law
 --
 
 爱因斯坦在论文中提出的光量子假说：
-- Light likes particles with unit energy $h\nu$ 
+- Light likes particles with unit energy $E=h\nu$ 
   
 - The energy of n light quantum: $n h\nu$
 
@@ -141,11 +141,11 @@ $$
 \frac{1}{2}m_eV_0^2=h\nu-W
 $$
 <!-- .slide: style="text-align: left;" -->
-- 具有瞬时性： 
+- 瞬时性： 
   
   光子碰上电子时，能量被瞬时吸收
 
-- 存在临界频率：($\nu_0=\frac{W}{h} $)
+- 临界频率：($\nu_0=\frac{W}{h} $)
 
 - 光电子能量与光的频率决定:
   $E_k=h\nu-W$
@@ -165,7 +165,7 @@ $$
 
 1916年，密立根实验上测定普朗克系数，验证了光子说，获1923年诺贝尔物理学奖 
 
----
+--
 
 ### 光量子假说的意义
 
@@ -341,12 +341,6 @@ $\qquad $ Nobel Prize in physics（1927）
 $\quad$ Nobel Prize in physics（1922）
 {style=background:green;width:960px}
 ::: 
-
---
-
-- In 1905, when Einstein first put forward this hypothesis, he simply stated that light consisted of quanta with energy $$ E = hν $$ 
-- In 1917, he stated that the light quantum carried a momentum of  $$ p=\frac{h}{\lambda} $$
-  At this point, the light quantum with massless particle property was named as photon (光子)
 
 --
 
