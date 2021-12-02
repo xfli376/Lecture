@@ -7,62 +7,81 @@ slideNumber: false
 title: "量子力学与统计物理"
 ---
 
-# 量子力学与统计物理
+# 量子力学与统计物理 {style=background:green;width:960px}
 ### Quantum mechanics and statistical physics
 
 <br>
 
 ::: block
 **李小飞** @ 光电科学与工程学院
-{style=background:green;width:960px}
+{style=background:none;width:960px}
 ::: 
 
 
 ---
 
+### 请选择PPT转场方式
+
+You can select from different transitions
+[None](?transition=none#/transitions) - [Fade](?transition=fade#/transitions) - [Slide](?transition=slide#/transitions) - [Convex](?transition=convex#/transitions) - [Concave](?transition=concave#/transitions) - [Zoom](?transition=zoom#/transitions)
+
+---
+
+## 2、请选择PPT主题 
+
+reveal.js comes with a few themes built in:
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/black.css'); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/white.css'); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/league.css'); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/sky.css'); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/beige.css'); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/simple.css'); return false;">Simple</a> <br>
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/serif.css'); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/blood.css'); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/night.css'); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/moon.css'); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/solarized.css'); return false;">Solarized</a>
+
+---
+
 ### 课程简介
 
-- [ ] 课程目标
-- [ ] 分数构成
-- [ ] 参考书目
-- [ ] 三条军规
+- 课程目标
+- 分数构成
+- 参考书目
+- 三条军规
 
 --
 
-### 课程目标
+- 课程目标
+    1. Learn the formal theory of Quantum Mechanics
+    2. How physical systems are described in Quantum Mechanics.   
+    3. How to solve problems in Quantum Mechanics  
 
-- Learn the formal theory of Quantum Mechanics
-- How physical systems are described in Quantum Mechanics.   
-- How to solve problems in Quantum Mechanics
+--
+
+- 分数构成
+    1. Normal results： 20\%
+    2. Midterm examination results： 20\%
+    3. Final examination results ：60\%
   
 
 --
 
+- 参考书目
 
-### 分数构成
-
-- Normal results： 20\%
-- Midterm examination results： 20\%
-- Final examination results ：60\%
-  
-
---
-
-### 参考书目
-
-- 《量子力学》卷I，II， 曾谨言， 科学出版社， 2008           
-- Principles of quantum mechanics, shankar
-- Modern quantum mechanics, shankar
-- Lectures on quantum mechanics, weinberg
-- Principles of quantum mechanics, Dirac
+    1. 《量子力学》卷I，II， 曾谨言， 科学出版社， 2008           
+    2. Principles of quantum mechanics, shankar
+    3. Modern quantum mechanics, shankar
+    4. Lectures on quantum mechanics, weinberg
+    5. Principles of quantum mechanics, Dirac
 
 --
 
-### 三条军规
-
-- Objects are wave-particles and can be in states of superposition
-- Rule 1 holds as long as you don't measure
-- Measurement gives random results
+- 三条军规
+    1. Objects are wave-particles and can be in states of superposition
+    2. Rule 1 holds as long as you don't measure
+    3. Measurement gives random results
 
 ---
 
@@ -121,11 +140,11 @@ title: "量子力学与统计物理"
 
 --
 
-### Relativity theory is established 
+### Relativity theory established 
 
 <img src="images/relativity.jpg" width=600, height=400>  
 
-Greatly changed our view of time and space. Mainly useful in two aspects: high-speed motion, and strong gravitational field. 
+Greatly changed our view of time and space. Mainly useful in high-speed motion and strong gravitational field. 
 
 --
 
@@ -137,7 +156,7 @@ Greatly changed our view of time and space. Mainly useful in two aspects: high-s
 
 --
 
-### Quantum mechanics is established
+### Quantum mechanics established
 
 <img src="images/mqm.jpg " width=600, height=400> 
 
@@ -160,7 +179,6 @@ It is a theory about matter.  {.fragment .grow}
 
 --
 
-<!-- .slide: style="text-align: left;" -->
 #### 1. Wien's formula  
 $$
 \rho(\nu) d \nu=c_{1} \nu^{3} e^{-c_{2} \nu / T} d \nu 
@@ -171,7 +189,6 @@ $$
 
 --
 
-<!-- .slide: style="text-align: left;" -->
 #### 2. Rayleigh-Jeans formula
 $$
 \rho(\nu, T) d \nu=\frac{8 \pi}{c^{3}} \nu^{2} k T d \nu 
@@ -185,7 +202,6 @@ $$
 
 --
 
-<!-- .slide: style="text-align: left;" -->
 #### 3. Planck's formula
 $$
 \rho(\nu, T) d \nu=\frac{8 \pi}{c^{3}} \frac{h \nu^{3}}{e^{h \nu / K T}-1} d \nu
@@ -203,7 +219,7 @@ $$
 ::: 
 
 ::: block
-On **1900-12-14**, Planck gives out his solution based on the Energy Quantum Hypothesis 
+On **1900-12-14**, Planck gave out his solution based on his Energy Quantum Hypothesis 
 {style=background:green;width:960px}
 ::: 
 
@@ -212,7 +228,7 @@ On **1900-12-14**, Planck gives out his solution based on the Energy Quantum Hyp
 ### Planck's energy quantum hypothesis
 
 -  Black body consists of millions of oscillators
--  Assuming the oscillators can only radiate at a discrete amounts of energy
+-  The oscillators can only radiate at a discrete amounts of energy
     $$    E=n\varepsilon $$
 - The unit of the energy (quanta) determined by the oscillator' frequency
     $$   \varepsilon=h\nu  $$
@@ -270,11 +286,11 @@ $$
 
 --
 
-If energy is discrete, in Rayleigh-Jeans formula
+If energy is discrete, the item $kT$ in Rayleigh-Jeans 
 \begin{equation*}
 \rho(\nu, T) d \nu=\frac{8 \pi}{c^{3}} \nu^{2} k T d \nu 
 \end{equation*}
-the item $kT$ should be replaced by $\frac{h \nu}{e^{ h \nu / k T}-1}$
+should be replaced by $\dfrac{h \nu}{e^{ h \nu / k T}-1}$
 \begin{equation*}
 \rho(\nu, T) d \nu=\frac{8 \pi}{c^{3}} \frac{h \nu^{3}}{e^{h \nu / K T}-1} d \nu
 \end{equation*}
