@@ -443,9 +443,9 @@ calculated de Broglie wavelength
 
 ---
 
-<img src="images/two-slit.png" width=600, height=260> {.fragment .fade-in}
+<img src="images/two-slit.png" width=600, height=260> 
 
-Electron interference patterns (Jonsson, 1961) {.fragment .fade-in}
+Electron interference patterns (Jonsson, 1961)
 
 ---
 
