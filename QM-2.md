@@ -7,22 +7,49 @@ slideNumber: false
 title: "量子力学与统计物理"
 ---
 
-# 量子力学与统计物理
-### Quantum mechanics and statistical physics
+
+<!-- .slide: data-background="images/2021-12-03-05-23-33.png" -->
+
+# 量子力学与统计物理 {style=background:green;width:960px}
+### Quantum mechanics and statistical physics 
 
 <br>
 
 ::: block
 **李小飞** @ 光电科学与工程学院
-{style=background:green;width:960px}
+{style=background:none;width:960px}
 ::: 
 
 
 ---
 
+## 请选择PPT转场方式
+
+You can select from different transitions
+[None](?transition=none#/transitions) - [Fade](?transition=fade#/transitions) - [Slide](?transition=slide#/transitions) - [Convex](?transition=convex#/transitions) - [Concave](?transition=concave#/transitions) - [Zoom](?transition=zoom#/transitions)
+
+---
+
+## 请选择PPT主题 
+
+reveal.js comes with a few themes built in:
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/black.css'); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/white.css'); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/league.css'); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/sky.css'); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/beige.css'); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/simple.css'); return false;">Simple</a> <br>
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/serif.css'); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/blood.css'); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/night.css'); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/moon.css'); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/solarized.css'); return false;">Solarized</a>
+
+---
+
+<!-- .slide: data-background="#0000ff" -->
+
 ### ==前情回顾==
-<!-- .slide: style="text-align: left;" -->
-如果接受能量量子化假说：
 > Assuming the oscillators can only radiate at a discrete amounts of energy
     $$    E=n\varepsilon, \qquad (n=1,2,3,\cdots) $$
 The unit of the energy determined by the oscillator' frequency
@@ -30,11 +57,14 @@ The unit of the energy determined by the oscillator' frequency
 
 --
 
-<!-- .slide: style="text-align: left;" -->
-可以导出普朗克公式：
+<!-- .slide: data-background="#0000ff" -->
+
+可导出普朗克公式：
 > $$\rho(\nu, T) d \nu=\frac{8 \pi}{c^{3}} \frac{h \nu^{3}}{e^{h \nu / K T}-1} d \nu $$
 
-准确描述了黑体辐射现象
+它准确描述黑体辐射现象！
+
+因此，能量子假说打开了量子力学的大门 {style=background:green;width:960px}
 
 ---
 
@@ -66,7 +96,7 @@ The unit of the energy determined by the oscillator' frequency
 
 --
 
-<img src="images/2021-12-02-15-26-40.png" width=500, height=340>
+<img src="images/2021-12-02-15-26-40.png" width=500, height=330>
 
 - 一个物体要么是粒子，要么是波
 
@@ -89,6 +119,8 @@ The unit of the energy determined by the oscillator' frequency
 
 <img src="images/2021-12-02-16-23-16.png" width=600, height=400>
 
+光只是一定波长范围内的电磁波 {.fragment .highlight-green}
+
 --
 
 ### 波动说面临的困难
@@ -105,20 +137,19 @@ The unit of the energy determined by the oscillator' frequency
 
 <img src="images/2021-12-02-16-01-21.png" width=500, height=300>
 
->
 - 具有瞬时性
 - 存在临界频率 $\nu_0$
 - 光电子能量与光的频率决定
 
 ::: block
-波动说无法解释以上三点 {style=background:red;width:960px}
+波动说无法解释实验发现 {.fragment .highlight-red}
 ::: 
 
 --
 
 ### 爱因斯坦的光量子假说
 
-In 1905, Einstein considered the derivation of Planck's Law
+In 1905, Einstein considered derivating Planck's Law
 - Plank’s Law was consistent with experment but not with existing theory
 - Rayleigh-Jeans Law was consistent with existing theory but not with experiment
 - For treating Ultraviolet Catastrophe, he proposed light quantum hypothesis
@@ -126,12 +157,12 @@ In 1905, Einstein considered the derivation of Planck's Law
 
 --
 
-爱因斯坦在论文中提出的光量子假说：
+爱因斯坦在论文中提出光量子假说：
 - Light likes particles with unit energy $E=h\nu$ 
   
 - The energy of n light quantum: $n h\nu$
 
-- The momentum of a light quantum:
+- The momentum of a light quantum (1918):
   $$ \vec{p} =\frac{E}{c} \vec{n} = \frac{h}{\lambda} \vec{n}$$
 
 --
@@ -140,7 +171,7 @@ In 1905, Einstein considered the derivation of Planck's Law
 $$
 \frac{1}{2}m_eV_0^2=h\nu-W
 $$
-<!-- .slide: style="text-align: left;" -->
+
 - 瞬时性： 
   
   光子碰上电子时，能量被瞬时吸收
@@ -156,14 +187,15 @@ $\quad$ 1921年，诺贝尔物理学奖 {style=background:green;width:960px}
 
 --
 
-<!-- .slide: style="text-align: left;" -->
-基于光电效应公式，
+基于光电效应公式:
 
 $$
 \frac{1}{2}m_eV_0^2=h\nu-W
 $$
 
-1916年，密立根实验上测定普朗克系数，验证了光子说，获1923年诺贝尔物理学奖 
+1916年，密立根实验上测定普朗克系数，验证光子说
+
+1923年诺贝尔物理学奖 {.fragment .highlight-green} 
 
 --
 
@@ -173,9 +205,9 @@ $$
 
 2. 揭示光的本质：光既具波动性又具粒子性。
 
-普朗克的评价：
-- 在近代物理学结出硕果的那些重大问题中，很难找到一个问题是爱因斯坦没有做过重要贡献的，
-- 在他的各种推测中，他有时可能也曾经没有中标的，例如他的光量子假设,就有点迷失了方向 
+- 普朗克的评价：
+
+  在近代物理学结出硕果的那些重大问题中，很难找到一个问题是爱因斯坦没有做过重要贡献。在他的各种推测中，他有时可能也曾经没有中标的。例如他的光量子假设,就有点迷失了方向 
 
 ---
 
@@ -187,18 +219,17 @@ $$
 
 --
 
-<!-- .slide: style="text-align: left;" -->
-Energy of electron ：
+- Energy of electron ：
 
-$$ E^2 =m_ec^2=p^2c^2 +m_0 ^2 c^4 $$ 
+  $$ E^2 =m_ec^2=p^2c^2 +m_0 ^2 c^4 $$ 
 
-Energy of light quantum
+- Energy of light quantum
 
-$$ E =pc $$ 
+  $$ E =pc $$ 
 
 --
 
-Energy conservation law
+- Energy conservation law
 
 <span>
 \[\begin{equation*}
@@ -213,7 +244,7 @@ Energy conservation law
 
 --
 
-Momentum conservation law
+- Momentum conservation law
 
 <span>
 \[\begin{equation*}
@@ -230,16 +261,12 @@ Momentum conservation law
 
 --
 
-<!-- .slide: style="text-align: left;" -->
-康普顿效应表明：
-1. 波长为$\lambda$ 的光具有确定动量 $$p=\frac{h}{\lambda}$$
-2. 动量守衡定律适用了微观体系
+- 康普顿效应表明：
+  1. 波长为$\lambda$ 的光具有确定动量 $$p=\frac{h}{\lambda}$$
+  2. 动量守衡定律适用了微观体系
 
-::: block
-$\qquad $ Nobel Prize in physics（1927）
-{style=background:green;width:960px}
-::: 
 
+$\qquad $ Nobel Prize in physics（1927） {.fragment .highlight-green}
 
 ---
 
@@ -257,9 +284,8 @@ $\qquad $ Nobel Prize in physics（1927）
 
 <img src="images/bohr.png" width=280, height=360>
 
-- 1905年爱因斯坦提出光子概念，
-不受名人的重视，普朗克把爱因斯坦的光量子概念说成是“迷失了方向”。{style=background:blue;width:800px}
-- 1913年，28岁的玻尔，创造性地把光子概念用到卢瑟福模型上，成功破解氢原子光谱问题 {style=background:blue;width:800px}
+- 1905年爱因斯坦提出的光子概念，不受名人的重视，普朗克把爱因斯坦的光量子概念说成是“迷失了方向”。
+- 1913年，28岁的玻尔，创造性地把光子概念用到卢瑟福模型上，成功破解氢原子光谱问题 
 
 --
 
@@ -268,18 +294,16 @@ $\qquad $ Nobel Prize in physics（1927）
 
 --
 
-- Stationary states: Electrons move around the nucleus only in certain allowed circular orbits with fixed energy
+- 两个假设：
+  1. Stationary states: Electrons move around the nucleus only in certain allowed circular orbits with fixed energy
     $$ L=n \frac{h}{2\pi}= n \hbar,\qquad (\oint p_i dq_i = n_i h)$$
-
-- Quantum transition: Electron can jump between stationary state orbits when absorbed or emitted a photon with energy
+  2. Quantum transition: Electron can jump between stationary state orbits when absorbed or emitted a photon with energy
     $$h\nu=E_n -E_m $$
 
 --
 
-<!-- .slide: style="text-align: left;" -->
-#### 推导光谱公式
-
-- Stationary state orbits:
+- 推导光谱公式
+  1. Stationary state orbit radius:
 
 <span>
 \[\begin{equation*}
@@ -293,9 +317,7 @@ $\qquad $ Nobel Prize in physics（1927）
 
 --
 
-<!-- .slide: style="text-align: left;" -->
-
-- Stationary state energy:
+2. Stationary state orbit energy:
 
 <span>
 \[\begin{equation*}
@@ -311,8 +333,7 @@ $\qquad $ Nobel Prize in physics（1927）
 
 --
 
-<!-- .slide: style="text-align: left;" -->
-- Spectrum formula: 
+3. Spectrum formula: 
   
 <span>
   \[\begin{equation*}
@@ -325,8 +346,7 @@ $\qquad $ Nobel Prize in physics（1927）
 
 --
 
-<!-- .slide: style="text-align: left;" -->
-- Rydberg constant :
+4. Rydberg constant :
 
 <span>
   \[\begin{equation*}
@@ -337,10 +357,8 @@ $\qquad $ Nobel Prize in physics（1927）
 \end{equation*}
 \]</pan>
 
-::: block
-$\quad$ Nobel Prize in physics（1922）
-{style=background:green;width:960px}
-::: 
+
+$\quad$ Nobel Prize in physics（1922） {.fragment .highlight-green}
 
 --
 
@@ -357,15 +375,14 @@ $\quad$ Nobel Prize in physics（1922）
 \end{cases}
 \]</pan>
 
-- Light behaving like both wave and particle is called **wave-particle duality** of light
+- Light behaving like waves and particles is called **wave-particle duality of light**
 
 --
 
-### 讨论 
+<!-- .slide: data-background="images/2021-12-03-05-23-33.png" -->
 
-1. How can something be both 
-
-   particle and wave ?
+# 讨论: 
+### How can something be both particle and wave ?
 
 ---
 
@@ -409,7 +426,7 @@ Called standing-wave condition
 - Meeting Bragg formula $2d\sin \theta=n\lambda$
 - Thus, getting the wavelength of electron (about 0.16x $nm$), agreeing well with the 
 calculated de Broglie wavelength
-- Nobel Prize in physics（1937)
+- Nobel Prize in physics（1937) {.fragment .highlight-green}
 
 --
 
@@ -417,15 +434,18 @@ calculated de Broglie wavelength
 - de Broglie extended the wave-particle duality from light to particles
   and discovered the wave nature of electrons.
 
-- Nobel Prize in physics（1929)
-{style=background:green;width:800px}
+- Nobel Prize in physics（1929) {.fragment .highlight-green}
 ::: 
 
---
+---
 
-<img src="images/two-slit.png" width=600, height=260>
+<!-- .slide: data-background-video="images/doubleslite-n.mp4" .slide:data-background-color="#000000" -->
 
-Electron interference patterns (Jonsson, 1961)
+---
+
+<img src="images/two-slit.png" width=600, height=260> {.fragment .fade-in}
+
+Electron interference patterns (Jonsson, 1961) {.fragment .fade-in}
 
 ---
 
@@ -447,7 +467,9 @@ Big problem:
 
 ---
 
+<!-- .slide: data-background="images/2021-12-03-05-23-33.png" -->
 
+## Thanks
 
 
 
