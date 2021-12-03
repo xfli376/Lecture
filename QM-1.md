@@ -4,6 +4,7 @@ transition: "slide"
 highlightTheme: "monokai"
 logoImg: "images/uestclogo.jpg"
 slideNumber: false
+enableTitleFooter: false
 title: "量子力学与统计物理"
 ---
 

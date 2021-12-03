@@ -4,6 +4,7 @@ transition: "slide"
 highlightTheme: "monokai"
 logoImg: "images/uestclogo.jpg"
 slideNumber: false
+enableTitleFooter: false
 title: "量子力学与统计物理"
 ---
 
@@ -373,7 +374,7 @@ $\quad$ Nobel Prize in physics（1922） {.fragment .highlight-green}
     \text{$\qquad$ Compton effect} \\
     \text{$\qquad$ Atomic spectrum } 
 \end{cases}
-\]</pan>
+\]</span>
 
 - Light behaving like waves and particles is called **wave-particle duality of light**
 
