@@ -7,6 +7,8 @@ slideNumber: false
 title: "量子力学与统计物理"
 ---
 
+<!-- .slide: data-background="images/2021-12-03-05-23-33.png" -->
+
 # 量子力学与统计物理 {style=background:green;width:960px}
 ### Quantum mechanics and statistical physics
 
@@ -16,7 +18,6 @@ title: "量子力学与统计物理"
 **李小飞** @ 光电科学与工程学院
 {style=background:none;width:960px}
 ::: 
-
 
 ---
 
@@ -74,7 +75,7 @@ reveal.js comes with a few themes built in:
     2. Principles of quantum mechanics, shankar
     3. Modern quantum mechanics, shankar
     4. Lectures on quantum mechanics, weinberg
-    5. Principles of quantum mechanics, Dirac
+    5. Principles of quantum mechanics, Dirac {.fragment .highlight-green}
 
 --
 
@@ -144,7 +145,9 @@ reveal.js comes with a few themes built in:
 
 <img src="images/relativity.jpg" width=600, height=400>  
 
-Greatly changed our view of time and space. Mainly useful in high-speed motion and strong gravitational field. 
+Greatly changed our view of time and space. 
+
+Mainly useful in high-speed motion and strong gravitational field. 
 
 --
 
@@ -152,7 +155,7 @@ Greatly changed our view of time and space. Mainly useful in high-speed motion a
 
 <img src="images/2021-12-01-23-47-27.png" width=600, height=400>
 
-<span class="fragment">No mathematical function</span> <span class="fragment"> to describe </span> <span class="fragment">the curves</span> <span class="fragment">exactly</span> 
+No mathematical function to describe the curves exactly {.fragment .highlight-red}
 
 --
 
@@ -160,7 +163,7 @@ Greatly changed our view of time and space. Mainly useful in high-speed motion a
 
 <img src="images/mqm.jpg " width=600, height=400> 
 
-It is a theory about matter.  {.fragment .grow}
+It is a theory about matter.  {.fragment .highlight-green}
 
 --
 
@@ -198,7 +201,7 @@ $$
 $$
 \int_0 ^\infty \frac{8 \pi}{c^{3}} \nu^{2} k T d\nu \to \infty 
 $$
-- Nobel Prize in physics（1904） 
+- Nobel Prize in physics（1904）  {.fragment .highlight-green}
 
 --
 
@@ -209,19 +212,13 @@ $$
 
 - Obtained from experimental data via interpolation technique (1900-4), 
 - Described well in whole frequency region
-- Nobel Prize in physics（1918） 
+- Nobel Prize in physics（1918）  {.fragment .highlight-green}
 
 --
 
-::: block
-**Problem:** how to derive the Planck's formula from existing theory.
-{style=background:green;width:960px}
-::: 
+**Problem:** how to derive the Planck's formula from existing theory. {.fragment .highlight-red}
 
-::: block
-On **1900-12-14**, Planck gave out his solution based on his Energy Quantum Hypothesis 
-{style=background:green;width:960px}
-::: 
+On **1900-12-14**, Planck gave out his solution based on his Energy Quantum Hypothesis! {.fragment .highlight-green}
 
 ---
 
@@ -281,8 +278,8 @@ The average energy is
 --
 
 $$
-\text{(continuous)} \quad k T \rightarrow \frac{h \nu}{e^{ h \nu / k T}-1} \quad \text{(discrete)} 
-$$
+\text{(continuous)} \quad k T \rightarrow \frac{h \nu}{e^{ h \nu / k T}-1} \quad \text{(discrete)}  
+$$ {.fragment .highlight-green}
 
 --
 
@@ -298,15 +295,13 @@ It is exactly the Planck's formula
 
 ---
 
-### 讨论 
+# 讨论: 
 
-1. 能量量子化只是一种数学处理技术？
-   
-2. 普朗克能量子假说说明什么？
+## 能量量子化只是一种数学处理技术？ {.fragment .highlight-green}
 
 --
 
-### Planck's energy quantum hypothesis
+### Signification of planck's energy quantum hypothesis
 
 - Broke through the constraints of classical physics  
   
@@ -314,9 +309,11 @@ It is exactly the Planck's formula
 
 ---
 
-<!-- .slide: style="text-align: left;" -->
+<!-- .slide: data-background="images/2021-12-03-05-23-33.png" -->
+
 ### The End 
 
 ::: block
 In 1927, **Dirac** got the Planck's formula from Quantum Mechanism.
 :::
+
