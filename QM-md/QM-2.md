@@ -363,7 +363,7 @@ $\quad$ Nobel Prize in physics（1922） {.fragment .highlight-green}
 
 --
 
-### 光子的波粒二象性
+### 光的波粒二象性
 <span>
 \[\begin{cases}
     \text{Light behaves like waves }\\
