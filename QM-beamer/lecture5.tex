@@ -1,0 +1,106 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{}
+    \begin{center}
+    { {\huge 第五讲、薛定谔方程}}
+    \end{center}    
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{前情回顾}
+
+\begin{frame}
+    \frametitle{前情回顾}
+    \begin{itemize}
+        \item 波粒二象性
+        \item 波函数假说
+        \item 波函数的统计解释
+        \item 态叠加原理
+    \end{itemize}
+\end{frame}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{薛定谔方程}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\end{frame}
+
+
+\begin{frame}
+    \begin{tcolorbox}[colback=yellow!10,colframe=red!75!black,title=Basic assumption 2/5]
+        The evolution of wavefunction obeys Schr$\ddot{o}$dinger equation
+        \begin{equation*}
+            i\hbar \frac{\partial }{\partial t} \Psi (\overrightarrow{r},t ) =\left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\overrightarrow{r},t ) \right ]\Psi (\overrightarrow{r}, t ) 
+        \end{equation*}
+    \end{tcolorbox}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Constructing Schr$\ddot{o}$dinger equation}
+    \bullet Plane wave-function ($\psi(x,t)=\Psi_p(x,t)=e^{\frac{i}{\hbar}(p\cdot x-Et)}$) be a sulotion of Schr$\ddot{o}$dinger equation, obviously
+    \begin{equation*}
+        \begin{split}
+       -i\hbar \nabla \psi(x,t) &=p\psi(x,t) \\
+       \hbar^2 \nabla^2 \psi(x,t) &=p^2\psi(x,t) \\
+       \frac{\hbar^2}{2\mu} \nabla^2 \psi(x,t) &=\frac{p^2}{2\mu} \psi(x,t) , \qquad \cdots (1)
+        \end{split}
+    \end{equation*}
+    \begin{equation*}
+       i\hbar \frac{\partial }{\partial t} \psi(x,t) =E\psi(x,t)  , \qquad \cdots (1)
+     \end{equation*}
+    (2)-(1)
+    \begin{equation*}
+        (i\hbar \frac{\partial }{\partial t} - \frac{\hbar^2}{2\mu} \nabla^2 )\psi(x,t) =(E-\frac{p^2}{2\mu})\psi(x,t)=0  
+    \end{equation*}
+\end{frame}
+
+\begin{frame}[allowframebreaks=]
+    \begin{equation*}
+        i\hbar \frac{\partial }{\partial t} \psi(x,t) = \frac{\hbar^2}{2\mu} \nabla^2 \psi(x,t)
+    \end{equation*}
+    For general wavefunction, it's a wave packet of plane wave
+    \begin{equation*}
+        \Psi(x,t)= \int\limits_{p=0} ^{\infty} c(p,t) e^{\frac{i}{\hbar}px}dp
+    \end{equation*}
+    we get 
+    \begin{equation*}
+        \begin{split}
+        (i\hbar \frac{\partial }{\partial t} - \frac{\hbar^2}{2\mu} \nabla^2 )\Psi(x,t) &= \int\limits_{p=0} ^{\infty} c(p,t) (E-\frac{p^2}{2\mu}) e^{\frac{i}{\hbar}px}dp=0  \\
+        i\hbar \frac{\partial }{\partial t} \Psi(x,t) &= \frac{\hbar^2}{2\mu} \nabla^2 \Psi(x,t)
+        \end{split}
+    \end{equation*}
+    For nonfree particle in a potential $U(x)$,
+    \begin{equation*}
+        i\hbar \frac{\partial }{\partial t} \Psi(x,t) = (\frac{\hbar^2}{2\mu} \nabla^2 +U(x)) \Psi(x,t)
+    \end{equation*}
+    That is the Schr$\ddot{o}$dinger equation. \\
+    ~~\\
+    \bullet For N-particles system
+   {\small \begin{equation*}
+        i\hbar \frac{\partial }{\partial t} \Psi(x_1, x_2, \cdots x_N,t) = [\sum_{i=1} ^{N} \frac{\hbar ^2}{2\mu_i} \nabla^2 +U(x_1, x_2, \cdots x_N)] \Psi(x_1, x_2, \cdots x_N,t)
+    \end{equation*}}
+\end{frame}
+
+\begin{frame}
+
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
