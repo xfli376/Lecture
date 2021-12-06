@@ -1,5 +1,1 @@
 \beamer@sectionintoc {1}{前情回顾}{4}{0}{1}
-\beamer@sectionintoc {2}{薛定谔方程}{5}{0}{2}
-\beamer@sectionintoc {3}{检验正确性}{11}{0}{3}
-\beamer@sectionintoc {4}{定态薛定谔方程}{15}{0}{4}
-\beamer@sectionintoc {5}{守恒定律}{18}{0}{5}
