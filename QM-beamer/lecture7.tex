@@ -19,8 +19,121 @@
     \end{itemize}
 \end{frame} 
 
-\section{运算性质}
+\section{厄密算符运算性质}
 
-\section{本征性质}
+\begin{frame}
+    \frametitle{运算性质}
+    \begin{enumerate}
+        \item 两厄米算符之和仍为厄米算符
+        \item 当且仅当两厄米算符对易时，它们之积才是厄米算符。
+        \item 无论两厄米算符是否对易，算符$\dfrac{1}{2}(AB+BA)$ 及$\dfrac{1}{2i}(AB-BA) $  都是厄米算符。
+        \item 任意算符总可以分解成$A=A_+ +iA_-$，且$A_+$和$A_-$，都是厄米算符
+    \end{enumerate}
+\end{frame} 
+
+\begin{frame} [allowframebreaks=]
+    \frametitle{}
+    \begin{exampleblock}{}
+        1、试证明两厄米算符之和仍为厄米算符
+    \end{exampleblock}
+    \alert{证明：}A,B为厄米算符，则对于任意态，有\\
+    $$(\psi, A\psi ) = (A\psi, \psi), \qquad (\psi, B\psi ) = (B\psi, \psi)$$
+    对于它们的和，有： \\
+    \begin{equation*}
+        \begin{split}
+            (\psi, (A+B)\psi ) &= (\psi, A\psi ) + (\psi, B\psi ) \\  
+            &=(A\psi, \psi ) + (B\psi, \psi ) \\
+            &=((A+B)\psi, \psi ) 
+         \end{split}
+    \end{equation*}  
+    证毕！
+\end{frame} 
+
+\begin{frame} [allowframebreaks=]
+    \frametitle{}
+    \begin{exampleblock}{}
+        2、当且仅当两厄米算符对易时，它们之积才是厄米算符。
+    \end{exampleblock}
+    \alert{证明：}A,B为厄米算符，则对于任意态，
+    \begin{equation*}
+        \begin{split}
+            (\psi, (AB)\psi ) &= (\psi, A(B\psi) ) \\  
+            &=((A \psi), (B\psi) )  \\
+            &=(B(A \psi), \psi )  \\
+            &=( (BA) \psi, \psi )  \\
+            &=( (AB) \psi, \psi )  \\
+         \end{split}
+    \end{equation*}  
+    证毕！
+\end{frame}  
+
+\begin{frame} [allowframebreaks=]
+    \frametitle{}
+    \begin{exampleblock}{}
+        3、无论两厄米算符是否对易，算符$\dfrac{1}{2}(AB+BA)$ 及 $\dfrac{1}{2i}(AB-BA) $ 都是厄米算符
+    \end{exampleblock}
+    \alert{证明：}A,B为厄米算符，则对于任意态，
+    \begin{equation*}
+        \begin{split}
+            (\psi, \dfrac{1}{2}(AB+BA)\psi ) &=\dfrac{1}{2}(\psi, AB\psi) + \dfrac{1}{2}(\psi, BA\psi)  \\
+            &=\dfrac{1}{2}(A\psi, B\psi) + \dfrac{1}{2}(B\psi, A\psi)  \\
+            &=\dfrac{1}{2}(BA\psi, \psi) + \dfrac{1}{2}(AB\psi, \psi)  \\
+            &=\dfrac{1}{2}((BA+AB)\psi, \psi) \\
+            &=(\dfrac{1}{2}(BA+AB)\psi, \psi) \\
+            &=(\dfrac{1}{2}(AB+BA)\psi, \psi) 
+         \end{split}
+    \end{equation*}  
+    \begin{equation*}
+        \begin{split}
+            (\psi, \dfrac{1}{2i}(AB-BA)\psi ) &= (\psi, \dfrac{1}{2i}AB\psi) - (\psi, \dfrac{1}{2i}BA\psi)\\  
+            &=\dfrac{1}{2i}(\psi, AB\psi) - \dfrac{1}{2i}(\psi, BA\psi)  \\
+            &=\dfrac{1}{2i}(A\psi, B\psi) - \dfrac{1}{2i}(B\psi, A\psi)  \\
+            &=\dfrac{1}{2i}(BA\psi, \psi) - \dfrac{1}{2i}(AB\psi, \psi)  \\
+            &=-(\dfrac{1}{2i}BA\psi, \psi) +(\dfrac{1}{2i}AB\psi, \psi)  \\
+            &=(\dfrac{1}{2i}(AB-BA)\psi, \psi) \\
+         \end{split}
+    \end{equation*}  
+    证毕！
+\end{frame}  
+
+\begin{frame} [allowframebreaks=]
+    \frametitle{}
+    \begin{exampleblock}{}
+        4、任意算符总可以分解成$A=A_+ +iA_-$，且$A_+$和$A_-$，都是厄米算符
+    \end{exampleblock}
+    \alert{证明：}令：
+    $$A_+=\dfrac{1}{2} (A+A^+), \qquad A_+=\dfrac{1}{2i} (A-A^+) $$
+    有$A=A_+ +iA_-$, 问题转化为证$\dfrac{1}{2} (A+A^+), \qquad \dfrac{1}{2i} (A-A^+) $是厄米算符\\
+    \begin{equation*}
+        \begin{split}
+            (\psi, \dfrac{1}{2} (A+A^+)\psi ) &=\dfrac{1}{2}(\psi, (A)\psi) + \dfrac{1}{2}(\psi, (A^+)\psi) \\
+            &= \dfrac{1}{2}((A^+)\psi, \psi) + \dfrac{1}{2}((A^+)^+\psi, \psi) \\
+            &= \dfrac{1}{2}((A^+)\psi, \psi) + \dfrac{1}{2}(A\psi, \psi) \\
+            &= \dfrac{1}{2}( (A^+ + A) \psi, \psi ) =( \dfrac{1}{2}(A+A^+) \psi, \psi ) 
+         \end{split}
+    \end{equation*}  
+\end{frame} 
+
+\section{厄密算符本征性质}
+
+\begin{frame}
+    \frametitle{本征方程}
+    厄密算符A的本征方程为
+    $$ A\psi=a \psi $$
+    称a是算符A的本征值，$\psi$是属于本征值a的本征函数
+\end{frame} 
+
+\begin{frame}
+    \frametitle{本征性质}
+    \begin{enumerate}
+        \item 厄米算符的本征值为实数
+        \item 任意态下平均值为实数的算符必为厄米算符
+        \item 厄米算符属于不同本征值的本征函数正交
+        \item 简并的本征函数可重组成正交
+        \item 厄米算符的本征函数系具有完备性
+        \item 厄米算符的本征函数系具有封闭性
+    \end{enumerate}
+\end{frame} 
+
 
 \section{希尔伯特空间}

@@ -1,1 +1,3 @@
 \beamer@sectionintoc {1}{前情回顾}{4}{0}{1}
+\beamer@sectionintoc {2}{厄密算符运算性质}{5}{0}{2}
+\beamer@sectionintoc {3}{厄密算符本征性质}{11}{0}{3}
