@@ -34,6 +34,7 @@
 \usepackage[dvipdfmx]{media9} %放电影
 \usepackage{wrapfig}          %图文混排
 
+
 %\RequirePackage{varioref}% varioref: 交叉引用.
 %\RequirePackage{cleveref}% cleveref: 交叉引用.
 %\RequirePackage[backend=biber,autolang=hyphen,style=gb7714-2015,gbalign=gb7714-2015,%style=gb7714-2015ms
@@ -50,7 +51,6 @@
 \setCJKmonofont{STFangsong}% 中文等宽字体
 \setCJKfamilyfont{nicefont}{DFWaWaSC-W5}% 这里先把DFWaWaSC-W5导入CJK家族字体，后面用\CJKfamily{nicefont}调用。
 \newcommand{\myfont}{\CJKfamily{nicefont}}%這一步是使用简化的\myfont
-
 
 %----------------------
 %
@@ -72,8 +72,8 @@
 %\setbeamertemplate{navigation symbols}{}%empty
 
 % Background
-\pgfdeclareimage[height=6.2ex,width=0.14\paperwidth]{xx}{figs/uestcxx.png}
-\pgfdeclareimage[height=\paperheight,width=\paperwidth]{myimage}{figs/uestclogo.png}
+\pgfdeclareimage[height=6.2ex,width=0.14\paperwidth]{xx}{images/uestcxx.png}
+\pgfdeclareimage[height=\paperheight,width=\paperwidth]{myimage}{images/uestclogo.png}
 \usebackgroundtemplate{\tikz\node[opacity=0.15,inner sep=0] {\pgfuseimage{myimage}};}
 
 % 半透明化尚未出现的内容.
@@ -140,6 +140,16 @@
 \setbeamertemplate{itemize item}{\scriptsize\raise1.25pt\hbox{\textbullet}}
 \setbeamertemplate{itemize subitem}{\scriptsize\raise1.25pt\hbox{\textbullet}}
 \setbeamertemplate{itemize subsubitem}{\scriptsize\raise1.25pt\hbox{\textbullet}}
+
+ % To Do List
+ %\newcommand{\wontfix} {\item[\rlap{\raisebox{2.0ex}{\hspace{0.4ex}  \small \color{red} $\times$}} \color{blue}$\square$]}%
+ %\newcommand{\done} {\item[\rlap{\raisebox{2.0ex}{\hspace{0.4ex} \small \color{red} $\surd$}} \color{blue} $\square$]}%
+ \newcommand{\done} {\item[\color{blue} \faCheckSquareO ]}
+ \newcommand{\todo} {\item[\color{blue} \faSquareO ]}
+ \newcommand{\wontfix} {\item[\color{red} \faTimesCircleO ]}
+ 
+ 
+
 % 参考文献目录字号设置.
 %\renewcommand*{\bibfont}{\small}
 

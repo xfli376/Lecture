@@ -1,0 +1,442 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{}
+    \begin{center}
+    { {\huge 第十三讲、量子力学公式的矩阵化}}
+    \end{center}    
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{前情回顾}
+
+
+\begin{frame}
+    \frametitle{前情回顾}
+    \begin{itemize}
+       \done 波函数矩阵表示 ：$$ a_n(t)=(u_n(\vec{r}), \Psi(\vec{r},t)) $$ 
+       \done 力学量算符矩阵表示 ： $$ F_{nm}=(u_n (\vec{r}), Fu_m(\vec{r})) $$   
+       \todo 公式的矩阵化：$\cdots$
+    \end{itemize}
+\end{frame} 
+
+
+
+\begin{frame} 
+    \frametitle{}
+    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=量子力学常用公式]
+        \begin{itemize}
+            \item 平均值公式
+            \item 归一化公式
+            \item 本征方程
+            \item 薛定谔方程
+            \item 运动方程
+        \end{itemize}   
+    \end{tcolorbox}
+\end{frame} 
+
+\section{平均值公式}
+
+\begin{frame} 
+    \frametitle{}
+    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=1、平均值公式]
+        求平均值公式在Q表象中的具体形式（矩阵表示）
+        $$ \bar{F}=\int \Psi^* (\vec{r},t) F \Psi(\vec{r},t) d\tau $$
+    \end{tcolorbox}
+    \alert{解：} 
+    \begin{equation*}
+        \begin{split}
+            \bar{F}&=(\Psi(\vec{r},t), F\Psi(\vec{r},t)) \\
+            &= (\sum_n a_n(t) u_n(\vec{r}), \sum_m a_m(t) F u_m(\vec{r}))\\
+            &= \sum_{n,m} a_n ^*(t) (u_n(\vec{r}), F u_m(\vec{r})) a_m(t)\\
+            &= \sum_{n,m} a_n ^*(t) F_{nm} a_m(t)\\
+        \end{split} 
+    \end{equation*}
+\end{frame}
+
+\begin{frame} 
+    取遍$n, m$, 得到如下矩阵形式\\
+    $$\bar{F} =(a_1 ^*(t), a_2 ^*(t),\cdots,a_n^*(t) )
+    \begin{pmatrix}
+       F_{11} & F_{12} & \cdots & F_{1n} \\
+       F_{21} & F_{22} & \cdots & F_{2n} \\
+       \cdots & \cdots &  \cdots& \cdots\\
+        F_{n1} & F_{n2} & \cdots & F_{nn} \\
+    \end{pmatrix}
+    \begin{pmatrix}
+        a_1(t)\\
+        a_2(t)\\
+        \cdots \\
+        a_n(t)
+    \end{pmatrix}
+    $$ \vspace{1.0em} 
+    $$ \large \color{red} \bar{F} = \pmb {\Psi} ^{\dagger } \pmb {F} \pmb {\Psi} $$
+\end{frame}
+
+\begin{frame} 
+    在自身表象中，有：
+    $$\bar{F} =(a_1 ^*(t), a_2 ^*(t),\cdots,a_n^*(t) )
+    \begin{pmatrix}
+       f_1 & 0 & \cdots & 0 \\
+       0& f_2 & \cdots & 0 \\
+       \cdots & \cdots &  \cdots& \cdots\\
+        0 & 0 & \cdots & f_n \\
+    \end{pmatrix}
+    \begin{pmatrix}
+        a_1(t)\\
+        a_2(t)\\
+        \cdots \\
+        a_n(t)
+    \end{pmatrix}
+    $$
+    \vspace{1.0em} 
+    $$ \large \color{red} \bar{F} = \sum_n a_n^*(t) a_n(t) f_n= \sum_n |a_n(t)|^2 f_n $$
+\end{frame}
+
+\section{归一化公式}
+
+\begin{frame} 
+    \frametitle{}
+    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=2、归一化公式]
+        求归一化公式在Q表象中的具体形式（矩阵表示）
+        $$ \int \Psi^* (\vec{r},t) \Psi(\vec{r},t) d\tau =1 $$
+    \end{tcolorbox}
+    \alert{解：} 
+    \begin{equation*}
+        \begin{split}
+            1 &=(\Psi(\vec{r},t), \Psi(\vec{r},t)) \\
+            &= (\sum_n a_n(t) u_n(\vec{r}), \sum_m a_m(t) u_m(\vec{r}))\\
+            &= \sum_{n,m} a_n ^*(t) (u_n(\vec{r}), u_m(\vec{r})) a_m(t)\\
+            &= \sum_{n,m} a_n ^*(t) \delta_{nm} a_m(t)\\
+        \end{split} 
+    \end{equation*}
+\end{frame}
+
+
+\begin{frame} 
+    $$  \sum_{n} a_n ^*(t) a_n(t) =1 $$
+    取遍$n$, 得到如下矩阵形式\\
+    $$ (a_1 ^*(t), a_2 ^*(t),\cdots,a_n^*(t) )
+    \begin{pmatrix}
+        a_1(t)\\
+        a_2(t)\\
+        \cdots \\
+        a_n(t)
+    \end{pmatrix}
+    =1 $$ \vspace{1.0em} 
+    $$ \large \color{red} \pmb {\Psi} ^{\dagger } \pmb {\Psi} =1 $$
+
+\end{frame}
+
+\section{本征方程}
+
+\begin{frame} 
+    \frametitle{}
+    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=3、本征方程]
+        求本征方程在Q表象中的具体形式（矩阵表示）
+        $$ F\psi_n (\vec{r}) =f \psi_n (\vec{r})$$
+    \end{tcolorbox}
+    \alert{解：} 
+    \begin{equation*}
+        \begin{split}
+            F\psi_m (\vec{r}) &=f \psi_m \\
+            \psi_n ^*  F\psi_m &=\psi_n ^* f \psi_m\\
+            (\psi_n, F\psi_m )&=(\psi_n, f \psi_m)\\
+            (\psi_n, F\psi_m )&=(\psi_n, f \psi_m)\\
+            F_{nm} &=f_m \delta_{nm}
+        \end{split} 
+    \end{equation*}
+\end{frame}
+
+\begin{frame} 
+    $$ \sum_n (F_{nm} -f \delta_{nm})a_n=0 $$
+    取遍$n,m$, 得矩阵形式\\            
+    $$\begin{pmatrix}
+        F_{11}-f & F_{12} & \cdots & F_{1n} \\
+        F_{21} & F_{22}-f & \cdots & F_{2n} \\
+        \cdots & \cdots &  \cdots& \cdots\\
+         F_{n1} & F_{n2} & \cdots & F_{nn}-f \\
+     \end{pmatrix}
+     \begin{pmatrix}
+         a_1(t)\\
+         a_2(t)\\
+         \cdots \\
+         a_n(t)
+     \end{pmatrix}
+     =0 \qquad (1)$$
+     $$ \color{red} (\pmb F -f \pmb I) \pmb \Psi =0 $$
+
+    有解条件，系数行列式等于零！
+\end{frame}
+
+\begin{frame} 
+    得久期方程：
+    $$\begin{vmatrix}
+        F_{11}-f & F_{12} & \cdots & F_{1n} \\
+        F_{21} & F_{22}-f & \cdots & F_{2n} \\
+        \cdots & \cdots &  \cdots& \cdots\\
+         F_{n1} & F_{n2} & \cdots & F_{nn}-f \\
+     \end{vmatrix} 
+     =0 \qquad (2) $$
+     解久期方程， 得本征谱{$f_1,f_2,\cdots, f_n $}\\
+     依次把$f_i$ 代回方程（1），解得第i个本征函数。本征方程得解\\
+     矩阵化使本征方程从微分方程变为代数方程！
+\end{frame}
+
+\begin{frame} 
+    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=例1]
+        已知算符在Q表象中的矩阵形式如下。
+        $$ L_x= \frac{\hbar}{\sqrt{2}}
+        \begin{pmatrix}
+            0 & 1 & 0  \\
+            1 & 0 & 1  \\
+            0 & 1 & 0 \\
+         \end{pmatrix} $$
+        求本征值和归一化本征函数，并将矩阵对角化。
+    \end{tcolorbox}
+    可选方案:
+    \begin{itemize}
+        \done 解久期方程，得本征值，然后代入方程（1），得本征函数 ，再直接写出对角阵 
+        \todo 直接从数学上对角化，对角元就是本征值，然后代入方程（1），得本征函数。
+     \end{itemize}
+\end{frame}
+
+\begin{frame} 
+    \alert{解：}第一步：解久期方程求本征值
+    $$\frac{\hbar}{\sqrt{2}}
+    \begin{vmatrix}
+       0-f & 1 & 0  \\
+       1 & 0-f & 1  \\
+       0 & 1 & 0-f \\
+    \end{vmatrix} 
+    =0 \qquad (2) $$
+   $$ -f^3+2f=0 $$
+   $$ f_1=\sqrt{2}, f_2=0, f_3=-\sqrt{2} $$
+   注意：这只是
+   $$\begin{pmatrix}
+       0 & 1 & 0  \\
+       1 & 0 & 1  \\
+       0 & 1 & 0 \\
+    \end{pmatrix} $$
+    的本征值，$L_x$的本征值为 $\lambda_i=\dfrac{\hbar}{\sqrt{2}} f_i$，即 $ \hbar, 0, -\hbar$
+\end{frame}
+
+\begin{frame} 
+    第二步：把$f_i$ 代回方程（1）求本征函数
+    $$\begin{pmatrix}
+        0-f & 1 & 0  \\
+        1 & 0-f & 1  \\
+        0 & 1 & 0-f \\
+     \end{pmatrix} 
+     \begin{pmatrix}
+         a_1\\
+         a_2\\
+         a_3
+     \end{pmatrix}
+     =0 \qquad (1)$$
+
+     $$\begin{matrix}
+       f_1=\sqrt{2} & f_2=0  &  f_3=-\sqrt{2}\\
+    \begin{pmatrix}
+        1/\sqrt{2}a_2\\
+        a_2\\
+        1/\sqrt{2}a_2
+    \end{pmatrix}  
+    = 1/\sqrt{2}a_2 \begin{pmatrix}
+        1\\
+        \sqrt{2}\\
+        1
+        \end{pmatrix} 
+    & 
+    \begin{pmatrix}
+        a_1\\
+        0\\
+        a_1
+    \end{pmatrix}  
+    =  a_1 \begin{pmatrix}
+        1\\
+        0\\
+        1
+    \end{pmatrix}
+    &
+    \begin{pmatrix}
+        -1/\sqrt{2}a_2\\
+        a_2\\
+        -1/\sqrt{2}a_2
+    \end{pmatrix} 
+    = 1/\sqrt{2}a_2 \begin{pmatrix}
+        -1\\
+        \sqrt{2}\\
+        -1
+    \end{pmatrix} 
+    \end{matrix}$$           
+\end{frame}
+
+
+\begin{frame} 
+    代入归一化公式， $$ \pmb {\Psi} ^{\dagger } \pmb {\Psi} =1 $$
+
+    $$\begin{matrix}
+    f_1=\sqrt{2} & f_2=0  &  f_3=-\sqrt{2}\\
+    \dfrac{1}{2} a_2 ^2 (1, \sqrt{2}, 1)
+    \begin{pmatrix}
+    1\\
+    {\sqrt{2}}\\
+    1
+    \end{pmatrix} 
+    =1 
+    & 
+    a_1 ^2 (1, 0, 1)
+    \begin{pmatrix}
+     1\\
+     0\\
+     1
+    \end{pmatrix} 
+    =1 
+     &
+     \dfrac{1}{2} a_2 ^2 (-1, \sqrt{2}, -1)
+    \begin{pmatrix}
+     -1\\
+     {\sqrt{2}}\\
+     -1
+    \end{pmatrix} 
+    =1 \\
+    a_2= \dfrac{1}{\sqrt{2}} &  a_1= \dfrac{1}{\sqrt{2}} &   a_2=\dfrac{1}{\sqrt{2}} 
+    \\
+    \psi_1=\dfrac{1}{2}
+    \begin{pmatrix}
+    1\\
+    \sqrt{2}\\
+    1
+    \end{pmatrix}  
+    & 
+    \psi_2=\dfrac{1}{\sqrt{2}}
+    \begin{pmatrix}
+    1\\
+    0\\
+    1
+    \end{pmatrix}  
+    &
+    \psi_3=\dfrac{1}{2}
+    \begin{pmatrix}
+    -1\\
+    \sqrt{2}\\
+    -1
+    \end{pmatrix}  
+    \end{matrix}$$   
+\end{frame}
+
+\begin{frame} 
+    第三步：写出对角阵：
+    $$ L_x= \frac{\hbar}{\sqrt{2}}
+        \begin{pmatrix}
+            0 & 1 & 0  \\
+            1 & 0 & 1  \\
+            0 & 1 & 0 \\
+         \end{pmatrix} 
+    = 
+    \begin{pmatrix}
+        \hbar & 0 & 0  \\
+        0 & 0 &   \\
+        0 & 0 & -\hbar \\
+     \end{pmatrix} 
+    $$
+\end{frame}
+
+\section{薛定谔方程}
+\begin{frame} 
+    \frametitle{}
+    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=4、薛定谔方程]
+        求薛定谔方程在Q表象中的具体形式（矩阵表示）
+        $$ i\hbar \frac{\partial}{\partial t }\psi (\vec{r},t) =H\psi (\vec{r},t)$$
+    \end{tcolorbox}
+    \alert{解：} 波函数在Q表象展开
+    \begin{equation*}
+        \begin{split}
+            i\hbar \frac{\partial}{\partial t }\sum_n a_n(t) u_n(\vec{r})  &=H\sum_n a_n(t) u_n(\vec{r}) \\
+            u_m ^* (\vec{r}) i\hbar \frac{\partial}{\partial t }\sum_n a_n(t) u_n(\vec{r})  &=u_m ^* (\vec{r})H\sum_n a_n(t) u_n(\vec{r}) \\
+            i\hbar \frac{\partial}{\partial t }u_m ^* (\vec{r}) \sum_n a_n(t) u_n(\vec{r})  &=u_m ^* (\vec{r})\sum_n a_n(t) Hu_n(\vec{r}) \\      
+        \end{split} 
+    \end{equation*}
+\end{frame}
+
+\begin{frame} 
+    \begin{equation*}
+        \begin{split}
+            i\hbar \frac{\partial}{\partial t }(u_m (\vec{r}), \sum_n a_n(t) u_n(\vec{r}) ) &=(u_m (\vec{r}), \sum_n a_n(t) Hu_n(\vec{r})) \\
+            i\hbar \frac{\partial}{\partial t }\sum_n a_n(t)(u_m (\vec{r}),  u_n(\vec{r}) ) &=\sum_n (u_m (\vec{r}),  Hu_n(\vec{r}))a_n(t) \\
+            i\hbar \frac{\partial}{\partial t }\sum_n a_n(t)\delta_{mn} &=\sum_n  H_{mn} a_n(t) \\
+            i\hbar \frac{\partial}{\partial t } a_n(t) &=\sum_n H_{mn} a_n(t)  \\
+        \end{split} 
+    \end{equation*}
+\end{frame}
+
+\begin{frame} 
+    取遍$n,m$, 得矩阵形式\\ 
+    $$i\hbar \frac{\partial}{\partial t }  
+    \begin{pmatrix}
+        a_1(t)\\
+        a_2(t)\\
+        \cdots \\
+        a_n(t)
+    \end{pmatrix}
+    =         
+    \begin{pmatrix}
+        H_{11} & H_{12} & \cdots & H_{1n} \\
+        H_{21} & H_{22} & \cdots & H_{2n} \\
+        \cdots & \cdots &  \cdots& \cdots\\
+        H_{n1} & F_{n2} & \cdots & H_{nn} \\
+     \end{pmatrix}
+     \begin{pmatrix}
+         a_1(t)\\
+         a_2(t)\\
+         \cdots \\
+         a_n(t)
+     \end{pmatrix}
+    $$ \vspace{0.6em }
+    $$\color{red} i\hbar \frac{\partial}{\partial t }  \pmb \Psi = \pmb H  \pmb \Psi $$
+\end{frame}
+
+\section{算符运动方程}
+\begin{frame} 
+    \frametitle{}
+    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=5、算符运动方程]
+        求运动方程在Q表象中的具体形式（矩阵表示）
+        $$ \frac{d\overline{F}}{dt}=\overline{\frac{\partial F }{\partial t}}  +\frac{1}{i\hbar} \overline{[F,H]}$$
+    \end{tcolorbox}
+    \alert{解：} 波函数在Q表象展
+    \begin{equation*}
+        \begin{split}
+            \frac{d(\psi,F \psi )}{dt} &=(\psi,\frac{\partial F }{\partial t} \psi)  +\frac{1}{i\hbar}  ( \psi,[F,H]\psi) \\
+            \frac{d(\sum_m a_m u_m,F \sum_n a_n u_n )}{dt} &=(\sum_m a_m u_m,\frac{\partial F }{\partial t} \sum_n a_n u_n) \\  
+            &+\frac{1}{i\hbar}  (\sum_m a_m u_m,[F,H]\sum_n a_n u_n)  \\    
+        \end{split} 
+    \end{equation*}
+\end{frame}
+
+\begin{frame} 
+    \begin{equation*}
+        \begin{split}
+            \frac{d\sum_{mn}a_m ^* (u_m,Fu_n )a_n}{dt} &=\sum_{mn} a_m ^*  (u_m,\frac{\partial F }{\partial t} u_n)a_n \\  
+            &+\frac{1}{i\hbar} \sum_{mn} a_m ^*  ( u_m,[F,H] u_n)a_n  \\  
+            \frac{d\sum_{mn}a_m ^* F_{mn}a_n}{dt} &=\sum_{mn} a_m ^*  \frac{\partial F_{mn} }{\partial t}a_n \\  
+            &+\frac{1}{i\hbar} \sum_{mn} a_m ^* [F_{mn},H_{mn}]a_n  \\       
+        \end{split} 
+    \end{equation*}
+\end{frame}
+
+\begin{frame} 
+    取遍$n,m$, 得矩阵形式
+    \begin{equation*}
+        \begin{split} 
+            \frac{d \pmb \Psi^{\dagger } \pmb F \pmb \Psi}{dt} &=\pmb \Psi^{\dagger } \frac{\partial \pmb F }{\partial t} \pmb \Psi +\frac{1}{i\hbar} \pmb \Psi^{\dagger } [\pmb F, \pmb H] \pmb \Psi \\ \vspace{0.6em}  
+           \color{red} \frac{d \overline{\pmb F}}{dt} & \color{red} =\overline{\frac{\partial \pmb F }{\partial t}} +\frac{1}{i\hbar} \overline{ [\pmb F,\pmb H]} \\      
+        \end{split} 
+    \end{equation*}
+\end{frame}
+
+\begin{frame} 
+    \frametitle{}
+    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=课堂作业]
+    取Q表象为动量表象，试求平均值公式和薛定谔方程的具体形式。
+    \end{tcolorbox}
+\end{frame} 
