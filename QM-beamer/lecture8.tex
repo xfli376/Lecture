@@ -21,7 +21,7 @@
 
 \section{动量算符}
 \begin{frame} [allowframebreaks=]
-    \frametitle{动量}
+    \frametitle{1. 动量}
     算符：  $\hat{\vec p}=-i\hbar \nabla$ \\
     本征方程： $\hat{\vec p}\psi_{\vec p}=\vec p \psi_{\vec p}$ \\
     解本征方程：
@@ -46,7 +46,7 @@
 
 \section{位置算符}
 \begin{frame} [allowframebreaks=]
-    \frametitle{位置}
+    \frametitle{2. 位置}
     算符：  $\hat{\vec r}=\vec{r}$ \\
     本征方程： $\hat{\vec r}\psi_{\vec \lambda}=\vec \lambda \psi_{\vec \lambda}$ \\
     解本征方程：
@@ -68,17 +68,13 @@
     封闭性：$$ (\psi_{\vec{\lambda}}(\vec{r}''), \psi_{\vec{\lambda}}(\vec{r}')) =\delta(\vec{r}''-\vec{r}')$$
 \end{frame} 
 \begin{frame} [allowframebreaks=]
-    \frametitle{课堂作业}
-    \begin{exampleblock}{}
-     已知某算符为  $\hat{F}=-ie^{ix}\frac{d}{dx}$,求本征函数 \\   
-    \end{exampleblock}
+    \begin{tcolorbox2}{课堂作业:}
+        已知某算符为  $\hat{F}=-ie^{ix}\frac{d}{dx}$,求本征函数 \\  
+     \end{tcolorbox2}
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{exampleblock}{}
-     已知某算符为  $\hat{F}=-ie^{ix}\frac{d}{dx}$,求本征函数 \\   
-    \end{exampleblock}
     \alert{解：} 本征方程为 $\hat{F}\psi_f(x)=f\psi_f(x)$\\
     代入算符的具体形式：
     \begin{equation*}
@@ -94,12 +90,12 @@
 
 \section{角动量算符}
 \begin{frame} [allowframebreaks=]
-    \frametitle{角动量算符}
-    \begin{exampleblock}{}
-     已知角动量的经典定义为：
+    \frametitle{3. 角动量算符}
+    \begin{tcolorbox1}{角动量:}
+        已知角动量的经典定义为：
     $$\vec{L}=\vec{r}\times\vec{p}$$ 
-    求其算符形式，并求本征方程   
-    \end{exampleblock}
+    求其算符形式，并求本征方程     
+     \end{tcolorbox1}
     \alert{解：} 根据对应原则，有：
     $$\hat{\vec{L}}=\hat{\vec{r}}\times\hat{\vec{p}}= -i\hbar \vec{r}\times\nabla$$
     (I)在直角坐标系中,\\
@@ -225,9 +221,10 @@
 
 \begin{frame} 
     \frametitle{}
-    \begin{exampleblock}{例1：自由粒子能量本征值}
+    
+    \begin{tcolorbox2}{例1：自由粒子能量本征值}
     求质量为$\mu$的一维自由粒子的能量本征值和本征态  
-    \end{exampleblock}
+    \end{tcolorbox2}
     \alert{解：} 能量算子即哈密顿算子：
     $$ \hat{H}=\hat{T}+\hat{V}=\frac{\hat{p}_x ^2 }{2\mu} = -\frac{\hbar^2}{2\mu}\frac{d^2}{dx^2} $$
     建立能量本征方程：
@@ -246,9 +243,9 @@
 
 \begin{frame} 
     \frametitle{ }
-    \begin{exampleblock}{例2：转子的能量本征值}
-    求转动惯量为I的平面转子的能量本征值和本征态  
-    \end{exampleblock}
+    \begin{tcolorbox2}{例2：转子的能量本征值}
+    求转动惯量为I的平面转子的能量本征值和本征态 
+    \end{tcolorbox2}
     \alert{解：} 能量算子即哈密顿算子：
     $$ \hat{H}=\hat{T}+\hat{V}=\frac{\hat{l}_z ^2 }{2I} = -\frac{\hbar^2}{2I}\frac{\partial^2}{\partial\varphi^2} $$
     建立能量本征方程：
@@ -259,7 +256,11 @@
 \begin{frame} 
     能量本征函数： $$\psi_m(\varphi)=\frac{1}{\sqrt{2\pi}}e^{im\varphi}, \qquad (m=0,\pm 1, \pm 2, \cdots)$$
     能量本征值： $$ E_m=\frac{m^2\hbar^2}{2I} $$ 
-    \begin{exampleblock}{}
-     讨论：如何求空间转子的能量本征值和本征态？    
-    \end{exampleblock}    
+    
+\end{frame}
+
+\begin{frame}    
+    \begin{tcolorbox2}{讨论：}
+        求转动惯量为I的平面转子的能量本征值和本征态 如何求空间转子的能量本征值和本征态？  
+    \end{tcolorbox2}
 \end{frame}

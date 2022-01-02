@@ -38,8 +38,8 @@
 \section{表象理论}
 
 \begin{frame} 
-    \frametitle{定义}
-    \begin{definition}
+    \frametitle{}
+    \begin{tcolorbox1}{定义：}
         \begin{itemize}
             \item 表象：波函数和力学量的具体表示形式，选择一个力学量本征函数系做为基就是选取一种表象
             \item 表象理论：研究量子力学各种表示形式以及它们之间的相互变换的理论。
@@ -47,7 +47,7 @@
         $$ \Psi(\vec{r},t)=\sum_n c_n(t) \psi_n(\vec{r})$$ 
         $$ \Psi\Leftrightarrow(c_1,c_2,\cdots)^T $$
         \end{itemize}   
-    \end{definition}
+    \end{tcolorbox1}
 \end{frame} 
 
 \section{波函数矩阵表示}
@@ -98,9 +98,9 @@
 
 \begin{frame} 
     \frametitle{实例} 
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=例1：]
+    \begin{tcolorbox2}{例1：}
         求动量本征态（平面波）在动量表象中的具体形式（矩阵表示）
-    \end{tcolorbox}
+    \end{tcolorbox2}
     \alert{解：} 动量的本征谱连续,采用公式\\
     $$a(q,t)=(u_q(\vec{r}), \Psi(\vec{r},t)) $$
     取 $$u_q(\vec{r})=\psi_{\vec{p}}(\vec{r})=\frac{1}{(2\pi\hbar)^{3/2}}e^{\frac{i}{\hbar}\vec{p}\cdot \vec{r}}, 
@@ -124,11 +124,11 @@
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=例2：]
+    \begin{tcolorbox2}{例2：}
         如下波函数是某体系的能量本征态\\
         $$ \psi_n(x)=\sqrt{\frac{2}{a}} \sin \frac{n\pi}{a}x, \qquad 0<x<a $$
         求基态(n=1)分别在动量和能量表象中的具体形式
-    \end{tcolorbox}
+    \end{tcolorbox2}
     \alert{解：} （1）动量的本征谱连续,采用公式\\
     \begin{equation*}
         \begin{split}
@@ -216,13 +216,13 @@
 
 \begin{frame} 
     \frametitle{定义} 
-    \begin{definition}
+    \begin{tcolorbox1}{定义：}
         \begin{itemize}
         \item F的共轭矩阵: $F^{\dagger } =(F^*)^T$
         \item 厄密矩阵: $F= F^{\dagger }$
-    \end{itemize}
+        \end{itemize}
     TIPS：厄密矩阵矩阵元特点 $$  F_{nm}^* = F_{mn}  $$
-    \end{definition}   
+    \end{tcolorbox1}
 \end{frame}
 
 \begin{frame} 
@@ -276,9 +276,9 @@
 
 
 \begin{frame} [allowframebreaks=]
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=性质1]
+    \begin{tcolorbox1}{性质1：}
         试证明力学量算符的矩阵表示都是厄密矩阵
-    \end{tcolorbox}
+    \end{tcolorbox1}
     \alert{证明：} 
     \begin{equation*}
         \begin{split}
@@ -292,9 +292,9 @@
 \end{frame}
 
 \begin{frame} [allowframebreaks=]
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=性质2]
+    \begin{tcolorbox1}{性质2：}
         试证明力学量算符的矩阵表示，其对角元都是实数
-    \end{tcolorbox}
+    \end{tcolorbox1}
     \alert{证明：} 
     \begin{equation*}
         \begin{split}
@@ -307,9 +307,9 @@
 \end{frame}
 
 \begin{frame} [allowframebreaks=]
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=性质3]
+    \begin{tcolorbox1}{性质3:}
         试证明力学量算符的矩阵表示，在自身表象中是对角矩阵
-    \end{tcolorbox}
+    \end{tcolorbox1}
     \alert{证明：} 
     \begin{equation*}
         \begin{split}
@@ -324,26 +324,26 @@
 \end{frame}
 
 \begin{frame} [allowframebreaks=]
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=对角化的物理意义]
+    \begin{tcolorbox2}{对角化的物理意义}
         \begin{itemize}
             \item 力学量算符的表示一般不是对称阵（不在自身表象）
             \item 在数学上做矩阵对角化，使其成为对角阵 （在自身表象）
             \item 对角化完成从任意表象回到自身表象的过程
             \item 对角元就是本征值（解本征方程求本征值）
         \end{itemize}  
-    \end{tcolorbox}
+    \end{tcolorbox2}
 \end{frame}
 
 \begin{frame} 
     \frametitle{}
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=课堂作业]
+    \begin{tcolorbox2}{课堂作业:}
     取Q表象为动量表象，试求位置算符$\hat{x}$、动量算符$\hat{p}_x$ 的具体形式。
-    \end{tcolorbox}
+    \end{tcolorbox2}
 \end{frame} 
 
 \begin{frame} 
     \frametitle{}
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=课堂讨论1]
+    \begin{tcolorbox2}{课堂讨论}
     已知波函数取如下形式：$$\psi(x)=\frac{1}{\sqrt{2}}u_1(x)+\frac{1}{2}u_2(x)+\frac{1}{2}u_3(x)$$
     其系数矩阵为$$\begin{pmatrix}
             \frac{1}{\sqrt{2}}\\
@@ -354,7 +354,7 @@
         \item  此系数矩阵是波函数在位置表象的矩阵表示吗？
         \item  此系数矩阵是波函数在能量表象的矩阵表示的条件是什么？  
     \end{enumerate}
-    \end{tcolorbox}
+    \end{tcolorbox2}
 \end{frame} 
 
 \begin{frame} 

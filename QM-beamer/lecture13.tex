@@ -23,7 +23,7 @@
 
 \begin{frame} 
     \frametitle{}
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=量子力学常用公式]
+    \begin{tcolorbox2}{量子力学常用公式}
         \begin{itemize}
             \item 平均值公式
             \item 归一化公式
@@ -31,17 +31,17 @@
             \item 薛定谔方程
             \item 运动方程
         \end{itemize}   
-    \end{tcolorbox}
+    \end{tcolorbox2}
 \end{frame} 
 
 \section{平均值公式}
 
 \begin{frame} 
     \frametitle{}
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=1、平均值公式]
+    \begin{tcolorbox1}{平均值公式}
         求平均值公式在Q表象中的具体形式（矩阵表示）
         $$ \bar{F}=\int \Psi^* (\vec{r},t) F \Psi(\vec{r},t) d\tau $$
-    \end{tcolorbox}
+    \end{tcolorbox1}
     \alert{解：} 
     \begin{equation*}
         \begin{split}
@@ -96,10 +96,10 @@
 
 \begin{frame} 
     \frametitle{}
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=2、归一化公式]
+    \begin{tcolorbox1}{归一化公式}
         求归一化公式在Q表象中的具体形式（矩阵表示）
         $$ \int \Psi^* (\vec{r},t) \Psi(\vec{r},t) d\tau =1 $$
-    \end{tcolorbox}
+    \end{tcolorbox1}
     \alert{解：} 
     \begin{equation*}
         \begin{split}
@@ -131,10 +131,10 @@
 
 \begin{frame} 
     \frametitle{}
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=3、本征方程]
+    \begin{tcolorbox1}{3、本征方程}
         求本征方程在Q表象中的具体形式（矩阵表示）
         $$ F\psi_n (\vec{r}) =f \psi_n (\vec{r})$$
-    \end{tcolorbox}
+    \end{tcolorbox1}
     \alert{解：} 
     \begin{equation*}
         \begin{split}
@@ -183,7 +183,7 @@
 \end{frame}
 
 \begin{frame} 
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=例1]
+    \begin{tcolorbox2}{例1:}
         已知算符在Q表象中的矩阵形式如下。
         $$ L_x= \frac{\hbar}{\sqrt{2}}
         \begin{pmatrix}
@@ -192,7 +192,7 @@
             0 & 1 & 0 \\
          \end{pmatrix} $$
         求本征值和归一化本征函数，并将矩阵对角化。
-    \end{tcolorbox}
+    \end{tcolorbox2}
     可选方案:
     \begin{itemize}
         \done 解久期方程，得本征值，然后代入方程（1），得本征函数 ，再直接写出对角阵 
@@ -345,10 +345,10 @@
 \section{薛定谔方程}
 \begin{frame} 
     \frametitle{}
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=4、薛定谔方程]
+    \begin{tcolorbox1}{4、薛定谔方程}
         求薛定谔方程在Q表象中的具体形式（矩阵表示）
         $$ i\hbar \frac{\partial}{\partial t }\psi (\vec{r},t) =H\psi (\vec{r},t)$$
-    \end{tcolorbox}
+    \end{tcolorbox1}
     \alert{解：} 波函数在Q表象展开
     \begin{equation*}
         \begin{split}
@@ -399,10 +399,10 @@
 \section{算符运动方程}
 \begin{frame} 
     \frametitle{}
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=5、算符运动方程]
+    \begin{tcolorbox1}{5、算符运动方程}
         求运动方程在Q表象中的具体形式（矩阵表示）
         $$ \frac{d\overline{F}}{dt}=\overline{\frac{\partial F }{\partial t}}  +\frac{1}{i\hbar} \overline{[F,H]}$$
-    \end{tcolorbox}
+    \end{tcolorbox1}
     \alert{解：} 波函数在Q表象展
     \begin{equation*}
         \begin{split}

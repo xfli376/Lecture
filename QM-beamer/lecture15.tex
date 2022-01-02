@@ -25,13 +25,13 @@
 
 \begin{frame}
     量子力学用希尔伯特空间描述，希尔伯特空间都是内积空间
-    \begin{tcolorbox}[colback=yellow!5,colframe=red!75!black,title=希尔伯特空间]
+    \begin{tcolorbox1}{希尔伯特空间}
     \begin{itemize}
         \item 加法：$\psi + \varphi$
         \item 数乘：$c\psi$
         \item 内积：$(\psi,\psi)$
     \end{itemize}
-    \end{tcolorbox}
+    \end{tcolorbox1}
     考察内积： $(\psi,\psi)=\int\psi^*\psi d\tau$ \\
     同一波函数放在左边还是右边，意义有所不同： \\
     放右边是线性矢量：  $(\psi,a\psi)=a (\psi,\psi)$ \\
@@ -40,12 +40,12 @@
 
 \begin{frame}
     \frametitle{1、左矢和右矢}
-    \begin{definition}
-    为了清楚地描述这种线性反线性特点，特定义: 左矢和右矢
+    \begin{tcolorbox1}{定义：}
+    为了清楚地描述这种线性反线性特点，特定义左矢和右矢
     $$\langle \psi |, \qquad |\psi \rangle $$ 
     有 ： $$\langle a\psi | = \langle \psi |a^* $$
     $$ |a\psi \rangle = a|\psi \rangle$$ 
-    \end{definition}
+    \end{tcolorbox1}
     考察加法和数乘：\\
     发现其中的矢量通常都是线性的，因此一般可用右矢来表示。
 \end{frame} 
@@ -72,7 +72,7 @@
                  &= \sum\limits_{i=1} ^n |i\rangle\langle i | \Psi \rangle \\
     \end{aligned}
     $$
-    定义算符： $ \qquad  P_i = |i\rangle\langle i | \qquad $ 有: \\
+    定义算符： $ \qquad  \rho_i = |i\rangle\langle i | \qquad $ 有: \\
     $$\sum\limits_{i=1} ^n |i\rangle\langle i = \sum\limits_{i=1} ^n P_i =1 $$
 
 \end{frame} 
@@ -107,9 +107,9 @@
 \begin{frame}
     \frametitle{3、密度算符}
     算符的意义：
-    $$P_i\Psi= |i\rangle\langle i | \Psi \rangle = \langle i | \Psi \rangle |i\rangle=a_i |i\rangle $$
-    $$\Psi= \sum\limits_i ^n a_i |i\rangle = \sum\limits_i ^n P_i\Psi$$
-    可知： $ P_i\Psi $ 是矢量$\Psi$ 在第$i$ 个本征矢上的投影， 因此称  $P_i $ 为{\color{red} 投影算符}\\
+    $$\rho_i\Psi= |i\rangle\langle i | \Psi \rangle = \langle i | \Psi \rangle |i\rangle=a_i |i\rangle $$
+    $$\Psi= \sum\limits_i ^n a_i |i\rangle = \sum\limits_i ^n \rho_i\Psi$$
+    可知： $ \rho_i\Psi $ 是矢量$\Psi$ 在第$i$ 个本征矢上的投影， 因此称  $P_i $ 为{\color{red} 投影算符}\\
     对于非本征态，也可定义：$\rho = |\Psi\rangle\langle \Psi |$\\
     考察其在$i$态的平均值：
     $$ \begin{aligned}
@@ -136,12 +136,13 @@
 \end{frame} 
  
 \begin{frame}  
-    \frametitle{6、平均公式-3}  
-    得新的平均公式-3：
-    $$ \begin{aligned}
-    \bar{\hat{F}}&=\sum\limits_{j} \langle j | \hat{\rho} \hat{F} |j\rangle \\
+    \frametitle{}  得新的平均公式：
+    \begin{tcolorbox1}{平均公式-3}
+         $$ \begin{aligned}
+            \bar{\hat{F}}&=\sum\limits_{j} \langle j | \hat{\rho} \hat{F} |j\rangle \\
                 &=tr (\hat{\rho} \hat{F} )
-    \end{aligned} $$
+        \end{aligned} $$   
+    \end{tcolorbox1} 
 \end{frame} 
  
 \begin{frame}      
@@ -155,7 +156,7 @@
 \end{frame} 
  
 \begin{frame}  [allowframebreaks=]
-    \frametitle{7、狄拉克型量子力学}  
+    \frametitle{6、狄拉克型量子力学}  
     量子态： $\hspace{1em}|\Psi \rangle $ \\ \vspace{0.2em}
     展开式： $\hspace{1em}|\Psi \rangle =\sum\limits_{n=1} ^n a_n |n \rangle$ \\
     内积：   $\hspace{2em}\langle \varphi | \Psi \rangle = (\varphi, \Psi)= \int \varphi^*\Psi d\tau $ \\  \vspace{0.2em}

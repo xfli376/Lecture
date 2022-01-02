@@ -1,192 +1,251 @@
+%% This is  mynewbeamer.sty'.
+%% Version: 2021/12/1 
+%% Auther: xfli
+%% !请勿轻易改动此文档中代码.
+%%%% ----------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\usepackage[]{inputenc}  %接受不同的输入编码
-\usepackage[T1]{fontenc}
-\RequirePackage[slantfont,boldfont,CJKnumber]{xeCJK}
-\RequirePackage{fontspec,xunicode}
-\usepackage{tcolorbox}
+\ProvidesPackage{mynewbeamer}[2021/12/01]
+%%%% -------------------------------------------------------------
 
-% other packages
-\usepackage{latexsym,multicol,booktabs,calligra}
-\usepackage{listings, xcolor, geometry, graphicx,stackengine,xltxtra}
-\RequirePackage{type1cm} %设置字体大小
+%\usefonttheme[onlymath]{serif}
+\usefonttheme{professionalfonts}
+\RequirePackage{tikz}
+\RequirePackage{cutwin}  % 图文混排
+%\usetikzlibrary {3d} 
+%\usetikzlibrary {datavisualization.formats.functions}
 
-%  Chinese characters in MAC
-%\usepackage{ctex}
+\RequirePackage{tcolorbox}% 绘制彩色框.
+\tcbuselibrary{most}
+\RequirePackage{multicol}%  one to muticolumn
+\RequirePackage{ulem}% ulem: under line for emphasis.
+\RequirePackage{tabularx}%  智能表格环境.
+\RequirePackage{xhfill}% xhfill: 定制化线填充.
+\RequirePackage{listings}%  for source code printing 
 
-\defaultfontfeatures{Mapping=tex-text} %如果没有它，会有一些 tex 特殊字符无法正常使用，比如连字符。
-\newcommand{\Heiti}{\CJKfontspec{STXihei}}     %华文黑体
-\newcommand{\Songti}{\CJKfontspec{STSong}}  %华文宋体
-\newcommand{\Kaiti}{\CJKfontspec{STKaitiSC-Regular}}       %楷体-简
-\newcommand{\Lishu}{\CJKfontspec{STLibianSC-Regular}}       %隶变-简
-\newcommand{\Weibei}{\CJKfontspec{WeibeiSC-Bold}}              %魏碑-简
-\newcommand{\MLWti}{\CJKfontspec{MLingWaiMedium-SC}}    %凌慧体-简, 用于手写体
-\newcommand{\Pingfang}{\CJKfontspec{PingFangSC-Regular}}    %凌慧体-简, 用于手写体
+\RequirePackage{color}  % color content
+\RequirePackage{xcolor}% \color{red!50!green!20!blue}
+\RequirePackage{graphicx}
+\RequirePackage{graphics}
+\RequirePackage{subfigure}
 
-\setCJKmainfont{STSongti-SC-Regular}[BoldFont=STSong, ItalicFont=SimSong-Regular]      
-\setCJKsansfont{SimSong-Bold}
-\setCJKmonofont{FZLTXHB--B51-0}
-\setmainfont{TimesNewRomanPSMT}
-\setsansfont{ArialMT}
-\setmonofont{Helvetica}
-\usepackage{times}  %使得英文默认字体都是Times New Roman
+\RequirePackage{comment}% comment: 提供注释环境cs
+\usepackage[ruled]{algorithm2e} % 算法宏包
+\RequirePackage{amsthm} % 定理环境专用
+\RequirePackage{float}         
+\usepackage[dvipdfmx]{media9} %放电影
+\usepackage{wrapfig}          %图文混排
 
 
-%%%数学公式
-\usepackage{amsthm,amsmath,amsfonts,amssymb}
-\usepackage{bm}                      %%公式加粗
-\usepackage[]{unicode-math}  % GOOD for Xelatex 
-%\setmathfont{texgyrepagella-math.otf}
-\setmathfont{Asana-Math.otf}    %%% 不含  $\hbar$
+%\RequirePackage{varioref}% varioref: 交叉引用.
+%\RequirePackage{cleveref}% cleveref: 交叉引用.
+%\RequirePackage[backend=biber,autolang=hyphen,style=gb7714-2015,gbalign=gb7714-2015,%style=gb7714-2015ms
+%gbstyle=false,url=false,doi=false,isbn=false,sorting=none]{biblatex}% biblatex: 参考文献.
 
-% defs 原生TeX语言
-\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
-\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\RequirePackage{xeCJK} %导入中文包
+\RequirePackage{unicode-math}% unicode-math: opentype 数学字体.
+\RequirePackage{amsmath}
+\RequirePackage{fontawesome}% fontawesome: 提供可缩放矢量图标.
+
+\setmainfont{Times New Roman}%  缺省英文字体.
+\setCJKmainfont[ItalicFont={STKaitiSC-Regular}, BoldFont={STHeitiSC-Light}]{SimSong-Regular}% 衬线字体 缺省中文字体
+\setCJKsansfont[BoldFont={STXihei}]{WeibeiSC-Bold} %sansfont 是无衬线字体，用于标题。
+\setCJKmonofont{STFangsong}% 中文等宽字体
+\setCJKfamilyfont{nicefont}{DFWaWaSC-W5}% 这里先把DFWaWaSC-W5导入CJK家族字体，后面用\CJKfamily{nicefont}调用。
+\newcommand{\myfont}{\CJKfamily{nicefont}}%這一步是使用简化的\myfont
+
+
+
+
+ 
+% 中文化环境 
+\renewcommand\contentsname{目录}
+\renewcommand\listfigurename{插图目录}
+\renewcommand\listtablename{表格目录}
+\renewcommand\refname{参考文献}
+\renewcommand\indexname{索引}
+\renewcommand\figurename{图}
+\renewcommand\abstractname{摘要}
+\renewcommand\partname{部分}
+\renewcommand\appendixname{附录} 
+\renewcommand\tablename{表}
+\renewcommand\algorithmcfname{\bf 算法}
+\renewcommand\today{\number\year 年\number\month 月\number\day 日}
+\renewcommand\proofname{\bf 证明}
+
+% 颜色设置
 \definecolor{deepblue}{rgb}{0,0,0.5}
 \definecolor{deepred}{rgb}{0.6,0,0}
 \definecolor{deepgreen}{rgb}{0,0.5,0}
 \definecolor{halfgray}{gray}{0.55}
+\definecolor{uestcxxbg}{RGB}{225,150,63}
+\definecolor{uestcE}{RGB}{255,165,0}
+% 锦绣红 CMYK(12,92,95,20).
+\definecolor{JXred}{cmyk}{0.12,0.92,0.95,0.20}
+% 优雅灰 CMYK(47,37,37,20).
+\definecolor{YYgrey}{cmyk}{0.47,0.37,0.37,0.00}
+% 宝石蓝 CMYK(100,60,0,15).
+\definecolor{BSblue}{cmyk}{1.00,0.60,0.00,0.15}
+% 荷叶绿 CMYK(100,0,90,15).
+\definecolor{HYgreen}{cmyk}{1.00,0.00,0.90,0.15}
+% 银杏黄 CMYK(0,40,100,15).
+\definecolor{YXyellow}{cmyk}{0.00,0.40,1.00,0.15}
+% ----------------
 
-%\usepackage{listings}   代码段全局设置
+
+% ----------------
+% Tcolorbox Layout
+% 定义的两个渐变样式( 1 为红蓝渐变, 2 为黄绿渐变)的 Tcolorbox.
+% ----------------
+\newtcolorbox{tcolorbox1}[2][1]{width=(\linewidth-1pt)/#1,%
+	title={#2},%
+colframe=uestcE!88!black,colback=red!1!white,fonttitle=\bfseries,}
+\newtcolorbox{tcolorbox2}[2][1]{width=(\linewidth-1pt)/#1, %
+	title={#2},%
+colframe=blue!95!black,colback=blue!1!white,fonttitle=\bfseries,}
+
+ % To Do List
+ %\newcommand{\wontfix} {\item[\rlap{\raisebox{2.0ex}{\hspace{0.4ex}  \small \color{red} $\times$}} \color{blue}$\square$]}%
+ %\newcommand{\done} {\item[\rlap{\raisebox{2.0ex}{\hspace{0.4ex} \small \color{red} $\surd$}} \color{blue} $\square$]}%
+ \newcommand{\done} {\item[\color{HYgreen} \faCheckSquareO ]}
+ \newcommand{\todo} {\item[\color{BSblue} \faSquareO ]}
+ \newcommand{\wontfix} {\item[\color{JXred} \faTimesCircleO ]}
+% ----------------
+
+%
+% Presentation 环境
+%
+%---------------------
+\mode<presentation>
+%设置Beamer主题----- 效果见 https://hartwork.org/beamer-theme-matrix/
+\usetheme{Antibes} %主题
+%AnnArbor， Antibes， Bergen， Berkeley， Berlin， Boadilla， cambridgeUS， Copenhagen，
+%Darmstadt， default，Dresden，Frankfurt，Goettingen，Hannover，Ilmenau，JuanLesPins，Luebeck，
+%Madrid， Malmoe， Marburg， Montpellier，PaloAlto，Pittsburgh，Rochester，Singapore，Szeged，Warsaw
+%------------------
+\useoutertheme{smoothbars} %smoothbars， tree， sidebar， shadow， split， miniframes， infolines， default
+\useinnertheme{rounded} % default ，circles ，rectangle， rounded
+\usecolortheme{rose} % beaver,beetle, albatross,default, crane, dolphin, dove, mfly, lily, orchid,mrose, seagull, seahorse, whale, wolverine
+
+
+%\setbeamertemplate{navigation symbols}{}%empty
+
+% Background
+\pgfdeclareimage[height=6.2ex,width=0.14\paperwidth]{xx}{images/uestcxx.png}
+\pgfdeclareimage[height=\paperheight,width=\paperwidth]{myimage}{images/uestclogo.png}
+\usebackgroundtemplate{\tikz\node[opacity=0.15,inner sep=0] {\pgfuseimage{myimage}};}
+
+% 半透明化尚未出现的内容.
+%\setbeamercovered{transparent}
+% 幻灯标题字体设置.
+\setbeamerfont{frametitle}{size=\normalsize,series=\bfseries}
+% 封页字体设置.
+\setbeamerfont{title}{size=\Large,series=\bfseries}
+\setbeamerfont{subtitle}{size=\footnotesize,series=\bfseries}
+\setbeamerfont{author}{size=\normalsize}
+\setbeamerfont{date}{size=\scriptsize}
+
+\setbeamerfont{block title}{size=\normalsize}
+\setbeamerfont{structure}{size=\normalsize,series=\bfseries}
+% 脚注字号设置.
+\setbeamerfont{footnote}{size=\scriptsize}
+% 页眉页脚字体设置
+\setbeamerfont{section in head/foot}{size=\scriptsize,series=\bfseries}
+\setbeamerfont{subsection in head/foot}{size=\scriptsize,series=\bfseries}
+\setbeamerfont{author in head/foot}{size=\scriptsize,series=\bfseries}
+\setbeamerfont{institute in head/foot}{size=\scriptsize,series=\bfseries}
+\setbeamerfont{date in head/foot}{size=\scriptsize,series=\bfseries}
+\setbeamerfont{title in head/foot}{size=\scriptsize}
+\setbeamerfont{framenumber in head/foot}{size=\tiny,series=\bfseries}
+
+% listing 
 \lstset{
-	basicstyle=\ttfamily\small,                          % 代码字体
+	basicstyle=\ttfamily\small,
 	keywordstyle=\bfseries\color{deepblue},
-	emphstyle=\ttfamily\color{deepred},            
+	emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
 	stringstyle=\color{deepgreen},
-	numbers=left,                                             % 代码行号位置
+	numbers=left,
 	numberstyle=\small\color{halfgray},
 	rulesepcolor=\color{red!20!green!20!blue!20},
 	frame=shadowbox,
 }
 
-%\RequirePackage{easyphys}  %%%%
-\RequirePackage{tikz}     % 作图
-\RequirePackage{cutwin}  % 图文混排
-\usetikzlibrary {3d} 
-\usetikzlibrary {datavisualization.formats.functions}
-\newcommand*{\num}{pi}
+% 调色板一设置.
+\setbeamercolor{palette primary}{bg=blue,fg=white}
+% 调色板二设置.
+\setbeamercolor{palette secondary}{bg=uestcxxbg,fg=white!80!black}
+% 调色板三设置.
+\setbeamercolor{palette tertiary}{bg=blue!10!green,fg=white}
+% 调色板四设置.
+\setbeamercolor{palette quaternary}{bg=uestcxxbg,fg=white!80!red}
+
+\setbeamercolor{section in head/foot}{parent=palette primary}
+\setbeamercolor{subsection in head/foot}{parent=tertiary primary}
+\setbeamercolor{title in head/foot}{parent=structure}
+\setbeamercolor{author in head/foot}{parent=palette secondary}
+\setbeamercolor{institute in head/foot}{parent=palette primary}
+\setbeamercolor{date in head/foot}{parent=palette primary}
+\setbeamercolor{framenumber in head/foot}{parent=palette quaternary}
+\setbeamercolor{frametitle}{bg=blue,fg=uestcE}
+
+% itemize 环境序号设置.
+\setbeamertemplate{itemize item}{\scriptsize\raise1.25pt\hbox{\textbullet}}
+\setbeamertemplate{itemize subitem}{\scriptsize\raise1.25pt\hbox{\textbullet}}
+\setbeamertemplate{itemize subsubitem}{\scriptsize\raise1.25pt\hbox{\textbullet}}
 
 
-%%% blocks
-%\usepackage{amsthm}
-\theoremstyle{plain}
-\newtheorem{algo}{算法~}[section]
-\newtheorem{thm}{定理~}[section]
-\newtheorem{lem}[thm]{引理~}
-\newtheorem{prop}[thm]{命题~}
-\newtheorem{cor}[thm]{推论~}
-\theoremstyle{definition}
-\newtheorem{defn}{定义~}[section]
-\newtheorem{conj}{猜想~}[section]
-\newtheorem{exmp}{例~}[section]
-\newtheorem{rem}{注~}
-\newtheorem{case}{情形~}
-\theoremstyle{remark}
-\newtheorem{bthm}[thm]{定理~}
-\newtheorem{blem}[thm]{引理~}
-\newtheorem{bprop}[thm]{命题~}
-\newtheorem{bcor}[thm]{推论~}
 
-\renewcommand{\proofname}{\bf 证明}
-\renewcommand*{\proofname}{\normalfont\bfseries证明} %
-\renewcommand\contentsname{目录}
-\renewcommand\refname{参考文献} %
-\renewcommand\figurename{图} %
-\renewcommand\tablename{表}%
-\newcommand\versiontext{版本：}%
-\newcommand\updatetext{最后更新：}%
-\renewcommand\abstractname{摘\hspace{2em}要}
+% 参考文献目录字号设置.
+%\renewcommand*{\bibfont}{\small}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\mode<presentation>
+% ----------------
+% Headline Layout
+% 格式: SECTION (ALL) | NAME OF SCU.
+% ----------------
+\defbeamertemplate{headline}{my headline theme}%
+{%
+	\leavevmode% 离开垂直模式
+	\hbox{%
+        \begin{beamercolorbox}[wd=.08\paperwidth,ht=5.75ex,dp=.25ex,center]{author in head/foot}
+            \hspace*{0.001em}%
+            \usebeamerfont{author in head/foot} \insertauthor 
+            \hspace*{1.175em} \vskip 1.1ex%
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.06\paperwidth,ht=5.75ex,dp=.25ex,center]{framenumber in head/foot} 
+            \hspace*{0.001em}%
+            \usebeamerfont{framenumber in head/foot} \insertframenumber\,/\,\inserttotalframenumber
+            \hspace*{1.175em} \vskip 1.1ex%
+        \end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.72\paperwidth,ht=5.75ex,dp=.25ex]{section in head/foot}%
+			\hspace*{0.01em}%
+			\usebeamerfont{section in head/foot}\insertsectionnavigationhorizontal{.6\textwidth}{}{}%
+			\hspace*{1.175em} \vskip.02ex%
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.14\paperwidth,ht=5.75ex,dp=.25ex,center]{section in head/foot}%
+			\pgfuseimage{xx}%\hspace*{2.6em}%
+		\end{beamercolorbox}%
+	}%
+}
+\setbeamertemplate{headline}[my headline theme]
+%-----------
 
-\newif\ifbeamer@secheader
-\beamer@secheaderfalse
+\setbeamertemplate{frametitle}{%
+	\vskip-0.002\textheight%
+	\leavevmode%
+    \hspace*{-.08\paperwidth}
+	\hbox{%
+		\begin{beamercolorbox}[wd=0.29\paperwidth,ht=2.75ex,dp=0.25ex,center]{frametitle}%
+			\usebeamerfont{frametitle}\insertframetitle \vskip.025ex%
+		\end{beamercolorbox}%
+	}
+}
 
-%\DeclareOptionBeamer{secheader}{\beamer@secheadertrue}
-\ProcessOptionsBeamer
+% -----------------------------------------------------
+%
 
-\useoutertheme[footline=authorinstitutetitle,subsection=false]{smoothbars}
 
-\makeatletter 
-
-% [add curpage/total page at the bottom](http://tex.stackexchange.com/questions/100838/beamer-dresden-theme-miniframes-appeareance-and-frame-number-insertion)
-\newcommand{\frameofframes}{/}
-\newcommand{\setframeofframes}[1]{\renewcommand{\frameofframes}{#1}}
-\setbeamertemplate{footline} 
-  {%
-    \begin{beamercolorbox}[colsep=1.5pt]{upper separation line foot}
-    \end{beamercolorbox}
-    \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
-      leftskip=.3cm,rightskip=.3cm plus1fil]{author in head/foot}%
-      \leavevmode{\usebeamerfont{author in head/foot}\insertshortauthor}%
-      \hfill%
-      {\usebeamerfont{institute in head/foot}\usebeamercolor[fg]{institute in head/foot}\insertshortinstitute}%
-    \end{beamercolorbox}%
-    \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
-      leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
-      {\usebeamerfont{title in head/foot}\insertshorttitle}%
-      \hfill%
-      {\usebeamerfont{frame number}\usebeamercolor[fg]{frame number}\insertframenumber~\frameofframes~\inserttotalframenumber}
-    \end{beamercolorbox}%
-    \begin{beamercolorbox}[colsep=1.5pt]{lower separation line foot}
-    \end{beamercolorbox}
-  }
 \makeatother
-
-\useinnertheme{circles}
-%\useoutertheme{default}
-%\useinnertheme[shadow=true]{rounded}
-
-%define qut theme color 
-\xdefinecolor{qut}{HTML}{00407a}  %PANTONE 541 BLUE
-\setbeamercolor{footline}{bg=qut}
-\setbeamercolor{frametitle}{bg=qut,fg=white}
-\setbeamercolor{title}{bg=qut}
-\setbeamerfont{frametitle}{size=\large}
-
-%\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{bibliography item}[text]
-\setbeamertemplate{caption}[numbered]
-
-\setbeamercolor{palette primary}{use=structure,fg=white,bg=structure.fg}
-\setbeamercolor{palette secondary}{use=structure,fg=white,bg=structure.fg!75!black}
-\setbeamercolor{palette tertiary}{use=structure,fg=white,bg=structure.fg!50!black}
-\setbeamercolor{palette quaternary}{fg=white,bg=structure.fg!50!black}
-\setbeamercolor{titlelike}{parent=palette primary}
-
-%% try
-\setbeamercolor{block title}{bg=qut}
-\setbeamercolor*{block title example}{use={normal text,example text},bg=white,fg=qut}
-\setbeamercolor{fine separation line}{}
-\setbeamercolor{item projected}{fg=white}
-\setbeamercolor{palette sidebar primary}{use=normal text,fg=normal text.fg}
-\setbeamercolor{palette sidebar quaternary}{use=structure,fg=structure.fg}
-\setbeamercolor{palette sidebar secondary}{use=structure,fg=structure.fg}
-\setbeamercolor{palette sidebar tertiary}{use=normal text,fg=normal text.fg}
-\setbeamercolor{section in sidebar}{fg=brown}
-\setbeamercolor{section in sidebar shaded}{fg=grey}
-\setbeamercolor{separation line}{}
-\setbeamercolor{sidebar}{bg=qut}
-\setbeamercolor{sidebar}{parent=palette primary}
-\setbeamercolor{structure}{fg=qut}
-\setbeamercolor{subsection in sidebar}{fg=brown}
-\setbeamercolor{subsection in sidebar shaded}{fg=grey}
-\setbeamercolor{block title}{fg=white}
-\setbeamercolor{block body}{bg=structure.bg!35!yellow}
-\AtBeginSection[]{
-	\begin{frame}
-    \frametitle{Contents}
-		\tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
-	\end{frame}
-}
-\AtBeginSubsection[]{
-	\begin{frame}
-    \frametitle{Contents}
-		\tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
-	\end{frame}
-}
-% graphics path
-\graphicspath{{./figure/}{./figures/}{./image/}{./images/}{./graphics/}{./graphic/}{./pictures/}{./picture/}}
 
 \mode
 <all>
+
+

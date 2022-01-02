@@ -33,9 +33,9 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{exampleblock}{}
-        1、试证明两厄米算符之和仍为厄米算符
-    \end{exampleblock}
+    \begin{tcolorbox1}{命题:}
+    1. 试证明两厄米算符之和仍为厄米算符 
+    \end{tcolorbox1}
     \alert{证明：}A,B为厄米算符，则对于任意态，有\\
     $$(\psi, A\psi ) = (A\psi, \psi), \qquad (\psi, B\psi ) = (B\psi, \psi)$$
     对于它们的和，有： \\
@@ -51,9 +51,9 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{exampleblock}{}
+    \begin{tcolorbox1}{命题:}
         2、当且仅当两厄米算符对易时，它们之积才是厄米算符。
-    \end{exampleblock}
+    \end{tcolorbox1}
     \alert{证明：}A,B为厄米算符，则对于任意态，
     \begin{equation*}
         \begin{split}
@@ -69,9 +69,9 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{exampleblock}{}
+    \begin{tcolorbox1}{命题:}
         3、无论两厄米算符是否对易，算符$\dfrac{1}{2}(AB+BA)$ 及 $\dfrac{1}{2i}(AB-BA) $ 都是厄米算符
-    \end{exampleblock}
+    \end{tcolorbox1}
     \alert{证明：}A,B为厄米算符，则对于任意态，
     \begin{equation*}
         \begin{split}
@@ -98,9 +98,9 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{exampleblock}{}
-        4、任意算符总可以分解成$A=A_+ +iA_-$，且$A_+$和$A_-$，都是厄米算符
-    \end{exampleblock}
+    \begin{tcolorbox1}{命题:}
+       4、任意算符总可以分解成$A=A_+ +iA_-$，且$A_+$和$A_-$，都是厄米算符
+    \end{tcolorbox1}
     \alert{证明：}令：
     $$A_+=\dfrac{1}{2} (A+A^+), \qquad A_+=\dfrac{1}{2i} (A-A^+) $$
     有$A=A_+ +iA_-$, 问题转化为证$\dfrac{1}{2} (A+A^+), \qquad \dfrac{1}{2i} (A-A^+) $是厄米算符\\
@@ -118,9 +118,11 @@
 
 \begin{frame}
     \frametitle{本征方程}
-    厄密算符A的本征方程为
-    $$ A\psi=a \psi $$
-    称a是算符A的本征值，$\psi$是属于本征值a的本征函数
+    \begin{tcolorbox1}{本征方程定义：}
+        厄密算符A的本征方程为
+        $$ A\psi=a \psi $$
+        称a是算符A的本征值，$\psi$是属于本征值a的本征函数
+     \end{tcolorbox1}   
 \end{frame} 
 
 \begin{frame}
@@ -136,9 +138,9 @@
 \end{frame} 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{exampleblock}{}
+    \begin{tcolorbox1}{命题:}
         1、试证明厄米算符的本征值为实数
-    \end{exampleblock}
+    \end{tcolorbox1}
     \alert{证明：}设A为厄米算符，有如下本征方程
     $$A\psi=a\psi $$
     \begin{equation*}
@@ -157,9 +159,9 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{exampleblock}{}
-        2、任意态下平均值为实数的算符必为厄米算符
-    \end{exampleblock}
+    \begin{tcolorbox1}{命题:}
+       2、任意态下平均值为实数的算符必为厄米算符
+    \end{tcolorbox1}
     \alert{证明：}任意态$\Psi$下，F的平均值
     $$(\Psi,F\Psi)=\bar{F}=\bar{F}^*=(\Psi,F\Psi)^*=(F\Psi,\Psi), \qquad (1) $$
     令 $\Psi= \psi_1+c\psi_2 $, 代入上式，得：
@@ -198,9 +200,9 @@
 \end{frame} 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{exampleblock}{}
+    \begin{tcolorbox1}{命题:}
         3、试证厄米算符属于不同本征值的本征函数正交
-    \end{exampleblock}
+     \end{tcolorbox1}
     \alert{证明：}设$\psi_a$、$\psi_b$分别是厄米算符A属于本征值a、b的本征函数
     \begin{equation*}
         (\psi_a, A\psi_b)=(\psi_a, b\psi_b)=b(\psi_a, \psi_b)
@@ -243,9 +245,9 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{exampleblock}{}
+    \begin{tcolorbox1}{命题:}
         4、简并的本征函数可通过重组变得正交
-    \end{exampleblock}
+     \end{tcolorbox1}
     \alert{证明：}设厄米算符A属于本征值a的本征函数有f个
     \begin{equation*}
         A\psi_{na})=a\psi_{na}, \qquad (n=1,2,3,\cdots, f)
@@ -273,9 +275,9 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{exampleblock}{}
-        试采用Schmidt正交化方案使能量E的三个简并函数（$\Psi_1, \Psi_2, \Psi_3$）正交
-    \end{exampleblock}
+    \begin{tcolorbox2}{例题:}
+       试采用Schmidt正交化方案使能量E的三个简并函数（$\Psi_1, \Psi_2, \Psi_3$）正交
+     \end{tcolorbox2}
     \alert{解：}取$\psi_1=\dfrac{\Psi_1}{(\Psi_1, \Psi_1)}$\\
     设 $\psi_2'=\Psi_2-(\psi_1, \Psi_2)\psi_1$\\
     \begin{equation*}
@@ -300,9 +302,9 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{exampleblock}{}
+    \begin{tcolorbox1}{命题:}
         5、厄米算符的本征函数系具有完备性
-    \end{exampleblock}
+     \end{tcolorbox1}
     \alert{完备性定义：}设某个体系的厄米算符A具有本征方程
     \begin{equation*}
         A\psi_{n}=a_n\psi_{n}, 
@@ -336,9 +338,9 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{exampleblock}{}
+    \begin{tcolorbox1}{命题:}
         6、厄米算符的本征函数系具有封闭性
-    \end{exampleblock}
+     \end{tcolorbox1}
     \begin{equation*}
         \begin{split}
             \Psi(x)&=\sum_n c_n \psi_{n}(x) \\

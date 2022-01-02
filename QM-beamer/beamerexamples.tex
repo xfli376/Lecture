@@ -1,0 +1,77 @@
+\section{课程简介}
+
+\begin{frame}
+  \begin{algorithm}[H]
+    \SetAlgoLined
+    \KwData{this text}
+    \KwResult{how to write algorithm with \LaTeX2e }
+    initialization\;
+    \While{not at end of this document}{
+        read current\;
+        \eIf{understand}{
+            go to next section\;
+            current section becomes this one\;
+            }{
+            go back to the beginning of current section\;
+        }
+    }
+\caption{How to write algorithms}
+\end{algorithm}
+
+\end{frame}
+
+\begin{frame}
+  \begin{proof}
+    This is a proof
+  \end{proof}
+
+\end{frame}
+
+\begin{frame}
+  \tcbset{colback=white,arc=0mm,width=(\linewidth-4pt)/4,
+  equal height group=AT,before=,after=\hfill,fonttitle=\bfseries}
+  
+  \noindent
+  \foreach \n in {xxx,ggg,AAA,\"Agypten}
+  {\begin{tcolorbox}[title=\n,colframe=red!75!black]
+    Some content.\end{tcolorbox}}
+  
+  \noindent
+  \foreach \n in {xxx,ggg,AAA,\"Agypten}
+  {\begin{tcolorbox}[adjusted title=\n,colframe=blue!75!black]
+  Some content.\end{tcolorbox}}
+  
+  \begin{tcbitemize}[raster columns=3,raster equal height,
+            colframe=red!75!black,colback=red!5!white,fonttitle=\bfseries]
+  \tcbitem[squeezed title={Short title}]
+  First box
+  \tcbitem[squeezed title={This is a very very long title}]
+  Second box
+  \tcbitem[squeezed title={This title is clearly to long for this application}] Third box
+  \end{tcbitemize}
+  
+  \begin{tcbitemize}[raster columns=3,raster equal height,
+            colframe=blue!75!black,colback=red!5!white,fonttitle=\bfseries]
+  \tcbitem[squeezed title*={Short title}]
+  First box
+  \tcbitem[squeezed title*={This is a very very long title}]
+  Second box
+  \tcbitem[squeezed title*={This title is clearly to long for this application}] Third box
+  \end{tcbitemize}
+\end{frame}
+
+
+\begin{frame}
+  \begin{tcolorbox1}{title}
+    This is tcolorbox1
+  \end{tcolorbox1}
+  \begin{tcolorbox1}[2]{title}
+    This is tcolorbox1
+  \end{tcolorbox1}
+  \begin{tcolorbox2}{title}
+    This is tcolorbox2
+  \end{tcolorbox2}
+  \begin{tcolorbox}{title}
+    This is tcolorbox
+  \end{tcolorbox}
+\end{frame}
