@@ -475,7 +475,7 @@
 	\begin{equation*}
 		\left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+\left[l(l+1)-\frac{m^{2}}{1-x^{2}}\right] y=0
 	\end{equation*}		
-	令 m=0，得勒让德方程：
+	令 m=0，得(0阶)勒让德方程：
 	\begin{equation*}
 		\left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+l(l+1)y=0
 	\end{equation*}		
@@ -546,13 +546,13 @@
 \end{frame}	
 
 \begin{frame}
-	取 x=$\cos\theta$,得球谐函数，见下表：\\
+	取 x=$\cos\theta$,得下表：\\
 	{\small $\begin{array}{|l|l|}
 		\hline P_{0}(x)=1 & \\
 		\hline P_{1}(x)=x & P_{1}(\cos \theta)=\cos \theta \\
-		\hline P_{2}(x)=\frac{1}{2}\left(3 x^{2}-1\right) & P_{2}(\cos \theta)=\frac{1}{4}[3 \cos 2 \theta+1] \\
-		\hline P_{3}(x)=\frac{1}{2}\left(5 x^{3}-3 x\right) & P_{3}(\cos \theta)=\frac{1}{8}[5 \cos 3 \theta+3 \cos \theta] \\
-		\hline P_{4}(x)=\frac{1}{8}\left(35 x^{4}-30 x^{2}+3\right) & P_{4}(\cos \theta)=\frac{1}{64}[35 \cos 4 \theta+20 \cos 2 \theta+9] \\
+		\hline P_{2}(x)=\dfrac{1}{2}\left(3 x^{2}-1\right) & P_{2}(\cos \theta)=\dfrac{1}{4}[3 \cos 2 \theta+1] \\
+		\hline P_{3}(x)=\dfrac{1}{2}\left(5 x^{3}-3 x\right) & P_{3}(\cos \theta)=\dfrac{1}{8}[5 \cos 3 \theta+3 \cos \theta] \\
+		\hline P_{4}(x)=\dfrac{1}{8}\left(35 x^{4}-30 x^{2}+3\right) & P_{4}(\cos \theta)=\dfrac{1}{64}[35 \cos 4 \theta+20 \cos 2 \theta+9] \\
 		\hline
 	\end{array}$}
 \end{frame}	 
@@ -730,6 +730,52 @@
 	\alert{证毕！} 
 \end{frame}	
 
+
+\begin{frame}
+	\alert{例 1：}	利用勒让德多项式正交性计算积分：
+	\begin{equation*}
+		\int_{-1}^{+1} x^2 P _{n}(x) dx 
+	\end{equation*}		
+	\alert{解：} 由 $ P_{n}(x)=\dfrac{1}{2^{n} n !} \dfrac{d^{n}}{d x^{n}}\left(x^{2}-1\right)^{n} $, 得：
+	\begin{equation*}
+		P_0(x)=1, 	P_1(x)=x,  P_2(x)= \dfrac{1}{2}(3x^2-1)  
+	\end{equation*}	
+	 $x^2$的勒让德多项式展开式：
+	$$ x^2 =\dfrac{2}{3}P_2+\dfrac{1}{3}P_0$$
+	原式为：
+	\begin{equation*}
+			\int_{-1}^{+1} x^2 P _{n} dx = \int_{-1}^{+1} (\dfrac{2}{3}P_2+\dfrac{1}{3}P_0)  P _{n} dx 	
+	\end{equation*}	
+\end{frame}	
+
+\begin{frame}
+	分情况讨论：\\
+	(1)  $n=0$, 
+	\begin{equation*}
+		\int_{-1}^{+1} x^2 P _{n} dx  =   \int_{-1}^{+1} \dfrac{1}{3}P_0  P _{0} dx=\dfrac{1}{3} \frac{2}{2n+1}  = \dfrac{2}{3}	
+	\end{equation*}	
+	(2)  $n=2$, 
+	\begin{equation*}
+		\int_{-1}^{+1} x^2 P _{n} dx  =   \int_{-1}^{+1} \dfrac{2}{3}P_2  P _{2} dx= \dfrac{2}{3}\frac{2}{2n+1}  = \dfrac{4}{15}	
+	\end{equation*}	
+	(3) $ n\neq 0,2$
+	\begin{equation*}
+		\int_{-1}^{+1} x^2 P _{n} dx  =  0	
+	\end{equation*}
+\end{frame}	
+
+\begin{frame}
+	\frametitle{Tips：}	
+	\begin{equation*}
+		\begin{split}
+		1&= P_0 \\
+		x&=P_1\\
+	    x^2&=\dfrac{1}{3}(2P_2+P_0)\\
+		x^3&=\dfrac{1}{5}(2P_3+3P_1)		
+		\end{split}
+	\end{equation*}
+\end{frame}	
+
 \subsection{连带勒让德多项式}
 
 \begin{frame}
@@ -740,16 +786,31 @@
 	\end{equation*}		
 	解为勒让德多项式
 	\begin{equation*}
-		P_{n}(x)=\frac{1}{2^{n} n !} \frac{d^{n}}{d x^{n}}\left(x^{2}-1\right)^{n}, \quad(n=0,1,2,3, \cdots \cdots)
+		P_{l}(x)=\frac{1}{2^{l} l !} \frac{d^{l}}{d x^{l}}\left(x^{2}-1\right)^{l}, \quad(l=0,1,2,3, \cdots \cdots)
 	\end{equation*}	 
-	同理可解连带勒让德方程：
+	连带勒让德方程：
 	\begin{equation*}
 		\left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+\left[l(l+1)-\frac{m^{2}}{1-x^{2}}\right] y=0
 	\end{equation*}		
 	解为连带勒让德多项式
 	\begin{equation*}
-		P^m  _{n}(x)= (1-x^2) ^ {m/2 } \frac{d^{m}}{d x^{m} } P_n(x),  \quad(m \le n, n=1,2,3, \cdots \cdots)
+		P^m  _{l}(x)= (1-x^2) ^ {m/2 } \frac{d^{m}}{d x^{m} } P_l(x),  \quad(m \le l, l=0,1,2,3, \cdots \cdots)
 	\end{equation*}	 
+\end{frame}	
+
+\begin{frame}
+	\frametitle{*解法细节：}
+	把勒让德多项式 $P_{l}(x) $ 代入勒让德方程，然后对勒让德方程逐级求导, m次后得连带勒让德方程
+	\begin{equation*}
+		\begin{split}
+			&\left(1-x^{2}\right) P'' _l  (x) -2 x P' _l (x)+l(l+1)P_l(x)=0	\\
+			&\left(1-x^{2}\right) P^{3} _l  (x) -2(1+1) x P'' _l (x)+(l(l+1)-1(1+1)P'_l(x)=0	\\
+			&\left(1-x^{2}\right) P^{4} _l  (x) -2(2+1) x P^{3} _l (x)+(l(l+1)-2(2+1)P''_l(x)=0	\\
+			& \cdots \cdots\\
+			&\left(1-x^{2}\right) P^{m+2} _l  (x) -2(m+1) x P^{m+1} _l (x)+(l(l+1)-m(m+1)P^{m} _l(x)=0	\\
+		\end{split}
+	\end{equation*}
+	即： 连带勒让德多项式  $P^{m} _l  (x)  $ 是连带勒让德方程的解
 \end{frame}	
 
 \begin{frame}
@@ -811,17 +872,19 @@
 	1、将$x=\cos x$ 代入勒让德多项式,写出前4个勒让德多项式表达式 \\
 	2、计算积分
 	\begin{equation*}
-		\int_{-1}^{1} P_1 (x) P_2(x) dx, \qquad  	\int_{-1}^{1} P_2 (x) P_2(x) dx
+		\int_{-1}^{1} (x^2+x) P_n(x) dx, \qquad \int_{-1}^{1} x^k P_n(x) dx, \quad(k<n) \qquad  	\int_{-1}^{1} x^n P_n(x) dx   
 	\end{equation*}
 \end{frame}	
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \section{径向方程与拉盖尔多项式}
 
 \subsection{广义拉盖方程}
 
 \begin{frame}
-	\frametitle{径向方程与广义拉盖方程}
+	\frametitle{径向方程与拉盖方程}
 	径向方程：
 	\begin{equation*}
 		\frac{d}{d r} (r^2\frac{d R }{d r} ) + \frac{2 \mu r^2} {\hbar^2}(E+ \frac{e_s ^2}{r} ) =\lambda R
@@ -833,7 +896,7 @@
 	\begin{equation*}
 		\frac{d^2 R}{d r^2} + \frac{2}{r^2}\frac{d R }{d r}  + \frac{2 \mu} {\hbar^2}(E+ \frac{e_s ^2}{r} ) R- \frac{l(l+1)}{r^2} R=0
 	\end{equation*}	
-	令 $\xi=\alpha r$, $U(\xi)=R(\xi /\alpha) $, $\alpha =\sqrt{-\dfrac{8\mu E}{}\hbar^2}$, $\beta=\dfrac{2\mu e^2 _s}{\alpha \hbar^2}$,\\
+	令 $\xi=\alpha r$, $U(\xi)=R(\xi /\alpha) $, $\alpha =\sqrt{-\dfrac{8\mu E}{\hbar^2}}$, $\beta=\dfrac{2\mu e^2 _s}{\alpha \hbar^2}$,\\
 	进行伸缩变换 ......，得：
 	\begin{equation*}
 		\frac{d^2 U}{d \xi ^2} + \frac{2}{\xi }\frac{d U }{d \xi}  -[ \frac{1} {4}  -\frac{\beta}{\xi} + \frac{l(l+1)}{\xi ^2}] U=0  \cdots (1)
@@ -877,7 +940,7 @@
 \end{frame}	
 
 \begin{frame}
-	对上次求异，并把结果代回原方程（1），得
+	对上式求导，并把结果代回原方程（1），得
 	\begin{equation*}
 		\xi H''  + [2(l+1) -\xi] H' -[\beta -(l+1)] H =0
 	\end{equation*}	
@@ -929,7 +992,7 @@
 	\end{equation*}	
 	拉盖多项式的系数为：
 	\begin{equation*}
-		c_{k}=(-1)^k \frac{(n!) ^2}{(k!)^2 (n-k)!},  \qquad (k=1,2,\cdots, n)
+		c_{k}=(-1)^k \frac{(n!) ^2}{(k!)^2 (n-k)!},  \qquad (k=0,1,2,\cdots, n)
 	\end{equation*}	
 \end{frame}	
 
@@ -939,10 +1002,25 @@
 	\begin{split}
 		L_n(x) &=\sum_{k=0}^{n} c_{k} x^k= \sum_{k=0}^{n} (-1)^k \frac{(n!)^2 }{(k!)^2 (n-k)!}x^k \\
 		&= \sum_{k=0}^{n} (-1)^k \frac{(n!) }{(k!) (n-k)!} \frac{n!}{k!}x^k   \\
-		&= \sum_{k=0}^{n} (-1)^k C^k _n \frac{n!}{k!}x^k,    \qquad (k=1,2,\cdots, n)
+		&= \sum_{k=0}^{n} (-1)^k C^k _n \frac{n!}{k!}x^k,    \qquad (k=0,1,2,\cdots, n)
 	\end{split}		
 	\end{equation*}	
 \end{frame}	
+
+\begin{frame}
+	\frametitle{Tips：}
+	\begin{equation*}
+	\begin{split}
+		L_0(x)&=1\\
+		L_1(x)&=1-x\\
+		L_2(x)&=2-4x+x^2\\
+		L_3(x)&=6-18x+9x^2-x^3\\
+	\end{split}		
+	\end{equation*}	
+	课堂作业：\\
+	求 $x, x^2, x^3 $的拉盖尔多项式展开式
+\end{frame}	
+
 
 \begin{frame}
 	\frametitle{拉盖多项式的性质}
@@ -1131,13 +1209,15 @@
 		\frac{1}{\alpha ^3}	&\int_{0}^{\infty}  N^2_{nl}  R^2 (\xi)  \xi^2 d\xi =1   \\
 		\frac{1}{\alpha ^3} &	\int_{0}^{\infty}  N^2_{nl}  \xi ^{2l+2}  [L_{n-l-1} ^{2l+1} (\xi)]^2 e^{-\xi}  d\xi =1   \\
 		\frac{1}{\alpha ^3} &	\int_{0}^{\infty}  N^2_{nl}  \xi ^{M+1}  [L_N ^M (\xi)]^2 e^{-\xi}  d\xi =1   \\
-		\frac{1}{\alpha ^3} &	  N^2_{nl}  \frac{(N+M)!}{N!} (2N+M+1) =1   \\
 	\end{split}		
 	\end{equation*}	
 \end{frame}		
 
 \begin{frame}
-	$\to$
+	\begin{equation*}
+		\frac{1}{\alpha ^3} 	  N^2_{nl}  \frac{(N+M)!}{N!} (2N+M+1) =1  	
+	\end{equation*}	
+	$\to$ \\
 	\begin{equation*}
 		N^2 _{nl}  \frac{2n (n+1)!} {\alpha^3 (n-l-1)!} =1
 	\end{equation*}	

@@ -2,105 +2,181 @@
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\beamer@sectionpages {1}{2}}
-\headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{贝塞尔函数}{3}{贝塞尔函数}{0}}
-\headcommand {\beamer@subsectionpages {3}{2}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{贝塞尔方程}}
-\headcommand {\slideentry {1}{1}{1}{3/3}{贝塞尔方程}{0}}
+\headcommand {\slideentry {0}{0}{3}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\slideentry {1}{1}{2}{4/4}{贝塞尔方程}{0}}
+\headcommand {\beamer@sectionpages {1}{3}}
+\headcommand {\beamer@subsectionpages {1}{3}}
+\headcommand {\sectionentry {1}{氢原子薛定谔方程分离变量 }{4}{氢原子薛定谔方程分离变量 }{0}}
+\headcommand {\beamer@subsectionpages {4}{3}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{相对坐标系}}
+\headcommand {\slideentry {1}{1}{1}{4/4}{相对坐标系}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\slideentry {1}{1}{3}{5/5}{贝塞尔方程}{0}}
+\headcommand {\slideentry {1}{1}{2}{5/5}{相对坐标系}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {1}{1}{4}{6/6}{贝塞尔方程}{0}}
+\headcommand {\slideentry {1}{1}{3}{6/6}{相对坐标系}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {1}{1}{5}{7/7}{贝塞尔方程}{0}}
+\headcommand {\slideentry {1}{1}{4}{7/7}{相对坐标系}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {1}{1}{6}{8/8}{贝塞尔方程}{0}}
+\headcommand {\slideentry {1}{1}{5}{8/8}{相对坐标系}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {1}{1}{7}{9/9}{贝塞尔方程}{0}}
+\headcommand {\slideentry {1}{1}{6}{9/9}{相对坐标系}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {1}{1}{8}{10/10}{贝塞尔方程}{0}}
+\headcommand {\beamer@subsectionpages {4}{9}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{10}{球坐标拉普拉斯}}
+\headcommand {\slideentry {1}{2}{1}{10/10}{球坐标拉普拉斯}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {1}{1}{9}{11/11}{贝塞尔方程}{0}}
+\headcommand {\slideentry {1}{2}{2}{11/11}{球坐标拉普拉斯}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {1}{1}{10}{12/12}{贝塞尔方程}{0}}
+\headcommand {\slideentry {1}{2}{3}{12/12}{球坐标拉普拉斯}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {1}{1}{11}{13/13}{贝塞尔方程}{0}}
+\headcommand {\slideentry {1}{2}{4}{13/13}{球坐标拉普拉斯}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {1}{1}{12}{14/14}{贝塞尔方程}{0}}
+\headcommand {\slideentry {1}{2}{5}{14/14}{球坐标拉普拉斯}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {1}{1}{13}{15/15}{贝塞尔方程}{0}}
+\headcommand {\slideentry {1}{2}{6}{15/15}{球坐标拉普拉斯}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {1}{1}{14}{16/16}{贝塞尔方程}{0}}
+\headcommand {\slideentry {1}{2}{7}{16/16}{球坐标拉普拉斯}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {1}{1}{15}{17/17}{贝塞尔方程}{0}}
+\headcommand {\slideentry {1}{2}{8}{17/17}{球坐标拉普拉斯}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {1}{1}{16}{18/18}{贝塞尔方程}{0}}
+\headcommand {\slideentry {1}{2}{9}{18/18}{球坐标拉普拉斯}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@subsectionpages {3}{18}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{19}{贝塞尔函数与Gamma函数}}
-\headcommand {\slideentry {1}{2}{1}{19/19}{贝塞尔函数与Gamma函数}{0}}
+\headcommand {\beamer@subsectionpages {10}{18}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{19}{球坐标氢原子方程 }}
+\headcommand {\slideentry {1}{3}{1}{19/19}{球坐标氢原子方程 }{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {1}{2}{2}{20/20}{贝塞尔函数与Gamma函数}{0}}
+\headcommand {\slideentry {1}{3}{2}{20/20}{球坐标氢原子方程 }{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {1}{2}{3}{21/21}{贝塞尔函数与Gamma函数}{0}}
+\headcommand {\slideentry {1}{3}{3}{21/21}{球坐标氢原子方程 }{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {1}{2}{4}{22/22}{贝塞尔函数与Gamma函数}{0}}
+\headcommand {\slideentry {1}{3}{4}{22/22}{球坐标氢原子方程 }{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {1}{2}{5}{23/23}{贝塞尔函数与Gamma函数}{0}}
+\headcommand {\beamer@sectionpages {4}{22}}
+\headcommand {\beamer@subsectionpages {19}{22}}
+\headcommand {\sectionentry {2}{角向方程与勒让德多项式}{23}{角向方程与勒让德多项式}{0}}
+\headcommand {\beamer@subsectionpages {23}{22}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{23}{ 经/纬度分离}}
+\headcommand {\slideentry {2}{1}{1}{23/23}{ 经/纬度分离}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\slideentry {1}{2}{6}{24/24}{贝塞尔函数与Gamma函数}{0}}
+\headcommand {\slideentry {2}{1}{2}{24/24}{ 经/纬度分离}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {1}{2}{7}{25/25}{贝塞尔函数与Gamma函数}{0}}
+\headcommand {\slideentry {2}{1}{3}{25/25}{ 经/纬度分离}{0}}
 \headcommand {\beamer@framepages {25}{25}}
-\headcommand {\slideentry {1}{2}{8}{26/26}{贝塞尔函数与Gamma函数}{0}}
+\headcommand {\slideentry {2}{1}{4}{26/26}{ 经/纬度分离}{0}}
 \headcommand {\beamer@framepages {26}{26}}
-\headcommand {\slideentry {1}{2}{9}{27/27}{贝塞尔函数与Gamma函数}{0}}
+\headcommand {\slideentry {2}{1}{5}{27/27}{ 经/纬度分离}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {1}{2}{10}{28/28}{贝塞尔函数与Gamma函数}{0}}
+\headcommand {\slideentry {2}{1}{6}{28/28}{ 经/纬度分离}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\slideentry {1}{2}{11}{29/29}{贝塞尔函数与Gamma函数}{0}}
+\headcommand {\beamer@subsectionpages {23}{28}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{29}{ 勒让德多项式}}
+\headcommand {\slideentry {2}{2}{1}{29/29}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\beamer@subsectionpages {19}{29}}
-\headcommand {\beamer@subsectionentry {0}{1}{3}{30}{贝塞尔函数的性质}}
-\headcommand {\slideentry {1}{3}{1}{30/30}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{2}{30/30}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\slideentry {1}{3}{2}{31/31}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{3}{31/31}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {1}{3}{3}{32/32}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{4}{32/32}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {1}{3}{4}{33/33}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{5}{33/33}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {1}{3}{5}{34/34}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{6}{34/34}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\slideentry {1}{3}{6}{35/35}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{7}{35/35}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {1}{3}{7}{36/36}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{8}{36/36}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {1}{3}{8}{37/37}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{9}{37/37}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {1}{3}{9}{38/38}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{10}{38/38}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {1}{3}{10}{39/39}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{11}{39/39}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {1}{3}{11}{40/40}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{12}{40/40}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {1}{3}{12}{41/41}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{13}{41/41}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {1}{3}{13}{42/42}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{14}{42/42}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {1}{3}{14}{43/43}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{15}{43/43}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {1}{3}{15}{44/44}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{16}{44/44}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {1}{3}{16}{45/45}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{17}{45/45}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {1}{3}{17}{46/46}{贝塞尔函数的性质}{0}}
+\headcommand {\slideentry {2}{2}{18}{46/46}{ 勒让德多项式}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\beamer@partpages {1}{46}}
-\headcommand {\beamer@subsectionpages {30}{46}}
-\headcommand {\beamer@sectionpages {3}{46}}
-\headcommand {\beamer@documentpages {46}}
-\headcommand {\gdef \inserttotalframenumber {46}}
+\headcommand {\slideentry {2}{2}{19}{47/47}{ 勒让德多项式}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\beamer@subsectionpages {29}{47}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{48}{连带勒让德多项式}}
+\headcommand {\slideentry {2}{3}{1}{48/48}{连带勒让德多项式}{0}}
+\headcommand {\beamer@framepages {48}{48}}
+\headcommand {\slideentry {2}{3}{2}{49/49}{连带勒让德多项式}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\slideentry {2}{3}{3}{50/50}{连带勒让德多项式}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\slideentry {2}{3}{4}{51/51}{连带勒让德多项式}{0}}
+\headcommand {\beamer@framepages {51}{51}}
+\headcommand {\slideentry {2}{3}{5}{52/52}{连带勒让德多项式}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\slideentry {2}{3}{6}{53/53}{连带勒让德多项式}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\beamer@sectionpages {23}{53}}
+\headcommand {\beamer@subsectionpages {48}{53}}
+\headcommand {\sectionentry {3}{径向方程与拉盖尔多项式}{54}{径向方程与拉盖尔多项式}{0}}
+\headcommand {\beamer@subsectionpages {54}{53}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{54}{广义拉盖方程}}
+\headcommand {\slideentry {3}{1}{1}{54/54}{广义拉盖方程}{0}}
+\headcommand {\beamer@framepages {54}{54}}
+\headcommand {\slideentry {3}{1}{2}{55/55}{广义拉盖方程}{0}}
+\headcommand {\beamer@framepages {55}{55}}
+\headcommand {\slideentry {3}{1}{3}{56/56}{广义拉盖方程}{0}}
+\headcommand {\beamer@framepages {56}{56}}
+\headcommand {\slideentry {3}{1}{4}{57/57}{广义拉盖方程}{0}}
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\beamer@subsectionpages {54}{57}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{58}{拉盖方程多项式}}
+\headcommand {\slideentry {3}{2}{1}{58/58}{拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {58}{58}}
+\headcommand {\slideentry {3}{2}{2}{59/59}{拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {59}{59}}
+\headcommand {\slideentry {3}{2}{3}{60/60}{拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\slideentry {3}{2}{4}{61/61}{拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {61}{61}}
+\headcommand {\slideentry {3}{2}{5}{62/62}{拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {62}{62}}
+\headcommand {\slideentry {3}{2}{6}{63/63}{拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {63}{63}}
+\headcommand {\slideentry {3}{2}{7}{64/64}{拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {64}{64}}
+\headcommand {\slideentry {3}{2}{8}{65/65}{拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {65}{65}}
+\headcommand {\slideentry {3}{2}{9}{66/66}{拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {66}{66}}
+\headcommand {\slideentry {3}{2}{10}{67/67}{拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {67}{67}}
+\headcommand {\slideentry {3}{2}{11}{68/68}{拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {68}{68}}
+\headcommand {\slideentry {3}{2}{12}{69/69}{拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {69}{69}}
+\headcommand {\beamer@subsectionpages {58}{69}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{70}{广义拉盖方程多项式}}
+\headcommand {\slideentry {3}{3}{1}{70/70}{广义拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {70}{70}}
+\headcommand {\slideentry {3}{3}{2}{71/71}{广义拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {71}{71}}
+\headcommand {\slideentry {3}{3}{3}{72/72}{广义拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {72}{72}}
+\headcommand {\slideentry {3}{3}{4}{73/73}{广义拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {73}{73}}
+\headcommand {\slideentry {3}{3}{5}{74/74}{广义拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {74}{74}}
+\headcommand {\slideentry {3}{3}{6}{75/75}{广义拉盖方程多项式}{0}}
+\headcommand {\beamer@framepages {75}{75}}
+\headcommand {\beamer@partpages {1}{75}}
+\headcommand {\beamer@subsectionpages {70}{75}}
+\headcommand {\beamer@sectionpages {54}{75}}
+\headcommand {\beamer@documentpages {75}}
+\headcommand {\gdef \inserttotalframenumber {75}}
