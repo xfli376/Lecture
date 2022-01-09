@@ -30,7 +30,7 @@
 
 ### 第一部分 早期量子论
 
-#### 第一讲 - [普朗克能量子假说](./QM-beamer/lecture1.tex)
+#### 第一讲 - [普朗克能量子假说](./QM-md/export/index.html)
 
 - Python简介 - Python的历史 / Python的优缺点 / Python的应用领域
 - 搭建编程环境 - Windows环境 / Linux环境 / MacOS环境
