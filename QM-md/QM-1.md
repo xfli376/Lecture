@@ -1,6 +1,6 @@
 ---
 theme : "night"
-transition: "slide"
+transition: "convex"
 highlightTheme: "monokai"
 logoImg: "images/uestclogo.jpg"
 slideNumber: false
@@ -8,10 +8,10 @@ enableTitleFooter: false
 title: "量子力学与统计物理"
 ---
 
-<!-- .slide: data-background="images/2021-12-03-05-23-33.png" -->
 
-# 量子力学与统计物理 {style=background:green;width:960px}
-### Quantum mechanics and statistical physics
+
+## 量子力学与统计物理 {style=background:green;width:960px}
+#### Quantum mechanics and statistical physics
 
 <br>
 
@@ -25,13 +25,15 @@ title: "量子力学与统计物理"
 ### 请选择PPT转场方式
 
 You can select from different transitions
+
 [None](?transition=none#/transitions) - [Fade](?transition=fade#/transitions) - [Slide](?transition=slide#/transitions) - [Convex](?transition=convex#/transitions) - [Concave](?transition=concave#/transitions) - [Zoom](?transition=zoom#/transitions)
 
 ---
 
-## 2、请选择PPT主题 
+### 2、请选择PPT主题 
 
-reveal.js comes with a few themes built in:
+You can select from different themes:
+
 <a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/black.css'); return false;">Black (default)</a> -
 <a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/white.css'); return false;">White</a> -
 <a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/league.css'); return false;">League</a> -

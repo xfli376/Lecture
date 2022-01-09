@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>title shown in </title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="http://localhost:59181/libs/reveal.js/4.1.3/reset.css">
+	<link rel="stylesheet" href="http://localhost:59181/libs/reveal.js/4.1.3/reveal.css">
+
+	
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	  <!-- highlight Theme -->
+  	
+	  <link rel="stylesheet" href="http://localhost:59181/libs/highlight.js/11.3.1/styles/monokai.min.css">
+	
+	
+		
+	<link rel="stylesheet" href="http://localhost:59181/libs/reveal.js/4.1.3/plugin/chalkboard/style.css">
+	
+	
+	
+		<link rel="stylesheet" href="http://localhost:59181/libs/reveal.js/4.1.3/plugin/customcontrols/style.css">
+	
+	<link rel="stylesheet" href="http://localhost:59181/libs/styles/tasklist.css">
+
+
+
+  <!-- Revealjs Theme -->
+  
+  	<link rel="stylesheet" href="http://localhost:59181/libs/reveal.js/4.1.3/theme/night.css" id="theme">
+  
+  
+
+
+  <!-- Revealjs Theme -->
+  
+
+ 
+</head>
+
+<body>
+  
+    <div id="logo" style="position: fixed; top: 20px; left: 20px; z-index: 1; height:3rem;">
+        <img src="images/uestclogo.jpg" style="height:100%"/>
+    </div>
+  
+
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      
+
+
+    
+        <section data-background="images/2021-12-03-05-23-33.png">
+            
+            <!-- .slide: data-background="images/2021-12-03-05-23-33.png" -->
+<h1 style="background:green;width:960px">量子力学与统计物理</h1>
+<h3>Quantum mechanics and statistical physics</h3>
+<br>
+<div class="block">
+<p><strong>李小飞</strong> @ 光电科学与工程学院</p>
+</div style="background:none;width:960px">
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>1、请选择PPT转场方式</h3>
+<p>You can select from different transitions
+<a href="?transition=none#/transitions">None</a> - <a href="?transition=fade#/transitions">Fade</a> - <a href="?transition=slide#/transitions">Slide</a> - <a href="?transition=convex#/transitions">Convex</a> - <a href="?transition=concave#/transitions">Concave</a> - <a href="?transition=zoom#/transitions">Zoom</a></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>2、请选择PPT主题</h2>
+<p>reveal.js comes with a few themes built in:
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/black.css'); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/white.css'); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/league.css'); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/sky.css'); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/beige.css'); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/simple.css'); return false;">Simple</a> <br>
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/serif.css'); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/blood.css'); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/night.css'); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/moon.css'); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/solarized.css'); return false;">Solarized</a></p>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section data-background="#ff0000">
+            <h2>背影设置</h2>
+<!-- .slide: data-background="#ff0000" -->
+<h2>1-color Backgrounds</h2>
+<p>Set <code>data-background=&quot;#ffffff&quot;</code> on a slide to change the background color. All CSS color formats are supported.</p>
+
+            </section>
+        
+            <section data-background="images/2021-12-03-05-23-33.png">
+                <!-- .slide: data-background="images/2021-12-03-05-23-33.png" -->
+<h2>2-Image Backgrounds</h2>
+
+            </section>
+        
+            <section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+                <!-- .slide: data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000" -->
+<h2>3-Video Backgrounds</h2>
+
+            </section>
+        
+            <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+                <!-- .slide: data-background="http://i.giphy.com/90F8aUepslB84.gif" -->
+<h2>4-GIF Backgrounds</h2>
+
+            </section>
+        
+            <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+                <!-- .slide: data-transition="slide" data-background="#4d7e65" data-background-transition="zoom" -->
+<h2>5-Background Transitions</h2>
+<p>Different background transitions are available via the backgroundTransition option. This one’s called “zoom”.</p>
+
+            </section>
+        
+            <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                <!-- .slide: data-transition="slide" data-background="#b5533c" data-background-transition="zoom" -->
+<h2>Background Transitions</h2>
+<p>You can override background transitions per-slide.</p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>4、 reveal.js 对数学公式的支持</h2>
+<p>A thin wrapper for MathJax</p>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>The Lorenz Equations</h3>
+<ul>
+<li>方法-1</li>
+</ul>
+<div>
+\[
+\begin{aligned}
+\dot{x} &amp; = \sigma(y-x) \\
+\dot{y} &amp; = \rho x - y - xz \\
+\dot{z} &amp; = -\beta z + xy
+\end{aligned} 
+\]
+</div>
+            </section>
+        
+            <section >
+                <h3>A Cross Product Formula</h3>
+<div>
+\[
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
+\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0
+\end{vmatrix}  
+\]
+</div>
+            </section>
+        
+            <section >
+                <h3>The Cauchy-Schwarz Inequality</h3>
+<ul>
+<li>方法-2</li>
+</ul>
+<script type="math/tex; mode=display">
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+</script>
+
+            </section>
+        
+            <section >
+                <h3>The probability of getting (k) heads when flipping (n) coins is</h3>
+<ul>
+<li>方法-3</li>
+</ul>
+<p>
+\[P(E) = {n \choose k} p^k (1-p)^{ n-k} \]
+</p>
+            </section>
+        
+            <section >
+                <h3>An Identity of Ramanujan</h3>
+<ul>
+<li>方法-4</li>
+</ul>
+<span>
+\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\ldots} } } } \]
+</span>
+            </section>
+        
+            <section >
+                <h3>A Rogers-Ramanujan Identity</h3>
+<span>
+\[ 1 + \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}\]
+</span>
+            </section>
+        
+            <section >
+                <h3>Maxwell’s Equations</h3>
+<span>
+ \[ \begin{aligned} \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\ \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\ \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\ \nabla \cdot \vec{\mathbf{B}} & = 0 \end{aligned} \]
+</span>
+            </section>
+        
+            <section >
+                <ul>
+<li>方法-5</li>
+</ul>
+<section data-markdown>
+ 这是一个行内公式 $ J(\theta_0,\theta_1) = \sum_{i=0} $
+</section>
+<section data-markdown>
+  这是一个块公式 $$ J(\theta_0,\theta_1) = \sum_{i=0} $$
+</section>
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h1>3、 vscode-reveal  简介</h1>
+<p>This extension let you display a reveal.js presentation directly from an opened markdown document.</p>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h2>Features</h2>
+<ul>
+<li><a href="#markdown">Markdown</a></li>
+<li><a href="#statusbar">Status bar</a></li>
+<li><a href="#sidebar">Sidebar and navigation</a></li>
+<li><a href="#theme">Theme</a></li>
+<li><a href="#highlight">Highlight Theme</a></li>
+<li><a href="#options">Reveal.js Options</a></li>
+<li><a href="#frontmatter">YAML Front Matter</a></li>
+<li><a href="#preview">Open preview on right side</a></li>
+<li><a href="#browser">Open in browser</a></li>
+<li><a href="#pdf">Print to PDF</a></li>
+<li><a href="#htmlexport">Export static Website</a></li>
+<li><a href="#plugins">Plugins</a></li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h2><a id="markdown"></a> Markdown</h2>
+<p>Since Reveal.js use marked to parse the markdown string you can use this in your document:</p>
+<ul>
+<li>GitHub flavored markdown.</li>
+<li>GFM tables</li>
+</ul>
+<p>If you need a sample file you can get it here:
+<a href="https://raw.githubusercontent.com/evilz/vscode-reveal/master/sample.md">https://raw.githubusercontent.com/evilz/vscode-reveal/master/sample.md</a></p>
+
+            </section>
+        
+            <section >
+                <section data-markdown>
+  $$ J(\theta_0,\theta_1) = \sum_{i=0} $$
+</section>
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h2><a id="statusbar"></a> Status bar</h2>
+<p>As soon as your markdown document has at least two slides, slides counter will appear in the status bar on right.</p>
+<p><strong>Now in version 2</strong>, you can see a list of all your slides on the sidebar.</p>
+
+            </section>
+        
+            <section >
+                <h2><a id="theme"></a> Theme</h2>
+<p>reveal.js comes with a few themes built in:</p>
+<ul>
+<li>Black (default)</li>
+<li>White</li>
+<li>League</li>
+<li>Sky</li>
+<li>Beige</li>
+<li>Simple</li>
+<li>Serif</li>
+<li>Blood</li>
+<li>Night</li>
+<li>Moon</li>
+<li>Solarized</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <p>You can set the theme of reveal.js</p>
+<ul>
+<li>using <code>revealjs.theme</code> parameter in VSCode config</li>
+<li>in the document itself using front matter.</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <p>If you want a custom theme</p>
+<ul>
+<li>
+<p>add custom style to a CSS file (my-theme.css) in the same folder that your markdown.</p>
+</li>
+<li>
+<p>add this in the front-matter header :</p>
+</li>
+</ul>
+<pre><code>---
+customTheme : &quot;my-theme&quot;
+---
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h2><a id="highlight"></a> Highlight Theme</h2>
+<ul>
+<li>code block in your markdown will be highlighted by highlight.js.</li>
+<li>set <code>revealjs.highlightTheme</code> parameter of VSCode,</li>
+<li>or set it using front-matter.</li>
+</ul>
+<pre><code>---
+highlightTheme : &quot;other theme&quot;
+---
+</code></pre>
+<ul>
+<li>Get the theme list via <a href="https://highlightjs.org/">https://highlightjs.org/</a></li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h2><a id="options"></a> Reveal.js Options</h2>
+<p>You can customize many setting on for your reveal.js presentation.</p>
+<ul>
+<li>revealjs.theme (black, white, league, beige, sky, night, serif, simple, solarized</li>
+<li>revealjs.highlightTheme (Zenburn)</li>
+<li>revealjs.controls (true)</li>
+<li>revealjs.progress (true)</li>
+<li>revealjs.slideNumber</li>
+<li>revealjs.history</li>
+<li>revealjs.keyboard</li>
+<li>revealjs.overview&lt;</li>
+<li>revealjs.center</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <ul>
+<li>revealjs.touch</li>
+<li>revealjs.loop</li>
+<li>revealjs.rtl</li>
+<li>revealjs.shuffle</li>
+<li>revealjs.fragments</li>
+<li>revealjs.embedded</li>
+<li>revealjs.help</li>
+<li>revealjs.showNotes&lt;</li>
+<li>revealjs.autoSlide&lt;</li>
+<li>revealjs.autoSlideMethod</li>
+<li>Reveal.navigateNext</li>
+<li>revealjs.autoSlideStoppable</li>
+<li>revealjs.mouseWheel</li>
+<li>revealjs.hideAddressBar</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <ul>
+<li>revealjs.previewLinks&lt;</li>
+<li>revealjs.transition (none/fade/slide/convex/concave/zoom)</li>
+<li>revealjs.transitionSpeed (default/fast/slow)</li>
+<li>revealjs.backgroundTransition (none/fade/slide/convex/concave/zoom)</li>
+<li>revealjs.viewDistance</li>
+<li>revealjs.parallaxBackgroundImage</li>
+<li>revealjs.parallaxBackgroundSize</li>
+<li>revealjs.parallaxBackgroundHorizontal</li>
+<li>revealjs.parallaxBackgroundVertical</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h2><a id="frontmatter"></a> YAML Front Matter</h2>
+<p>You can change settings directly in your markdown file using front matter style. You can change all extention settings like this :</p>
+<pre><code>---
+theme : &quot;white&quot;
+transition: &quot;zoom&quot;
+---
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h2><a id="preview"></a> Open preview on right side</h2>
+<p>To display the preview on the right side you can :</p>
+<ul>
+<li>click on slide count in status bar</li>
+<li>click split icon in sidebar header</li>
+<li>call command <code>Revealjs: Show presentation by side</code></li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h2><a id="browser"></a> Open in browser</h2>
+<p>To display presentation in the browser you can:</p>
+<ul>
+<li>click on server address in the status bar</li>
+<li>click the icon in sidebar header</li>
+<li>call command <code>Revealjs: Open presentation in a browser</code></li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h2><a id="pdf"></a> Print to PDF</h2>
+<p>To export your presentation to pdf you can:</p>
+<ul>
+<li>click on PDF icon in the sidebar</li>
+<li>call the command <code>Revealjs: Export in PDF</code></li>
+</ul>
+<p>This will try to launch Chrome or your default browser and launch printing.</p>
+<p>Be sure to set print setting correctly:</p>
+<ul>
+<li>No margin</li>
+<li>print background</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h2><a id="htmlexport"></a> Export static Website</h2>
+<p>To export your presentation to a static website you can:</p>
+<ul>
+<li>click on HTML icon in the sidebar</li>
+<li>call the command <code>Revealjs: Export in HTML</code></li>
+</ul>
+<p>This will try to launch Chrome in headless or your default browser it takes about 10sec and then open the export folder.</p>
+
+            </section>
+        
+            <section >
+                <h2><a id="plugins"></a> Plugins</h2>
+<h3>Disable slideout menu</h3>
+<pre><code>---
+enableMenu: false
+---
+</code></pre>
+<h3>Disable chalkboard</h3>
+<pre><code>---
+enableChalkboard: false
+---
+</code></pre>
+<h3>Disable title footer</h3>
+<pre><code>---
+enableTitleFooter: false
+---
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Disable zoom</h3>
+<pre><code>---
+enableZoom: false
+---
+</code></pre>
+<h3>Disable search</h3>
+<pre><code>---
+enableSearch: false
+---
+</code></pre>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>Bar chart with CSV data</h3>
+<canvas class="stretch" data-chart="bar">
+,January, February, March, April, May, June, July
+My first dataset, 65, 59, 80, 81, 56, 55, 40
+My second dataset, 28, 48, 40, 19, 86, 27, 90
+</canvas>
+            </section>
+        
+            <section >
+                <h3>Line chart with CSV data and JSON configuration</h3>
+<canvas class="stretch" data-chart="line">
+My first dataset,  65, 59, 80, 81, 56, 55, 40
+<!-- This is a comment -->
+My second dataset, 28, 48, 40, 19, 86, 27, 90
+<!-- 
+{ 
+"data" : {
+	"labels" : ["Enero", "Febrero", "Marzo", "Avril", "Mayo", "Junio", "Julio"],
+	"datasets" : [ { "borderColor": "#ff0", "borderDash": ["8","10"] }, { "borderColor": "#0ff" } ]
+	}
+}
+-->
+</canvas>
+            </section>
+        
+            <section >
+                <h3>Pie chart</h3>
+<canvas class="stretch" data-chart="pie">
+Black, Red, Green, Yellow
+My first dataset, 40, 40, 20, 6
+My second dataset, 45, 40, 25, 4
+</canvas>
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>代码块</h3>
+<pre><code class="language-html">&lt;section&gt;
+  &lt;pre&gt;&lt;code&gt;
+  // Useless comment.
+  alert('hi');
+  &lt;/pre&gt;&lt;/code&gt;
+  &lt;p class=&quot;fragment&quot; data-code-focus=&quot;1&quot;&gt;
+    This focuses on the comment.
+  &lt;/p&gt;
+  &lt;p class=&quot;fragment&quot; data-code-focus=&quot;1-2&quot;&gt;
+    Another fragment.
+  &lt;/p&gt;
+&lt;/section&gt;
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>使用fragment对代码行加亮</h3>
+<pre><code class="language-html">&lt;section&gt;
+  &lt;pre&gt;&lt;code&gt;
+  // Useless comment.
+  alert('hi');
+  &lt;/pre&gt;&lt;/code&gt;
+  &lt;p class=&quot;fragment&quot; data-code-focus=&quot;1&quot;&gt;
+    This focuses on the comment.
+  &lt;/p&gt;
+  &lt;p class=&quot;fragment&quot; data-code-focus=&quot;1-2&quot;&gt;
+    Another fragment.
+  &lt;/p&gt;
+&lt;/section&gt;
+</code></pre>
+<p class="fragment current-only" data-code-focus="1-12">This section is a slide.</p>
+<p class="fragment current-only" data-code-focus="2-5">This will be highlighted by <code>highlight.js</code>.</p>
+<p class="fragment current-only" data-code-focus="6-8">This fragment focuses on the first line.</p>
+<p class="fragment current-only" data-code-focus="9-11">This fragment focuses on lines 1 and 2.</p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>fragment 支持的动画</h3>
+<p class="fragment grow">使用实例-grow：</p>
+<p class="fragment shrink">使用实例-shrink：</p>
+<p class="fragment highlight-red">使用实例-highlight-red：</p>
+<p class="fragment highlight-green">使用实例-highlight-green：</p>
+<p class="fragment highlight-blue">使用实例-highlight-blue：</p>
+<p class="fragment highlight-current-red">使用实例-highlight-current-red：</p>
+<p class="fragment highlight-current-green">使用实例-highlight-current-green：</p>
+<p class="fragment highlight-current-blue">使用实例-highlight-current-blue：</p>
+<p class="fragment fade-in">使用实例-fade-in：</p>
+<p class="fragment fade-out">使用实例-fade-out：</p>
+
+            </section>
+        
+            <section >
+                <h3>fragment 支持的动画 (2)</h3>
+<span class="fragment highlight-red">
+  <span class="fragment highlight-green">
+    <span class="fragment fade-out">
+      Turn red > Turn green > Fade out
+    </span>
+  </span>
+</span>
+<p class="fragment fade-right">使用实例-fade-right：</p>
+<p class="fragment fade-up">使用实例-fade-up：</p>
+<p class="fragment fade-down">使用实例-fade-down：</p>
+<p class="fragment fade-left">使用实例-fade-left：</p>
+<p class="fragment fade-in-then-out">使用实例-fade-in-then-out：</p>
+<p class="fragment fade-in-then-semi-out">使用实例-fade-in-then-semi-out：</p>
+
+            </section>
+        
+            <section >
+                <h3>fragment 支持的动画 (3)</h3>
+<p class="fragment" data-fragment-index="3">Appears last</p>
+<p class="fragment" data-fragment-index="1">Appears first </p> 
+<p class="fragment" data-fragment-index="2">Appears second</p>
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>Video</h3>
+<p><video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>使用说明</h3>
+<ol>
+<li>
+<p>Zoom</p>
+<ul>
+<li>Zoom anywhere on your presentation</li>
+<li><code>Alt + click</code>: Zoom in. Repeat to zoom back out.</li>
+</ul>
+</li>
+<li>
+<p>Chalkboard</p>
+<ul>
+<li>Just press ‘b’ or click on the pencil button to open and close your chalkboard.</li>
+<li>Click the <code>left mouse button</code> to write on the chalkboard</li>
+<li>Click the <code>right mouse button</code> to wipe the chalkboard</li>
+<li>Click the <code>DEL</code> key to clear the chalkboard</li>
+</ul>
+</li>
+</ol>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>The END</h3>
+
+            </section>
+    
+
+
+    </div>
+
+
+  </div>
+
+  	
+	<script src="http://localhost:59181/libs/reveal.js/4.1.3/reveal.js"></script>
+	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/zoom/zoom.js"></script>
+	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/notes/notes.js"></script>
+	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/search/search.js"></script>
+	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/markdown/markdown.js"></script>
+	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/highlight/highlight.js"></script>
+	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/menu/menu.js"></script>
+	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/math/math.js"></script>
+
+	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/fullscreen/plugin.js"></script>
+  
+  	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/animate/plugin.js"></script>
+  	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/animate/svg.min.js"></script>
+  
+  	 <!--	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/anything/plugin.js"></script> -->
+
+ <!--	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/audio-slideshow/plugin.js"></script>  -->
+<!--	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/audio-slideshow/recorder.js"></script>-->
+<!--	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/audio-slideshow/RecordRTC.js"></script>-->
+
+<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/chalkboard/plugin.js"></script>
+	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/customcontrols/plugin.js"></script>
+	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/embed-tweet/plugin.js"></script>
+
+	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/chart/chart.min.js"></script>
+	<script src="http://localhost:59181/libs/reveal.js/4.1.3/plugin/chart/plugin.js"></script>
+
+  <script>
+
+		const printPlugins = [
+			RevealNotes, 
+			RevealHighlight,
+			RevealMath,
+			RevealAnimate,
+			RevealChalkboard, 
+			RevealEmbedTweet,
+			RevealChart,
+		];
+
+		const plugins =  [...printPlugins,
+		RevealZoom, 
+		RevealSearch, 
+				RevealMarkdown, 
+				RevealMenu, 
+				RevealFullscreen,
+				//RevealAnything,
+				//RevealAudioSlideshow,
+				//RevealAudioRecorder,
+				RevealCustomControls, 
+				// poll
+				// question
+				// seminar
+				 ]
+
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			controlsTutorial: true,
+			controlsLayout: 'bottom-right',
+			controlsBackArrows: 'faded',
+			progress: true,
+			slideNumber: false,
+			//#showSlideNumber "all" "print" "speaker"
+			hash: true,//#  hash: false,
+			//# respondToHashChanges: true,
+			//# history: false,
+			keyboard: true,
+			//#keyboardCondition: null,
+			overview: true,
+			center: true,
+			touch: false,
+			loop: false,
+			rtl: false,
+			//#navigationMode: 'default', linear grid
+			shuffle: false,
+			fragments: true,
+			fragmentInURL: false,
+			embedded: false,
+			help: false,
+			//#pause: true
+			showNotes: false,
+			autoPlayMedia: false, // TODO fix this to a nullable value
+			//#preloadIframes: null. true false
+			//#autoAnimate: true
+			//#autoAnimateMatcher: null,
+			//#autoAnimateEasing: 'ease',
+			//autoAnimateDuration: 1.0,
+			//#autoAnimateUnmatched: true
+			//#autoAnimateStyles: []
+			autoSlide: 0, // TODO fix this to a falseable value
+			autoSlideStoppable: true,
+			autoSlideMethod: '0',
+			defaultTiming: 120,
+			mouseWheel: false,
+			//#previewLinks: false
+			//#postMessage: true,  // TODO : this can cause issues with the vscode api ???
+			//#postMessageEvents: false,
+			//#focusBodyOnPageVisibilityChange: true,
+			transition: 'slide',
+			transitionSpeed: 'default',
+			backgroundTransition: 'fade',
+			//#pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+			//#pdfSeparateFragments: true,
+			//#pdfPageHeightOffset: -1,
+			viewDistance: 3,
+			//#mobileViewDistance: 2,
+			display: 'block',
+			//#hideInactiveCursor: true,
+			//#hideCursorTime: 5000
+
+			// Parallax Background
+			parallaxBackgroundImage: '',
+			parallaxBackgroundSize: '',
+			parallaxBackgroundHorizontal: 1,
+			parallaxBackgroundVertical: 0,
+			
+			//Presentation Size
+			width: 960,
+			height: 700,
+			margin: 0.04,
+			minScale: 0.2,
+			maxScale: 2,
+			disableLayout: false,
+
+			audio: {
+				prefix: 'audio/', 	// audio files are stored in the "audio" folder
+				suffix: '.ogg',		// audio files have the ".ogg" ending
+				textToSpeechURL: null,  // the URL to the text to speech converter
+				defaultNotes: false, 	// use slide notes as default for the text to speech converter
+				defaultText: false, 	// use slide text as default for the text to speech converter
+				advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+				autoplay: false,	// automatically start slideshow
+				defaultDuration: 5,	// default duration in seconds if no audio is available
+				defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
+				playerOpacity: 0.05,	// opacity value of audio player if unfocused
+				playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+				startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+			},
+			
+			chalkboard: { // font-awesome.min.css must be available
+					//src: "chalkboard/chalkboard.json",
+					storage: "chalkboard-demo",
+				},
+			
+			customcontrols: {
+					controls: [
+      						{
+						  id: 'toggle-overview',
+						  title: 'Toggle overview (O)',
+						  icon: '<i class="fa fa-th"></i>',
+						  action: 'Reveal.toggleOverview();'
+						}
+						,
+						{ icon: '<i class="fa fa-pen-square"></i>',
+						  title: 'Toggle chalkboard (B)',
+						  action: 'RevealChalkboard.toggleChalkboard();'
+						},
+						{ icon: '<i class="fa fa-pen"></i>',
+						  title: 'Toggle notes canvas (C)',
+						  action: 'RevealChalkboard.toggleNotesCanvas();'
+						}
+				]
+			},
+			chart: {
+					defaults: { 
+						color: 'lightgray', // color of labels
+						scale: { 
+							beginAtZero: true, 
+							ticks: { stepSize: 1 },
+							grid: { color: "lightgray" } , // color of grid lines
+						},
+					},
+					line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] }, 
+					bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+					pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+					radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+			},
+			math: {
+				mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+				config: 'TeX-AMS_HTML-full',
+				// pass other options into `MathJax.Hub.Config()`
+				TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: (window.location.search.match(/print-pdf/gi) ? printPlugins : plugins ) 
+		});
+			
+
+
+	    // Change chalkboard theme : 
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+			Reveal.getPlugin("RevealChalkboard").configure(config);
+			input.blur();
+		}
+
+		// // Handle the message inside the webview
+        // window.addEventListener('message', event => {
+
+        //     const message = event.data; // The JSON data our extension sent
+
+        //     switch (message.command) {
+        //         case 'refactor':
+        //             Reveal.toggleHelp();
+        //     }
+        // });
+
+		if (window.location.search.match(/print-pdf-now/gi)) {
+      		setTimeout(() => {
+				window.print();
+			  }, 2500);
+			
+    }
+		
+
+	</script>
+
+</body>
+
+</html>
