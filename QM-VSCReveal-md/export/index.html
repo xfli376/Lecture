@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>量子力学与统计物理</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="http://localhost:64404/libs/reveal.js/4.1.3/reset.css">
+	<link rel="stylesheet" href="http://localhost:64404/libs/reveal.js/4.1.3/reveal.css">
+
+	
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	  <!-- highlight Theme -->
+  	
+	  <link rel="stylesheet" href="http://localhost:64404/libs/highlight.js/11.3.1/styles/monokai.min.css">
+	
+	
+		
+	<link rel="stylesheet" href="http://localhost:64404/libs/reveal.js/4.1.3/plugin/chalkboard/style.css">
+	
+	
+	
+		<link rel="stylesheet" href="http://localhost:64404/libs/reveal.js/4.1.3/plugin/customcontrols/style.css">
+	
+	<link rel="stylesheet" href="http://localhost:64404/libs/styles/tasklist.css">
+
+
+
+  <!-- Revealjs Theme -->
+  
+  	<link rel="stylesheet" href="http://localhost:64404/libs/reveal.js/4.1.3/theme/night.css" id="theme">
+  
+  
+
+
+  <!-- Revealjs Theme -->
+  
+
+ 
+</head>
+
+<body>
+  
+    <div id="logo" style="position: fixed; top: 20px; left: 20px; z-index: 1; height:3rem;">
+        <img src="images/uestclogo.jpg" style="height:100%"/>
+    </div>
+  
+
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      
+
+
+    
+        <section >
+            
+            <h2 style="background:green;width:960px">量子力学与统计物理</h2>
+<p>Quantum mechanics and statistical physics</p>
+<br>
+<div class="block">
+<p><strong><font color=#FFFF00 face="娃娃体-简" >李小飞</font></strong> @ 光电科学与工程学院
+<br>
+<br>
+2020-03-01</p>
+</div style="background:none;width:960px">
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section data-auto-animate>
+            <!-- .slide:  data-auto-animate -->
+<h3><strong>前情回顾</strong></h3>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3><strong>前情回顾</strong></h3>
+<ul>
+<li>波粒二象性</li>
+</ul>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3><strong>前情回顾</strong></h3>
+<ul>
+<li>波粒二象性</li>
+<li>波函数</li>
+</ul>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3><strong>前情回顾</strong></h3>
+<ul>
+<li>波粒二象性</li>
+<li>波函数</li>
+<li>波函数的统计诠释</li>
+</ul>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3><strong>前情回顾</strong></h3>
+<ul>
+<li>波粒二象性</li>
+<li>波函数</li>
+<li>波函数的统计诠释</li>
+<li>态叠加原理</li>
+</ul>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3>重要结论</h3>
+<ul>
+<li class="fragment fade-up">物体总是处于叠加态</li>
+<li class="fragment fade-up">世界是普遍联系的</li>
+</ul>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>第五讲：薛定谔方程</h3>
+<ul>
+<li>
+<p>薛定谔方程</p>
+</li>
+<li>
+<p>定态薛定谔方程</p>
+</li>
+<li>
+<p>守恒定律</p>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>话分两支</h3>
+<pre style="all:unset;"><div><img class="mermaid" src="https://kroki.io/mermaid/svg/eNp9jkEKwjAQRfeeYjaFCmbR2hNIBQsWRAUXxUWMYxNoJ5KMUm9vazGIiMt5f_7nAQDUTl41rLcQRaBs2yKxn_R8uJfEhh_VHjs-vliRiyQ-yDtebqTYWJq-cVqVkp3poESlJRnlQ2NeDY0fQRZvJGsoiLG3aHwYS4TYKe3s2VCNTggxrHyEC-totkLjkU7o6vEhDSr_2n2YGyfViLPg-IWfdTVNdQ==" /></div></pre>
+
+            </section>
+        
+            <section >
+                <h3>波动方程</h3>
+<ul>
+<li>“你们总在说波函数，那总得有个波动方程吧!” --德拜(1925)</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3>Dear Debye, I find one! – 薛定谔</h3>
+
+            </section>
+        
+            <section >
+                <h3>方程的可能来源</h3>
+<ul>
+<li class="fragment fade-up">来源-1：  最小作用量原理 $\int\limits_{t_1}^{t_2} \delta L d t =0 $ </li>
+<li class="fragment fade-up">来源-2：  波动性和粒子性的结合</li>
+<li class="fragment fade-up">来源-3：  基本假设，不能从其他原理推导 </li>
+</ul>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3>来源-2</h3>
+<p>Plane wave-function $$\psi(x,t)=\Psi_p(x,t)=e^{\frac{i}{\hbar}(p\cdot x-Et)}$$ should be a sulotion of wave equation</p>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3>来源-2</h3>
+<p>Plane wave-function $$\psi(x,t)=\Psi_p(x,t)=e^{\frac{i}{\hbar}(p\cdot x-Et)}$$ should be a sulotion of wave equation</p>
+<p>
+\[\begin{equation*}
+        \begin{split}
+       -i\hbar \nabla \psi(x,t) &=p\psi(x,t) \\
+       \hbar^2 \nabla^2 \psi(x,t) &=p^2\psi(x,t) \\
+       \frac{\hbar^2}{2\mu} \nabla^2 \psi(x,t) &=\frac{p^2}{2\mu} \psi(x,t) , \quad \cdots (1)
+        \end{split}
+\end{equation*}\]
+</p>
+
+            </section>
+        
+            <section >
+                <p class="fragment fade-up">$$\begin{equation*}
+i\hbar \frac{\partial }{\partial t} \psi(x,t) =E\psi(x,t)  , \qquad \cdots (2)
+\end{equation*}$$</p>
+<p class="fragment fade-up">(2)式-(1)式：</p>
+<p class="fragment fade-up">$$\begin{equation*}
+(i\hbar \frac{\partial }{\partial t} - \frac{\hbar^2}{2\mu} \nabla^2 )\psi(x,t) =(E-\frac{p^2}{2\mu})\psi(x,t)=0<br>
+\end{equation*}$$</p>
+<p class="fragment fade-up">$$\begin{equation*}
+i\hbar \frac{\partial }{\partial t} \psi(x,t) = \frac{\hbar^2}{2\mu} \nabla^2 \psi(x,t)
+\end{equation*}$$</p>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<p>A general wavefunction is a wave packet</p>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<p>A general wavefunction is a wave packet</p>
+<span>
+\[\begin{aligned} 
+\Psi(x,t) & 
+= \int\limits_{p=0} ^{\infty} c(p,t) e^{\frac{i}{\hbar}px} dp \\
+(i\hbar \frac{\partial }{\partial t} - \frac{\hbar^2}{2\mu} \nabla ^2 ) \Psi(x,t) 
+    & = \int\limits_{p=0} ^{\infty} c(p,t) (E-\frac{p^2}{2\mu}) e^{\frac{i}{\hbar} px } dp  \\ 
+    & =0  
+\end{aligned}\]
+</span>
+
+            </section>
+        
+            <section >
+                <p class="fragment fade-up">$$ i\hbar \frac{\partial }{\partial t} \Psi(x,t) = \frac{\hbar^2}{2\mu} \nabla^2 \Psi(x,t) $$</p>
+<ul>
+<li class="fragment fade-up">For nonfree particle in a potential $U(x)$,</li>
+</ul>
+<p class="fragment fade-up">$$\begin{equation*}
+i\hbar \frac{\partial }{\partial t} \Psi(x,t) = (\frac{\hbar^2}{2\mu} \nabla^2 +U(x)) \Psi(x,t)
+\end{equation*}$$</p>
+<p class="fragment fade-up">That is the Schr$\ddot{o}$dinger equation. </p>
+
+            </section>
+        
+            <section >
+                <ul>
+<li class="fragment fade-up">For N-particles system
+$${\small \begin{equation*}
+i\hbar \frac{\partial }{\partial t} \Psi(X,t) = [\sum_{i=1} ^{N} \frac{\hbar ^2}{2\mu_i} \nabla^2 +U(X)] \Psi(X,t)
+\end{equation*}}$$ {.fragment .fade-up}
+where, $X=x_1, x_2, \cdots, x_N $</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3>检验正确性</h3>
+<ul>
+<li class="fragment fade-up">自由粒子的解</li>
+<li class="fragment fade-up">氢原子光谱</li>
+<li class="fragment fade-up">$\cdots\cdots$</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3>评价</h3>
+<ul>
+<li class="fragment fade-up">
+<p>我一阅读完毕整篇论文，就像被一个迷语困惑多时渴慕知道答案的孩童，现在终于听到了解答！ --普朗克</p>
+</li>
+<li class="fragment fade-up">
+<p>这著作的灵感如同泉水般源自一位真正的天才！-爱因斯坦</p>
+</li>
+<li class="fragment fade-up">
+<p>波动方程把量子理论推进了关键性的一步 --玻尔</p>
+</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3>薛定谔</h3>
+<ul>
+<li class="fragment fade-up">
+<p>奥地利理论物理学家，维也纳人, 量子力学的奠基人。
+薛天才,通灵的人, 1926年提出薛定谔方程，获1933年诺贝尔物理学奖； 1935年提出“薛定谔的猫”，至今还是“养猫人”的猫王；1943年写的《生命是什么》一书，被誉为“唤起生物革命的小册子”。</p>
+</li>
+<li class="fragment fade-up">
+<p>薛定谔：他玉树临风，英俊潇洒，风流倜傥，人见人爱，花见花开，情人无数，江湖人称 “段正淳“</p>
+</li>
+</ul>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3>Basic assumption 2/5</h3>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3>Basic assumption 2/5</h3>
+<p class="fragment fade-up">The evolution of wavefunction obeys Schr$\ddot{o}$dinger equation
+\begin{equation*}
+i\hbar \frac{\partial }{\partial t} \Psi (\overrightarrow{r},t ) =\left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\overrightarrow{r},t ) \right ]\Psi (\overrightarrow{r}, t )
+\end{equation*}</p>
+<p class="fragment fade-up">如今，薛定谔方程已是量子力学基本方程，地位与经典物理学中的牛顿第二定律相当。有着丰富的内含</p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>定态薛定谔方程</h3>
+<p>$\color{yellow}{例：}$ 若势函数$V(\vec{r},t ) $若不显含时间 t，试分离变量</p>
+<p>$ \displaystyle i \hbar \frac{\partial }{\partial t} \Psi (\vec{r},t ) =\left [- \frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r},t ) $</p>
+<p class="fragment fade-up">$\color{yellow}{解：}$  设  $\Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) $ , 代回原方程，有：
+$$ \displaystyle i\hbar \Psi (\vec{r})  \frac{\partial }{\partial t} f(t)=f(t) \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) $$</p>
+
+            </section>
+        
+            <section >
+                <p class="fragment fade-up">$$ \displaystyle i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)= \frac{1}{\Psi (\vec{r}) } \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E $$</p>
+<p class="fragment fade-up">得两个微分方程：</p>
+<ol>
+<li class="fragment fade-up">随时间的演化方程<br>
+$$  i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)=E $$ </li>
+</ol>
+<p class="fragment fade-up">解得：$\displaystyle  f(t) =e^{-iEt/\hbar}$ </p>
+
+            </section>
+        
+            <section >
+                <ol start="2">
+<li class="fragment fade-up">定态薛定谔方程 $$\displaystyle   \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E \Psi (\vec{r})  $$ </li>
+</ol>
+<ul>
+<li class="fragment fade-up">
+<p>定态：能量有确定值的态称为定态</p>
+</li>
+<li class="fragment fade-up">
+<p>定态波函数: $$ \Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) = \Psi_E (\vec{r} ) e^{-iEt/\hbar} $$ </p>
+</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3 class="fragment fade-up">定态薛定谔方程算符形式：</h3>
+<p class="fragment fade-up">$$ \hat{H} \Psi (\vec{r}) =E \Psi (\vec{r})  $$   </p>
+<ul>
+<li class="fragment fade-up">
+<p>很明显，定态薛定谔方程是哈密顿算符 $\hat{H}$ 的本征方程。结合定解条件，可得到能量本征值谱 { $E_n$ } 及本征函数系 {$\Psi_{E_n} (\vec{r} )$} 。</p>
+</li>
+<li class="fragment fade-up">
+<p>依据态叠加原理，一般的态可表示为定态薛定谔方程解的线性叠加形式：
+$$ \Psi (\vec{r},t ) =\sum\limits_n \Psi_{E_n} (\vec{r} ) e^{-iE_n t/\hbar} $$ </p>
+</li>
+</ul>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section data-auto-animate>
+            
+            <!-- .slide:  data-auto-animate -->
+<h3>守恒定律</h3>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section data-auto-animate>
+            <!-- .slide:  data-auto-animate -->
+<h3>守恒定律</h3>
+<p class="fragment fade-up">守恒律是物理量随时间的变化率问题，量子力学最重要的是概率，我们考虑概率密度的变化率
+$$\omega (\vec{r}, t)=|\Psi(\vec{r}, t)|^{2} =\Psi^{*} (\vec{r}, t) \Psi(\vec{r}, t)$$</p>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3>守恒定律</h3>
+<p>守恒律是物理量随时间的变化率问题，量子力学最重要的是概率，我们考虑概率密度的变化率
+$$\omega (\vec{r}, t)=|\Psi(\vec{r}, t)|^{2} =\Psi^{*} (\vec{r}, t) \Psi(\vec{r}, t)$$</p>
+<span>
+\[\begin{aligned} 
+        \frac{\partial \omega}{\partial t} &=\Psi^{*} \frac{\partial \Psi}{\partial t}+\frac{\partial \Psi^{*}}{\partial t} \Psi, \cdots (1) \\
+        \frac{\partial \Psi}{\partial t} & =\frac{i \hbar}{2 \mu} \nabla^{2} \Psi+\frac{1}{i \hbar} U \Psi, \cdots (2) \\
+\end{aligned}\]
+</span>
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<span>
+\[\begin{aligned}
+    \frac{\partial \Psi^{*}}{\partial t} & =-\frac{i \hbar}{2 \mu} \nabla^{2} \Psi^{*}-\frac{1}{i \hbar} U \Psi^{*}, \cdots (3) 
+\end{aligned}\]
+</span>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<span>
+\[\begin{aligned}
+    \frac{\partial \Psi^{*}}{\partial t} & =-\frac{i \hbar}{2 \mu} \nabla^{2} \Psi^{*}-\frac{1}{i \hbar} U \Psi^{*}, \cdots (3) 
+\end{aligned}\]
+</span>
+<p>把（2）（3）代回（1）得：</p>
+<span>
+\[\begin{aligned}
+        \frac{\partial \omega}{\partial t}& =\frac{i \hbar}{2 \mu}\left(\Psi^{*} \nabla^{2} \Psi-\Psi \nabla^{2} \Psi^{*}\right) \\
+        &=\frac{i \hbar}{2 \mu} \nabla \cdot\left(\Psi^{*} \nabla \Psi-\Psi \nabla \Psi^{*}\right)\\
+\end{aligned}\]
+</span>  
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<span>
+\[\begin{aligned}
+        \frac{\partial \omega}{\partial t}&=-\nabla \cdot \frac{i \hbar}{2 \mu} \left(\Psi \nabla \Psi^{*}-\Psi^{*} \nabla \Psi\right) \\ 
+        &=-\nabla \cdot \vec{J}
+\end{aligned}\]
+</span>  
+<p class="fragment fade-up">在上式中，定义了矢量： </p>
+<p class="fragment fade-up">$$ \vec J =\frac{i \hbar}{2 \mu} ( \Psi \nabla<br>
+\Psi ^* - \Psi ^* \nabla \Psi ) $$ </p>
+<p class="fragment fade-up">$$
+\frac{\partial \omega}{\partial t}+ \nabla \cdot \vec{J}=0, \cdots (4)
+$$</p>
+
+            </section>
+        
+            <section >
+                <p class="fragment fade-up">(4) 式具有连续性方程形式，说明矢量 $\vec{J}$ 决定了概率密度的变化率。
+在任意空间区域 V， 对（4）式求积分：
+\begin{equation*}
+\frac{d}{d t} \int_{V} \omega d \tau =-\int_{S} \vec{J} \cdot d \vec{S}, \cdots (5)
+\end{equation*}</p>
+<p class="fragment fade-up">由 Gauss 定理可知，单位时间内体系V内增加的概率等于穿过V边界面S进入V内的概率，所以$\vec{J}$就是<strong>概率流</strong></p>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<ul>
+<li class="fragment fade-up">(4) 、(5)式分别是<strong>概率守恒定律</strong>的微分、积分形式。</li>
+</ul>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<ul>
+<li>(4) 、(5)式分别是<strong>概率守恒定律</strong>的微分、积分形式。</li>
+</ul>
+<span>
+\[\begin{aligned}
+        \frac{d}{d t} \int\limits_{V} \omega d \tau &= \frac{d}{d t} \int\limits_{V} |\Psi(\vec{r}, t)|^{2} \tau , \cdots （V \to \infty）  \\
+        &=\frac{d}{d t} 1\\ 
+        &=0
+\end{aligned}\]
+</span>  
+<p class="fragment fade-up">说明全空间概率不随时间发生变化，即粒子既未产生也未湮灭时，概率守恒就是<strong>粒子数守恒</strong>。</p>
+
+            </section>
+        
+            <section >
+                <ul>
+<li>对（4）式，左右同乘粒子质量$\mu$,<br>
+\begin{equation*}
+\frac{\partial \mu\omega}{\partial t}+ \nabla \cdot \mu\vec{J}=0
+\end{equation*}<br>
+得如下<strong>质量守恒定律</strong>:</li>
+</ul>
+<p class="fragment fade-up">$$
+\frac{\partial \omega_\mu}{\partial t}+ \nabla \cdot \vec{J_\mu}=0, \cdots (6)
+$$</p>
+
+            </section>
+        
+            <section >
+                <p>对（4）式，左右同乘以粒子电荷$e$,
+\begin{equation*}
+\frac{\partial \omega}{\partial t} e+ \nabla \cdot e\vec{J}=0
+\end{equation*}<br>
+得如下<strong>电荷守恒定律</strong></p>
+<p class="fragment fade-up">$$ \frac{\partial \omega _e }{ \partial t} + \nabla \cdot \vec {J} _e = 0, \cdots (7)  $$</p>
+
+            </section>
+        
+            <section >
+                <h3>定态的概率流</h3>
+<p>$\color{yellow}{例.}$ 试证明定态的概率密度不随时间变化</p>
+<p align="left">$\color{yellow}{证明:}$ </p>
+<span>
+\[\begin{aligned}
+            \omega (\vec{r}, t)&=\Psi^{*}(\vec{r}, t) \Psi(\vec{r}, t) \\
+            &=\Psi_{E_n} (\vec{r} ) e^{-iE_n t/\hbar} \Psi_{E_n} ^* (\vec{r} ) e^{iE_n t/\hbar} \\
+            &=\Psi_{E_n} (\vec{r} )\Psi_{E_n} ^* (\vec{r} ) \\
+            &=|\Psi_{E_n} (\vec{r} )|^2
+\end{aligned}\]
+</span>  
+            </section>
+        
+            <section >
+                <p>$\color{yellow}{例.}$ 试证明定态的概率流密度不随时间变化</p>
+<p align="left">$\color{yellow}{证明:}$ </p>
+<section data-markdown>
+$$\begin{equation*}
+    \frac{\partial \omega}{\partial t}+ \nabla \cdot \vec{J}=0
+\end{equation*} $$ 
+<p>$$\begin{equation*}
+\nabla \cdot \vec{J}=-\frac{\partial \omega}{\partial t}=0
+\end{equation*} $$</p>
+</section>
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section data-background="images/uestclogo.png" data-background-opacity="0.07">
+            
+            <!-- .slide: data-background="images/uestclogo.png" data-background-opacity="0.07"-->
+<h3>A &amp; q</h3>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>选择PPT转场方式</h3>
+<p>You can select from different transitions</p>
+<p><a href="?transition=none#/transitions">None</a> - <a href="?transition=fade#/transitions">Fade</a> - <a href="?transition=slide#/transitions">Slide</a> - <a href="?transition=convex#/transitions">Convex</a> - <a href="?transition=concave#/transitions">Concave</a> - <a href="?transition=zoom#/transitions">Zoom</a></p>
+
+            </section>
+        
+            <section >
+                <h3>选择PPT主题</h3>
+<p>You can select from different themes:</p>
+<p><a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/4.1.3/theme/black.css'); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/4.1.3/theme/white.css'); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/4.1.3/theme/league.css'); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/4.1.3/theme/sky.css'); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/4.1.3/theme/beige.css'); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/4.1.3/theme/simple.css'); return false;">Simple</a>-
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/4.1.3/theme/serif.css'); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/4.1.3/theme/blood.css'); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/4.1.3/theme/night.css'); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/4.1.3/theme/moon.css'); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/4.1.3/theme/solarized.css'); return false;">Solarized</a></p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            
+            </section>
+    
+
+
+    </div>
+
+
+  </div>
+
+  	
+	<script src="http://localhost:64404/libs/reveal.js/4.1.3/reveal.js"></script>
+	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/zoom/zoom.js"></script>
+	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/notes/notes.js"></script>
+	
+	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/markdown/markdown.js"></script>
+	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/highlight/highlight.js"></script>
+	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/menu/menu.js"></script>
+	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/math/math.js"></script>
+
+	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/fullscreen/plugin.js"></script>
+  
+  	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/animate/plugin.js"></script>
+  	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/animate/svg.min.js"></script>
+  
+  	 <!--	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/anything/plugin.js"></script> -->
+
+ <!--	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/audio-slideshow/plugin.js"></script>  -->
+<!--	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/audio-slideshow/recorder.js"></script>-->
+<!--	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/audio-slideshow/RecordRTC.js"></script>-->
+
+<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/chalkboard/plugin.js"></script>
+	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/customcontrols/plugin.js"></script>
+	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/embed-tweet/plugin.js"></script>
+
+	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/chart/chart.min.js"></script>
+	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/chart/plugin.js"></script>
+
+  <script>
+
+		const printPlugins = [
+			RevealNotes, 
+			RevealHighlight,
+			RevealMath,
+			RevealAnimate,
+			RevealChalkboard, 
+			RevealEmbedTweet,
+			RevealChart,
+		];
+
+		const plugins =  [...printPlugins,
+		RevealZoom, 
+		
+				RevealMarkdown, 
+				RevealMenu, 
+				RevealFullscreen,
+				//RevealAnything,
+				//RevealAudioSlideshow,
+				//RevealAudioRecorder,
+				RevealCustomControls, 
+				// poll
+				// question
+				// seminar
+				 ]
+
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			controlsTutorial: true,
+			controlsLayout: 'bottom-right',
+			controlsBackArrows: 'faded',
+			progress: true,
+			slideNumber: false,
+			//#showSlideNumber "all" "print" "speaker"
+			hash: true,//#  hash: false,
+			//# respondToHashChanges: true,
+			//# history: false,
+			keyboard: true,
+			//#keyboardCondition: null,
+			overview: true,
+			center: true,
+			touch: false,
+			loop: false,
+			rtl: false,
+			//#navigationMode: 'default', linear grid
+			shuffle: false,
+			fragments: true,
+			fragmentInURL: false,
+			embedded: false,
+			help: false,
+			//#pause: true
+			showNotes: false,
+			autoPlayMedia: false, // TODO fix this to a nullable value
+			//#preloadIframes: null. true false
+			//#autoAnimate: true
+			//#autoAnimateMatcher: null,
+			//#autoAnimateEasing: 'ease',
+			//autoAnimateDuration: 1.0,
+			//#autoAnimateUnmatched: true
+			//#autoAnimateStyles: []
+			autoSlide: 0, // TODO fix this to a falseable value
+			autoSlideStoppable: true,
+			autoSlideMethod: '0',
+			defaultTiming: 120,
+			mouseWheel: false,
+			//#previewLinks: false
+			//#postMessage: true,  // TODO : this can cause issues with the vscode api ???
+			//#postMessageEvents: false,
+			//#focusBodyOnPageVisibilityChange: true,
+			transition: 'convex',
+			transitionSpeed: 'default',
+			backgroundTransition: 'fade',
+			//#pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+			//#pdfSeparateFragments: true,
+			//#pdfPageHeightOffset: -1,
+			viewDistance: 3,
+			//#mobileViewDistance: 2,
+			display: 'block',
+			//#hideInactiveCursor: true,
+			//#hideCursorTime: 5000
+
+			// Parallax Background
+			parallaxBackgroundImage: '',
+			parallaxBackgroundSize: '',
+			parallaxBackgroundHorizontal: 1,
+			parallaxBackgroundVertical: 0,
+			
+			//Presentation Size
+			width: 960,
+			height: 700,
+			margin: 0.04,
+			minScale: 0.2,
+			maxScale: 2,
+			disableLayout: false,
+
+			audio: {
+				prefix: 'audio/', 	// audio files are stored in the "audio" folder
+				suffix: '.ogg',		// audio files have the ".ogg" ending
+				textToSpeechURL: null,  // the URL to the text to speech converter
+				defaultNotes: false, 	// use slide notes as default for the text to speech converter
+				defaultText: false, 	// use slide text as default for the text to speech converter
+				advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+				autoplay: false,	// automatically start slideshow
+				defaultDuration: 5,	// default duration in seconds if no audio is available
+				defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
+				playerOpacity: 0.05,	// opacity value of audio player if unfocused
+				playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+				startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+			},
+			
+			chalkboard: { // font-awesome.min.css must be available
+					//src: "chalkboard/chalkboard.json",
+					storage: "chalkboard-demo",
+				},
+			
+			customcontrols: {
+					controls: [
+      						{
+						  id: 'toggle-overview',
+						  title: 'Toggle overview (O)',
+						  icon: '<i class="fa fa-th"></i>',
+						  action: 'Reveal.toggleOverview();'
+						}
+						,
+						{ icon: '<i class="fa fa-pen-square"></i>',
+						  title: 'Toggle chalkboard (B)',
+						  action: 'RevealChalkboard.toggleChalkboard();'
+						},
+						{ icon: '<i class="fa fa-pen"></i>',
+						  title: 'Toggle notes canvas (C)',
+						  action: 'RevealChalkboard.toggleNotesCanvas();'
+						}
+				]
+			},
+			chart: {
+					defaults: { 
+						color: 'lightgray', // color of labels
+						scale: { 
+							beginAtZero: true, 
+							ticks: { stepSize: 1 },
+							grid: { color: "lightgray" } , // color of grid lines
+						},
+					},
+					line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] }, 
+					bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+					pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+					radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+			},
+			math: {
+				mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+				config: 'TeX-AMS_HTML-full',
+				// pass other options into `MathJax.Hub.Config()`
+				TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: (window.location.search.match(/print-pdf/gi) ? printPlugins : plugins ) 
+		});
+			
+
+
+	    // Change chalkboard theme : 
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+			Reveal.getPlugin("RevealChalkboard").configure(config);
+			input.blur();
+		}
+
+		// // Handle the message inside the webview
+        // window.addEventListener('message', event => {
+
+        //     const message = event.data; // The JSON data our extension sent
+
+        //     switch (message.command) {
+        //         case 'refactor':
+        //             Reveal.toggleHelp();
+        //     }
+        // });
+
+		if (window.location.search.match(/print-pdf-now/gi)) {
+      		setTimeout(() => {
+				window.print();
+			  }, 2500);
+			
+    }
+		
+
+	</script>
+
+</body>
+
+</html>
