@@ -262,7 +262,7 @@ $ \color{yellow}{解:}$ assuming the normalized wavefunction $$\Psi=C\psi(x)=C\s
 --
 
 
-<span>
+`
 \[\begin{equation*}
         \begin{split}
             \int_0 ^\pi |C\sin(x)|^2 dx &=1 \\
@@ -271,7 +271,8 @@ $ \color{yellow}{解:}$ assuming the normalized wavefunction $$\Psi=C\psi(x)=C\s
             C^2 [\frac{x}{2}-\frac{\sin 2x}{4}]_0 ^\pi &=1 \\ 
         \end{split}  
 \end{equation*}
-\] </span>
+\] 
+`
 
 $\to C=\sqrt{\dfrac{2}{\pi}} $
 

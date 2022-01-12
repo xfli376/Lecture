@@ -286,7 +286,7 @@ $$
 #### Rayleigh-Jeans formula
 $$
 \rho(\nu, T) d \nu=\frac{8 \pi}{c^{3}} \nu^{2} k T d \nu 
-$$
+$$ 
 - Derived from thermodynamics (1900), 
 - Described well only in low frequency region
 $$
@@ -332,55 +332,87 @@ On **1900-12-14**, Planck gave out his solution based on his Energy Quantum Hypo
 --
 
 Based on Boltzmann distribution law,
-$$
-\frac{N_{i}}{N}=\frac{\exp \left(-\frac{E_{i}}{k T}\right)}{\sum_{i} \exp \left(\frac{-E_{i}}{k T}\right)}
-$$
+`
+\[\frac{N_{i}}{N}=\frac{\exp \left(-\frac{E_{i}}{k T}\right)}{\sum_{i} \exp \left(\frac{-E_{i}}{k T}\right)}
+\]
+`{class="fragment"}
 
-- If energy is continuous，the distribution between $E - E+dE$ : 
-$$
+- If energy is continuous，the distribution between $E - E+dE$ : {.fragment .fade-up} 
+  
+`
+\[
 \omega=\frac{e^{-E / k T}}{\int\limits_{0}^{\infty} e^{-E / k T} d E}
-$$ {.fragment .fade-up} 
+\]
+`{class="fragment"}
 
 --
 
 The average energy :  
 
-<span>
+`
 \[\begin{aligned}
 < E >  
-&amp; = \int\limits_{0}^{\infty} E \frac{e^{-E / k T}}{\int\limits_{0}^{\infty} e^{-E / k T} d E} d E  \\
-&amp; = -kT (E e ^{-E / k T} \vert_{0}^{\infty}- \int\limits_{0}^{\infty} e^{-E / k T} d E)  \\
- &amp; = \color{red}{kT} 
+& = \int\limits_{0}^{\infty} E \frac{e^{-E / k T}}{\int\limits_{0}^{\infty} e^{-E / k T} d E} d E  \\
 \end{aligned} \]
-</span> 
+` {class="fragment"}
+
+`
+\[\begin{aligned}
+& = -kT (E e ^{-E / k T} \vert_{0}^{\infty}- \int\limits_{0}^{\infty} e^{-E / k T} d E)  \\
+& = \color{red}{kT} 
+\end{aligned} \]
+` {class="fragment"}
 
 --
 
 - If energy is discrete，the distribution :
-$$
+  
+`
+\[
   \frac{e^{-E / k T}}{\int\limits_{0}^{\infty} e^{-E / k T} d E} 
+\]
+` {class="fragment"} 
+
+`
+\[
   \to \frac{e^{-E / k T}}{\sum\limits_{0}^{\infty} e^{-E / k T}} 
+\]
+` {class="fragment"} 
+ 
+`
+\[
   \to \frac{e^{-nh\nu / k T}}{\sum\limits_{0}^{\infty} e^{-nhv / k T}} 
-$$ {.fragment .fade-up} 
+\]
+` {class="fragment"}
 
 --
 
 The average energy is
 
-<span>
+`
 \[\begin{aligned}
 < E > 
-&amp; = \sum\limits_{0}^{\infty} nh\nu\frac{e^{-nh\nu / k T}}{\sum\limits_{0}^{\infty} e^{-nh\nu / k T}}  \\
-&amp; = -h\nu \frac{d}{dx} \frac{n e^{-nx}}{\sum\limits_{0}^{\infty} e^{-nx}}   \\
- &amp; = \color{red}{\frac{h\nu}{e^{h\nu/kT}-1}} 
-\end{aligned} \]
-</span>  
+& = \sum\limits_{0}^{\infty} nh\nu\frac{e^{-nh\nu / k T}}{\sum\limits_{0}^{\infty} e^{-nh\nu / k T}}  \\
+\end{aligned} 
+\]
+` {class="fragment"} 
+ 
+`
+\[\begin{aligned}
+& = -h\nu \frac{d}{dx} \frac{n e^{-nx}}{\sum\limits_{0}^{\infty} e^{-nx}}   \\
+& = \color{red}{\frac{h\nu}{e^{h\nu/kT}-1}} 
+\end{aligned} 
+\]
+`{class="fragment"} 
+
 
 --
 
-$$
+`
+\[
 \text{(Continuous)} \quad k T \rightarrow \frac{h \nu}{e^{ h \nu / k T}-1} \quad \text{(Discrete)}  
-$$  {.fragment .fade-up} 
+\]
+`{class="fragment"} 
 
 --
 

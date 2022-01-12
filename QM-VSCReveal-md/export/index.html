@@ -14,8 +14,8 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="http://localhost:64404/libs/reveal.js/4.1.3/reset.css">
-	<link rel="stylesheet" href="http://localhost:64404/libs/reveal.js/4.1.3/reveal.css">
+	<link rel="stylesheet" href="http://localhost:56928/libs/reveal.js/4.1.3/reset.css">
+	<link rel="stylesheet" href="http://localhost:56928/libs/reveal.js/4.1.3/reveal.css">
 
 	
 	
@@ -23,23 +23,23 @@
 
 	  <!-- highlight Theme -->
   	
-	  <link rel="stylesheet" href="http://localhost:64404/libs/highlight.js/11.3.1/styles/monokai.min.css">
+	  <link rel="stylesheet" href="http://localhost:56928/libs/highlight.js/11.3.1/styles/monokai.min.css">
 	
 	
 		
-	<link rel="stylesheet" href="http://localhost:64404/libs/reveal.js/4.1.3/plugin/chalkboard/style.css">
+	<link rel="stylesheet" href="http://localhost:56928/libs/reveal.js/4.1.3/plugin/chalkboard/style.css">
 	
 	
 	
-		<link rel="stylesheet" href="http://localhost:64404/libs/reveal.js/4.1.3/plugin/customcontrols/style.css">
+		<link rel="stylesheet" href="http://localhost:56928/libs/reveal.js/4.1.3/plugin/customcontrols/style.css">
 	
-	<link rel="stylesheet" href="http://localhost:64404/libs/styles/tasklist.css">
+	<link rel="stylesheet" href="http://localhost:56928/libs/styles/tasklist.css">
 
 
 
   <!-- Revealjs Theme -->
   
-  	<link rel="stylesheet" href="http://localhost:64404/libs/reveal.js/4.1.3/theme/night.css" id="theme">
+  	<link rel="stylesheet" href="http://localhost:56928/libs/reveal.js/4.1.3/theme/night.css" id="theme">
   
   
 
@@ -96,51 +96,18 @@
                 <!-- .slide:  data-auto-animate -->
 <h3><strong>前情回顾</strong></h3>
 <ul>
-<li>波粒二象性</li>
+<li class="fragment fade-up">波粒二象性是物质的本质特性</li>
 </ul>
 
             </section>
         
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<h3><strong>前情回顾</strong></h3>
-<ul>
-<li>波粒二象性</li>
-<li>波函数</li>
+            <section >
+                <h3>Big problem</h3>
+<div class="block">
+<ul style="background:red;width:800px">
+<li>How to interpret the world where waves are particles and particles are waves</li>
 </ul>
-
-            </section>
-        
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<h3><strong>前情回顾</strong></h3>
-<ul>
-<li>波粒二象性</li>
-<li>波函数</li>
-<li>波函数的统计诠释</li>
-</ul>
-
-            </section>
-        
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<h3><strong>前情回顾</strong></h3>
-<ul>
-<li>波粒二象性</li>
-<li>波函数</li>
-<li>波函数的统计诠释</li>
-<li>态叠加原理</li>
-</ul>
-
-            </section>
-        
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<h3>重要结论</h3>
-<ul>
-<li class="fragment fade-up">物体总是处于叠加态</li>
-<li class="fragment fade-up">世界是普遍联系的</li>
-</ul>
+</div>
 
             </section>
         
@@ -153,17 +120,10 @@
     
         <section >
             
-            <h3>第五讲：薛定谔方程</h3>
+            <h3>第三讲：波函数及其统计诠释</h3>
 <ul>
-<li>
-<p>薛定谔方程</p>
-</li>
-<li>
-<p>定态薛定谔方程</p>
-</li>
-<li>
-<p>守恒定律</p>
-</li>
+<li>波函数</li>
+<li>波函数的统计诠释</li>
 </ul>
 
             </section>
@@ -173,170 +133,132 @@
 
     
     <section>
-        <section >
-            <h3>话分两支</h3>
-<pre style="all:unset;"><div><img class="mermaid" src="https://kroki.io/mermaid/svg/eNp9jkEKwjAQRfeeYjaFCmbR2hNIBQsWRAUXxUWMYxNoJ5KMUm9vazGIiMt5f_7nAQDUTl41rLcQRaBs2yKxn_R8uJfEhh_VHjs-vliRiyQ-yDtebqTYWJq-cVqVkp3poESlJRnlQ2NeDY0fQRZvJGsoiLG3aHwYS4TYKe3s2VCNTggxrHyEC-totkLjkU7o6vEhDSr_2n2YGyfViLPg-IWfdTVNdQ==" /></div></pre>
-
+        <section data-background-video="figs/doubleslite-n.mp4" .slide:data-background-color="#000000">
+            <!-- .slide: data-background-video="figs/doubleslite-n.mp4" .slide:data-background-color="#000000" -->
             </section>
         
-            <section >
-                <h3>波动方程</h3>
-<ul>
-<li>“你们总在说波函数，那总得有个波动方程吧!” --德拜(1925)</li>
-</ul>
-
-            </section>
-        
-            <section >
-                <h3>Dear Debye, I find one! – 薛定谔</h3>
-
-            </section>
-        
-            <section >
-                <h3>方程的可能来源</h3>
-<ul>
-<li class="fragment fade-up">来源-1：  最小作用量原理 $\int\limits_{t_1}^{t_2} \delta L d t =0 $ </li>
-<li class="fragment fade-up">来源-2：  波动性和粒子性的结合</li>
-<li class="fragment fade-up">来源-3：  基本假设，不能从其他原理推导 </li>
-</ul>
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3>双缝干涉实验分析</h3>
 
             </section>
         
             <section data-auto-animate>
                 <!-- .slide:  data-auto-animate -->
-<h3>来源-2</h3>
-<p>Plane wave-function $$\psi(x,t)=\Psi_p(x,t)=e^{\frac{i}{\hbar}(p\cdot x-Et)}$$ should be a sulotion of wave equation</p>
+<h3>双缝干涉实验分析</h3>
+<ul>
+<li class="fragment fade-in">多个波构成电子</li>
+<li class="fragment fade-in">多个电子构成波</li>
+<li class="fragment fade-in">单个电子既是粒子又是波
+<ul>
+<li class="fragment fade-up">电子与自己干涉</li>
+<li class="fragment fade-up">电子同时过双缝 </li>
+<li class="fragment fade-up">电子至少同时有两条路径</li>
+<li class="fragment fade-up">牛顿力学失效！</li>
+<li class="fragment fade-up">波动学失效！</li>
+</ul>
+</li>
+</ul>
+<img src="figs/two-slits-2.png" width=200, height=400> 
+<blockquote></blockquote>
+<p class="fragment fade-up">如何描述物体的运动状态？</p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section data-auto-animate>
+            <!-- .slide:  data-auto-animate -->
+<h3>Basic assumption 1/5</h3>
 
             </section>
         
             <section data-auto-animate>
                 <!-- .slide:  data-auto-animate -->
-<h3>来源-2</h3>
-<p>Plane wave-function $$\psi(x,t)=\Psi_p(x,t)=e^{\frac{i}{\hbar}(p\cdot x-Et)}$$ should be a sulotion of wave equation</p>
-<p>
+<h3>Basic assumption 1/5</h3>
+<p class="fragment fade-up">In 1924, De Broglie assumed that :</p>
+<p class="fragment fade-up">The state of a system is described by a wavefunction </p>
+<p class="fragment fade-up">(波函数完全描述物体的状态)</p>
+
+            </section>
+        
+            <section >
+                <h3>构造第一个波函数</h3>
+<ul>
+<li>For a classical plane wave</li>
+</ul>
+<span>
+ \[\begin{equation*}
+    \begin{split}
+    y(x,t)&=A e^{i(\dfrac{2\pi}{\lambda}x-\omega t)} \\
+    & = A e^{i\dfrac{2\pi}{h}(\dfrac{h}{\lambda}x-h\nu t)}
+    \end{split} 
+\end{equation*} 
+\]</span>
+            </section>
+        
+            <section >
+                <ul>
+<li>Putting De Broglie relationship into the formula, one gets a quantum plane wavefunction</li>
+</ul>
+<span>
 \[\begin{equation*}
         \begin{split}
-       -i\hbar \nabla \psi(x,t) &=p\psi(x,t) \\
-       \hbar^2 \nabla^2 \psi(x,t) &=p^2\psi(x,t) \\
-       \frac{\hbar^2}{2\mu} \nabla^2 \psi(x,t) &=\frac{p^2}{2\mu} \psi(x,t) , \quad \cdots (1)
-        \end{split}
-\end{equation*}\]
-</p>
-
-            </section>
-        
-            <section >
-                <p class="fragment fade-up">$$\begin{equation*}
-i\hbar \frac{\partial }{\partial t} \psi(x,t) =E\psi(x,t)  , \qquad \cdots (2)
-\end{equation*}$$</p>
-<p class="fragment fade-up">(2)式-(1)式：</p>
-<p class="fragment fade-up">$$\begin{equation*}
-(i\hbar \frac{\partial }{\partial t} - \frac{\hbar^2}{2\mu} \nabla^2 )\psi(x,t) =(E-\frac{p^2}{2\mu})\psi(x,t)=0<br>
-\end{equation*}$$</p>
-<p class="fragment fade-up">$$\begin{equation*}
-i\hbar \frac{\partial }{\partial t} \psi(x,t) = \frac{\hbar^2}{2\mu} \nabla^2 \psi(x,t)
-\end{equation*}$$</p>
-
-            </section>
-        
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<p>A general wavefunction is a wave packet</p>
-
-            </section>
-        
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<p>A general wavefunction is a wave packet</p>
-<span>
-\[\begin{aligned} 
-\Psi(x,t) & 
-= \int\limits_{p=0} ^{\infty} c(p,t) e^{\frac{i}{\hbar}px} dp \\
-(i\hbar \frac{\partial }{\partial t} - \frac{\hbar^2}{2\mu} \nabla ^2 ) \Psi(x,t) 
-    & = \int\limits_{p=0} ^{\infty} c(p,t) (E-\frac{p^2}{2\mu}) e^{\frac{i}{\hbar} px } dp  \\ 
-    & =0  
-\end{aligned}\]
-</span>
-
-            </section>
-        
-            <section >
-                <p class="fragment fade-up">$$ i\hbar \frac{\partial }{\partial t} \Psi(x,t) = \frac{\hbar^2}{2\mu} \nabla^2 \Psi(x,t) $$</p>
+          \Psi_p(x,t)&=A e^{\dfrac{i}{\hbar}(px-Et)}
+        \end{split} 
+\end{equation*}
+\]</span>
 <ul>
-<li class="fragment fade-up">For nonfree particle in a potential $U(x)$,</li>
+<li class="fragment fade-up">It describes the state of a quantum free particle with constant energy and momentum</li>
 </ul>
-<p class="fragment fade-up">$$\begin{equation*}
-i\hbar \frac{\partial }{\partial t} \Psi(x,t) = (\frac{\hbar^2}{2\mu} \nabla^2 +U(x)) \Psi(x,t)
-\end{equation*}$$</p>
-<p class="fragment fade-up">That is the Schr$\ddot{o}$dinger equation. </p>
 
             </section>
         
             <section >
                 <ul>
-<li class="fragment fade-up">For N-particles system
-$${\small \begin{equation*}
-i\hbar \frac{\partial }{\partial t} \Psi(X,t) = [\sum_{i=1} ^{N} \frac{\hbar ^2}{2\mu_i} \nabla^2 +U(X)] \Psi(X,t)
-\end{equation*}}$$ {.fragment .fade-up}
-where, $X=x_1, x_2, \cdots, x_N $</li>
+<li>In general,  the wavefunction of a particle is the wave-packet of quantum plane wavefunction.</li>
 </ul>
+<span>
+\[\begin{equation*}
+    \Psi(x,t)=\sum\limits_{p=0} ^{\infty} c(p)\Psi_p(x,t) = \int\limits_{p=0} ^{\infty} c(p,t) e^{\frac{i}{\hbar}px}dp
+\end{equation*}
+\]</span>
+<p class="fragment fade-up">$\color{red}{Tips:}$ Wavefunction is a complex function</p>
 
             </section>
         
             <section >
-                <h3>检验正确性</h3>
+                <h3>德布罗意的成就</h3>
 <ul>
-<li class="fragment fade-up">自由粒子的解</li>
-<li class="fragment fade-up">氢原子光谱</li>
-<li class="fragment fade-up">$\cdots\cdots$</li>
+<li>物质波假说</li>
+<li>原子内电子的波动性</li>
+<li>波函数假说</li>
+<li>构造第一个波函数</li>
+<li>…</li>
 </ul>
+<img src="figs/2021-12-03-18-00-05.png" width=200, height=300>
+<p class="fragment fade-up">&quot; 德布罗意已经揭开了面纱的一角 &quot;   --爱因斯坦 </p>
 
             </section>
         
             <section >
-                <h3>评价</h3>
-<ul>
-<li class="fragment fade-up">
-<p>我一阅读完毕整篇论文，就像被一个迷语困惑多时渴慕知道答案的孩童，现在终于听到了解答！ --普朗克</p>
+                <h3>Big problems</h3>
+<div class="block">
+<ul style="background:red;width:800px">
+<li>
+<p>What is the nature of wavefunction</p>
 </li>
-<li class="fragment fade-up">
-<p>这著作的灵感如同泉水般源自一位真正的天才！-爱因斯坦</p>
-</li>
-<li class="fragment fade-up">
-<p>波动方程把量子理论推进了关键性的一步 --玻尔</p>
+<li>
+<p>How to obtain a general wavefunction</p>
 </li>
 </ul>
-
-            </section>
-        
-            <section >
-                <h3>薛定谔</h3>
-<ul>
-<li class="fragment fade-up">
-<p>奥地利理论物理学家，维也纳人, 量子力学的奠基人。
-薛天才,通灵的人, 1926年提出薛定谔方程，获1933年诺贝尔物理学奖； 1935年提出“薛定谔的猫”，至今还是“养猫人”的猫王；1943年写的《生命是什么》一书，被誉为“唤起生物革命的小册子”。</p>
-</li>
-<li class="fragment fade-up">
-<p>薛定谔：他玉树临风，英俊潇洒，风流倜傥，人见人爱，花见花开，情人无数，江湖人称 “段正淳“</p>
-</li>
-</ul>
-
-            </section>
-        
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<h3>Basic assumption 2/5</h3>
-
-            </section>
-        
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<h3>Basic assumption 2/5</h3>
-<p class="fragment fade-up">The evolution of wavefunction obeys Schr$\ddot{o}$dinger equation
-\begin{equation*}
-i\hbar \frac{\partial }{\partial t} \Psi (\overrightarrow{r},t ) =\left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\overrightarrow{r},t ) \right ]\Psi (\overrightarrow{r}, t )
-\end{equation*}</p>
-<p class="fragment fade-up">如今，薛定谔方程已是量子力学基本方程，地位与经典物理学中的牛顿第二定律相当。有着丰富的内含</p>
+</div>
 
             </section>
         
@@ -349,221 +271,181 @@ i\hbar \frac{\partial }{\partial t} \Psi (\overrightarrow{r},t ) =\left [ -\frac
     
     <section>
         <section >
-            <h3>定态薛定谔方程</h3>
-<p>$\color{yellow}{例：}$ 若势函数$V(\vec{r},t ) $若不显含时间 t，试分离变量</p>
-<p>$ \displaystyle i \hbar \frac{\partial }{\partial t} \Psi (\vec{r},t ) =\left [- \frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r},t ) $</p>
-<p class="fragment fade-up">$\color{yellow}{解：}$  设  $\Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) $ , 代回原方程，有：
-$$ \displaystyle i\hbar \Psi (\vec{r})  \frac{\partial }{\partial t} f(t)=f(t) \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) $$</p>
+            <h3>波函数的统计诠释</h3>
+<ul style="background:green;width:850px">
+<li class="fragment fade-up">
+<p>In 1926, Born proposed the statistical interpretation of wavefunction :</p>
+<ul>
+<li class="fragment fade-up">The magnitude of wavefunction $\Psi(\vec{r},t)$ does not tell us how much of
+the particle is at position $\vec{r}$ at time t,</li>
+<li class="fragment fade-up">but rather the probability ($W$) that the particle is at or near the position at time t.
+$$ d W = |\Psi(\vec{r},t)|^2 d \tau $$</li>
+</ul>
+</li>
+</ul>
+<p class="fragment fade-up">Nobel Prize in physics（1954)</p>
 
             </section>
         
             <section >
-                <p class="fragment fade-up">$$ \displaystyle i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)= \frac{1}{\Psi (\vec{r}) } \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E $$</p>
-<p class="fragment fade-up">得两个微分方程：</p>
+                <h3>解释双缝干涉实验</h3>
+<ul>
+<li class="fragment fade-up">自由电子平面波，等概率出现在屏的任一位置</li>
+<li class="fragment fade-up">电子通过双缝，发生衍射和干涉，导致在某些位置的振幅大，某些位置的振幅小</li>
+<li class="fragment fade-up">振幅较大的位置电子出现概率大，形成明纹。振幅小的位置电子出现概率小，形成暗纹</li>
+<li class="fragment fade-up">明暗干涉条纹不体现电子的波的形状，体现的是电子出现概率的分布。</li>
+</ul>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3>Do you believe it?</h3>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3>Do you believe it?</h3>
+<h3>What’s your explanation ?</h3>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3>统计诠释的数学描述</h3>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3>统计诠释的数学描述</h3>
+<ul>
+<li class="fragment fade-up">Magnitude of the wavefunction, $|\Psi|^2 =\Psi^* \Psi $</li>
+<li class="fragment fade-up">Probability density, $\omega = |\Psi|^2 $</li>
+<li class="fragment fade-up">Probability in $d \tau$,  $d W = |\Psi|^2 d \tau $</li>
+<li class="fragment fade-up">Normalization, $$ \int\limits_{\Omega} |\Psi|^2 d \tau =1 $$</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <ul>
+<li class="fragment fade-up">Momentum wavefunction $$ c(\vec{p},t)=\frac{1}{(2\pi\hbar)^{3/2}} \int_{0}^{\infty} \Psi(\vec{r},t) e^{-\frac{i}{\hbar} \vec{p}\cdot \vec{r} } d \tau $$ </li>
+<li class="fragment fade-up">Expectation value of any $f (x)$  $$ &lt;f(x)&gt;=\int_{0}^{\infty} f(x) |\Psi(x)|^2 dx $$</li>
+<li class="fragment fade-up">Expectation value of observable A<br>
+$$ &lt; A&gt;=\int_{0}^{\infty} \Psi^*(x) A \Psi(x) dx $$</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <ul>
+<li class="fragment fade-up">$ \color{red} {Tips：} $
+<ul>
+<li class="fragment fade-up">
+<p>$\Psi$ and $C\Psi$ describe the same state
+$$\frac{C\Psi(x_1)}{C\Psi(x_2)} = \frac{\Psi(x_1)}{\Psi(x_2)}$$</p>
+</li>
+<li class="fragment fade-up">
+<p>$\Psi$ and $e^{i\omega}\Psi$ describe the same state
+$$ |e^{i\omega} \Psi|^2 = e^{-i\omega} e^{i\omega} |\Psi|^2 = |\Psi|^2 $$</p>
+</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h4>Statistical interpretation requires the wavefunction to be （标准化条件）</h4>
+<p class="fragment fade-up"></p>
 <ol>
-<li class="fragment fade-up">随时间的演化方程<br>
-$$  i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)=E $$ </li>
+<li class="fragment fade-up">monotropic function</li>
+<li class="fragment fade-up">continuous function</li>
+<li class="fragment fade-up">finite function</li>
+<li class="fragment fade-up">square integrable function</li>
 </ol>
-<p class="fragment fade-up">解得：$\displaystyle  f(t) =e^{-iEt/\hbar}$ </p>
-
-            </section>
-        
-            <section >
-                <ol start="2">
-<li class="fragment fade-up">定态薛定谔方程 $$\displaystyle   \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E \Psi (\vec{r})  $$ </li>
-</ol>
-<ul>
-<li class="fragment fade-up">
-<p>定态：能量有确定值的态称为定态</p>
-</li>
-<li class="fragment fade-up">
-<p>定态波函数: $$ \Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) = \Psi_E (\vec{r} ) e^{-iEt/\hbar} $$ </p>
-</li>
-</ul>
-
-            </section>
-        
-            <section >
-                <h3 class="fragment fade-up">定态薛定谔方程算符形式：</h3>
-<p class="fragment fade-up">$$ \hat{H} \Psi (\vec{r}) =E \Psi (\vec{r})  $$   </p>
-<ul>
-<li class="fragment fade-up">
-<p>很明显，定态薛定谔方程是哈密顿算符 $\hat{H}$ 的本征方程。结合定解条件，可得到能量本征值谱 { $E_n$ } 及本征函数系 {$\Psi_{E_n} (\vec{r} )$} 。</p>
-</li>
-<li class="fragment fade-up">
-<p>依据态叠加原理，一般的态可表示为定态薛定谔方程解的线性叠加形式：
-$$ \Psi (\vec{r},t ) =\sum\limits_n \Psi_{E_n} (\vec{r} ) e^{-iE_n t/\hbar} $$ </p>
-</li>
-</ul>
 
             </section>
         
 
     </section>
-    
-
-
-
-    
-        <section data-auto-animate>
-            
-            <!-- .slide:  data-auto-animate -->
-<h3>守恒定律</h3>
-
-            </section>
     
 
 
 
     
     <section>
-        <section data-auto-animate>
-            <!-- .slide:  data-auto-animate -->
-<h3>守恒定律</h3>
-<p class="fragment fade-up">守恒律是物理量随时间的变化率问题，量子力学最重要的是概率，我们考虑概率密度的变化率
-$$\omega (\vec{r}, t)=|\Psi(\vec{r}, t)|^{2} =\Psi^{*} (\vec{r}, t) \Psi(\vec{r}, t)$$</p>
-
-            </section>
-        
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<h3>守恒定律</h3>
-<p>守恒律是物理量随时间的变化率问题，量子力学最重要的是概率，我们考虑概率密度的变化率
-$$\omega (\vec{r}, t)=|\Psi(\vec{r}, t)|^{2} =\Psi^{*} (\vec{r}, t) \Psi(\vec{r}, t)$$</p>
-<span>
-\[\begin{aligned} 
-        \frac{\partial \omega}{\partial t} &=\Psi^{*} \frac{\partial \Psi}{\partial t}+\frac{\partial \Psi^{*}}{\partial t} \Psi, \cdots (1) \\
-        \frac{\partial \Psi}{\partial t} & =\frac{i \hbar}{2 \mu} \nabla^{2} \Psi+\frac{1}{i \hbar} U \Psi, \cdots (2) \\
-\end{aligned}\]
-</span>
-            </section>
-        
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<span>
-\[\begin{aligned}
-    \frac{\partial \Psi^{*}}{\partial t} & =-\frac{i \hbar}{2 \mu} \nabla^{2} \Psi^{*}-\frac{1}{i \hbar} U \Psi^{*}, \cdots (3) 
-\end{aligned}\]
-</span>
-
-            </section>
-        
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<span>
-\[\begin{aligned}
-    \frac{\partial \Psi^{*}}{\partial t} & =-\frac{i \hbar}{2 \mu} \nabla^{2} \Psi^{*}-\frac{1}{i \hbar} U \Psi^{*}, \cdots (3) 
-\end{aligned}\]
-</span>
-<p>把（2）（3）代回（1）得：</p>
-<span>
-\[\begin{aligned}
-        \frac{\partial \omega}{\partial t}& =\frac{i \hbar}{2 \mu}\left(\Psi^{*} \nabla^{2} \Psi-\Psi \nabla^{2} \Psi^{*}\right) \\
-        &=\frac{i \hbar}{2 \mu} \nabla \cdot\left(\Psi^{*} \nabla \Psi-\Psi \nabla \Psi^{*}\right)\\
-\end{aligned}\]
-</span>  
-            </section>
-        
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<span>
-\[\begin{aligned}
-        \frac{\partial \omega}{\partial t}&=-\nabla \cdot \frac{i \hbar}{2 \mu} \left(\Psi \nabla \Psi^{*}-\Psi^{*} \nabla \Psi\right) \\ 
-        &=-\nabla \cdot \vec{J}
-\end{aligned}\]
-</span>  
-<p class="fragment fade-up">在上式中，定义了矢量： </p>
-<p class="fragment fade-up">$$ \vec J =\frac{i \hbar}{2 \mu} ( \Psi \nabla<br>
-\Psi ^* - \Psi ^* \nabla \Psi ) $$ </p>
-<p class="fragment fade-up">$$
-\frac{\partial \omega}{\partial t}+ \nabla \cdot \vec{J}=0, \cdots (4)
-$$</p>
+        <section >
+            <p>$ \color{yellow}{例1}$: Normalizating the wavefunction $$\psi(x)=\sin(x), \qquad (0\le x \le \pi)$$</p>
+<p class="fragment fade-up">$ \color{yellow}{解:}$ assuming the normalized wavefunction $$\Psi=C\psi(x)=C\sin(x)$$</p>
 
             </section>
         
             <section >
-                <p class="fragment fade-up">(4) 式具有连续性方程形式，说明矢量 $\vec{J}$ 决定了概率密度的变化率。
-在任意空间区域 V， 对（4）式求积分：
-\begin{equation*}
-\frac{d}{d t} \int_{V} \omega d \tau =-\int_{S} \vec{J} \cdot d \vec{S}, \cdots (5)
-\end{equation*}</p>
-<p class="fragment fade-up">由 Gauss 定理可知，单位时间内体系V内增加的概率等于穿过V边界面S进入V内的概率，所以$\vec{J}$就是<strong>概率流</strong></p>
+                <p><code>\[\begin{equation*}         \begin{split}             \int_0 ^\pi |C\sin(x)|^2 dx &amp;=1 \\             C^2 \int_0 ^\pi \sin^2(x) dx &amp;=1 \\             C^2 \int_0 ^\pi \frac{1-\cos 2x }{2} dx &amp;=1 \\              C^2 [\frac{x}{2}-\frac{\sin 2x}{4}]_0 ^\pi &amp;=1 \\          \end{split}   \end{equation*} \] </code></p>
+<p>$\to C=\sqrt{\dfrac{2}{\pi}} $</p>
 
             </section>
         
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<ul>
-<li class="fragment fade-up">(4) 、(5)式分别是<strong>概率守恒定律</strong>的微分、积分形式。</li>
-</ul>
+            <section >
+                <p>Thus, the normalizated wavefunction is
+$$ \Psi=C\sin(x)=\sqrt{\frac{2}{\pi}}\sin(x)$$</p>
 
             </section>
         
-            <section data-auto-animate>
-                <!-- .slide:  data-auto-animate -->
-<ul>
-<li>(4) 、(5)式分别是<strong>概率守恒定律</strong>的微分、积分形式。</li>
-</ul>
-<span>
-\[\begin{aligned}
-        \frac{d}{d t} \int\limits_{V} \omega d \tau &= \frac{d}{d t} \int\limits_{V} |\Psi(\vec{r}, t)|^{2} \tau , \cdots （V \to \infty）  \\
-        &=\frac{d}{d t} 1\\ 
-        &=0
-\end{aligned}\]
-</span>  
-<p class="fragment fade-up">说明全空间概率不随时间发生变化，即粒子既未产生也未湮灭时，概率守恒就是<strong>粒子数守恒</strong>。</p>
+            <section >
+                <p>$ \color{yellow}{例2}$: Normalizating the plane wavefunction $$ \Psi_p (x,t)=e^{\frac{i}{\hbar}(px-Et)} $$</p>
+<p class="fragment fade-up">$ \color{yellow}{解:}$ assuming the normalized wavefunction $$\Psi=C\Psi_p (x,t)$$</p>
 
+            </section>
+        
+            <section >
+                <span>
+\[\begin{equation*}
+        \begin{split}
+            \int_{-\infty} ^\infty |C\Psi_p (x,t)|^2 dx &=1  \\
+            C^2 \int_0 ^\infty \Psi_p (x) \Psi_{p'} (x) dx &=\delta (p-p')  \\
+            C^2 \int_0 ^\infty e^{\frac{i}{\hbar}(p-p')x} dx =&=\delta (p-p')\\
+            C^2 2\pi \hbar \delta (p-p') &=\delta(p-p') \\
+            C&= \frac{1}{\sqrt{2\pi \hbar}}
+        \end{split} 
+\end{equation*}
+\]</span>
             </section>
         
             <section >
                 <ul>
-<li>对（4）式，左右同乘粒子质量$\mu$,<br>
-\begin{equation*}
-\frac{\partial \mu\omega}{\partial t}+ \nabla \cdot \mu\vec{J}=0
-\end{equation*}<br>
-得如下<strong>质量守恒定律</strong>:</li>
+<li>The normalized plane wavefunction</li>
 </ul>
-<p class="fragment fade-up">$$
-\frac{\partial \omega_\mu}{\partial t}+ \nabla \cdot \vec{J_\mu}=0, \cdots (6)
-$$</p>
+<p>$$ \Psi(x,t)=\frac{1}{\sqrt{2\pi \hbar}} e^{\frac{i}{\hbar}px-Et} $$</p>
+<p class="fragment fade-up">$$ \Psi(\vec r ,t)=\frac{1}{(2\pi \hbar)^{3/2}} e^{\frac{i}{\hbar}\vec p\cdot \vec r -Et} $$</p>
 
             </section>
         
             <section >
-                <p>对（4）式，左右同乘以粒子电荷$e$,
-\begin{equation*}
-\frac{\partial \omega}{\partial t} e+ \nabla \cdot e\vec{J}=0
-\end{equation*}<br>
-得如下<strong>电荷守恒定律</strong></p>
-<p class="fragment fade-up">$$ \frac{\partial \omega _e }{ \partial t} + \nabla \cdot \vec {J} _e = 0, \cdots (7)  $$</p>
+                <h4>玻恩 (Max Born 1882～1970)</h4>
+<img src="figs/Born.png" width=200, height=250>
+<ul>
+<li class="fragment fade-up">
+<p>德国理论物理学家，量子力学奠基人之一,
+因对波函数的统计解释，获1954年诺贝尔物理学奖</p>
+</li>
+<li class="fragment fade-up">
+<p>1912年受聘哥廷根大学无薪讲师，1933年因犹太血统被剥夺教职和财产，流亡英国</p>
+</li>
+<li class="fragment fade-up">
+<p>泡利、海森堡和黄昆都是他的学生</p>
+</li>
+</ul>
 
             </section>
         
-            <section >
-                <h3>定态的概率流</h3>
-<p>$\color{yellow}{例.}$ 试证明定态的概率密度不随时间变化</p>
-<p align="left">$\color{yellow}{证明:}$ </p>
-<span>
-\[\begin{aligned}
-            \omega (\vec{r}, t)&=\Psi^{*}(\vec{r}, t) \Psi(\vec{r}, t) \\
-            &=\Psi_{E_n} (\vec{r} ) e^{-iE_n t/\hbar} \Psi_{E_n} ^* (\vec{r} ) e^{iE_n t/\hbar} \\
-            &=\Psi_{E_n} (\vec{r} )\Psi_{E_n} ^* (\vec{r} ) \\
-            &=|\Psi_{E_n} (\vec{r} )|^2
-\end{aligned}\]
-</span>  
-            </section>
-        
-            <section >
-                <p>$\color{yellow}{例.}$ 试证明定态的概率流密度不随时间变化</p>
-<p align="left">$\color{yellow}{证明:}$ </p>
-<section data-markdown>
-$$\begin{equation*}
-    \frac{\partial \omega}{\partial t}+ \nabla \cdot \vec{J}=0
-\end{equation*} $$ 
-<p>$$\begin{equation*}
-\nabla \cdot \vec{J}=-\frac{\partial \omega}{\partial t}=0
-\end{equation*} $$</p>
-</section>
+            <section data-background="images/uestclogo.png" data-background-opacity="0.07">
+                <!-- .slide: data-background="images/uestclogo.png" data-background-opacity="0.07"-->
+<h3>A &amp; q</h3>
+
             </section>
         
 
@@ -573,11 +455,9 @@ $$\begin{equation*}
 
 
     
-        <section data-background="images/uestclogo.png" data-background-opacity="0.07">
+        <section >
             
-            <!-- .slide: data-background="images/uestclogo.png" data-background-opacity="0.07"-->
-<h3>A &amp; q</h3>
-
+            
             </section>
     
 
@@ -629,32 +509,32 @@ $$\begin{equation*}
   </div>
 
   	
-	<script src="http://localhost:64404/libs/reveal.js/4.1.3/reveal.js"></script>
-	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/zoom/zoom.js"></script>
-	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/notes/notes.js"></script>
+	<script src="http://localhost:56928/libs/reveal.js/4.1.3/reveal.js"></script>
+	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/zoom/zoom.js"></script>
+	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/notes/notes.js"></script>
 	
-	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/markdown/markdown.js"></script>
-	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/highlight/highlight.js"></script>
-	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/menu/menu.js"></script>
-	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/math/math.js"></script>
+	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/markdown/markdown.js"></script>
+	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/highlight/highlight.js"></script>
+	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/menu/menu.js"></script>
+	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/math/math.js"></script>
 
-	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/fullscreen/plugin.js"></script>
+	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/fullscreen/plugin.js"></script>
   
-  	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/animate/plugin.js"></script>
-  	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/animate/svg.min.js"></script>
+  	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/animate/plugin.js"></script>
+  	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/animate/svg.min.js"></script>
   
-  	 <!--	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/anything/plugin.js"></script> -->
+  	 <!--	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/anything/plugin.js"></script> -->
 
- <!--	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/audio-slideshow/plugin.js"></script>  -->
-<!--	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/audio-slideshow/recorder.js"></script>-->
-<!--	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/audio-slideshow/RecordRTC.js"></script>-->
+ <!--	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/audio-slideshow/plugin.js"></script>  -->
+<!--	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/audio-slideshow/recorder.js"></script>-->
+<!--	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/audio-slideshow/RecordRTC.js"></script>-->
 
-<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/chalkboard/plugin.js"></script>
-	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/customcontrols/plugin.js"></script>
-	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/embed-tweet/plugin.js"></script>
+<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/chalkboard/plugin.js"></script>
+	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/customcontrols/plugin.js"></script>
+	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/embed-tweet/plugin.js"></script>
 
-	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/chart/chart.min.js"></script>
-	<script src="http://localhost:64404/libs/reveal.js/4.1.3/plugin/chart/plugin.js"></script>
+	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/chart/chart.min.js"></script>
+	<script src="http://localhost:56928/libs/reveal.js/4.1.3/plugin/chart/plugin.js"></script>
 
   <script>
 
@@ -748,7 +628,7 @@ $$\begin{equation*}
 			parallaxBackgroundVertical: 0,
 			
 			//Presentation Size
-			width: 960,
+			width: 1024,
 			height: 700,
 			margin: 0.04,
 			minScale: 0.2,

@@ -4,7 +4,7 @@ transition: "slide"
 highlightTheme: "monokai"
 logoImg: "images/uestclogo.jpg"
 slideNumber: false
-title: "title shown in "
+title: "smaples for vscode reveal "
 enableTitleFooter: false
 separator:  "^[\\r\\n?|\\n]---[\\r\\n?|\\n]$"
 verticalSeparator: "^[\\r\\n?|\\n]--[\\r\\n?|\\n]$"
@@ -168,8 +168,53 @@ A thin wrapper for MathJax
 
 ---
 
+- 方法-6
 
-# 3、 vscode-reveal  简介
+`
+\[\begin{aligned}
+\dot{x} & = \sigma(y-x) \\
+\dot{y} & = \rho x - y - xz \\
+\dot{z} & = -\beta z + xy
+\end{aligned} \]
+`
+
+---
+
+- 方法-7
+
+### The Cauchy-Schwarz Inequality
+
+<script type="math/tex; mode=display">
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+</script>
+                    
+
+---
+
+
+
+### The Lorenz Equations
+
+`
+\[\begin{aligned} \dot{x} & = \sigma(y-x) \\ \dot{y} & = \rho x - y - xz \\ \dot{z} & = -\beta z + xy \end{aligned} \]
+` {class="fragment"}
+
+
+
+---
+
+### line-numbers
+
+```javascript {data-line-numbers}
+function add(x, y) {
+  return x + y
+}
+```
+
+---
+
+
+## 3、 vscode-reveal  简介
 
 This extension let you display a reveal.js presentation directly from an opened markdown document.
 
@@ -654,13 +699,13 @@ This fragment focuses on lines 1 and 2. {.fragment .current-only data-code-focus
 
 <!-- .slide:  data-auto-animate  data-auto-animate-id="two" data-auto-animate-restart-->
 
-# Group C
+# Group C ❤️
 
 ---
 
 <!-- .slide:  data-auto-animate  data-auto-animate-id="two"-->
 
-# Group C {style="color: #EC4899;"}
+# Group C ❤️ {style="color: #EC4899;"}
 
 ---
 
@@ -708,14 +753,100 @@ let c = planets.reduce( circumferenceReducer, 0 )
 ---
 
 ```js {data-line-numbers="1-2|3|4"}
-let a = 1;
+let a = 1; 
 let b = 2;
 let c = x => 1 + 2 + x;
 c(3);
 ```
 
+---
+
+<!-- .slide: data-visibility="hidden" -->
+Hidden Slides
+-------------
+
+This slide is visible in the source, but hidden when the presentation is viewed. You can show all hidden slides by setting the \`showHiddenSlides\` config option to \`true\`.
+
 
 ---
+
+
+Add the `r-fit-text` class to auto-size text
+## FIT TEXT {class="r-fit-text"}
+
+
+---
+
+### 自适应调整字体
+
+`
+\[\small \begin{equation*}
+    \begin{split}
+    &\left( \psi_{1}, \hat{F} \psi_{1} \right) + c^{*} \left( \psi_{2}, \hat{F} \psi_{1} \right)+ c \left( \psi_{1}, \hat{F} \psi_{2} \right)+ |c|^{2} \left( \psi_{2}, \hat{F} \psi_{2} \right) \\
+    &= \left( \hat{F} \psi_{1}, \psi_{1} \right) +c^{*} \left( \hat{F} \psi_{2}, \psi_{1} \right)+ c \left( \hat{F} \psi_{1}, \psi_{2} \right) + |c|^{2} \left( \hat{F} \psi_{2}, \psi_{2} \right)
+    \end{split}  
+\end{equation*}
+\] 
+` {class="r-fit-text"}
+
+---
+
+<font size=6> 
+<span>
+\[ ([\psi_1+c\psi_2],\hat{F} [\psi_1+c\psi_2])=(\hat{F}[\psi_1+c\psi_2],[\psi_1+c\psi_2])
+\]
+\[\begin{equation*}
+    \begin{split}
+    &\left( \psi_{1}, \hat{F} \psi_{1} \right) + c^{*} \left( \psi_{2}, \hat{F} \psi_{1} \right)+ c \left( \psi_{1}, \hat{F} \psi_{2} \right)+ |c|^{2} \left( \psi_{2}, \hat{F} \psi_{2} \right)= \\
+    & \left( \hat{F} \psi_{1}, \psi_{1} \right) +c^{*} \left( \hat{F} \psi_{2}, \psi_{1} \right)+ c \left( \hat{F} \psi_{1}, \psi_{2} \right) + |c|^{2} \left( \hat{F} \psi_{2}, \psi_{2} \right)
+    \end{split}  
+\end{equation*}
+\] 
+</span>
+</font>
+
+---
+
+
+## Fragments
+
+Hit the next arrow...{class="fragment"}
+
+... to step through ...{class="fragment"}
+
+... a fragmented slide.{class="fragment"}
+
+This slide has fragments which are also stepped through in the notes window.
+
+<aside class="notes">
+    This slide has fragments which are also stepped through in the notes window.
+</aside>
+
+---
+
+## Fragment Styles
+
+There's different types of fragments, like:
+
+grow {class="fragment grow"}
+
+shrink {class="fragment shrink"}
+
+fade-out {class="fragment fade-out"}
+
+<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
+<span style="display: inline-block;" class="fragment fade-up">up, </span>
+<span style="display: inline-block;" class="fragment fade-down">down, </span>
+<span style="display: inline-block;" class="fragment fade-left">left</span>
+
+fade-in-then-out {class="fragment fade-in-then-out"}
+
+fade-in-then-semi-out {class="fragment fade-in-then-semi-out"}
+
+Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span>
+
+---
+
 
 ### 字体大小与颜色
 
@@ -734,6 +865,136 @@ c(3);
 
 
 ---
+
+# Planuml
+
+```plantuml
+Bob -> Alice : hello
+```
+
+---
+
+# dot
+
+```dot
+digraph example1 {
+    1 -> 2 -> { 4, 5 };
+    1 -> 3 -> { 6, 7 };
+}
+```
+
+---
+
+# ditaa
+
+```ditaa {style=background-color:red}
+    +--------+   +-------+    +-------+
+    |        | --+ ditaa +--> |       |
+    |  Text  |   +-------+    |diagram|
+    |Document|   |!magic!|    |       |
+    |     {d}|   |       |    |       |
+    +---+----+   +-------+    +-------+
+        :                         ^
+        |       Lots of work      |
+        +-------------------------+
+```
+
+---
+
+# mermaid
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+---
+
+::: .container
+
+::: left
+### Left 
+*menu here*
+- 
+:::
+
+
+::: right right
+### Right
+- with
+- a
+- list
+:::
+
+:::
+
+
+---
+
+
+::: .container
+
+::: left
+### Left 
+
+:::
+
+::: middle
+### middle
+ 
+:::
+
+
+::: right
+### Right
+:::
+
+:::
+
+
+---
+
+
+::: {.col style="height:100%; background:red; left:-8.33%;text-align: left; float: left; width:50%; z-index:-10;"}
+Column 1 Content
+
+Column 1 Content
+
+Column 1 Content
+
+Column 1 Content
+
+:::
+::: {.col style="background:blue;left:31.25%; top: 75px;  float: right;  text-align: right;  z-index:-10;  width:50%;"}
+Column 2 Content
+
+Column 2 Content
+
+Column 2 Content
+
+Column 2 Content
+:::
+
+
+---
+
+## You can add Speaker note using 
+
+
+note: this text will be visible to speaker only
+
+---
+
+# Thank
+
+note: Always thank audience !
+
+
+---
+
 
 ### The END
 
