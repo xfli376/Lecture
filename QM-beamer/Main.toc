@@ -1,3 +1,7 @@
 \beamer@sectionintoc {1}{前情回顾}{4}{0}{1}
-\beamer@sectionintoc {2}{狄拉克(Dirac)符号}{5}{0}{2}
-\beamer@sectionintoc {3}{量子力学绘景(Pictures)}{21}{0}{3}
+\beamer@sectionintoc {2}{幺正矩阵}{5}{0}{2}
+\beamer@sectionintoc {3}{幺正变换}{6}{0}{3}
+\beamer@sectionintoc {4}{基矢变换}{7}{0}{4}
+\beamer@sectionintoc {5}{波函数变换}{10}{0}{5}
+\beamer@sectionintoc {6}{算符变换}{12}{0}{6}
+\beamer@sectionintoc {7}{幺正变换性质}{14}{0}{7}

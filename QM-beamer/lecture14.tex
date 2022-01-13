@@ -36,14 +36,10 @@
 \section{幺正变换}
 \begin{frame} 
     \frametitle{}
-    \begin{tcolorbox1}{幺正变换定义：}
+    \begin{tcolorbox1}{幺正变换：}
     通过一个幺正矩阵联系起来的两个矩阵之间的变换，称为幺正变换。
     \end{tcolorbox1}
-\end{frame}
-
-\begin{frame} 
-    \frametitle{}
-    \begin{tcolorbox1}{例：旋转矩阵}
+    \begin{tcolorbox1}{}
         试证明：二维平面矢量绕原点的旋转变换是幺正变换
     \end{tcolorbox1}
     \begin{wrapfigure} {r} {0.30\textwidth} %;图在右
@@ -257,7 +253,7 @@
 
 \begin{frame} 
     \begin{tcolorbox1}{幺正变换性质3：}
-        幺正变换不改变物理规律,已知在 x 表象中有基本对易关系$xp_x-p_x x =-\hbar$ 试求它在p表象中的形式，然后证明这种对易关系不随表象发生变化。
+        幺正变换不改变物理规律,已知在 x 表象中有基本对易关系$xp_x-p_x x =i\hbar$ 试求它在p表象中的形式，然后证明这种对易关系不随表象发生变化。
     \end{tcolorbox1}
     \alert{解：} （1）在p表象， $$ \hat{x}=i\hbar\dfrac{\partial}{\partial p_x}, \qquad \hat{p}_x=p_x $$
      对任意波函数 $\Psi(p_x)$
@@ -304,12 +300,10 @@
             \varepsilon & 0 2\varepsilon\\
         \end{bmatrix} $$
      \end{tcolorbox2}
-
      \alert{解：} 如果知道 A表象的基 $\{\psi_\alpha \}$, F表象的基 $ \{\varphi_n \}$， 则可直接通过计算内积得到：
      $$ S_{n\alpha} =(\varphi_n, \psi_\alpha) $$
-     现在中知道一个非对角矩阵H，我们可以能过解久期方程得到本征值和本征函数，得到一个对角阵H',这相当于实现了一个从A表象到H表象的幺正变换,关系式为：
+     现在知道一个非对角矩阵H，我们可以通过解久期方程得到本征值和本征函数，得到一个对角阵H',这相当于实现了一个从A表象到H表象的幺正变换,关系式为：
      $$ H'=S^\dagger H S$$
-     上式H和H'已知，因此S可求。 
 \end{frame}  
 
 \begin{frame}
