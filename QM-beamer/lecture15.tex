@@ -24,7 +24,7 @@
 \section{狄拉克(Dirac)符号}
 
 \begin{frame}
-    量子力学用希尔伯特空间描述，希尔伯特空间都是内积空间
+    量子力学用希尔伯特空间描述，希尔伯特空间是内积空间
     \begin{tcolorbox1}{希尔伯特空间}
     \begin{itemize}
         \item 加法：$\psi + \varphi$
@@ -46,13 +46,11 @@
     有 ： $$\langle a\psi | = \langle \psi |a^* $$
     $$ |a\psi \rangle = a|\psi \rangle$$ 
     \end{tcolorbox1}
-    考察加法和数乘：\\
-    发现其中的矢量通常都是线性的，因此一般可用右矢来表示。
 \end{frame} 
 
 \begin{frame}
     \frametitle{}
-    考察加法和数乘：可发现其中的矢量通常都是线性的，因此一般用右矢来代替。\\
+    考察加法和数乘：发现其中的矢量通常是线性的，因此用右矢来代替。\\
     $$\begin{aligned}
     &\text{内积：}   & (\psi,\Psi)  & \qquad\Leftrightarrow \qquad & | \Psi \rangle =\langle \psi | \Psi \rangle \\
     &\text{平均值：}   & \bar{F}=(\Psi,F\Psi)  & \qquad\Leftrightarrow \qquad & \bar{F} =\langle \Psi|F | \Psi \rangle \\
@@ -66,14 +64,14 @@
 
 \begin{frame}
     \frametitle{2、外积}
-    考察开式：
+    考察展开式：
     $$\begin{aligned}
     \Psi \rangle &= \sum\limits_{i=1} ^n \langle i | \Psi \rangle |i\rangle\\
                  &= \sum\limits_{i=1} ^n |i\rangle\langle i | \Psi \rangle \\
     \end{aligned}
     $$
     定义算符： $ \qquad  \rho_i = |i\rangle\langle i | \qquad $ 有: \\
-    $$\sum\limits_{i=1} ^n |i\rangle\langle i = \sum\limits_{i=1} ^n P_i =1 $$
+    $$\sum\limits_{i=1} ^n |i\rangle\langle i = \sum\limits_{i=1} ^n \rho_i =1 $$
 
 \end{frame} 
 
@@ -109,7 +107,7 @@
     算符的意义：
     $$\rho_i\Psi= |i\rangle\langle i | \Psi \rangle = \langle i | \Psi \rangle |i\rangle=a_i |i\rangle $$
     $$\Psi= \sum\limits_i ^n a_i |i\rangle = \sum\limits_i ^n \rho_i\Psi$$
-    可知： $ \rho_i\Psi $ 是矢量$\Psi$ 在第$i$ 个本征矢上的投影， 因此称  $P_i $ 为{\color{red} 投影算符}\\
+    可知： $ \rho_i\Psi $ 是矢量$\Psi$ 在第$i$ 个本征矢上的投影， 因此称为{\color{red} 投影算符}\\
     对于非本征态，也可定义：$\rho = |\Psi\rangle\langle \Psi |$\\
     考察其在$i$态的平均值：
     $$ \begin{aligned}
@@ -128,7 +126,7 @@
     \bar{\hat{F}} &=\sum\limits_i |a_i|^2 f_i \\
             &=\sum\limits_i \omega_i \langle i |\hat{F}|i \rangle  \\
             &=\sum\limits_{ij} \omega_i \langle i |\hat{F} |j\rangle \langle j| i\rangle  \\
-            &=\sum\limits_{ij} \langle j| \rangle i \omega_i \langle i |\hat{F} |j\rangle  \\
+            &=\sum\limits_{ij} \langle j| i\rangle  \omega_i \langle i |\hat{F} |j\rangle  \\
             &=\sum\limits_{j} \langle j | (\sum\limits_{i}| i \rangle  \omega_i \langle i |) \hat{F} |j\rangle  \\
     \end{aligned} $$
     定义密度矩阵：
@@ -157,7 +155,7 @@
  
 \begin{frame}  [allowframebreaks=]
     \frametitle{6、狄拉克型量子力学}  
-    量子态： $\hspace{1em}|\Psi \rangle $ \\ \vspace{0.2em}
+    量子态： $\hspace{1em}|\Psi \rangle, \qquad$ 位置波函数：$\hspace{1em} \langle x |\Psi \rangle$ \\ \vspace{0.2em}
     展开式： $\hspace{1em}|\Psi \rangle =\sum\limits_{n=1} ^n a_n |n \rangle$ \\
     内积：   $\hspace{2em}\langle \varphi | \Psi \rangle = (\varphi, \Psi)= \int \varphi^*\Psi d\tau $ \\  \vspace{0.2em}
     归一化： $\hspace{1em}\langle \Psi | \Psi \rangle = (\Psi, \Psi)= \int \Psi^*\Psi d\tau = 1 $ \\ \vspace{0.2em}
@@ -254,7 +252,7 @@
     $$
 \end{frame} 
 
-\section{量子力学绘景(Picture)}
+\section{量子力学绘景(Pictures)}
 
 \begin{frame}  
     \frametitle{三种绘景}  

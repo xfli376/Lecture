@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  2 JAN 2022 23:28
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  13 JAN 2022 19:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -516,7 +516,7 @@ Package: amsthm 2020/05/29 v2.20.6
 ) (/usr/local/texlive/texmf-local/tex/latex/beamer/base/beamerbasethemes.sty)) (/usr/local/texlive/texmf-local/tex/latex/beamer/base/themes/theme/beamerthemedefault.sty (/usr/local/texlive/texmf-local/tex/latex/beamer/base/themes/font/beamerfontthemedefault.sty) (/usr/local/texlive/texmf-local/tex/latex/beamer/base/themes/color/beamercolorthemedefault.sty) (/usr/local/texlive/texmf-local/tex/latex/beamer/base/themes/inner/beamerinnerthemedefault.sty
 \beamer@dima=\dimen282
 \beamer@dimb=\dimen283
-) (/usr/local/texlive/texmf-local/tex/latex/beamer/base/themes/outer/beamerouterthemedefault.sty))) (/usr/local/texlive/2021/texmf-dist/tex/xelatex/mynewbeamer/mynewbeamer.sty
+) (/usr/local/texlive/texmf-local/tex/latex/beamer/base/themes/outer/beamerouterthemedefault.sty))) (./mynewbeamer.sty
 Package: mynewbeamer 2021/12/01
  (/usr/local/texlive/texmf-local/tex/latex/beamer/base/themes/font/beamerfontthemeprofessionalfonts.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
@@ -1567,7 +1567,7 @@ File: images/uestcxx.png Graphic file (type bmp)
  [10
 
 ]
-Overfull \vbox (14.42114pt too high) detected at line 136
+Overfull \vbox (14.42114pt too high) detected at line 134
  []
 
 File: images/uestclogo.png Graphic file (type bmp)
@@ -1676,6 +1676,27 @@ File: images/uestcxx.png Graphic file (type bmp)
  [25
 
 ])
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 24.88266pt on input line 63.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 20.74222pt on input line 63.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 17.28183pt on input line 63.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 24.87733pt on input line 63.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 20.73778pt on input line 63.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 17.27815pt on input line 63.
+File: images/uestclogo.png Graphic file (type bmp)
+<images/uestclogo.png>
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+ [26
+
+
+
+]
 \tf@nav=\write7
 \openout7 = `Main.nav'.
 
@@ -1690,15 +1711,15 @@ File: images/uestcxx.png Graphic file (type bmp)
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: EFD0DFEC07EF34403EFC6D106D474D2C;341.
+(rerunfilecheck)             Checksum: 5473762029264B36395EED363A3298C9;346.
  ) 
 Here is how much of TeX's memory you used:
- 41859 strings out of 476493
- 886711 string characters out of 5817124
- 1410685 words of memory out of 5000000
- 61432 multiletter control sequences out of 15000+600000
- 408019 words of font info for 112 fonts, out of 8000000 for 9000
+ 41903 strings out of 476493
+ 887740 string characters out of 5817124
+ 1411685 words of memory out of 5000000
+ 61452 multiletter control sequences out of 15000+600000
+ 410902 words of font info for 130 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,18n,124p,441b,836s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,18n,124p,441b,841s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Main.pdf (25 pages).
+Output written on Main.pdf (26 pages).

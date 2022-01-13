@@ -315,51 +315,6 @@ highlightTheme : "other theme"
 - Get the theme list via https://highlightjs.org/
   
 
---
-
-## <a id="options"></a> Reveal.js Options
-
-You can customize many setting on for your reveal.js presentation.
-
-
-- revealjs.theme (black, white, league, beige, sky, night, serif, simple, solarized
-- revealjs.highlightTheme (Zenburn)
-- revealjs.controls (true)
-- revealjs.progress (true)
-- revealjs.slideNumber
-- revealjs.history
-- revealjs.keyboard
-- revealjs.overview<
-- revealjs.center
-
---
-
-- revealjs.touch
-- revealjs.loop
-- revealjs.rtl
-- revealjs.shuffle
-- revealjs.fragments
-- revealjs.embedded
-- revealjs.help
-- revealjs.showNotes<
-- revealjs.autoSlide<
-- revealjs.autoSlideMethod
-- Reveal.navigateNext
-- revealjs.autoSlideStoppable
-- revealjs.mouseWheel
-- revealjs.hideAddressBar
-
---
-
-- revealjs.previewLinks<
-- revealjs.transition (none/fade/slide/convex/concave/zoom)
-- revealjs.transitionSpeed (default/fast/slow)
-- revealjs.backgroundTransition (none/fade/slide/convex/concave/zoom)
-- revealjs.viewDistance
-- revealjs.parallaxBackgroundImage
-- revealjs.parallaxBackgroundSize
-- revealjs.parallaxBackgroundHorizontal
-- revealjs.parallaxBackgroundVertical
 
 --
 
@@ -418,51 +373,6 @@ To export your presentation to a static website you can:
 
 This will try to launch Chrome in headless or your default browser it takes about 10sec and then open the export folder.
 
---
-
-## <a id="plugins"></a> Plugins
-
-### Disable slideout menu
-
-```
----
-enableMenu: false
----
-```
-
-### Disable chalkboard
-
-```
----
-enableChalkboard: false
----
-```
-
-### Disable title footer
-
-```
----
-enableTitleFooter: false
----
-```
-
---
-
-### Disable zoom
-
-```
----
-enableZoom: false
----
-```
-
-### Disable search
-
-```
----
-enableSearch: false
----
-```
 
 ---
 
@@ -992,6 +902,43 @@ note: this text will be visible to speaker only
 
 note: Always thank audience !
 
+
+---
+
+### 使用HTML语法
+
+<section>
+   <h3>Title</h3>
+   <p >Text</p>
+   <p class="fragment">Fragment</p>
+ </section>
+
+
+---
+
+### 使用Markdown语法
+
+<section data-markdown>
+  $$ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\ldots} } } } $$
+</section> 
+
+
+---
+
+
+### 使用Markdown语法
+
+`
+\begin{equation*}
+        \begin{split}
+            \hat{p}_x \psi_{p_x} & = p_x \psi_{p_x} \\
+            -i \hbar \frac{\partial}{\partial x} psi_{\vec p} & = p_x \psi_{p_x} \\
+            \frac{1}{\psi_{p_{x}}} \frac{\partial}{\partial x} \psi_{p_{x}} & = \frac{i p_{x}}{\hbar}\\
+            \psi_{p_{x}} & = A e^{\frac{i}{\hbar} p_x x} \\
+            \psi_{p_{x}} & = \frac{1}{\sqrt{2\pi\hbar}}e^{\frac{i}{\hbar}p_x x}
+        \end{split} 
+\end{equation*}
+`
 
 ---
 
