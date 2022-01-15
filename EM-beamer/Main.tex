@@ -1,6 +1,8 @@
 \documentclass[12pt,UTF8,aspectratio=169]{beamer} 
-\RequirePackage{mynewbeamer}
-%%% /usr/local/texlive/2021/texmf-dist/tex/xelatex/mynewbeamer
+\RequirePackage{mybeamer}
+%%% sudo vim /usr/local/texlive/2021/texmf-dist/tex/xelatex/mybeamer
+%%%% sudo texhash
+
 %\usepackage{hyperref}
 %\hypersetup{
 %    colorlinks=true,
@@ -27,13 +29,13 @@
 \date{\today}
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \frame[plain]{\titlepage}
+    %\frame[plain]{\titlepage}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   \begin{frame}
-        \frametitle{目录}
-        \tableofcontents
-    \end{frame}
-   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{frame}{目录}
+        \setbeamertemplate{section in toc}[sections numbered]
+        \tableofcontents[hideallsubsections]
+    \end{frame}%%%
+
 
 %\maketitle
 
@@ -46,6 +48,15 @@
 \include{chapter4.tex}  
 %\include{chapter5.tex}                        %
 %-----------------------------------------------%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\begin{center}
+		\huge Thanks for your attention! \\ A \& Q
+	\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \end{document}

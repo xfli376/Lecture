@@ -14,15 +14,15 @@
     \frametitle{前情回顾}
     \begin{itemize}
         \item 波函数描述体系的状态
-        \item 算符给出体系的物理量
-        \item 力学量算符是线性厄密算符
+        \item 算符描述体系的物理量
+        \item 力学量算符是厄密算符
     \end{itemize}
 \end{frame} 
 
 \section{厄密算符运算性质}
 
 \begin{frame}
-    \frametitle{运算性质}
+    \frametitle{1、运算性质}
     \begin{enumerate}
         \item 两厄米算符之和仍为厄米算符
         \item 当且仅当两厄米算符对易时，它们之积才是厄米算符。
@@ -114,8 +114,8 @@
 \section{厄密算符本征性质}
 
 \begin{frame}
-    \frametitle{本征方程}
-    \begin{tcolorbox1}{本征方程定义：}
+    \frametitle{2、本征问题}
+    \begin{tcolorbox1}{本征方程：}
         厄密算符A的本征方程为
         $$ A\psi=a \psi $$
         称a是算符A的本征值，$\psi$是属于本征值a的本征函数
@@ -320,7 +320,7 @@
         c_n=\sum_m c_m\delta_{nm} = \sum_m c_m(\psi_n, \psi_m)= (\psi_n, \sum_m c_m\psi_m) =(\psi_n, \Psi)
     \end{equation*}
     \begin{exampleblock}{}
-        试证明展开系数的模方$|c_n|^2$就是测得本征值$a_n$的概率
+        试证明展开系数的模方$|c_n|^2$就是测得相应本征值$a_n$的概率
     \end{exampleblock}
     \begin{equation*}
         \begin{split}
@@ -351,7 +351,7 @@
 \section{希尔伯特空间}
 
 \begin{frame} [allowframebreaks=]
-    \frametitle{波函数与矩阵}
+    \frametitle{3、系数矩阵}
     \begin{equation*}
         \begin{split}
             \vec{P}&=\sum_i{x_i\vec{e_i}}, \qquad i=1,2,3 \\
@@ -407,12 +407,16 @@
        *完全性：对给定任意小的实数$\varepsilon$，总有数N存在，当m, n>N时，有\\
        $$ (\psi_m -\psi_n, \psi_m -\psi_n )< \varepsilon $$
    \end{itemize} 
-   ~~\\
+\end{frame} 
+
+\begin{frame}
    5、描述量子力学\\
    \begin{itemize}
        \item 希尔伯特空间的态矢量描述体系的状态
-       \item 希尔伯特空间的线性厄米算符描述体系的力学量
-       \item 力学量算符的本征函数系构成希尔伯特空间的正交归一完全基。
+       \item 希尔伯特空间的厄米算符描述体系的物理量
+       \item 物理量的取值是相应算符的本征值
+       \item 取某本征值的概率是态矢量按算符本征函数系展开时的对应本征矢前展开系数的模方成正比
+       \item 态矢量随时间的演化服从薛定谔方程。
    \end{itemize}
 \end{frame} 
 

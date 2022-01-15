@@ -22,10 +22,10 @@
     以上都是关于量子态的问题，下面讲解量子力学的物理量问题
 \end{frame} 
 
-\section{动量算符}
+\section{力学量平均值}
 
 \begin{frame} [allowframebreaks=]
-    \frametitle{动量算符}
+    \frametitle{1、平均值问题}
     \begin{exampleblock}{}
         已知粒子的位置波函数$\psi(x,t)$，求动量的期望值   
     \end{exampleblock}
@@ -41,7 +41,7 @@
     \begin{equation*}
         \bar{p_x}\neq\int p_x|\psi(x, t)|^{2} d p_x
     \end{equation*}
-    但可以通过如下变换求解(注：为了方便，用$p \to p_x$)
+    但可以通过变换求解(注：为了方便，用$p \to p_x$)
     \begin{equation*}
         \begin{split}
             \bar{p}&=\int c^{*}(p) p c(p) d p \\  
@@ -56,25 +56,25 @@
     $$ \hat{p}_x= -i\hbar\frac{d}{d x} $$ 
     上式变为：         
     $$\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x $$
-    我们称$ \hat{p}_x= -i\hbar\dfrac{d}{d x} $ 是位置表象里的动量算符（$x$分量）\\
-    如果有任意力学量F的算符$\hat{F}$，则可求任意力学量的平均值。\\
+    称$ \hat{p}_x= -i\hbar\dfrac{d}{d x} $ 是位置表象里的动量算符（$x$分量）\\
+    同理，任意力学量F的也有算符$\hat{F}$，其平均值为\\
     $$\bar{F}=\int \psi^{*}(x) \hat{F} \psi(x) d x $$
     由此， 我们发现：
     \begin{tcolorbox}[colback=yellow!10,colframe=red!75!black,title=Basic assumption 3/5]
-    如果体系的状态用波函数描述，则力学量用算符描述。
+    体系的状态用波函数描述，力学量用算符描述。
     \end{tcolorbox}
 \end{frame} 
 
-\section{一般算符}
+\section{算符定义及性质}
 
 \begin{frame} [allowframebreaks=]
-    \frametitle{各种算符定义}
-    既然量子力学中，算符这么重要，我们先给出一般性的定义：
+    \frametitle{2、各种算符定义}
+    算符的一般性定义：
     \begin{definition}
         算符:作用于态函数，使它变成另一个态函数
         $$ \hat{F} \Psi=\psi$$
     \end{definition}
-    (*),在不引起不明意义的条件下，为简单，略去算符的帽子
+    注：,在不引起不明意义的条件下，为简单可略去算符的帽子
     \begin{definition}
         单位算符:
         $$ I\Psi=\Psi $$
@@ -149,8 +149,7 @@
 \section{力学量算符}
 
 \begin{frame} [allowframebreaks=]
-    \frametitle{力学量算符}
-    （位置表象）
+    \frametitle{3、获得各算符}
     \begin{itemize}
         \item  位置算符： $ \hat{\vec{r}} =\vec{r} $
         \item  动量算符： $ \hat{\vec{p}} =-i\hbar(\dfrac{d}{d x}+ \dfrac{d}{d y} + \dfrac{d}{d z})=-i\hbar \nabla $
@@ -165,18 +164,19 @@
         \end{itemize}
     \end{exampleblock}
 \end{frame} 
+
 \begin{frame}   
-    TIPS：上述法则有例外情况
+    TIPS：
     \begin{itemize}
-        \item  $F(\vec{r},\vec{p})$中含$\vec{r}^m\cdot\vec{p}^n$的项 
-        \item  纯量子力学力学量，比如：自旋（S），宇称（P），\dots
+        \item  $F(\vec{r},\vec{p})$中含$\vec{r}^m\cdot\vec{p}^n$的项 ，用$$\frac{1}{2}(\hat{\vec{r}}^m\cdot\hat{\vec{p}}^n+\hat{\vec{p}}^n\cdot\hat{\vec{r}}^m) $$
+        \item  纯量子力学力学量没有经典对应，比如：自旋（S），宇称（P），\dots，算符得重新定义
     \end{itemize}
 \end{frame} 
 
 \section{力学量算符的性质}
 
 \begin{frame} [allowframebreaks=]
-    \frametitle{1、线性算符}
+    \frametitle{4、重要性质}
     \begin{tcolorbox1}{定义:}
         对任意波函数，满足如下运算法则的算符称为线性算符\\
         $$\hat{F}(c_1\psi_1+c_2\psi_2 ) = c_1(\hat{F}\psi_1)+c_2(\hat{F}\psi_2 )$$
@@ -199,8 +199,8 @@
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
-    \frametitle{2、厄密算符}
-    \begin{tcolorbox1}{命题:}
+    \frametitle{厄密算符}
+    \begin{tcolorbox1}{}
     对任意波函数，满足如下运算法则的算符称为厄密算符\\
         $$\int \psi^* \hat{F} \Psi d\tau =\int (\hat{F}\psi)^* \Psi d\tau $$
     \end{tcolorbox1}
@@ -215,8 +215,7 @@
 
 \begin{frame} [allowframebreaks=]
     \begin{tcolorbox1}{命题:}
-        对任意波函数，满足如下运算法则的算符称为厄密算符\\
-            力学量算符都是厄密算符  
+        力学量算符都是厄密算符  
         \end{tcolorbox1}
     \begin{proof}
         对任意波函数$\Psi$, 力学量算符$F$的期望值为\\

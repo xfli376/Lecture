@@ -1,15 +1,9 @@
 \documentclass[12pt,UTF8,aspectratio=169]{beamer} 
-\RequirePackage{mynewbeamer}
-%%% /usr/local/texlive/2021/texmf-dist/tex/xelatex/mynewbeamer
-%\usepackage{hyperref}
-%\hypersetup{
-%    colorlinks=true,
-%    linkcolor=blue,
-%    filecolor=blue,      
-%    urlcolor=blue,
-%    citecolor=cyan,
-%    pdfpagemode=FullScreen,
-%}
+\RequirePackage{mybeamer}
+%%% sudo vim /usr/local/texlive/2021/texmf-dist/tex/xelatex/mybeamer
+%%%% sudo texhash
+
+\allowdisplaybreaks
 
 %-------------------正文-------------------------%
 %                                               %
@@ -40,12 +34,14 @@
 %------------------- 章节-------------------------%
 %\include{beamerexamples.tex}                   %
 %                                               %
-%\include{lecture1.tex}
+%
+\include{lecture1.tex}
 %\include{lecture2.tex}
 %\include{lecture3.tex}
 %\include{lecture4.tex}  
 %\include{lecture5.tex}                        %
 %\include{lecture6.tex}  
+%
 %\include{lecture7.tex}  
 %\include{lecture8.tex}  %                     %
 %\include{lecture9.tex}  %   
@@ -57,9 +53,14 @@
 %\include{lecture15.tex}  %  
 %-----------------------------------------------%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-    \frametitle{}
-    \centering {\color{red} {\textbf{\Huge A $\&$ Q}}}   
-\end{frame} 
+	\begin{center}
+		\huge Thanks for your attention! \\ \vspace{1.0em}
+         A \& Q
+	\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
