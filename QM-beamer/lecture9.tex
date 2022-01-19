@@ -1,12 +1,22 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55%%
+\begin{frame} [plain]
     \frametitle{}
+    \Background[1] 
     \begin{center}
-    { {\huge 第九讲、对易关系}}
-    \end{center}    
+    { {\huge 第九讲、对易关系 }}
+    \end{center}  
+    \addtocounter{framenumber}{-1}   
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+        \frametitle{主要内容}
+        \transfade
+        \tableofcontents
+        \addtocounter{framenumber}{-1} 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{前情回顾}
 
@@ -20,14 +30,24 @@
     \end{itemize}   
 \end{frame} 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{}
+    \begin{center}
+    { {\huge 第九讲、对易关系}}
+    \end{center}    
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{对易子及运算法则}
+
 \begin{frame} 
     \frametitle{}
-    \begin{tcolorbox2}{对易子定义：}
+    \begin{tcolorbox1}{对易子定义：}
         定义对易子：$$ [F,G]\equiv FG-GF $$ \\
         若$[F,G]=0$,则对易 \\
         若$[F,G]\neq0$,则不对易  
-    \end{tcolorbox2}
+    \end{tcolorbox1}
 \end{frame} 
 
 \begin{frame} 
@@ -43,7 +63,7 @@
     \end{enumerate}
 \end{frame} 
 \begin{frame}
-    \begin{proof}{}   
+    \begin{proof}{(6)}   
         \begin{equation*}
             \begin{split} 
             [AB,C]&=ABC-CAB \\
@@ -57,13 +77,13 @@
 \end{frame} 
 
 \begin{frame} 
-    \begin{tcolorbox2}{推论：}
+    \begin{tcolorbox2}{推论：如果A与B、C分别对易}
         \begin{itemize}
-            \item 如果A与B、C对易，则A与$B+C$对易
-            \item 如果A与B、C对易，则A与$B^n+C^m$对易
-            \item 如果A与B、C对易，则A与$BC$对易
-            \item 如果A与B、C对易，则A与$B^nC^m$对易
-            \item 如果A与B、C对易，则A与$B^nC^m+B^{n'}C^{m'}$对易
+            \item 则A与$B+C$对易
+            \item 则A与$B^n+C^m$对易
+            \item 则A与$BC$对易
+            \item 则A与$B^nC^m$对易
+            \item 则A与$B^nC^m+B^{n'}C^{m'}$对易
         \end{itemize}
     \end{tcolorbox2}
 \end{frame} 
@@ -117,8 +137,8 @@
         \end{split}  
     \end{equation*}
     两式相减，$$(xp_x-p_x x)\psi= i\hbar\psi$$
-    得 $xp_x-p_x x= i\hbar$ \\
-    即 $[x,p_x]= i\hbar$\\
+    得 $xp_x-p_x x= i\hbar$ \\ \vspace{0.3em}
+    即 $$\boxed{[x,p_x]= i\hbar}$$
     同理，有：\\
     $\begin{cases}
         [x,p_x]= i\hbar  \\ 
@@ -140,13 +160,16 @@
         [y,z]= 0  \\ 
         [z,x]= 0  
     \end{cases}$ \\
-    \begin{tcolorbox}[colback=yellow!5,colframe=red!75!black,title=量子力学基本对易关系]
+\end{frame} 
+
+\begin{frame}  
+    \begin{tcolorbox4}[量子力学基本对易关系]
     $\begin{cases}
         [x_\alpha,x_\beta]= 0  \\ 
         [p_\alpha,p_\beta]= 0  \\ 
         [x_\alpha,p_\beta]= i\hbar \delta_{\alpha\beta}  \\ 
     \end{cases}$
-    \end{tcolorbox}
+    \end{tcolorbox4}
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
@@ -229,25 +252,28 @@
     \begin{tcolorbox1}{4.角动量-角动量对易关系}
         试证明位置角动量对易关系 $[L_x,L_y]=i\hbar L_z,  [L_z, L^2]= 0$
     \end{tcolorbox1}
-    \alert{证明1:} 基于运算法则
+    \alert{证明方法1:} 基于运算法则 
     \begin{equation*}
         \begin{split}
         [L_x,L_y]= &[yp_z-zp_y,zp_x-xp_z]\\
         =&[yp_z,zp_x-xp_z] - [zp_y,zp_x-xp_z]\\
         =&y[p_z,zp_x-xp_z]+[y,zp_x-xp_z]p_z- z[p_y,zp_x-xp_z]-[z,zp_x-xp_z]p_y\\
-        =&y[p_z,zp_x]-y[p_z,xp_z]+[y,zp_x]p_z-[y,xp_z]p_z \\ &-z[p_y,zp_x] +z[p_y,xp_z]- [z,zp_x]p_y+[z,xp_z]p_y\\
-        =&yz[p_z,p_x]+y[p_z,z]p_x-yx[p_z,p_z]-y[p_z,x]p_z \\ & +z[y,p_x]p_z+[y,z]p_xp_z-x[y,p_z]p_z -[y,x]p_zp_z \\ & -zz[p_y,p_x] -z[p_y,z]p_x +zx[p_y,p_z] +z[p_y,x]p_z \\ & -z[z,p_x]p_y -[z,z]p_xp_y+x[z,p_z]p_y +[z,x]p_zp_y\\  
+        =&y[p_z,zp_x]-y[p_z,xp_z]+[y,zp_x]p_z-[y,xp_z]p_z \\ &-z[p_y,zp_x] +z[p_y,xp_z]- [z,zp_x]p_y+[z,xp_z]p_y\\    
     \end{split}  
     \end{equation*}
     \begin{equation*}
         \begin{split}
-        [L_x,L_y]=&0-yi\hbar p_x-0-0+0+0-0 -0-0 -0 +0 +0-0 -0+xi\hbar p_y +0\\
+        [L_x,L_y]=&yz[p_z,p_x]+y[p_z,z]p_x-yx[p_z,p_z]-y[p_z,x]p_z \\ & +z[y,p_x]p_z+[y,z]p_xp_z-x[y,p_z]p_z -[y,x]p_zp_z \\ & -zz[p_y,p_x] -z[p_y,z]p_x +zx[p_y,p_z] +z[p_y,x]p_z \\ & -z[z,p_x]p_y -[z,z]p_xp_y+x[z,p_z]p_y +[z,x]p_zp_y\\  
+        =&0-yi\hbar p_x-0-0+0+0-0 -0-0 -0 +0 +0-0 -0+xi\hbar p_y +0\\
         =&i\hbar xp_y-i\hbar y p_x\\
         =&i\hbar (xp_y-y p_x)\\
         =&i\hbar L_z\\    
     \end{split}  
     \end{equation*}
-    \alert{证明2:} 基于推论 
+\end{frame} 
+
+\begin{frame} [allowframebreaks=]    
+    \alert{证明方法2:} 基于推论 
     \begin{equation*}
         \begin{split}
         [L_x,L_y]= &[yp_z-zp_y,zp_x-xp_z]\\
@@ -296,6 +322,9 @@
         &=0 \\
         \end{split}  
     \end{equation*}
+\end{frame} 
+
+\begin{frame}     
     同理，有：\\
     $\begin{cases}
         [L_x,L^2]= 0  \\ 
@@ -309,9 +338,9 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=课堂作业]
+    \begin{tcolorbox2}{课堂作业}
         定义升降算符：$L_\pm \equiv L_x \pm i L_y$ \\
      试证明如下对易关系  $$[L_\pm,L^2]=0$$
      $$[L_z, L_\pm]= \pm \hbar L_\pm $$
-    \end{tcolorbox}
+    \end{tcolorbox2}
 \end{frame} 

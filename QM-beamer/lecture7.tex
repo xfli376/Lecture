@@ -1,12 +1,22 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55%%
+\begin{frame} [plain]
     \frametitle{}
+    \Background[1] 
     \begin{center}
-    { {\huge 第七讲、厄密算符的性质}}
-    \end{center}    
+    { {\huge 第七讲、厄密算符的性质 }}
+    \end{center}  
+    \addtocounter{framenumber}{-1}   
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+        \frametitle{主要内容}
+        \transfade
+        \tableofcontents
+        \addtocounter{framenumber}{-1} 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{前情回顾}
 
@@ -14,15 +24,14 @@
     \frametitle{前情回顾}
     \begin{itemize}
         \item 波函数描述体系的状态
-        \item 算符描述体系的物理量
-        \item 力学量算符是厄密算符
+        \item 厄密算符描述体系的物理量
     \end{itemize}
 \end{frame} 
 
-\section{厄密算符运算性质}
+\section{运算性质}
 
 \begin{frame}
-    \frametitle{1、运算性质}
+    \frametitle{运算性质}
     \begin{enumerate}
         \item 两厄米算符之和仍为厄米算符
         \item 当且仅当两厄米算符对易时，它们之积才是厄米算符。
@@ -33,15 +42,15 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{tcolorbox1}{命题:}
-    1. 试证明两厄米算符之和仍为厄米算符 
+    \begin{tcolorbox1}{命题1.}
+     试证明两厄米算符之和仍为厄米算符 
     \end{tcolorbox1}
-    \alert{证明：}A,B为厄米算符，则对于任意态，有\\
+    \alert{证明：}设A,B为厄米算符，对于任意态，有\\
     $$(\Psi, A\psi ) = (A\Psi, \psi), \qquad (\Psi, B\psi ) = (B\Psi, \psi)$$
-    对于它们的和，有： \\
+    它们的和的内积有： \\
     \begin{equation*}
         \begin{split}
-            (\\Psi, (A+B)\psi ) &= (\Psi, A\psi ) + (\Psi, B\psi ) \\  
+            (\Psi, (A+B)\psi ) &= (\Psi, A\psi ) + (\Psi, B\psi ) \\  
             &=(A\Psi, \psi ) + (B\Psi, \psi ) \\
             &=((A+B)\Psi, \psi ) 
          \end{split}
@@ -51,10 +60,10 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{tcolorbox1}{命题:}
-        2、当且仅当两厄米算符对易时，它们之积才是厄米算符。
+    \begin{tcolorbox1}{命题2、}
+        当且仅当两厄米算符对易时，它们之积才是厄米算符。
     \end{tcolorbox1}
-    \alert{证明：}A,B为厄米算符，则对于任意态，
+    \alert{证明：}设A,B为厄米算符，对于任意态，
     \begin{equation*}
         \begin{split}
             (\Psi, (AB)\psi ) &= (\Psi, A(B\psi) ) \\  
@@ -69,13 +78,13 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{tcolorbox1}{命题:}
-        3、无论两厄米算符是否对易，算符$\dfrac{1}{2}(AB+BA)$ 及 $\dfrac{1}{2i}(AB-BA) $ 都是厄米算符
+    \begin{tcolorbox1}{命题3、}
+        无论两厄米算符是否对易，算符$\dfrac{1}{2}(AB+BA)$ 及 $\dfrac{1}{2i}(AB-BA) $ 都是厄米算符
     \end{tcolorbox1}
-    \alert{证明：}A，B为厄米算符，则对于任意态，
+    \alert{证明：}设A，B为厄米算符，对于任意态，
     \begin{equation*}
         \begin{split}
-            (\Psi, \dfrac{1}{2}(AB+BA)\psi ) &=\dfrac{1}{2}(\Psi, AB\psi) + \dfrac{1}{2}(\Psi, BA\psi)  \\
+            I.~ (\Psi, \dfrac{1}{2}(AB+BA)\psi ) &=\dfrac{1}{2}(\Psi, AB\psi) + \dfrac{1}{2}(\Psi, BA\psi)  \\
             &=\dfrac{1}{2}(A\Psi, B\psi) + \dfrac{1}{2}(B\Psi, A\psi)  \\
             &=\dfrac{1}{2}(BA\Psi, \psi) + \dfrac{1}{2}(AB\Psi, \psi)  \\
             &=\dfrac{1}{2}((BA+AB)\Psi, \psi) =(\dfrac{1}{2}(AB+BA)\Psi, \psi)\\
@@ -83,7 +92,7 @@
     \end{equation*}  
     \begin{equation*}
         \begin{split}
-            (\Psi, \dfrac{1}{2i}(AB-BA)\psi ) &= (\Psi, \dfrac{1}{2i}AB\psi) - (\Psi, \dfrac{1}{2i}BA\psi)\\  
+            II.~ (\Psi, \dfrac{1}{2i}(AB-BA)\psi ) &= (\Psi, \dfrac{1}{2i}AB\psi) - (\Psi, \dfrac{1}{2i}BA\psi)\\  
             &=\dfrac{1}{2i}(\Psi, AB\psi) - \dfrac{1}{2i}(\Psi, BA\psi)  \\
             &=\dfrac{1}{2i}(A\Psi, B\psi) - \dfrac{1}{2i}(B\Psi, A\psi)  \\
             &=\dfrac{1}{2i}(BA\Psi, \psi) - \dfrac{1}{2i}(AB\Psi, \psi)  \\
@@ -96,12 +105,12 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{tcolorbox1}{命题:}
-       4、任意算符总可以分解成$A=A_+ +iA_-$，且$A_+$和$A_-$都是厄米算符
+    \begin{tcolorbox1}{命题4、}
+       任意算符总可以分解成$A=A_+ +iA_-$，且$A_+$和$A_-$都是厄米算符
     \end{tcolorbox1}
     \alert{证明：}令：
-    $A_+=\dfrac{1}{2} (A+A^\dagger), \qquad A_+=\dfrac{1}{2i} (A-A^\dagger) $\\
-    有$A=A_+ +iA_-$, 问题转化为证$\dfrac{1}{2} (A+A^\dagger), \qquad \dfrac{1}{2i} (A-A^\dagger) $是厄米算符\\
+    $A_+=\dfrac{1}{2} (A+A^\dagger), \quad A_-=\dfrac{1}{2i} (A-A^\dagger) $，有$A=A_+ +iA_-$\\
+    问题转化为求证$\dfrac{1}{2} (A+A^\dagger), \quad \dfrac{1}{2i} (A-A^\dagger) $是厄米算符\\
     \begin{equation*}
         \begin{split}
             (\Psi, \dfrac{1}{2} (A+A^\dagger)\psi ) &=\dfrac{1}{2}(\Psi, (A)\psi) + \dfrac{1}{2}(\Psi, (A^\dagger)\psi) \\
@@ -111,19 +120,11 @@
     \end{equation*}  
 \end{frame} 
 
-\section{厄密算符本征性质}
+\section{本征值性质}
 
 \begin{frame}
-    \frametitle{2、本征问题}
-    \begin{tcolorbox1}{本征方程：}
-        厄密算符A的本征方程为
-        $$ A\psi=a \psi $$
-        称a是算符A的本征值，$\psi$是属于本征值a的本征函数
-     \end{tcolorbox1}   
-\end{frame} 
-
-\begin{frame}
-    \frametitle{本征性质}
+    \frametitle{}
+    本征值性质：\\ \vspace{0.3em}
     \begin{enumerate}
         \item 厄米算符的本征值为实数
         \item 任意态下平均值为实数的算符必为厄米算符
@@ -133,17 +134,32 @@
         \item 厄米算符的本征函数系具有封闭性
     \end{enumerate}
 \end{frame} 
+
+\begin{frame}
+    \frametitle{}
+    \begin{tcolorbox1}{本征方程：}
+        设厄密算符A的本征方程为
+        $$ A\psi=a \psi $$
+        则称a是算符A的本征值，$\psi$是属于本征值a的本征函数
+     \end{tcolorbox1}   
+     \begin{quote}
+        《量子化就是本征值问题》\\
+        ~~\\
+        \rightline{薛定谔(1926)\hspace{9em}}     
+     \end{quote}
+\end{frame} 
+
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{tcolorbox1}{命题:}
-        1、试证明厄米算符的本征值为实数
+    \begin{tcolorbox1}{命题 1、}
+    厄米算符的本征值为实数
     \end{tcolorbox1}
     \alert{证明：}设A为厄米算符，有如下本征方程
     $$A\psi=a\psi $$
     \begin{equation*}
         (\psi, A\psi)=(\psi, a\psi)=a(\psi, \psi)=a
     \end{equation*}  
-    由于厄米性，有：
+    由厄米性有：
     \begin{equation*}
         (\psi, A\psi)=(A\psi, \psi)=(a\psi, \psi)= a^* (\psi, \psi)=a^*
     \end{equation*}
@@ -156,8 +172,8 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{tcolorbox1}{命题:}
-       2、任意态下平均值为实数的算符必为厄米算符
+    \begin{tcolorbox1}{命题 2、}
+    任意态下平均值为实数的算符必为厄米算符
     \end{tcolorbox1}
     \alert{证明：}任意态$\Psi$下，F的平均值
     $$(\Psi,F\Psi)=\bar{F}=\bar{F}^*=(\Psi,F\Psi)^*=(F\Psi,\Psi), \qquad (1) $$
@@ -198,8 +214,8 @@
 \end{frame} 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{tcolorbox1}{命题:}
-        3、试证厄米算符属于不同本征值的本征函数正交
+    \begin{tcolorbox1}{命题 3、}
+    厄米算符属于不同本征值的本征函数正交
      \end{tcolorbox1}
     \alert{证明：}设$\psi_a$、$\psi_b$分别是厄米算符A属于本征值a、b的本征函数
     \begin{equation*}
@@ -243,8 +259,8 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{tcolorbox1}{命题:}
-        4、简并的本征函数可通过重组变得正交
+    \begin{tcolorbox1}{命题 4、}
+       简并的本征函数可通过重组变得正交
      \end{tcolorbox1}
     \alert{证明：}设厄米算符A属于本征值a的本征函数有f个
     \begin{equation*}
@@ -300,8 +316,8 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{tcolorbox1}{命题:}
-        5、厄米算符的本征函数系具有完备性
+    \begin{tcolorbox1}{命题 5、}
+        厄米算符的本征函数系具有完备性
      \end{tcolorbox1}
     \alert{完备性定义：}设某个体系的厄米算符A具有本征方程
     \begin{equation*}
@@ -313,29 +329,37 @@
     \end{equation*}
     本征函数系的这种性质称为完备性。\\
     完备性证明： 见文献《厄米算符本征函数完备性的一般证明》，大学物理，2012, 31(9): 16-19.
-    \begin{exampleblock}{}
-        试证明展开系数就是态矢量在对应本征基矢上的投影
+\end{frame} 
+
+\begin{frame} 
+    \begin{exampleblock}{推论 1、}
+        展开系数就是态矢量在对应本征基矢上的投影
     \end{exampleblock}
     \begin{equation*}
         c_n=\sum_m c_m\delta_{nm} = \sum_m c_m(\psi_n, \psi_m)= (\psi_n, \sum_m c_m\psi_m) =(\psi_n, \Psi)
     \end{equation*}
-    \begin{exampleblock}{}
-        试证明展开系数的模方$|c_n|^2$就是测得相应本征值$a_n$的概率
+\end{frame} 
+
+\begin{frame} 
+    \begin{exampleblock}{推论 2、}
+        展开系数的模方$|c_n|^2$就是测得相应本征值$a_n$的概率
     \end{exampleblock}
     \begin{equation*}
         \begin{split}
             \bar{A}&=(\Psi, A\Psi)=(\Psi, A\sum_n c_n \psi_{n})=(\Psi, \sum_n c_n A\psi_{n})\\
             &=(\sum_m c_m \psi_{m}, \sum_n c_n a_n \psi_{n})\\
             &=\sum_{m,n} c_m^* c_n a_n (\psi_m, \psi_n)\\
-            &=\sum_{m,n} c_m^* c_n a_n \delta_{mn}=\sum_{n} c_n^* c_n a_n =\sum_{n} |c_n|^2 a_n 
+            &=\sum_{m,n} c_m^* c_n a_n \delta_{mn} \\
+            &=\sum_{n} c_n^* c_n a_n  \\
+            &=\sum_{n} |c_n|^2 a_n 
         \end{split}
     \end{equation*}
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \begin{tcolorbox1}{命题:}
-        6、厄米算符的本征函数系具有封闭性
+    \begin{tcolorbox1}{命题 6、}
+        厄米算符的本征函数系具有封闭性
      \end{tcolorbox1}
     \begin{equation*}
         \begin{split}
@@ -350,8 +374,9 @@
 
 \section{希尔伯特空间}
 
-\begin{frame} [allowframebreaks=]
-    \frametitle{3、系数矩阵}
+\begin{frame} 
+    \frametitle{希尔伯特空间}
+    系数矩阵：\\ \vspace{0.3em}
     \begin{equation*}
         \begin{split}
             \vec{P}&=\sum_i{x_i\vec{e_i}}, \qquad i=1,2,3 \\
@@ -362,11 +387,10 @@
     有 $\vec{P}\Leftrightarrow(x_1,x_2,x_3)$\\
     把正交归一的本征函数系{$\psi_n, n=1,2,\cdots$}张开的空间叫Hilbert空间,\\
     有 $\Psi\Leftrightarrow(c_1,c_2,\cdots)^T$\\
-    下面给出较严格的定义$\cdots$
 \end{frame} 
 
-\begin{frame} [allowframebreaks=]
-    \frametitle{空间的定义}
+\begin{frame} 
+    \frametitle{严格定义}
     \begin{equation*}
         \begin{split}
             \text{1、定义加法} \quad  &\xi=\psi+\varphi\\
@@ -385,6 +409,9 @@
             &(\psi+\varphi) a= \psi a +\varphi a \qquad (\text{第二分配律})\\
         \end{split}  
     \end{equation*}
+\end{frame} 
+
+\begin{frame} 
     \begin{equation*}
         \begin{split}
             \text{3、定义内积} \quad &c=(\psi, \varphi)\\
@@ -418,6 +445,12 @@
        \item 取某本征值的概率是态矢量按算符本征函数系展开时的对应本征矢前展开系数的模方成正比
        \item 态矢量随时间的演化服从薛定谔方程。
    \end{itemize}
+   ~~ \\ \vspace{1.0em}
+   \begin{quote}
+    《量子化就是本征值问题》\\
+    ~~\\
+    \rightline{薛定谔(1926)\hspace{9em}}     
+ \end{quote}
 \end{frame} 
 
 

@@ -1,11 +1,22 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55%%
+\begin{frame} [plain]
     \frametitle{}
+    \Background[1] 
     \begin{center}
-    { {\huge 第十一讲、算符运动方程}}}
-    \end{center}    
+    { {\huge 第十一讲、算符运动方程 }}
+    \end{center}  
+    \addtocounter{framenumber}{-1}   
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+        \frametitle{主要内容}
+        \transfade
+        \tableofcontents
+        \addtocounter{framenumber}{-1} 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \section{前情回顾}
@@ -94,8 +105,7 @@
       C_n^*\frac{d}{dt}C_n&= (\varphi_n, \Psi)^* \frac{d}{dt}(\varphi_n, \Psi) \\
       &= (\varphi_n, \Psi)^* (\varphi_n, \frac{d}{dt}\Psi) \\
       &= \frac{1}{i\hbar}(\varphi_n, \Psi)^* (\varphi_n, H\Psi) \\
-      &= \frac{1}{i\hbar}(\varphi_n, \Psi)^* (H\varphi_n, \Psi) \\
-      &= \frac{E_n}{i\hbar}C_n ^* C_n \\
+      &= \frac{1}{i\hbar}(\varphi_n, \Psi)^* (H\varphi_n, \Psi) = \frac{E_n}{i\hbar}C_n ^* C_n 
     \end{aligned}$$
     $$\begin{aligned}
         \frac{d}{dt} |C_n(t)|^2 &= [C_n^*[\frac{d}{dt} C_n]^*  +  [C_n^*\frac{d}{dt}C_n] \\
@@ -104,9 +114,9 @@
         &=0
     \end{aligned}$$
       证毕！
-    \begin{tcolorbox}[colback=yellow!5,colframe=red!75!black,title=结论：]
+    \begin{tcolorbox2}{结论：}
         无论体系本征态还是叠加态（任意态），守恒量的平均值及各测量值的概率分布都不随时间变化。         
-    \end{tcolorbox}
+    \end{tcolorbox2}
 \end{frame}
 
 \begin{frame} [allowframebreaks=]
@@ -122,10 +132,10 @@
     $$G\varphi_n=g_n \varphi_n$$
     也就是说，$\varphi_n$也是G的本征态，即 F和G具有相同的本征函数系，即它们对易，与题设相矛盾。\\
     因此，体系必存在简并能级，$G\varphi_n$ 和 $\varphi_n$描述不同的态。
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=推论：]
+    \begin{tcolorbox2}{推论：}
         若体系有两个不对易守恒量，则一般存在简并能级， 非简并能级都是守恒量的本征态，简并能级中存在守恒量的一个本征态。\\
         根据能级简并，可找出体系的守恒量；根据能级不简并，可找到守恒量的本征态。
-    \end{tcolorbox}
+    \end{tcolorbox2}
 \end{frame}
 
 \section{守恒定律}
@@ -228,15 +238,15 @@
 
 \begin{frame} [allowframebreaks=]
     \frametitle{} 
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=角动量守恒：]
+    \begin{tcolorbox2}{角动量守恒：}
         试证明：具有空间旋转不变性的体系角动量守恒                               
-    \end{tcolorbox}
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=能量守恒：]
+    \end{tcolorbox2}
+    \begin{tcolorbox2}{能量守恒：}
         试证明：具有时间平移对称性的体系能量守恒                               
-    \end{tcolorbox}
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=宇称守恒：]
+    \end{tcolorbox2}
+    \begin{tcolorbox2}{宇称守恒：}
         试证明：具有空间反射对称性的体系宇称守恒                             
-    \end{tcolorbox}
+    \end{tcolorbox2}
 \end{frame}
 
 \begin{frame} [allowframebreaks=]

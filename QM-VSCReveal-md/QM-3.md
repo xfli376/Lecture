@@ -294,7 +294,7 @@ $ \color{yellow}{解:}$ assuming the normalized wavefunction $$\Psi=C\Psi_p (x,t
 \[\begin{equation*}
         \begin{split}
             \int_{-\infty} ^\infty |C\Psi_p (x,t)|^2 dx &=1  \\
-            C^2 \int_0 ^\infty \Psi_p (x) \Psi_{p'} (x) dx &=\delta (p-p')  \\
+            C^2 \int_0 ^\infty \Psi_p (x) \Psi_{p'} ^* (x) dx &=\delta (p-p')  \\
             C^2 \int_0 ^\infty e^{\frac{i}{\hbar}(p-p')x} dx =&=\delta (p-p')\\
             C^2 2\pi \hbar \delta (p-p') &=\delta(p-p') \\
             C&= \frac{1}{\sqrt{2\pi \hbar}}

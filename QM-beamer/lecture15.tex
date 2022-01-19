@@ -1,11 +1,22 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55%%
+\begin{frame} [plain]
     \frametitle{}
+    \Background[1] 
     \begin{center}
     { {\huge 第十五讲、狄拉克(Dirac)符号}}
-    \end{center}    
+    \end{center}  
+    \addtocounter{framenumber}{-1}   
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+        \frametitle{主要内容}
+        \transfade
+        \tableofcontents
+        \addtocounter{framenumber}{-1} 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{前情回顾}
 
@@ -43,7 +54,9 @@
     \begin{tcolorbox1}{定义：}
     为了清楚地描述这种线性反线性特点，特定义左矢和右矢
     $$\langle \psi |, \qquad |\psi \rangle $$ 
-    有 ： $$\langle a\psi | = \langle \psi |a^* $$
+    内积：\[(\psi,\psi)\equiv \langle \psi | \psi \rangle\]
+
+    有性质： $$\langle a\psi | = \langle \psi |a^* $$
     $$ |a\psi \rangle = a|\psi \rangle$$ 
     \end{tcolorbox1}
 \end{frame} 
@@ -129,13 +142,12 @@
             &=\sum\limits_{ij} \langle j| i\rangle  \omega_i \langle i |\hat{F} |j\rangle  \\
             &=\sum\limits_{j} \langle j | (\sum\limits_{i}| i \rangle  \omega_i \langle i |) \hat{F} |j\rangle  \\
     \end{aligned} $$
-    定义密度矩阵：
-    $$ \hat{\rho} = \sum\limits_{i}| i \rangle  \omega_i \langle i | $$
+    定义密度矩阵：$ \hat{\rho} = \sum\limits_{i}| i \rangle  \omega_i \langle i | $
 \end{frame} 
  
 \begin{frame}  
-    \frametitle{}  得新的平均公式：
-    \begin{tcolorbox1}{平均公式-3}
+    \frametitle{}  得新的平均值公式：
+    \begin{tcolorbox1}{平均值公式-3}
          $$ \begin{aligned}
             \bar{\hat{F}}&=\sum\limits_{j} \langle j | \hat{\rho} \hat{F} |j\rangle \\
                 &=tr (\hat{\rho} \hat{F} )
@@ -153,7 +165,7 @@
     $$\bar{\hat{F}}=tr (\hat{\rho} \hat{F} )$$
 \end{frame} 
  
-\begin{frame}  [allowframebreaks=]
+\begin{frame}  
     \frametitle{6、狄拉克型量子力学}  
     量子态： $\hspace{1em}|\Psi \rangle, \qquad$ 位置波函数：$\hspace{1em} \langle x |\Psi \rangle$ \\ \vspace{0.2em}
     展开式： $\hspace{1em}|\Psi \rangle =\sum\limits_{n=1} ^n a_n |n \rangle$ \\
@@ -165,6 +177,9 @@
     展开系数： $ a_n= \langle n | \Psi \rangle$ \\ \vspace{0.2em}
     展开系数： $ a_n ^*= \langle \Psi | n \rangle$ \\ \vspace{0.2em}
     平均值：  $\hspace{1em}\bar{F} = \langle \Psi |F | \Psi \rangle$ \\ \vspace{0.2em}
+\end{frame} 
+ 
+\begin{frame} 
     矩阵元：  $\hspace{1em}F_{nm} = \langle n |F | m \rangle$ \\ \vspace{0.2em}
     本征方程：$F|n\rangle =f_n |n\rangle$ \\ \vspace{0.2em}
     幺正变换：$S_{m\alpha} =\langle m| \alpha \rangle $ \\ \vspace{0.2em}
@@ -255,7 +270,8 @@
 \section{量子力学绘景(Pictures)}
 
 \begin{frame}  
-    \frametitle{三种绘景}  
+    \frametitle{三种绘景}
+    量子力学二个基本方程：  
     \begin{enumerate}
         \item 薛定谔方程：$$ i\hbar \frac{\partial }{\partial t} |\Psi(t)\rangle = H|\Psi(t)\rangle $$
         \item 算符运动方程：$$ \frac{d\bar{A}(t)}{dt}=\overline{(\frac{\partial A(t) }{\partial t})}  +\frac{1}{i\hbar} \overline{[A(t),H(t)]}$$

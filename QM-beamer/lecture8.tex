@@ -1,12 +1,22 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55%%
+\begin{frame} [plain]
     \frametitle{}
+    \Background[1] 
     \begin{center}
-    { {\huge 第八讲、常见力学量算符的本征方程求解}}
-    \end{center}    
+    { {\huge 第八讲、常见算符的本征方程 }}
+    \end{center}  
+    \addtocounter{framenumber}{-1}   
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+        \frametitle{主要内容}
+        \transfade
+        \tableofcontents
+        \addtocounter{framenumber}{-1} 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{前情回顾}
 
@@ -17,16 +27,25 @@
         \item 希尔伯特空间的厄米算符描述体系的物理量
         \item 物理量可取的值是相应算符的本征值
         \item 取某本征值的概率是态矢量按算符本征函数系展开时的对应本征矢前展开系数的模方成正比
-        \item 态矢量随时间的演化服从薛定谔方程。
     \end{itemize} 
+    ~~ \\ \vspace{0.8em}
+    \begin{quote}
+     《量子化就是本征值问题》\\
+     ~~\\
+     \rightline{薛定谔(1926)\hspace{9em}}     
+    \end{quote}
 \end{frame} 
 
+
 \section{动量算符}
+
 \begin{frame} [allowframebreaks=]
-    \frametitle{1. 动量}
-    算符：  $\hat{\vec p}=-i\hbar \nabla$ \\
-    本征方程： $\hat{\vec p}\psi_{\vec p}=\vec p \psi_{\vec p}$ \\
-    解本征方程：
+    \frametitle{}
+    \begin{tcolorbox1}{1、动量算符：}
+    求解动量算符本征方程  
+    \[\hat{\vec p}\psi_{\vec p}=\vec p \psi_{\vec p}\]   
+    \end{tcolorbox1}
+    \alert{ 解本征方程：}  
     \begin{equation*}
         \begin{split}
             \hat{p}_x\psi_{p_x}&=p_x \psi_{p_x} \\
@@ -47,19 +66,23 @@
 \end{frame} 
 
 \section{位置算符}
+
 \begin{frame} [allowframebreaks=]
-    \frametitle{2. 位置}
-    算符：  $\hat{\vec r}=\vec{r}$ \\
-    本征方程： $\hat{\vec r}\psi_{\vec \lambda}=\vec \lambda \psi_{\vec \lambda}$ \\
-    解本征方程：
+    \frametitle{}
+    \frametitle{}
+    \begin{tcolorbox1}{2、位置算符：}
+    求解动量算符本征方程  
+    \[\hat{\vec r}\psi_{\vec \lambda}=\vec \lambda \psi_{\vec \lambda}\]   
+    \end{tcolorbox1}
+    \alert{ 解本征方程：}  
     \begin{equation*}
         \begin{split}
             \hat{\vec r}\psi_{\vec \lambda}&=\vec \lambda \psi_{\vec \lambda} \\
             \vec{r}\psi_{\vec \lambda}&=\vec \lambda \psi_{\vec \lambda} \\
         \end{split} 
     \end{equation*}
-    分析，$\vec \lambda$是本征值（常数），所以除 $\vec r =\vec \lambda $这一点外，$\psi_{\vec \lambda}$其他位置
-    处处为零，有：
+    分析，$\vec \lambda$是本征值（常数），所以除 $\vec r =\vec \lambda $这一点外，$\psi_{\vec \lambda}$在其他位置
+    处处为零!\\
     本征函数: $$ \psi_{\vec \lambda}(\vec{r})= A \delta(\vec{r}-\vec{\lambda})= \delta(\vec{r}-\vec{\lambda})$$
     本征值谱: 连续
         $$ \lambda \in (-\infty, +\infty) $$
@@ -69,15 +92,16 @@
     $$ \Psi(\vec{r},t)=\iiint\limits_{-\infty}^{+\infty}c_(\vec{\lambda}(\vec{r},t) \psi_{\vec{\lambda}}(\vec{r}') dx'dy'dz' $$
     封闭性：$$ (\psi_{\vec{\lambda}}(\vec{r}''), \psi_{\vec{\lambda}}(\vec{r}')) =\delta(\vec{r}''-\vec{r}')$$
 \end{frame} 
+
 \begin{frame} [allowframebreaks=]
     \begin{tcolorbox2}{课堂作业:}
-        已知某算符为  $\hat{F}=-ie^{ix}\frac{d}{dx}$,求本征函数 \\  
+        已知某算符为  $\hat{F}=-ie^{ix}\frac{d}{dx}$，求本征函数 \\  
      \end{tcolorbox2}
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
     \frametitle{}
-    \alert{解：} 本征方程为 $\hat{F}\psi_f(x)=f\psi_f(x)$\\
+    \alert{解：} 设本征方程为 $\hat{F}\psi_f(x)=f\psi_f(x)$\\
     代入算符的具体形式：
     \begin{equation*}
         \begin{split}
@@ -91,16 +115,17 @@
 \end{frame} 
 
 \section{角动量算符}
+
 \begin{frame} [allowframebreaks=]
-    \frametitle{3. 角动量算符}
-    \begin{tcolorbox1}{角动量:}
-        已知角动量的经典定义为：
+    \frametitle{}
+    \begin{tcolorbox1}{3、角动量算符：}
+        已知角动量的经典定义为
     $$\vec{L}=\vec{r}\times\vec{p}$$ 
-    求其算符形式，并求本征方程     
-     \end{tcolorbox1}
-    \alert{解：} 根据对应原则，有：
+    求它的算符形式，并求解本征方程     
+    \end{tcolorbox1}
+    \alert{解：} 根据$Bohm$原则，有：
     $$\hat{\vec{L}}=\hat{\vec{r}}\times\hat{\vec{p}}= -i\hbar \vec{r}\times\nabla$$
-    (I)在直角坐标系中,\\
+    (I)在直角坐标系中\\
     $$
     \left \{
     \begin{array}{l} 
@@ -125,8 +150,8 @@
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
-    \frametitle{解角动量本征方程}
-    $\hat{L}_z$ 的本征方程为 $$\hat{L}_z\Phi(\varphi)=l_z\Phi(\varphi)$$
+    \alert{解:} $\hat{L}_z$ 的本征方程为 
+    $$\hat{L}_z\Phi(\varphi)=l_z\Phi(\varphi)$$
     代入算符的具体形式：
     \begin{equation*}
         \begin{split}
@@ -170,8 +195,8 @@
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
-    \frametitle{}
-    $\hat{L}^2$ 的本征方程为 $$\hat{L}^2Y(\theta,\varphi)=l^2 Y(\theta,\varphi)$$
+    \alert{解:} $\hat{L}^2$ 的本征方程
+    $$\hat{L}^2Y(\theta,\varphi)=L^2 Y(\theta,\varphi)$$
     代入算符的具体形式,并令本征值为$\lambda\hbar^2$,有：
     \begin{equation*}
         \begin{split}
@@ -181,24 +206,27 @@
     \end{equation*}
     这是球谐方程，利用分离变量及幂级数法可解：\\
     本征值： $$\lambda=l(l+1), \qquad (l= 0,1,2,\cdots)$$
-    $\hat{L}^2$的本征值：$$l^2=\lambda\hbar^2=l(l+1)\hbar^2$$
+    $\hat{L}^2$的本征值：$$\lambda\hbar^2=l(l+1)\hbar^2$$
     本征函数：
     $$
     \mathrm{Y}_{l m}(\theta, \varphi)=(-1)^{m} \sqrt{\frac{(2 l+1)(l-m) !}{4 \pi(l+m) !}} \mathrm{P}_{l}^{m}(\cos \theta) \Phi_{m}(\varphi)
     $$ 
     式中：
-    $$ m=0,\pm 1,  \pm 2, \cdots, \pm l)  $$
-    $\mathrm{P}_{l}^{m} $ 是勒上德多项式
+    $$ m=0,\pm 1,  \pm 2, \cdots, \pm l  $$
+    $\mathrm{P}_{l}^{m} $ 是连带勒上德多项式
     $$
-    P_{l}^{m}(\cos \theta)=(-1)^{l+m} \frac{1}{2^{l} l !} \sqrt{\frac{(2 l+1)}{4 \pi} \frac{(l+m) !}{(l-m) !} \frac{1}{\sin ^{m} \theta}\left(\frac{d}{d \cos \theta}\right)^{l-m} \sin ^{2 l} \theta}
+    P_{l}^{m}(\cos \theta)=(-1)^{l+m} \frac{1}{2^{l} l !} \sqrt{\frac{(2 l+1)}{4 \pi} \frac{(l+m) !}{(l-m) !} } \frac{1}{\sin ^{m} \theta}\left(\frac{d}{d \cos \theta}\right)^{l-m} \sin ^{2 l} \theta
     $$
+\end{frame} 
+
+\begin{frame} [allowframebreaks=]
     （小结）算符：  $$ \hat{L}^{2}=-\hbar^{2}\left[\frac{1}{\sin \theta} \frac{\partial}{\partial \theta}\left(\sin \theta \frac{\partial}{\partial \theta}\right)+\frac{1}{\sin ^{2} \theta} \frac{\partial^{2}}{\partial \varphi^{2}}\right] $$
     本征方程： $$\hat{L}^2Y(\theta,\varphi)=l(l+1)\hbar^2 Y(\theta,\varphi)$$
     本征函数:     $$
     \mathrm{Y}_{l m}(\theta, \varphi)=(-1)^{m} \sqrt{\frac{(2 l+1)(l-m) !}{4 \pi(l+m) !}} \mathrm{P}_{l}^{m}(\cos \theta) \Phi_{m}(\varphi)
     $$ 
     本征值谱:  分立
-    $$l^2=l(l+1)\hbar^2, \qquad (l= 0,1,2,\cdots, n) $$
+    $$l(l+1)\hbar^2, \qquad (l= 0,1,2,\cdots, n) $$
     正交归一性：
     $$
     \int_{0}^{\pi} \int_{0}^{2 \pi} Y_{l m}(\theta, \varphi) Y_{l^{\prime} m^{\prime}}^{*}(\theta, \varphi) \sin \theta \mathrm{d} \theta \mathrm{d} \varphi=\delta_{l l^{\prime}} \delta_{m m^{\prime}}
@@ -215,6 +243,7 @@
     \begin{wrapfigure} {b} {0.4\textwidth} %;图在右
         \includegraphics[width=0.35\textwidth]{figs/LandL2.png}   
     \end{wrapfigure}
+    ~\\
     角动量大小：$\sqrt{l(l+1)\hbar}, \qquad (l=1,2,\cdots, n)$,对应球的半径。\\
     角动量在Z轴上的投影大小 $l_z=m\hbar, \qquad (m=0,\pm 1,\pm 2, \cdots, \pm l)$
 \end{frame} 
@@ -222,9 +251,8 @@
 \section{能量算符}
 
 \begin{frame} 
-    \frametitle{}
-    
-    \begin{tcolorbox2}{例1：自由粒子能量本征值}
+    \frametitle{}  
+    \begin{tcolorbox2}{例1：能量本征值问题}
     求质量为$\mu$的一维自由粒子的能量本征值和本征态  
     \end{tcolorbox2}
     \alert{解：} 能量算子即哈密顿算子：
@@ -245,7 +273,7 @@
 
 \begin{frame} 
     \frametitle{ }
-    \begin{tcolorbox2}{例2：转子的能量本征值}
+    \begin{tcolorbox2}{例2：转子能量本征值问题}
     求转动惯量为I的平面转子的能量本征值和本征态 
     \end{tcolorbox2}
     \alert{解：} 能量算子即哈密顿算子：
