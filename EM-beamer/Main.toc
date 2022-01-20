@@ -1,12 +1,10 @@
-\beamer@sectionintoc {1}{氢原子薛定谔方程分离变量 }{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{相对坐标系}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{球坐标拉普拉斯}{9}{0}{1}
-\beamer@subsectionintoc {1}{3}{球坐标氢原子方程 }{18}{0}{1}
-\beamer@sectionintoc {2}{角向方程与勒让德多项式}{22}{0}{2}
-\beamer@subsectionintoc {2}{1}{ 经/纬度分离}{22}{0}{2}
-\beamer@subsectionintoc {2}{2}{ 勒让德多项式}{28}{0}{2}
-\beamer@subsectionintoc {2}{3}{连带勒让德多项式}{47}{0}{2}
-\beamer@sectionintoc {3}{径向方程与拉盖尔多项式}{53}{0}{3}
-\beamer@subsectionintoc {3}{1}{广义拉盖方程}{53}{0}{3}
-\beamer@subsectionintoc {3}{2}{拉盖方程多项式}{57}{0}{3}
-\beamer@subsectionintoc {3}{3}{广义拉盖方程多项式}{69}{0}{3}
+\beamer@sectionintoc {1}{课程介绍}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{教学内容}{6}{0}{1}
+\beamer@subsectionintoc {1}{2}{成绩构成}{18}{0}{1}
+\beamer@sectionintoc {2}{常微分方程}{21}{0}{2}
+\beamer@subsectionintoc {2}{1}{衰减与增长模型}{22}{0}{2}
+\beamer@subsectionintoc {2}{2}{振动模型}{36}{0}{2}
+\beamer@subsectionintoc {2}{3}{常见求解方法}{46}{0}{2}
+\beamer@sectionintoc {3}{傳里叶级数和傅里叶变换}{68}{0}{3}
+\beamer@subsectionintoc {3}{1}{傳里叶级数 }{69}{0}{3}
+\beamer@subsectionintoc {3}{2}{傳里叶变换 }{76}{0}{3}

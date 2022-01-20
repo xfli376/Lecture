@@ -1,0 +1,338 @@
+
+\section{薛定谔方程}
+
+\begin{frame}
+    \frametitle{前情回顾}
+    \begin{itemize}
+        \item 波粒二象性
+        \item 波函数假说
+        \item 波函数统计诠释
+        \item 态叠加原理
+    \end{itemize}
+\end{frame}  
+
+\begin{frame}
+    \begin{tcolorbox4}[Conclusion]
+        ~~\\
+    \begin{enumerate}
+        \item Objects are wave-particles and in superposition state
+        \item Measurement changes the state and gives random results
+        \item Measurement results are complementary
+        \item Measurement leads to objective reality
+    \end{enumerate}
+    \end{tcolorbox4}
+\end{frame}  
+
+\begin{frame}
+    \tcbbtitle{Big problems}
+    \centering
+    \tcbb[0.5]
+    {
+      If not performing measurement, what it would be? 
+    }
+\end{frame}
+
+\subsection{薛定谔方程假说}
+
+\begin{frame}
+    \begin{tcolorbox4}[Basic assumption 2/5]
+        The evolution of wavefunction obeys Schr$\ddot{o}$dinger equation
+        \begin{equation*}
+            i\hbar \frac{\partial }{\partial t} \Psi (\overrightarrow{r},t ) =\left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\overrightarrow{r},t ) \right ]\Psi (\overrightarrow{r}, t ) 
+        \end{equation*}
+    \end{tcolorbox4}
+\end{frame}
+
+\subsection{薛定谔方程神秘来源}
+
+\begin{frame}
+    \frametitle{神秘来源}
+    \begin{itemize}
+        \item 1923年，德布罗意博士论文传到了瑞士，一战炮兵指挥官苏黎世大学讲师薛定谔作了一个关于物质波假说的报告，德拜评注：\\
+        $$\text{“有了波，总得有个波动方程吧”}$$
+        \item 1926年，薛定谔：
+        $$“Dear Debye, I find one \cdots”$$
+    \end{itemize}            
+\end{frame}
+
+\begin{frame}
+    \begin{alertblock} {}  
+    \begin{quote}
+        “是粒子还是波？是妻子还是情人？这都是难题！” \\
+        ~~\\
+        \rightline{--《薛定谔的女友》(2001)\hspace{6em}}   
+    \end{quote}  
+    \begin{quote}    
+    这部话剧讲述了薛定谔方程建立的神秘过程：在1925年圣诞节前，薛定谔像往年一样，来到阿尔卑斯山度假。这次陪伴他的不是妻子安妮，而是维也纳的一位神秘女郎。
+    就是这位比薛定谔的猫还神秘的女郎激发了薛定谔的灵感，使他在一年的时间里连发~6~篇~“SCI”~论文，建立波动量子力学，\ddots\\
+    ~~\\
+    \end{quote} 
+    \end{alertblock}   
+\end{frame}
+
+\begin{frame}
+	\begin{alertblock} {可能思路}  
+		\begin{itemize}
+			\item 	\textbf{1：}  最小作用量原理 $\int\limits_{t_1}^{t_2} \delta L d t =0 $\\ 
+			\item 	\textbf{2：}  波粒二象性\\ 
+			~\\ 
+			\item 	\textbf{3：}  不能推导\\
+            ~\\ 
+            \begin{quote}
+            "It is not possible to derive it from anything you know. It came out of the \alert{\faHeartbeat} of Schr$\ddot{o}$dinger"\\
+            \rightline{$\cdots$ R. P. Feynman \hspace{3em}}   
+            \end{quote}
+		\end{itemize}
+	\end{alertblock}
+\end{frame}
+
+\begin{frame} [allowframebreaks=]
+    \frametitle{}
+    \alert{\faHeartbeat} Quantum plane wavefunction \[\psi(x,t)=\Psi_p(x,t)=e^{\frac{i}{\hbar}(p\cdot x-Et)} \]
+    should be a sulotion of this equation
+    \begin{equation*}
+        \begin{split}
+       -i\hbar \nabla \psi(x,t) &=p\psi(x,t) \\
+       \hbar^2 \nabla^2 \psi(x,t) &=p^2\psi(x,t) \\
+       \frac{\hbar^2}{2\mu} \nabla^2 \psi(x,t) &=\frac{p^2}{2\mu} \psi(x,t) , \qquad \cdots (1)
+        \end{split}
+    \end{equation*}
+    \begin{equation*}
+       i\hbar \frac{\partial }{\partial t} \psi(x,t) =E\psi(x,t)  , \qquad \cdots (2)
+     \end{equation*}
+    (2)-(1)
+    \begin{equation*}
+        (i\hbar \frac{\partial }{\partial t} - \frac{\hbar^2}{2\mu} \nabla^2 )\psi(x,t) =(E-\frac{p^2}{2\mu})\psi(x,t)=0  
+    \end{equation*}
+    \begin{equation*}
+        i\hbar \frac{\partial }{\partial t} \psi(x,t) = \frac{\hbar^2}{2\mu} \nabla^2 \psi(x,t)
+    \end{equation*}
+    For general wavefunction, it's a wave packet of plane wavefunction
+    \begin{equation*}
+        \Psi(x,t)= \int\limits_{p=0} ^{\infty} c(p,t) e^{\frac{i}{\hbar}px}dp
+    \end{equation*}
+    we get 
+    \begin{equation*}
+        \begin{split}
+        (i\hbar \frac{\partial }{\partial t} - \frac{\hbar^2}{2\mu} \nabla^2 )\Psi(x,t) &= \int\limits_{p=0} ^{\infty} c(p,t) (E-\frac{p^2}{2\mu}) e^{\frac{i}{\hbar}px}dp=0  \\
+        i\hbar \frac{\partial }{\partial t} \Psi(x,t) &= \frac{\hbar^2}{2\mu} \nabla^2 \Psi(x,t)
+        \end{split}
+    \end{equation*}
+    For nonfree particle in a potential $U(x)$,
+    \begin{equation*}
+        \boxed{i\hbar \frac{\partial }{\partial t} \Psi(x,t) = (\frac{\hbar^2}{2\mu} \nabla^2 +U(x)) \Psi(x,t)}
+    \end{equation*}
+    That is the Schr$\ddot{o}$dinger equation. \\
+    ~~\\
+    \bullet For N-particles system
+   {\small \begin{equation*}
+        i\hbar \frac{\partial }{\partial t} \Psi(x_1, x_2, \cdots x_N,t) = [\sum_{i=1} ^{N} \frac{\hbar ^2}{2\mu_i} \nabla^2 +U(x_1, x_2, \cdots x_N)] \Psi(x_1, x_2, \cdots x_N,t)
+    \end{equation*}}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    检验正确性：
+    \begin{enumerate}
+        \item 自由粒子的解
+        \item 氢原子光谱
+        \item $\cdots \cdots$
+    \end{enumerate}
+    ~\\ 
+    发表论文：《Quantisierung als Eigenwert problem》(量子化是本征值问题)，整整140页！
+\end{frame}
+
+\subsection{名人评述}
+
+\begin{frame}
+    \begin{enumerate}
+        \item 
+        \begin{quote}
+            “我一阅读完毕整篇论文，就像被一个迷语困惑多时渴慕知道答案的孩童，现在终于听到了解答！” \\
+            ~~\\
+            \rightline{--普朗克(1926)\hspace{5em}}   
+        \end{quote}  
+        \item 
+        \begin{quote}
+            “这著作的灵感如同泉水般源自一位真正的天才！” \\
+            ~~\\
+            \rightline{--爱因斯坦(1926)\hspace{4em}}   
+        \end{quote}  
+        \item  
+        \begin{quote}
+            “你的方程把量子理论推进了关键性的一步！” \\
+            ~~\\
+            \rightline{--玻尔(1926)\hspace{6em}}   
+        \end{quote} 
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{薛定谔}
+    \begin{wrapfigure} {r} {0.3\textwidth} %;图在右
+        \includegraphics[width=0.25\textwidth]{figs/schroginger.png}   
+    \end{wrapfigure}
+奥地利理论物理学家， 生于维也纳, 量子力学的奠基人之一。薛天才,通灵的人, 1926年提出薛定谔方程，获1933年诺贝尔物理学奖； 1935年提出“薛定谔的猫”，至今还是“养猫人”的猫王；1943年写的《生命是什么》一书，被誉为“唤起生物革命的小册子”。\\ \vspace{0.3em}
+薛定谔：他玉树临风，英俊潇洒，风流倜傥，人见人爱，花见花开，情人无数，江湖人称“段正淳"
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \tcbbtitle{\large Significance }
+    \centering
+    \tcbb[0.5]
+    {
+      \large {It's the most fundamental equation in quantum mechanics. 
+      It's the starting point for every quantum mechanical system we want to describe: electrons, protons, neutrons, whatever.
+      And now, it has become the established analogue of Newton's second law of motion for quantum mechanics}
+    }
+\end{frame}
+
+\subsection{定态薛定谔方程}
+
+\begin{frame} 
+    \frametitle{定态问题}
+    若势函数$V(\vec{r},t ) $若不显含时间 t，则时间变量可分离 \\ \vspace{0.3cm}
+    方程： { $ \displaystyle i \hbar \frac{\partial }{\partial t} \Psi (\vec{r},t ) =\left [- \frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r},t ) $}  \\  \vspace{0.3cm}
+    \alert{解：}  设  $\Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) $ , 代回方程 \\ 
+     { $ \displaystyle i\hbar \Psi (\vec{r})  \frac{\partial }{\partial t} f(t)=f(t) \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) $}  \\ 	
+     { $ \displaystyle i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)= \frac{1}{\Psi (\vec{r}) } \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E $}  \\ \vspace{0.3cm} 
+     得两个微分方程：\\  \vspace{0.3cm}
+     I、演化方程  $ \displaystyle  i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)=E, \qquad $  
+        解方程，得：$\displaystyle  f(t) =e^{-iEt/\hbar}$ 
+\end{frame}
+
+\begin{frame} 
+    II、定态薛定谔方程 $\displaystyle   \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E \Psi (\vec{r})  $   \\ 
+    算符形式：$$\displaystyle   \hat{H} \Psi (\vec{r}) =E \Psi (\vec{r})  $$   
+    这是哈密顿算符 $\hat{H}$ 的本征方程。结合定解条件，可得能量本征值（$E_n$）及本征函数 $\Psi_{E_n} (\vec{r} )$ 。依据态叠加原理，一般的态（叠加解）可表示为：
+    \[ \Psi (\vec{r},t ) =\sum\limits_n c_n(t)\Psi_{E_n} (\vec{r} ) e^{-iE_n t/\hbar}  \]
+    \begin{definition}
+        定态：能量有确定值的态称为定态，用定态波函数描述
+        \[ \Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) = \Psi_E (\vec{r} ) e^{-iEt/\hbar} \] 
+    \end{definition}
+\end{frame}
+
+\subsection{守恒定律}
+
+\begin{frame} 
+    \frametitle{守恒定律 }
+    \bullet 概率守恒定律\\ \vspace{0.3em}
+    守恒定律关心的是物理量随时间的变化率问题，量子力学中最重要的是概率，我们考虑概率密度的变化率
+    $$\omega (\vec{r}, t)=|\Psi(\vec{r}, t)|^{2}=\Psi^{*}(\vec{r}, t) \Psi(\vec{r}, t)$$
+    \begin{equation*}
+        \begin{split}
+            \frac{\partial \omega}{\partial t} &=\Psi^{*} \frac{\partial \Psi}{\partial t}+\frac{\partial \Psi^{*}}{\partial t} \Psi, \cdots (1) \\
+            \frac{\partial \Psi}{\partial t} & =\frac{i \hbar}{2 \mu} \nabla^{2} \Psi+\frac{1}{i \hbar} U \Psi, \cdots (2) \\
+            \frac{\partial \Psi^{*}}{\partial t} & =-\frac{i \hbar}{2 \mu} \nabla^{2} \Psi^{*}-\frac{1}{i \hbar} U \Psi^{*}, \cdots (3) 
+        \end{split}
+    \end{equation*}
+\end{frame}
+
+\begin{frame} 
+    把（2）（3）代回（1），得：
+    \begin{equation*}
+        \begin{split}
+        \frac{\partial \omega}{\partial t}
+        &=\frac{i \hbar}{2 \mu}\left(\Psi^{*} \nabla^{2} \Psi-\Psi \nabla^{2} \Psi^{*}\right) \\
+        &=\frac{i \hbar}{2 \mu}[(\Psi^{*} \nabla^{2} \Psi + \nabla \Psi^{*} \nabla \Psi)- (\nabla \Psi^{*} \nabla \Psi +\Psi \nabla^{2} \Psi^{*})] \\ 
+        &=\frac{i \hbar}{2 \mu} \nabla \cdot\left(\Psi^{*} \nabla \Psi-\Psi \nabla \Psi^{*}\right)\\
+        &=-\nabla \cdot \frac{i \hbar}{2 \mu} \left(\Psi \nabla \Psi^{*}-\Psi^{*} \nabla \Psi\right) \\
+        &=-\nabla \cdot \vec{J}
+        \end{split}
+    \end{equation*}
+\end{frame}
+
+\begin{frame} 
+    上式定义了一个矢量： $\vec{J}=\dfrac{i \hbar}{2 \mu} \left(\Psi \nabla \Psi^{*}-\Psi^{*} \nabla \Psi\right) $,  得连续性方程(4)，\\
+    \begin{equation*}
+        \frac{\partial \omega}{\partial t}+ \nabla \cdot \vec{J}=0, \cdots (4)
+    \end{equation*}    
+    说明矢量 $\vec{J}$ 的散度决定了概率密度变化率。\\ \vspace{0.6em}
+    在任意空间区域 V， 对（4）式求积分，有：
+    \begin{equation*}
+        \frac{d}{d t} \int_{V} \omega d \tau =-\int_{S} \vec{J} \cdot d \vec{S}, \cdots (5)
+    \end{equation*}
+    由 Gauss 定理可知，单位时间内体系V内增加的概率应等于穿过V边界面S进入V内的概率，所以$\vec{J}$是概率流。(4) 式和(5)分别是概率守恒定律的微分和积分形式。\\ \vspace{0.3em}
+\end{frame}
+
+\begin{frame}    
+    \bullet 粒子数守恒定律\\ \vspace{0.3em}
+    \begin{equation*}
+        \begin{split}
+        \frac{d}{d t} \int\limits_{V} \omega d \tau &= \frac{d}{d t} \int\limits_{V} |\Psi(\vec{r}, t)|^{2} d \tau ,\qquad \cdots \qquad （V \to \infty）  \\
+        &=\frac{d}{d t} 1\\ 
+        &=0
+        \end{split}
+    \end{equation*}
+    说明全空间概率不随时间发生变化，即粒子既未产生也未湮灭时，概率守恒定律就是粒子数守恒定律。\\ \vspace{0.3em}
+\end{frame}
+
+\begin{frame} 
+    \bullet 质量守恒定律\\ \vspace{0.3em}
+    对（4）式，左右两边同乘以粒子的质量$\mu$, 
+    \begin{equation*}
+        \frac{\partial \mu\omega}{\partial t}+ \nabla \cdot \mu\vec{J}=0
+    \end{equation*}  
+    得质量守恒定律
+    \begin{equation*}
+        \frac{\partial \omega_\mu}{\partial t}+ \nabla \cdot \vec{J_\mu}=0, \cdots (6)
+    \end{equation*} 
+\end{frame}
+
+\begin{frame} 
+    \bullet 电荷守恒定律\\ \vspace{0.3em}
+    对（4）式，左右两边同乘以粒子的电荷$e$, 
+    \begin{equation*}
+        \frac{\partial e\omega}{\partial t}+ \nabla \cdot e\vec{J}=0
+    \end{equation*}  
+    得电荷守恒定律
+    \begin{equation*}
+        \frac{\partial \omega_e}{\partial t}+ \nabla \cdot \vec{J_e}=0, \cdots (7)
+    \end{equation*}  
+\end{frame}
+
+\begin{frame} 
+    \frametitle{定态的概率流}
+    \begin{tcolorbox1}{命题1}
+        试证明：定态的概率密度不随时间变化。
+    \end{tcolorbox1}
+    \alert{证明：}
+    \begin{equation*}
+        \begin{split}
+            \omega (\vec{r}, t)&=\Psi^{*}(\vec{r}, t) \Psi(\vec{r}, t) \\
+            &=\Psi_{E_n} (\vec{r} ) e^{-iE_n t/\hbar} \Psi_{E_n} ^* (\vec{r} ) e^{iE_n t/\hbar} \\
+            &=\Psi_{E_n} (\vec{r} )\Psi_{E_n} ^* (\vec{r} ) \\
+            &=|\Psi_{E_n} (\vec{r} )|^2
+        \end{split}
+    \end{equation*}
+\end{frame}
+
+\begin{frame}   
+    \begin{tcolorbox1}{命题2}
+        试证明：定态的概率流密度也不随时间变化。 
+    \end{tcolorbox1}
+    \alert{证明：} 
+    \begin{equation*}
+        \frac{\partial \omega}{\partial t }+ \nabla \cdot \vec{J}=0
+    \end{equation*}  
+    \to
+    \begin{equation*}
+        \nabla \cdot \vec{J}=-\frac{\partial \omega}{\partial t}=0
+    \end{equation*}  
+\end{frame}
+
+\begin{frame}
+    \frametitle{学术讨论}
+    问题：体系总是处于叠加态，不测量时，波函数服从薛定谔方程演化，测量时波函数坍塌（Collapsing waves），导致客观实在。那坍塌过程服从什么规律？\\
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{figs/2022-01-17-13-13-18.png} \\
+    \end{center} 
+    \begin{quote}
+    "Anyone who claims to understand quantum theory is either lying or crazy." \\
+    \rightline{$\cdots$ R. P. Feynman \hspace{3em}}   
+    \end{quote}
+\end{frame}
+
+
+

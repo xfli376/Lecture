@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  19 JAN 2022 23:43
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  20 JAN 2022 20:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1346,7 +1346,7 @@ Package fontspec Info: Font family 'WeibeiSC-Bold(0)' created for font
 (fontspec)             <->"STXihei/OT:script=hani;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
- (./Main.aux (./lecture15.aux))
+ (./Main.aux (./lecture3-1.aux) (./lecture3-2.aux) (./lecture3-3.aux) (./lecture3-4.aux) (./lecture3-5.aux) (./lecture3-6.aux))
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -1608,9 +1608,12 @@ LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 12.
 (./Main.nav)
+Overfull \hbox (106.27257pt too wide) detected at line 12
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
-
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 18.
@@ -1640,215 +1643,2900 @@ Package fontspec Info: Font family 'DFWaWaSC-W5(0)' created for font
 (fontspec)             <->"DFWaWaSC-W5/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
 [1
 
 ]
-\openout2 = `lecture15.aux'.
+\openout2 = `lecture3-1.aux'.
 
- (./lecture15.tex
+ (./lecture3-1.tex
 File: images/uestclogo-1.png Graphic file (type bmp)
 <images/uestclogo-1.png>
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
  [2
 
 
 ] (./Main.toc)
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
 
 
 LaTeX Font Warning: Font shape `TU/DFWaWaSC-W5(0)/b/n' undefined
-(Font)              using `TU/DFWaWaSC-W5(0)/m/n' instead on input line 18.
+(Font)              using `TU/DFWaWaSC-W5(0)/m/n' instead on input line 12.
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
 
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
 [3
 
 ]
-File: figs/2021-12-06-16-22-39.png Graphic file (type bmp)
-<figs/2021-12-06-16-22-39.png>
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [4
+[4
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[5
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[6
 
 ]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.00128pt on input line 50.
+(Font)              scaled to size 12.00128pt on input line 52.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.40088pt on input line 50.
+(Font)              scaled to size 8.40088pt on input line 52.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 50.
+(Font)              scaled to size 6.00064pt on input line 52.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 50.
+(Font)              scaled to size 11.99872pt on input line 52.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.3991pt on input line 50.
+(Font)              scaled to size 8.3991pt on input line 52.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 50.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
+(Font)              scaled to size 5.99936pt on input line 52.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [5
+[7
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [6
+[8
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [7
+[9
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [8
+[10
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [9
+[11
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [10
+[12
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[13
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [11
+[14
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 10/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [12
+[15
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 11/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [13
+[16
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 12/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [14
+[17
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 13/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [15
+[18
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 14/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [16
+[19
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 15/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [17
+[20
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 16/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [18
+[21
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 17/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [19
+[22
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 18/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [20
+[23
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 19/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [21
+[24
+
+
+])
+\openout2 = `lecture3-2.aux'.
+
+ (./lecture3-2.tex (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 19/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[25
+
+
+
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 20/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [22
+[26
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 21/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [23
+[27
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 21/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[28
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 22/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [24
+[29
 
 ]
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 23/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
 File: images/uestcxx.png Graphic file (type bmp)
 <images/uestcxx.png>
- [25
+[30
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 24/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[31
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 25/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[32
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 26/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[33
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 27/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[34
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 27/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[35
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 28/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[36
+
+]
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <12> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 139.
+
+
+LaTeX Font Warning: Font shape `TU/WeibeiSC-Bold(0)/m/it' undefined
+(Font)              using `TU/WeibeiSC-Bold(0)/m/n' instead on input line 139.
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 29/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[37
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 30/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[38
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 31/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[39
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 32/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[40
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 33/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[41
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 34/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[42
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 35/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[43
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 36/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[44
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 37/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[45
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 38/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[46
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 39/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[47
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 40/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[48
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 41/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[49
+
+]
+Overfull \vbox (10.02884pt too high) detected at line 346
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 42/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[50
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 43/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[51
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 43/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[52
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 44/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[53
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 45/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[54
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 46/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[55
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 47/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[56
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 48/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[57
+
+])
+\openout2 = `lecture3-3.aux'.
+
+ (./lecture3-3.tex (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 48/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[58
+
+
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 49/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[59
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 49/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[60
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 50/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[61
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 51/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[62
+
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 51/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[63
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 52/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[64
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 53/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[65
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 54/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[66
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 55/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[67
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 55/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[68
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 56/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[69
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 57/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[70
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 58/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[71
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 59/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[72
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 60/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[73
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 61/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[74
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 62/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[75
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 63/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[76
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 64/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[77
+
+
+]
+File: figs/LandL2.png Graphic file (type bmp)
+<figs/LandL2.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 65/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[78
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 65/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[79
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 66/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[80
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 67/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[81
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 68/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[82
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 69/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[83
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 70/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[84
+
+])
+\openout2 = `lecture3-4.aux'.
+
+ (./lecture3-4.tex (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 70/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[85
+
+
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 71/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[86
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 71/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[87
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 72/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[88
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 73/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[89
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 74/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[90
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 75/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[91
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 76/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[92
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 77/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[93
+
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 77/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[94
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 78/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[95
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 79/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[96
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 80/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[97
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 80/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[98
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 81/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[99
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 82/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[100
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 83/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[101
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 84/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[102
+
+
+]
+Overfull \hbox (18.42825pt too wide) detected at line 249
+[]
+ []
+
+
+Overfull \hbox (16.82397pt too wide) detected at line 249
+[]
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 85/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[103
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 86/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[104
+
+
+]
+Overfull \hbox (18.42825pt too wide) detected at line 283
+[]
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 87/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[105
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 88/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[106
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 89/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[107
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 90/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[108
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 91/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[109
+
+])
+\openout2 = `lecture3-5.aux'.
+
+ (./lecture3-5.tex (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 91/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[110
+
+
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 92/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[111
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 93/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[112
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 93/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[113
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 94/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[114
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 95/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[115
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 96/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[116
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 97/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[117
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 98/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[118
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (3.01097pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 99/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[119
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 100/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[120
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 101/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[121
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 102/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[122
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 103/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[123
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 103/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[124
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 104/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[125
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 105/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[126
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 106/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[127
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 107/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[128
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 108/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[129
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 109/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[130
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 110/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[131
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 111/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[132
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 112/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[133
+
+]
+File: figs/hesb.png Graphic file (type bmp)
+<figs/hesb.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 113/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[134
+
+]
+File: figs/uncert.png Graphic file (type bmp)
+<figs/uncert.png>
+
+Overfull \vbox (3.75716pt too high) detected at line 269
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 114/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[135
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 115/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[136
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 116/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[137
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 117/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[138
+
+]
+File: figs/meet.png Graphic file (type bmp)
+<figs/meet.png>
+
+Overfull \vbox (6.78224pt too high) detected at line 301
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 118/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[139
+
+])
+\openout2 = `lecture3-6.aux'.
+
+ (./lecture3-6.tex (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 118/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[140
+
+
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 119/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[141
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 119/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[142
+
+]
+File: figs/2021-12-17-21-25-13.png Graphic file (type bmp)
+<figs/2021-12-17-21-25-13.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 120/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[143
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 121/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[144
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 122/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[145
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 123/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[146
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 123/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[147
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 124/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[148
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 125/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[149
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 126/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[150
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 127/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[151
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 128/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[152
+
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 128/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[153
+
+]
+
+Package amsmath Warning: Bracket group [\hat {\vec {p}},\hat {H}] at formula start!
+(amsmath)                It could be a misspelled positional argument.
+(amsmath)                If it belongs to the formula add a \relax in
+(amsmath)                front to hide it on input line 140.
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 129/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[154
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 130/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[155
+
+
+]
+
+Package amsmath Warning: Bracket group [T,H] at formula start!
+(amsmath)                It could be a misspelled positional argument.
+(amsmath)                If it belongs to the formula add a \relax in
+(amsmath)                front to hide it on input line 180.
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 131/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[156
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 132/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[157
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 133/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[158
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 134/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[159
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 135/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[160
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 136/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[161
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 137/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[162
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 138/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[163
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 139/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[164
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 140/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[165
+
+
+]
+File: figs/2021-12-18-00-23-17.png Graphic file (type bmp)
+<figs/2021-12-18-00-23-17.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+
+Overfull \hbox (6.31096pt too wide) has occurred while \output is active
+ []|  \TU/lmss/bx/n/6 141/141|   
+ []
+
+
+Overfull \hbox (106.27257pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+File: images/uestcxx.png Graphic file (type bmp)
+<images/uestcxx.png>
+[166
 
 ])
 File: images/uestclogo-2.png Graphic file (type bmp)
 <images/uestclogo-2.png>
-File: images/uestclogo-8.png Graphic file (type bmp)
-<images/uestclogo-8.png>
- [26
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [167
 
 
 
@@ -1862,20 +4550,20 @@ File: images/uestclogo-8.png Graphic file (type bmp)
 \tf@snm=\write9
 \openout9 = `Main.snm'.
 
- (./Main.aux (./lecture15.aux))
+ (./Main.aux (./lecture3-1.aux) (./lecture3-2.aux) (./lecture3-3.aux) (./lecture3-4.aux) (./lecture3-5.aux) (./lecture3-6.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 5473762029264B36395EED363A3298C9;346.
+(rerunfilecheck)             Checksum: C06F61D36378468DCFACE67D2B953975;2430.
  ) 
 Here is how much of TeX's memory you used:
- 56148 strings out of 476493
- 1366611 string characters out of 5817124
- 2216327 words of memory out of 5000000
- 75445 multiletter control sequences out of 15000+600000
- 408027 words of font info for 113 fonts, out of 8000000 for 9000
+ 57083 strings out of 476493
+ 1390444 string characters out of 5817124
+ 2240373 words of memory out of 5000000
+ 76287 multiletter control sequences out of 15000+600000
+ 408067 words of font info for 118 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,18n,124p,728b,851s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,20n,124p,728b,1325s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Main.pdf (26 pages).
+Output written on Main.pdf (167 pages).

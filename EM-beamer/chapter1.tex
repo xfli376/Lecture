@@ -1,12 +1,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{frame}
 		\frametitle{}
+		\Background[1] 
 	    \begin{center}
 		{ {\Huge 第一章~~绪~论 （4课时）}}
 	    \end{center}    
+		\addtocounter{framenumber}{-1} 
 	\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \section{课程介绍}
 
 \begin{frame}
@@ -27,7 +31,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{数理方程在数学中的位置}
+	\frametitle{数理方程的位置}
 	\begin{center}
 		\begin{figure}
 			\includegraphics[width=7cm]{figs/fig1-1.png}	
@@ -38,12 +42,12 @@
 \end{frame}
 %3%
 
-\subsection{主要内容}
+\subsection{教学内容}
 
 \begin{frame}
 	\frametitle{教学内容}
 	\begin{enumerate}
-			\item 第一章 ~绪论（4学时)：常微分方程及其解法、傅里叶变换
+			\item 第一章 ~绪论（4学时)：常微分方程解法、傅里叶变换
 			 \vspace{0.2cm}
 			 \item 第二章~ 偏微分方程（6学时）：波动方程、热传导方程、拉普拉斯方程。
 			 \vspace{0.2cm}
@@ -56,13 +60,13 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{}
+	\frametitle{数理方程大家}
 	\begin{center}
 		\begin{figure}
 			\includegraphics[width=4.5cm]{figs/fig1-3-1.png}	
 		\end{figure}
 	\end{center}
-	{数理方程大牛-拉普拉斯（法）：拉普拉斯方程，天体力学，比如描述引力势能，时间1770年代（乾隆年间）}
+	{拉普拉斯（法）：拉普拉斯方程，天体力学，比如描述引力势能，1770年代（乾隆年间）}
 \end{frame}
 
 \begin{frame}
@@ -109,16 +113,6 @@
 	\frametitle{}
 	\begin{center}
 		\begin{figure}
-			\includegraphics[width=4.5cm]{figs/fig1-3-7.png}	
-		\end{figure}
-	\end{center}
-	{达朗贝尔（法国）：波动方程的通解，麦克斯韦方程、电磁波}
-\end{frame}
-
-\begin{frame}
-	\frametitle{}
-	\begin{center}
-		\begin{figure}
 			\includegraphics[width=4.5cm]{figs/fig1-3-6.png}	
 		\end{figure}
 	\end{center}
@@ -129,10 +123,20 @@
 	\frametitle{}
 	\begin{center}
 		\begin{figure}
+			\includegraphics[width=4.5cm]{figs/fig1-3-7.png}	
+		\end{figure}
+	\end{center}
+	{达朗贝尔（法国）：波动方程的通解，麦克斯韦方程，电动力学}
+\end{frame}
+
+\begin{frame}
+	\frametitle{}
+	\begin{center}
+		\begin{figure}
 			\includegraphics[width=4.5cm]{figs/fig1-3-8.png}	
 		\end{figure}
 	\end{center}
-	{爱因斯坦（德国）：扩散方程和热传导方程同类，原创扩散方程新解法（布朗运动），爱因斯坦方程}
+	{爱因斯坦（德国）：扩散方程和热传导方程同类，原创扩散方程（布朗运动）新解法，爱因斯坦方程}
 \end{frame}
 
 \begin{frame}
@@ -150,9 +154,9 @@
 	\begin{enumerate}
 		\item 教材：《工程数学讲义》 李明奇，钟尔杰，国防工业出版社， 待出版\\	\vspace{0.3cm}
      	参考资料：\\
-		\item 《数学物理方程》 李明奇、田太心，电子科技大学出版社，2014
+		\item 《Mathematics for Physicists》 Shaw, G:
 		\vspace{0.3cm}
-		\item 《数学物理方法》 姚瑞正，梁家宝 ，武汉大学出版社，1992
+		\item 《数学物理方法》 姚瑞正，梁家宝 ，武汉大学出版社，1992 
 		\vspace{0.3cm}
 		\item 《数学物理方程与特殊函数》南京工学院数学教研组，人民教育出版社，1983
 		\vspace{0.3cm}
@@ -166,12 +170,18 @@
 		\begin{enumerate}
 		\item 平时作业：10\%，
 		\vspace{0.8cm}
-		\item 课堂讨论：10\%，
+		\item 出勤与讨论：10\%，
 		\vspace{0.8cm}
-		\item 测验：~~ 10\%，
+		\item 课堂测验：10\%，
 		\vspace{0.8cm}
 		\item 期末考试：70\% .
 		\end{enumerate}	
+\end{frame}
+
+\begin{frame} [t]
+    \frametitle{教学效果}
+    \centering
+    \includegraphics[width=1.0\textwidth,height=5.0cm]{figs/exam1.png}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -180,13 +190,13 @@
 \begin{frame}
 	\frametitle{微分方程及基本解法：}
     \begin{enumerate}
-    \item 微分方程：含未知函数及其导数的方程 \\
+    \item 微分方程定义：含未知函数及其导数的方程 \\
     	$f\left(x,t, u, u_t,u_{tt}, \ldots u_{t \ldots t}, u_{x}, u_{xx}, \ldots, u_{x \ldots x} \right)=0$ \\
     	\vspace{0.5cm}
- 		物理量（u）一般是时间和空间的函数。解微分方程就是要求出u(x,t)。根据阶分类；一阶微分方程、二阶微分方程、高阶常微分方程。
-	 	根据未知函数自变量数目分类：常微分方程（单变量）、偏微分方程（多变量） 
+ 		物理量（u）一般是时间和空间的函数。解微分方程就是要求出u(x,t)。
+	\item 分类(1): 按阶分有一阶微分方程、二阶微分方程、高阶微分方程。按自变量数目分有常微分方程（单变量）、偏微分方程（多变量） 
     	\vspace{0.5cm}
-    \item 基本解法：行波法、分离变量法、积分变换法、格林函数法、保角变换法、复变函数法、变分法、级数展开法         
+    \item 基本解法：行波法、{\color{deepred}{分离变量法}}、{\color{deepred}{积分变换法}}、格林函数法、保角变换法、复变函数法、变分法、\color{deepred}{级数展开法}         
     \end{enumerate}
 \end{frame}
 
@@ -205,7 +215,7 @@
 	\begin{block}{指数增长和衰减}
 	\begin{itemize}
 		\item 衰减与增长模型，自然界和人类社会客观存在。
-		\item 分别采用指数衰减和指数增长描述，
+		\item 采用指数衰减和指数增长描述，
 		\item 速度大于零为增长模型，小于零为衰减模型。
 	\end{itemize}
 	\end{block}
@@ -232,7 +242,7 @@
 
 \begin{frame}
 \begin{block} {Remark}
-	显然，当$r>0$时, 有$t \to \infty$， $u(t) \to 0$,  衰减模型中的一个重要问题是求半衰期 T\\
+	显然，当$r>0$时, 有$t \to \infty$， $u(t) \to 0$,  衰减模型中的一个重要参数是半衰期 T\\
 	\alert{解：} 
 	\begin{align*}
 	\frac{1}{2}u_0 &=u(T) =u_0 exp(-rT)\\
@@ -258,12 +268,12 @@
 
 \begin{frame}
 	\begin{align*}
-		&\ln \frac{u}{K-u}  =r t+C\\
-		&\frac{u}{K-u} =\exp (r t+C)\\
-		&u(t)  =\frac{K}{1+\exp (-r t-C)}	\\
+		&\ln \frac{u}{K-u}  = r t+C\\
+		&\frac{u}{K-u} = \exp (r t+C)\\
+		&u(t) = \frac{K}{1+ \exp (-r t-C)}	\\
 	\end{align*}	
 	\begin{block} {问题：}
-	建立并求解：冠状病毒感染人数增长模型
+	假设冠状病毒的感染系数为2.3每天，建立全球（70亿）冠状病毒感染人数增长模型
 	\end{block}    
 \end{frame}
 
@@ -276,11 +286,9 @@
 	\end{exampleblock} 	
 	\alert{解：} 令：$\dfrac{y}{x}=u$, 有：$y=xu$ \\ 
 	求微分： $ \dfrac{d y}{d x}=u+x \dfrac{d u}{d x}$,	代回方程：\\	
-	 $ u+x \dfrac{d u}{d x}=f(u) , \to \dfrac{d u}{d x}=\dfrac{f(u)-u}{x}$ ，\\ \vspace{0.2cm}
-	可分离变量：
-	\begin{align*}
-		\int \dfrac{d u}{f(u)-u}=\int \dfrac{d x}{x} 
-	\end{align*}	
+	 \[ u+x \dfrac{d u}{d x}=f(u)\]  \[ \dfrac{d u}{d x}=\dfrac{f(u)-u}{x}\] ，\\ \vspace{0.2cm}
+	分离变量：
+	\[\int \dfrac{d u}{f(u)-u}=\int \dfrac{d x}{x}\] 		
 \end{frame}
 
 \begin{frame}
@@ -289,7 +297,7 @@
 	\left(x-y \cos \frac{y}{x}\right) d x+x \cos \frac{y}{x} d y=0
 	\end{equation*}
 \end{exampleblock} 	
-\alert{解：} 变量代换后可分离变量，令$\frac{y}{x}=u$, 有：$y=xu$ ， \\ 
+\alert{解：} 变量代换后可分离变量，令$\dfrac{y}{x}=u$, 有：$y=xu$ ， \\ 
 		求微分：	$d y=x d u+u d x$ ~~~~， 
 		代回原方程, 得：
 		\begin{equation*}
@@ -313,10 +321,10 @@
 		y^{\prime}+P(x) y=Q(x)
 	\end{equation*}
 	\end{exampleblock} 
-	\alert{解：}  常数变易法可求解，一阶齐次线性方程 :\\
+	\alert{解：} 一阶齐次线性方程 :\\
 		$ y^{\prime}+P(x) y=0$  \\ 
-	有通解:	{\large 	$y=Ce^{-\int P(x)dx}$}\\	\vspace{0.3cm}
-		令： $C=C(x)$ ，	{\large 	$ \to y=C(x)e^{-\int P(x)dx}$} \\ 
+		有通解:	{\large 	$y=Ce^{-\int P(x)dx}$}\\	\vspace{0.3cm}
+		常数变易法，令： $C=C(x)$ ，	{\large 	$ \to y=C(x)e^{-\int P(x)dx}$} \\ 
 		代回原方程：
 		\begin{equation*}
 			C^{\prime}(x)=\frac {Q(x)} {e^{-\int P(x)dx}}
@@ -356,8 +364,9 @@
     充要条件为：{$\dfrac{\partial P }{\partial x}=\dfrac{\partial Q }{\partial y}$ }\\	
 	得通解：	{  $\displaystyle { u(x,y)=\int P(x,y)dx+\int Q(x,y)dy} $}\\ 
 	若不存在，可找个积分因子 $f(x,y) $ 乘以原方程 \\  \vspace{0.2cm}
-	\textbf{比如：}{\large    $ydx-xdy=0$ } 不是全微分方程，\\ 
-	但 $\dfrac{ydx-xdy}{y^2}=d(\dfrac{x}{y})$ 是全微分方程, 即找到积分因子{  $ \dfrac{1}{y^2}$ } ！
+	比如：{\large    $ydx-xdy=0$ } 不是全微分方程，但\\ \vspace{0.2cm}
+	$\dfrac{ydx-xdy}{y^2}=d(\dfrac{x}{y})$ 是全微分方程, \\ \vspace{0.2cm}
+	即找到积分因子{  $ \dfrac{1}{y^2}$ } ！
 \end{frame}
 
 \subsection{振动模型}
@@ -390,21 +399,20 @@
 	x(t)\left |_{t=0}  =x_0  \right. , \\
 	 \dfrac{dx}{dt} \left |_{t=0}  =0 \right.      	
 	\end{cases}$\\
-	\begin{block}{Remark}
-	是常系数二阶齐次线性微分方程，通过辅助方程求解。 
-	\end{block}
-\end{frame}
-
-\begin{frame}
-	求解辅助方程： $u^2+\omega ^2=0$ \\
+	这是常系数二阶齐次线性微分方程，通过辅助方程可求解\\ 
+	辅助方程： $u^2+\omega ^2=0$ \\
+	解为：
 	\begin{equation*}
 		u_{1, 2} =\pm i\omega     
 	\end{equation*}
-	方程的基本解： 
+\end{frame}
+
+\begin{frame}
+	原方程的基本解： 
 	\begin{equation*}
 		x_{1} =\cos \omega t  , ~~~~	x_{2} =\sin \omega t     
 	\end{equation*}
-	方程通解： $x(t)=C_1 \cos \omega t +C_2 \sin \omega t $ \\  	\vspace{0.6cm}
+	通解： $x(t)=C_1 \cos \omega t +C_2 \sin \omega t $ \\  	\vspace{0.6cm}
 	由初始条件得特解： $x(t)=x_0 \cos \omega t $ \\
 \end{frame}
 
@@ -414,7 +422,7 @@
 		\frac{d^2 u}{d t^2} +2\varepsilon \frac{d u}{dt} +\omega ^2 u = 0 ,  ~~~ (\varepsilon < \omega)   
 	\end{equation*}
 	\end{exampleblock} 
-	\alert{解、} 令 $\displaystyle  u(t)= exp(-\varepsilon t) v(t) $，求微分，得：\\	
+	\alert{解、} 令 $\displaystyle  u(t)= exp(-\varepsilon t) v(t) $，求微分：	
 	\begin{align*}
 		\frac{d u}{d t } & =exp(-\varepsilon t) [-\varepsilon v +\frac{d v}{dt}]\\
 		\frac{d^2 u}{d t^2 } & =exp(-\varepsilon t) [\varepsilon ^2 v -2\varepsilon \frac{d v}{dt}+ \frac{d^2 v}{dt^2} ]
@@ -426,7 +434,7 @@
 \end{frame}
 
 \begin{frame}	
-	令 $k^2 =\omega ^2 - \varepsilon ^2 $, 得简谐振动微分方程标准型。由公式 得
+	令 $k^2 =\omega ^2 - \varepsilon ^2 $, 得简谐振动微分方程标准型。由公式得
 	\begin{equation*}
 		v(t)=C_1 \cos k t +C_2 \sin k t 
 	\end{equation*}
@@ -461,11 +469,11 @@
 	\end{equation*}
 	\end{exampleblock}
 	\alert{解、} 
-		这是个非齐次方程，对应齐次方程的解：\\
+		对应齐次方程的解：\\
 	\begin{equation*}
 		u(t)=C_1 \cos \omega t +C_2 \sin \omega t 
 	\end{equation*}
-	设方程的特解为：
+	对于非齐次方程，设方程的特解为：
 	$ u(t) =C_0 \sin \omega_0 t $ ，
 	代回原方程， 得：
 	\begin{align*}
@@ -818,13 +826,14 @@
 	\end{equation*}     
 	求导：\\
 	$\begin{cases}
-		y' = \sum_{k=1}^{\infty} k c_k x^{k-1} =\sum_{k=0}^{\infty} (k+1) c_{k+1} x^{k}\\
-		y'' = \sum_{k=2}^{\infty} k (k-1) c_k x^{k-2} =  \sum_{k=0}^{\infty} (k+2) (k+1) c_{k+2} x^k
+		y' = \sum\limits_{k=1}^{\infty} k c_k x^{k-1} =\sum\limits_{k=0}^{\infty} (k+1) c_{k+1} x^{k}\\
+		y'' = \sum\limits_{k=2}^{\infty} k (k-1) c_k x^{k-2} =  \sum\limits_{k=0}^{\infty} (k+2) (k+1) c_{k+2} x^k
 	\end{cases}$ \\
-    代回原方程：
+	注意：应用了脚标变换的方法！
  \end{frame}
 
 \begin{frame}
+	代回原方程：
 	\begin{equation*}
 		\sum_{k=0}^{\infty} [ 2nc_k -2kc_k +(k+2)(k+1) c_{k+2}  ] x^k  =0
 	\end{equation*}  
@@ -869,37 +878,41 @@
 	{\large  $\displaystyle f(x) =\dfrac{a_0}{2} +\sum_{n=1}^{\infty}  \left(  a_n \cos~ \frac{n\pi}{l} x +  b_n \sin~ \frac{n\pi}{l} x  \right) $ }\\	
 	{\large $\displaystyle a_n =\frac{1}{l}  \int_{-l}^{l}  f(\xi )   \cos~ \frac{n\pi}{l} \xi d\xi  $ }\\	
 	{\large $\displaystyle b_n =\frac{1}{l}  \int_{-l}^{l}  f(\xi )   \sin~ \frac{n\pi}{l} \xi d\xi   $ }\\	
+	
+	\begin{block} {Remark}
+	注：$n=0$项提出在前面 \\
+	$1, \cos(x), \sin (x), \cos(2x), \sin (2x), ..., \cos(nx), \sin (nx) $, 构成正交完全集
+	\end{block}
 \end{frame}
 
 \begin{frame}
 	\textbf{ \large 复数式：} \\  
-	{\large  $\displaystyle f(x) =\sum_{n=-\infty}^{+\infty}  c_n e^{i\omega_n x} $ }\\	
+	{\large  $\displaystyle f(x) =\sum_{n=-\infty}^{+\infty}  c_n e^{i\omega_n x}, \qquad $  频域不连续 }\\	
 	{\large $\displaystyle c_n =\frac{1}{2l}  \int_{-l}^{l}  f(\xi)    e^{-i\omega_n x}  d\xi  $ }\\	
 	其中：{\large $\displaystyle   \omega_n=\frac{n\pi}{l} ,  n=...,-3,-2,-1,0,1,2,3,...   $} \\
 \end{frame}
 
 \begin{frame}
-	\textbf{{\large 周期（$2l$) 与 非周期 （$l~\to ~\infty $}}） \\
+	\textbf{\large 周期 ($2l$) 与 非周期 （$l~\to ~\infty $) } \\
 	{\large  $\displaystyle f(x) =\lim_{l\to \infty} \sum_{n=-\infty}^{+\infty}  c_n e^{i\omega_n x} $ }\\	
 	\hspace{5em}{\large $\displaystyle =\lim_{l\to \infty} \sum_{n=-\infty}^{+\infty}  \frac{1}{2l}  [\int_{-l}^{l}  f(\xi)  e^{-i\omega_n x}  d\xi ]  e^{i\omega_n x}  $ }\\	
 	\hspace{5em}{\large $\displaystyle =\frac{1}{2\pi} \int_{-\infty}^{+\infty}  [\int_{-l}^{l}  f(\xi)  e^{-i\omega x}  d\xi ]  e^{i\omega x} d\omega $ }\\
 	\hspace{5em}{\large $\displaystyle =\frac{1}{2\pi} \int_{-\infty}^{+\infty}  G(\omega) e^{i\omega x} d\omega $ }\\
 	\begin{block} {Remark}
-		$1, \cos(x), \sin (x), \cos(2x), \sin (2x), ..., \cos(nx), \sin (nx) $, 构成正交完全集，
-		$\left\{  exp(i\omega x)  \right\}$  也构成正交完全集。\\
+	$\left\{  exp(i\omega x)  \right\}$  构成正交完全集。\\
 	\end{block}
 \end{frame}
 
 \begin{frame}
-%\begin{tikzpicture}
-%	\draw[->] (0,0) -- (8,0) node[below] {$x$};
-%	\draw[->] (0,0) -- (0,4) node[right] {$y$};
-%	\draw [blue, thick, x=0.0185cm, y=2cm,
-%	declare function={
-%		sines(\t,\a,\b,\c,\d,\e )=1 + \a*sin(\t)+\b*sin(\t*\d)+\c*sin(\t*\e));
-%	}]
-%	plot [domain=0:360, samples=144, smooth] (\x,{sines(\x,0.5, 0.2, 0.1, 3, 5)}); 
-%\end{tikzpicture}
+\begin{tikzpicture}
+	\draw[->] (0,0) -- (8,0) node[below] {$x$};
+	\draw[->] (0,0) -- (0,4) node[right] {$y$};
+	\draw [blue, thick, x=0.0185cm, y=2cm,
+	declare function={
+		sines(\t,\a,\b,\c,\d,\e )=1 + \a*sin(\t)+\b*sin(\t*\d)+\c*sin(\t*\e));
+	}]
+	plot [domain=0:360, samples=144, smooth] (\x,{sines(\x,0.5, 0.2, 0.1, 3, 5)}); 
+\end{tikzpicture}
 	\begin{equation*}
 		y=1 + 0.5\sin(x)+0.6\sin(3x)+0.7\sin(5x)
 	\end{equation*}    
@@ -924,7 +937,7 @@
 \begin{frame}
 	得傳里叶展开式：
 	\begin{equation*}
-		f(x) = \frac{4}{\pi} \sum_{n=0}^{\infty}  \frac{1}{2k+1} \sin(2k+1) dx  
+		f(x) = \dfrac{4}{\pi} \sum_{n=0}^{\infty}  \dfrac{1}{2k+1} \sin(2k+1) dx  
 	\end{equation*}       
 \end{frame}
 
@@ -932,33 +945,36 @@
 
 \begin{frame}
 \frametitle{傳里叶变换 }
-	由非周期的傳里叶级数，获得傳里叶变换公式：\\
+	傳里叶变换公式-非对称形式：\\
 	$\displaystyle \begin{cases}
-		G(\omega) =\int_{-\infty}^{+\infty}  f(x) e^{-i\omega x} dx \\
-		f(x) =\dfrac{1}{2\pi} \int_{-\infty}^{+\infty}  G(\omega) e^{i\omega x} d\omega
+		G(\omega) =\int\limits_{-\infty}^{+\infty}  f(x) e^{-i\omega x} dx \\
+		f(x) =\dfrac{1}{2\pi} \int\limits_{-\infty}^{+\infty}  G(\omega) e^{i\omega x} d\omega
 	\end{cases}$ \\ \vspace{0.3cm}
-	{对称形式:}\\ 
+	{傳里叶变换公式-对称形式:}\\ 
 	$\displaystyle \begin{cases}
-		G(\omega) =\dfrac{1}{\sqrt{2\pi}} \int_{-\infty}^{+\infty}  f(x) e^{-i\omega x} dx  \equiv F[f(x)]\\
-		f(x) =\dfrac{1}{\sqrt{2\pi}}  \int_{-\infty}^{+\infty}  G(\omega) e^{i\omega x} d\omega  \equiv F^{-1}[G(\omega)]
+		G(\omega) =\dfrac{1}{\sqrt{2\pi}} \int\limits_{-\infty}^{+\infty}  f(x) e^{-i\omega x} dx  \equiv F[f(x)]\\
+		f(x) =\dfrac{1}{\sqrt{2\pi}}  \int\limits_{-\infty}^{+\infty}  G(\omega) e^{i\omega x} d\omega  \equiv F^{-1}[G(\omega)]
 	\end{cases}$ \\	
 \end{frame}
 
 \begin{frame}
-	\frametitle{}
-	{\large   物理意义  }\\ 	\vspace{0.3cm}
+	\frametitle{物理意义}
 	{\Large   $\displaystyle f(x) =\frac{1}{\sqrt{2\pi}}  \int_{-\infty}^{+\infty}  G(\omega) e^{i\omega x} d\omega $ }\\	\vspace{0.3cm}
-    一个复杂时域信号总是由各种频域的波叠加形成！	\\ \vspace{0.3cm}
-	tips: 一种数学物理方法的成功不是由于巧妙的谋略或者幸运的偶遇，而是因为他表达着物理真理的某个方面 ~~~~~~-------沙顿
+	一个时域信号不管有多么复杂，它总可展开成各种频率波的线性叠加！	\\ \vspace{0.3cm}
+	\begin{quote} \noindent
+	"一种数学物理方法的成功，不是由于巧妙的谋略或者幸运的偶遇，而是因为他表达着物理真理的某个方面"
+	~~\\
+	\rightline{$\cdots$  沙顿\hspace{3em}}	
+	\end{quote}
+	
 \end{frame}
 
 \begin{frame}
-	\frametitle{}
-	{\large   性质  }\\ 	\vspace{0.3cm}
+	\frametitle{性质 }
     线性： $F[\alpha  f_1 +\beta f_2]=\alpha  F[f_1]+ \beta F[f_2]$ \\ \vspace{0.3cm}
     延迟： $F[e^{i\omega_0x} f(x)] = G(\omega-\omega_0) $ \\ \vspace{0.3cm}
     位移： $F[ f(x\pm x_0)] = e^{i\omega x_0 } F[f(x)]=e^{i\omega x_0 }G(\omega) $ \\ \vspace{0.3cm}
-    相似： $F[ f(\alpha  x)] = \frac{1}{|\alpha |}G(\frac{\omega}{\alpha }) $ \\ \vspace{0.3cm}
+    伸缩： $F[ f(\alpha  x)] = \frac{1}{|\alpha |}G(\frac{\omega}{\alpha }) $ \\ \vspace{0.3cm}
     微分： $F[ f^{n} (x)] = (i\omega ) ^n F[f(x)]= (i\omega )^n G(\omega) $ \\ \vspace{0.3cm}
     积分： $F[ \int_{x_0}^{x}f (\xi) d\xi ] = \frac{1}{\omega}  F[f(x)]=\frac{1}{\omega} G(\omega) $ \\ \vspace{0.3cm}
 \end{frame}
@@ -970,7 +986,7 @@
 			\Psi(x)=\frac{1}{\sqrt{2\pi \hbar}}  \int_{-\infty}^{+\infty} c(p) e^{\frac{i}{\hbar} px} dp 
 		\end{equation*}   	
 	\end{exampleblock}
-	\alert{解、} 	把波函数改写成  \\	
+	\alert{解、} 把波函数改写成  \\	
 	\begin{equation*}
 		\Psi(x)= \frac{1}{\sqrt{2\pi }} \int_{-\infty}^{+\infty} \sqrt{\hbar} c(p) e^{i\frac{p}{\hbar} x} d(\frac{p}{\hbar})  
 	\end{equation*}     
@@ -1021,12 +1037,12 @@
 	\begin{equation*}
 		D= \dfrac{d}{dx}
 	\end{equation*}	
-	定义线性算子 T
+	线性算子（T）有定义式：
 	\begin{equation*}
 		T(a f(x) +b g(x) )  =a T(f(x)) +b T(g(x)) 
    \end{equation*}	
- 	利用f(x) 和g(x)的Taylor 展开式，很容易证明微分算子 D是线性的。\\
-	微分算子多项式$	L= c_0 + c_1D +c_2D^2 +...  $也是线性算子。\\
+ 	利用f(x) 和g(x)的Taylor 展开式，容易证明微分算子 D是线性的。\\ \vspace{0.3em}
+	同理，微分算子多项式$	L= c_0 + c_1D +c_2D^2 +...  $也是线性的。\\
 \end{frame}
 
 \begin{frame}
@@ -1034,7 +1050,8 @@
     \begin{equation*}
     	L(y)=f(x)
     \end{equation*}
-    若{ $c_0$} 都是常数，称为常系数微分方程，否则称为变系数微分方程。 称$L(y)=0$为齐次方程, 	$L(y)=f(x)\ne0$为非齐次方程。 可以证明常系数微分方程是线性的，如果$y_1(x) ,  y_2(x) $是方程的解，则它们的线性叠加
+    若{ $c_i$} 都是常数，称为常系数微分方程，否则称为变系数微分方程。 若$f(x)=0$，称为齐次方程, 若$f(x)\ne0$为非齐次方程。\\ 
+	可以证明常系数微分方程是线性的，即：如果$y_1(x) ,  y_2(x) $是方程的解，则它们的线性叠加
     \begin{equation*}
     	y(x)=c_1y_1(x) +c_2y_2(x) 
     \end{equation*}	
@@ -1050,11 +1067,11 @@
 	对于算子$L= c_0 + c_1D +c_2D^2 $，特征值为$\lambda=c_0 + c_1n +c_2n^2$ \\
 	解辅助方程
 	\begin{equation*}
-		c_2n^2+c_0 + c_1n =0
+		c_2 n^2 + c_0 + c_1 n =0
 	\end{equation*}	
 	相当于求L算子特征值为零的特征矢，特征矢的线性叠加正是 L(y)=0 这个齐次方程的解。
 \end{frame}
 
 \begin{frame}
-	对于非齐次方程，先求得齐次方程的解，再由初始条件确定一特解。相当于辅助方程
+	对于非齐次方程，先求得齐次方程的解，再由初始条件确定特解。
 \end{frame}
