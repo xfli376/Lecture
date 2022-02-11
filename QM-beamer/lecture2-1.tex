@@ -89,7 +89,7 @@
             \end{split} 
          \end{equation*}
          It describes the state of a quantum free particle\\
-         \alert{Note:} A wavefunction is a complex function 
+         \Note ~ A wavefunction is a complex function 
 \end{frame}
 
 \begin{frame}
@@ -169,12 +169,12 @@
 
 \begin{frame}
     \frametitle{}
-    \alert{Tips:}
+    \Tips \\
     \begin{itemize}
         \Item $\Psi$ and $C\Psi$ describe the same state 
-        \[ \frac{C\Psi(x_1)}{C\Psi(X_2)} = \frac{\Psi(x_1)}{\Psi(X_2)}\]
-        \Item $\Psi$ and $e^{i\varpi}\Psi$ describe the same state 
-         \[ |e^{i\varpi}\Psi|^2 = e^{-i\varpi} e^{i\varpi} |\Psi|^2 = |\Psi|^2 \] 
+        \[ \frac{C\Psi(x_1)}{C\Psi(x_2)} = \frac{\Psi(x_1)}{\Psi(x_2)}\]
+        \Item $\Psi$ and $e^{i\varphi}\Psi$ describe the same state 
+         \[ |e^{i\varphi}\Psi|^2 = e^{-i\varphi} e^{i\varphi} |\Psi|^2 = |\Psi|^2 \] 
     \end{itemize}  
 \end{frame}
 
@@ -190,9 +190,9 @@
 
 \begin{frame}[allowframebreaks=]
     \frametitle{}
-    \alert{Example-1:} normalizating the wavefunction \[\psi(x)=\sin(x), \qquad (0\le x \le \pi)\]
-    \alert{Solution:} assuming the normalized wavefunction to be 
-    \[\Psi=C\psi(x)=C\sin(x)\]
+    \EXP[1.~normalizating the wavefunction] {\[\psi(x)=\sin(x), \qquad (0\le x \le \pi)\]}
+    \Solution ~assuming the normalized wavefunction to be 
+    $\Psi=C\sin(x)$
     \begin{equation*}
         \begin{split}
             \int_0 ^\pi |C\sin(x)|^2 dx &=1 \\
@@ -209,21 +209,21 @@
 \end{frame}
 
 \begin{frame}[allowframebreaks=]  
-    \alert{Example-2:}  normalizating the plane wavefunction \[\Psi_p (x,t)=e^{\frac{i}{\hbar}(px-Et)} \] 
-    \alert{Solution:}  assuming the normalized wavefunction 
-    \[\Psi=C\Psi_p (x,t)\]
+    \EXP[2.~normalizating the plane wavefunction ] {\[\Psi_p (x,t)=e^{\frac{i}{\hbar}(px-Et)} \] }
+    \Solution  ~assuming the normalized wavefunction 
+    $\Psi=C\Psi_p (x,t)$
     \begin{equation*}
         \begin{split}
             \int_{-\infty} ^\infty |C\Psi_p (x,t)|^2 dx &=1  \\
             C^2 \int_0 ^\infty \Psi_p (x) \Psi_{p} ^* (x) dx &=1  \\
             C^2 \int_0 ^\infty \Psi_p (x) \Psi_{p'} ^* (x) dx &=\delta (p-p')  \\
-            C^2 \int_0 ^\infty e^{\frac{i}{\hbar}(p-p')x} =&=\delta (p-p')\\
-            C^2 2\pi \hbar \delta (p-p') &=\delta(p-p') \\
+            C^2 \int_0 ^\infty e^{\frac{i}{\hbar}(p-p')x} &=\delta (p-p')\\
         \end{split} 
      \end{equation*}
-     we get 
+     from the defination of $\delta$ funcation, we get 
+     \[C^2 2\pi \hbar \delta (p-p') =\delta(p-p') \]
      \[C= \dfrac{1}{\sqrt{2\pi \hbar}}\]
-     the normalized plan wavefunction:
+     The normalized plan wavefunction:
      \begin{equation*}
         \Psi=\frac{1}{\sqrt{2\pi \hbar}} e^{\frac{i}{\hbar}px}
     \end{equation*}  
@@ -257,8 +257,8 @@
 \begin{frame}  
     \begin{tcolorbox3}[Conclusion]
         ~~\\
-       {\large The state of matter is described by a wavefunction and the magnitude of the wavefunction 
-       tells us the probability that the particle is at or near the position at time t.}
+       {The state of matter is described by a wavefunction and the magnitude of the wavefunction $ \Psi(x,t)$ 
+       tells us the probability that the particle is at or near the position ($x$) at time $t$.}
     \end{tcolorbox3} 
 \end{frame} 
 
@@ -267,7 +267,7 @@
     \centering
     \tcbb[0.5]{Big problems}
     {
-      \large  {Is the world obeys the rule of probability ?}
+    {Is the world obeys the rule of probability ?}
     }
 \end{frame}
 

@@ -24,10 +24,8 @@
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
-    \begin{tcolorbox1}{定理1：}
-        如果两算符具有共同的本征函数系，则它们对易
-    \end{tcolorbox1}
-    \alert{证明：} 设它们的共同本征函数系为{$\varphi_n$}, 有：\\ 
+    \例[1.试证明如果两算符具有共同的本征函数系，则它们对易]{}
+    \证~ 设它们的共同本征函数系为{$\varphi_n$}, 有：
         \begin{equation*}
             \begin{split} 
             A\varphi_n&=a_n \varphi_n \\
@@ -41,24 +39,21 @@
             &= \sum_n c_n [A,B]\varphi_n \\
             &= \sum_n c_n (AB-BA)\varphi_n\\
             &= \sum_n c_n AB\varphi_n- \sum_n c_n BA\varphi_n\\
-            &= \sum_n c_n a_nb_n\varphi_n- \sum_n c_n a_nb_n\varphi_n\\
-            &=0\Psi
+            &= \sum_n c_n a_nb_n\varphi_n- \sum_n c_n a_nb_n\varphi_n=0\Psi
             \end{split}  
         \end{equation*}  
         得证： $$[A,B]=0$$
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
-    \begin{tcolorbox1}{逆定理：}
-       如果两算符对易，则它们具有共同的本征函数系。
-    \end{tcolorbox1}
-    \alert{证明：} 设A有本征函数系{$\varphi_n$}, 有：\\ 
+    \例[2.试证明如果两算符对易，则它们具有共同的本征函数系]{}
+    \证~ 设A有本征函数系{$\varphi_n$}, 有：
         \begin{equation*}
             \begin{split} 
             A(B\varphi_n)&= AB\varphi_n\\
             &=BA\varphi_n \\
             &=Ba_n\varphi_n \\
-            &=a_n(B\varphi_n) \\
+            &=a_n(B\varphi_n) 
             \end{split}  
         \end{equation*}  
         说明$B\varphi_n$ 和 $\varphi_n$ 都是A的属于本征值$a_n$的本征态，当$a_n$非简并时， 
@@ -80,10 +75,10 @@
     当体系处于共同的本征态$Y_{lm}$时 ，它们同时具有确定值
     $$L_z= m\hbar, \qquad L^2=l(l+1)\hbar ^2 $$.
     当体系处于非共同的本征态，比如 $\frac{1}{\sqrt{2}}Y_{lm} + \frac{1}{\sqrt{2}}Y_{lm'}$，此时，$L^2$具有确定值
-    $$L^2=l(l+1)\hbar ^2 $$,
+    $$L^2=l(l+1)\hbar ^2 $$
     而$L_z$具有两个可能值（非确定）
     $$L_z= m\hbar\quad \text{or} \quad m'\hbar$$
-    也就是说$\frac{1}{\sqrt{2}}Y_{lm} + \frac{1}{\sqrt{2}}Y_{lm'}$依然是$L^2$的本征态，却不是$L_z$的本征态。
+    也就是说$\frac{1}{\sqrt{2}}Y_{lm} + \frac{1}{\sqrt{2}}Y_{lm'}$是$L^2$的本征态，却不是$L_z$的本征态。
 \end{frame} 
 
 \begin{frame}
@@ -121,9 +116,9 @@
 
 \begin{frame} 
     \frametitle{不对易的含义}
-    \begin{tcolorbox1}{不确定性原理:}
+    \begin{tcolorbox4}[不确定性原理:]
         两不对易力学量算符，一般不同时具有确定值    
-    \end{tcolorbox1}
+    \end{tcolorbox4}
 \end{frame} 
 
 \begin{frame} 
@@ -136,12 +131,12 @@
         \Item 均方差: 偏差平方的平均值 （量子涨落）
         $$ \overline{(\Delta F)^2} = \overline{F^2} - \overline{F}^2$$
     \end{itemize}   
-    我们通常先算（1）算符的平方的平均值和（2）算符的平均值平方，得到了均方差，再开方得到不确定度！
+    我们通常先算（1）算符的平方的平均值和（2）算符的平均值平方，得到均方差，再开方得到不确定度！
 \end{frame} 
 
 \begin{frame} 
     \frametitle{}
-    \alert{证明：}
+    \alert{证明：} 对于量子涨落，由偏差的定义，有
     \begin{equation*}
         \begin{split} 
         \overline{(\Delta F)^2}&= \overline{(F-\bar{F})^2}\\
@@ -154,11 +149,9 @@
 \end{frame} 
 
 \begin{frame} 
-    \frametitle{}
-    \begin{tcolorbox2}{不确定度对易关系}
-     试证明：  $$[\Delta F, \Delta G]= [F, G]$$
-    \end{tcolorbox2}
-    \alert{证明：}
+    \frametitle{不确定度对易关系}
+    \例[3.试证明不确定度有如下对易关系]{$$[\Delta F, \Delta G]= [F, G]$$}
+    \证~
     \begin{equation*}
         \begin{split} 
         [\Delta F, \Delta G]&= \Delta F \Delta G - \Delta G \Delta F \\
@@ -170,9 +163,7 @@
     \end{equation*} 
 \end{frame} 
 
-\begin{frame} [allowframebreaks=]
-    \frametitle{}
-    \alert{不确定性原理的严格证明:} \\
+\begin{frame} {不确定性原理的严格证明}
     令 $[\hat{F}, \hat{G}]= i\hat{k}$,对任意波函数，计算含实参$\xi$的积分：
     $$
     \begin{aligned}
@@ -184,6 +175,9 @@
         &+i \xi \int(\Delta \hat{F} \psi)(\Delta \hat{G} \psi) * d \tau+\int(\Delta \hat{G} \psi)(\Delta \hat{G} \psi) * d \tau \\
     \end{aligned}
     $$
+\end{frame} 
+
+\begin{frame}   
     $$
     \begin{aligned}
     =& \xi^{2} \int \psi^{*}(\Delta \hat{F})^{2} \psi d \tau-i \xi \int \psi^{*}(\Delta \hat{F} \Delta \hat{G}) \psi d \tau \\
@@ -199,7 +193,7 @@
 
 \begin{frame} 
     \[\xi^{2} \overline{(\Delta F)^{2}}+\xi \bar{\hat{k}}+\overline{(\Delta G)^{2}} \geq  0\]  
-    对比不等式条件：
+    对比不等式：
     $$
     a \xi^{2}+b \xi+c \geq 0
     $$
@@ -212,7 +206,7 @@
     $$
     得： 
     $$
-    \overline{(\Delta \hat{F})^{2}} \cdot \overline{(\Delta \hat{G})^{2}} \geq \frac{1}{4}|\overline{[\hat{F}, \hat{G}]}|^{2}
+    \boxed{\overline{(\Delta \hat{F})^{2}} \cdot \overline{(\Delta \hat{G})^{2}} \geq \frac{1}{4}|\overline{[\hat{F}, \hat{G}]}|^{2}}
     $$
     证毕！
 \end{frame} 
@@ -229,8 +223,8 @@ $$
 \geq \frac{\hbar}{2}
 $$
 $$  
-\Delta x \cdot \Delta p_x 
-\geq \frac{\hbar}{2}
+\boxed{\Delta x \cdot \Delta p_x 
+\geq \frac{\hbar}{2}}
 $$ 
 得位置-动量不确定性关系，称为海森堡不确定性关系.
 \end{frame}
@@ -239,10 +233,10 @@ $$
     能量-时间不确定性关系：
     \[\Delta x \Delta p = \Delta (vt)  \Delta p = \Delta t  \Delta (vp_x)= \Delta t  \Delta E \]
     \[\to \Delta E \Delta t \geq \frac{\hbar}{2}  \]
-    激发态没有明确的能量，其能量不确定度$\Delta E$也称为能级宽度$\Gamma$，\\
-    根据不确定性有理，$\Gamma$越大（越扩展），粒子处于这个态的寿命越短；$\Gamma$越小（越局域），
-    粒子处于这个态的寿命越长。\\
-    在光谱中体现为：峰宽（1/2峰高处的展宽）越大，对应的态寿命越短；峰宽越小，态越稳定。 
+    {\Bullet} 激发态没有明确的能量，其能量不确定度$\Delta E$也称为能级宽度$\Gamma$，\\ \vspace{0.6em}
+    {\Bullet} 根据不确定性有理，$\Gamma$越大（越扩展），粒子处于这个态的寿命越短；$\Gamma$越小（越局域），
+    粒子处于这个态的寿命越长。\\ \vspace{0.6em}
+    {\Bullet} 在光谱中体现为：峰宽（1/2峰高处的展宽）越大，对应的态寿命越短；峰宽越小，态越稳定。 
 \end{frame}
 
 \begin{frame}

@@ -39,7 +39,7 @@
 \end{frame} 
 
 \begin{frame}
-    \frametitle{算符运动方程}    
+    由平均值公式  
         \begin{equation*}
             \begin{split} 
             \bar{F}(t)&=(\Psi(t), F(t)\Psi(t)) \\
@@ -49,11 +49,16 @@
             &= (\Psi, \frac{\partial F }{\partial t}\Psi)  +\frac{1}{i\hbar} (\Psi, [F,H]\Psi) \\
             &=\overline{(\frac{\partial F }{\partial t})}  +\frac{1}{i\hbar} \overline{[F,H]} \\
             \end{split}  
-        \end{equation*}  
+        \end{equation*}
+    \end{frame} 
+
+\begin{frame}
+    \frametitle{算符运动方程}  
+        \[\frac{d\bar{F}}{dt} = \overline{(\frac{\partial F }{\partial t})}  +\frac{1}{i\hbar} \overline{[F,H]}\]
 \end{frame} 
 
 \begin{frame} 
-        \frametitle{力学量守恒条件} 
+        \frametitle{守恒条件} 
         由守恒量定义：   
         $$ \bar{F}(t)=(\Psi(t), F\Psi(t)) =c.  $$
         $$\frac{d\bar{F}}{dt}=\overline{(\frac{\partial F }{\partial t})}  +\frac{1}{i\hbar} \overline{[F,H]}=0$$
@@ -67,11 +72,9 @@
 \subsection{守恒量性质}
 
 \begin{frame} 
-    \frametitle{守恒量性质} 
-    \begin{tcolorbox1}{性质1：}
-        守恒量测量值概率分布不随时间改变
-    \end{tcolorbox1}
-    \alert{证明：} F是守恒量，则 $[F,H]=0$, 设F,H的共同本征函数系$\{\varphi_n\}$, 有：\\ 
+    \frametitle{守恒量性质1} 
+    \例[1.试证明守恒量测量值的概率分布不随时间改变]{}
+    \证~ F是守恒量，则 $[F,H]=0$, 设F,H的共同本征函数系$\{\varphi_n\}$, 有：\\ 
     任意态$\Psi(t)$在$\{\varphi_n\}$展开，其展开系数为：
     $$C_n(t)=(\varphi_n, \Psi(t))$$
     展开系数的模方即为测量值为本征值$f_n$的概率，因此要证明：
@@ -96,25 +99,23 @@
         &= -\frac{E_n}{i\hbar}C_n ^* C_n ] + \frac{E_n}{i\hbar}C_n ^* C_n \\
         &=0
     \end{aligned}$$
-      证毕！
-    \begin{tcolorbox2}{结论：}
-        无论体系本征态还是叠加态（任意态），守恒量的平均值及各测量值的概率分布都不随时间变化。         
-    \end{tcolorbox2}
+      证毕！ \\
+    \Tips ~无论体系处于本征态还是叠加态（任意态），守恒量的平均值及各测量值的概率分布都不随时间变化。         
 \end{frame}
 
-\begin{frame} [allowframebreaks=]
-    \frametitle{} 
-    \begin{tcolorbox1}{性质2：}
-        若体系有两个不对易守恒量，则一般存在简并能级
-    \end{tcolorbox1}
-    \alert{证明：} 设F、G都是体系的守恒量，则有 $[F,H]=0$, $[G,H]=0$, 设F,H的共同本征函数系$\{\varphi_n\}$, 有：\\ 
+\begin{frame}
+    \frametitle{性质2}
+    \例[2.试证明若体系有两个不对易守恒量，则一般存在简并能级]{}
+    \证~ 设F、G都是体系的守恒量，则有 $[F,H]=0$, $[G,H]=0$, 设F,H的共同本征函数系$\{\varphi_n\}$, 有：\\ 
     $$F\varphi_n =f_n \varphi_n, \qquad H\varphi_n =E_n \varphi_n $$
     $$H(G\varphi_n) =HG\varphi_n=GH\varphi_n= E_n (G\varphi_n)$$
     说明 $G\varphi_n$ 和 $\varphi_n$ 都是H的属于$E_n$的本征态。
     假设能级非简并，则$G\varphi_n$ 和 $\varphi_n$描述同一个态，两者最多只差一个常数因子，设为 $g_n$，有：
     $$G\varphi_n=g_n \varphi_n$$
-    也就是说，$\varphi_n$也是G的本征态，即 F和G具有相同的本征函数系，即它们对易，与题设相矛盾。\\
-    因此，体系必存在简并能级，$G\varphi_n$ 和 $\varphi_n$描述不同的态。
+    也就是说，$\varphi_n$也是G的本征态，即 F和G具有相同的本征函数系，即它们对易，与题设相矛盾。评毕！\\
+\end{frame}
+
+\begin{frame}
     \begin{tcolorbox2}{推论：}
         若体系有两个不对易守恒量，则一般存在简并能级， 非简并能级都是守恒量的本征态，简并能级中存在守恒量的一个本征态。\\
         根据能级简并，可找出体系的守恒量；根据能级不简并，可找到守恒量的本征态。
@@ -125,10 +126,8 @@
 
 \begin{frame} 
     \frametitle{动量守恒} 
-    \begin{tcolorbox1}{动量守恒:}
-        试证明自由粒子的动量是守恒量                                   
-    \end{tcolorbox1}
-    \alert{证明：} (1)自由粒子动量算符为：
+    \例[3.试证明自由粒子的动量是守恒量]{}                                   
+    \证~ (1)自由粒子动量算符为：
     $$ \hat{\vec{p}} = -i\hbar\nabla  $$
     不显含时间，有 $$\frac{d}{dt}\hat{\vec{p}}=0$$ 
     (2), 自由粒子哈密顿算符为： $$ \hat{H} = \frac{1}{2\mu} \hat{\vec{p}}^2 $$
@@ -140,10 +139,8 @@
 
 \begin{frame} 
     \frametitle{} 
-    \begin{tcolorbox1}{动量守恒2：}
-        空间平移不变性导致动量守恒                                
-    \end{tcolorbox1}
-    \alert{证明：} （1）设体系沿x轴方向作一无穷小平移：
+    \例[4.试证明空间平移不变性导致动量守恒]{}                                
+    \证~ （1）设体系沿x轴方向作无穷小平移：
     $$ x \to x'=x+\delta x $$
     则体系的波函数变为：
     $$ \Psi \to \Psi'=T\Psi  $$
@@ -186,10 +183,8 @@
 
 \begin{frame}
     \frametitle{角动量守恒} 
-    \begin{tcolorbox1}{角动量守恒：}
-        试证明在中心力场中运动粒子的角动量是守恒量                                
-    \end{tcolorbox1}
-    \alert{证明：} (1)中心力场中的角动量：
+    \例[5.试证明在中心力场中运动粒子的角动量是守恒量]{}                                
+    \证~ (1)中心力场中的角动量
     $$
     \left\{\begin{array}{l}
         \hat{L}_{x}=i \hbar\left[\sin \varphi \frac{\partial}{\partial \theta}+\cot \theta \cos \varphi \frac{\partial}{\partial \varphi}\right] \\
@@ -217,11 +212,9 @@
 
 \begin{frame} 
     \frametitle{能量守恒} 
-    \begin{tcolorbox1}{能量守恒：}
-        试证明哈密顿算符不显含时间的体系能量守恒                               
-    \end{tcolorbox1}
-    \alert{证明：} (1)密顿算符不显含时间：
-    不显含时间，有 $$\frac{d}{dt}\hat{H}=0$$ 
+    \例[6.试证明哈密顿算符不显含时间的体系能量守恒]{}                               
+    \证~ (1)密顿算符不显含时间：
+    有 $$\frac{d}{dt}\hat{H}=0$$ 
     (2), 密顿算符与自己对易： 
         $$ [\hat{H},\hat{H}]=0 $$
     证毕！
@@ -242,10 +235,8 @@
 
 \begin{frame}
     \frametitle{宇称守恒} 
-    \begin{tcolorbox1}{宇称守恒：}
-        试证明若哈密顿算符空间反射不变，则宇称守恒                               
-    \end{tcolorbox1}
-    \alert{证明：} (1)宇称算符：
+    \例[7.试证明若哈密顿算符空间反射不变，则宇称守恒]{}                               
+    \证~ (1)宇称算符：
     空间反射：$$\vec{r} \to -\vec{r} $$
     $$\Psi(\vec{r}) \to \Psi(-\vec{r}) $$
     定义宇称算符： $$ \hat{P}\Psi(\vec{r},t) = \Psi(-\vec{r},t) $$
@@ -260,29 +251,30 @@
 \end{frame}
 
 \begin{frame} 
-    基于定义式，有：
+    基于定义，有：
     $$\begin{aligned}
         \hat{P}^2\psi_p (\vec{r}) &= \hat{P} [\hat{P} \psi_p (\vec{r})]\\
         &= \hat{P} \psi_p (-\vec{r})\\
         &= \psi_p (\vec{r})\\
     \end{aligned}$$
-    得本征值 $p=\pm 1$，分别称为偶宇称和奇宇称。\\
+    得本征值 $p=\pm 1$，分别称为偶宇称和奇宇称。\\ \vspace{0.6em}
     (3) 证明宇称守恒 \\
-    (a) 显然，宇称算符不显含时间t\\
-    (b) 哈密顿算符具有空间反射不变性,即：
-    $$ H(\vec{r},t)= H(-\vec{r},t)$$
+    (a) 显然，宇称算符不显含时间t,满足条件（1）\\
+
 \end{frame}
 
 \begin{frame} 
+    (b) 当哈密顿算符具有空间反射不变性,即：
+    $$ H(\vec{r},t)= H(-\vec{r},t)$$
     对于任意态，有：
     $$\begin{aligned}
         \hat{P} (\hat{H}(\vec{r},t) \Psi (\vec{r},t)) &= \hat{H}(-\vec{r},t) \Psi (-\vec{r},t)\\
         &= \hat{H}(\vec{r},t) \Psi (-\vec{r},t)\\
         &= \hat{H}(\vec{r},t) \hat{P} \Psi (\vec{r},t)\\
     \end{aligned}$$
-    得： $$ \hat{P} \hat{H} = hat{H} \hat{P} $$
+    得： $$ \hat{P} \hat{H} = \hat{H} \hat{P} $$
     即：$$[\hat{P}, \hat{H}]=0$$
-    证毕！
+    满足条件（2）,证毕！
 \end{frame}
 
 \begin{frame}

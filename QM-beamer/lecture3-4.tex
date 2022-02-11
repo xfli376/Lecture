@@ -24,7 +24,7 @@
 \end{frame} 
 
 \begin{frame} 
-    \frametitle{运算法则}
+    \frametitle{对易子运算法则}
     \begin{enumerate}
         \Item  $[A,B]=-[B,A]$
         \Item  $[A,A]=0$
@@ -36,7 +36,7 @@
     \end{enumerate}
 \end{frame} 
 \begin{frame}
-    \begin{proof}{(6)}   
+    \begin{proof}{}   
         \begin{equation*}
             \begin{split} 
             [AB,C]&=ABC-CAB \\
@@ -75,7 +75,6 @@
             \end{split}  
         \end{equation*}  
     \end{proof}
-    \begin{proof}{}
         同理：$[A,C^{m}]=0$\\
         \begin{equation*}
             \begin{split} 
@@ -92,16 +91,13 @@
             &=0\\
         \end{split}  
         \end{equation*}
-    \end{proof}
 \end{frame} 
 
 \subsection{基本对易关系}
 
-\begin{frame} [allowframebreaks=]
-    \begin{tcolorbox1}{1.位置-动量对易关系}
-        求位置动量对易关系 $[x,p_x]=?$,  $[x,p_y]=?$
-    \end{tcolorbox1}
-    \alert{解:} 对任意波函数$\psi$，有
+\begin{frame}{基本对易关系}
+    \例[1.求位置-动量对易关系式] {$$[x,p_x]=?,  [x,p_y]=?$$}
+    \解~ 对任意波函数$\psi$，有
     \begin{equation*}
         \begin{split}
         xp_x\psi&= x(-i\hbar \frac{\partial}{\partial x})\psi \\
@@ -110,6 +106,9 @@
         &=-i\hbar\psi - i\hbar x \frac{\partial}{\partial x}\psi \\
         \end{split}  
     \end{equation*}
+\end{frame} 
+
+\begin{frame}
     两式相减，$$(xp_x-p_x x)\psi= i\hbar\psi$$
     得 $xp_x-p_x x= i\hbar$ \\ \vspace{0.3em}
     即 $$\boxed{[x,p_x]= i\hbar}$$
@@ -149,11 +148,9 @@
 \subsection{常见对易关系}
 
 \begin{frame}
-    \frametitle{常见对易关系}
-    \begin{tcolorbox1}{角动量-位置对易关系}
-        试证明角动量-位置对易关系 $[L_x,y] = i\hbar z,  [L_x,x] = 0 $
-    \end{tcolorbox1}
-    \alert{证明:} 
+    \frametitle{角动量-位置对易关系}
+    \例[2.试证明角动量-位置对易关系] {$$[L_x,y] = i\hbar z,  [L_x,x] = 0 $$}
+    \证~ 
     \begin{equation*}
         \begin{split}
         [L_x,y]&= [yp_z-zp_y,y]\\
@@ -189,12 +186,10 @@
     \end{tcolorbox4}
 \end{frame} 
 
-\begin{frame} [allowframebreaks=]
-    \frametitle{}
-    \begin{tcolorbox1}{角动量-动量对易关系}
-        试证明角动量-动量对易关系 $[L_x,p_y]=i\hbar p_z,  [L_x,p_x]=0$
-    \end{tcolorbox1}
-    \alert{证明:} 
+\begin{frame}
+    \frametitle{角动量-动量对易关系}
+    \例[3.试证明角动量-动量对易关系] {$$[L_x,p_y]=i\hbar p_z,  [L_x,p_x]=0$$}
+    \证~ 
     \begin{equation*}
         \begin{split}
         [L_x,p_y]&= [yp_z-zp_y,p_y]\\
@@ -206,6 +201,9 @@
         &=i\hbar p_z \\
         \end{split}  
     \end{equation*}
+\end{frame} 
+
+\begin{frame}   
     同理，有：\\
     $\begin{cases}
         [L_x,p_y]= i\hbar p_z  \\ 
@@ -222,16 +220,14 @@
         [L_z,p_z]= 0  \\ 
         [L_z,p_y]= -i\hbar p_x 
     \end{cases}$
-    \begin{tcolorbox4}[角动量-动量一般对易关系]
+    \begin{tcolorbox4}[角动量-动量对易关系]
         $ [L_\alpha,p_\beta]= \varepsilon_{\alpha\beta\gamma} i\hbar p_\gamma $
     \end{tcolorbox4}
 \end{frame} 
 
-\begin{frame} [allowframebreaks=]
-    \frametitle{}
-    \begin{tcolorbox1}{角动量-角动量对易关系}
-        试证明位置角动量对易关系 $[L_x,L_y]=i\hbar L_z,  [L_z, L^2]= 0$
-    \end{tcolorbox1}
+\begin{frame} 
+    \frametitle{角动量-角动量对易关系}
+    \例[4.试证明角动量对易关系] {$$[L_x,L_y]=i\hbar L_z,  [L_z, L^2]= 0$$}
     \alert{证明方法1:} 基于运算法则 
     \begin{equation*}
         \begin{split}
@@ -241,6 +237,9 @@
         =&y[p_z,zp_x]-y[p_z,xp_z]+[y,zp_x]p_z-[y,xp_z]p_z \\ &-z[p_y,zp_x] +z[p_y,xp_z]- [z,zp_x]p_y+[z,xp_z]p_y\\    
     \end{split}  
     \end{equation*}
+\end{frame} 
+
+\begin{frame} 
     \begin{equation*}
         \begin{split}
         [L_x,L_y]=&yz[p_z,p_x]+y[p_z,z]p_x-yx[p_z,p_z]-y[p_z,x]p_z \\ & +z[y,p_x]p_z+[y,z]p_xp_z-x[y,p_z]p_z -[y,x]p_zp_z \\ & -zz[p_y,p_x] -z[p_y,z]p_x +zx[p_y,p_z] +z[p_y,x]p_z \\ & -z[z,p_x]p_y -[z,z]p_xp_y+x[z,p_z]p_y +[z,x]p_zp_y\\  
@@ -252,7 +251,7 @@
     \end{equation*}
 \end{frame} 
 
-\begin{frame} [allowframebreaks=]    
+\begin{frame} 
     \alert{证明方法2:} 基于推论 
     \begin{equation*}
         \begin{split}
@@ -265,6 +264,9 @@
         =&i\hbar L_z\\
     \end{split}  
     \end{equation*}
+\end{frame} 
+
+\begin{frame} 
     同理，有：\\
     $\begin{cases}
         [L_x,L_y]= i\hbar L_z  \\ 
@@ -281,17 +283,14 @@
         [L_z,L_z]= 0  \\ 
         [L_z,L_y]= -i\hbar L_x 
     \end{cases}$
-    \begin{tcolorbox4}[角动量对易关系]
+    \begin{tcolorbox4}[角动量对易关系1]
         $ [L_\alpha,L_\beta]= \varepsilon_{\alpha\beta\gamma} i\hbar L_\gamma $ 
     \end{tcolorbox4}
 \end{frame} 
 
-\begin{frame} [allowframebreaks=]
+\begin{frame}
     \frametitle{}
-    \begin{tcolorbox1}{角动量对易关系2}
-        试证明角动量对易关系 $[L_z,L^2]=0$
-    \end{tcolorbox1}
-    \alert{证明:} 
+    \alert{证明3:} 
     \begin{equation*}
         \begin{split}
         [L_z,L^2]&= [L_z,L_x ^2+L_y ^2+L_z ^2]\\
@@ -311,16 +310,34 @@
         [L_y,L^2]= 0  \\ 
         [L_z,L^2]= 0 
     \end{cases}$
-    \begin{tcolorbox4}[角动量对易关系]
+    \begin{tcolorbox4}[角动量对易关系2]
         $$ [L_\alpha,L^2]= 0 $$ 
     \end{tcolorbox4}
 \end{frame} 
 
-\begin{frame} [allowframebreaks=]
-    \frametitle{}
-    \begin{tcolorbox2}{课堂作业}
-        定义升降算符：$L_\pm \equiv L_x \pm i L_y$ \\
-     试证明如下对易关系  $$[L_\pm,L^2]=0$$
+\begin{frame} 
+    \frametitle{课堂作业}
+    \begin{tcolorbox2}{角动量对易关系3}
+     定义升降算符：$L_\pm \equiv L_x \pm i L_y$ \\
+     试证明对易关系:  $$[L_\pm,L^2]=0$$
      $$[L_z, L_\pm]= \pm \hbar L_\pm $$
     \end{tcolorbox2}
+\end{frame} 
+
+
+\begin{frame} 
+    \frametitle{小结}
+    \begin{tcolorbox4}[常见对易关系]
+        \begin{enumerate}
+            \Item $\begin{cases}
+                [x_\alpha,x_\beta]= 0  \\ 
+                [p_\alpha,p_\beta]= 0  \\ 
+                [x_\alpha,p_\beta]= i\hbar \delta_{\alpha\beta}  \\ 
+                \end{cases}$
+            \Item $ [L_\alpha,x_\beta]= \varepsilon_{\alpha\beta\gamma} i\hbar x_\gamma $
+            \Item $ [L_\alpha,p_\beta]= \varepsilon_{\alpha\beta\gamma} i\hbar p_\gamma $
+            \Item $ [L_\alpha,L_\beta]= \varepsilon_{\alpha\beta\gamma} i\hbar L_\gamma $
+            \Item $ [L_\alpha,L^2]= 0 $
+        \end{enumerate}
+    \end{tcolorbox4}
 \end{frame} 

@@ -25,11 +25,9 @@
 
 \begin{frame} 
     \frametitle{平均值公式}
-    \begin{tcolorbox1}{1、平均值公式}
-        求平均值公式在Q表象中的具体形式（矩阵表示）
-        $$ \bar{F}=\int \Psi^* (\vec{r},t) F \Psi(\vec{r},t) d\tau $$
-    \end{tcolorbox1}
-    \alert{解：} 
+    \例[1、求平均值公式在Q表象中的具体形式（矩阵表示）] {
+        $$ \bar{F}=\int \Psi^* (\vec{r},t) F \Psi(\vec{r},t) d\tau $$}
+    \解~ 
     \begin{equation*}
         \begin{split}
             \bar{F}&=(\Psi(\vec{r},t), F\Psi(\vec{r},t)) \\
@@ -81,11 +79,9 @@
 
 \begin{frame} 
     \frametitle{归一化公式}
-    \begin{tcolorbox1}{2、归一化公式}
-        求归一化公式在Q表象中的具体形式（矩阵表示）
-        $$ \int \Psi^* (\vec{r},t) \Psi(\vec{r},t) d\tau =1 $$
-    \end{tcolorbox1}
-    \alert{解：} 
+    \例[2、求归一化公式在Q表象中的具体形式（矩阵表示）]
+        {$$ \int \Psi^* (\vec{r},t) \Psi(\vec{r},t) d\tau =1 $$}
+    \解~ 
     \begin{equation*}
         \begin{split}
             1 &=(\Psi(\vec{r},t), \Psi(\vec{r},t)) \\
@@ -114,11 +110,9 @@
 
 \begin{frame} 
     \frametitle{本征方程}
-    \begin{tcolorbox1}{3、本征方程}
-        求本征方程在Q表象中的具体形式（矩阵表示）
-        $$ F\psi_n (\vec{r}) =f \psi_n (\vec{r})$$
-    \end{tcolorbox1}
-    \alert{解：} 
+    \例[3、求本征方程在Q表象中的具体形式（矩阵表示）]
+        {$$ F\psi_n (\vec{r}) =f \psi_n (\vec{r})$$}
+    \解~ 
     \begin{equation*}
         \begin{split}
             F\psi_m (\vec{r}) &=f \psi_m \\
@@ -166,16 +160,14 @@
 \end{frame}
 
 \begin{frame} 
-    \begin{tcolorbox2}{例1:}
-        已知算符在Q表象中的矩阵形式如下。
-        $$ L_x= \frac{\hbar}{\sqrt{2}}
+    \例[4、已知算符在Q表象中的矩阵形式如下,求本征值和归一化本征函数，并将矩阵对角化。]
+        {$$ L_x= \frac{\hbar}{\sqrt{2}}
         \begin{pmatrix}
             0 & 1 & 0  \\
             1 & 0 & 1  \\
             0 & 1 & 0 \\
          \end{pmatrix} $$
-        求本征值和归一化本征函数，并将矩阵对角化。
-    \end{tcolorbox2}
+        }
     可选方案:
     \begin{itemize}
         \done 解久期方程，得本征值，然后代入方程（1），得本征函数 ，再直接写出对角阵 
@@ -184,7 +176,7 @@
 \end{frame}
 
 \begin{frame} 
-    \alert{解：}第一步：解久期方程求本征值
+    \解~第一步：解久期方程求本征值
     $$\frac{\hbar}{\sqrt{2}}
     \begin{vmatrix}
        0-f & 1 & 0  \\
@@ -257,7 +249,6 @@
 
 \begin{frame} 
     代入归一化公式， $$ \pmb {\Psi} ^{\dagger } \pmb {\Psi} =1 $$
-
     $$\begin{matrix}
     f_1=\sqrt{2} & f_2=0  &  f_3=-\sqrt{2}\\
     \dfrac{1}{2} a_2 ^2 (1, \sqrt{2}, 1)
@@ -327,11 +318,9 @@
 
 \begin{frame} 
     \frametitle{薛定谔方程}
-    \begin{tcolorbox1}{4、薛定谔方程}
-        求薛定谔方程在Q表象中的具体形式（矩阵表示）
-        $$ i\hbar \frac{\partial}{\partial t }\psi (\vec{r},t) =H\psi (\vec{r},t)$$
-    \end{tcolorbox1}
-    \alert{解：} 波函数在Q表象展开
+    \例[5、求薛定谔方程在Q表象中的具体形式（矩阵表示）]
+        {$$ i\hbar \frac{\partial}{\partial t }\psi (\vec{r},t) =H\psi (\vec{r},t)$$}
+    \解~ 波函数在Q表象展开
     \begin{equation*}
         \begin{split}
             i\hbar \frac{\partial}{\partial t }\sum_n a_n(t) u_n(\vec{r})  &=H\sum_n a_n(t) u_n(\vec{r}) \\
@@ -380,11 +369,9 @@
 
 \begin{frame} 
     \frametitle{算符运动方程}
-    \begin{tcolorbox1}{5、算符运动方程}
-        求运动方程在Q表象中的具体形式（矩阵表示）
-        $$ \frac{d\overline{F}}{dt}=\overline{\frac{\partial F }{\partial t}}  +\frac{1}{i\hbar} \overline{[F,H]}$$
-    \end{tcolorbox1}
-    \alert{解：} 波函数在Q表象展
+    \例[6、求运动方程在Q表象中的具体形式（矩阵表示）]
+        {$$ \frac{d\overline{F}}{dt}=\overline{\frac{\partial F }{\partial t}}  +\frac{1}{i\hbar} \overline{[F,H]}$$}
+    \解~波函数在Q表象展
     \begin{equation*}
         \begin{split}
             \frac{d(\psi,F \psi )}{dt} &=(\psi,\frac{\partial F }{\partial t} \psi)  +\frac{1}{i\hbar}  ( \psi,[F,H]\psi) \\

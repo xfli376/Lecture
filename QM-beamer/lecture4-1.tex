@@ -43,12 +43,11 @@
 
 \begin{frame} 
     \frametitle{展开系数}   
-    \begin{exampleblock}{命题：}
-        试证明：波函数用其在某基上的展开系数构成的矩阵来表示 
+    \begin{exampleblock}{命题-1.试证明波函数可用其在任意基上的展开系数构成的矩阵表示}
         $$ \Psi(\vec{r},t)=\sum_n c_n(t) \psi_n(\vec{r})$$ 
         $$ \Psi\Leftrightarrow(c_1,c_2,\cdots)^T $$   
     \end{exampleblock}
-    对于任意表象Q,若：\\
+    \证 ~对于任意表象Q,若：\\
      本征分立谱: $\psi_n(\vec{r}) \to u_n(\vec{r})$, $c_n \to a_n $
         \begin{equation*}
             a_n(t)=(u_n(\vec{r}), \Psi(\vec{r},t)) 
@@ -79,7 +78,7 @@
 \end{frame}
 
 \begin{frame} 
-    \frametitle{对比} 
+    \frametitle{} 
     $$\begin{matrix}
       ~~  & \text{矢量空间} & \text{希尔伯特空间}\\ \vspace{0.6em}
       \text{基}  & \{\vec{e}_1,\vec{e}_2,\vec{e}_3\}  & \{ u_1,u_2,\cdots,u_n \}\\ \vspace{0.6em}
@@ -93,10 +92,8 @@
 
 \begin{frame} 
     \frametitle{实例} 
-    \begin{tcolorbox2}{例1：}
-        求动量本征态（平面波）在动量表象中的具体形式（矩阵表示）
-    \end{tcolorbox2}
-    \alert{解：} 动量的本征谱连续,采用公式\\
+    \例[2.求动量本征态（平面波）在动量表象中的具体形式（矩阵表示）]{}
+    \解~ 动量的本征谱连续，采用公式\\
     $$a(q,t)=(u_q(\vec{r}), \Psi(\vec{r},t)) $$
     取 $$u_q(\vec{r})=\psi_{\vec{p}}(\vec{r})=\frac{1}{(2\pi\hbar)^{3/2}}e^{\frac{i}{\hbar}\vec{p}\cdot \vec{r}}, 
     \qquad \Psi(\vec{r},t))=\frac{1}{(2\pi \hbar)^{3/2}} e^{\frac{i}{\hbar}(\vec p\cdot \vec r -Et)} = 
@@ -113,18 +110,14 @@
             &= e^{-\frac{i}{\hbar}Et}\delta(\vec{p}-\vec{p}')\\
         \end{split} 
     \end{equation*}
-    \begin{tcolorbox}[colback=yellow!5,colframe=yellow!75!black,title=TIPS：]
-        本征态在自身表象中的矩阵表示为$\delta$函数。
-    \end{tcolorbox}
+    ~\\
+    \Tips~本征态在自身表象中的矩阵表示为$\delta$函数。
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
-    \begin{tcolorbox2}{例2：}
-        如下波函数是某体系的能量本征态\\
-        $$ \psi_n(x)=\sqrt{\frac{2}{a}} \sin \frac{n\pi}{a}x, \qquad 0<x<a $$
-        求基态(n=1)分别在动量和能量表象中的具体形式
-    \end{tcolorbox2}
-    \alert{解：} （1）动量的本征谱连续,采用公式\\
+    \例[3.已知如下波函数是体系的能量本征态，求其基态(n=1)分别在动量和能量表象中的具体形式]
+        {$$ \psi_n(x)=\sqrt{\frac{2}{a}} \sin \frac{n\pi}{a}x, \qquad 0<x<a $$}
+    \解~ （1）动量的本征谱连续，采用公式\\
     \begin{equation*}
         \begin{split}
             a(q,t)&=(u_q(\vec{r}), \Psi(\vec{r},t)) \\
@@ -141,7 +134,7 @@
         \end{split} 
     \end{equation*}
 
-    （2）能量本征谱分立,采用公式\\
+    （2）能量本征谱分立，采用公式\\
     \begin{equation*}
         \begin{split}
             a_n(t)&=(u_n(\vec{r}), \Psi(\vec{r},t)) \\
@@ -151,22 +144,21 @@
     \end{equation*}  
 \end{frame} 
 
-\subsection{算符矩阵表示}
+\subsection{算符的矩阵表示}
 
 \begin{frame}
     \frametitle{算符矩阵表示}    
-    算符有如下定义式：
+    \例[4.算符有如下定义式，求其在Q表象的矩阵形式]{
     \begin{equation*}
         \varphi(\vec{r})=F\Psi(\vec{r}) 
-    \end{equation*}  
-    把两波函数在任意表象Q中展开 （基$u_n(\vec{r})$）：\\
+    \end{equation*} } 
+    \解~ 把两波函数在表象Q中展开（基$u_n(\vec{r})$）：\\
     \begin{equation*}
         \begin{split} 
          \sum_m b_m(t)u_m(\vec{r})&= F\sum_m a_m(t)u_m(\vec{r}) \\
          \sum_m b_m(t)u_m(\vec{r})&= \sum_m Fu_m(\vec{r})a_m(t) \\
          \sum_m b_m(t)u_n ^*(\vec{r}) u_m(\vec{r})&= \sum_m u_n ^*(\vec{r}) Fu_m(\vec{r})a_m(t) \\
          \sum_m b_m(t)(u_n (\vec{r}), u_m(\vec{r}))&= \sum_m (u_n (\vec{r}), Fu_m(\vec{r}))a_m(t) \\
-         \sum_m b_m(t)\delta_{nm}&= \sum_m (u_n (\vec{r}), Fu_m(\vec{r}))a_m(t) \\
         \end{split}  
     \end{equation*} 
 \end{frame}
@@ -179,7 +171,7 @@
          b_n(t)&= \sum_m F_{nm} a_m(t) 
         \end{split}  
     \end{equation*} 
-    取遍$n, m$, 得到如下矩阵形式\\
+    取遍$n, m$, 得矩阵形式
     $$\begin{pmatrix}
         b_1(t)\\
         b_2(t)\\
@@ -200,7 +192,7 @@
         a_n(t)
     \end{pmatrix}
     $$
-    算符矩阵元公式： $$ F_{nm}=(u_n (\vec{r}), Fu_m(\vec{r})) $$
+    \Tips~算符矩阵元公式 $$ F_{nm}=(u_n (\vec{r}), Fu_m(\vec{r})) $$
 \end{frame} 
 
 \subsection{算符矩阵的厄密性}
@@ -217,16 +209,16 @@
 \begin{frame} 
     \begin{tcolorbox1}{厄密矩阵定义：}
         \begin{itemize}
-        \Item 对于矩阵F，其共轭矩阵为， $F^{\dagger } =(F_{nm} ^*)^T$
+        \Item 对于矩阵F，其共轭矩阵为:$F^{\dagger } =(F_{nm} ^*)^T$
         \Item 如果有 $F= F^{\dagger }$， 称F为厄密矩阵
         \end{itemize}
-    TIPS：厄密矩阵的矩阵元有特点 $$  F_{nm}^* = F_{mn}  $$
+    \Tips~厄密矩阵的矩阵元有特点 $$  F_{nm}^* = F_{mn}  $$
     \end{tcolorbox1}
 \end{frame}
 
 \begin{frame} 
     \frametitle{} 
-    下列矩阵，哪些是厄密矩阵\\
+    \例[5.指出下列矩阵，哪些是厄密矩阵]{}
     $$\begin{matrix}
         \begin{pmatrix}
             a & 0 & 0 & 0 \\
@@ -274,11 +266,10 @@
 \end{frame}
 
 
-\begin{frame} [allowframebreaks=]
-    \begin{tcolorbox1}{性质1：}
-        试证明力学量算符的矩阵表示都是厄密矩阵
-    \end{tcolorbox1}
-    \alert{证明：} 
+\begin{frame}
+    \frametitle{性质1：}
+    \例[6.试证明力学量算符的矩阵表示都是厄密矩阵]{}
+    \证~ 
     \begin{equation*}
         \begin{split}
             F_{nm}&=(u_n (\vec{r}), Fu_m(\vec{r}))\\
@@ -290,11 +281,10 @@
     证毕！
 \end{frame}
 
-\begin{frame} [allowframebreaks=]
-    \begin{tcolorbox1}{性质2：}
-        试证明力学量算符的矩阵表示，其对角元都是实数
-    \end{tcolorbox1}
-    \alert{证明：} 
+\begin{frame}
+    \frametitle{性质2：}
+    \例[7.试证明力学量算符的矩阵表示，对角元都是实数]{}
+    \证~ 
     \begin{equation*}
         \begin{split}
             F_{nm}&=F_{mn}^*\\
@@ -305,11 +295,10 @@
     证毕！
 \end{frame}
 
-\begin{frame} [allowframebreaks=]
-    \begin{tcolorbox1}{性质3:}
-        试证明力学量算符的矩阵表示，在自身表象中是对角矩阵
-    \end{tcolorbox1}
-    \alert{证明：} 
+\begin{frame}
+    \frametitle{性质3:}
+    \例[8.试证明力学量算符的矩阵表示，在自身表象中是对角矩阵]{}
+    \证~ 
     \begin{equation*}
         \begin{split}
             F_{nm}&=(u_n (\vec{r}), Fu_m(\vec{r}))\\
@@ -335,9 +324,9 @@
 
 \begin{frame} 
     \frametitle{}
-    \begin{tcolorbox2}{课堂作业:}
+    \begin{exampleblock}{课堂作业:}
     取Q表象为动量表象，试求位置算符$\hat{x}$、动量算符$\hat{p}_x$ 的具体形式。
-    \end{tcolorbox2}
+    \end{exampleblock}
 \end{frame} 
 
 \begin{frame} 

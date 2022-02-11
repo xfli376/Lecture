@@ -30,15 +30,18 @@
     \begin{tcolorbox1}{幺正变换的定义}
     通过幺正矩阵联系起来的两矩阵之间的变换，称为幺正变换。
     \end{tcolorbox1}
-    \alert{例1：} 试证明二维平面矢量绕原点的旋转变换是幺正变换
+\end{frame}
+
+\begin{frame}     
+    \例[1. 试证明二维平面矢量绕原点的旋转变换是幺正变换]{}
     \begin{wrapfigure} {r} {0.30\textwidth} %;图在右
         \includegraphics[width=0.29\textwidth]{figs/transf1.png}   
     \end{wrapfigure}
-    \alert{证明：}
+    \证~
     $\left\{\begin{matrix}
         x'=x\cos\theta -y\sin\theta\\
         y'=x\sin\theta+y\cos\theta
-    \end{matrix}\right.$ \qquad
+    \end{matrix}\right.$ \quad
     $\begin{bmatrix}
         x' \\
         y'
@@ -79,11 +82,9 @@
 \subsection{量子力学中的三种基本变换}
 
 \begin{frame} 
-    \frametitle{}
-    \begin{tcolorbox1}{1、基矢变换}
-        试证明：量子力学不同表象基组之间的变换是幺正变换  
-    \end{tcolorbox1}
-    \alert{证明：} 设A的基组为$\psi_\alpha$ B的基组为 $\varphi_n$, A归一化公式中把波函数在B展开: 
+    \frametitle{基矢变换}
+    \例[2.试证明量子力学不同表象基组之间的变换是幺正变换]{}  
+    \证~ 设A的基组为$\psi_\alpha$ B的基组为 $\varphi_n$, A归一化公式中把波函数在B展开: 
     \begin{equation*}
         \begin{split}
             \delta_{\alpha\beta} &= (\psi_\alpha, \psi_\beta) \\
@@ -126,11 +127,9 @@
 \end{frame}
 
 
-\begin{frame} 
-    \begin{tcolorbox1}{2、波函数变换}
-        试证明：同一波函数在两不同表象中的矩阵之间的变换是幺正变换  
-    \end{tcolorbox1}
-    \alert{证明：} 设A的基组为$\psi_\alpha$ B的基组为 $\varphi_n$\\
+\begin{frame} {波函数变换}
+    \例[3.试证明同一波函数在两不同表象中的矩阵之间的变换是幺正变换]{}  
+    \证~ 设A的基组为$\psi_\alpha$ B的基组为 $\varphi_n$\\
     波函数$\Psi$在A表象和B表象中分别展开：
     \begin{equation*}
         \begin{split}
@@ -157,11 +156,9 @@
 \end{frame}
 
 
-\begin{frame} 
-    \begin{tcolorbox1}{3、算符变换}
-        试证明：同一力学量算符在两不同表象中的矩阵变换是幺正变换  
-    \end{tcolorbox1}
-    \alert{证明：} 设A的基组为$\psi_\alpha$ B的基组为 $\varphi_n$\\
+\begin{frame} {算符变换}
+    \例[4.试证明同一力学量算符在两不同表象中的矩阵变换是幺正变换]{}  
+    \证~ 设A的基组为$\psi_\alpha$ B的基组为 $\varphi_n$\\
     算符F在A表象的矩阵元为$F_{\alpha\beta}$, 在B表象中的矩阵元为$F'_{nm}$
     \begin{equation*}
         \begin{split}
@@ -186,12 +183,9 @@
 
 \subsection{幺正变换的性质}
 
-\begin{frame} 
-    \begin{tcolorbox1}{幺正变换性质1：}
-        试证明：幺正变换不改变算符的本征值 
-    \end{tcolorbox1}
-    \alert{证明：}
-    算符F在A表象的矩阵为F，本征矢为a, 在B表象中的矩阵为F' 本征矢为b,有本征方程：
+\begin{frame} {幺正变换性质1：}
+    \例[5.试证明幺正变换不改变算符的本征值]{} 
+    \证~算符F在A表象的矩阵为F，本征矢为a, 在B表象中的矩阵为F' 本征矢为b,有本征方程：
     \begin{equation*}
         \begin{split}
             Fa&=fa \qquad (1)\\
@@ -205,11 +199,9 @@
     比较（1）（2）式，有$f=f'$, 证毕！
 \end{frame}    
 
-\begin{frame} 
-    \begin{tcolorbox1}{幺正变换性质2：}
-        试证明：幺正变换不改变矩阵的迹
-    \end{tcolorbox1}
-    \alert{证明：} 矩阵A的对角元素之和称为矩阵A的迹，用$SP(A)$或$tr(A)$表示，则性质\\
+\begin{frame} {幺正变换性质2：}
+    \例[6.试证明幺正变换不改变矩阵的迹]{}
+    \证 ~矩阵A的对角元素之和称为矩阵A的迹，用$SP(A)$或$tr(A)$表示，则性质\\
     $$tr(AB)=tr(BA) $$
     \begin{equation*}
         \begin{split}
@@ -241,11 +233,9 @@
     证毕！
 \end{frame}    
 
-\begin{frame} 
-    \begin{tcolorbox1}{幺正变换性质3：}
-        幺正变换不改变物理规律,已知在 x 表象中有基本对易关系$xp_x-p_x x =i\hbar$ 试求它在p表象中的形式，然后证明这种对易关系不随表象发生变化。
-    \end{tcolorbox1}
-    \alert{解：} （1）在p表象， $$ \hat{x}=i\hbar\dfrac{\partial}{\partial p_x}, \qquad \hat{p}_x=p_x $$
+\begin{frame} {幺正变换性质3：}
+    \例[7.幺正变换不改变物理规律，现已知在 x 表象中的基本对易关系$xp_x-p_x x =i\hbar$， 试求它在p表象中的形式，然后证明这种对易关系不随表象发生变化]{}
+    \解 ~（1）在p表象， $$ \hat{x}=i\hbar\dfrac{\partial}{\partial p_x}, \qquad \hat{p}_x=p_x $$
      对任意波函数 $\Psi(p_x)$
     \begin{equation*}
         \begin{split}
@@ -280,26 +270,24 @@
     \end{tcolorbox2}
 \end{frame}
 
-\begin{frame}
-    \begin{tcolorbox2}{构造S矩阵的方法}
-        已知一个算符F在A表象中的矩阵如下，求F表象和A表象之间的幺正变换矩阵S
-        $$ H=
+\begin{frame}{构造S矩阵的方法}
+        \例[8.已知算符F在A表象中的矩阵如下，求F表象和A表象之间的幺正变换矩阵S]
+        {$$ H=
         \begin{bmatrix}
             2\varepsilon  & 0 & \varepsilon\\
             0 & 2\varepsilon & 0 \\
             \varepsilon & 0 2\varepsilon\\
-        \end{bmatrix} $$
-     \end{tcolorbox2}
-     \alert{解：} 如果知道 A表象的基 $\{\psi_\alpha \}$, F表象的基 $ \{\varphi_n \}$， 则可直接通过计算内积得到：
+        \end{bmatrix} $$}
+     \解~ 如果知道A表象的基 $\{\psi_\alpha \}$, F表象的基 $ \{\varphi_n \}$， 则可直接通过计算内积得到：
      $$ S_{n\alpha} =(\varphi_n, \psi_\alpha) $$
      现在知道一个非对角矩阵H，我们可以通过解久期方程得到本征值和本征函数，得到一个对角阵H',这相当于实现了一个从A表象到H表象的幺正变换,关系式为：
      $$ H'=S^\dagger H S$$
 \end{frame}  
 
 \begin{frame}
-现在证明：F在A表象的本征函数系构成这个S矩阵。\\
-\alert{证明：} 注意到H'的对角元是本征值
-\begin{equation*}
+    \例[9.试证明F在A表象的本征函数系构成这个S矩阵]{}
+    \证~ 注意到H'的对角元是本征值
+    \begin{equation*}
     \begin{split}
     H' &=S^\dagger H S \\
     H'_{mn} &=(S^\dagger H S)_{mn}  \\
@@ -307,9 +295,9 @@
     \sum_{\alpha \beta} (\sum_m S_{\alpha m} S^\dagger_{m \alpha}) H_{\alpha \beta} S_{\beta n} &= h_m \sum_m S_{\alpha m}\delta_{mn} \\
     \sum_{\beta} H_{\alpha \beta} S_{\beta n} &= h_n S_{\alpha n} \\
     \end{split} 
-\end{equation*} 
-上式表明，第n个本征态正好是S矩阵的第n列！\\
-即依次提列本征函数构成S阵。证毕！
+    \end{equation*} 
+    上式表明，第n个本征态正好是S矩阵的第n列！\\
+    即依次提列本征函数构成S阵。证毕！
 \end{frame} 
 
 

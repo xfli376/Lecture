@@ -31,7 +31,7 @@
     }
 \end{frame}
 
-\subsection{薛定谔方程假说}
+\subsection{波函数演化假说}
 
 \begin{frame}
     \begin{tcolorbox4}[Basic assumption 2/5]
@@ -42,7 +42,7 @@
     \end{tcolorbox4}
 \end{frame}
 
-\subsection{薛定谔方程神秘来源}
+\subsection{薛定谔方程}
 
 \begin{frame}
     \frametitle{神秘来源}
@@ -123,7 +123,7 @@
     \end{equation*}
     That is the Schr$\ddot{o}$dinger equation. \\
     ~~\\
-    \bullet For N-particles system
+    {\Bullet} For N-particles system
    {\small \begin{equation*}
         i\hbar \frac{\partial }{\partial t} \Psi(x_1, x_2, \cdots x_N,t) = [\sum_{i=1} ^{N} \frac{\hbar ^2}{2\mu_i} \nabla^2 +U(x_1, x_2, \cdots x_N)] \Psi(x_1, x_2, \cdots x_N,t)
     \end{equation*}}
@@ -141,9 +141,7 @@
     发表论文：《Quantisierung als Eigenwert problem》(量子化是本征值问题)，整整140页！
 \end{frame}
 
-\subsection{名人评述}
-
-\begin{frame}
+\begin{frame}{名人评述}
     \begin{enumerate}
         \Item 
         \begin{quote}
@@ -186,36 +184,11 @@
     }
 \end{frame}
 
-\subsection{定态薛定谔方程}
-
-\begin{frame} 
-    \frametitle{定态问题}
-    若势函数$V(\vec{r},t ) $若不显含时间 t，则时间变量可分离 \\ \vspace{0.3cm}
-    方程： { $ \displaystyle i \hbar \frac{\partial }{\partial t} \Psi (\vec{r},t ) =\left [- \frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r},t ) $}  \\  \vspace{0.3cm}
-    \alert{解：}  设  $\Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) $ , 代回方程 \\ 
-     { $ \displaystyle i\hbar \Psi (\vec{r})  \frac{\partial }{\partial t} f(t)=f(t) \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) $}  \\ 	
-     { $ \displaystyle i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)= \frac{1}{\Psi (\vec{r}) } \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E $}  \\ \vspace{0.3cm} 
-     得两个微分方程：\\  \vspace{0.3cm}
-     I、演化方程  $ \displaystyle  i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)=E, \qquad $  
-        解方程，得：$\displaystyle  f(t) =e^{-iEt/\hbar}$ 
-\end{frame}
-
-\begin{frame} 
-    II、定态薛定谔方程 $\displaystyle   \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E \Psi (\vec{r})  $   \\ 
-    算符形式：$$\displaystyle   \hat{H} \Psi (\vec{r}) =E \Psi (\vec{r})  $$   
-    这是哈密顿算符 $\hat{H}$ 的本征方程。结合定解条件，可得能量本征值（$E_n$）及本征函数 $\Psi_{E_n} (\vec{r} )$ 。依据态叠加原理，一般的态（叠加解）可表示为：
-    \[ \Psi (\vec{r},t ) =\sum\limits_n c_n(t)\Psi_{E_n} (\vec{r} ) e^{-iE_n t/\hbar}  \]
-    \begin{definition}
-        定态：能量有确定值的态称为定态，用定态波函数描述
-        \[ \Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) = \Psi_E (\vec{r} ) e^{-iEt/\hbar} \] 
-    \end{definition}
-\end{frame}
-
 \subsection{守恒定律}
 
 \begin{frame} 
     \frametitle{守恒定律 }
-    \bullet 概率守恒定律\\ \vspace{0.3em}
+    {\Bullet} 概率守恒定律\\ \vspace{0.3em}
     守恒定律关心的是物理量随时间的变化率问题，量子力学中最重要的是概率，我们考虑概率密度的变化率
     $$\omega (\vec{r}, t)=|\Psi(\vec{r}, t)|^{2}=\Psi^{*}(\vec{r}, t) \Psi(\vec{r}, t)$$
     \begin{equation*}
@@ -254,8 +227,8 @@
     由 Gauss 定理可知，单位时间内体系V内增加的概率应等于穿过V边界面S进入V内的概率，所以$\vec{J}$是概率流。(4) 式和(5)分别是概率守恒定律的微分和积分形式。\\ \vspace{0.3em}
 \end{frame}
 
-\begin{frame}    
-    \bullet 粒子数守恒定律\\ \vspace{0.3em}
+\begin{frame} \frametitle{}   
+    {\Bullet} 粒子数守恒定律\\ \vspace{0.3em}
     \begin{equation*}
         \begin{split}
         \frac{d}{d t} \int\limits_{V} \omega d \tau &= \frac{d}{d t} \int\limits_{V} |\Psi(\vec{r}, t)|^{2} d \tau ,\qquad \cdots \qquad （V \to \infty）  \\
@@ -266,8 +239,8 @@
     说明全空间概率不随时间发生变化，即粒子既未产生也未湮灭时，概率守恒定律就是粒子数守恒定律。\\ \vspace{0.3em}
 \end{frame}
 
-\begin{frame} 
-    \bullet 质量守恒定律\\ \vspace{0.3em}
+\begin{frame}\frametitle{}
+    {\Bullet} 质量守恒定律\\ \vspace{0.3em}
     对（4）式，左右两边同乘以粒子的质量$\mu$, 
     \begin{equation*}
         \frac{\partial \mu\omega}{\partial t}+ \nabla \cdot \mu\vec{J}=0
@@ -278,8 +251,8 @@
     \end{equation*} 
 \end{frame}
 
-\begin{frame} 
-    \bullet 电荷守恒定律\\ \vspace{0.3em}
+\begin{frame}\frametitle{}
+    {\Bullet} 电荷守恒定律\\ \vspace{0.3em}
     对（4）式，左右两边同乘以粒子的电荷$e$, 
     \begin{equation*}
         \frac{\partial e\omega}{\partial t}+ \nabla \cdot e\vec{J}=0
@@ -290,12 +263,36 @@
     \end{equation*}  
 \end{frame}
 
+\subsection{定态薛定谔方程}
+
 \begin{frame} 
-    \frametitle{定态的概率流}
-    \begin{tcolorbox1}{命题1}
-        试证明：定态的概率密度不随时间变化。
-    \end{tcolorbox1}
-    \alert{证明：}
+    \frametitle{定态问题}
+    若势函数$V(\vec{r},t ) $若不显含时间 t，则时间变量可分离 \\ \vspace{0.3cm}
+    方程： { $ \displaystyle i \hbar \frac{\partial }{\partial t} \Psi (\vec{r},t ) =\left [- \frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r},t ) $}  \\  \vspace{0.3cm}
+    \alert{解：}  设  $\Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) $ , 代回方程 \\ 
+     { $ \displaystyle i\hbar \Psi (\vec{r})  \frac{\partial }{\partial t} f(t)=f(t) \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) $}  \\ 	
+     { $ \displaystyle i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)= \frac{1}{\Psi (\vec{r}) } \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E $}  \\ \vspace{0.3cm} 
+     得两个微分方程：\\  \vspace{0.3cm}
+     I、演化方程  $ \displaystyle  i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)=E, \qquad $  
+        解方程，得：$\displaystyle  f(t) =e^{-iEt/\hbar}$ 
+\end{frame}
+
+\begin{frame} 
+    II、定态薛定谔方程 $\displaystyle   \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E \Psi (\vec{r})  $   \\ 
+    算符形式：$$\displaystyle   \hat{H} \Psi (\vec{r}) =E \Psi (\vec{r})  $$   
+    是哈密顿算符 $\hat{H}$ 的本征方程。结合定解条件，可得能量本征值（$E_n$）及本征函数 $\Psi_{E_n} (\vec{r} )$ \\ \vspace{0.6em}
+    \begin{definition}[定态：]
+        \hspace{2em}能量有确定值的态称为定态，用定态波函数描述
+        \[ \Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) = \Psi_E (\vec{r} ) e^{-iEt/\hbar} \] 
+    \end{definition}
+    依据态叠加原理，一般的态（叠加解）可表示为：
+    \[ \Psi (\vec{r},t ) =\sum\limits_n c_n(t)\Psi_{E_n} (\vec{r} ) e^{-iE_n t/\hbar}  \]
+\end{frame}
+
+\begin{frame} 
+    \frametitle{定态的概率与概率流}
+    \例[1.试证明定态的概率密度不随时间变化]{}
+    \证~
     \begin{equation*}
         \begin{split}
             \omega (\vec{r}, t)&=\Psi^{*}(\vec{r}, t) \Psi(\vec{r}, t) \\
@@ -307,10 +304,8 @@
 \end{frame}
 
 \begin{frame}   
-    \begin{tcolorbox1}{命题2}
-        试证明：定态的概率流密度也不随时间变化。 
-    \end{tcolorbox1}
-    \alert{证明：} 
+    \例[2.试证明定态的概率流密度不随时间变化]{} 
+    \证~ 
     \begin{equation*}
         \frac{\partial \omega}{\partial t }+ \nabla \cdot \vec{J}=0
     \end{equation*}  
