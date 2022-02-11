@@ -1,14 +1,14 @@
 
 
-\section{对易关系}
+\section{4.对易关系}
 
 \begin{frame}
     \frametitle{前情回顾}
     \begin{itemize}
-        \item 希尔伯特空间的态矢量描述体系状态
-        \item 希尔伯特空间的算符给出体系的物理量
-        \item 算符的本征函数系构成正交归一完全基
-        \item 常见算符本征方程求解
+        \Item 希尔伯特空间的态矢量描述体系状态
+        \Item 希尔伯特空间的算符给出体系的物理量
+        \Item 算符的本征函数系构成正交归一完全基
+        \Item 常见算符本征方程求解
     \end{itemize}   
 \end{frame} 
 
@@ -26,13 +26,13 @@
 \begin{frame} 
     \frametitle{运算法则}
     \begin{enumerate}
-        \item  $[A,B]=-[B,A]$
-        \item  $[A,A]=0$
-        \item  $[A,c]=0$
-        \item  $[A,B+C]=[A,B]+[A,C]$
-        \item  $[A,BC]=B[A,C]+[A,B]C$
-        \item  $[AB,C]=A[B,C]+[A,C]B$
-        \item  $[A,[B,C]] + [B,[C,A]] + [C,[A,B]] =0$
+        \Item  $[A,B]=-[B,A]$
+        \Item  $[A,A]=0$
+        \Item  $[A,c]=0$
+        \Item  $[A,B+C]=[A,B]+[A,C]$
+        \Item  $[A,BC]=B[A,C]+[A,B]C$
+        \Item  $[AB,C]=A[B,C]+[A,C]B$
+        \Item  $[A,[B,C]] + [B,[C,A]] + [C,[A,B]] =0$
     \end{enumerate}
 \end{frame} 
 \begin{frame}
@@ -52,11 +52,11 @@
 \begin{frame} 
     \begin{tcolorbox2}{推论：如果A与B、C分别对易}
         \begin{itemize}
-            \item 则A与$B+C$对易
-            \item 则A与$B^n+C^m$对易
-            \item 则A与$BC$对易
-            \item 则A与$B^nC^m$对易
-            \item 则A与$B^nC^m+B^{n'}C^{m'}$对易
+            \Item 则A与$B+C$对易
+            \Item 则A与$B^n+C^m$对易
+            \Item 则A与$BC$对易
+            \Item 则A与$B^nC^m$对易
+            \Item 则A与$B^nC^m+B^{n'}C^{m'}$对易
         \end{itemize}
     \end{tcolorbox2}
 \end{frame} 
@@ -148,10 +148,10 @@
 
 \subsection{常见对易关系}
 
-\begin{frame} [allowframebreaks=]
+\begin{frame}
     \frametitle{常见对易关系}
     \begin{tcolorbox1}{角动量-位置对易关系}
-        试证明角动量-位置对易关系 $[L_x,y]=i\hbar z,  [L_x,x]=0$
+        试证明角动量-位置对易关系 $[L_x,y] = i\hbar z,  [L_x,x] = 0 $
     \end{tcolorbox1}
     \alert{证明:} 
     \begin{equation*}
@@ -164,6 +164,10 @@
         &=i\hbar z \\
         \end{split}  
     \end{equation*}
+\end{frame} 
+
+\begin{frame}
+
     同理，有：\\
     $\begin{cases}
         [L_x,y]= i\hbar z  \\ 
@@ -180,9 +184,9 @@
         [L_z,z]= 0  \\ 
         [L_z,y]= -i\hbar x 
     \end{cases}$
-    \begin{tcolorbox}[colback=yellow!5,colframe=red!75!black,title=角动量-位置对易关系]
-        $$ [L_\alpha,x_\beta]= \varepsilon_{\alpha\beta\gamma} i\hbar x_\gamma $$ 
-    \end{tcolorbox}
+    \begin{tcolorbox4}[角动量-位置对易关系]
+        $ [L_\alpha,x_\beta]= \varepsilon_{\alpha\beta\gamma} i\hbar x_\gamma $ 
+    \end{tcolorbox4}
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
@@ -218,9 +222,9 @@
         [L_z,p_z]= 0  \\ 
         [L_z,p_y]= -i\hbar p_x 
     \end{cases}$
-    \begin{tcolorbox}[colback=yellow!5,colframe=red!75!black,title=角动量-动量对易关系]
-        $$ [L_\alpha,p_\beta]= \varepsilon_{\alpha\beta\gamma} i\hbar p_\gamma $$ 
-    \end{tcolorbox}
+    \begin{tcolorbox4}[角动量-动量一般对易关系]
+        $ [L_\alpha,p_\beta]= \varepsilon_{\alpha\beta\gamma} i\hbar p_\gamma $
+    \end{tcolorbox4}
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
@@ -277,9 +281,9 @@
         [L_z,L_z]= 0  \\ 
         [L_z,L_y]= -i\hbar L_x 
     \end{cases}$
-    \begin{tcolorbox}[colback=yellow!5,colframe=red!75!black,title=角动量对易关系]
-        $$ [L_\alpha,L_\beta]= \varepsilon_{\alpha\beta\gamma} i\hbar L_\gamma $$ 
-    \end{tcolorbox}
+    \begin{tcolorbox4}[角动量对易关系]
+        $ [L_\alpha,L_\beta]= \varepsilon_{\alpha\beta\gamma} i\hbar L_\gamma $ 
+    \end{tcolorbox4}
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]
@@ -307,9 +311,9 @@
         [L_y,L^2]= 0  \\ 
         [L_z,L^2]= 0 
     \end{cases}$
-    \begin{tcolorbox}[colback=yellow!5,colframe=red!75!black,title=角动量对易关系]
+    \begin{tcolorbox4}[角动量对易关系]
         $$ [L_\alpha,L^2]= 0 $$ 
-    \end{tcolorbox}
+    \end{tcolorbox4}
 \end{frame} 
 
 \begin{frame} [allowframebreaks=]

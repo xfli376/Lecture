@@ -9,7 +9,7 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{波函数}
+\section{1.波函数}
 
 \subsection{波粒二象性导致的困境}
 
@@ -33,24 +33,28 @@
     \frametitle{}
     实验分析:\\
     \begin{itemize}
-        \item 多个波构成电子 
-        \item 多个电子构成 
-        \item 单个电子既是粒子又是波 
+        \Item 多个波构成电子 
+        \Item 多个电子构成 
+        \Item 单个电子既是粒子又是波 
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     如果单个电子既是粒子又是波 \\
 \begin{itemize}
-    \item  电子与自己干涉 
-    \item  电子同时过两个缝  
-    \item  电子至少同时有两条路径 
-    \item  牛顿力学失效！ 
-    \item  波动学失效！ 
+    \Item  电子与自己干涉 
+    \Item  电子同时过两个缝  
+    \Item  电子至少同时有两条路径 
+    \Item  牛顿力学失效！ 
+    \Item  波动学失效！ 
 \end{itemize}
-    \begin{alertblock}{波粒二象性导致的困境}
-        我们如何描述电子的运动状态？
-    \end{alertblock}
+\end{frame}
+
+\begin{frame}
+    \centering
+    \begin{tcbb}[0.68]{波粒二象性导致的困境}
+        {如何描述象电子一样表现出波粒二象性物体的运动？}
+    \end{tcbb}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%
@@ -102,10 +106,10 @@
             \begin{column}[t]{0.46\linewidth}
                 主要成就：\\
                 \begin{enumerate}
-                    \item 物质波假说
-                    \item 原子内电子的波动性
-                    \item 波函数假说 
-                    \item 构造第一个波函数
+                    \Item 物质波假说
+                    \Item 原子内电子的波动性
+                    \Item 波函数假说 
+                    \Item 构造第一个波函数
                 \end{enumerate}
                 ~\\
                 \begin{quote}
@@ -122,7 +126,7 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{波函数统计诠释}
+\section{2.波函数统计诠释}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{统计诠释}
@@ -142,10 +146,10 @@
     \frametitle{}
     解释干涉实验:
     \begin{itemize}
-        \item 自由电子是平面波，可等概率出现在屏的任一位置
-        \item 电子波通过双缝发生衍射和干涉，导致某些位置的振幅大，某些位置的振幅小
-        \item 振幅较大的位置电子出现的概率大，形成明纹。振幅小的位置电子出现的概率小，形成暗纹
-        \item 明暗干涉条纹不体现电子波的形状，体现的是电子出现概率的分布
+        \Item 自由电子是平面波，可等概率出现在屏的任一位置
+        \Item 电子波通过双缝发生衍射和干涉，导致某些位置的振幅大，某些位置的振幅小
+        \Item 振幅较大的位置电子出现的概率大，形成明纹。振幅小的位置电子出现的概率小，形成暗纹
+        \Item 明暗干涉条纹不体现电子波的形状，体现的是电子出现概率的分布
     \end{itemize}  
 \end{frame}
 
@@ -154,12 +158,12 @@
 \begin{frame}[allowframebreaks=]
     统计诠释的数学描述:
     \begin{enumerate}
-        \item Probability density \[\omega = |\Psi|^2 =\Psi^* \Psi \]
-        \item Probability  \[ d W = |\Psi|^2 d \tau \]
-        \item Normalization \[ \int_{\Omega} |\Psi|^2 d \tau =1 \]
-        \item Momentum wavefunction \[ c(\vec{p},t)=\frac{1}{(2\pi\hbar)^{3/2}} \int_{0}^{\infty} \Psi(\vec{r},t) e^{\frac{-i}{\hbar} \vec{p}\cdot \vec{r} } d \tau \] 
-        \item Expectation value of any wavefunction $f (x)$  \[ <f(x)>=\int_{0}^{\infty} f(x) |\Psi(x)|^2 dx \]
-        \item Expectation value of observable A \[ <A>=\int_{0}^{\infty} \Psi^*(x) [A \Psi](x)| dx \]
+        \Item Probability density \[\omega = |\Psi|^2 =\Psi^* \Psi \]
+        \Item Probability  \[ d W = |\Psi|^2 d \tau \]
+        \Item Normalization \[ \int_{\Omega} |\Psi|^2 d \tau =1 \]
+        \Item Momentum wavefunction \[ c(\vec{p},t)=\frac{1}{(2\pi\hbar)^{3/2}} \int_{0}^{\infty} \Psi(\vec{r},t) e^{\frac{-i}{\hbar} \vec{p}\cdot \vec{r} } d \tau \] 
+        \Item Expectation value of any wavefunction $f (x)$  \[ <f(x)>=\int_{0}^{\infty} f(x) |\Psi(x)|^2 dx \]
+        \Item Expectation value of observable A \[ <A>=\int_{0}^{\infty} \Psi^*(x) [A \Psi](x)| dx \]
     \end{enumerate}
 \end{frame}
 
@@ -167,9 +171,9 @@
     \frametitle{}
     \alert{Tips:}
     \begin{itemize}
-        \item $\Psi$ and $C\Psi$ describe the same state 
+        \Item $\Psi$ and $C\Psi$ describe the same state 
         \[ \frac{C\Psi(x_1)}{C\Psi(X_2)} = \frac{\Psi(x_1)}{\Psi(X_2)}\]
-        \item $\Psi$ and $e^{i\varpi}\Psi$ describe the same state 
+        \Item $\Psi$ and $e^{i\varpi}\Psi$ describe the same state 
          \[ |e^{i\varpi}\Psi|^2 = e^{-i\varpi} e^{i\varpi} |\Psi|^2 = |\Psi|^2 \] 
     \end{itemize}  
 \end{frame}
@@ -177,10 +181,10 @@
 \begin{frame}
     Statistical interpretation requires wavefunctions to be (标准化条件):
     \begin{itemize}
-        \item finite  function
-        \item continuous function 
-        \item monotropic function
-        \item square integrable function 
+        \Item finite  function
+        \Item continuous function 
+        \Item monotropic function
+        \Item square integrable function 
     \end{itemize}
 \end{frame}
 
@@ -234,8 +238,8 @@
             \begin{column}[t]{0.46\linewidth}
                 主要成就：
                 \begin{enumerate}
-                    \item 波函数的统计诠释
-                    \item 态叠加原理
+                    \Item 波函数的统计诠释
+                    \Item 态叠加原理
                 \end{enumerate}
                 德国理论物理学家，量子力学的奠基人之一。\\
                 因对波函数的统计解释，获1954年诺贝尔物理学奖.\\
@@ -260,9 +264,8 @@
 
 \begin{frame}
     \frametitle{}
-    \tcbbtitle{\large Big problems}
     \centering
-    \tcbb[0.5]
+    \tcbb[0.5]{Big problems}
     {
       \large  {Is the world obeys the rule of probability ?}
     }

@@ -9,17 +9,17 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{矩阵表示}
+\section{1.矩阵表示}
 
 \begin{frame}
     \frametitle{前情回顾}
     \begin{itemize}
-        \item 波函数 : $$ \Psi(\vec{r},t)$$
-        \item 薛定谔方程 :     
+        \Item 波函数 : $$ \Psi(\vec{r},t)$$
+        \Item 薛定谔方程 :     
         \begin{equation*}
             i\hbar \frac{\partial }{\partial t} \Psi(\vec{r},t) = (\frac{\hbar^2}{2\mu} \nabla^2 +U(\vec{r})) \Psi(\vec{r},t)
         \end{equation*}
-        \item 力学量算符 :
+        \Item 力学量算符 :
         $$\left\{ \begin{aligned}
             &\hat{\vec{r}} =\vec{r}  \\
             &\hat{\vec{p}} =-i\hbar(\dfrac{d}{d x}+ \dfrac{d}{d y} + \dfrac{d}{d z}) \\
@@ -28,13 +28,14 @@
     \end{itemize}   
     可以发现：所有函数都以位置为自变量！我们称为位置表象
 \end{frame} 
-
+%
 \begin{frame} 
     \frametitle{表象理论}
     \begin{tcolorbox1}{定义：}
         \begin{itemize}
-            \item 表象：波函数和力学量的具体表示形式，选择一个力学量本征函数系做为基就是选取一种表象
-            \item 表象理论：研究量子力学具体表示形式以及它们之间的相互变换的理论。
+            \Item 表象：波函数和力学量的具体表示形式，选择一个力学量本征函数系做为基就是选取一种表象
+            \Item 表象理论：研究量子力学具体表示形式以及它们之间的相互变换的理论。
+        \end{itemize}
     \end{tcolorbox1}
 \end{frame} 
 
@@ -152,7 +153,7 @@
 
 \subsection{算符矩阵表示}
 
-\begin{frame} [allowframebreaks=]
+\begin{frame}
     \frametitle{算符矩阵表示}    
     算符有如下定义式：
     \begin{equation*}
@@ -168,6 +169,9 @@
          \sum_m b_m(t)\delta_{nm}&= \sum_m (u_n (\vec{r}), Fu_m(\vec{r}))a_m(t) \\
         \end{split}  
     \end{equation*} 
+\end{frame}
+
+\begin{frame} 
     \begin{equation*}
         \begin{split} 
          \sum_m b_m(t)\delta_{nm}&= \sum_m (u_n (\vec{r}), Fu_m(\vec{r}))a_m(t) \\
@@ -204,20 +208,19 @@
 \begin{frame} 
     \frametitle{算符矩阵性质} 
     \begin{enumerate}
-    \item  力学量算符的矩阵是厄密矩阵 
-    \item  力学量算符的矩阵，对角元都是实数
-    \item  力学量算符在自身表象是对角矩阵，对角元素就是算符的本征值
+    \Item  力学量算符的矩阵是厄密矩阵 
+    \Item  力学量算符的矩阵，对角元都是实数
+    \Item  力学量算符在自身表象是对角矩阵，对角元素就是算符的本征值
     \end{enumerate}
 \end{frame}
 
 \begin{frame} 
-    \frametitle{定义} 
-    \begin{tcolorbox1}{定义：}
+    \begin{tcolorbox1}{厄密矩阵定义：}
         \begin{itemize}
-        \item F的共轭矩阵: $F^{\dagger } =(F^*)^T$
-        \item 厄密矩阵: $F= F^{\dagger }$
+        \Item 对于矩阵F，其共轭矩阵为， $F^{\dagger } =(F_{nm} ^*)^T$
+        \Item 如果有 $F= F^{\dagger }$， 称F为厄密矩阵
         \end{itemize}
-    TIPS：厄密矩阵矩阵元特点 $$  F_{nm}^* = F_{mn}  $$
+    TIPS：厄密矩阵的矩阵元有特点 $$  F_{nm}^* = F_{mn}  $$
     \end{tcolorbox1}
 \end{frame}
 
@@ -322,10 +325,10 @@
 \begin{frame} [allowframebreaks=]
     \begin{tcolorbox2}{对角化的物理意义}
         \begin{itemize}
-            \item 力学量算符的表示一般不是对称阵（不在自身表象）
-            \item 在数学上做矩阵对角化，使其成为对角阵 （在自身表象）
-            \item 对角化完成从任意表象回到自身表象的过程
-            \item 对角元就是本征值（解本征方程求本征值）
+            \Item 力学量算符的表示一般不是对称阵（不在自身表象）
+            \Item 在数学上做矩阵对角化，使其成为对角阵 （在自身表象）
+            \Item 对角化完成从任意表象回到自身表象的过程
+            \Item 对角元就是本征值（解本征方程求本征值）
         \end{itemize}  
     \end{tcolorbox2}
 \end{frame}
@@ -347,9 +350,8 @@
             \dfrac{1}{2}
             \end{pmatrix}$$
     \begin{enumerate}
-        \item  此系数矩阵是波函数在位置表象的矩阵表示吗？
-        \item  此系数矩阵是波函数在能量表象的矩阵表示的条件是什么？  
+        \Item  此系数矩阵是波函数在位置表象的矩阵表示吗？
+        \Item  此系数矩阵是波函数在能量表象的矩阵表示的条件是什么？  
     \end{enumerate}
     \end{tcolorbox2}
 \end{frame} 
-

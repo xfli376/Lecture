@@ -1,11 +1,11 @@
 
 
-\section{幺正变换}
+\section{2.幺正变换}
 
 \begin{frame}
     \frametitle{前情回顾}
     \begin{itemize}
-       \done 波函数，力学量算符，公式在Q表象下的具体形式 
+       \done 波函数，力学量算符，公式在Q表象下的矩阵表示 
        \todo 表象变换
     \end{itemize}
 \end{frame} 
@@ -16,12 +16,11 @@
     \frametitle{}
     \begin{tcolorbox1}{幺正矩阵和厄密矩阵}
         \begin{enumerate}
-            \item F的逆算符$F^{-1}F=FF^{-1}=I$, $$F\Psi=\psi, \qquad \Psi=F^{-1}\psi$$  
-            \item F的共轭算符(称伴算符) $F^{\dagger}=(F^*)^T$, $$ (\psi, F\Psi), \qquad (F^{\dagger}\psi, \Psi)$$
+            \Item F的逆算符$F^{-1}F=FF^{-1}=I$, $$F\Psi=\psi, \qquad \Psi=F^{-1}\psi$$  
+            \Item F的共轭算符(称伴算符) $F^{\dagger}=(F_{nm} ^*)^T$, $$ (\psi, F\Psi), \qquad (F^{\dagger}\psi, \Psi)$$
             如果$F^{\dagger } =F$，称F为{\color{red}厄密算符（矩阵）}， 
             判定： $F_{mn}=F_{nm} ^*$； 
-            \\ 如果$ F^{\dagger }=F^{-1}$，称F为{\color{red} 幺正算符（矩阵）}\\
-            判定：$$F^{\dagger} F= FF^{\dagger}=I$$
+            \\ 如果$ F^{\dagger }=F^{-1}$，称F为{\color{red} 幺正算符（矩阵）}, 判定：$F^{\dagger} F= FF^{\dagger}=I$
         \end{enumerate}       
     \end{tcolorbox1}
 \end{frame}
@@ -29,11 +28,9 @@
 \begin{frame} 
     \frametitle{}
     \begin{tcolorbox1}{幺正变换的定义}
-    通过一个幺正矩阵联系起来的两个矩阵之间的变换，称为幺正变换。
+    通过幺正矩阵联系起来的两矩阵之间的变换，称为幺正变换。
     \end{tcolorbox1}
-    \begin{tcolorbox1}{}
-        试证明：二维平面矢量绕原点的旋转变换是幺正变换
-    \end{tcolorbox1}
+    \alert{例1：} 试证明二维平面矢量绕原点的旋转变换是幺正变换
     \begin{wrapfigure} {r} {0.30\textwidth} %;图在右
         \includegraphics[width=0.29\textwidth]{figs/transf1.png}   
     \end{wrapfigure}
@@ -79,7 +76,7 @@
     证毕！
 \end{frame}
 
-\subsection{三种基矢变换}
+\subsection{量子力学中的三种基本变换}
 
 \begin{frame} 
     \frametitle{}
@@ -162,7 +159,7 @@
 
 \begin{frame} 
     \begin{tcolorbox1}{3、算符变换}
-        试证明：同一力学量在两不同表象中的矩阵变换是幺正变换  
+        试证明：同一力学量算符在两不同表象中的矩阵变换是幺正变换  
     \end{tcolorbox1}
     \alert{证明：} 设A的基组为$\psi_\alpha$ B的基组为 $\varphi_n$\\
     算符F在A表象的矩阵元为$F_{\alpha\beta}$, 在B表象中的矩阵元为$F'_{nm}$
@@ -277,8 +274,8 @@
 \begin{frame}
     \begin{tcolorbox2}{推论：}
        \begin{enumerate}
-           \item 量子体系进行任一幺正变换不改变它的全部物理内容
-           \item 两个量子体系，如果能用幺正变换联系起来，则它们在物理上是等价的
+           \Item 量子体系进行任一幺正变换不改变它的全部物理内容
+           \Item 两个量子体系，如果能用幺正变换联系起来，则它们在物理上是等价的
        \end{enumerate} 
     \end{tcolorbox2}
 \end{frame}
