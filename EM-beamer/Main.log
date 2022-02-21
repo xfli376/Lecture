@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  11 FEB 2022 20:54
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  21 FEB 2022 14:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1506,7 +1506,7 @@ Package fontspec Info: Font family 'WeibeiSC-Bold(0)' created for font
 
  (/Users/xfli/Library/texmf/tex/latex/metropolis/pgfplotsthemetol.sty
 Package: pgfplotsthemetol 2017/01/23 PGFplots colors based on Paul Tol's SRON technical note
-) (./Main.aux (./chapter1.aux))
+) (./Main.aux (./chapter3.aux))
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1779,193 +1779,501 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 [1
 
 ]
-\openout2 = `tmp.aux'.
+\openout2 = `chapter4.aux'.
 
- (./tmp.tex
-./tmp.tex:8: Undefined control sequence.
-\beamer@doifinframe ...ameslide}\frametitle {} \例 
-                                                  [1、求下方程的解]{ \[x^2+y^2=z^2\...
-l.8 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ (./chapter4.tex
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [2
 
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [3
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [4
+
+]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.00128pt on input line 8.
+(Font)              scaled to size 12.00128pt on input line 25.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.40088pt on input line 8.
+(Font)              scaled to size 8.40088pt on input line 25.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 8.
+(Font)              scaled to size 6.00064pt on input line 25.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 8.
+(Font)              scaled to size 11.99872pt on input line 25.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.3991pt on input line 8.
+(Font)              scaled to size 8.3991pt on input line 25.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 8.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+(Font)              scaled to size 5.99936pt on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-./tmp.tex:8: Undefined control sequence.
-\beamer@doifinframe ...方程的解]{ \[x^2+y^2=z^2\]} \解 
-                                                  \\ \Tips \\ \证明 \\ \end {b...
-l.8 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./tmp.tex:8: Undefined control sequence.
-<recently read> \Tips 
-                      
-l.8 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./tmp.tex:8: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 \end{frame}
-               
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./tmp.tex:8: Undefined control sequence.
-<recently read> \证明 
-                    
-l.8 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./tmp.tex:8: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 \end{frame}
-               
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[2
-
+ [5
 
 ]
-./tmp.tex:17: Undefined control sequence.
-\beamer@doifinframe ...ameslide}\frametitle {} \例 
-                                                  [1、求下方程的解]{ \[x^2+y^2=z^2\...
-l.17 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./tmp.tex:17: Undefined control sequence.
-\beamer@doifinframe ...方程的解]{ \[x^2+y^2=z^2\]} \解 
-                                                  \\ \Tips \\ \证明 \\ \end {b...
-l.17 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./tmp.tex:17: Undefined control sequence.
-<recently read> \Tips 
-                      
-l.17 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./tmp.tex:17: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 \end{frame}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./tmp.tex:17: Undefined control sequence.
-<recently read> \证明 
-                    
-l.17 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./tmp.tex:17: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 \end{frame}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[3
+ [6
 
 ]
-Overfull \vbox (73.41766pt too high) detected at line 23
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [7
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [8
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [9
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [10
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [11
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [12
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [13
+
+]
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.95116pt on input line 162.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.00085pt on input line 162.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.94882pt on input line 162.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.99915pt on input line 162.
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [14
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [15
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [16
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [17
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [18
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [19
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [20
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [21
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [22
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [23
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [24
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [25
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [26
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [27
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [28
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [29
+
+]
+Overfull \vbox (11.24728pt too high) detected at line 433
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[4
+[30
 
-])
-File: images/uestclogo-16.png Graphic file (type bmp)
-<images/uestclogo-16.png>
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [5
+ [31
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [32
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [33
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [34
+
+]
+Overfull \vbox (18.89813pt too high) detected at line 502
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[35
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [36
+
+]
+Overfull \vbox (13.56306pt too high) detected at line 535
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[37
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [38
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [39
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [40
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [41
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [42
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [43
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [44
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [45
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [46
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [47
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [48
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [49
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [50
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [51
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [52
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [53
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [54
+
+]
+Overfull \vbox (16.64804pt too high) detected at line 800
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[55
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [56
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [57
+
+]
+Overfull \vbox (2.68086pt too high) detected at line 852
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[58
+
+]
+Overfull \vbox (39.01802pt too high) detected at line 869
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[59
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [60
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [61
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [62
+
+]
+Overfull \vbox (21.64928pt too high) detected at line 905
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[63
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [64
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [65
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [66
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [67
+
+]
+Overfull \vbox (15.82007pt too high) detected at line 979
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[68
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [69
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [70
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [71
+
+]
+Overfull \vbox (14.29544pt too high) detected at line 1043
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[72
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [73
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [74
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [75
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [76
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [77
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [78
+
+]
+Overfull \vbox (19.9326pt too high) detected at line 1147
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[79
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [80
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [81
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [82
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [83
+
+]
+Overfull \vbox (1.63182pt too high) detected at line 1215
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[84
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [85
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [86
+
+])
+File: images/uestclogo-2.png Graphic file (type bmp)
+<images/uestclogo-2.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [87
 
 
 
@@ -1979,12 +2287,9 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 \tf@snm=\write9
 \openout9 = `Main.snm'.
 
- [6] (./Main.aux (./tmp.aux))
+ (./Main.aux (./chapter4.aux))
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-LaTeX Warning: Temporary extra page added at the end. Rerun to get it removed.
 
 
 Package rerunfilecheck Warning: File `Main.out' has changed.
@@ -1992,16 +2297,16 @@ Package rerunfilecheck Warning: File `Main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Main.out':
-(rerunfilecheck)             Before: 5F67F29AF541538C6C825FE6EF4084C4;1021
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Before: EFF3D026C475A8BB5DE920901A1DDE51;1274
+(rerunfilecheck)             After:  E2D7DDAFA72D6F1157238D4BDCE2A37D;1480.
  ) 
 Here is how much of TeX's memory you used:
- 57430 strings out of 476493
- 1385034 string characters out of 5817124
- 2234797 words of memory out of 5000000
- 76704 multiletter control sequences out of 15000+600000
- 407971 words of font info for 106 fonts, out of 8000000 for 9000
+ 57603 strings out of 476493
+ 1395202 string characters out of 5817124
+ 2253056 words of memory out of 5000000
+ 76840 multiletter control sequences out of 15000+600000
+ 409925 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,13n,149p,1864b,900s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,17n,149p,1864b,978s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Main.pdf (6 pages).
+Output written on Main.pdf (87 pages).

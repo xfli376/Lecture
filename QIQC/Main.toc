@@ -1,4 +1,0 @@
-\beamer@sectionintoc {1}{1.量子态与希尔伯特空间}{3}{0}{1}
-\beamer@sectionintoc {2}{2.物理量与算符}{16}{0}{2}
-\beamer@sectionintoc {3}{3.张量空间}{27}{0}{3}
-\beamer@sectionintoc {4}{4.量子力学基本假设}{33}{0}{4}
