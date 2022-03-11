@@ -24,16 +24,212 @@
     \hspace{2em}\alert{TIPS:}这些都是有关量子态的问题，那物理量又如何呢？
 \end{frame} 
 
-\subsection{力学量算符表示假说}
-
 \begin{frame}    
     \begin{tcolorbox4}[Basic assumption 3/5]
-    力学量用厄密算符表示
+    力学量用希尔伯特空间的厄密算符表示
     \end{tcolorbox4}
 \end{frame} 
 
+\subsection{希尔伯特空间}
+
 \begin{frame} 
-    \frametitle{期望值}
+    \frametitle{希尔伯特空间}
+    \begin{equation*}
+        \begin{split}
+            \text{1、定义加法} \quad  &\xi=\psi+\varphi\\
+            &\psi+\varphi=\varphi+\psi \qquad (\text{交换律})\\
+            &(\psi+\varphi)+\xi=\psi+(\varphi+\xi) \qquad (\text{结合律})\\
+            &\psi+\text{O}= \psi \qquad (\text{零元})\\
+            &\psi+\varphi= \text{O} \qquad (\text{逆元})\\
+        \end{split}  
+    \end{equation*}
+\end{frame} 
+
+\begin{frame} 
+    \begin{equation*}
+        \begin{split}
+            \text{2、定义数乘} \quad &\varphi=\psi a\\
+            &\psi 1= \psi \qquad (\text{1元})\\
+            &(\psi a)b=\psi (ab) \qquad (\text{结合律})\\
+            &\psi(a+b)= \psi a+ \psi b \qquad (\text{第一分配律})\\
+            &(\psi+\varphi) a= \psi a +\varphi a \qquad (\text{第二分配律})\\
+            ~~\\
+        \text{3、定义内积} \quad &(\psi, \varphi)=c\\
+        &(\varphi,\psi)=c^*
+        \end{split} 
+    \end{equation*}
+\end{frame} 
+
+\begin{frame} 
+
+    \例 [1. 有定义在$C^3$空间的列矩阵，求内积]
+    { \[\psi=
+        \begin{pmatrix}
+                a_1\\
+                a_2\\
+                a_3
+        \end{pmatrix}, \qquad 
+        \varphi =\begin{pmatrix}
+            b_1\\
+            b_2\\
+            b_3
+    \end{pmatrix}
+     \] 
+    }
+    \解 ~ \[(\psi, \varphi) = \begin{pmatrix}
+        a_1 ^* &
+        a_2 ^* &
+        a_3 ^*
+    \end{pmatrix}
+        \begin{pmatrix}
+        b_1\\
+        b_2\\
+        b_3
+    \end{pmatrix}
+    =a_1 ^* b_1 +a_2 ^* b_2 +a_3 ^* b_3
+    =c 
+    \]
+    ~ \[(\varphi,\psi) = \begin{pmatrix}
+        b_1 ^* &
+        b_2 ^* &
+        b_3 ^*
+    \end{pmatrix}
+        \begin{pmatrix}
+        a_1\\
+        a_2\\
+        a_3
+    \end{pmatrix}
+    =b_1 ^* a_1 +b_2 ^* a_2 +b_3 ^* a_3
+    =c^* 
+    \]
+\end{frame} 
+
+\begin{frame} 
+    \例 [2. 求定义在x空间的函数的内积]{}
+
+    \解 ~ \[(\psi, \varphi)=\int_a ^b \psi^*(x)  \varphi(x) dx=c\]
+    \[(\varphi,\psi)=\int_a ^b \varphi^*(x)\psi(x) dx = (\int_a ^b \varphi(x)\psi^*(x) dx) ^* =c^*\]
+\end{frame} 
+
+\begin{frame}
+    内积性质：
+    \[(\psi, \varphi)= (\varphi,\psi)^* \]
+    \[(\psi, \varphi+\xi)= (\psi, \varphi) + (\psi, \xi)\qquad (\text{分配律})\]
+    \[(\psi, \varphi a)= (\psi, \varphi )a \]
+    \[(\psi a, \varphi )= (\psi, \varphi )a^* \]    
+    \[(\Psi,c_1\psi_1+c_2\psi_2)=(\Psi,c_1\psi_1)+(\Psi,c_2\psi_2)\]
+    \[(\psi,\psi)= c\ge 0\]
+\end{frame}
+
+\begin{frame}{}
+    *左矢与右矢\\ \vspace{0.6em}
+    考察内积： $(\psi,\psi)=\int\psi^*\psi d\tau$ \\
+    同一波函数放在左边还是右边，意义有所不同： \\
+    右边是线性的：  $(\psi,a\psi)=a (\psi,\psi)$ \\
+    左边是反线性的：   $(a\psi,\psi)=a^* (\psi,\psi)$  \\
+    为了清楚地描述这种线性反线性特点，定义左矢和右矢
+    $$\langle \psi |, \qquad |\psi \rangle $$ 
+    内积的又一形式：\[(\psi,\varphi)\equiv \langle \psi | \varphi \rangle\]
+    线性与反线性$$\langle a\psi | = \langle \psi |a^* ,\qquad |a\psi \rangle = a|\psi \rangle$$ 
+\end{frame}
+
+\begin{frame}
+    \frametitle{希尔伯特空间定义}
+    4、空间定义\\
+   \begin{itemize}
+       \Item 矢量空间：满足加法和数乘两种运算的集合
+       \Item 内积空间：满足加法、数乘和内积三种运算的集合
+       \Item 希尔伯特空间:  完全的内积空间\\
+       ~~ \\
+       *完全性：对给定任意小的实数$\varepsilon$，总有数N存在，当m, n>N时，有\\
+       $$ (\psi_m -\psi_n, \psi_m -\psi_n )< \varepsilon $$
+   \end{itemize} 
+   \Tips ~ 物体的状态用希尔伯特空间的矢量描述
+\end{frame} 
+
+\subsection{算符表示}
+
+\begin{frame}
+    \frametitle{算符的定义：}
+    \begin{definition}[算符]
+    描述态矢量之间的映射关系，即算符作用于一个态矢量，映射到另一个态矢量。
+        \[\hat{F} \rs{\Psi}=\rs{\psi}\]
+    \end{definition}
+    \Tips~在不引起不明意义的条件下，为简单见可略去算符的帽子
+    \begin{definition}[单位算符]
+    \[I\Psi=\Psi \]
+    \end{definition}   
+\end{frame} 
+
+\begin{frame}
+    \begin{definition}[算符相等]
+        ~~\\
+    对任意波函数，有
+        $$ A\Psi=B\Psi \to A=B $$
+    \end{definition}
+    \begin{definition}[算符的和]
+        $$ (A+B)\Psi=A\Psi+B\Psi $$
+        存在交换律和结合律\\
+        A+B=B+A\\
+        (A+B)+C=A+(B+C)
+    \end{definition}
+\end{frame} 
+
+\begin{frame}
+    \begin{definition} [算符的积]
+        $$ (AB)\Psi=A(B\Psi) $$
+        不存在交换律，即 \\
+        $AB=BA$ 或 $AB\ne BA$ 都有可能
+    \end{definition}
+    \begin{definition}[对易子]
+        $$ [A,B]=AB-BA$$
+        若[A,B]=0,称两算符对易，否则不对易
+    \end{definition}
+\end{frame} 
+
+\begin{frame}
+    \begin{definition}[逆算符]   
+        $$ F\Psi=\psi $$
+        $$ F^{-1}\psi=\Psi $$
+    \end{definition}
+    \begin{definition}[伴算符] 
+        $$ F|\Psi> = |\psi> $$
+        $$ <\psi| = <\Psi|F^{\dagger} $$
+        内积形式：
+        $$ (\varphi,F\Psi)=(\varphi,\psi)$$ 
+        $$ (F^\dagger \Psi,\varphi)=(\psi,\varphi)$$ 
+    \end{definition}  
+\end{frame} 
+
+\begin{frame} 
+    \begin{definition}[自伴算符] 
+        $$ F^{\dagger} = F $$
+        性质：
+        $$ (\Psi,F\psi)=(F\Psi,\psi)$$ 
+        也称厄密性，{\color{red}自伴算符即厄密算符}
+    \end{definition} 
+    \begin{definition}[线性算符]
+    ~~\\
+    对任意函数，有\\
+        $$F(c_1\psi_1+c_2\psi_2 ) = c_1(F\psi_1)+c_2(F\psi_2 )$$
+    \end{definition}
+\end{frame} 
+
+\begin{frame}
+    \begin{definition}[幺正(酉)算符] 
+        $$ F^{\dagger}F = FF^{\dagger}=I $$
+        性质：
+        $$ F^{\dagger}=F^{-1}$$ 
+    \end{definition}     
+    \Tips ~\\   
+    厄密算符~~~~~~~~~ $ F=F^{\dagger}$  \\
+    幺正算符~~~~~~~~~ $ F^{-1}=F^{\dagger}$  \\
+    幺正厄密算符~~ $ F=F^{-1}=F^{\dagger}$  \\
+\end{frame} 
+
+\begin{frame} 
+    \frametitle{力学量算符的获取}
+    1. 位置算符和动量算符
     \例[1.已知粒子的位置波函数$\psi(x,t)$，求动量的期望值]{}   
     \解~ 由概率诠释，位置期望值为
     \begin{equation*}
@@ -56,7 +252,7 @@
             \bar{p}&=\int c^{*}(p) p c(p) d p \\  
             &=\int (\frac{1}{\sqrt{2 \pi \hbar}} \int \psi^{*}(x) e^{\frac{i}{\hbar} p\cdot x} d x) p c\left(p\right) d p \\
             &=\frac{1}{\sqrt{2 \pi \hbar}} \int \int \psi^{*}(x) (e^{\frac{i}{\hbar} p\cdot x}  p) c\left(p\right) d xd p \\
-            &=\frac{1}{\sqrt{2 \pi \hbar}} \int \int \psi^{*}(x) (-i\hbar\frac{d}{d x} e^{\frac{i}{\hbar} p\cdot x}) c(p) d xd p \\
+            &=\frac{1}{\sqrt{2 \pi \hbar}} \int \int \psi^{*}(x) \Myitem{t1}{red}{(-i\hbar\frac{d}{d x} e^{\frac{i}{\hbar} p\cdot x})} c(p) d xd p \\
             &=\int \psi^{*}(x) (-i\hbar\frac{d}{d x}) (\frac{1}{\sqrt{2 \pi \hbar}} \int e^{\frac{i}{\hbar} p\cdot x} c(p) d p)  d x\\
             &=\int \psi^{*}(x) (-i\hbar\frac{d}{d x}) \psi(x)  d x\\
          \end{split}
@@ -65,33 +261,34 @@
 
 \begin{frame}
     定义如下计算符号：
-    $$ \hat{p}_x= -i\hbar\frac{d}{d x} $$ 
+    $$ \boxed{\hat{p}_x= -i\hbar\frac{d}{d x}} $$ 
     上式变为：         
     $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
-    称$ \hat{p}_x= -i\hbar\dfrac{d}{d x} $ 是位置表象里的动量算符（$x$分量）\\
-    同理，任意力学量F的也有算符$\hat{F}$，其平均值为\\
-    $$\bar{F}=\int \psi^{*}(x) \hat{F} \psi(x) d x $$
-    表明算符与物理量关系密切
+    称$ \hat{p}_x= -i\hbar\dfrac{d}{d x} $ 为位置表象里的动量算符表示（$p_x$分量）\\
+    同理，称 $\hat{x}= x $ 为位置表象里的位置算符表示（$x$分量）\\ \vspace{0.3em}
+    设任意力学量F有算符表示$\hat{F}$，有平均值公式\\
+    $$\boxed{\bar{F}=\int \psi^{*}(x) \hat{F} \psi(x) d x =(\psi, \hat{F} \psi)}$$
 \end{frame} 
 
 \begin{frame} 
-    \frametitle{算符的获取}
+    \frametitle{}
+    2.任意力学量的算符表示
     \begin{tcolorbox1}{命题：}
-    已知位置、动量的算符形式如下，
+    已知位置、动量的算符表示如下，
     \begin{itemize}
-        \Item  位置算符： $ \hat{\vec{r}} =\vec{r} $
-        \Item  动量算符： $ \hat{\vec{p}} =-i\hbar(\dfrac{d}{d x}+ \dfrac{d}{d y} + \dfrac{d}{d z})=-i\hbar \nabla $
+        \Item  位置算符（三维）： $ \hat{\vec{r}} =\vec{r} $
+        \Item  动量算符（三维）： $ \hat{\vec{p}} =-i\hbar(\dfrac{d}{d x}+ \dfrac{d}{d y} + \dfrac{d}{d z})=-i\hbar \nabla $
     \end{itemize}
-    求其他力学量的算符形式
+    求任意其他力学量的算符表示
     \end{tcolorbox1}
     \alert{Bohm规则（1954）:} 经典物理学存在力学量F，它若是位置与动量的函数
     \[F(\vec{r},\vec{p})\]
-    则其在量子力学中的算符为：
+    则其量子力学算符为：
     \[\hat{F}=F(\hat{\vec{r}},\hat{\vec{p}})\]
 \end{frame} 
 
 \begin{frame}    
-    \begin{exampleblock}{例如：}
+    \begin{exampleblock}{例如}
         \begin{itemize}
             \Item  动能： $ T=\dfrac{p^2}{2\mu} \to \hat{T}= \dfrac{\hat{p}^2}{2\mu} $
             \Item  哈密顿量： $ H=T+U(\vec{r} ) \to \hat{H}= \hat{T}+ U(\hat{\vec{r}})$
@@ -105,125 +302,53 @@
 \end{frame} 
 
 \begin{frame} 
-    \例[2. 求经典物理量$F=x^2p_x$的量子力学算符形式] {} 
+    \例[2. 求经典物理量$F=x^2p_x$的量子力学算符表示] {} 
     \解~ 根据Bohm规则，有：
     \[\begin{aligned}
         \hat{F}=\frac{1}{2} (\hat{x}^2 \hat{p}_x + \hat{p}_x \hat{x}^2 ) 
     \end{aligned}\]   
 \end{frame}     
 
-\subsection{力学算符是线性厄密算符}
+\begin{frame}
+    \frametitle{算符的本征方程}
+    在算符定义式中
+    \[\hat{F} \rs{\Psi}=\rs{\varphi}\]
+    若$\rs{\varphi}=f\rs{\Psi}$，有：\\
+    \[\boxed{\hat{F} \rs{\Psi}=f\rs{\Psi}}\]
+    ~~\\
+    则称上式为算符$\hat{F}$的本征方程\\
+    其中$f$是$\hat{F}$的本征值，$\rs{\Psi}$是属于本征值$f$的本征函数。
+\end{frame}
 
 \begin{frame} 
-    \frametitle{算符的一般性定义}
-    \begin{definition}[算符：]
-        \hspace{2em}描述态函数之间的映射关系，即算符作用于一个态函数，使其映射到另一个态函数。
-        $$ \hat{F} \Psi=\psi$$
-    \end{definition}
-    \Tips~在不引起不明意义的条件下，为简单见可略去算符的帽子
-    \begin{definition}[单位算符:]
-        $$ I\Psi=\Psi $$
-    \end{definition}
-\end{frame} 
-
-\begin{frame}
-    \begin{definition}[算符相等:]
-        \hspace{2em}对任意波函数，有
-        $$ A\Psi=B\Psi \to A=B $$
-    \end{definition}
-    \begin{definition}[算符的和:]
-        $$ (A+B)\Psi=A\Psi+B\Psi $$
-        存在交换律和结合律\\
-        A+B=B+A\\
-        (A+B)+C=A+(B+C)
-    \end{definition}
-\end{frame} 
-
-\begin{frame}
-    \begin{definition} [算符的积:]
-        $$ (AB)\Psi=A(B\Psi) $$
-        不存在交换律
-        $AB=BA$ 或 $AB\ne BA$ 都有可能
-    \end{definition}
-    \begin{definition}[对易子:]
-        $$ [A,B]=AB-BA$$
-        若[A,B]=0,称两算符对易，否则不对易
-    \end{definition}
-\end{frame} 
-
-\begin{frame}
-    \begin{definition}[逆算符:]   
-        $$ F\Psi=\psi $$
-        $$ F^{-1}\psi=\Psi $$
-    \end{definition}
-    \begin{definition}[内积:]
-        $$ \int\Psi^*\psi d \tau$$
-        称为两函数的内积
-    \end{definition} 
-        为了书写方便，内积一般简写成
-        $$ (\Psi,\psi)$$ 
-        $$ \langle \Psi|\psi\rangle $$
-        并称 $ \langle \psi|$为左矢， $|\psi \rangle $为右矢\\
-    \end{frame} 
-
-    \begin{frame}        
-        内积性质：
-        $$ (\Psi,\psi)^*=(\psi,\Psi)$$ 
-        $$ (\Psi,c_1\psi_1+c_2\psi_2)=(\Psi,c_1\psi_1)+(\Psi,c_2\psi_2)$$ 
-        $$ (\Psi,c\psi)=c(\Psi,\psi)$$ 
-        $$ (c\Psi,\psi)=c^*(\Psi,\psi)$$ 
-  
-    \begin{definition}[伴算符:] 
-        $$ F|\Psi> = |\psi> $$
-        $$ <\psi| = <\Psi|F^{\dagger} $$
-        内积形式：
-        $$ (\psi,F\Psi)=(\psi,\psi)$$ 
-        $$ (F^\dagger \Psi,\psi)=(\psi,\psi)$$ 
-    \end{definition}  
-\end{frame} 
-
-\begin{frame} 
-    \begin{definition}[自伴算符:] 
-        $$ F^{\dagger} = F $$
-        性质：
-        $$ (\Psi,F\psi)=(F\Psi,\psi)$$ 
-        也称厄密性，即厄密算符就是自伴算符
-    \end{definition} 
-    \begin{definition}[线性算符:]
-    \hspace{2em}对任意函数，有\\
-        $$F(c_1\psi_1+c_2\psi_2 ) = c_1(F\psi_1)+c_2(F\psi_2 )$$
-    \end{definition}
-\end{frame} 
-
-\begin{frame}
-    \begin{definition}[幺正(酉)算符:] 
-        $$ F^{\dagger}F = FF^{\dagger}=I $$
-        性质：
-        $$ F^{\dagger}=F^{-1}$$ 
-    \end{definition}         
-\end{frame} 
-
-\begin{frame} 
-    \frametitle{力学量算符的性质}
-    \begin{tcolorbox1}{命题1:}
-      可观测力学量算符都是线性算符  
+    \frametitle{力学量用希尔伯特空间的厄密算符表示}
+    \begin{tcolorbox1}{证明命题1:}
+      一切可观测力学量算符都是线性算符  
     \end{tcolorbox1}
     \alert{证明：}
         设$\psi_1, \psi_2$ 是算符$\hat{F}$的属于本征值$f$的两个解，有\\
-        $$\hat{F}\psi_1=f\psi_1, \to c_1\hat{F}\psi_1=c_1f\psi_1 $$
-        $$\hat{F}\psi_2=f\psi_2, \to c_2\hat{F}\psi_2=c_2f\psi_2 $$
-        $$f(c_1f\psi_1+c_2f\psi_2)=c_1\hat{F}\psi_1+c_2\hat{F}\psi_2$$
-        $$\hat{F}(c_1f\psi_1+c_2f\psi_2)=c_1\hat{F}\psi_1+c_2\hat{F}\psi_2$$
+        $$\hat{F}\psi_1=f\psi_1, \quad \to \quad c_1\hat{F}\psi_1=c_1f\psi_1 \cdots (1)$$
+        $$\hat{F}\psi_2=f\psi_2, \quad \to \quad c_2\hat{F}\psi_2=c_2f\psi_2 \cdots (2)$$
+        (1)+(2)
+        $$(c_1f\psi_1+c_2f\psi_2)=c_1\hat{F}\psi_1+c_2\hat{F}\psi_2$$
+        $$f(c_1\psi_1+c_2\psi_2)=c_1\hat{F}\psi_1+c_2\hat{F}\psi_2\cdots (3)$$
+\end{frame} 
+
+\begin{frame} 
+    由于$\psi_1, \psi_2$ 都是属于本征值$f$的解，则它们的线性组合$c_1\psi_1+c_2\psi_2$也是属于本征值$f$的解, 即
+    $$\hat{F}(c_1\psi_1+c_2\psi_2)=f(c_1\psi_1+c_2\psi_2)\cdots (4)$$
+    联立（3）（4），有
+    $$\hat{F}(c_1\psi_1+c_2\psi_2)=c_1\hat{F}\psi_1+c_2\hat{F}\psi_2$$
     证毕！
 \end{frame} 
 
 \begin{frame} 
-    \begin{tcolorbox1}{命题2:}
+    \begin{tcolorbox1}{证明命题2:}
         可观测力学量算符都是厄密算符  
     \end{tcolorbox1}
     \alert{证明：}
         对任意波函数$\Psi$, 力学量算符$F$的期望值为\\
-        $$\bar{F}=(\Psi,\hat{F} \Psi) $$
+        $$\bar{F}=\int \Psi^{*}(x) \hat{F} \Psi(x) d x=(\Psi,\hat{F} \Psi) $$
         $$\bar{F}^*=(\Psi, \hat{F} \Psi)^* = (\hat{F}\Psi, \Psi) $$
         可观测力学量的期望值都是实数，有：\\
         $$(\Psi,\hat{F}\Psi)=(\hat{F} \Psi, \Psi) $$
@@ -232,7 +357,7 @@
 \begin{frame} [allowframebreaks=]
         取 $\Psi= \psi_1+c\psi_2 $, 代入上式，得：
         $$([\psi_1+c\psi_2],\hat{F} [\psi_1+c\psi_2])=(\hat{F}[\psi_1+c\psi_2],[\psi_1+c\psi_2]) $$
-        进行积分，得：
+        积分：
         $$
         \begin{array}{r}
         \left(\psi_{1}, \hat{F} \psi_{1}\right)+c^{*}\left(\psi_{2}, \hat{F} \psi_{1}\right)+c\left(\psi_{1}, \hat{F} \psi_{2}\right)+|c|^{2}\left(\psi_{2}, \hat{F} \psi_{2}\right) \\
@@ -252,16 +377,17 @@
         $$
         $$
         -i\left(\psi_{2}, \hat{F} \psi_{1}\right)+i\left(\psi_{1}, \hat{F} \psi_{2}\right) 
-        =-i\left(\hat{F} \psi_{2}, \psi_{1}\right)+i\left(\hat{F} \psi_{1}, \psi_{2}\right)
+        =-i\left(\hat{F} \psi_{2}, \psi_{1}\right)+i\left(\hat{F} \psi_{1}, \psi_{2}\right),\cdots (2)
         $$
         第二式乘以$i$,得：
         $$
         \left(\psi_{2}, \hat{F} \psi_{1}\right)-\left(\psi_{1}, \hat{F} \psi_{2}\right) 
-        =\left(\hat{F} \psi_{2}, \psi_{1}\right)-\left(\hat{F} \psi_{1}, \psi_{2}\right), \cdots (2)
+        =\left(\hat{F} \psi_{2}, \psi_{1}\right)-\left(\hat{F} \psi_{1}, \psi_{2}\right), \cdots (3)
         $$
-        (1)+(2),并两边除以2，得
+        (1)+(3),两边除以2，得
         $$
         \left(\psi_{2}, \hat{F} \psi_{1}\right) =\left(\hat{F} \psi_{2}, \psi_{1}\right)
         $$
         证毕！
 \end{frame} 
+

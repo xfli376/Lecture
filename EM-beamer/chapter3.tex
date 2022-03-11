@@ -1,13 +1,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 		\frametitle{}
+		\Background[1] 
 	    \begin{center}
 		{ {\Huge 第三章~~薛定谔方程 （I）\\（6学时）}}
 	    \end{center}    
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{1.量子无限深势阱}
+\section{1.薛定谔方程基础}
+\subsection{薛定谔方程}
 \begin{frame}
 	\frametitle{}  
 	\begin{block}	{量子力学有关波函数的基本结论}
@@ -21,19 +23,22 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{薛定谔方程基础}
 \begin{frame}
-	\frametitle{}
-	\begin{alertblock} {方程的建立}  
-		建立薛定谔方程的可能方法：\\
+	\frametitle{方程的建立}
+	\begin{alertblock} {可能思路}  
 		\begin{itemize}
-			\item 	\textbf{ 观点1：}  最小作用量原理 $\int\limits_{t_1}^{t_2} \delta L d t =0 $\\ 
-			\item 	\textbf{ 观点2：}  波动性和粒子性的结合\\ 
-			\item 	\textbf{ 观点3：}  基本假设，不能从其他原理推导 \\
+			\Item 	\textbf{1：}  最小作用量原理 $\int\limits_{t_1}^{t_2} \delta L d t =0 $\\ 
+			\Item 	\textbf{2：}  波粒二象性\\ 
+			~\\ 
+			\Item 	\textbf{3：}  基本假设，不能从现有理论推导\\
+            ~\\ 
+            \begin{quote}
+            "It is not possible to derive it from anything you know. It came out of the \alert{\faHeartbeat} of Schr$\ddot{o}$dinger"\\
+            \rightline{$\cdots$ R. P. Feynman \hspace{3em}}   
+            \end{quote}
 		\end{itemize}
 	\end{alertblock}
 \end{frame}
-
 \begin{frame}
 	\frametitle{含时薛定谔方程}
 	标准形式：   \\ 
@@ -47,11 +52,12 @@
 	\end{equation*}
 \end{frame}
 
-\subsection{薛定谔方程分离变量}
+\subsection{分离变量}
 
 \begin{frame}
-	\frametitle{}
-	\begin{alertblock} {薛定谔方程$\hat{E} \Psi = \hat{H}  \Psi $ 为什么难求解？}
+	\frametitle{分离变量}
+	\begin{alertblock} {薛定谔方程$\hat{E} \Psi = \hat{H}  \Psi $ 为什么难求解？因为很难分离变量！}
+		~~\\
 		多粒子体系的波函数：
 		\begin{equation*}
 			\Psi (\vec{r_1},\vec{r_2},...,\vec{r_n},t )
@@ -60,15 +66,15 @@
 		\begin{equation*}
 			\hat{H} ~=\sum_{i=1}^{n} -\frac{\hbar^2}{2\mu }\nabla ^2 _i + \sum_{i=1}^{n} V(\vec{r_i},t) + \sum_{i,j=1, i\ne j}^{n}  U(\vec{r_i},\vec{r_j}) 
 		\end{equation*}	
-		有可能分离变量法吗？条件呢？
+		有可能分离变量吗？条件呢？
 	\end{alertblock}	
 \end{frame}
 
 \begin{frame}
-\frametitle{分离变量->定态薛定谔方程}
-	势函数$V(\vec{r},t ) $若不显含时间 t，时间变量可分离 \\ \vspace{0.3cm}
+\frametitle{分离变量(1)->固有值问题->定态薛定谔方程}
+	若势函数$V(\vec{r},t ) $不显含时间$t$，时间变量可分离 \\ \vspace{0.3cm}
 	方程： { $ \displaystyle i \hbar \frac{\partial }{\partial t} \Psi (\vec{r},t ) =\left [- \frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r},t ) $}  \\  \vspace{0.3cm}
-	\alert{解：}  设  $\Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) $ , 代回方程 \\ 
+	\alert{解：}  设  $\Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) $ , 代回方程 \\ \vspace{0.6em}
 	{ $ \displaystyle i\hbar \Psi (\vec{r})  \frac{\partial }{\partial t} f(t)=f(t) \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) $}  \\ 	
 	{ $ \displaystyle i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)= \frac{1}{\Psi (\vec{r}) } \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E $}  \\ 	
 \end{frame}
@@ -76,33 +82,35 @@
 \begin{frame}
 	\frametitle{}
 	得两个微分方程：\\  \vspace{0.3cm}
-	I、演化方程  $ \displaystyle  i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)=E $  \\ 
-	解方程，得：$\displaystyle  f(t) =e^{-iEt/\hbar}$ \\  \vspace{0.3cm}
-	II、定态薛定谔方程 $\displaystyle   \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E \Psi (\vec{r})  $   \\ 
-	算符形式：$\displaystyle   \hat{H} \Psi (\vec{r}) =E \Psi (\vec{r})  $   \\    \vspace{0.3cm}
-	哈密顿量决定定态薛定谔方程求解的难度！	
+	I、演化问题（方程）  \[ \displaystyle  i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)=E \]   
+	解方程，得：$\displaystyle  f(t) =e^{-iEt/\hbar}$ \\  \vspace{0.6cm}
+	II、固有值问题（定态薛定谔方程） \[\displaystyle   \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E \Psi (\vec{r})  \]   
+	算符形式：\[   \hat{H} \Psi (\vec{r}) =E \Psi (\vec{r})    \] 
+	哈密顿量决定固有值问题(定态薛定谔方程)求解难度！	
 \end{frame}
 
 \begin{frame}
-	\frametitle{分离变量->单粒子定态薛定谔方程}
-	多粒子体系的定态薛定谔方程形式：   
+	\frametitle{分离变量(2)->单粒子定态薛定谔方程}
+	多粒子体系的定态薛定谔方程：   
 	\begin{equation*}
 		\left [ \sum\limits_{i=1}^{n} \hat{H}_i + \sum_{i,j=1, i\ne j}^{n}  U(\vec{r_i},\vec{r_j}) \right ]	\Psi (\vec{r_1},\vec{r_2},...,\vec{r_n})=E 	\Psi (\vec{r_1},\vec{r_2},...,\vec{r_n})
 	\end{equation*}		
-	\alert{解：}  	对于无相互作用体系,
+	\alert{解：}  	对于无相互作用体系, 
 	有$ U(\vec{r_i},\vec{r_j}) =0 $，\\
-	 $ \hat{H}= \sum\limits_{i=1}^{n} -\dfrac{\hbar^2}{2\mu }\nabla ^2 _i + \sum\limits_{i=1}^{n} V(\vec{r_i}) =\sum\limits_{i=1}^{n} \hat{H}_i $\\   \vspace{0.3cm}
-	方程可分离变量，设 : \\
+	 $ \hat{H}= \sum\limits_{i=1}^{n} (-\dfrac{\hbar^2}{2\mu }\nabla ^2 _i + V(\vec{r_i})) =\sum\limits_{i=1}^{n} \hat{H}_i \qquad (1)$\\   \vspace{0.3cm}
+	方程可进一步分离变量!令 : \\
 	 $\displaystyle \begin{cases}
-	   	\Psi (\vec{r_1},\vec{r_2},...,\vec{r_n}) = \Psi (\vec{r_1}) \Psi (\vec{r_2})...\Psi (\vec{r_n})  \\
-		E= E_1+ E_2 + ... + E_n
-	\end{cases}$ \\	
- 	代回方程 ,
+	   	\Psi (\vec{r_1},\vec{r_2},...,\vec{r_n}) = \Psi (\vec{r_1}) \Psi (\vec{r_2})...\Psi (\vec{r_n}) \qquad (2) \\
+		E= E_1+ E_2 + ... + E_n=\sum\limits_{i=1}^{n} \hat{E}_i \qquad (3)
+	\end{cases}$ \\ \vspace{0.3em}
+ 	把（1）（2）（3）代回原方程
 \end{frame}
 
 \begin{frame}
 	\frametitle{}
-	得单粒子体系的定态薛定谔方程组\\
+	获得如下方程
+	\[ \sum\limits_{i=1}^{n} \hat{H}_i\Psi (\vec{r_1}) \Psi (\vec{r_2})...\Psi (\vec{r_n})= \sum\limits_{i=1}^{n} \hat{E}_i\Psi (\vec{r_1}) \Psi (\vec{r_2})...\Psi (\vec{r_n}) \]
+	进一步简化，得单粒子定态薛定谔方程组\\
 	$\displaystyle \begin{cases}
 		\hat{H}_1\Psi (\vec{r_1})=E_1 \Psi (\vec{r_1})  \\  
 		\hat{H}_2\Psi (\vec{r_2})=E_2 \Psi (\vec{r_2})  \\
@@ -112,14 +120,14 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{分离变量->单分量定态薛定谔方程}
-	单粒子体系的定态薛定谔方程形式：   
+	\frametitle{分离变量(3)->一维定态薛定谔方程} 
+	单粒子定态薛定谔方程标准型
 	\begin{equation*}
 		\left [ -\dfrac{\hbar^2}{2\mu }\nabla ^2 + V(x,y,z) \right ]\Psi (x,y,z) =E \Psi (x,y,z)  
 	\end{equation*}		
-	\alert{解：} 	如果势函数 $ V(x,y,z)=V_1(x)+V_2(y)+V_3(z) $，则  $ \hat{H}=\hat{H}(x)+\hat{H}(y)+\hat{H}(z) $， 方程可分离变量：\\
-	设  $\Psi (x,y,z)   = \Psi_1 (x)\Psi_2 (y) \Psi_3 (z)  $ , $E  = E_x+ E_y+E_z $, \\
-	代回方程, 得方程组（见讲义）\\
+	\alert{解：} 若势函数 $ V(x,y,z)=V_1(x)+V_2(y)+V_3(z) $，则  $ \hat{H}=\hat{H}(x)+\hat{H}(y)+\hat{H}(z) $\\
+	进一步分离变量：设  $$\Psi (x,y,z)  = \Psi_1 (x)\Psi_2 (y) \Psi_3 (z), \qquad  E= E_x+ E_y+E_z $$ \\
+	代回, 得一维薛定谔方程(组)
 	$\displaystyle \begin{cases}
 		\hat{H}(x)\Psi_1 (x)=E_x \Psi_1 (x) \\
 		\hat{H}(y)\Psi _2 (y)=E_y \Psi _2 (y)  \\
@@ -128,13 +136,10 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{}
-	单粒子体系的定态薛定谔方程形式：   
-	\begin{equation*}
-		\left [ -\dfrac{\hbar^2}{2\mu }\nabla ^2 + V(r,\theta,\varphi) \right ]\Psi (r,\theta,\varphi) =E \Psi (r,\theta,\varphi)  
-	\end{equation*}		
-	\alert{解：} 	如果势函数 $ V(r,\theta,\varphi) =V_1(r)+V_2(\theta)+V_3(\varphi) $，则  $ \hat{H}=\hat{H}(r)+\hat{H}(\theta)+\hat{H}(\varphi) $， 方程可分离变量：\\
-	得方程组:\\
+	\frametitle{}	
+	如果势函数 $$ V(x,y,z)=V(r,\theta,\varphi) =V_1(r)+V_2(\theta)+V_3(\varphi) $$
+	令  $$ \hat{H}=\hat{H}(r)+\hat{H}(\theta)+\hat{H}(\varphi) $$
+	分离变量得一维薛定谔方程:\\
 	$\displaystyle \begin{cases}
 		\hat{H}(r)\Psi_1 (r)=E_r \Psi_1 (r) \\
 		\hat{H}(\theta)\Psi _2 (\theta)=E_\theta \Psi _2 (\theta)  \\
@@ -143,7 +148,7 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{无限深势求解}
+\section{2.无限深势阱}
 
 \begin{frame}
 	\frametitle{}
@@ -172,7 +177,7 @@
 
 \begin{frame}
 	\frametitle{}
-	方程（2）：解为  $\Psi(x) = 0$ ......\\ 
+	方程（2）：解为  $\Psi(x) = 0$ \\ 
     方程（1）：令 $ k^2= \dfrac{2\mu E}{\hbar ^2} $, 方程是如下边值问题:  \\ 
 	{ $ \displaystyle 
 		\begin{cases}
@@ -347,7 +352,7 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{2.量子谐振子与厄密方程}
+\section{3.量子谐振子与厄密方程}
 
 \subsection{相互作用势}
 
@@ -635,7 +640,7 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{3.厄密多项式及性质}
+\section{4.厄密多项式及性质}
 
 \subsection{生成函数}
 
@@ -879,6 +884,6 @@
 \begin{frame}
 	\frametitle{课外读物和思考}
 	薛定谔方程的数值解法：\\
-	Matlab or Python 
+	Matlab or Python or VASP
 \end{frame}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -54,7 +54,7 @@
 
 \begin{frame}
     \frametitle{算符运动方程}  
-        \[\frac{d\bar{F}}{dt} = \overline{(\frac{\partial F }{\partial t})}  +\frac{1}{i\hbar} \overline{[F,H]}\]
+        \[\boxed{\frac{d\bar{F}}{dt} = \overline{(\frac{\partial F }{\partial t})}  +\frac{1}{i\hbar} \overline{[F,H]}}\]
 \end{frame} 
 
 \begin{frame} 
@@ -144,19 +144,19 @@
     $$ x \to x'=x+\delta x $$
     则体系的波函数变为：
     $$ \Psi \to \Psi'=T\Psi  $$
-    波函数还是原来的波函数，只是做了平移变换： $$ \Psi'(x+\delta x) = \Psi(x) $$\\
-    $$ T\Psi(x+\delta x) = \Psi(x) $$\\
+    波函数只是做了平移变换： $$ \Psi'(x+\delta x) = \Psi(x) $$\\
+    $$ \Psi(x+\delta x) = T\Psi(x) $$\\
 \end{frame}
 
 \begin{frame}    
-    令 $x=x-\delta x$，有
+    令 $x=x-\delta x$，做反向平移，有：
     $$\begin{aligned}
         T\Psi(x)&= \Psi(x-\delta x) \\
         &= \Psi(x)-\delta x \frac{\partial}{\partial x}\Psi(x)+\cdots\\
         &= \Psi(x)-\delta x \frac{\partial}{\partial x}\Psi(x)+\cdots\\
         &= e^{-\delta x \frac{\partial}{\partial x}} \Psi(x)\\
     \end{aligned}$$
-    得到平移算符的具体形式为：
+    平移算符的具体形式：
     $$\begin{aligned}
         T(\delta x)&= e^{-\delta x \frac{\partial}{\partial x}} \\
         &= e^{-\delta x (-i\hbar) \frac{\partial}{\partial x}\frac{1}{-i\hbar}} \\
@@ -278,6 +278,7 @@
 \end{frame}
 
 \begin{frame}
+    \centering
     \includegraphics[width=0.8\textwidth]{figs/2021-12-18-00-23-17.png} \\
 \end{frame} 
 

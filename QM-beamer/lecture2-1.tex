@@ -53,7 +53,7 @@
 \begin{frame}
     \centering
     \begin{tcbb}[0.68]{波粒二象性导致的困境}
-        {如何描述象电子一样表现出波粒二象性物体的运动？}
+        {如何描述象电子这样具有波粒二象性物体的运动？}
     \end{tcbb}
 \end{frame}
 
@@ -95,7 +95,7 @@
 \begin{frame}
          For a general wavefunction, it should be a wave-packet of plane wavefunction
          \begin{equation*}
-                \Psi(x,t)=\sum\limits_{p=0} ^{\infty} c(p)\Psi_p(x,t) = \int\limits_{p=0} ^{\infty} c(p,t) e^{\frac{i}{\hbar}px}dp
+                \Psi(x,t)=\sum\limits_{p} c(p)\Psi_p(x,t) = \int\limits_{-\infty} ^{\infty} c(p,t) e^{\frac{i}{\hbar}px}dp
          \end{equation*}
 \end{frame}
 
@@ -161,9 +161,9 @@
         \Item Probability density \[\omega = |\Psi|^2 =\Psi^* \Psi \]
         \Item Probability  \[ d W = |\Psi|^2 d \tau \]
         \Item Normalization \[ \int_{\Omega} |\Psi|^2 d \tau =1 \]
-        \Item Momentum wavefunction \[ c(\vec{p},t)=\frac{1}{(2\pi\hbar)^{3/2}} \int_{0}^{\infty} \Psi(\vec{r},t) e^{\frac{-i}{\hbar} \vec{p}\cdot \vec{r} } d \tau \] 
-        \Item Expectation value of any wavefunction $f (x)$  \[ <f(x)>=\int_{0}^{\infty} f(x) |\Psi(x)|^2 dx \]
-        \Item Expectation value of observable A \[ <A>=\int_{0}^{\infty} \Psi^*(x) [A \Psi](x)| dx \]
+        \Item Momentum wavefunction \[ c(\vec{p},t)=\frac{1}{(2\pi\hbar)^{3/2}} \int_{-\infty}^{\infty} \Psi(\vec{r},t) e^{\frac{-i}{\hbar} \vec{p}\cdot \vec{r} } d \tau \] 
+        \Item Expectation value of any function $f (x)$  \[ <f(x)>=\int_{-\infty}^{\infty} f(x) |\Psi(x)|^2 dx \]
+        \Item Expectation value of observable A \[ <A>=\int_{-\infty}^{\infty} \Psi^*(x) [A \Psi](x)| dx \]
     \end{enumerate}
 \end{frame}
 
@@ -215,12 +215,12 @@
     \begin{equation*}
         \begin{split}
             \int_{-\infty} ^\infty |C\Psi_p (x,t)|^2 dx &=1  \\
-            C^2 \int_0 ^\infty \Psi_p (x) \Psi_{p} ^* (x) dx &=1  \\
-            C^2 \int_0 ^\infty \Psi_p (x) \Psi_{p'} ^* (x) dx &=\delta (p-p')  \\
-            C^2 \int_0 ^\infty e^{\frac{i}{\hbar}(p-p')x} &=\delta (p-p')\\
+            C^2 \int_{-\infty} ^\infty \Psi_p (x) \Psi_{p} ^* (x) dx &=1  \\
+            C^2 \int_{-\infty} ^\infty \Psi_p (x) \Psi_{p'} ^* (x) dx &=\delta (p-p')  \\
+            C^2 \int_{-\infty} ^\infty e^{\frac{i}{\hbar}(p-p')x} dx &=\delta (p-p')\\
         \end{split} 
      \end{equation*}
-     from the defination of $\delta$ funcation, we get 
+     from the defination of $\delta$ funcation, we get
      \[C^2 2\pi \hbar \delta (p-p') =\delta(p-p') \]
      \[C= \dfrac{1}{\sqrt{2\pi \hbar}}\]
      The normalized plan wavefunction:

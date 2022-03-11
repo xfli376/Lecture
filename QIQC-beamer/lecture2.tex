@@ -5,501 +5,376 @@
     \frametitle{}
     \Background[1] 
     \begin{center}
-    {\huge 第2讲：量子力学基础}
+    {\huge 第2讲：量子逻辑门}
     \end{center}  
     \addtocounter{framenumber}{-1}   
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{1.量子态与希尔伯特空间}
+\section{1.逻辑门的可逆性}
 
 \begin{frame} 
-    \frametitle{希尔伯特空间}
-    量子态用希尔伯特空间中矢量描述\\
-    \begin{equation*}
-        \begin{split}
-            \text{1、定义加法} \quad  &\xi=\psi+\varphi\\
-            &\psi+\varphi=\varphi+\psi \qquad (\text{交换律})\\
-            &(\psi+\varphi)+\xi=\psi+(\varphi+\xi) \qquad (\text{结合律})\\
-            &\psi+\text{O}= \psi \qquad (\text{零元})\\
-            &\psi+\varphi= \text{O} \qquad (\text{逆元})\\
-        \end{split}  
-    \end{equation*}
+    \frametitle{经典加法器}
+    \begin{tcolorbox2}{信息学基本原理}
+    所有类型的计算都是加法，二进制加法是逻辑运算，逻辑门是实现各种逻辑运算的基础性元件。
+    \end{tcolorbox2}
+    \例[1. 设计一个加法器，实现两整数之间的求和]{}
+    \解~对于小于$2^n$的正整数$M,N$可表示为：
+    \[M=\sum_{i=0} ^{n-1} a_i 2^i,\qquad N=\sum_{i=0} ^{n-1} b_i 2^i\]
+\end{frame} 
+
+\begin{frame}    
+    \begin{table}
+        \caption{加法器真值表，其中 $s_i, c_{i+1}$分别是求和位和进位}
+        \begin{tabular}{@{} llll @{}}
+          %\toprule
+          $a_i$ & $b_i$ & $s_i$ & $c_{i+1}$\\
+          \midrule
+          0 & 0 & 0 & 0 \\
+          0 & 1 & 1 & 0\\
+          1 & 0 & 1 & 0\\
+          1 & 1 & 0 & 1\\
+          \bottomrule
+        \end{tabular}
+      \end{table}
+    \begin{itemize}
+        \IItem $a_i$, $b_i$ 不同时， $s_i$置“1”，否则置“0” : 逻辑“异或” XOR  $\qquad s_i=a_i\oplus b_i $
+        \IItem $a_i$, $b_i$ 都是1时， $c_{i+1}$置“1”，否则置“0”:   逻辑“与” AND  $\quad c_{i+1}=a_i \wedge b_i $
+    \end{itemize}
 \end{frame} 
 
 \begin{frame} 
-    \begin{equation*}
-        \begin{split}
-            \text{2、定义数乘} \quad &\varphi=\psi a\\
-            &\psi 1= \psi \qquad (\text{1元})\\
-            &(\psi a)b=\psi (ab) \qquad (\text{结合律})\\
-            &\psi(a+b)= \psi a+ \psi b \qquad (\text{第一分配律})\\
-            &(\psi+\varphi) a= \psi a +\varphi a \qquad (\text{第二分配律})\\
-        \end{split}  
-    \end{equation*}
+    \frametitle{}
+\centering
+\includegraphics[width=0.45\textwidth]{figs/10.png}
+\end{frame} 
+
+\begin{frame} {可逆性}
+    考察发现：经典 XOR 门和 AND 门都是不可逆的！\\
+    不可逆过程有深刻的物理内含:
+    \begin{itemize}
+        \IItem 不可逆过程熵增加 $S=k_B\ln\Omega$
+        \IItem 不可逆过程信息丢失 $\Delta S=k_B\ln2 $
+        \IItem 不可逆过程消耗能量
+        \IItem 不可逆过程不是幺正变换
+    \end{itemize}
+    当前通用的图灵机都是不可逆的！ \\ \vspace{0.8em}
+    {\Bullet}~~量子计算机通过酉操作（幺正变换）来实现信息处理，要求所有的逻辑门都是可逆的！\\
+    
+\end{frame}  
+
+\begin{frame} 
+    \begin{tcolorbox2}{Bennett 证明}
+    所有不可逆的计算机都可以改造为可逆计算机
+    \end{tcolorbox2}
+    \例[2. 试把不可逆的异或门，改造为可逆的异或门]{}
+    \解~改造方法如图 \\
+    \includegraphics[width=0.7\textwidth]{figs/11.png}
+    
+    可逆源于所有信息被保留，信息的擦除消耗能量增加熵，导致不可逆。
+\end{frame} 
+
+
+
+\begin{frame}{}
+        \frametitle{麦克斯韦妖佯谬-1871}
+        绝热容器分成两格，中间是由“妖”控制的一扇“门”，分子作无规则热运动时会向门上撞击，“门”可以选择性的将速度较快的分子放入一格，
+        较慢的分子放入另一格. 这样，体系的熵在减少！\\
+       \begin{center}
+        \includegraphics[width=0.42\textwidth]{figs/12.png}     
+       \end{center}   
+       1981年，Bennett证明“妖”必须去除前面分子的信息，这消耗能量并导致$k_B\ln2$的熵增。 
+\end{frame} 
+
+\begin{frame}
+    基本结论：\\
+   \begin{itemize}
+       \IItem 微观过程是可逆的
+       \IItem 微观过程服从量子力学原理
+       \IItem 演化过程是幺正的
+       \IItem 基于幺正变设计的量子逻辑门是可逆的
+       \IItem 如果有一套普适的量子逻辑门，发展量子计算机是可行的
+   \end{itemize} 
+\end{frame} 
+
+\section{2.单量子比特逻辑门}
+
+\begin{frame}
+    \frametitle{单量子比特逻辑门}   
+    {\Bullet} 分析：单量子比特波函数
+\[\rs{\psi} =\alpha\rs{0}+\beta\rs{1}, \qquad (|\alpha|^2+|\beta|^2=1)\]
+矩阵：
+ \[ \rs{\psi}=\begin{bmatrix}
+    \alpha \\
+    \beta
+ \end{bmatrix}\]
+ 因此，\\
+ （1）单比特逻辑门是操作$C^2$空间的$2\times 2$的矩阵，\\
+ （2）单比特逻辑门必须是幺正（酉）矩阵（可逆性要求）
 \end{frame} 
 
 \begin{frame} 
-    \begin{equation*}
-        \begin{split}
-            \text{3、定义内积} \quad &c=(\psi, \varphi)\\
-            &(\psi, \varphi)= (\varphi,\psi)^* \\
-            &(\psi, \varphi+\xi)= (\psi, \varphi) + (\psi, \xi)\qquad (\text{分配律})\\
-            &(\psi, \varphi a)= (\psi, \varphi )a \\
-            &\Rightarrow (\psi a, \varphi )= (\psi, \varphi )a^* \\
-            &(\psi,\psi)= c\ge 0\\
-        \end{split}  
-    \end{equation*}
+    \frametitle{量子非门（X-Gate）-比特反转门} 
+    经典非门： $0\to 1, \qquad 1 \to 0$ \\
+    量子非门： $\alpha\rs{0}+\beta\rs{1} \quad \to \quad\alpha\rs{1}+\beta\rs{0}$ \\ \vspace{1em}
+
+    \例[2. 试证明$\sigma_x$矩阵就是单比特量子非门]
+    {~~\\
+    \[X \equiv \sigma_x=\XGate = \rl{0}{1}+\rl{1}{0}\]} 
+    \证~（1）量子非，对于$\rs{\psi} =\alpha\rs{0}+\beta\rs{1}$,有
+    \[X \rs{\psi} = X \Qbit{\alpha}{\beta}=\XGate\Qbit{\alpha}{\beta} =\Qbit{\beta}{\alpha}=\beta\rs{0}+\alpha\rs{1}=\alpha\rs{1}+\beta\rs{0}
+    \]
+\end{frame} 
+
+\begin{frame}     
+    （2）幺正性
+    \[X^\dagger =(X_{ij} ^*)^T=\XGate\]
+    \[X^\dagger X = XX^\dagger =\XGate \XGate=I\]
+    证毕！\\ \vspace{1em}
+    {\Bullet} 很明显,这是比特反转
+    \[ X\rs{0}= \rs{1},\qquad X\rs{1}= \rs{0}
+    \]
 \end{frame}
 
-\begin{frame} 
-    \例 [1. 有定义在$C^n$空间的列矩阵，求内积]
-    { \[\psi=
-        \begin{pmatrix}
-                a_1\\
-                a_2\\
-                a_3
-        \end{pmatrix}, \qquad 
-        \varphi =\begin{pmatrix}
-            b_1\\
-            b_2\\
-            b_3
-    \end{pmatrix}
-     \] 
-    }
-    \解 ~ \[(\psi, \varphi) = \begin{pmatrix}
-        a_1 ^* &
-        a_2 ^* &
-        a_3 ^*
-    \end{pmatrix}
-        \begin{pmatrix}
-        b_1\\
-        b_2\\
-        b_3
-    \end{pmatrix}
-    =a_1 ^* b_1 +a_2 ^* b_2 +a_3 ^* b_3
-    =c 
-    \]
-    ~ \[(\varphi,\psi) = \begin{pmatrix}
-        b_1 ^* &
-        b_2 ^* &
-        b_3 ^*
-    \end{pmatrix}
-        \begin{pmatrix}
-        a_1\\
-        a_2\\
-        a_3
-    \end{pmatrix}
-    =b_1 ^* a_1 +b_2 ^* a_2 +b_3 ^* a_3
-    =c^* 
-    \]
-\end{frame} 
-
-\begin{frame} 
-    \例 [2. 求定义在x空间的函数的内积]{}
-
-    \解 ~ \[(\psi, \varphi)=\int_a ^b \psi^*(x)  \varphi(x) dx
-    =c 
-    \]
-    ~ \[(\psi, \varphi)=\int_a ^b \varphi^*(x)\psi(x) dx = (\int_a ^b \varphi(x)\psi^*(x) dx) ^* =c^*\]
-\end{frame} 
-
-\begin{frame}
-    4、定义空间\\
-   \begin{itemize}
-       \Item 矢量空间：满足加法和数乘两种运算的集合
-       \Item 内积空间：满足加法、数乘和内积三种运算的集合
-       \Item 希尔伯特空间:  完全的内积空间\\
-       ~~ \\
-       *完全性：对给定任意小的实数$\varepsilon$，总有数N存在，当m, n>N时，有\\
-       $$ (\psi_m -\psi_n, \psi_m -\psi_n )< \varepsilon $$
-   \end{itemize} 
-   \Tips ~ 量子体系的状态用希尔伯特空间的矢量描述
-\end{frame} 
-
-\begin{frame}
-    5、几个概念\\
-   \begin{itemize}
-       \Item 模（方）：$|\psi|^2= (\psi, \psi)=c$
-       \Item 归一化： $|\psi|^2= (\psi, \psi)=c=1$
-       \Item 正交（线性无关）性:  $(\psi, \varphi)=0 $ \\
-       \Item 完全集: 有一组线性无关集，如果空间的任意矢量都可以在其上展开，则称它为一个完全集，记为$\{\phi_i\}$ 
-       \[\psi=\sum_i a_i \phi_i= \sum_i (\phi_i,\psi) \phi_i\]
-       \Item 维度：最小完全集所包含矢量的数目相同，称这个数目为空间的维度
-       \Item 正交归一完全集：对于一个n维的完全集，有：\[(\phi_i,\phi_j)=\delta_{ij}, \qquad i,j=1,2,3,\cdots, n \]
-       \Item 基与基矢：称一个正交归一完全集为空间的一个基，它所含的矢量称不计算基矢（态）
-   \end{itemize} 
-\end{frame} 
-
-\begin{frame}
- \Tips~ 同一空间可以有不同的基，\\
- $C^2$空间的一个基：
- \[ \rs{0}\equiv\begin{bmatrix}
-     1 \\
-     0
- \end{bmatrix}; \qquad \rs{1}\equiv\begin{bmatrix}
-    0 \\
-    1
-\end{bmatrix} \]
-
-$C^2$空间的另一个基：
-\[ \rs{+}\equiv\frac{1}{\sqrt{2}}\begin{bmatrix}
-    1 \\
-    1
-\end{bmatrix}; \qquad \rs{-}\equiv\frac{1}{\sqrt{2}}\begin{bmatrix}
-   1 \\
-   -1
-\end{bmatrix} \]
-
-\end{frame} 
-
-\begin{frame} 
+\begin{frame}{}
+    比特反转的物理图像
     \begin{center}
-        \includegraphics[width=0.4\textwidth]{figs/9.png}
+        \includegraphics[width=0.8\textwidth]{figs/13.png}     
+    \end{center}  
+\end{frame}
+
+\begin{frame}{基矢变换门(H-Gate)}
+    基矢变换: $\rs{0} \to \rs{+} =\Pstate, \qquad \rs{1} \to \rs{-} =\Mstate $ \\
+    物理图像：把z方向的基矢变换成x方向的基矢
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{figs/14.png}     
+    \end{center} 
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \例[4. 试证明如下矩阵就是基矢变换门]
+    {~~\\
+    \[H \equiv \frac{1}{\sqrt{2}}(X+Z) =\HGate \]} 
+    \证~（1）基矢变换
+    \[H \rs{0}= \HGate\Qbit{1}{0}=\frac{1}{\sqrt{2}}\Qbit{1}{1} = \frac{1}{\sqrt{2}}\Qbit{1}{0} +\frac{1}{\sqrt{2}}\Qbit{0}{1} =\frac{\rs{0}+\rs{1}}{\sqrt{2}} =\rs{+}\]
+    \[\text{同理}\qquad H \rs{1}=\frac{\rs{0}-\rs{1}}{\sqrt{2}} =\rs{-}\]
+\end{frame}
+
+\begin{frame}{}
+    （2）幺正性
+    \[H^\dagger H = HH^\dagger=I\]
+    证毕！ \\ \vspace{0.6em}
+    \[H \rs{0}=\frac{\rs{0}+\rs{1}}{\sqrt{2}}\]
+    \[H \rs{1}=\frac{\rs{0}-\rs{1}}{\sqrt{2}}\]
+    {\Bullet} 统一表示为：(x,z 分别取0或1)\\
+    \[H \rs{x}=\frac{\sum_z(-1)^{xz}\rs{z}}{\sqrt{2}}\]
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    {\Bullet} 很明显~H~是自共轭矩阵，有： \[H^\dagger =H \to H^2=I\]
+    \例[5. 试证明H可以完成反向变换]
+    {~~\\
+    \[H \rs{+}= \rs{0}, \qquad H \rs{-}= \rs{1}  \]} 
+    \证~ \[H\rs{0}=\rs{+}, \qquad H \rs{0}= \rs{-} \]
+    \[HH\rs{0}=H\rs{+} , \qquad H H\rs{0}= H\rs{-}\]
+    \[\rs{0}=H\rs{+} , \qquad \rs{0}= H\rs{-}\]
+    证毕！
+\end{frame}
+
+\begin{frame}
+    \frametitle{相位反转门（Z-Gate）} 
+    相位反转： $\alpha\rs{0}+\beta\rs{1} \quad \to \quad\alpha\rs{0}-\beta\rs{1}$ \\ \vspace{0.6em}
+    \例[3. 试证明$\sigma_z$矩阵就是相位反转门]
+    {~~\\
+    \[Z \equiv \sigma_z =\ZGate =-i\rl{0}{1}+i\rl{1}{0}\]} 
+    \证~（1）相位反转
+    \[Z \Qbit{\alpha}{\beta}=\ZGate\Qbit{\alpha}{\beta} =\Qbit{\alpha}{-\beta}\]
+    （2）幺正性
+    \[Z^\dagger Z = ZZ^\dagger=I\]
+    证毕！~~ {\Bullet} 很明显~~$ Z\rs{0}=\rs{0},\quad Z\rs{1}=-\rs{1}= e^{i\pi}\rs{1}$
+\end{frame}
+
+\begin{frame}
+    \frametitle{旋转门} 
+    既然态矢都在 Block球面，相位反转(Z-Gate)就是绕Z轴旋转180度（$\pi$）（为什么？）\\
+    {\Bullet}绕Z轴旋转90度($\dfrac{\pi}{2}$)的门是S-Gate.\\
+    \[Z\rs{1}= e^{i\pi}\rs{1}\]
+    \[S\rs{1}= e^{i\pi/2}\rs{1}\]
+    解得：
+    \[S \equiv \SGate = {\begin{bmatrix}
+        1 & 0 \\
+        0 & e^{\frac{i\pi}{2}}
+     \end{bmatrix}}\]
+    由于$i=\sqrt{-1}$,也称S-Gate 为$\sqrt{Z}$-Gate 
+\end{frame}
+    
+\begin{frame}
+    \frametitle{}
+    {\Bullet}绕Z轴旋转45度的门为T-Gate，也称 $\pi/8$-Gate
+    \[T \equiv {\begin{bmatrix}
+        1 & 0 \\
+        0 & e^{\frac{i\pi}{4}}
+     \end{bmatrix}} = e^{\frac{i\pi}{8}} {\begin{bmatrix}
+        e^{\frac{-i\pi}{8}} & 0 \\
+        0 & e^{\frac{i\pi}{8}}
+     \end{bmatrix}}\]
+    {\Bullet}绕Z轴旋转任意角度($\varphi$)的门为旋转门$R_z(\varphi)$-Gate
+    \[R_z(\varphi) \equiv  \RGate \]
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    {\Bullet}不失一般性，存在各方向的旋转门
+    \[R_z(\theta) \equiv e^{-i\theta Z/2}\]
+    \[R_y(\theta) \equiv e^{-i\theta Y/2}\]
+    \[R_x(\theta) \equiv e^{-i\theta X/2}\]
+    \[R_{\hat{n}}(\theta) \equiv e^{-i\theta \hat{n}\cdot \sigma/2}\]
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    小结：常用单比特量子门\\
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{figs/15.png}     
+    \end{center} 
+    它们都是幺正($U$)门
+\end{frame}
+
+\section{3.多量子比特逻辑门}
+\begin{frame}
+    \frametitle{多量子比特逻辑门}
+    1.控制非门 (Controlled-Not-Gate）\\
+    \[ C-NOT\equiv {\begin{bmatrix}
+        1 & 0 & 0 & 0\\
+        0 & 1 & 0 & 0\\ 
+        0 & 0 & 0 & 1\\ 
+        0 & 0 & 1 & 0
+     \end{bmatrix}}
+    \]
+    \begin{center}
+        \includegraphics[width=0.35\textwidth]{figs/16.png}     
+    \end{center} 
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \[\text{输入} \qquad \qquad \qquad \text{输出}\] 
+    \[\rs{x}\rs{y}\qquad \qquad \rs{x}\rs{x \oplus y}\]
+    \[\rs{00} \qquad \qquad \qquad \rs{00} \]
+    \[\rs{01} \qquad \qquad \qquad \rs{01} \]
+    \[\rs{10} \qquad \qquad \qquad \rs{11} \]
+    \[\rs{11} \qquad \qquad \qquad \rs{10} \]
+    {\Bullet}控制位(x)置位时，对目标位(y)做非操作
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    2. 交换门 (Switch-Gate)
+    \begin{center}
+        \includegraphics[width=0.32\textwidth]{figs/17.png}     
+    \end{center} 
+    \[\text{输入} \rs{a,b} \qquad \to \qquad \text{输出} \rs{b,a} \] 
+    \证 
+    \[\rs{a}\rs{b} \to \rs{a}\rs{a \oplus b }\]
+    \[\rs{a}\rs{a \oplus b } \to \rs{a\oplus(a \oplus b )}\rs{a \oplus b } = \rs{b}\rs{a \oplus b} \]
+    \[\rs{b}\rs{a \oplus b} \to \rs{b}\rs{b \oplus (a \oplus b} = \rs{b}\rs{a}\]
+    证毕！
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    3.  控制$U$门 ($U_0: I, U_1:X, U_2:Y,U_3:Z,\cdots$)
+    \begin{center}
+        \includegraphics[width=0.35\textwidth]{figs/18.png}     
+    \end{center} 
+   功能：$U$是单量子比特的任意酉算子。如果控制位置位，则U作用到目标位上，否则目标位不变。
+    \[\rs{c}\rs{t} \to \rs{c}U^c\rs{t}\]
+    显然，当U=X时，就是控制非门（CNOT）
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    {\Bullet}通过设计一系列的控制$U$门，我们可以控制系统的初态向目标态的演化！\\ \vspace{0.8em}
+    依据：量子力学的演化假设，薛定谔方程与酉变换等价，有：
+    {\Large \[\rs{\text{末态}}=\prod_{i} U_i\rs{\text{初态}} \]}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    4.  双控制位的控制$U$门 （$C^2(U)$） 
+    \begin{center}
+        \includegraphics[width=0.35\textwidth]{figs/19.png}     
+    \end{center} 
+   功能：只有当两个控制位都置位时，U才作用到目标位上，否则目标位不变。
+    显然，当U=X时，就是控制非门（CNOT）
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    例.  下面的Toffoli门，就是双控制位的控制非（X）门
+    \begin{center}
+        \includegraphics[width=0.30\textwidth]{figs/20.png}     
+    \end{center} 
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \centering
+    \tcbb[0.68]{深刻意义}
+    {Toffoli门是可逆门，是实现普适计算的基础。可以证明：经典条件下一位两位可逆门不足以实现Toffoli门。而量子条件下由H，CNOT，S和 T门可以任意精度地近似任意酉操作。
+    也就是说，只有在量子条件下，才可以实现普适的可逆计算！}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \begin{center}
+        \includegraphics[width=0.85\textwidth]{figs/21.png}     
     \end{center} 
 \end{frame}
 
 
-\begin{frame}{}
-    6、左矢与右矢\\
-    考察内积： $(\psi,\psi)=\int\psi^*\psi d\tau$ \\
-    同一波函数放在左边还是右边，意义有所不同： \\
-    右边是线性的：  $(\psi,a\psi)=a (\psi,\psi)$ \\
-    左边是反线性的：   $(a\psi,\psi)=a^* (\psi,\psi)$  \\
-    为了清楚地描述这种线性反线性特点，定义左矢和右矢
-    $$\langle \psi |, \qquad |\psi \rangle $$ 
-    内积：\[(\psi,\varphi)\equiv \langle \psi | \varphi \rangle\]
-    有性质： $$\langle a\psi | = \langle \psi |a^* $$
-    $$ |a\psi \rangle = a|\psi \rangle$$ 
-\end{frame}
-
-\begin{frame}{}
-    7、外积\\
-    考察展开式： \[\psi=\sum_i a_i \phi_i= \sum_i (\phi_i,\psi) \phi_i\]
-    \[\rs{\psi}=\sum_i a_i \rs{\phi_i}= \sum_i \lr{\phi_i}{\psi} \rs{\phi_i} =\sum_i \rl{\phi_i}{\phi_i} \rs{\psi}\]
-    ~~\\
-    令 $p_i= \rl{\phi_i}{\phi_i} $, 完备性：
-    \[\sum_i p_i= \sum_i \rl{\phi_i}{\phi_i}=1 \]
-    称  $p_i= \rl{\phi_i}{\phi_i} $ 外积
-\end{frame}
-
-\begin{frame}{}
-        \例 [3. 有定义在$C^n$空间的列矩阵，求内积和外积]
-        { \[\rs{\psi}=
-            \begin{pmatrix}
-                    a_1\\
-                    a_2\\
-                    a_3
-            \end{pmatrix}, \qquad 
-            \rs{\varphi} =\begin{pmatrix}
-                b_1\\
-                b_2\\
-                b_3
-        \end{pmatrix}
-         \] 
-        }
-        \解 ~ \[\lr{\psi}{\varphi} = \begin{pmatrix}
-            a_1 ^* &
-            a_2 ^* &
-            a_3 ^*
-        \end{pmatrix}
-            \begin{pmatrix}
-            b_1\\
-            b_2\\
-            b_3
-        \end{pmatrix}
-        =a_1 ^* b_1 +a_2 ^* b_2 +a_3 ^* b_3
-        =c 
-        \]
-        ~ \[\rl{\psi}{\varphi} = \begin{pmatrix}
-            a_1  \\
-            a_2  \\
-            a_3 
-        \end{pmatrix}
-            \begin{pmatrix}
-            b_1 ^* &
-            b_2 ^* &
-            b_3 ^*
-        \end{pmatrix}
-        =  \begin{pmatrix}
-            a_1b_1 ^* & a_1b_2 ^* & a_1b_3 ^* \\
-            a_2b_1 ^* & a_2b_2 ^* & a_2b_3 ^* \\
-            a_3b_1 ^* & a_3b_2 ^* & a_3b_3 ^* 
-        \end{pmatrix}
-        \]
-    \Tips ~ 内积是一个数，外积是一个矩阵！
-\end{frame}
-
-\section{2.物理量与算符}
-
-\begin{frame}
-    \frametitle{算符}
-    物理量用希尔伯特空间的线性厄密算符描述\\
-    1. 定义：
-    \begin{itemize}
-        \Item 算符:描述态矢量之间的映射关系，即算符作用于一个态矢量，映射到另一个态矢量。
-        \[F \rs{\Psi}=\rs{\psi}\]
-        \Item 逆算符  
-        \[F^{-1}\rs{\psi}=\rs{\Psi} \] 
-        \Item 线性算符 \[F (a\rs{\Psi} +b\rs{\psi}) = aF \rs{\Psi} +bF\rs{\psi}\]
-        \Item 伴算符   \[\ls{\psi}=\ls{\Psi}F^{\dagger} \]
-    \end{itemize}
-\end{frame} 
-
-
 \begin{frame}
     \frametitle{}
-    \begin{itemize}
-        \Item 自伴(厄密)算符  \[F = F^{\dagger} \] 性质： $\lr{\Psi F}{\psi}=\lr{\Psi }{F \psi}=\lcr{\Psi }{F} {\psi}$
-        \Item 幺正(酉)算符    \[F^{-1} = F^{\dagger} \] 性质： $FF^{\dagger}=F^{\dagger}F=I$, 通常写成 $UU^{\dagger}=U^{\dagger}U=I$ \\
-        \Tips 把一个空间所有矢量都用同一幺正算符作用，得到一个新的空间, 即幺正(酉)变换是一种空间变换，
-        \[U\rs{\Psi} =\rs{\Psi'}\]
-    \end{itemize}
-\end{frame} 
-\begin{frame}
-    \frametitle{}
-    \Tips 推导新旧空间算符之间的关系： \\
-        旧空间的算符： \[F \rs{\Psi}=\rs{\varphi}\]
-        新空间的算符： \[F' \rs{\Psi'}=\rs{\varphi'}\]
-        它们之间的关系：
-        \[F' U\rs{\Psi}=U\rs{\varphi}\]
-        \[F' U\rs{\Psi}=UF \rs{\Psi}\]
-        \[U^{\dagger}F' U\rs{\Psi}=U^{\dagger}UF \rs{\Psi}\]
-        \[U^{\dagger}F' U\rs{\Psi}=IF \rs{\Psi}\]
-        \[U^{\dagger}F' U=F \]
-        %\item 
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-    \begin{itemize}
-    \Item 投影算符: 基矢的外积是一种投影算符，
-    \end{itemize}
-    对于展开式： 
-    \[\rs{\psi}=\sum_i a_i \rs{\phi_i}=\sum_i \rl{\phi_i}{\phi_i} \rs{\psi}=\sum_i p_i \rs{\psi} =\sum_i \rs{\psi_i}\]
-    有：\[p_i \rs{\psi} =\sum_i \rs{\psi_i}\]
-    即，外积$\rl{\phi_i}{\phi_i}$作用于$\rs{\psi}$，得到其在第$i$个基矢态上的投影分量！\\
-\end{frame}
-
-\begin{frame}    
-    \begin{itemize}
-        \Item 测量算子: 量子信息学中常称投影算符为测量算子，定义为
-        \end{itemize}
-    \[M_0=\rl{0}{0}, \qquad M_1=\rl{1}{1} \]
-    具有$2\times 2$的矩阵形式，
-    可以证明：\\
-    {\bullet} 测量算子是自伴(厄密)算符 ：\[M_m = M_m ^{\dagger} \]
-    {\bullet} 平方不变性 ：\[M_m ^2 = M_m \]
-    {\bullet} 完备性 ：\[M_0 + M_1 = M_0 ^2 + M_1 ^2 = M_0 M_0 ^\dagger + M_1 M_0 ^\dagger=I\]
-\end{frame}
-
-\begin{frame} 
-    \frametitle{}
-    {\bullet} 测量后的态函数 
-    \[\begin{aligned}
-        M_0\rs{\Psi} 
-        &= \rl{0}{0}(a_0\rs{0}+a_1\rs{1})  \\ 
-        &= \rl{0}{0}a_0\rs{0}  \\ 
-        &= a_0\rs{0}  \\ 
-        &= \frac{a_0}{|a_0|}\rs{0}  \qquad \text{（归一化）} \\ 
-    \end{aligned}\]    
-    {\bullet} 测得的概率(密度) 
-    \[\begin{aligned}
-        \lcr{\Psi}{M_0 ^\dagger M_0}{\Psi} 
-        &= \lcr{0 }{a_0a_0} {0} \\ 
-        &= \lr{0 }{0}a_0 ^* a_0 \\ 
-        &= |a_0|^2 = p(0) 
-    \end{aligned}\] 
-    重写测量后的状态 \[  M_m\rs{\Psi} = \frac{a_m\rs{m}}{\sqrt{\lcr{\Psi}{M_m ^\dagger M_m}{\Psi}}} = \frac{M_m\rs{\Psi}}{\sqrt{\lcr{\Psi}{M_m ^\dagger M_m}{\Psi}}}\]
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-    \begin{itemize}
-    \Item 密度算符: 任意态的外积是一种求概率密度的算符，简称密度算符，
-    \end{itemize}
-    任意态的展开式：\[\rs{\psi}=\sum_i a_i \rs{\phi_i}\]
-    任意态的外积：\[\rho=\rl{\psi}{\psi}\]
-    求其在基矢态上的平均值：
-    \[\lcr{\phi_i}{\rho}{\phi_i}=\lcr{\phi_i}{\rl{\psi}{\psi}}{\phi_i}=\lr{\phi_i}{\psi}\lr{\psi}{\phi_i}
-    =a_i ^* a_i =|a_i|^2=\omega_i     
-    \]    
-    密度算符的应用，平均值公式-3 
-    \[\overline{F}=tr(A\rho)\]
-\end{frame}
-
-
-\begin{frame}
-    \frametitle{}
-    2. 算符的矩阵表示
-    \[\begin{aligned}
-        \rs{\psi}&=F \rs{\Psi} \\
-        \lr{i}{\psi}&= \lcr{i}{F}{\Psi} \\
-        \lr{i}{\psi}&= \sum_j\lcr{i}{F}{j}\lr{j}{\Psi} \\
-        \ls{\psi_i}&= \sum_jF_{ij}\rs{\Psi_j} 
-    \end{aligned}\]  
-    定义了算符矩阵元公式：\[ F_{ij}=\lcr{i}{F}{j}\]
-    伴算符的矩阵等于原算符的厄密共轭：\[ F^{\dagger}=(F_{ij} ^*)^T\]
-\end{frame}
-
-
-\begin{frame}
-    \frametitle{}
-    \例[4.证明平均值公式-3 ]{
-    \[\overline{F}=tr(A\rho)\]}
-    \证~由矩阵的迹的定义式  
-    \[\begin{aligned}
-        tr(A\rho) &= \sum_i \lcr{i}{A\rho}{i} \\
-        &= \sum_i \lcr{i}{A}{\psi}\lr{\psi}{i} \\
-        &= \sum_i \lr{\psi}{i} \lcr{i}{A}{\psi}\\
-        &= \lcr{\psi}{A}{\psi}\\
-    \end{aligned}\]    
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-    3. 算符的本征方程
-    \begin{itemize}
-        \Item 定义式: \[F \rs{\Psi}=f\rs{\Psi}\]
-        \Item 相关定理：
-        \begin{itemize}
-            \IItem 厄密算符的本征值是实数
-            \IItem 厄密算符的所有本征矢构成正交归一完全集
-            \IItem 当且仅当两厄密算符互相对易时才且有共同的
-            本征矢完全集
-            \IItem 完全确定一个量子态所需要的彼此对易的一组力学量算符的最小集称为力学量完全集，所含力学量数目与体系的自由度数目相同
-            \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\section{3.张量空间}
-
-\begin{frame}
-    \frametitle{张量空间}
-    **以上讲的是单粒子体系的量子态及物理量的描述问题
-    \begin{tcolorbox4}[张量积]
-    {\Bullet}对于多粒子体系，比如多量子比特系统，其所处的空间是子系统希尔伯特空间的张量积。也称直积空间。
-    \end{tcolorbox4}
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-    1. 张量空间的计算基矢 \\
-    子系统A是n维的，计算基（某厄密算符的本征函数系）为$$\{\rs{\phi_i}\},\quad (i=1,2,3,\cdots,n)$$ 
-    子系统B是m维的，计算基为$$\{\rs{\varphi_j}\},\quad (j=1,2,3,\cdots,m)$$ 
-    总系统是n张m维的张量空间，计算基为：$$\{\rs{\phi_i}\otimes\rs{\varphi_j}\},\quad (i=1,2,3,\cdots,n;\quad j=1,2,3,\cdots,m)$$ 
-    可简写为：$$\{\rs{\phi_i}\otimes\rs{\varphi_j}\}=\{\rs{\phi_i}\rs{\varphi_j}\}=\{\rs{\phi_i\varphi_j}\}=\{\rs{ij}\}$$
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-    总体系的任意态是计算基矢的叠加态：
-    \[ \rs{\Psi} = \sum_{i,j} a_{ij}\rs{ij}\] \vspace{0.6em}
-
-    \例[写出双量子比特的计算基]{} 
-    \解~双量子比特的基由四个计算基矢构成$$\{\rs{00},\rs{01},\rs{10},\rs{11}\}$$
-    它们的矩阵形式为：
-    \[
-\rs{00} = 
-\begin{pmatrix}
-    1\\
-    0\\
-    0\\
-    0
-\end{pmatrix},\qquad
-\rs{01} = 
-\begin{pmatrix}
-    0\\
-    1\\
-    0\\
-    0
-\end{pmatrix},\qquad
-\rs{10} = 
-\begin{pmatrix}
-    0\\
-    0\\
-    1\\
-    0
-\end{pmatrix},\qquad
-\rs{1} = 
-\begin{pmatrix}
-    0\\
-    0\\
-    0\\
-    1
-\end{pmatrix}
-\] 
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-    2. 张量空间的算符 \\
-    子系统A有算符$F_A$, 子系统B有算符$F_B$，总系统可定义它们的张量积
-    \[F_{AB}=F_A \otimes F_B\]
-    作用于总体系的任意态时，算法为：
-    \[F_A \otimes F_B \rs{\Psi} = F_A \otimes F_B \sum_{i,j} a_{ij}\rs{ij}=  \sum_{i,j} a_{ij}F_A \rs{i}\otimes F_B\rs{j}\]
-    
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-    3. 子系统的测量与约化密度矩阵 \\
-    总体系任意态的密度矩阵
-    \[ \rho=\rl{\Psi} {\Psi}= \sum_{i,i',j,j'} a_{i'j'}a_{ij}\rl{i'j'}{ij}\] 
-    定义子体系A的约化密度矩阵(把子系统B积分丢！)
-    \[ \rho(A)=\sum_{j}\lcr{j}{\rho}{j}=tr_B(\rho)\] 
-    测量子体系A的物理量$F_A$的平均值为：
-    \[ \bar{F}_A=tr_A(F_A\rho(A))\] 
-    
-\end{frame}
-
-
-
-\section{4.量子力学基本假设}
-
-\begin{frame}
-    \frametitle{状态假设}
-    \begin{tcolorbox4}[1. 状态假设]
-    量子体系的状态用希尔伯特空间的态矢量完全描述。
-    \end{tcolorbox4}
-    \例[量子比特用2维希尔伯特空间的态矢量]{ 
-    \[\rs{\psi} = a_0 \rs{0} + a_1\rs{1}\]完全描述了体系所有可能的状态！}
-\end{frame}
-
-
-\begin{frame}
-    \frametitle{演化假设}
-    \begin{tcolorbox4}[2. 演化假设]
-    一个封闭量子体系的演化用幺正(酉)变换描述。
-    \[\rs{\Psi'}=U\rs{\Psi}\]
-    状态函数随时间的演化用薛定谔方程描述
-    \[ i\hbar \frac{d\rs{\Psi}}{dt}=H \rs{\Psi}\]
-    \end{tcolorbox4}
-    \例[量子比特]{一套普适量子逻辑门可实现任意幺正(酉)变换
-    }
-\end{frame}
-
-
-\begin{frame}
-    \frametitle{量子测量假设}
-    \begin{tcolorbox4}[3. 量子测量假设]
-    量子测量由一组测量算子$\{ M_m\}$ 描述，测得测量值$m$的概率（密度）为
-    \[ p(m)=\lcr{\Psi}{M_m ^\dagger M_m}{\Psi} 
-     \]
-     测量后的状态 \[\frac{M_m\rs{\Psi}}{\sqrt{\lcr{\Psi}{M_m ^\dagger M_m}{\Psi}}}\]
-    \end{tcolorbox4}
-\end{frame}
-
-\begin{frame}
-    \frametitle{张量积假设}
-    \begin{tcolorbox4}[4. 复合系统假设]
-    复合系统的状态空间是子系统的状态空间的张量积
-    \end{tcolorbox4}
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-    \begin{tcolorbox3}[学术讨论]
-        基于以上4个假定，可以从数学上在Hilbert空间导出整个量子力学体系，那么基于假定导出的量子力学可靠吗？
+    \begin{tcolorbox3}[讨论专题]
+    设光子偏振态与计算基矢态有如下关系：
+    \begin{center}
+        \includegraphics[width=0.35\textwidth]{figs/23.png}     
+    \end{center}  
+    试设计普适计算所必须的H，CNOT，S和 T门   
     \end{tcolorbox3}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    5.  多控制位多目标位的控制$U$门 （$C^n(U_k)$） 
+    \begin{center}
+        \includegraphics[width=0.31\textwidth]{figs/22.png}     
+    \end{center} 
+   功能：只有当所有控制位都置位时，U才作用到目标位上，否则目标位不变。
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    6.  经典函数的量子门阵列实现
+    \begin{center}
+        \includegraphics[width=0.38\textwidth]{figs/25.png}     
+    \end{center} 
+    \begin{itemize}
+        \IItem 任意经典函数都可以转化成二进位形式下的一系列逻辑运算，这些逻辑运算由量子门阵列$U_f$实现
+        \IItem 输入位$\rs{x}$,经$U_f$运算后，得到函数值$f(x)$
+        \IItem $f(x)$要么是0要么是1，只有当$f(x)=1$时，才对目标位(y)做非操作，否则目标位不变。
+    \end{itemize}
+    \[U_f\rs{x,y}\qquad \to \qquad \rs{x,y\oplus f(x)}\]
+\end{frame}
+
+\begin{frame}
+    \frametitle{作业}
+    这是一个量子加法器
+    \begin{center}
+        \includegraphics[width=0.38\textwidth]{figs/24.png}     
+    \end{center} 
+    \[\rs{a,b}\qquad \to \qquad \rs{a,a+b}\]
+    试给出真值表
 \end{frame}

@@ -15,7 +15,7 @@
         \begin{enumerate}
             \Item Normal results 20\%
             \Item Group discussion 30\%
-            \Item Project final report 60\%
+            \Item Project final report 50\%
         \end{enumerate}
 \end{frame}
 
@@ -33,8 +33,8 @@
 \begin{frame}
     \begin{tcolorbox4}[分组讨论及报告专题设置(1)]    
         \begin{enumerate}
-            \Item   量子叠加态的基本特性及其在量子信息处理中的应用；
-            \Item   量子纠缠态的基本特性及其在量子通信中的应用；
+            \Item  量子叠加态的基本特性及其在量子信息处理中的应用；
+            \Item  量子纠缠态的基本特性及其在量子通信中的应用；
             \Item  量子测量的基本特性及其在量子信息学中的应用；
             \Item  信息謪的香农定义和冯诺依曼定义及所带来的影响；
             \Item  量子加法器的量子门及光学线路；
@@ -131,7 +131,7 @@
         \Item   量子纠缠能传多远
     \end{enumerate}
     \begin{center}
-        \includegraphics[width=0.8\textwidth]{figs/5.png}
+        \includegraphics[width=0.6\textwidth]{figs/5.png}
     \end{center} 
 \end{frame}
 
@@ -204,7 +204,7 @@
     &=e^{i\gamma} \left(\cos\frac{\theta}{2}\rs{0}+e^{i\varphi} \sin\frac{\theta}{2}\rs{1}\right) \\
     &=\cos\frac{\theta}{2}\rs{0}+e^{i\varphi} \sin\frac{\theta}{2}\rs{1}
   \end{aligned}\]
-  \Note~量子比特由两个角度$\theta, \varphi$ 确定
+  \Note~改量子比特由两个复数$\alpha,\beta$确定为由两个角度$\theta, \varphi$ 确定
 \end{frame}
 
 \begin{frame} 
@@ -245,7 +245,7 @@
     \frametitle{量子比特的外积}
     由矩阵表示可知量子比特的外积$\rl{\psi}{\psi}$是一个$2\times 2$的矩阵,
     泡利矩阵是正交归一完全集,
-    因此，此外积可在泡利矩阵上展开！
+    因此，外积可在泡利矩阵上展开！
     \[\begin{aligned}
     \rl{\psi}{\psi} 
     &=
@@ -291,21 +291,21 @@
 它们的矩阵表示由原矩阵的直积表示 
 \[\rs{01} = \rs{0} \otimes \rs{1} =    
 \begin{pmatrix}
-    0\\
-    1
-\end{pmatrix}
-\otimes
-\begin{pmatrix}
     1\\
     0
 \end{pmatrix}
+\otimes
+\begin{pmatrix}
+    0\\
+    1
+\end{pmatrix}
 =
 \begin{pmatrix}
-    0 \otimes \begin{pmatrix}
-        1\\
-        0
-    \end{pmatrix}\\
     1 \otimes \begin{pmatrix}
+        0\\
+        1
+    \end{pmatrix}\\
+    0 \otimes \begin{pmatrix}
         1\\
         0
     \end{pmatrix}
@@ -360,14 +360,14 @@
 (2). 双量子比特任意态是四个计算基矢态的叠加态:
  \[\rs{\psi} =\alpha_{00}\rs{00}+\alpha_{01}\rs{01}+\alpha_{10}\rs{10}+\alpha_{11}\rs{11}\]
  归一化条件：
- \[ \sum_{ij=0,1} \alpha_{ij}= 1\]
+ \[ \sum_{ij=0,1} |\alpha_{ij}|^2= 1\]
 \end{frame}
 
 \begin{frame} 
     \frametitle{测量后态函数}
-(3).若对双量子比特的第一个位进行测量，设测量结果为$\rs{0}$,求测量后体系的状态:
+\例[若对双量子比特的第一个位进行测量，设测量结果为$\rs{0}$,求测量后体系的状态]{}
  \[\rs{\psi} =\alpha_{00}\rs{00}+\alpha_{01}\rs{01}+\alpha_{10}\rs{10}+\alpha_{11}\rs{11}\]
- 测量导致后两计算基矢态消失，变成了：
+ \解~测量导致后两计算基矢态消失，
  \[\rs{\psi} =\alpha_{00}\rs{00}+\alpha_{01}\rs{01}\]
  求归一化系数，得归一化态函数：
  \[\rs{\psi'} =\frac{\alpha_{00}\rs{00}+\alpha_{01}\rs{01}}{\sqrt{|\alpha_{00}|^2+ |\alpha_{01}|^2}} \]
@@ -407,7 +407,7 @@
 
 \end{frame}
 
-\begin{frame}
+%\begin{frame}
     \includemedia[
     width=1.0\linewidth,height=0.60\linewidth, % 16:9
     activate=pageopen,
@@ -418,7 +418,7 @@
     &loop=true
     }
     ]{}{VPlayer.swf}
-\end{frame}
+%\end{frame}
 
 \begin{frame}
     \frametitle{}

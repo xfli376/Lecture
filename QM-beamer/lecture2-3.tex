@@ -50,7 +50,7 @@
         \Item 1923年，德布罗意博士论文传到了瑞士，一战炮兵指挥官苏黎世大学讲师薛定谔作了一个关于物质波假说的报告，德拜评注：\\
         $$\text{“有了波，总得有个波动方程吧”}$$
         \Item 1926年，薛定谔：
-        $$“Dear Debye, I find one \cdots”$$
+        $$“Dear~Debye, I~find~one~\cdots”$$
     \end{itemize}            
 \end{frame}
 
@@ -63,7 +63,7 @@
     \end{quote}  
     \begin{quote}    
     这部话剧讲述了薛定谔方程建立的神秘过程：在1925年圣诞节前，薛定谔像往年一样，来到阿尔卑斯山度假。这次陪伴他的不是妻子安妮，而是维也纳的一位神秘女郎。
-    就是这位比薛定谔的猫还神秘的女郎激发了薛定谔的灵感，使他在一年的时间里连发~6~篇~“SCI”~论文，建立波动量子力学，\ddots\\
+    就是这位比薛定谔的猫还神秘的女郎激发了薛定谔的灵感，使他在一年的时间里连发~6~篇~“SCI”~论文，建立波动量子力学，$\cdots$\\
     ~~\\
     \end{quote} 
     \end{alertblock}   
@@ -75,7 +75,7 @@
 			\Item 	\textbf{1：}  最小作用量原理 $\int\limits_{t_1}^{t_2} \delta L d t =0 $\\ 
 			\Item 	\textbf{2：}  波粒二象性\\ 
 			~\\ 
-			\Item 	\textbf{3：}  不能推导\\
+			\Item 	\textbf{3：}  基本假设，不能从现有理论推导\\
             ~\\ 
             \begin{quote}
             "It is not possible to derive it from anything you know. It came out of the \alert{\faHeartbeat} of Schr$\ddot{o}$dinger"\\
@@ -91,7 +91,7 @@
     should be a sulotion of this equation
     \begin{equation*}
         \begin{split}
-       -i\hbar \nabla \psi(x,t) &=p\psi(x,t) \\
+       -i\hbar \nabla \psi(x,t) &=p\psi(x,t) \\ \vspace{0.6em}
        \hbar^2 \nabla^2 \psi(x,t) &=p^2\psi(x,t) \\
        \frac{\hbar^2}{2\mu} \nabla^2 \psi(x,t) &=\frac{p^2}{2\mu} \psi(x,t) , \qquad \cdots (1)
         \end{split}
@@ -108,12 +108,12 @@
     \end{equation*}
     For general wavefunction, it's a wave packet of plane wavefunction
     \begin{equation*}
-        \Psi(x,t)= \int\limits_{p=0} ^{\infty} c(p,t) e^{\frac{i}{\hbar}px}dp
+        \Psi(x,t)= \int\limits_{-\infty} ^{\infty} c(p,t) e^{\frac{i}{\hbar}px}dp
     \end{equation*}
     we get 
     \begin{equation*}
         \begin{split}
-        (i\hbar \frac{\partial }{\partial t} - \frac{\hbar^2}{2\mu} \nabla^2 )\Psi(x,t) &= \int\limits_{p=0} ^{\infty} c(p,t) (E-\frac{p^2}{2\mu}) e^{\frac{i}{\hbar}px}dp=0  \\
+        (i\hbar \frac{\partial }{\partial t} - \frac{\hbar^2}{2\mu} \nabla^2 )\Psi(x,t) &= \int\limits_{-\infty} ^{\infty} c(p,t) (E-\frac{p^2}{2\mu}) e^{\frac{i}{\hbar}px}dp=0  \\
         i\hbar \frac{\partial }{\partial t} \Psi(x,t) &= \frac{\hbar^2}{2\mu} \nabla^2 \Psi(x,t)
         \end{split}
     \end{equation*}
@@ -176,7 +176,7 @@
 \begin{frame}
     \frametitle{}
     \centering
-    \tcbb[0.5]{Significance }
+    \tcbb[0.68]{Significance }
     {
       \large {It's the most fundamental equation in quantum mechanics. 
       It's the starting point for every quantum mechanical system we want to describe: electrons, protons, neutrons, whatever.
@@ -231,7 +231,7 @@
     {\Bullet} 粒子数守恒定律\\ \vspace{0.3em}
     \begin{equation*}
         \begin{split}
-        \frac{d}{d t} \int\limits_{V} \omega d \tau &= \frac{d}{d t} \int\limits_{V} |\Psi(\vec{r}, t)|^{2} d \tau ,\qquad \cdots \qquad （V \to \infty）  \\
+        \frac{d}{d t} \int\limits_{V\to\infty} \omega d \tau &= \frac{d}{d t} \int\limits_{V\to\infty} |\Psi(\vec{r}, t)|^{2} d \tau  \\
         &=\frac{d}{d t} 1\\ 
         &=0
         \end{split}
@@ -267,7 +267,7 @@
 
 \begin{frame} 
     \frametitle{定态问题}
-    若势函数$V(\vec{r},t ) $若不显含时间 t，则时间变量可分离 \\ \vspace{0.3cm}
+    若势函数$V(\vec{r},t ) $不显含时间 t，则时间变量可分离 \\ \vspace{0.3cm}
     方程： { $ \displaystyle i \hbar \frac{\partial }{\partial t} \Psi (\vec{r},t ) =\left [- \frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r},t ) $}  \\  \vspace{0.3cm}
     \alert{解：}  设  $\Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) $ , 代回方程 \\ 
      { $ \displaystyle i\hbar \Psi (\vec{r})  \frac{\partial }{\partial t} f(t)=f(t) \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) $}  \\ 	
@@ -283,7 +283,7 @@
     是哈密顿算符 $\hat{H}$ 的本征方程。结合定解条件，可得能量本征值（$E_n$）及本征函数 $\Psi_{E_n} (\vec{r} )$ \\ \vspace{0.6em}
     \begin{definition}[定态：]
         \hspace{2em}能量有确定值的态称为定态，用定态波函数描述
-        \[ \Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) = \Psi_E (\vec{r} ) e^{-iEt/\hbar} \] 
+        \[ \Psi_{E_n} (\vec{r} ) e^{-i E_n t/\hbar} \] 
     \end{definition}
     依据态叠加原理，一般的态（叠加解）可表示为：
     \[ \Psi (\vec{r},t ) =\sum\limits_n c_n(t)\Psi_{E_n} (\vec{r} ) e^{-iE_n t/\hbar}  \]
