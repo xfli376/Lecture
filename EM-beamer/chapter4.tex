@@ -15,22 +15,23 @@
 \begin{frame}
 	\frametitle{氢原子薛定谔方程}
 	氢原子含一原子核和一核外电子，是二体问题。\\
-	哈密顿量为：
+	{\Bullet}哈密顿量为：
 	\begin{equation*}
 		H=\left[-\frac{\hbar^2}{2 m_1} \nabla_1 ^2 + V(\vec{r_1},t) \right]  + \left[-\frac{\hbar^2}{2 m_2} \nabla_2 ^2 + V(\vec{r_2},t) \right]  +U(| \vec{r_1}-\vec{r_2} | )
 	\end{equation*}
-	其中 V为，U为库仑势：
+	其中 V为背景势，U为库仑势(相互作用势)：
 	\begin{equation*}
 		U(| \vec{r_1}-\vec{r_2} | )=-\frac{e_s ^2}{| \vec{r_1}-\vec{r_2} |} ~~,~~~ e_s =\frac{Ze}{\sqrt{4\pi\epsilon_0}}
 	\end{equation*}
 \end{frame}
 
 \begin{frame}
-	薛定谔方程为：
+	\frametitle{}
+	{\Bullet}薛定谔方程为：
 	\begin{equation*}
 		i\hbar \frac{\partial }{\partial t} \Psi (\vec{r_1},\vec{r_2},t ) =H (\vec{r_1},\vec{r_2}, t  )  \Psi (\vec{r_1},\vec{r_2},t ) 
 	\end{equation*}
-	当背景势Ｖ不显含时间t，时空可分离变量。解得时间函数：
+	{\Bullet}当背景势Ｖ不显含时间t，时空可分离变量。解得的时间函数为：
 	\begin{equation*}
 		f(t) =e^{-iEt/\hbar}
 	\end{equation*}
@@ -41,94 +42,116 @@
 \end{frame}		
 
 \begin{frame}
-	\frametitle{相对坐标}
-	设背景势V=0，简化为：
+	\frametitle{}
+	对于自由氢原子,背景势V=0，方程简化为：
 	\begin{equation*}
 		\left[-\frac{\hbar^2}{2 m_1} \nabla_1 ^2  -\frac{\hbar^2}{2 m_2} \nabla_2 ^2 +U(| \vec{r_1}-\vec{r_2} | ) \right] \Psi (\vec{r_1},\vec{r_2}) =E \Psi (\vec{r_1},\vec{r_2}) 
 	\end{equation*}
-	引入相对坐标和质心坐标，令：\\
-	$\displaystyle \begin{cases}
-		\vec{r} (x,y,z)= \vec{r_1}-\vec{r_2}   \\
-		\vec{R} (X,Y,Z)= \dfrac{ m_1\vec{r_1}+ m_2\vec{r_2}  }{ m_1+m_2}
-	\end{cases}$ \\	
-	$\displaystyle \begin{cases}
-		M= m_1+m_2   \\
-		m = \dfrac{m_1m_2}{m_1+m_2}
-	\end{cases}$ \\	
+	其中, 
+	\begin{equation*}
+		U(| \vec{r_1}-\vec{r_2} | )=-\frac{e_s ^2}{| \vec{r_1}-\vec{r_2} |} 
+	\end{equation*}
+	这是一个6维势,决定着方程求解的难度.
 \end{frame}		
 
 \begin{frame}
-	对坐标函数：
+	\frametitle{相对坐标}
+	{\Bullet} 引入相对坐标和质心坐标\\ \vspace{0.6em}
+	令：(1)
+	$\displaystyle \begin{cases}
+		\vec{r} (x,y,z)= \vec{r_1}-\vec{r_2}  , \qquad \text{(相对坐标)} \\ \vspace{0.3em}
+		\vec{R} (X,Y,Z)= \dfrac{ m_1\vec{r_1}+ m_2\vec{r_2}  }{ m_1+m_2} , \qquad \text{(质心坐标)} 
+	\end{cases}$ \\	
+	\hspace{1.6em} (2)
+	$\displaystyle \begin{cases}
+		m = \dfrac{m_1m_2}{m_1+m_2}, \qquad \text{(折合质量)}\\
+		M= m_1+m_2,  \qquad \text{(质心质量)}
+	\end{cases}$ \\	\vspace{1em}
+	可实现变量分离!
+\end{frame}		
+
+\begin{frame}
+	有坐标函数：
 	$\displaystyle \begin{cases}
 		\vec{r_1}= f_1(\vec{r},\vec{R}) \\
 		\vec{r_2}= f_2(\vec{r},\vec{R}) 
 	\end{cases}$ \\	
-	求导：
+	对其求导：
 	\begin{equation*}
-		\dfrac{d}{dx_1}= \dfrac{\partial}{\partial X}  \dfrac{\partial X}{ \partial x_1} +\dfrac{\partial }{\partial x}  \dfrac{\partial x}{\partial x_1} 
-		= \dfrac{m_1}{M}  \dfrac{\partial }{ \partial X} +\dfrac{\partial }{\partial x} 
-	\end{equation*}
-	\begin{equation*}
-		\dfrac{d^2}{dx^2 _1}= \dfrac{m^2 _1}{M^2 }  \dfrac{\partial^2 }{ \partial X^2} + \dfrac{2m _1}{M }  \dfrac{\partial^2 }{ \partial X \partial x}+\dfrac{\partial ^2 }{\partial x^2} 
-	\end{equation*}
-	\begin{equation*}
-		\nabla ^2 _1= \dfrac{m^2 _1}{M^2 }  \nabla ^2 _R + \dfrac{2m _1}{M }  (\dfrac{\partial^2 }{ \partial X \partial x} +  \dfrac{\partial^2 }{ \partial Y \partial y} + \dfrac{\partial^2 }{ \partial Z \partial z})    + \nabla ^2 
-	\end{equation*}
-	\begin{equation*}
-		\nabla ^2 _2= \dfrac{m^2 _2}{M^2 }  \nabla ^2 _R - \dfrac{2m _2}{M }  (\dfrac{\partial^2 }{ \partial X \partial x} +  \dfrac{\partial^2 }{ \partial Y \partial y} + \dfrac{\partial^2 }{ \partial Z \partial z})    + \nabla ^2 
+		\begin{split}
+		\dfrac{d}{dx_1}= &\dfrac{\partial}{\partial X}  \dfrac{\partial X}{ \partial x_1} +\dfrac{\partial }{\partial x}  \dfrac{\partial x}{\partial x_1} 
+		= \dfrac{m_1}{M}  \dfrac{\partial }{ \partial X} +\dfrac{\partial }{\partial x} \\ \vspace{0.3em}
+		\dfrac{d^2}{dx^2 _1}= &\dfrac{m^2 _1}{M^2 }  \dfrac{\partial^2 }{ \partial X^2} + \dfrac{2m _1}{M }  \dfrac{\partial^2 }{ \partial X \partial x}+\dfrac{\partial ^2 }{\partial x^2} \\		
+		\nabla ^2 _1= &\dfrac{m^2 _1}{M^2 }  \nabla ^2 _R + \dfrac{2m _1}{M }  (\dfrac{\partial^2 }{ \partial X \partial x} +  \dfrac{\partial^2 }{ \partial Y \partial y} + \dfrac{\partial^2 }{ \partial Z \partial z})    + \nabla ^2 _r  \\
+		\nabla ^2 _2= &\dfrac{m^2 _2}{M^2 }  \nabla ^2 _R - \dfrac{2m _2}{M }  (\dfrac{\partial^2 }{ \partial X \partial x} +  \dfrac{\partial^2 }{ \partial Y \partial y} + \dfrac{\partial^2 }{ \partial Z \partial z})    + \nabla ^2 _r
+		\end{split}
 	\end{equation*}
 \end{frame}		
 
 \begin{frame}
 	结合在一起，得:	
 	\begin{equation*}
-		\dfrac{1}{m_1}\nabla ^2 _1	+ \dfrac{1}{m_2}\nabla ^2 _2 = \dfrac{1}{M}\nabla ^2 _R+ \dfrac{1}{m}\nabla ^2 
+		\dfrac{1}{m_1}\nabla ^2 _1	+ \dfrac{1}{m_2}\nabla ^2 _2 = \dfrac{1}{M}\nabla ^2 _R+ \dfrac{1}{m}\nabla ^2 _r
 	\end{equation*}	
 	代回简化后的方程，得：
 	\begin{equation*}
-		\left[-\frac{\hbar^2}{2 M} \nabla_R ^2  -\frac{\hbar^2}{2 m} \nabla^2 +U(\vec{r} ) \right] \Psi (\vec{R},\vec{r}) =E \Psi (\vec{R},\vec{r}) 
+		\left[-\frac{\hbar^2}{2 M} \nabla_R ^2  -\frac{\hbar^2}{2 m} \nabla_r ^2 +U(\vec{r} ) \right] \Psi (\vec{R},\vec{r}) =E \Psi (\vec{R},\vec{r}) 
 	\end{equation*}
-	相对和质心坐标可分离变量，
+	相对和质心坐标可分离变量! \\ 
+	令： $\Psi (\vec{R},\vec{r}) = \psi (\vec{R}) \Psi (\vec{r})  $, 代入上方程，
 \end{frame}		
 
 \begin{frame}
-	令： $\Psi (\vec{R},\vec{r}) = \psi (\vec{R}) \Psi (\vec{r})  $, 代入上方程，得方程（1）：
+	\frametitle{质心运动方程}
+	得方程（1）：
 	\begin{equation*}
 		-\frac{\hbar^2}{2 M} \nabla_R ^2  \psi (\vec{R}) =E_c \psi (\vec{R})  ..... (1)
 	\end{equation*}	
-	这是二体的质心运动方程，解为自由粒子平面波：
+	这是质心运动方程，解为自由粒子平面波：
 	\begin{equation*}
 	\psi (\vec{R},t)=-\frac{1}{(2\pi\hbar)^{3/2}}e^{-\frac{i}{\hbar}(E_c t -\vec{p}\cdot\vec{R})}
 	\end{equation*}
-	方程（2）：
+\end{frame}		
+
+\begin{frame}
+	\frametitle{相对运动方程}
+	不失一般性,方程（2）写为：
 	\begin{equation*}
 		\left[-\frac{\hbar^2}{2 m} \nabla ^2 +U(\vec{r}) \right] \Psi (\vec{r}) =E \Psi (\vec{r})   ..... (2)
 	\end{equation*}
-	这是二体相对运动方程，核与核外电子相对质心的运动方程。是核外电子相对于核的运动方程的近似！
+	这是相对运动方程，是核与核外电子相对于质心的运动方程.\\
+	可以近似地看成是核外电子相对于核的运动方程.
 \end{frame}	
+
+\begin{frame}
+	其中,
+	\begin{equation*}
+		U(\vec{r})=U(| \vec{r_1}-\vec{r_2} | )=-\frac{e_s ^2}{| \vec{r_1}-\vec{r_2} |} = -\frac{e_s ^2}{r} ~~,~~~ r =\sqrt{x^2+y^2+z^2}
+	\end{equation*}
+	 有
+	\begin{equation*}
+		U(r)=-\frac{e_s ^2}{r}
+	\end{equation*}	
+	是一个与角量无关的物理量。 \\
+	若改用球坐标系描述方程（2）, 则经向r可分离变量!\\
+	\begin{equation*}
+		\left[-\frac{\hbar^2}{2 \mu} \nabla ^2 +U(r) \right] \Psi (\vec{r}) =E \Psi (\vec{r})   ..... (2)
+	\end{equation*}
+	因此要求普拉斯算子$\nabla ^2$的球坐标系形式
+\end{frame}		
 
 \subsection{球坐标拉普拉斯}
 
 \begin{frame}
-	U为库仑势：
-	\begin{equation*}
-		U(\vec{r})=-\frac{e_s ^2}{r} ~~,~~~ r =\sqrt{x^2+y^2+z^2}
-	\end{equation*}	
-	与角量无关。 方程（2）应改用球坐标系描述。\\
-	\begin{equation*}
-		\left[-\frac{\hbar^2}{2 \mu} \nabla ^2 +U(r) \right] \Psi (\vec{r}) =E \Psi (\vec{r})   ..... (2)
-	\end{equation*}
-	问题的关键在如何把$(x,y,z)$的$\nabla ^2$用$(r,\theta,\varphi)$坐标系进行描述
-\end{frame}	
-
-\begin{frame}
-	\frametitle{ 球坐标拉普拉斯算子 }
-	已知（x,y,z）坐标系下的拉普拉斯算子为
-	\begin{equation*}
+	\frametitle{球坐标拉普拉斯算子}
+	\例[1.已知x,y,z）坐标系下的拉普拉斯算子为] 
+	{\begin{equation*}
 		\nabla ^{2}  = \dfrac{\partial ^2}{\partial x^2} +\dfrac{\partial^2 }{\partial y^2} +\dfrac{\partial^2  }{\partial z^2}
-	\end{equation*}
+	\end{equation*}\\
 	求 （$r, \theta, \varphi $）坐标系下的拉普拉斯算子 \\ \vspace{0.3cm}
-	\alert{解：}  坐标的变换关系为：\\
+	}
+	
+	\alert{解：}  坐标变换关系为：\\
 	$\begin{cases}
 		x= r\sin \theta \cos \varphi \\
 		y= r\sin \theta \sin \varphi \\
@@ -137,26 +160,26 @@
 \end{frame}	
 
 \begin{frame}
-	对函数$u(x,y,z)$，进行 $r, \theta, \varphi $求导，有：\\
+	对函数$u(x,y,z)$，进行 $r, \theta, \varphi $求导，有：\\ \vspace{0.6em}
 	{\small $\begin{cases}
-		\dfrac{\partial {u}}{\partial {r}}=\dfrac{\partial {u}}{\partial x} \dfrac{\partial {x}}{\partial {r}}+\dfrac{\partial u}{\partial {u}} \dfrac{\partial {y}}{\partial {r}}+\dfrac{\partial u}{\partial z} \dfrac{\partial z}{\partial {r}} \\
-		\dfrac{\partial {u}}{\partial \theta}=\dfrac{\partial {u}}{\partial x} \dfrac{\partial{x}}{\partial \theta}+\dfrac{\partial u}{\partial {u}} \dfrac{\partial {y}}{\partial \theta}+\dfrac{\partial{u}}{\partial z} \dfrac{\partial z}{\partial \theta} \\
+		\dfrac{\partial {u}}{\partial {r}}=\dfrac{\partial {u}}{\partial x} \dfrac{\partial {x}}{\partial {r}}+\dfrac{\partial u}{\partial {y}} \dfrac{\partial {y}}{\partial {r}}+\dfrac{\partial u}{\partial z} \dfrac{\partial z}{\partial {r}} \\ \vspace{0.3em}
+		\dfrac{\partial {u}}{\partial \theta}=\dfrac{\partial {u}}{\partial x} \dfrac{\partial{x}}{\partial \theta}+\dfrac{\partial u}{\partial {y}} \dfrac{\partial {y}}{\partial \theta}+\dfrac{\partial{u}}{\partial z} \dfrac{\partial z}{\partial \theta} \\ \vspace{0.3em}
 		\dfrac{\partial {u}}{\partial \varphi}=\dfrac{\partial u}{\partial x} \dfrac{\partial{x}}{\partial \varphi}+\dfrac{\partial u}{\partial y} \dfrac{\partial y}{\partial \varphi}+\dfrac{\partial u}{\partial z} \dfrac{\partial z}{\partial \varphi}
-	\end{cases} $}\\
+	\end{cases} $}\\ \vspace{1em}
 	{\small $\left[\begin{array}{ccc}
-		\dfrac{\partial u}{\partial r} \\
-		\dfrac{\partial u}{\partial \theta} \\
+		\dfrac{\partial u}{\partial r} \\ \vspace{0.3em}
+		\dfrac{\partial u}{\partial \theta} \\ \vspace{0.3em}
 		\dfrac{\partial u}{\partial \varphi}
 	\end{array}\right]$
 	=
 	$\left[\begin{array}{ccc}
-		\sin \theta \cos \varphi & \sin \theta \sin \varphi & \cos \theta \\
-		r \cos \theta \cos \varphi & r \cos \theta \sin \varphi & -r \sin \theta \\
+		\sin \theta \cos \varphi & \sin \theta \sin \varphi & \cos \theta \\ \vspace{0.3em}
+		r \cos \theta \cos \varphi & r \cos \theta \sin \varphi & -r \sin \theta \\ \vspace{0.3em}
 		-r \sin \theta \sin \varphi & r \sin \theta \cos \varphi & 0
 	\end{array}\right]$
 	$\left[\begin{array}{ccc}
-		\dfrac{\partial u}{\partial x} \\
-		\dfrac{\partial u}{\partial y} \\
+		\dfrac{\partial u}{\partial x} \\ \vspace{0.3em}
+		\dfrac{\partial u}{\partial y} \\ \vspace{0.3em}
 		\dfrac{\partial u}{\partial z}
 	\end{array}\right]$
 	}
@@ -165,57 +188,57 @@
 \begin{frame}
 	\small {$
 		\left[\begin{array}{ccc}
-			\dfrac{\partial u}{\partial r} \\
-			\dfrac{\partial u}{\partial \theta} \\
-			\dfrac{\partial u}{\partial \varphi}
+			\dfrac{\partial u}{\partial x} \\
+			\dfrac{\partial u}{\partial y} \\
+			\dfrac{\partial u}{\partial z}
 		\end{array}\right]$
 		=
 		$\left[\begin{array}{ccc}
-			\sin \theta \cos \varphi & \sin \theta \sin \varphi & \cos \theta \\
-			\cos \theta \cos \varphi &  \cos \theta \sin \varphi & - \sin \theta \\
-			- \sin \varphi & \cos \varphi & 0
+			\sin \theta \cos \varphi & \cos \theta \cos \varphi & -\sin \varphi \\
+			\sin \theta \sin \varphi &  \cos \theta \sin \varphi &  \cos \varphi \\
+			\cos \theta & -\sin \theta & 0
 		\end{array}\right]$
 		$\left[\begin{array}{ccc}
-			\dfrac{\partial u}{\partial x} \\
-			\dfrac{1}{r}\dfrac{\partial u}{\partial y} \\
-			\dfrac{1}{r \sin \theta}\dfrac{\partial u}{\partial z}
+			\dfrac{\partial u}{\partial r} \\
+			\dfrac{1}{r}\dfrac{\partial u}{\partial \theta} \\
+			\dfrac{1}{r \sin \theta}\dfrac{\partial u}{\partial \varphi}
 		\end{array}\right]
 		$}	\\ \vspace{0.3cm}
 	\small {$
 		\left[\begin{array}{ccc}
-			\dfrac{\partial u}{\partial r} \\
-			\dfrac{\partial u}{\partial \theta} \\
-			\dfrac{\partial u}{\partial \varphi}
+			\dfrac{\partial u}{\partial x} \\
+			\dfrac{\partial u}{\partial y} \\
+			\dfrac{\partial u}{\partial z}
 		\end{array}\right]$
 		=
 		$\left[\begin{array}{ccc}
-			{e_r}&  {e_\theta} & {e_\varphi}
+			{\vec{e}_r}&  {\vec{e}_\theta} & {\vec{e}_\varphi}
 		\end{array}\right]$
 		$\left[\begin{array}{ccc}
-			\dfrac{\partial u}{\partial x} \\
-			\dfrac{1}{r}\dfrac{\partial u}{\partial y} \\
-			\dfrac{1}{r \sin \theta}\dfrac{\partial u}{\partial z}
+			\dfrac{\partial u}{\partial r} \\
+			\dfrac{1}{r}\dfrac{\partial u}{\partial \theta} \\
+			\dfrac{1}{r \sin \theta}\dfrac{\partial u}{\partial \varphi}
 		\end{array}\right]
-		$}	\\
+		$}	\\ \vspace{1em}
+	球坐标系下, 有:
 	\begin{equation*}
-		\to	\nabla=e_{r} \frac{\partial}{\partial r}+\frac{1}{r} e_{\theta} \frac{\partial}{\partial \theta}+\frac{1}{r \sin \theta} e_{\varphi} \frac{\partial}{\partial \varphi}
+	\nabla=\vec{e}_{r} \frac{\partial}{\partial r}+\frac{1}{r} \vec{e}_{\theta} \frac{\partial}{\partial \theta}+\frac{1}{r \sin \theta} \vec{e}_{\varphi} \frac{\partial}{\partial \varphi}
 	\end{equation*}
 \end{frame}	
 
 \begin{frame}
-	$	\nabla ^2= 	\nabla \cdot \nabla $\\
 	\begin{equation*}
-		=(e_{r} \frac{\partial}{\partial r}+\frac{1}{r} e_{\theta} \frac{\partial}{\partial \theta}+\frac{1}{r \sin \theta} e_{\varphi} \frac{\partial}{\partial \varphi})  \cdot (e_{r} \frac{\partial}{\partial r}+\frac{1}{r} e_{\theta} \frac{\partial}{\partial \theta}+\frac{1}{r \sin \theta} e_{\varphi} \frac{\partial}{\partial \varphi}) 
-	\end{equation*}
-	\begin{equation*}
-		= \frac{\partial ^2}{\partial r^2} + ( \frac{1}{r} \frac{\partial}{\partial r} + \frac{1}{r^2} \frac{\partial^2} {\partial \theta ^2}  ) + (\frac{1}{r} \frac{\partial}{\partial r}  + \frac{\cos \theta}{r^2 \sin \theta} \frac{\partial} {\partial \theta }  + \frac{1}{r^2 \sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2} )
-	\end{equation*}
-	\begin{equation*}
-		=\frac{1}{r^2} \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} )+
+	\begin{split}
+		\nabla ^2&=\nabla \cdot \nabla \\
+		&=(\vec{e}_{r} \frac{\partial}{\partial r}+\frac{1}{r} \vec{e}_{\theta} \frac{\partial}{\partial \theta}+\frac{1}{r \sin \theta} \vec{e}_{\varphi} \frac{\partial}{\partial \varphi})  \cdot (\vec{e}_{r} \frac{\partial}{\partial r}+\frac{1}{r} \vec{e}_{\theta} \frac{\partial}{\partial \theta}+\frac{1}{r \sin \theta} \vec{e}_{\varphi} \frac{\partial}{\partial \varphi}) \\
+		&=\frac{\partial ^2}{\partial r^2} + ( \frac{1}{r} \frac{\partial}{\partial r} + \frac{1}{r^2} \frac{\partial^2} {\partial \theta ^2}  ) + (\frac{1}{r} \frac{\partial}{\partial r}  + \frac{\cos \theta}{r^2 \sin \theta} \frac{\partial} {\partial \theta }  + \frac{1}{r^2 \sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2} )\\
+		&=\frac{1}{r^2} \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} )+
 		\frac{1}{r^2 \sin \theta  } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial \theta } )
 		+\frac{1}{r^2 \sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2}
+	\end{split}
 	\end{equation*}
-	tips：利用单位矢的正交归一性和微分性质进行计算（见讲义 15页）
+
+	{\Bullet}~利用球坐标单位矢(1)正交归一性和(2)微分性质完成计算（见讲义 15页）
 \end{frame}	
 
 \begin{frame}
@@ -223,7 +246,7 @@
 	\begin{equation*}
 		\nabla ^{2}  = \dfrac{\partial ^2}{\partial x^2} +\dfrac{\partial^2 }{\partial y^2} +\dfrac{\partial^2  }{\partial z^2}
 	\end{equation*}
-	球坐标~ $	(r,\theta, \varphi )$ ：
+	球坐标~ $(r,\theta, \varphi )$ ：
 	\begin{equation*}
 		\nabla ^{2} =\frac{1}{r^2} \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} )+
 		\frac{1}{r^2 \sin \theta  } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial \theta } )
@@ -239,34 +262,48 @@
 		\nabla ^{2} =\frac{1}{r^2} \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} )-
 		\frac{1}{r^2 } L^2 
 	\end{equation*}	
+	的确它由径向和角向二部分加和构成,因此可实现径向和角向的分离变量!
 \end{frame}	
 
 \begin{frame}
-	\frametitle{ 角向算符与角动量算符 }	
-	角向算子：
+	\frametitle{角向与角动量的关系}	
+	角向(方)算子：
 	\begin{equation*}
 		L^2 = - \left[ \frac{1}{ \sin \theta  } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial \theta } )
 		+\frac{1}{ \sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2} \right]
 	\end{equation*}	
-    角动量算子：
+    角动量(方)算子：
 		\begin{equation*}
 		L^2 = -\hbar ^2 \left[ \frac{1}{ \sin \theta  } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial \theta } )
 		+\frac{1}{ \sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2} \right]
 	\end{equation*}	
-	角动量的径向和切向分量
+	动量的切向分量
 	\begin{equation*}
-	p_r ^2 = -\hbar ^2  \frac{1}{r^2} \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} )  ,~~~~	p_ \perp  ^2 =  \frac{L^2}{r^2}
+	p_ \perp  ^2 =  \frac{L^2}{r^2}
 	\end{equation*}	
+	动量的径向分量
+	\[ p_r ^2 = -\hbar ^2  \frac{1}{r^2} \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} ) \]
 \end{frame}		
 
 \begin{frame}
-	\frametitle{ 求角动量算符 }	
+	得动量算子: 
+	\[ \hspace{1em}\hat{p}^2 =-\hbar ^2 \nabla ^{2}
+		\]
+	\[ \hat{p} =-i\hbar \nabla \quad \text{or} \quad i\hbar \nabla\]
+	在球坐标系下,
+	\[ \hat{p} =-i\hbar  ( \vec{e}_{r} \frac{\partial}{\partial r}+\frac{1}{r} \vec{e}_{\theta} \frac{\partial}{\partial \theta}+\frac{1}{r \sin \theta} \vec{e}_{\varphi} \frac{\partial}{\partial \varphi})
+		\]
+\end{frame}		
+
+\begin{frame}
+	\frametitle{位置算子 }	
 	$\begin{cases}
 		x= r\sin \theta \cos \varphi \\
 		y= r\sin \theta \sin \varphi \\
 		z=r\cos \theta
-	\end{cases} $\\  \vspace{0.3cm}
-	矩阵形式： \\
+	\end{cases} $\\ 
+	~~\\
+	矩阵形式： \\ \vspace{0.6em}
 	$
 	\left[\begin{array}{ccc}
 		x \\
@@ -280,154 +317,161 @@
 		r\cos \theta
 	\end{array}\right]$	
 	=
-	$r e_r$ \\ \vspace{0.3cm}
-	动量算子： 
-	\begin{equation*}
-		\hat{p}=-i\hbar	\nabla  =  -i\hbar  ( e_{r} \frac{\partial}{\partial r}+\frac{1}{r} e_{\theta} \frac{\partial}{\partial \theta}+\frac{1}{r \sin \theta} e_{\varphi} \frac{\partial}{\partial \varphi})
-	\end{equation*}
+	$r \vec{e}_r$ \\ \vspace{0.3cm}
+	球坐标系下,位置算子:
+	\[ \qquad \hat{r}=r \vec{e}_r \]
 \end{frame}	
 
 \begin{frame}
-	角动量: $ \vec{L}= \vec{r}\times \vec{p} $\\
-	算子为：
+	角动量: $ \vec{L}= \vec{r}\times \vec{p} $, \\
+	球坐标系下,角动量算子：
 	\begin{equation*}
-		\hat{L}= \hat{r}\times \hat{p} = -i \hbar r e_r \times \nabla  
+		\hat{L}= \hat{r}\times \hat{p} = -i \hbar r \vec{e}_r \times \nabla  
 	\end{equation*}
 	\begin{equation*}
-		\hat{L}=   -i \hbar   ( e_{\varphi} \frac{\partial}{\partial \theta} - \frac{1}{\sin \theta}  e_{\theta} \frac{\partial}{\partial \varphi} )
+		\hat{L}=   -i \hbar   ( \vec{e}_{\varphi} \frac{\partial}{\partial \theta} - \frac{1}{\sin \theta}  \vec{e}_{\theta} \frac{\partial}{\partial \varphi} )
 	\end{equation*}
-	角动量的Z分量： 
+	\begin{equation*}
+		\begin{split}
+		\hat{L}	^2 &=   - \hbar ^2  ( e_{\varphi} \frac{\partial}{\partial \theta} - \frac{1}{\sin \theta}  e_{\theta} \frac{\partial}{\partial \varphi} )  \cdot   ( e_{\varphi} \frac{\partial}{\partial \theta} - \frac{1}{\sin \theta}  e_{\theta} \frac{\partial}{\partial \varphi} ) \\
+		&= - \hbar ^2 (\frac{1}{\sin \theta  } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial \theta } )
+		+\frac{1}{\sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2} ) 	
+		\end{split}
+	\end{equation*}
+	正是前面的假设, 完全自洽!\\ \vspace{1em}
+
+	同样, 可得到角动量的Z分量 (不证)：
 	\begin{equation*}
 		\hat{L}_z= -i \hbar \frac{\partial }{\partial\varphi }
 	\end{equation*}	
-	\begin{equation*}
-		\hat{L}	^2 =   - \hbar ^2  ( e_{\varphi} \frac{\partial}{\partial \theta} - \frac{1}{\sin \theta}  e_{\theta} \frac{\partial}{\partial \varphi} )  \cdot   ( e_{\varphi} \frac{\partial}{\partial \theta} - \frac{1}{\sin \theta}  e_{\theta} \frac{\partial}{\partial \varphi} )
-	\end{equation*}
-	\begin{equation*}
-		\hat{L}	^2 =  - \hbar ^2 (\frac{1}{\sin \theta  } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial \theta } )
-		+\frac{1}{\sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2} ) 
-	\end{equation*}
 \end{frame}	
 
 %#############################################
-\subsection{球坐标氢原子方程 }	
+\subsection{球坐标系氢原子方程 }	
 
 \begin{frame}
-	\frametitle{ 球坐标氢原子方程 }	
+	\frametitle{ 球坐标系氢原子方程 }	
 	球坐标下的哈密顿量 （折合质量$m$计为 $\mu$）：
 	\begin{equation*}
-		H=-\frac{\hbar^2}{2 \mu r^2}  \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} ) +  \frac{\hbar^2}{2 \mu r^2} L^2  -\frac{e_s ^2}{r} 
-		= \frac{1}{2 \mu } p_r ^2 +  \frac{1}{2 \mu r^2} L^2  -\frac{e_s ^2}{r} 
+		\begin{split}
+		H&=-\frac{\hbar^2}{2 \mu r^2}  \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} ) +  \frac{\hbar^2}{2 \mu r^2} L^2  -\frac{e_s ^2}{r} \\
+		&= \frac{1}{2 \mu } p_r ^2 +  \frac{1}{2 \mu r^2} L^2  -\frac{e_s ^2}{r} 	
+		\end{split}	
 	\end{equation*}	
-	球坐标氢原子定态方程：	
+	球坐标系氢原子定态方程：	
 	\begin{equation*}
-		\left[ \frac{1}{2 \mu } p_r ^2 +  \frac{1}{2 \mu }	p_ \perp  ^2  -\frac{e_s ^2}{r}  \right] \Psi (r,\theta,\varphi) =E \Psi (r,\theta,\varphi)  
+		\left[ (\frac{1}{2 \mu } p_r ^2  -\frac{e_s ^2}{r})  +\frac{1}{2 \mu }	p_ \perp  ^2   \right] \Psi (r,\theta,\varphi) =E \Psi (r,\theta,\varphi)  
 	\end{equation*}	
 	方程可做动量的径向/切向分离.......\\
 \end{frame}		
 
 \begin{frame}
-	为了与数学方程统一，采用角向算符 $L^2$（与角动量算符差一个$\hbar ^2$）:
+	为了与数学方程统一,先不考虑物理意义,仅采用角向(方)算子 $L^2$（与角动量(方)算子差~$\hbar ^2$）:
 	\begin{equation*}
-		L^2 =  \left[ \frac{1}{ \sin \theta  } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial \theta } )
+		L^2 =  -\left[ \frac{1}{ \sin \theta  } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial \theta } )
 		+\frac{1}{ \sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2} \right]
 	\end{equation*}	
-	球坐标系下的方程形式变为：
+	球坐标系下的方程为：
 	\begin{equation*}
-		\left[-\frac{\hbar^2}{2 \mu r^2}  \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} ) -  \frac{\hbar ^2 }{2 \mu r^2} L^2  -\frac{e_s ^2}{r} \right] \Psi
+		\left[-\frac{\hbar^2}{2 \mu r^2}  \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} ) +  \frac{\hbar ^2 }{2 \mu r^2} L^2  -\frac{e_s ^2}{r} \right] \Psi
 		=E\Psi
 	\end{equation*}	
-	数学上的径向/角向分离，令： 
+	数学上的径向/角向分离变量，令： 
 	\begin{equation*}
 		\Psi=R (r) Y(\theta,\varphi)
 	\end{equation*}	
 	代回原方程，得：
 	\begin{equation*}
-		-\frac{ L^2 Y}{Y}= \frac{1}{R}   \frac{\partial }{\partial r} (r^2\frac{\partial R }{\partial r} ) + \frac{2 \mu r^2} {\hbar^2}(E+ \frac{e_s ^2}{r} )=\lambda
+		\frac{ L^2 Y}{Y}= \frac{1}{R}   \frac{\partial }{\partial r} (r^2\frac{\partial R }{\partial r} ) + \frac{2 \mu r^2} {\hbar^2}(E+ \frac{e_s ^2}{r} )=\lambda
 	\end{equation*}	
 \end{frame}		
 
 \begin{frame}
-	氢原子的空间方程在球坐标系下分离成两个方程：	\\
+	氢原子的定态方程在球坐标系下变量分离,得两个方程：	\\
 	(1)角向方程：
 	\begin{equation*}
-		L^2 Y=-\lambda Y 
+		L^2 Y=\lambda Y
 	\end{equation*}	
 	(2)径向方程：
 	\begin{equation*}
 		\frac{d}{d r} (r^2\frac{d R }{d r} ) + \frac{2 \mu r^2} {\hbar^2}(E+ \frac{e_s ^2}{r} ) R =\lambda R
 	\end{equation*}	
-	分别求解径向/角向方程...
+	下面分别求解数学上的角向/径向方程...
 \end{frame}	
 
 \begin{frame}
 	\frametitle{ 作业 }
-	1、求基向量($e_r, e_\theta, e_\varphi$) 点积和叉积的运算规律\\
+	1、求基向量($\vec{e}_r, \vec{e}_\theta, \vec{e}_\varphi$) 点积和叉积的运算规律\\
 	2、求如下偏分
 	\begin{equation*}
 	\frac{\partial }{\partial \theta}  e_\theta, \qquad \frac{\partial }{\partial \theta}  e_r 
 	\end{equation*}	
-    3、角向算子与角动量算子有什么区别？
+    3、角向算子与角动量算子有什么区别？ \\
+	4、为什么只有氢原子薛定谔方程可以精确求解?
 \end{frame}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{2.角向方程与勒让德多项式}
 
-\subsection{ 经/纬度分离}
+\subsection{ 经/纬分离}
 
 \begin{frame}
-	\frametitle{经纬度分离变量}
-	角向方程：
+	\frametitle{角向方程分离变量}
+	(1)角向方程：
 	\begin{equation*}
-		L^2 Y=-\lambda Y  \to  L^2 Y=-l(l+1) Y 
+		L^2 Y=\lambda Y
+	\end{equation*}	
+	令 $\lambda=l(l+1) $ 课外参考 \href{https://zhuanlan.zhihu.com/p/133865994}{点这里}
+	\begin{equation*}
+		L^2 Y=l(l+1) Y
 	\end{equation*}	
 	代入角向算子：
 	\begin{equation*}
 		\left[ \frac{1}{ \sin \theta  } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial \theta } )
-		+\frac{1}{ \sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2} \right] Y=-l(l+1) Y 
+		+\frac{1}{ \sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2}  +l(l+1) \right] Y=0 
 	\end{equation*}	
-	可进一步进行经/纬度变量分离，令：
+	方程可进一步分离变量，令：
 	\begin{equation*}
 		Y(\theta,\varphi)= \Theta(\theta) \Phi(\varphi)
 	\end{equation*}	
-	代回上方程。得：
+	代回上方程,得:
 \end{frame}	
 
 \begin{frame}
 	\begin{equation*}
 		\Phi \frac{1}{\sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)+\Theta \frac{1}{\sin ^{2} \theta} \frac{d^{2} \Phi}{d \varphi^{2}}+l(l+1) \Theta \Phi=0
 	\end{equation*}	
-	整理得：
+	整理：
 	\begin{equation*}
 		\frac{\sin ^{2} \theta}{\Theta \sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)+\sin ^{2} \theta l(l+1)=-\frac{1}{\Phi} \frac{d^{2} \Phi}{d \varphi^{2}}=\lambda
 	\end{equation*}	
-	分离变量，得（1）经度方程：
+	（1）经度方程：
 	\begin{equation*}
-		\frac{d^{2} \Phi}{d \varphi^{2}}+\lambda \Phi=0,(0<\varphi<2 \pi)
+		\frac{d^{2} \Phi}{d \varphi^{2}}+\lambda \Phi=0,(0<\varphi\le2 \pi)
 	\end{equation*}	
 	（2）纬度方程：
 	\begin{equation*}
-		\frac{1}{\sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)+\left[l(l+1)-\frac{\lambda}{\sin ^{2} \theta}\right] \Theta=0
+		\frac{1}{\sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)+\left[l(l+1)-\frac{\lambda}{\sin ^{2} \theta}\right] \Theta=0,(0<\theta \le \pi)
 	\end{equation*}	
 \end{frame}	
 
+\subsection{解经度方程}
+
 \begin{frame}
 	\frametitle{解经度方程}
-	经度方程是周期性边界条件固有值问题:\\
-	$
-	\begin{array}{l}
-		\dfrac{d^{2} \Phi}{d \varphi^{2}}+\lambda \Phi=0,0<\varphi<2 \pi \\ \vspace{1cm}
+	经度方程是周期性边界条件下的固有值问题:\\
+	\[\begin{cases}
+		\dfrac{d^{2} \Phi}{d \varphi^{2}}+\lambda \Phi=0,0<\varphi<2 \pi \\ 
 		\Phi(0)=\Phi(2 \pi), \Phi^{\prime}(0)=\Phi^{\prime}(2 \pi)
-	\end{array}
-	$\\
-	特征方程有两虚根，对应固有值和固有函数为：\\
-	$
-	\begin{array}{l}
-		\lambda=m^2, ~~~ (m=0,1,2,\cdots) \\ \vspace{1cm}
-		\Phi(\varphi)=A\cos m\varphi+B\sin m\varphi
-	\end{array}
-	$\\
-	写指数形式
+	\end{cases}\]
+	
+	特征方程有两虚根，对应固有值和固有函数为：
+	\[\begin{cases}
+		\lambda=m^2, ~~~ (m=0,\pm 1,\pm 2,\cdots) \\ 
+		\Phi_m (\varphi)=A\cos m\varphi+B\sin m\varphi
+	\end{cases}\]
+	
+	指数形式
 	\begin{equation*}
 		\Phi_m (\varphi)=A_m e^{im\varphi}
 	\end{equation*}	
@@ -437,29 +481,30 @@
 	求归一化系数 ：
 	\begin{equation*}
 	\begin{split}
-		\int_{0}^{2\pi} & |\Phi_m (\varphi)|^2 d\varphi = 1 \\
-		\int_{0}^{2\pi} & A_m e^{im\varphi} A_m e^{-im\varphi} d\varphi = 1 \\
-		A^2_m &\int_{0}^{2\pi} 1 d\varphi = 1 \\
-		A^2_m &2\pi = 1 \\
+		\int_{0}^{2\pi}  |\Phi_m (\varphi)|^2 d\varphi &= 1 \\
+		\int_{0}^{2\pi}  A_m e^{im\varphi} A_m e^{-im\varphi} d\varphi &= 1 \\
+		A^2_m \int_{0}^{2\pi} 1 d\varphi &= 1 \\
+		A^2_m 2\pi &= 1 \\
 		A_m&=\frac{1}{\sqrt{2\pi}} 
 	\end{split}
 	\end{equation*}	
 	\begin{equation*}
-		\Phi_m (\varphi)=\frac{1}{\sqrt{2\pi}} e^{im\varphi}
+	\to 	\Phi_m (\varphi)=\frac{1}{\sqrt{2\pi}} e^{im\varphi}
 	\end{equation*}	
 \end{frame}	
 
+\subsection{解纬度方程}
 \begin{frame}
 	\frametitle{解纬度方程}
-	把固有值代回纬度方程，得n阶连带勒让德方程：
+	把固有值$\lambda=m^2$代回纬度方程，得n阶连带勒让德方程：
 	\begin{equation*}
-		\frac{1}{\sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)+\left[l(l+1)-\frac{m^{2}}{\sin ^{2} \theta}\right] \Theta=0
+		\boxed{\frac{1}{\sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)+\left[l(l+1)-\frac{m^{2}}{\sin ^{2} \theta}\right] \Theta=0}
 	\end{equation*}	
-	\alert{解：}微分展开，再整理，得：
+	\alert{解：}~微分展开，得：
 	\begin{equation*}
 		\frac{d^{2} \Theta}{d \theta^{2}}+\frac{\cos \theta}{\sin \theta} \frac{d \Theta}{d \theta}+\left[l(l+1)-\frac{m^{2}}{\sin ^{2} \theta}\right] \Theta=0
 	\end{equation*}		
-	令：$x=\cos \theta$,  $y(x)= y(\cos \theta) =\Theta (\theta)$, 有，做微分计算：
+	(勒让德)令：$x=\cos \theta$,  $y(x)= y(\cos \theta) =\Theta (\theta)$, 有：
 	\begin{equation*}
 		\frac{d x}{d  \theta} =-\sin \theta  
 	\end{equation*}		
@@ -472,27 +517,27 @@
 	\begin{equation*}
 		\frac{ d^2 \Theta }{d \theta ^2} =-\sin ^2 \theta \frac{d^2 y}{d x^2} -\cos \theta \frac{d y}{d x}
 	\end{equation*}		
-	代回方程 （注意$\cos\theta =x,~ \sin  \theta =1-x^2 $)， \\
+	代回方程,注意($\cos\theta =x,~ \sin  \theta =1-x^2 $)， \\
 	得标准连带勒让德方程：
 	\begin{equation*}
-		\left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+\left[l(l+1)-\frac{m^{2}}{1-x^{2}}\right] y=0
+		\left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+\left[l(l+1)-\frac{m^{2}}{1-x^{2}}\right] y=0, \quad (|x|\le 1)
 	\end{equation*}		
-	令 m=0，得(0阶)勒让德方程：
+	若 m=0，就是(0阶)勒让德方程：
 	\begin{equation*}
 		\left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+l(l+1)y=0
 	\end{equation*}		
 \end{frame}	
 
-\subsection{ 勒让德多项式}
+\subsection{解勒让德方程}
 
 \begin{frame}
 	\frametitle{解勒让德方程}
 	\begin{equation*}
-		\left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+l(l+1)y=0
+		\boxed{\left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+l(l+1)y=0}
 	\end{equation*}		
-	\alert{解：} 令方程有级数解，
+	\alert{解：} (勒让德)令方程有级数解，
 	\[ y=\sum_{k=0}^{\infty} a_k x ^k \]
-	求导，并代回上方向，得：
+	求导，并代回方程，得：
 	\begin{equation*}
 		\sum_{k=0}^{\infty}\left\{(k+1)(k+2) a_{k+2}+[l(l+1)-k(k+1)] a_{k}\right\} x^{k}=0
 	\end{equation*}	
@@ -505,54 +550,77 @@
 \begin{frame}
 	得递推式：
 	\begin{equation*}
-		a_{k+2}=-\frac{l(l+1)-k(k+1)}{(k+1)(k+2) }a_{k}
+		a_{k+2}=-\frac{(l-k)(l+k+1)}{(k+1)(k+2) }a_{k}
 	\end{equation*}	   
 	k为偶数：
 	\begin{equation*}
-		y_{1}(x)=a_{0}\left[1-\frac{l(l+1)}{2} x^{2}+\frac{l(l+1)(l+3)(l-2)}{4 !} x^{4}+\cdots\right]
-	\end{equation*}	  
+		y_{1}(x)=\left[1-\frac{l(l+1)}{2} x^{2}+\frac{l(l+1)(l+3)(l-2)}{4 !} x^{4}+\cdots\right]
+	\end{equation*}	
 	k为奇数：
 	\begin{equation*}
-		y_{2}(x)=a_{1}\left[x-\frac{(l-1)(l+2)}{3 !} x^{3}+\frac{(l+2)(l+3)(l-1)(l-3)}{5 !} x^{5}+\cdots\right]
+		y_{2}(x)=\left[x-\frac{(l-1)(l+2)}{3 !} x^{3}+\frac{(l+2)(l+3)(l-1)(l-3)}{5 !} x^{5}+\cdots\right]
 	\end{equation*}	    
-	方程的级数解：\[ y(x)=  y_{1}(x) +  y_{2}(x)  \]	
+	方程的级数解：\[ y(x)=  a_{0}y_{1}(x) + a_{1} y_{2}(x)  \]	
 \end{frame}	
 
 \begin{frame}
-	\frametitle{勒让德多项式}
-	逆向递推式为 (l=n):
+	\frametitle{}
 	\begin{equation*}
-		a_{k-2}=-\frac{(k-1) k}{(n-k+2)(n+k-1)} a_{k}
-	\end{equation*}	 
-	注意到级数解应只含有限多项，取最高项 k=n 
+		a_{k+2}=-\frac{(l-k)(l+k+1)}{(k+1)(k+2) }a_{k}
+	\end{equation*}
+	说明存在最高项$k=l$ \\
+	逆向递推式为 
+	\begin{equation*}
+		a_{k}=-\frac{(k+1)(k+2) }{(l-k)(l+k+1)}a_{k+2}
+	\end{equation*}	   
+	{\Bullet}逆向递推式
+	\begin{equation*}
+		a_{k-2}=-\frac{(k-1)(k) }{(l-k+2)(l+k-1)}a_{k}
+	\end{equation*}	    
+	注意到级数最高项 $k=l$,现以$n$描述, 有 
 	\begin{equation*}
 		a_{n-2}=-\frac{(n-1) n}{2(2n-1)} a_{n}
 	\end{equation*}	 
-	令最高项系数: \[a_n=\frac{(2n)!}{2^n (n!)^2} \]
-	有：
-	\begin{equation*}
-		a_{n-2}=-\frac{(2 n-2) !}{2^{n}(n-1) !(n-2) !}
-	\end{equation*}	 
 \end{frame}	
 
 \begin{frame}
+	令最高项系数: \[a_n=\frac{(2n)!}{2^n (n!)^2} = \frac{(2n-2)!\times 2n \times (2n-1)}{2^n (n-1)!\times n \times (n-2)!\times n \times (n-1)  } \]
+	得逆向递推式：
+	\begin{equation*}
+		a_{n-2}=-\frac{(2 n-2) !}{2^{n} 1! (n-1) !(n-2) !}
+	\end{equation*}	 
+	\begin{equation*}
+		a_{n-2\times2}=(-)^2\frac{(2 n-2\times2) !}{2^{n} 2! (n-2) !(n-2\times2) !}
+	\end{equation*}	 
 	一般式：
 	\begin{equation*}
 		a_{n-2 m}=(-1)^{m} \frac{(2 n-2 m) !}{2^{n} m !(n-m) !(n-2 m) !}
 	\end{equation*}	 
-	得勒让德方程的多项式解：
-	\begin{equation*}
-		P_{n}(x)=\sum_{m=0}^{[n / 2]}(-1)^{n} \frac{(2 n-2 m) !}{2^{n} m !(n-m) !(n-2 m) !} x^{n-2 m}
-	\end{equation*}	 
-	称为勒让德多项式。
 \end{frame}	
 
 \begin{frame}
-	取 x=$\cos\theta$,得下表：\\
+	得勒让德方程的多项式解：
+	\begin{equation*}
+		y(x)=\sum_{k=0}^{\infty}a_k x^k =\sum_{m=0}^{[n / 2]}(-1)^{m} \frac{(2 n-2 m) !}{2^{n} m !(n-m) !(n-2 m) !} x^{n-2 m}=P_{n}(x)
+	\end{equation*}	 
+	TIPS 指标计算:
+	\[ k=n-2m \]
+	\[k=0, \to  m=[n/2] \]
+	\[k=l=n, \to m=0 \]
+	称此多项式为勒让德多项式$P_n(x)$, 即 $P_l(x)$。
+\end{frame}	
+
+\subsection{勒让德多项式及其性质}
+
+\begin{frame}
+	\frametitle{勒让德多项式}
+	\[P_{n}(x)=\sum_{m=0}^{[n / 2]}(-1)^{m} \frac{(2 n-2 m) !}{2^{n} m !(n-m) !(n-2 m) !} x^{n-2 m}\]
+	\[ n=0, m=[n/2]=0; \qquad n=1, m=[n/2]=0; \qquad n=2, m=0,1 ; \cdots \hspace{5em}\]
+	取 x=$\cos\theta$,得下表右列：\\ \vspace{0.3em}
 	{\small $\begin{array}{|l|l|}
-		\hline P_{0}(x)=1 & \\
+		\hline P_{0}(x)=1 & P_{0}(\cos\theta)=1\\
 		\hline P_{1}(x)=x & P_{1}(\cos \theta)=\cos \theta \\
-		\hline P_{2}(x)=\dfrac{1}{2}\left(3 x^{2}-1\right) & P_{2}(\cos \theta)=\dfrac{1}{4}[3 \cos 2 \theta+1] \\
+		\hline P_{2}(x)=\dfrac{1}{2}\left(3 x^{2}-1\right) & P_{2}(\cos \theta)=\dfrac{1}{4}[3 \cos 2 \theta+1] \\ 
 		\hline P_{3}(x)=\dfrac{1}{2}\left(5 x^{3}-3 x\right) & P_{3}(\cos \theta)=\dfrac{1}{8}[5 \cos 3 \theta+3 \cos \theta] \\
 		\hline P_{4}(x)=\dfrac{1}{8}\left(35 x^{4}-30 x^{2}+3\right) & P_{4}(\cos \theta)=\dfrac{1}{64}[35 \cos 4 \theta+20 \cos 2 \theta+9] \\
 		\hline
@@ -560,14 +628,16 @@
 \end{frame}	 
 
 \begin{frame}
-	\alert{性质1}：勒让德多项式具有如下微分形式：
+	\frametitle{勒让德多项式性质}
+	\alert{性质1}：勒让德多项式有如下微分形式：
 	\begin{equation*}
 		P_{n}(x)=\frac{1}{2^{n} n !} \frac{d^{n}}{d x^{n}}\left(x^{2}-1\right)^{n}, \quad(n=0,1,2,3, \cdots \cdots)
 	\end{equation*}	 
 	\alert{证明：} 由二项式定理，有：
-	\begin{equation*}
-		\left(x^{2}-1\right)^{n}=\sum_{m=0}^{n} C_{n}^{m}(-1)^{m}\left(x^{2}\right)^{n-m}=\sum_{m=0}^{n} \frac{(-1)^{m} n !}{m !(n-m) !} x^{2 n-2 m}
-	\end{equation*}	 
+	\begin{align*}
+		\left(x^{2}-1\right)^{n}&=\sum_{m=0}^{n} C_{n}^{m}(-1)^{m}\left(x^{2}\right)^{n-m}\\
+		&=\sum_{m=0}^{n} \frac{(-1)^{m} n !}{m !(n-m) !} x^{2 n-2 m}
+	\end{align*}	 
 	求n次导，
 	\begin{equation*}
 		\frac{d^{n}}{d x^{n}}\left(x^{2}-1\right)^{n}=\sum_{m=0}^{n} \frac{(-1)^{m} n !}{m !(n-m) !} \frac{d^{n}}{d x^{n}}\left(x^{2 n-2 m}\right)
@@ -576,12 +646,14 @@
 
 \begin{frame}
 	当$2n-2m<n$时， 上次的右边导数为零，即非零的最高项为 $[n/2]$,  有：
-	\begin{equation*}
-		\frac{d^{n}}{d x^{n}}\left(x^{2}-1\right)^{n}=\sum_{m=0}^{[n/2]} \frac{(-1)^{m} n !}{m !(n-m) !} \frac{d^{n}}{d x^{n}}\left(x^{2 n-2 m}\right)
-	\end{equation*}	
-	\begin{equation*}
-		\frac{1}{2^{n} n !} \frac{d^{n}}{d x^{n}}\left(x^{2}-1\right)^{n}=\frac{1}{2^{n} n !} \sum_{m=0}^{[n/2]} \frac{(-1)^{m} n !}{m !(n-m) !} \frac{d^{n}}{d x^{n}}\left(x^{2 n-2 m}\right)=P_n(x)
-	\end{equation*}	
+	\begin{align*}
+		\frac{d^{n}}{d x^{n}}\left(x^{2}-1\right)^{n}&=\sum_{m=0}^{[n/2]} \frac{(-1)^{m} n !}{m !(n-m) !} \frac{d^{n}}{d x^{n}}\left(x^{2 n-2 m}\right)\\
+		&=\sum_{m=0}^{[n / 2]}(-1)^{m} \frac{(2 n-2 m) ! n!}{ m !(n-m) !(n-2 m) !} x^{n-2 m}\\
+	\end{align*}	
+	\begin{align*}
+		\frac{1}{2^{n} n !} \frac{d^{n}}{d x^{n}}\left(x^{2}-1\right)^{n} &= \sum_{m=0}^{[n / 2]}(-1)^{m} \frac{(2 n-2 m) !}{2^{n} m !(n-m) !(n-2 m) !} x^{n-2 m}\\
+		&=P_n(x)\\
+	\end{align*}	
 	\alert{证毕！}
 \end{frame}	
 
@@ -602,25 +674,28 @@
 
 \begin{frame}
 	取$p=-1/2$， 得：
-	\begin{equation*}
-		(1+v)^{-1/2}=\sum_{k=0}^{\infty}(-1)^{k} \frac{(2 k) !}{2^{2 k}(k !)^{2}} v^{k}
-	\end{equation*}	
+	\begin{align*}
+		(1+v)^{-1/2}&=\sum_{k=0}^{\infty} (-1)^{k}\frac{\frac{1}{2}\frac{3}{2}  \cdots \frac{2k-1}{2}}{k !} v^{k}\\
+		&=\sum_{k=0}^{\infty} (-1)^{k}\frac{\frac{1}{2}\frac{2}{2}\frac{3}{2} \frac{4}{2}  \cdots \frac{2k-1}{2}\frac{2k}{2}} {(k !)^2} v^{k}\\
+		&=\sum_{k=0}^{\infty}(-1)^{k} \frac{(2 k) !}{2^{2 k}(k !)^{2}} v^{k}
+	\end{align*}	
 	取$v=-2zx+z^2=-z(2x-z)$， 有：
 	\begin{equation*}
 		v^{k}=(-1)^{k} z^{k}(2 x-z)^{k}=(-1)^{k} z^{k} \sum_{m=0}^{k} C_{k}^{m}(2 x)^{k-m}(-z)^{m}
 	\end{equation*}	
-	代回上式，得：
+	代回
 	\begin{equation*}
 		\left(1-2 z x+z^{2}\right)^{-\frac{1}{2}}=\sum_{k=0}^{\infty} \frac{(2 k) !}{2^{2 k}(k !)^{2}} \sum_{m=0}^{k}(-1)^{m} C_{k}^{m}(2 x)^{k-m} z^{k+m}
 	\end{equation*}	
 \end{frame}	
 
 \begin{frame}
-	令：$k-m=n$，即要证明上式右边的系数就是$P_n(x)$！
+	令：$k+m=n$，则有关$z^{n}$的展开系数为
 	\begin{equation*}
 	\begin{split}
-		\sum_{k+m=n}{2^{2 k}(k !)^{2}}(-1)^{m} &C_{k}^{m}(2 x)^{k-m}\\
-		&=\sum_{m=0}^{n}(-1)^{m} \frac{(2 n-2 m) !}{2^{2(n-m)}(n-m) !} \frac{1}{m !(n-2 m) !}(2 x)^{n-2 m}\\
+		\sum_{k+m=n}\frac{(2 k) !}{2^{2 k}(k !)^{2}} & (-1)^{m} C_{k}^{m}(2 x)^{k-m}\\
+		&=\sum_{m=0}^{n} \frac{(2 (n-m)) !}{2^{2 (n-m)}((n-m) !)^{2}}(-1)^{m} C_{n-m}^{m}(2 x)^{n-2m}\\
+		&=\sum_{m=0}^{n}(-1)^{m} \frac{(2 n-2m) !}{2^{2 (n-m)}((n-m) !)^{2}} \frac{(n-m) !}{m!(n-2 m) !}2^{n-2 m}x^{n-2 m}\\
 		&=\sum_{m=0}^{n}(-1)^{m} \frac{(2 n-2 m) !}{2^{n} m !(n-m) !(n-2 m) !} x^{n-2 m} \\
 		&=P_{n}(x)
 	\end{split}
@@ -665,21 +740,21 @@
 
 \begin{frame}
 	\alert{性质4：}勒让德多项式具有正交性：\\
-	\alert{证明：}  勒让德多项式满足勒让德方程
+	\alert{证明：}  勒让德多项式满足勒让德方程($n=l$)
 	\begin{equation*}
 		\left(1-x^{2}\right) P'' _n  (x) -2 x P' _n (x)+n(n+1)P_n(x)=0
 	\end{equation*}		
 	等价形式：
 	\begin{equation*}
-		[\left(1-x^{2}\right) P' _n  (x)] ‘+n(n+1)P_n(x)=0    \cdots  (1)
+		[\left(1-x^{2}\right) P' _n  (x)]' +n(n+1)P_n(x)=0    \cdots  (1)
 	\end{equation*}		
 	同理：
 	\begin{equation*}
-		{\left(1-x^{2}\right) P' _m  (x)} ‘+ m (m+1)P_m(x)=0    \cdots  (2)
+		[\left(1-x^{2}\right) P' _m  (x)]' + m (m+1)P_m(x)=0    \cdots  (2)
 	\end{equation*}		
 	(1)式$\times P_m$, (2)式$\times P_n$,所得两式相减并积分： 
 	{\small \begin{equation*}
-			[n(n+1) -m (m+1)]\int_{-1}^{1} P_mP_n dx =\int_{-1}^{1} (P_m [\left(1-x^{2}\right) P' _n] ‘- P_n [\left(1-x^{2}\right) P' _m ]‘)dx
+			[n(n+1) -m (m+1)]\int_{-1}^{1} P_mP_n dx =\int_{-1}^{1} (P_m [\left(1-x^{2}\right) P' _n] '- P_n [\left(1-x^{2}\right) P' _m ]')dx
 	\end{equation*}		}
 \end{frame}	
 
@@ -692,7 +767,7 @@
 		=&0
 	\end{split}
 	\end{equation*}		
-	因此，
+	因此，式子的左端
 	\begin{equation*}
 		[n(n+1) -m (m+1)]\int_{-1}^{1} P_mP_n dx =0
 	\end{equation*}	
@@ -704,27 +779,36 @@
 \end{frame}	
 
 \begin{frame}
-	\alert{性质5：} 勒让德多项式具有归一性
+	\alert{性质5：} 勒让德多项式平方可积
 	\begin{equation*}
 		\int_{-1}^{1} P_nP_n dx = \frac{2}{2n+1}
 	\end{equation*}	
-	\alert{证明：}  有递推公式
+	\alert{证明：}  由递推公式
 	\begin{equation*}
-		[nP_{n} -(2n-1)x P_{n-} + (n-1)P_{n-2} ] =0
+		nP_{n} -(2n-1)x P_{n-1} + (n-1)P_{n-2}  =0
 	\end{equation*}		
 	\begin{equation*}
 		nP ^2 _{n} =(2n-1)x P_n P_{n-1} - (n-1)P_nP_{n-2} 
 	\end{equation*}		
 	\begin{equation*}
-		\int_{-1}^{1}  nP ^2 _{n} dx =   \int_{-1}^{1}  (2n-1)x P_n P_{n-1} dx 
-	\end{equation*}		
-	递推式写成 $xP_n= A P_{n+1} +B P_{n-1}$ 代入上式，得积分递推式
+		\int_{-1}^{1}  P ^2 _{n} dx = \frac{(2n-1)}{n} \int_{-1}^{1}  x P_n P_{n-1} dx , \cdots (1)
+	\end{equation*}	
+	递推式可写成
 	\begin{equation*}
-		\int_{-1}^{1}  P ^2 _{n} dx =  \frac{2n-1}{2n+1}\int_{-1}^{1}   P^2_{n-1} dx 
+		(n+1)P_{n+1} -(2n+1)x P_{n} + nP_{n-1}  =0  
 	\end{equation*}		
+	\begin{equation*}	
+		x P_{n}=\frac{n+1}{2n+1}P_{n+1} + \frac{n}{2n+1}P_{n-1} , \cdots (2)
+	\end{equation*}	
+	把(2)代入(1)式，
 \end{frame}	
 
-\begin{frame}
+\begin{frame}	
+	得积分递推式
+	\begin{align*}
+		\int_{-1}^{1}  P ^2 _{n} dx &=  \frac{2n-1}{2n+1}\int_{-1}^{1}   P^2_{n-1} dx \\
+		&=  \frac{2n-1}{2n+1} \cdot \frac{2(n-1)-1}{2(n-1)+1} \int_{-1}^{1}   P^2_{n-2} dx \\
+	\end{align*}		
 	反复递推：
 	\begin{equation*}
 		\int_{-1}^{1}  P ^2 _{n} dx =  \frac{1}{2n+1}\int_{-1}^{1}   P^2_{0} dx = \frac{2}{2n+1}
@@ -796,12 +880,12 @@
 	\end{equation*}		
 	解为连带勒让德多项式
 	\begin{equation*}
-		P^m  _{l}(x)= (1-x^2) ^ {m/2 } \frac{d^{m}}{d x^{m} } P_l(x),  \quad(m \le l, l=0,1,2,3, \cdots \cdots)
+		P^m  _{l}(x)= (1-x^2) ^ {m/2 } \frac{d^{m}}{d x^{m} } P_l(x),  \quad(m < l, l=0,1,2,3, \cdots \cdots)
 	\end{equation*}	 
 \end{frame}	
 
 \begin{frame}
-	\frametitle{*解法细节：}
+	\frametitle{证明：}
 	把勒让德多项式 $P_{l}(x) $ 代入勒让德方程，然后对勒让德方程逐级求导, m次后得连带勒让德方程
 	\begin{equation*}
 		\begin{split}
@@ -812,48 +896,50 @@
 			&\left(1-x^{2}\right) P^{m+2} _l  (x) -2(m+1) x P^{m+1} _l (x)+(l(l+1)-m(m+1)P^{m} _l(x)=0	\\
 		\end{split}
 	\end{equation*}
-	即： 连带勒让德多项式  $P^{m} _l  (x)  $ 是连带勒让德方程的解
+	即： 连带勒让德多项式  $P^{m} _l  (x)  $ 是连带勒让德方程的解,($m < l$)
 \end{frame}	
 
 \begin{frame}
 	连带勒让德多项式性质：\\
 	(1) 正交性： 
 	\begin{equation*}
-		\int_{-1}^{1} P^k _mP^k _n dx =0 ,\cdots (n\ne m)
+		\int_{-1}^{1} P^m _{l'}P^m _{l} dx =0 ,\cdots (l'\ne l)
 	\end{equation*}	
 	(2) 归一性：
 	\begin{equation*}
-		\int_{-1}^{1} P^k _nP^k _n dx =  \frac{(n+k)!}{(n-k)!}\frac{2}{2n+1}
+		\int_{-1}^{1} P^m _l P^m _l dx =  \frac{(l+m)!}{(l-m)!}\frac{2}{2l+1}
 	\end{equation*}	
 	(3) 递推式： 
 	\begin{equation*}
-		(n+1-k)P^k _{n+1} -(2n+1)x P^k _n + (n+k) P^k _{n-1} =0 
+		(l+1-k)P^m _{l+1} -(2l+1)x P^m _l + (l+m) P^m _{l-1} =0 
 	\end{equation*}		
 \end{frame}	
 
 \begin{frame}
 	\frametitle{球谐函数}
-	氢原子角向方程：
+	[小结:]
+	氢原子角向方程:
 	\begin{equation*}
 		\left[ \frac{1}{ \sin \theta  } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial \theta } )
-		+\frac{1}{ \sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2} \right] Y=-l(l+1) Y 
+		+\frac{1}{ \sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2} +l(l+1)\right] Y=0
 	\end{equation*}	
 	其解为球谐函数：
 	\begin{equation*}
-		Y(\theta,\varphi)= \Theta(\theta) \Phi(\varphi)
+		Y_{lm}(\theta,\varphi)= \Theta_{lm}(\theta) \Phi_m (\varphi)
 	\end{equation*}	
-	经度解函数为：
+	经度函数为：
 	\begin{equation*}
-		\Phi_m (\varphi)=\frac{1}{\sqrt{2\pi}} e^{im\varphi} 
+		\Phi_m (\varphi)=\frac{1}{\sqrt{2\pi}} e^{im\varphi}, \qquad (m=0,\pm 1, \pm 2, \cdots \pm l)
 	\end{equation*}
-	纬度解函数为：
+	纬度函数为：
 	\begin{equation*}
-		\Theta(\theta)= P^m  _{n}(\cos \theta) ,  \quad(m \le n, n=1,2,3, \cdots \cdots)
+		\Theta_{lm}(\theta)= P^m  _{l}(\cos \theta) ,  \quad(m \le l, l= 1,2,3, \cdots n)
 	\end{equation*}	 
+	Tips： $n$ 由径向方程决定!
 \end{frame}	
 
 \begin{frame}
-	\frametitle{角向函数归一化}
+	\frametitle{球谐函数归一化}
 	\begin{equation*}
 		Y_{lm} (\theta,\varphi)= A_{lm}  P_l ^m (cos \theta)  e^{im\varphi} 
 	\end{equation*}	
@@ -870,11 +956,42 @@
 \end{frame}	
 
 \begin{frame}
+	取出经度函数的实部和虚部,球谐函数化为
+	\[Y_{lm}=A_{lm} P^m _l(\cos\theta) \Phi_m (\varphi)=A_{lm}\begin{cases}
+		 P^m _l(\cos\theta) \cos m \varphi\\
+		 P^m _l(\cos\theta) \sin m \varphi\\
+	\end{cases}\]
+	\begin{enumerate}
+		\IItem 谐波是指频率为基波频率整数倍的波,比如琴弦的一维谐波,比如鼓面的二维谐波. 球谐函数描述的是球面上的三维谐波.\\
+	\end{enumerate}	
+\end{frame}	
+
+\begin{frame}
+	\frametitle{}
+	{\Bullet}每一个基波都有自己的谐波! 因此球谐函数$Y_{l} ^{m}$具有如下三角形排布
+	\begin{table}[htpb]
+	\centering
+	%\caption{caption}
+	%\label{tab:label}
+	\begin{tabular}{cccccc}
+			&$Y_{1} ^{0}$& $Y_{1} ^{1}$ & $\hspace{1.5em}$ & $\hspace{1.5em}$ & $\hspace{1.5em}$\\
+			&$Y_{2} ^{0}$& $Y_{2} ^{1}$ & $Y_{2} ^{2}$ & $\hspace{1.5em}$ & $\hspace{1.5em}$\\
+			&$Y_{3} ^{0}$& $Y_{3} ^{1}$ & $Y_{3} ^{2}$ & $Y_{3} ^{3}$ & $\hspace{1.5em}$\\
+			&$Y_{4} ^{0}$& $Y_{4} ^{1}$ & $Y_{4} ^{2}$ & $Y_{4} ^{3}$ & $Y_{4} ^{4}$	
+	\end{tabular}
+	\end{table}	
+	{\Bullet} 称 $l$ 为自由度,描述一个基波有多少个谐波, \\
+	{\Bullet} 称 $m$ 为阶,描述每一个谐波的阶,阶高的称为高阶谐波.
+\end{frame}	
+
+
+\begin{frame}
 	\frametitle{作业}
 	1、将$x=\cos x$ 代入勒让德多项式,写出前4个勒让德多项式表达式 \\
-	2、计算积分
+	2、求$x^4$的勒让德展开式\\
+	3、计算积分
 	\begin{equation*}
-		\int_{-1}^{1} (x^2+x) P_n(x) dx, \qquad \int_{-1}^{1} x^k P_n(x) dx, \quad(k<n) \qquad  	\int_{-1}^{1} x^n P_n(x) dx   
+		\int_{-1}^{1} (x^2+x) P_l(x) dx, \qquad \int_{-1}^{1} x^k P_l(x) dx, \quad(k<l) \qquad  	\int_{-1}^{1} x^l P_l(x) dx   
 	\end{equation*}
 \end{frame}	
 
@@ -889,7 +1006,7 @@
 	\frametitle{径向方程与拉盖方程}
 	径向方程：
 	\begin{equation*}
-		\frac{d}{d r} (r^2\frac{d R }{d r} ) + \frac{2 \mu r^2} {\hbar^2}(E+ \frac{e_s ^2}{r} ) =\lambda R
+		\boxed{\frac{d}{d r} (r^2\frac{d R }{d r} ) + \frac{2 \mu r^2} {\hbar^2}(E+ \frac{e_s ^2}{r} ) =\lambda R}
 	\end{equation*}	
 	\alert{ 解：}取$ \lambda =l(l+1)  $
 	\begin{equation*}
@@ -899,13 +1016,14 @@
 		\frac{d^2 R}{d r^2} + \frac{2}{r^2}\frac{d R }{d r}  + \frac{2 \mu} {\hbar^2}(E+ \frac{e_s ^2}{r} ) R- \frac{l(l+1)}{r^2} R=0
 	\end{equation*}	
 	令 $\xi=\alpha r$, $U(\xi)=R(\xi /\alpha) $, $\alpha =\sqrt{-\dfrac{8\mu E}{\hbar^2}}$, $\beta=\dfrac{2\mu e^2 _s}{\alpha \hbar^2}$,\\
-	进行伸缩变换 ......，得：
-	\begin{equation*}
-		\frac{d^2 U}{d \xi ^2} + \frac{2}{\xi }\frac{d U }{d \xi}  -[ \frac{1} {4}  -\frac{\beta}{\xi} + \frac{l(l+1)}{\xi ^2}] U=0  \cdots (1)
-	\end{equation*}	 
+	进行伸缩变换 ......，
 \end{frame}	
 
 \begin{frame}
+	得一般形式：
+	\begin{equation*}
+		\frac{d^2 U}{d \xi ^2} + \frac{2}{\xi }\frac{d U }{d \xi}  -[ \frac{1} {4}  -\frac{\beta}{\xi} + \frac{l(l+1)}{\xi ^2}] U=0  \cdots (1)
+	\end{equation*}	 
 	考虑方程解的渐近行为： \\
 	(1) $r\to \infty$, $\xi \to \infty$,有方程：
 	\begin{equation*}
@@ -924,7 +1042,7 @@
 \begin{frame}
 	(2) $r\to 0$, $\xi \to 0$，有欧拉方程：
 	\begin{equation*}
-		\frac{d^2 U}{d \xi ^2} + \frac{2}{\xi }\frac{d U }{d \xi}  +[\frac{\beta}{\xi} - \frac{l(l+1)}{\xi ^2}] U=0
+		\frac{d^2 U}{d \xi ^2} + \frac{2}{\xi }\frac{d U }{d \xi}  +[ - \frac{l(l+1)}{\xi ^2}] U=0
 	\end{equation*}	 
 	通解为：
 	\begin{equation*}
@@ -946,24 +1064,26 @@
 	\begin{equation*}
 		\xi H''  + [2(l+1) -\xi] H' -[\beta -(l+1)] H =0
 	\end{equation*}	
-	标准的广义拉盖方程为
+	令
 	\begin{equation*}
-		x H''  + [m+1 -x] H' +n H =0
+		m=2l+1, \qquad n=-\beta+(l+1), 
 	\end{equation*}	
-	对比以上两方程，发现当 
+	方程变为标准的连带拉盖方程
 	\begin{equation*}
-		m=2l+1, \qquad n=-\beta+(l+1)
+		\boxed{x H''  + [m+1 -x] H' +n H =0}
 	\end{equation*}	
-	时，方程正是广义拉盖方程，问题转化为求广义拉盖方程
+	取 $m=0$, 得一般拉盖方程：
+	\begin{equation*}
+		\boxed{x y''  + [1 -x] y' +n y =0}
+	\end{equation*}	
 \end{frame}	
 
-\subsection{拉盖方程多项式}
+\subsection{拉盖方程与拉盖多项式}
 
 \begin{frame}
 	\frametitle{解拉盖方程}
-	取 $m=0$, 得一般的拉盖方程，取标准形式：
 	\begin{equation*}
-		x y''  + [1 -x] y' +n y =0
+		\boxed{x y''  + [1 -x] y' +n y =0}
 	\end{equation*}	
 	\alert{ 解：} 设方程有级数解
 	\begin{equation*}
@@ -990,7 +1110,7 @@
 	\end{equation*}	
 	级数解转化为多项式解（拉盖多项式），取
 	\begin{equation*}
-		c_{0}=n! ,   c_{n}=(-1)^k 
+		c_{0}=n!, \quad  c_{n}=(-1)^n = (-1)^k 
 	\end{equation*}	
 	拉盖多项式的系数为：
 	\begin{equation*}
@@ -1020,7 +1140,7 @@
 	\end{split}		
 	\end{equation*}	
 	课堂作业：\\
-	求 $x, x^2, x^3 $的拉盖尔多项式展开式
+	求 $x, x^2, x^3 $的拉盖尔展开式
 \end{frame}	
 
 
@@ -1030,7 +1150,7 @@
 	\begin{equation*}
 		L_n(x) =e^x \frac{d ^n}{d x^n} (x^n e^{-x})
 	\end{equation*}	
-	\alert{	证明：}  由高阶导数莱而尼兹公式 
+	\alert{	证明：}  由高阶导数莱布尼兹公式 
 	\begin{equation*}
 		(u\cdot v) ^{(n)} =\sum_{k=0}^{n} C^k _n u^{(k) }V^{(n-k)}, 
 	\end{equation*}	
@@ -1038,7 +1158,7 @@
 	\begin{equation*}
 	\begin{split}
 		(e^{-x}\cdot x^n) ^{(n)}&= \sum_{k=0}^{n} C^k _n [ e ^{-x}]^{(k)}   [(x^n)^{(n-k)}]\\
-		&= \sum_{k=0}^{n} C^k _n [(-1)^k e ^{-x}]   [C^k _n  \frac{n!}{k!} x^k]
+		&= \sum_{k=0}^{n} C^k _n [(-1)^k e ^{-x}]   [ \frac{n!}{k!} x^k]
 	\end{split}		
 	\end{equation*}	
 \end{frame}		
@@ -1046,7 +1166,7 @@
 \begin{frame}
 	\begin{equation*}
 	\begin{split}
-		e^x \frac{d^n }{d x^n} (e^{-x}\cdot x^n) &=e^x \sum_{k=0}^{n} C^k _n [(-1)^k e ^{-x}]   [C^k _n  \frac{n!}{k!}  x^k]\\
+		e^x \frac{d^n }{d x^n} (e^{-x}\cdot x^n) &=e^x \sum_{k=0}^{n} C^k _n [(-1)^k e ^{-x}]   [ \frac{n!}{k!}  x^k]\\
 		&= \sum_{k=0}^{n} (-1)^k C^k _n \frac{n!}{k!}x^k  \\
 		&=L_n (x)		
 	\end{split}		
@@ -1073,13 +1193,14 @@
 	\alert{	性质3：}  拉盖多项式递推式
 	\begin{equation*}
 	\begin{split}
-		L_{n+1} &= (2n+1-x) L_n  -n^2 L_(n-1)  \\
+		L_{n+1} &= (2n+1-x) L_n  -n^2 L_{n-1}  \\
 		L_1 &=(1-x) L_0 
 	\end{split}		
 	\end{equation*}	
-	\alert{	证明：}  对w函数就t求偏导， 
+	\alert{	证明：}   
 	\begin{equation*}
 	\begin{split}
+		w(t,x) &=\frac{e^{-xt/(1-t) } } {1-t}\\
 		\frac{\partial w}{\partial t}  &= [\frac{1}{(1-t)^2} -\frac{x}{(1-t)^3}]  e^{-xt/(1-t) }     \\
 		(1-t)^2	\frac{\partial w}{\partial t}  &= [1 -t-x] w   , \cdots \cdots  (1)
 	\end{split}		
@@ -1087,12 +1208,12 @@
 \end{frame}		
 
 \begin{frame}
-	对w函数的展开式就t求偏导， 
 	\begin{equation*}
 	\begin{split}
+		w(t,x) &= \sum_{n=0}^{\infty}  L_n  \frac{t^n}{n!} \\
 		\frac{\partial w}{\partial t}  &=   \sum_{n=1}^{\infty}  L_n  \frac{t^{n-1}}{(n-1)!}   \\
-		&=  \sum_{n=0}^{\infty}  L_(n+1)  \frac{t^n}{(n)!} \\
-		&=  \sum_{n=2}^{\infty}  L_(n-1)  \frac{t^{n-2}}{(n-2)!} \\
+		&=  \sum_{n=0}^{\infty}  L_{(n+1)}  \frac{t^n}{(n)!} \\
+		&=  \sum_{n=2}^{\infty}  L_{(n-1)}  \frac{t^{n-2}}{(n-2)!} \\
 	\end{split}		
 	\end{equation*}	
 	代入（1）式的左边，有：
@@ -1111,27 +1232,13 @@
 		\end{split}		
 	\end{equation*}	
 	（1）式的左边=右边，整理得递推式！
-\end{frame}		
-
-\begin{frame}
-	\alert{	性质4：}  拉盖多项式归一性 \\
-	\alert{	证明：}  有递推式
 	\begin{equation*}
-		\begin{split}
-			L_{n+1} &= (2n+1-x) L_n  -n^2 L_(n-1)  \\
-			L_{n} &= (2n-1-x) L_{n-1}  -(n-1)^2 L_(n-2)  \\
-			L^2 _{n} &= (2n-1-x) L_n  L_{n-1}  -(n-1)^2 L_n L_(n-2)  \\
-			L_{n-1}	L_{n+1} &= (2n+1-x)	L_{n-1}	 L_n  -n^2 	L^2 _(n-1)  \\
-			\int_{0}^{\infty}  e^{-x}  L^2 _{n}  dx &=  n^2   \int_{0}^{\infty}  e^{-x}  L^2 _{n-1} dx  \\
-			&=  (n!)^2   \int_{0}^{\infty}  e^{-x}  L^2 _{0} dx  \\
-			&=  (n!)^2 
-		\end{split}		
+			L_{n+1} = (2n+1-x) L_n  -n^2 L_{n-1}  
 	\end{equation*}	
-	
 \end{frame}		
 
 \begin{frame}
-	\alert{	性质5：}  拉盖多项式正交性 \\
+	\alert{	性质4：}  拉盖多项式带权($e^{-x}$)正交 \\
 	\alert{	证明：}  拉盖多项式满足拉盖方程：
 	\begin{equation*}
 		\begin{split}
@@ -1141,20 +1248,41 @@
 			L_m[xe^{-x}  L_n'] ' +n e^{-x} L_m L_n &=0  \\
 			L_n  [xe^{-x}  L_m'] ' +m e^{-x} L_n L_m& =0  \\ 
 			(m-n) \int_{0}^{\infty}  e^{-x} L_n L_m dx &=  \int_{0}^{\infty} [L_n  [xe^{-x}  L' _m] ' - L_m[xe^{-x}  L' _n] '] dx \\
-			&=  -\int_{0}^{\infty} [L'_n  [xe^{-x}  L' _m] dx + L'_m[xe^{-x}  L' _n]  dx \\
+			&=  -\int_{0}^{\infty} L'_n  [xe^{-x}  L' _m] dx + L'_m[xe^{-x}  L' _n]  dx \\
 			&=  \int_{0}^{\infty} [xe^{-x}  L' _m L' _n - xe^{-x}  L' _n L' _m]  dx =0
 		\end{split}		
 	\end{equation*}	
 \end{frame}		
 
-\subsection{广义拉盖方程多项式}
+\begin{frame}
+	\alert{	性质5：}  拉盖多项式带权($e^{-x}$)平方可积 \\
+	\alert{	证明：}  有递推式
+	\begin{equation*}
+		\begin{split}
+			L_{n+1} &= (2n+1-x) L_n  -n^2 L_{n-1}  \\
+			L_{n} &= (2n-1-x) L_{n-1}  -(n-1)^2 L_{n-2}  \\
+			L^2 _{n} &= (2n-1-x) L_n  L_{n-1}  -(n-1)^2 L_n L_{n-2}  \\
+			L_{n-1}	L_{n+1} &= (2n+1-x)	L_{n-1}	 L_n  -n^2 	L^2 _{n-1}  \\
+			\int_{0}^{\infty}  e^{-x}  L^2 _{n}  dx &=  n^2   \int_{0}^{\infty}  e^{-x}  L^2 _{n-1} dx  \\
+			&=  (n!)^2   \int_{0}^{\infty}  e^{-x}  L^2 _{0} dx  \\
+			&=  (n!)^2 
+		\end{split}		
+	\end{equation*}		
+\end{frame}		
+
+\subsection{连带拉盖多项式}
 
 \begin{frame}
-	\frametitle{广义拉盖方程多项式}
-	量子力学定义广义拉盖多项式为：
+	\frametitle{连带拉盖多项式}
+	连带拉盖方程
+	\begin{equation*}
+		\boxed{x H''  + [m+1 -x] H' +n H =0}
+	\end{equation*}	
+	量子力学为实现归一化,在$m=0$时定义了广义拉盖多项式,与数学上的拉盖多项式差$\frac{1}{n!}$
 	\begin{equation*}
 		L^0 _n (x)= \frac{1} {n!} L_n (x) = \frac{1} {n!} \sum_{k=0}^{n} (-1)^k C^k _n \frac{n!}{k!}x^k
 	\end{equation*}	
+	连带拉盖多项式是在$m\ne0$时的广义拉盖多项式
 	\begin{equation*}
 		L^m _n (x)= \frac{1} {n!}  \sum_{k=0}^{n} (-1)^k C^k _n \frac{(n+m)!}{(m+k)!}x^k
 	\end{equation*}	
@@ -1184,25 +1312,26 @@
 \end{frame}		
 
 \begin{frame}
-	氢原子径向解：
-	\begin{equation*}
-		R_{nl} (r) =N_{nl}R(r)=N_{nl} \xi  ^l  L_{n-l-1} ^{2l+1} (\xi) e^{-\xi/2} , \qquad (\xi =\alpha r)
-	\end{equation*}			
+	\frametitle{能量固有值问题}	
+	注意到 $\xi=\alpha r$, $U(\xi)=R(\xi /\alpha) $, $\alpha =\sqrt{-\dfrac{8\mu E}{\hbar^2}}$, $\beta=\dfrac{2\mu e^2 _s}{\alpha \hbar^2}=n$\\
 	能量固有值：
-	\begin{equation*}
+	\\\begin{equation*}
 		\begin{split}
 			n =&\beta = \frac{2\mu e^2 _s}{\alpha \hbar ^2} \\
-			E_n =& - \frac{1}{n^2} \frac{\mu e^4 _s }{2 \hbar ^2} =\frac{E_1}{n!}
+			E_n =& - \frac{1}{n^2} \frac{\mu e^4 _s }{2 \hbar ^2} =\frac{E_1}{n!}, \qquad (n=1,2,3,\cdots) 
 		\end{split}		
 	\end{equation*}	
-	氢原子的解：
+	由于${n-l-1\ge 0}$,有:
+	\[ l=0,1,2,3,\cdots, n-1\]	
+
+	能量固有解(氢原子径向函数)：
 	\begin{equation*}
-		\Psi(r,\theta,\varphi) =  R_{nl} (r) Y_{lm} (\theta,\varphi)
-	\end{equation*}
-\end{frame}		
+		R_{nl} (r) =N_{nl}R(r)=N_{nl} \xi  ^l  L_{n-l-1} ^{2l+1} (\xi) e^{-\xi/2} , \qquad (\xi =\alpha r)
+	\end{equation*}	
+\end{frame}			
 
 \begin{frame}
-	求归一化系数 $N_{nl}$ 
+	* 求归一化系数 $N_{nl}$ 
 	\begin{equation*}
 	\begin{split}
 		\iiint  &\Psi(r,\theta,\varphi) d \tau =1  \\
@@ -1228,6 +1357,22 @@
 	\end{equation*}	
 \end{frame}		
 
+\begin{frame}
+	\frametitle{小结:解氢原子}	
+	描述氢原子的波函数为:
+	{\large \begin{equation*}
+		\Psi(r,\theta,\varphi,s) = \Psi_{n,l,m,m_s}= R_{nl} (r) Y_{lm} (\theta,\varphi)S_{m_s}(s)
+	\end{equation*} }
+	\begin{itemize}
+		\item 主量子数: $n=1,2,3,\cdots$, 能级,轨道能量 (主壳层 K，L，M, N, O, P, Q)
+		\item 角量子数: $l=0,1,2,\cdots, n-1$, 角动量大小, 轨道形状 (次壳层, s, p, d, f) 
+		\item 磁量子数: $m=0,\pm 1,\pm 2,\cdots, \pm l$, 角动量方向, 轨道空间取向 
+		\item 自旋量子数: $m_s=\pm 1/2$
+	\end{itemize}
+	~~\\
+	注: $2p_x ~~\beta $电子的波函数 $\Psi_{2,1,0,-1/2}$
+\end{frame}	
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 	\frametitle{作业}
@@ -1240,4 +1385,5 @@
 	\begin{equation*}
 		\int_{0}^{\infty}   e^{-x} ( L_1 (x) )^2 dx, \qquad  \int_{0}^{\infty}   e^{-x} ( L_2 (x) )^2 dx, 
 	\end{equation*}	
+	4、写出 $L_1 (x)$ 和 $L_1 ^0 (x)$ 之间的关系式
 \end{frame}		

@@ -1,12 +1,15 @@
-\beamer@sectionintoc {1}{1.薛定谔方程基础}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{薛定谔方程}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{分离变量}{8}{0}{1}
-\beamer@sectionintoc {2}{2.无限深势阱}{16}{0}{2}
-\beamer@sectionintoc {3}{3.量子谐振子与厄密方程}{26}{0}{3}
-\beamer@subsectionintoc {3}{1}{相互作用势}{27}{0}{3}
-\beamer@subsectionintoc {3}{2}{量子谐振子方程}{31}{0}{3}
-\beamer@subsectionintoc {3}{3}{厄密方程}{39}{0}{3}
-\beamer@sectionintoc {4}{4.厄密多项式及性质}{46}{0}{4}
-\beamer@subsectionintoc {4}{1}{生成函数}{47}{0}{4}
-\beamer@subsectionintoc {4}{2}{性质}{52}{0}{4}
-\beamer@subsectionintoc {4}{3}{归一化系数}{59}{0}{4}
+\beamer@sectionintoc {1}{1.氢原子薛定谔方程分离变量 }{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{相对坐标系}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{球坐标拉普拉斯}{14}{0}{1}
+\beamer@subsectionintoc {1}{3}{球坐标系氢原子方程 }{24}{0}{1}
+\beamer@sectionintoc {2}{2.角向方程与勒让德多项式}{29}{0}{2}
+\beamer@subsectionintoc {2}{1}{ 经/纬分离}{30}{0}{2}
+\beamer@subsectionintoc {2}{2}{解经度方程}{33}{0}{2}
+\beamer@subsectionintoc {2}{3}{解纬度方程}{36}{0}{2}
+\beamer@subsectionintoc {2}{4}{解勒让德方程}{39}{0}{2}
+\beamer@subsectionintoc {2}{5}{勒让德多项式及其性质}{45}{0}{2}
+\beamer@subsectionintoc {2}{6}{连带勒让德多项式}{61}{0}{2}
+\beamer@sectionintoc {3}{3.径向方程与拉盖尔多项式}{70}{0}{3}
+\beamer@subsectionintoc {3}{1}{广义拉盖方程}{71}{0}{3}
+\beamer@subsectionintoc {3}{2}{拉盖方程与拉盖多项式}{76}{0}{3}
+\beamer@subsectionintoc {3}{3}{连带拉盖多项式}{89}{0}{3}

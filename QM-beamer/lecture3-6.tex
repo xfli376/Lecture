@@ -140,31 +140,19 @@
 \begin{frame} 
     \frametitle{} 
     \例[4.试证明空间平移不变性导致动量守恒]{}                                
-    \证~ （1）设体系沿x轴方向作无穷小平移：
-    $$ x \to x'=x+\delta x $$
-    则体系的波函数变为：
-    $$ \Psi \to \Psi'=T\Psi  $$
-    波函数只是做了平移变换： $$ \Psi'(x+\delta x) = \Psi(x) $$\\
-    $$ \Psi(x+\delta x) = T\Psi(x) $$\\
+    \证~ （1）设体系沿x轴方向无穷小平移a：
+    $$ T(a)\psi(x)=\psi(x-a) $$
+    做Taylor展开,可求得
+    \[\begin{aligned}
+        \psi(x-a)=&\psi(x) -a \frac{d}{d x} \psi(x)+\frac{a^{2}}{2 !} \frac{d^{2}}{d x^{2}} \psi(x)-\ldots \\
+        &=e^{-a \frac{d}{d x}} \psi(x) \\
+    T(a)=&e^{-a \frac{d}{d x}}= e^{-\frac{i}{\hbar}a \hat{p}_x}\\
+        &=1-\frac{i}{\hbar}a \hat{p}_x 
+    \end{aligned}\]   
+ $$T(\delta x)= e^{-\frac{i}{\hbar}\delta x p_x } $$ 
 \end{frame}
 
 \begin{frame}    
-    令 $x=x-\delta x$，做反向平移，有：
-    $$\begin{aligned}
-        T\Psi(x)&= \Psi(x-\delta x) \\
-        &= \Psi(x)-\delta x \frac{\partial}{\partial x}\Psi(x)+\cdots\\
-        &= \Psi(x)-\delta x \frac{\partial}{\partial x}\Psi(x)+\cdots\\
-        &= e^{-\delta x \frac{\partial}{\partial x}} \Psi(x)\\
-    \end{aligned}$$
-    平移算符的具体形式：
-    $$\begin{aligned}
-        T(\delta x)&= e^{-\delta x \frac{\partial}{\partial x}} \\
-        &= e^{-\delta x (-i\hbar) \frac{\partial}{\partial x}\frac{1}{-i\hbar}} \\
-        &= e^{-\frac{i}{\hbar}\delta x p_x } \\
-    \end{aligned}$$
-\end{frame}
-
-\begin{frame} 
     推广到三维，有：
     $$ T(\delta \hat{\vec{r}})= e^{-\frac{i}{\hbar}\delta \hat{\vec{r}}\cdot \hat{\vec{p}} }  $$ 
     对于无穷小平移，有：
@@ -225,6 +213,11 @@
     \begin{tcolorbox2}{角动量守恒：}
         试证明：具有空间旋转不变性的体系角动量守恒                               
     \end{tcolorbox2}
+    对于无穷小平移，有：
+    $$T=1-\frac{i}{\hbar}\delta x p_x$$
+    同理, 对于无穷小转移
+    $$R(\delta \vec{\theta}) \psi(\vec{r})=e^{-\frac{i}{\hbar} \delta \vec{\theta} \cdot \widehat{\vec{L}}} \psi(\vec{r})
+$$
     \begin{tcolorbox2}{能量守恒：}
         试证明：具有时间平移对称性的体系能量守恒                               
     \end{tcolorbox2}

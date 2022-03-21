@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  11 MAR 2022 02:26
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  17 MAR 2022 00:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1873,7 +1873,7 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [12
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [13
@@ -1888,12 +1888,12 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [15
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [16
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [17
@@ -1903,7 +1903,7 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [18
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [19
@@ -1914,13 +1914,13 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [20
 
 ]
-File: figs/38.png Graphic file (type bmp)
-<figs/38.png>
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [21
 
 ]
+File: figs/2022-03-17-00-33-08.png Graphic file (type bmp)
+<figs/2022-03-17-00-33-08.png>
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [22
@@ -1931,16 +1931,25 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [23
 
 ]
+Overfull \vbox (23.55814pt too high) detected at line 229
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [24
+[24
 
 ]
+File: figs/2022-03-17-00-41-14.png Graphic file (type bmp)
+<figs/2022-03-17-00-41-14.png>
+
+Overfull \vbox (44.02121pt too high) detected at line 239
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [25
+[25
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [26
@@ -1956,15 +1965,9 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [28
 
 ]
-File: figs/39.png Graphic file (type bmp)
-<figs/39.png>
-
-Overfull \vbox (20.98085pt too high) detected at line 315
- []
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[29
+ [29
 
 ])
 File: images/uestclogo-2.png Graphic file (type bmp)
@@ -1987,15 +1990,15 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 
  (./Main.aux (./lecture8.aux))
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: A0372F9EC9746D70DE121EA78D29003F;478.
+(rerunfilecheck)             Checksum: 1423EB0C11B0FF881AEC75A12F653131;629.
  ) 
 Here is how much of TeX's memory you used:
- 57734 strings out of 476493
- 1402694 string characters out of 5817124
- 2245859 words of memory out of 5000000
- 76973 multiletter control sequences out of 15000+600000
+ 57839 strings out of 476493
+ 1406404 string characters out of 5817124
+ 2246319 words of memory out of 5000000
+ 77072 multiletter control sequences out of 15000+600000
  408011 words of font info for 111 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,13n,149p,1917b,978s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,13n,149p,1917b,982s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Main.pdf (30 pages).

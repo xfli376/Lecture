@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  12 MAR 2022 02:08
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  15 MAR 2022 14:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1806,37 +1806,37 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [5
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [6
 
-]
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.00128pt on input line 46.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.40088pt on input line 46.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 46.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 46.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.3991pt on input line 46.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 46.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [7
 
 ]
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.00128pt on input line 55.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.40088pt on input line 55.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 55.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.99872pt on input line 55.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.3991pt on input line 55.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [8
@@ -1866,7 +1866,7 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [13
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [14
@@ -1881,7 +1881,7 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [16
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [17
@@ -1902,12 +1902,9 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [20
 
 ]
-Overfull \vbox (7.1631pt too high) detected at line 246
- []
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[21
+ [21
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -1920,7 +1917,7 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [23
 
 ]
-Overfull \vbox (10.07526pt too high) detected at line 288
+Overfull \vbox (7.1631pt too high) detected at line 272
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -1938,17 +1935,17 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [26
 
 ]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [27
-
-]
-Overfull \vbox (4.14044pt too high) detected at line 335
+Overfull \vbox (10.07526pt too high) detected at line 314
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[28
+[27
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [28
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -1961,14 +1958,32 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [30
 
 ]
+Overfull \vbox (4.14044pt too high) detected at line 361
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [31
+[31
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [32
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [33
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [34
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [35
 
 
 ])
@@ -1977,32 +1992,17 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  (./lecture3-2.tex (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [33
-
-
-
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [34
-
-] (./Main.toc)
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [35
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
  [36
+
+
+
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [37
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [38
@@ -2017,16 +2017,31 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [40
 
-
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [41
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [42
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [43
+
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [44
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [45
 
 ]
 
@@ -2035,29 +2050,12 @@ LaTeX Font Warning: Font shape `TU/WeibeiSC-Bold(0)/m/it' undefined
 
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[43
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [44
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [45
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [46
-
+[46
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [47
-
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2069,22 +2067,22 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [49
 
+
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [50
+
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [51
 
-
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [52
-
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2102,18 +2100,17 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [55
 
+
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [56
 
 ]
-Overfull \vbox (17.1414pt too high) detected at line 326
- []
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[57
+ [57
+
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2126,9 +2123,27 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [59
 
 ]
+Overfull \vbox (17.1414pt too high) detected at line 326
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [60
+[60
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [61
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [62
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [63
 
 ])
 \openout2 = `lecture3-3.aux'.
@@ -2136,28 +2151,10 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  (./lecture3-3.tex (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [61
+ [64
 
 
 
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [62
-
-] (./Main.toc)
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [63
-
-]
-Overfull \vbox (22.62572pt too high) detected at line 37
- []
-
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
-[64
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2170,36 +2167,36 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [66
 
 ]
+Overfull \vbox (22.62572pt too high) detected at line 37
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [67
+[67
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [68
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-
- []
-
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[69
+ [69
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [70
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [71
 
 ]
-Overfull \vbox (5.18646pt too high) detected at line 116
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2211,10 +2208,28 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [73
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [74
+
+]
+Overfull \vbox (5.18646pt too high) detected at line 116
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[75
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [76
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [77
 
 ]
 Overfull \vbox (19.80048pt too high) detected at line 167
@@ -2222,13 +2237,13 @@ Overfull \vbox (19.80048pt too high) detected at line 167
 
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[75
+[78
 
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [76
+ [79
 
 
 ]
@@ -2237,37 +2252,22 @@ Overfull \vbox (11.99704pt too high) detected at line 179
 
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[77
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [78
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [79
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [80
+[80
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [81
 
-
 ]
-File: figs/LandL2.png Graphic file (type bmp)
-<figs/LandL2.png>
+Overfull \vbox (5.0353pt too high) detected at line 208
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [82
+[82
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [83
@@ -2282,12 +2282,15 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [85
 
+
 ]
+File: figs/LandL2.png Graphic file (type bmp)
+<figs/LandL2.png>
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [86
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [87
@@ -2297,23 +2300,17 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [88
 
-])
-\openout2 = `lecture3-4.aux'.
-
- (./lecture3-4.tex (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [89
-
-
-
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [90
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [91
@@ -2323,17 +2320,23 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [92
 
-]
+])
+\openout2 = `lecture3-4.aux'.
+
+ (./lecture3-4.tex (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [93
+
+
+
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [94
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [95
@@ -2348,19 +2351,15 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [97
 
-
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [98
 
 ]
-Overfull \vbox (4.88pt too high) detected at line 109
- []
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[99
+ [99
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2372,13 +2371,14 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [101
 
+
 ] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [102
 
 ]
-Overfull \vbox (3.64487pt too high) detected at line 164
+Overfull \vbox (4.88pt too high) detected at line 109
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2391,21 +2391,17 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [104
 
 ]
-Overfull \vbox (24.94937pt too high) detected at line 204
- []
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[105
+ [105
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [106
 
 ]
-Overfull \hbox (18.42825pt too wide) detected at line 240
-[]
+Overfull \vbox (3.64487pt too high) detected at line 164
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2413,17 +2409,12 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 [107
 
 ]
-Overfull \hbox (16.82397pt too wide) detected at line 252
-[]
- []
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[108
+ [108
 
 ]
-Overfull \hbox (18.42825pt too wide) detected at line 267
-[]
+Overfull \vbox (24.94937pt too high) detected at line 204
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2436,42 +2427,48 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [110
 
 ]
+Overfull \hbox (18.42825pt too wide) detected at line 240
+[]
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [111
+[111
 
 ]
+Overfull \hbox (16.82397pt too wide) detected at line 252
+[]
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [112
+[112
 
 ]
+Overfull \hbox (18.42825pt too wide) detected at line 267
+[]
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [113
+[113
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [114
 
-])
-\openout2 = `lecture3-5.aux'.
-
- (./lecture3-5.tex (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [115
-
-
-
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [116
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [117
@@ -2481,21 +2478,23 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [118
 
-]
-Overfull \vbox (31.42596pt too high) detected at line 46
- []
+])
+\openout2 = `lecture3-5.aux'.
 
+ (./lecture3-5.tex (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[119
+ [119
+
+
+
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [120
 
-
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [121
@@ -2506,15 +2505,18 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [122
 
 ]
+Overfull \vbox (31.42596pt too high) detected at line 46
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [123
-
+[123
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [124
+
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2526,10 +2528,11 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [126
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [127
+
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2546,18 +2549,15 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [130
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [131
 
 ]
-Overfull \vbox (20.30614pt too high) detected at line 178
- []
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[132
+ [132
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2575,13 +2575,14 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [135
 
 ]
+Overfull \vbox (20.30614pt too high) detected at line 178
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [136
+[136
 
 ]
-File: figs/hesb.png Graphic file (type bmp)
-<figs/hesb.png>
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [137
@@ -2602,6 +2603,28 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [140
 
 ]
+File: figs/hesb.png Graphic file (type bmp)
+<figs/hesb.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [141
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [142
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [143
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [144
+
+]
 File: figs/meet.png Graphic file (type bmp)
 <figs/meet.png>
 
@@ -2610,7 +2633,7 @@ Overfull \vbox (19.98824pt too high) detected at line 280
 
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[141
+[145
 
 ])
 \openout2 = `lecture3-6.aux'.
@@ -2618,49 +2641,29 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  (./lecture3-6.tex (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [142
-
-
-
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [143
-
-] (./Main.toc)
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [144
-
-]
-File: figs/2021-12-17-21-25-13.png Graphic file (type bmp)
-<figs/2021-12-17-21-25-13.png>
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [145
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
  [146
+
+
+
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [147
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [148
 
 ]
+File: figs/2021-12-17-21-25-13.png Graphic file (type bmp)
+<figs/2021-12-17-21-25-13.png>
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [149
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [150
@@ -2680,6 +2683,26 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [153
 
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [154
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [155
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [156
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [157
+
 
 ]
 Overfull \vbox (12.93839pt too high) detected at line 116
@@ -2687,17 +2710,17 @@ Overfull \vbox (12.93839pt too high) detected at line 116
 
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[154
+[158
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [155
+ [159
 
 ] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [156
+ [160
 
 ]
 
@@ -2712,37 +2735,7 @@ Overfull \vbox (11.66321pt too high) detected at line 138
 
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[157
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [158
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [159
-
-]
-
-Package amsmath Warning: Bracket group [T,H] at formula start!
-(amsmath)                It could be a misspelled positional argument.
-(amsmath)                If it belongs to the formula add a \relax in
-(amsmath)                front to hide it on input line 182.
-
-
-Overfull \vbox (34.81961pt too high) detected at line 182
- []
-
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
-[160
-
-]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [161
+[161
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2750,9 +2743,19 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [162
 
 ]
+
+Package amsmath Warning: Bracket group [T,H] at formula start!
+(amsmath)                It could be a misspelled positional argument.
+(amsmath)                If it belongs to the formula add a \relax in
+(amsmath)                front to hide it on input line 170.
+
+
+Overfull \vbox (34.81961pt too high) detected at line 170
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [163
+[163
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2760,12 +2763,9 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [164
 
 ]
-Overfull \vbox (28.70538pt too high) detected at line 251
- []
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[165
+ [165
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2773,23 +2773,44 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [166
 
 ]
+Overfull \vbox (33.46303pt too high) detected at line 227
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [167
+[167
+
+]
+Overfull \vbox (28.70538pt too high) detected at line 244
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[168
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [169
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [170
 
 ]
 File: figs/2021-12-18-00-23-17.png Graphic file (type bmp)
 <figs/2021-12-18-00-23-17.png>
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [168
+ [171
 
 ])
 File: images/uestclogo-2.png Graphic file (type bmp)
 <images/uestclogo-2.png>
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [169
+ [172
 
 
 
@@ -2808,15 +2829,15 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 8449287C718863A92FA362A8C4A6BEB8;2304.
+(rerunfilecheck)             Checksum: 1CF95179224995056C58CAEBD4EFF7A4;2305.
  ) 
 Here is how much of TeX's memory you used:
- 58471 strings out of 476493
- 1419673 string characters out of 5817124
- 2263859 words of memory out of 5000000
- 77632 multiletter control sequences out of 15000+600000
+ 58875 strings out of 476493
+ 1428516 string characters out of 5817124
+ 2264321 words of memory out of 5000000
+ 78036 multiletter control sequences out of 15000+600000
  408035 words of font info for 114 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,21n,149p,1864b,1329s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,21n,149p,1864b,1331s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Main.pdf (169 pages).
+Output written on Main.pdf (172 pages).

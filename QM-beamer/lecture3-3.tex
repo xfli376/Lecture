@@ -188,8 +188,23 @@
             \left[\frac{1}{\sin \theta} \frac{\partial}{\partial \theta}\left(\sin \theta \frac{\partial}{\partial \theta}\right)+\frac{1}{\sin ^{2} \theta} \frac{\partial^{2}}{\partial \varphi^{2}}\right] Y(\theta,\varphi)&=-\lambda Y(\theta,\varphi) \\
         \end{split} 
     \end{equation*}
-    这是球谐方程，利用分离变量及幂级数法可得：\\
+    这是球谐方程，
+\end{frame} 
+
+\begin{frame} 
+    分离变量,令 
+    \[ Y(\theta,\varphi)= Y(\theta)\Phi_m(\varphi)\]
+    得方程
+    \begin{equation}
+        -\frac{\hbar^{2}}{\sin ^{2} \theta}\left[\sin \theta \frac{\partial}{\partial \theta}\left(\sin \theta \frac{\partial}{\partial \theta}\right)-m^{2}\right] Y(\theta)=\lambda Y(\theta)
+    \end{equation}
+    幂级数法得：\\
     本征值： $$\lambda=l(l+1), \qquad (l= 0,1,2,\cdots)$$ 
+    本征函数：$$Y(\theta)=P_{l} ^m(\cos \theta)$$
+    式中$P_{l}$是勒上德多项式,是勒上德方程的解 
+    \begin{equation}
+        \frac{d}{d x}\left[\left(1-x^{2}\right) \frac{d P_{l}}{d x}\right]+l(l+1) P_{l}(x)=0 
+    \end{equation}
 \end{frame} 
 
 \begin{frame} 

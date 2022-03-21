@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  11 MAR 2022 13:00
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  19 MAR 2022 15:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1508,7 +1508,7 @@ Package fontspec Info: Font family 'WeibeiSC-Bold(0)' created for font
 
  (/Users/xfli/Library/texmf/tex/latex/metropolis/pgfplotsthemetol.sty
 Package: pgfplotsthemetol 2017/01/23 PGFplots colors based on Paul Tol's SRON technical note
-) (./Main.aux (./chapter3.aux))
+) (./Main.aux (./chapter4.aux))
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1781,9 +1781,9 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 [1
 
 ]
-\openout2 = `chapter3.aux'.
+\openout2 = `chapter4.aux'.
 
- (./chapter3.tex
+ (./chapter4.tex
 File: images/uestclogo-1.png Graphic file (type bmp)
 <images/uestclogo-1.png>
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -1803,22 +1803,22 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 
 ]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.00128pt on input line 23.
+(Font)              scaled to size 12.00128pt on input line 26.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.40088pt on input line 23.
+(Font)              scaled to size 8.40088pt on input line 26.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 23.
+(Font)              scaled to size 6.00064pt on input line 26.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 23.
+(Font)              scaled to size 11.99872pt on input line 26.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.3991pt on input line 23.
+(Font)              scaled to size 8.3991pt on input line 26.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 23.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+(Font)              scaled to size 5.99936pt on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -1827,28 +1827,16 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [5
 
 ]
-
-LaTeX Font Warning: Font shape `TU/FontAwesome(0)/b/n' undefined
-(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 41.
-
-
-LaTeX Font Warning: Font shape `TU/FontAwesome(0)/m/it' undefined
-(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 41.
-
-
-Overfull \vbox (5.40508pt too high) detected at line 41
- []
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[6
+ [6
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [7
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [8
@@ -1869,19 +1857,16 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [11
 
 ]
-Overfull \vbox (17.04773pt too high) detected at line 107
- []
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[12
+ [12
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [13
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [14
@@ -1891,7 +1876,15 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [15
 
-] (./Main.toc)
+]
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.95116pt on input line 186.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.00085pt on input line 186.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.94882pt on input line 186.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.99915pt on input line 186.
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [16
@@ -1907,37 +1900,17 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [18
 
 ]
-Overfull \vbox (1.2326pt too high) detected at line 213
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [19
+
+]
+Overfull \vbox (4.27278pt too high) detected at line 286
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[19
-
-]
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.95116pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00085pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 264.
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [20
+[20
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -1950,70 +1923,68 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [22
 
 ]
+Overfull \vbox (17.28813pt too high) detected at line 347
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [23
+[23
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [24
 
 ]
-Overfull \vbox (4.60901pt too high) detected at line 352
- []
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[25
+ [25
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [26
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [27
 
 ]
-File: ./image//LJpotential.jpeg Graphic file (type bmp)
-<./image//LJpotential.jpeg>
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [28
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [29
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [30
 
-] (./Main.toc)
+]
+Overfull \vbox (4.18214pt too high) detected at line 438
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [31
+[31
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [32
 
-]
-Overfull \vbox (6.48535pt too high) detected at line 434
- []
-
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[33
+ [33
 
 ]
-Overfull \vbox (26.63344pt too high) detected at line 454
+Overfull \vbox (5.51343pt too high) detected at line 478
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2025,15 +1996,18 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [35
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [36
 
 ]
+Overfull \vbox (6.24277pt too high) detected at line 514
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [37
+[37
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2046,9 +2020,12 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [39
 
 ]
+Overfull \vbox (32.90611pt too high) detected at line 548
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [40
+[40
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2070,23 +2047,34 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [44
 
-]
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [45
 
-] (./Main.toc)
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [46
+]
+Overfull \hbox (31.44937pt too wide) detected at line 628
+[] [] [][] [] [] [][][][][] [] [][]  [] [] [][] [] [] [][][][][] [] [][]  [] [] [][] [] [] [][] [][] [] 
+ []
 
-] (./Main.toc)
+
+Overfull \vbox (6.45686pt too high) detected at line 628
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [47
+[46
 
 ]
-Overfull \vbox (10.22179pt too high) detected at line 664
+Overfull \vbox (13.38347pt too high) detected at line 645
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[47
+
+]
+Overfull \vbox (11.32565pt too high) detected at line 658
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2099,19 +2087,19 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [49
 
 ]
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [50
-
-]
-Overfull \vbox (13.77092pt too high) detected at line 703
+Overfull \vbox (37.04161pt too high) detected at line 690
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[51
+[50
 
-] (./Main.toc)
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [51
+
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [52
@@ -2127,15 +2115,12 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [54
 
 ]
-Overfull \vbox (14.35341pt too high) detected at line 745
- []
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[55
+ [55
 
 ]
-Overfull \vbox (64.29114pt too high) detected at line 757
+Overfull \vbox (18.26949pt too high) detected at line 804
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2148,14 +2133,11 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [57
 
 ]
-Overfull \vbox (13.70065pt too high) detected at line 780
- []
-
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[58
+ [58
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [59
@@ -2165,19 +2147,18 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [60
 
-]
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.40152pt on input line 807.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 807.
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [61
 
 ]
+Overfull \vbox (16.64804pt too high) detected at line 885
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [62
+[62
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2190,21 +2171,239 @@ File: images/uestclogo-7.png Graphic file (type bmp)
  [64
 
 ]
+Overfull \vbox (11.91684pt too high) detected at line 939
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [65
+[65
+
+]
+Overfull \vbox (39.01802pt too high) detected at line 956
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[66
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [66
+ [67
+
+]
+
+Package fontspec Info: Font family 'FiraSansLight(2)' created for font 'Fira
+(fontspec)             Sans Light' with options
+(fontspec)             [Ligatures=TeX,ItalicFont={Fira Sans Light
+(fontspec)             Italic},BoldFont={Fira Sans},BoldItalicFont={Fira Sans
+(fontspec)             Italic},Numbers={Monospaced}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Fira Sans
+(fontspec)             Light/OT:script=latn;language=dflt;+tnum;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Fira Sans
+(fontspec)             Light/OT:script=latn;language=dflt;+tnum;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Fira
+(fontspec)             Sans/OT:script=latn;language=dflt;+tnum;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Fira
+(fontspec)             Sans/OT:script=latn;language=dflt;+tnum;+smcp;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Fira Sans Light
+(fontspec)             Italic/OT:script=latn;language=dflt;+tnum;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Fira Sans Light
+(fontspec)             Italic/OT:script=latn;language=dflt;+tnum;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Fira Sans
+(fontspec)             Italic/OT:script=latn;language=dflt;+tnum;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Fira Sans
+(fontspec)             Italic/OT:script=latn;language=dflt;+tnum;+smcp;mapping=tex-text;"
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [68
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [69
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [70
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [71
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [72
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [73
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [74
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [75
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [76
+
+]
+Overfull \vbox (9.32007pt too high) detected at line 1100
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[77
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [78
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [79
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [80
+
+]
+Overfull \vbox (14.29544pt too high) detected at line 1164
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[81
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [82
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [83
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [84
+
+]
+Overfull \vbox (8.19212pt too high) detected at line 1223
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[85
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [86
+
+]
+Overfull \vbox (19.9326pt too high) detected at line 1255
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[87
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [88
+
+] (./Main.toc)
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [89
+
+]
+Overfull \vbox (28.30182pt too high) detected at line 1293
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[90
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [91
+
+]
+Overfull \vbox (19.22801pt too high) detected at line 1331
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[92
+
+]
+Overfull \vbox (1.63182pt too high) detected at line 1345
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[93
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [94
+
+]
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 14.40152pt on input line 1374.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 1374.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 1374.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 14.39845pt on input line 1374.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 1374.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 1374.
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [95
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [96
 
 ])
 File: images/uestclogo-2.png Graphic file (type bmp)
 <images/uestclogo-2.png>
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [67
+ [97
 
 
 
@@ -2218,20 +2417,17 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 \tf@snm=\write9
 \openout9 = `Main.snm'.
 
- (./Main.aux (./chapter3.aux))
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+ (./Main.aux (./chapter4.aux))
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: D0F36C86E049C5CE69C725119AF9D722;1205.
+(rerunfilecheck)             Checksum: 5FAF6CDE7EB169D056781FCC9FF9F7E7;1817.
  ) 
 Here is how much of TeX's memory you used:
- 58543 strings out of 476493
- 1423377 string characters out of 5817124
- 2380860 words of memory out of 5000000
- 77726 multiletter control sequences out of 15000+600000
- 412772 words of font info for 150 fonts, out of 8000000 for 9000
+ 58110 strings out of 476493
+ 1408148 string characters out of 5817124
+ 2257321 words of memory out of 5000000
+ 77313 multiletter control sequences out of 15000+600000
+ 412167 words of font info for 146 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,17n,149p,1864b,1587s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,17n,149p,1864b,982s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Main.pdf (67 pages).
+Output written on Main.pdf (97 pages).
