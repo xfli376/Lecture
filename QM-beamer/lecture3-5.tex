@@ -83,10 +83,10 @@
 
 \begin{frame}
     \begin{tcolorbox1}{推论2：}
-        一组力学量同时有确定值的条件：一组力学量算符具有共同本征函数完备系的充要条件是这些算符彼此两两对易
+        一组力学量同时有确定值的条件：
     \begin{enumerate}
     \Item 算符彼此两两对易
-    \Item 体系处于共同本征态
+    \Item 体系处于它们的共同本征态
     \end{enumerate}
     \end{tcolorbox1}
 
@@ -103,7 +103,7 @@
 
 \begin{frame}
     \alert{例子2：经典物理学} \\
-    经典物理学用$\vec{r}, \vec{p}$来完全描述质点的运动状态，用了六个力学量$(x,y,z, p_x, p_y, p_z)$,量子力学发现这个集并不是彼此对易的，
+    经典物理学用$\vec{r}, \vec{p}$来完全描述质点的运动状态，用了六个力学量$(x,y,z, p_x, p_y, p_z)$,量子力学发现这个集并不是彼此对易的
     $$\begin{cases}
         [x_\alpha,x_\beta]= 0  \\ 
         [p_\alpha,p_\beta]= 0  \\ 
@@ -117,7 +117,7 @@
 \begin{frame} 
     \frametitle{不对易的含义}
     \begin{tcolorbox4}[不确定性原理:]
-        两不对易力学量算符，一般不同时具有确定值    
+        若两力学量的算符不对易，则它们一般不同时具有确定值    
     \end{tcolorbox4}
 \end{frame} 
 
@@ -149,7 +149,7 @@
 \end{frame} 
 
 \begin{frame} 
-    \frametitle{不确定度对易关系}
+    \frametitle{不确定度的对易关系}
     \例[3.试证明不确定度有如下对易关系]{$$[\Delta F, \Delta G]= [F, G]$$}
     \证~
     \begin{equation*}
@@ -171,8 +171,8 @@
     =&\int[\xi \Delta \hat{F} \psi-i \Delta \hat{G} \psi][\xi \Delta \hat{F} \psi-i \Delta \hat{G} \psi]^{*} d \tau \\
     =&\int[\xi \Delta \hat{F} \psi-i \Delta \hat{G} \psi] [\xi(\Delta \hat{F} \psi)^{*}+i(\Delta \hat{G} \psi)^{*}] d \tau \\
     =&\int[\xi \Delta \hat{F} \psi-i \Delta \hat{G} \psi]\left[\xi(\Delta \hat{F} \psi)^{*}+i(\Delta \hat{G} \psi)^{*}\right] d \tau \\
-    =& \xi^{2} \int(\Delta \hat{F} \psi)(\Delta \hat{F} \psi) * d \tau-i \xi \int(\Delta \hat{G} \psi)(\Delta \hat{F} \psi) * d \tau \\
-        &+i \xi \int(\Delta \hat{F} \psi)(\Delta \hat{G} \psi) * d \tau+\int(\Delta \hat{G} \psi)(\Delta \hat{G} \psi) * d \tau \\
+    =& \xi^{2} \int(\Delta \hat{F} \psi)(\Delta \hat{F} \psi)^* d \tau-i \xi \int(\Delta \hat{G} \psi)(\Delta \hat{F} \psi)^* d \tau \\
+        &+i \xi \int(\Delta \hat{F} \psi)(\Delta \hat{G} \psi)^* d \tau+\int(\Delta \hat{G} \psi)(\Delta \hat{G} \psi)^* d \tau \\
     \end{aligned}
     $$
 \end{frame} 
@@ -233,9 +233,8 @@ $$
     能量-时间不确定性关系：
     \[\Delta x \Delta p = \Delta (vt)  \Delta p = \Delta t  \Delta (vp_x)= \Delta t  \Delta E \]
     \[\to \Delta E \Delta t \geq \frac{\hbar}{2}  \]
-    {\Bullet} 激发态没有明确的能量，其能量不确定度$\Delta E$也称为能级宽度$\Gamma$，\\ \vspace{0.6em}
-    {\Bullet} 根据不确定性有理，$\Gamma$越大（越扩展），粒子处于这个态的寿命越短；$\Gamma$越小（越局域），
-    粒子处于这个态的寿命越长。\\ \vspace{0.6em}
+    {\Bullet} 激发态没有明确的能量，其能量不确定度$\Delta E$称为能级宽度$\Gamma$，\\ \vspace{0.6em}
+    {\Bullet} 根据不确定性有理，$\Gamma$越大（越扩展），粒子处于这个态的寿命越短；$\Gamma$越小（越局域），粒子处于这个态的寿命越长。\\ \vspace{0.6em}
     {\Bullet} 在光谱中体现为：峰宽（1/2峰高处的展宽）越大，对应的态寿命越短；峰宽越小，态越稳定。 
 \end{frame}
 
@@ -244,14 +243,15 @@ $$
     \begin{wrapfigure} {r} {0.3\textwidth} %;图在右
         \includegraphics[width=0.25\textwidth]{figs/hesb.png}   
     \end{wrapfigure}
-    维尔纳·海森堡（Werner Heisenberg，1901年12月5日－1976年2月1日），德国物理学家，1932年诺贝尔物理学奖。主要贡献：（1） 创立矩阵力学（量子力学的矩阵形式）；（2）提出“测不准原理”；（3）散射（S）矩阵。  
+    维尔纳·海森堡（Werner Heisenberg，1901年12月5日－1976年2月1日），德国物理学家，1932年诺贝尔物理学奖。主要贡献：（1） 创立矩阵力学（量子力学的矩阵形式）；（2）提出“测不准原理”；（3）散射（S）矩阵。 (学术伦理)
 \end{frame}
 
 \begin{frame} [allowframebreaks=]
     \begin{tcolorbox2}{不确定性关系式表明：}
     \begin{itemize}
-        \Item 若两个力学量算符不对易（对易子不等于零），对易子平均值的平方一般大于零，则它们的不确定度的积必大于零，说明它们一般不能同时具有确定值
+        \Item 若两力学量算符不对易（对易子不等于零），对易子平均值的平方一般会大于零，则它们的不确定度的积必大于零，说明它们一般不能同时具有确定值
         \Item 若两个力学量算符对易，则总可以找出这样的态（比如共同的本征态），使它们同时有确定值。 
+        \Item 
     \end{itemize}   
     \end{tcolorbox2}
 \end{frame} 
@@ -260,17 +260,24 @@ $$
     TIPS：下列说法，正确的有：
     \begin{enumerate}
         \Item 两力学量算符对易，则同时有确定值。 
-        \Item 两力学量算符不对易,则不能同时有确定值 
+        \Item 两力学量算符不对易,则不可能同时有确定值 
         \Item 若两力学量算符有共同的本征态，则彼此对易
         \Item 若两力学量算符不对易，则没有共同本征态
+        \Item 若两力学量算符A,B对易，则A的本征函数必是B的本征函数.
         \Item 若[A,B]=常数，则A和B能有共同本征态
     \end{enumerate} 
 \end{frame} 
 
-\begin{frame} 
-    \frametitle{}
-    \begin{tcolorbox2}{课堂作业}
-    已知$[L_x, L_y]=i\hbar L_z$, 试计算体系处于$L_z$的基态 $$Y_{00}=\frac{1}{\sqrt{4\pi}}$$时，$L_x, L_y$的不确定度。
+\begin{frame} {}
+    \begin{tcolorbox2}{课堂作业2}
+     A wavefunction is given by \[ \psi(x,0)=A\left(a^2-x^2\right); \qquad -a<x<a \]
+    and zero elsewhere.\\
+    find A \\
+    find $<x>$\\
+    find $<x^2>$\\
+    find $<p_x>$\\
+    find $<p_x^ 2>$\\
+    and verify the uncertainty principle. \\
     \end{tcolorbox2}
 \end{frame} 
 
@@ -278,4 +285,15 @@ $$
     \frametitle{}
     \includegraphics[width=0.9\textwidth]{figs/meet.png}
 \end{frame} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{课外作业}
+    \begin{enumerate}
+        \item 已知$[L_x, L_y]=i\hbar L_z$, 试计算体系处于$L_z$的基态 $$Y_{00}=\frac{1}{\sqrt{4\pi}}$$时，$L_x, L_y$的不确定度,并验证不确定性原理.
+        \item 试用不确定性原理,估算氢原子基态能量,估算一维线性谐振子的最小能量
+        \item 设电子在一个原子大小的无限深球型势阱中运动时,求其最小能量.
+    \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

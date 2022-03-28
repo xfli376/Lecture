@@ -148,24 +148,31 @@
 	{\begin{equation*}
 		\nabla ^{2}  = \dfrac{\partial ^2}{\partial x^2} +\dfrac{\partial^2 }{\partial y^2} +\dfrac{\partial^2  }{\partial z^2}
 	\end{equation*}\\
-	求 （$r, \theta, \varphi $）坐标系下的拉普拉斯算子 \\ \vspace{0.3cm}
+	求 （$r, \theta, \varphi $）坐标系下的拉普拉斯算子 \\ 
 	}
-	
+	\begin{center}
+		   \includegraphics[width=0.48\textwidth]{figs/2022-03-28-22-51-18.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	  \frametitle{}	  
 	\alert{解：}  坐标变换关系为：\\
 	$\begin{cases}
 		x= r\sin \theta \cos \varphi \\
 		y= r\sin \theta \sin \varphi \\
 		z=r\cos \theta
-	\end{cases} $
-\end{frame}	
-
-\begin{frame}
+	\end{cases} $ \\
 	对函数$u(x,y,z)$，进行 $r, \theta, \varphi $求导，有：\\ \vspace{0.6em}
 	{\small $\begin{cases}
 		\dfrac{\partial {u}}{\partial {r}}=\dfrac{\partial {u}}{\partial x} \dfrac{\partial {x}}{\partial {r}}+\dfrac{\partial u}{\partial {y}} \dfrac{\partial {y}}{\partial {r}}+\dfrac{\partial u}{\partial z} \dfrac{\partial z}{\partial {r}} \\ \vspace{0.3em}
 		\dfrac{\partial {u}}{\partial \theta}=\dfrac{\partial {u}}{\partial x} \dfrac{\partial{x}}{\partial \theta}+\dfrac{\partial u}{\partial {y}} \dfrac{\partial {y}}{\partial \theta}+\dfrac{\partial{u}}{\partial z} \dfrac{\partial z}{\partial \theta} \\ \vspace{0.3em}
 		\dfrac{\partial {u}}{\partial \varphi}=\dfrac{\partial u}{\partial x} \dfrac{\partial{x}}{\partial \varphi}+\dfrac{\partial u}{\partial y} \dfrac{\partial y}{\partial \varphi}+\dfrac{\partial u}{\partial z} \dfrac{\partial z}{\partial \varphi}
 	\end{cases} $}\\ \vspace{1em}
+\end{frame}	
+
+\begin{frame}
+	写成矩阵形式 \\ \vspace{1em}
 	{\small $\left[\begin{array}{ccc}
 		\dfrac{\partial u}{\partial r} \\ \vspace{0.3em}
 		\dfrac{\partial u}{\partial \theta} \\ \vspace{0.3em}
@@ -176,6 +183,28 @@
 		\sin \theta \cos \varphi & \sin \theta \sin \varphi & \cos \theta \\ \vspace{0.3em}
 		r \cos \theta \cos \varphi & r \cos \theta \sin \varphi & -r \sin \theta \\ \vspace{0.3em}
 		-r \sin \theta \sin \varphi & r \sin \theta \cos \varphi & 0
+	\end{array}\right]$
+	$\left[\begin{array}{ccc}
+		\dfrac{\partial u}{\partial x} \\ \vspace{0.3em}
+		\dfrac{\partial u}{\partial y} \\ \vspace{0.3em}
+		\dfrac{\partial u}{\partial z}
+	\end{array}\right]$
+	}\\
+	{\small $\left[\begin{array}{ccc}
+		\dfrac{\partial u}{\partial r} \\ \vspace{0.3em}
+		\dfrac{\partial u}{\partial \theta} \\ \vspace{0.3em}
+		\dfrac{\partial u}{\partial \varphi}
+	\end{array}\right]$
+	=
+	$\left[\begin{array}{ccc}
+		1 & 0 & 0 \\ \vspace{0.3em}
+		0 & r  & 0 \\ \vspace{0.3em}
+		0 & 0 & r \sin \theta 
+	\end{array}\right]$
+	$\left[\begin{array}{ccc}
+		\sin \theta \cos \varphi & \sin \theta \sin \varphi & \cos \theta \\ \vspace{0.3em}
+		\cos \theta \cos \varphi & \cos \theta \sin \varphi & - \sin \theta \\ \vspace{0.3em}
+		-\sin \varphi &  \cos \varphi & 0
 	\end{array}\right]$
 	$\left[\begin{array}{ccc}
 		\dfrac{\partial u}{\partial x} \\ \vspace{0.3em}
@@ -219,14 +248,14 @@
 			\dfrac{1}{r}\dfrac{\partial u}{\partial \theta} \\
 			\dfrac{1}{r \sin \theta}\dfrac{\partial u}{\partial \varphi}
 		\end{array}\right]
-		$}	\\ \vspace{1em}
+		$}	\\ 
+\end{frame}	
+
+\begin{frame}
 	球坐标系下, 有:
 	\begin{equation*}
 	\nabla=\vec{e}_{r} \frac{\partial}{\partial r}+\frac{1}{r} \vec{e}_{\theta} \frac{\partial}{\partial \theta}+\frac{1}{r \sin \theta} \vec{e}_{\varphi} \frac{\partial}{\partial \varphi}
 	\end{equation*}
-\end{frame}	
-
-\begin{frame}
 	\begin{equation*}
 	\begin{split}
 		\nabla ^2&=\nabla \cdot \nabla \\
@@ -496,7 +525,7 @@
 \subsection{解纬度方程}
 \begin{frame}
 	\frametitle{解纬度方程}
-	把固有值$\lambda=m^2$代回纬度方程，得n阶连带勒让德方程：
+	把固有值$\lambda=m^2$代回纬度方程，得m阶连带勒让德方程：
 	\begin{equation*}
 		\boxed{\frac{1}{\sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)+\left[l(l+1)-\frac{m^{2}}{\sin ^{2} \theta}\right] \Theta=0}
 	\end{equation*}	
@@ -739,7 +768,7 @@
 \end{frame}	
 
 \begin{frame}
-	\alert{性质4：}勒让德多项式具有正交性：\\
+	\alert{性质4：}~勒让德多项式具有正交性：\\
 	\alert{证明：}  勒让德多项式满足勒让德方程($n=l$)
 	\begin{equation*}
 		\left(1-x^{2}\right) P'' _n  (x) -2 x P' _n (x)+n(n+1)P_n(x)=0
@@ -851,7 +880,7 @@
 \end{frame}	
 
 \begin{frame}
-	\frametitle{Tips：}	
+	\frametitle{Tips：得记住}	
 	\begin{equation*}
 		\begin{split}
 		1&= P_0 \\
@@ -885,7 +914,7 @@
 \end{frame}	
 
 \begin{frame}
-	\frametitle{证明：}
+	\frametitle{证明思路：}
 	把勒让德多项式 $P_{l}(x) $ 代入勒让德方程，然后对勒让德方程逐级求导, m次后得连带勒让德方程
 	\begin{equation*}
 		\begin{split}
@@ -911,7 +940,7 @@
 	\end{equation*}	
 	(3) 递推式： 
 	\begin{equation*}
-		(l+1-k)P^m _{l+1} -(2l+1)x P^m _l + (l+m) P^m _{l-1} =0 
+		(l+1-m)P^m _{l+1} -(2l+1)x P^m _l + (l+m) P^m _{l-1} =0 
 	\end{equation*}		
 \end{frame}	
 
@@ -933,7 +962,7 @@
 	\end{equation*}
 	纬度函数为：
 	\begin{equation*}
-		\Theta_{lm}(\theta)= P^m  _{l}(\cos \theta) ,  \quad(m \le l, l= 1,2,3, \cdots n)
+		\Theta_{lm}(\theta)= P^m  _{l}(\cos \theta) ,  \quad(m \le l, l=0 1,2,3, \cdots (n-1))
 	\end{equation*}	 
 	Tips： $n$ 由径向方程决定!
 \end{frame}	
@@ -947,9 +976,9 @@
 	\begin{equation*}
 	\begin{split}
 	 	\iint  |Y_{lm}| ^2  d \sigma & =1  \\
-	 	\iint  A^2_{lm}  |P_l ^m (cos \theta)|^2 & |\Phi (\varphi)|^2 d \sigma   =1  \\
-        A^2_{lm} 2\pi  \int_{0}^{\pi}    |P_l ^m (cos \theta)|^2&  \sin \theta d\theta =1 \\
-        A^2_{lm}  2\pi & \frac{(l+m)!}{(l-m)!}  \frac{2}{2l+1}  =1 \\
+	 	\iint  A^2_{lm}  |P_l ^m (cos \theta)|^2  |\Phi (\varphi)|^2 d \sigma  & =1  \\
+        A^2_{lm} 2\pi  \int_{0}^{\pi}    |P_l ^m (cos \theta)|^2  \sin \theta d\theta &=1 \\
+        A^2_{lm}  2\pi  \frac{(l+m)!}{(l-m)!}  \frac{2}{2l+1}  &=1 \\
         A_{lm} &= \sqrt{\frac{(2l+1)(l-m)!}{4\pi (l+m)!}}
 	\end{split}		
 	\end{equation*}	 
@@ -1318,7 +1347,7 @@
 	\\\begin{equation*}
 		\begin{split}
 			n =&\beta = \frac{2\mu e^2 _s}{\alpha \hbar ^2} \\
-			E_n =& - \frac{1}{n^2} \frac{\mu e^4 _s }{2 \hbar ^2} =\frac{E_1}{n!}, \qquad (n=1,2,3,\cdots) 
+			E_n =& - \frac{1}{n^2} \frac{\mu e^4 _s }{2 \hbar ^2} =\frac{E_1}{n^2}, \qquad (n=1,2,3,\cdots) 
 		\end{split}		
 	\end{equation*}	
 	由于${n-l-1\ge 0}$,有:
@@ -1357,11 +1386,12 @@
 	\end{equation*}	
 \end{frame}		
 
+\section{5.氢原子量子描述}
 \begin{frame}
-	\frametitle{小结:解氢原子}	
-	描述氢原子的波函数为:
+	\frametitle{氢原子}	
+	氢原子波函数:
 	{\large \begin{equation*}
-		\Psi(r,\theta,\varphi,s) = \Psi_{n,l,m,m_s}= R_{nl} (r) Y_{lm} (\theta,\varphi)S_{m_s}(s)
+		\Psi_{nlmm_s}(r,\theta,\varphi,s)= R_{nl} (r) Y_{lm} (\theta,\varphi)S_{m_s}(s)
 	\end{equation*} }
 	\begin{itemize}
 		\item 主量子数: $n=1,2,3,\cdots$, 能级,轨道能量 (主壳层 K，L，M, N, O, P, Q)
@@ -1370,9 +1400,63 @@
 		\item 自旋量子数: $m_s=\pm 1/2$
 	\end{itemize}
 	~~\\
-	注: $2p_x ~~\beta $电子的波函数 $\Psi_{2,1,0,-1/2}$
+	注: $2p_z $电子的波函数 $\Psi_{210}$
+\end{frame}
+
+\begin{frame}
+	  \frametitle{}
+	  \begin{center}
+		\includegraphics[width=1\textwidth]{figs/orbitals.png}
+   \end{center}
+\end{frame}
+
+\begin{frame}
+	  \frametitle{能级与光谱}
+	  \[ E_n = - \frac{1}{n^2} \frac{\mu e^4 _s }{2 \hbar ^2} =\frac{E_1}{n^2}, \quad (n=1,2,3,\cdots) , \qquad \nu=\frac{E_n -E_m}{h} = R_H c [\frac{1}{m^2} -\frac{1}{n^2}]
+	  \]
+	  \begin{center}
+		   \includegraphics[width=0.58\textwidth]{figs/2022-03-28-23-37-55.png}
+	  \end{center}
+\end{frame}
+
+\begin{frame} 
+    \frametitle{角动量量子化}
+    \begin{wrapfigure} {b} {0.4\textwidth} %;图在右
+        \includegraphics[width=0.35\textwidth]{figs/LandL2.png}   
+    \end{wrapfigure}
+    {\Bullet} 角动量大小  $L^2=l(l+1) \hbar^2$\\
+	$L=\sqrt{l(l+1)}\hbar, \quad (l=1,2,\cdots, n-1)$\\
+    ~~\\ \vspace{0.3em}
+    {\Bullet} 角动量Z投影 $L^2_z=m^2\hbar^2$\\
+    $L_z=m\hbar, \quad (m=0,\pm 1,\pm 2, \cdots, \pm l)$\\
+	~~\\
+    {\Bullet} 大小和方向皆量子化
+\end{frame} 
+
+\begin{frame}
+	  \frametitle{轨道的形态}
+		\begin{center}
+			 \includegraphics[width=1.0\textwidth,height=2.5in]{figs/2022-03-25-19-35-50.png}
+		\end{center}	 
 \end{frame}	
 
+\begin{frame}
+	  \frametitle{}
+	  \例 [1.求2s轨道的形态]{}
+	  \解~ 2s轨道的波函数为\[  \Psi_{nlm} = \Psi_{200} = R_{20} (r) Y_{00}(\theta,\varphi) = N_{20} e^{-\frac{r}{2a_0}} (2-\frac{r}{a_0})\frac{1}{\sqrt{4\pi}}\]
+	  \begin{enumerate}
+		  \item 径向分布($r-r+dr$找到粒子的概率)
+		   \[ \begin{aligned}
+	    \omega_{nl} dr &= \int _{\varphi=0} ^{2\pi} \int _{\theta=0} ^{\pi} |R_{nl}(r)Y_{lm}(\theta,\varphi)|^2 r^2\sin \theta dr d\theta d \varphi \\
+		&= R^2_{nl}(r) r^2 dr \\
+		\end{aligned}\]
+		\item 角向分布($(\theta,\varphi)-(\theta+d\theta,\varphi+d\varphi)$找到粒子的概率)		
+		\[ \begin{aligned}
+			\omega_{lm} d \Omega &= \int _{r=0} ^{\infty} |R_{nl}(r)Y_{lm}(\theta,\varphi)|^2 r^2dr  d \Omega \\
+			&= |Y_{lm}|^2 d \Omega 	
+			\end{aligned}\]		
+	  \end{enumerate}  
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 	\frametitle{作业}
@@ -1387,3 +1471,18 @@
 	\end{equation*}	
 	4、写出 $L_1 (x)$ 和 $L_1 ^0 (x)$ 之间的关系式
 \end{frame}		
+
+\begin{frame}
+	\frametitle{随堂测试}
+	\begin{exampleblock} {1.粒子处于如下势场中：}
+		\begin{equation*}
+			V(x)= \frac{1}{2} \mu \omega ^2 x^2  +1
+		\end{equation*}
+		\hspace{2em}求能量固有值和定态波函数。
+	\end{exampleblock}	
+	\begin{exampleblock} {2.基于厄米多项式的正交性求积分：}
+		\begin{equation*}
+			\int\limits_{-\infty}^{+\infty} (x^3 +1)e^{-x^{2}} H_n(x) d x 
+		\end{equation*}
+	\end{exampleblock}	
+\end{frame}
