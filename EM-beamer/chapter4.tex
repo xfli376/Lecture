@@ -1360,7 +1360,18 @@
 \end{frame}			
 
 \begin{frame}
-	* 求归一化系数 $N_{nl}$ 
+	\frametitle{* 求归一化系数}
+  \begin{center}
+	   \includegraphics[width=0.4\textwidth]{figs/dt.png}
+  \end{center}
+$$ \begin{aligned}
+  dS&=(rd\theta)\cdot (r\sin \theta d \varphi ) =r^2 \sin \theta d\theta d \varphi \\
+  d \tau &=dS \cdot dr = r^2 \sin \theta dr d\theta d \varphi	  
+\end{aligned}$$
+\end{frame}
+
+\begin{frame}
+	* 求 $N_{nl}$ 
 	\begin{equation*}
 	\begin{split}
 		\iiint  &\Psi(r,\theta,\varphi) d \tau =1  \\
@@ -1379,34 +1390,269 @@
 	\end{equation*}	
 	$\to$ \\
 	\begin{equation*}
-		N^2 _{nl}  \frac{2n (n+1)!} {\alpha^3 (n-l-1)!} =1
+		N^2 _{nl}  \frac{2n [(n+1)!]^3} {\alpha^3 (n-l-1)!} =1
 	\end{equation*}	
 	\begin{equation*}
-		N_{nl}  =\sqrt{\alpha^3 \frac{ (n-l-1)!}{2n (n+1)!}} 
+		N_{nl}  =\sqrt{\alpha^3 \frac{ (n-l-1)!}{2n [(n+1)!]^3}} 
 	\end{equation*}	
 \end{frame}		
 
 \section{5.氢原子量子描述}
+
 \begin{frame}
-	\frametitle{氢原子}	
-	氢原子波函数:
-	{\large \begin{equation*}
-		\Psi_{nlmm_s}(r,\theta,\varphi,s)= R_{nl} (r) Y_{lm} (\theta,\varphi)S_{m_s}(s)
-	\end{equation*} }
-	\begin{itemize}
-		\item 主量子数: $n=1,2,3,\cdots$, 能级,轨道能量 (主壳层 K，L，M, N, O, P, Q)
-		\item 角量子数: $l=0,1,2,\cdots, n-1$, 角动量大小, 轨道形状 (次壳层, s, p, d, f) 
-		\item 磁量子数: $m=0,\pm 1,\pm 2,\cdots, \pm l$, 角动量方向, 轨道空间取向 
-		\item 自旋量子数: $m_s=\pm 1/2$
-	\end{itemize}
-	~~\\
-	注: $2p_z $电子的波函数 $\Psi_{210}$
+	\frametitle{小结:解氢原子}
+	\tcbset{enhanced jigsaw,fonttitle=\bfseries,opacityback=0.35,colback=blue!5!white,
+		frame style={left color=red!75!black,right color=red!10!yellow}}
+	\begin{tikzpicture}% draw two balls
+	  \path[use as bounding box] (0,0.8) rectangle +(0.1,0.1);
+	  \shadedraw [shading=ball] (0,0.3) circle (1cm);
+	  %\shadedraw [ball color=yellow!20] (3,-2.2) circle (1cm);
+	\end{tikzpicture}
+	\begin{tcolorbox}[title=\faEnvira\hspace{1em} 第一次分离变量,
+	  overlay=
+	  {\begin{tcbinvclipframe}
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=2mm]frame.north west)
+	  --([xshift=2mm,yshift=-2mm]frame.south east);
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=-2mm]frame.south west)
+	  --([xshift=2mm,yshift=2mm]frame.north east);
+	  \end{tcbinvclipframe}}]
+	  {\Bullet}氢原子定态薛定谔方程：
+		\begin{equation*}
+			\left[-\frac{\hbar^2}{2 m_1} \nabla_1 ^2  -\frac{\hbar^2}{2 m_2} \nabla_2 ^2 +U(| \vec{r_1}-\vec{r_2} | ) \right] \Psi (\vec{r_1},\vec{r_2}) =E \Psi (\vec{r_1},\vec{r_2}) 
+		\end{equation*}
+	{\Bullet} 质心运动方程
+	  \begin{equation*}
+		-\frac{\hbar^2}{2 M} \nabla_R ^2  \psi (\vec{R}) =E_c \psi (\vec{R}) 
+	\end{equation*}	
+	{\Bullet} 相对运动方程
+	\begin{equation*}
+		\left[-\frac{\hbar^2}{2 m} \nabla ^2 +U(\vec{r}) \right] \Psi (\vec{r}) =E \Psi (\vec{r})   
+	\end{equation*}
+	  \end{tcolorbox}
 \end{frame}
 
 \begin{frame}
-	  \frametitle{}
+	\frametitle{}
+	\tcbset{enhanced jigsaw,fonttitle=\bfseries,opacityback=0.35,colback=blue!5!white,
+		frame style={left color=red!75!black,right color=red!10!yellow}}
+	\begin{tikzpicture}% draw two balls
+	  \path[use as bounding box] (0,0.8) rectangle +(0.1,0.1);
+	  \shadedraw [shading=ball] (0,0.3) circle (1cm);
+	  %\shadedraw [ball color=yellow!20] (3,-2.2) circle (1cm);
+	\end{tikzpicture}
+	\begin{tcolorbox}[title=\faEnvira\hspace{1em} 第二次分离变量,
+	  overlay=
+	  {\begin{tcbinvclipframe}
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=2mm]frame.north west)
+	  --([xshift=2mm,yshift=-2mm]frame.south east);
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=-2mm]frame.south west)
+	  --([xshift=2mm,yshift=2mm]frame.north east);
+	  \end{tcbinvclipframe}}]
+	{\Bullet}角向方程：
+	\begin{equation*}
+		\left[ \frac{1}{ \sin \theta  } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial \theta } )
+		+\frac{1}{ \sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2}  +l(l+1) \right] Y=0 
+	\end{equation*}
+	{\Bullet}径向方程：
+	\begin{equation*}
+		\frac{d^2 R}{d r^2} + \frac{2}{r^2}\frac{d R }{d r}  + \frac{2 \mu} {\hbar^2}(E+ \frac{e_s ^2}{r} ) R- \frac{l(l+1)}{r^2} R=0
+	\end{equation*}	
+	  \end{tcolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{}
+	\tcbset{enhanced jigsaw,fonttitle=\bfseries,opacityback=0.35,colback=blue!5!white,
+		frame style={left color=red!75!black,right color=red!10!yellow}}
+	\begin{tikzpicture}% draw two balls
+	  \path[use as bounding box] (0,0.8) rectangle +(0.1,0.1);
+	  \shadedraw [shading=ball] (0,0.3) circle (1cm);
+	  %\shadedraw [ball color=yellow!20] (3,-2.2) circle (1cm);
+	\end{tikzpicture}
+	\begin{tcolorbox}[title=\faEnvira\hspace{1em} 第三次分离变量,
+	  overlay=
+	  {\begin{tcbinvclipframe}
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=2mm]frame.north west)
+	  --([xshift=2mm,yshift=-2mm]frame.south east);
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=-2mm]frame.south west)
+	  --([xshift=2mm,yshift=2mm]frame.north east);
+	  \end{tcbinvclipframe}}]
+	{\Bullet}经度方程：
+	\begin{equation*}
+		\frac{d^{2} \Phi}{d \varphi^{2}}+\lambda \Phi=0,(0<\varphi\le2 \pi)
+	\end{equation*}	
+	{\Bullet}纬度方程：
+	\begin{equation*}
+		\frac{1}{\sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)+\left[l(l+1)-\frac{\lambda}{\sin ^{2} \theta}\right] \Theta=0,(0<\theta \le \pi)
+	\end{equation*}	
+	{\Bullet}径向方程：
+	\begin{equation*}
+		\frac{d^2 R}{d r^2} + \frac{2}{r^2}\frac{d R }{d r}  + \frac{2 \mu} {\hbar^2}(E+ \frac{e_s ^2}{r} ) R- \frac{l(l+1)}{r^2} R=0
+	\end{equation*}	
+	  \end{tcolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{}
+	\tcbset{enhanced jigsaw,fonttitle=\bfseries,opacityback=0.35,colback=blue!5!white,
+		frame style={left color=red!75!black,right color=red!10!yellow}}
+	\begin{tikzpicture}% draw two balls
+	  \path[use as bounding box] (0,0.8) rectangle +(0.1,0.1);
+	  \shadedraw [shading=ball] (0,0.3) circle (1cm);
+	  %\shadedraw [ball color=yellow!20] (3,-2.2) circle (1cm);
+	\end{tikzpicture}
+	\begin{tcolorbox}[title=\faEnvira\hspace{1em} 经度方程的解,
+	  overlay=
+	  {\begin{tcbinvclipframe}
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=2mm]frame.north west)
+	  --([xshift=2mm,yshift=-2mm]frame.south east);
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=-2mm]frame.south west)
+	  --([xshift=2mm,yshift=2mm]frame.north east);
+	  \end{tcbinvclipframe}}]
+	{\Bullet}经度方程：
+	\begin{equation*}
+		\frac{d^{2} \Phi}{d \varphi^{2}}+\lambda \Phi=0,(0<\varphi\le2 \pi)
+	\end{equation*}	
+	固有值和固有函数：
+	\[\begin{cases}
+		\lambda=m^2, ~~~ (m=0,\pm 1,\pm 2,\cdots,\pm l) \\ 
+		\Phi_m (\varphi)=\frac{1}{\sqrt{2\pi}} e^{im\varphi}
+	\end{cases}\]
+	物理上对应角动量Z方向投影:
+	\[L_z =m\hbar \]
+	\end{tcolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{}
+	\tcbset{enhanced jigsaw,fonttitle=\bfseries,opacityback=0.35,colback=blue!5!white,
+		frame style={left color=red!75!black,right color=red!10!yellow}}
+	\begin{tikzpicture}% draw two balls
+	  \path[use as bounding box] (0,0.8) rectangle +(0.1,0.1);
+	  \shadedraw [shading=ball] (0,0.3) circle (1cm);
+	  %\shadedraw [ball color=yellow!20] (3,-2.2) circle (1cm);
+	\end{tikzpicture}
+	\begin{tcolorbox}[title=\faEnvira\hspace{1em} 纬度方程的解,
+	  overlay=
+	  {\begin{tcbinvclipframe}
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=2mm]frame.north west)
+	  --([xshift=2mm,yshift=-2mm]frame.south east);
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=-2mm]frame.south west)
+	  --([xshift=2mm,yshift=2mm]frame.north east);
+	  \end{tcbinvclipframe}}]
+	  {\Bullet}纬度方程：
+	  \begin{equation*}
+		  \frac{1}{\sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)+\left[l(l+1)-\frac{m^2}{\sin ^{2} \theta}\right] \Theta=0,(0<\theta \le \pi)
+	  \end{equation*}	
+	固有值
+	\[\begin{cases}
+		 m^2, ~~~ (m=0,\pm 1,\pm 2,\cdots,\pm l) \\
+		l(l+1), ~~~ (l=1, 2,\cdots, n-1) \\ 
+	\end{cases}\]
+	固有函数：
+	\[
+		\Theta_{lm}(\theta)= P^m  _{l}(\cos \theta) \]
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{}
+	\tcbset{enhanced jigsaw,fonttitle=\bfseries,opacityback=0.35,colback=blue!5!white,
+		frame style={left color=red!75!black,right color=red!10!yellow}}
+	\begin{tikzpicture}% draw two balls
+	  \path[use as bounding box] (0,0.8) rectangle +(0.1,0.1);
+	  \shadedraw [shading=ball] (0,0.3) circle (1cm);
+	  %\shadedraw [ball color=yellow!20] (3,-2.2) circle (1cm);
+	\end{tikzpicture}
+	\begin{tcolorbox}[title=\faEnvira\hspace{1em} 角向方程的解,
+	  overlay=
+	  {\begin{tcbinvclipframe}
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=2mm]frame.north west)
+	  --([xshift=2mm,yshift=-2mm]frame.south east);
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=-2mm]frame.south west)
+	  --([xshift=2mm,yshift=2mm]frame.north east);
+	  \end{tcbinvclipframe}}]
+	{\Bullet}角向方程：
+	\begin{equation*}
+		\left[ \frac{1}{ \sin \theta  } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial \theta } )
+		+\frac{1}{ \sin^2 \theta  } \frac{\partial^2}{\partial\varphi ^2}  +l(l+1) \right] Y=0 
+	\end{equation*}
+	角动量固有值
+	\[\begin{cases}
+		m\hbar, ~~~ (m=0,\pm 1,\pm 2,\cdots,\pm l) \\
+		l(l+1)\hbar^2, ~~~ (l=1, 2,\cdots, n-1) \\ 
+	\end{cases}\]
+	固有函数：
+	\[
+		Y_{lm} (\theta,\varphi)= \sqrt{\frac{(2l+1)(l-m)!}{4\pi (l+m)!}}  P_l ^m (cos \theta)  e^{im\varphi}  \]
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{}
+	\tcbset{enhanced jigsaw,fonttitle=\bfseries,opacityback=0.35,colback=blue!5!white,
+		frame style={left color=red!75!black,right color=red!10!yellow}}
+	\begin{tikzpicture}% draw two balls
+	  \path[use as bounding box] (0,0.8) rectangle +(0.1,0.1);
+	  \shadedraw [shading=ball] (0,0.3) circle (1cm);
+	  %\shadedraw [ball color=yellow!20] (3,-2.2) circle (1cm);
+	\end{tikzpicture}
+	\begin{tcolorbox}[title=\faEnvira\hspace{1em} 径向方程的解,
+	  overlay=
+	  {\begin{tcbinvclipframe}
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=2mm]frame.north west)
+	  --([xshift=2mm,yshift=-2mm]frame.south east);
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=-2mm]frame.south west)
+	  --([xshift=2mm,yshift=2mm]frame.north east);
+	  \end{tcbinvclipframe}}]
+	  {\Bullet}径向方程：
+	  \begin{equation*}
+		\frac{d^2 R}{d r^2} + \frac{2}{r^2}\frac{d R }{d r}  + \frac{2 \mu} {\hbar^2}(E+ \frac{e_s ^2}{r} ) R- \frac{l(l+1)}{r^2} R=0
+	  \end{equation*}	
+	能量固有值
+	\[ E_n =- \frac{1}{n^2} \frac{\mu e^4 _s }{2 \hbar ^2} =\frac{E_1}{n^2}, \qquad (n=1,2,3,\cdots) \]
+	固有函数：
+	\[
+		R_{nl} (r) =\sqrt{(\frac{2}{n a_0})^3 \frac{ (n-l-1)!}{2n [(n+1)!]^3}}  (\frac{2}{n a_0}r) ^l  L_{n-l-1} ^{2l+1} (\frac{2}{n a_0}r) e^{-\frac{r}{n a_0}}\]
+\end{tcolorbox}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{}
+	\tcbset{enhanced jigsaw,fonttitle=\bfseries,opacityback=0.35,colback=blue!5!white,
+		frame style={left color=red!75!black,right color=red!10!yellow}}
+	\begin{tikzpicture}% draw two balls
+	  \path[use as bounding box] (0,0.8) rectangle +(0.1,0.1);
+	  \shadedraw [shading=ball] (0,0.3) circle (1cm);
+	  %\shadedraw [ball color=yellow!20] (3,-2.2) circle (1cm);
+	\end{tikzpicture}
+	\begin{tcolorbox}[title=\faEnvira\hspace{1em} 氢原子的解,
+	  overlay=
+	  {\begin{tcbinvclipframe}
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=2mm]frame.north west)
+	  --([xshift=2mm,yshift=-2mm]frame.south east);
+	  \draw[red,line width=1cm] ([xshift=-2mm,yshift=-2mm]frame.south west)
+	  --([xshift=2mm,yshift=2mm]frame.north east);
+	  \end{tcbinvclipframe}}]
+	  {\Bullet}	氢原子波函数:
+	\begin{equation*}	
+		 \Psi_{nlmm_s}(r, \theta, \varphi, s)= R_{nl} (r) Y_{lm} (\theta,\varphi)S_{m_s}(s)
+	\end{equation*} 
+	\begin{itemize}
+		  \item 主量子数: $n=1,2,3,\cdots$, 能级,轨道能量 (主 K，L，M, N, O, P, Q)
+		  \item 角量子数: $l=0,1,2,\cdots, n-1$, 角动量大小, 轨道形状 (次 s, p, d, f) 
+		  \item 磁量子数: $m=0,\pm 1,\pm 2,\cdots, \pm l$, 角动量方向, 轨道空间取向 
+		  \item 自旋量子数: $m_s=\pm 1/2$
+	\end{itemize}
+\end{tcolorbox}
+\end{frame}
+
+
+\begin{frame}
+	  \frametitle{轨道波函数}
 	  \begin{center}
-		\includegraphics[width=1\textwidth]{figs/orbitals.png}
+		\includegraphics[width=0.95\textwidth]{figs/orbitals.png}
    \end{center}
 \end{frame}
 

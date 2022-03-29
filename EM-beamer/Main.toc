@@ -13,4 +13,4 @@
 \beamer@subsectionintoc {3}{1}{广义拉盖方程}{72}{0}{3}
 \beamer@subsectionintoc {3}{2}{拉盖方程与拉盖多项式}{77}{0}{3}
 \beamer@subsectionintoc {3}{3}{连带拉盖多项式}{90}{0}{3}
-\beamer@sectionintoc {4}{5.氢原子量子描述}{96}{0}{4}
+\beamer@sectionintoc {4}{5.氢原子量子描述}{97}{0}{4}

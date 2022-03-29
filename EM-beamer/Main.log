@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  29 MAR 2022 00:53
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  29 MAR 2022 23:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2375,7 +2375,10 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 [93
 
 ]
-Overfull \vbox (1.63182pt too high) detected at line 1374
+File: figs/dt.png Graphic file (type bmp)
+<figs/dt.png>
+
+Overfull \vbox (37.00162pt too high) detected at line 1371
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2383,37 +2386,30 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 [94
 
 ]
+Overfull \vbox (1.63182pt too high) detected at line 1385
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [95
+[95
 
-] (./Main.toc)
+]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [96
 
-]
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.40152pt on input line 1404.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 1404.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 1404.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 1404.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 1404.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 1404.
+] (./Main.toc)
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
  [97
 
 ]
-File: figs/orbitals.png Graphic file (type bmp)
-<figs/orbitals.png>
 
-Overfull \vbox (67.13533pt too high) detected at line 1411
+LaTeX Font Warning: Font shape `TU/FontAwesome(0)/b/n' undefined
+(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 1432.
+
+
+Overfull \vbox (44.20984pt too high) detected at line 1432
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2421,32 +2417,28 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 [98
 
 ]
-File: figs/2022-03-28-23-37-55.png Graphic file (type bmp)
-<figs/2022-03-28-23-37-55.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [99
 
-Overfull \vbox (38.8537pt too high) detected at line 1420
+]
+Overfull \vbox (7.68977pt too high) detected at line 1493
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
-[99
+[100
 
 ]
-File: figs/LandL2.png Graphic file (type bmp)
-<figs/LandL2.png>
+Overfull \vbox (20.1142pt too high) detected at line 1524
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [100
+[101
 
 ]
-File: figs/2022-03-25-19-35-50.png Graphic file (type bmp)
-<figs/2022-03-25-19-35-50.png>
-File: images/uestclogo-7.png Graphic file (type bmp)
-<images/uestclogo-7.png>
- [101
-
-]
-Overfull \vbox (23.02893pt too high) detected at line 1459
+Overfull \vbox (2.2591pt too high) detected at line 1556
  []
 
 File: images/uestclogo-7.png Graphic file (type bmp)
@@ -2454,21 +2446,86 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 [102
 
 ]
+Overfull \vbox (49.35103pt too high) detected at line 1589
+ []
+
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [103
+[103
+
+]
+Overfull \vbox (32.29588pt too high) detected at line 1618
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[104
 
 ]
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [104
+ [105
+
+]
+File: figs/orbitals.png Graphic file (type bmp)
+<figs/orbitals.png>
+
+Overfull \vbox (85.6144pt too high) detected at line 1657
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[106
+
+]
+File: figs/2022-03-28-23-37-55.png Graphic file (type bmp)
+<figs/2022-03-28-23-37-55.png>
+
+Overfull \vbox (38.8537pt too high) detected at line 1666
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[107
+
+]
+File: figs/LandL2.png Graphic file (type bmp)
+<figs/LandL2.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [108
+
+]
+File: figs/2022-03-25-19-35-50.png Graphic file (type bmp)
+<figs/2022-03-25-19-35-50.png>
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [109
+
+]
+Overfull \vbox (23.02893pt too high) detected at line 1705
+ []
+
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+[110
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [111
+
+]
+File: images/uestclogo-7.png Graphic file (type bmp)
+<images/uestclogo-7.png>
+ [112
 
 ])
 File: images/uestclogo-2.png Graphic file (type bmp)
 <images/uestclogo-2.png>
 File: images/uestclogo-7.png Graphic file (type bmp)
 <images/uestclogo-7.png>
- [105
+ [113
 
 
 
@@ -2483,16 +2540,22 @@ File: images/uestclogo-7.png Graphic file (type bmp)
 \openout9 = `Main.snm'.
 
  (./Main.aux (./chapter4.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: DFECC84107B09BD993EAC52FE2B50619;1927.
  ) 
 Here is how much of TeX's memory you used:
- 58239 strings out of 476493
- 1410242 string characters out of 5817124
- 2261486 words of memory out of 5000000
- 77426 multiletter control sequences out of 15000+600000
- 412167 words of font info for 146 fonts, out of 8000000 for 9000
+ 58348 strings out of 476493
+ 1411889 string characters out of 5817124
+ 2263487 words of memory out of 5000000
+ 77547 multiletter control sequences out of 15000+600000
+ 409965 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,17n,149p,1864b,982s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Main.pdf (105 pages).
+Output written on Main.pdf (113 pages).
