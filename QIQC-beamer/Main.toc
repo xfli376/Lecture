@@ -1,6 +1,5 @@
-\beamer@sectionintoc {1}{1.量子通信基础}{3}{0}{1}
-\beamer@sectionintoc {2}{2.量子密码分发}{12}{0}{2}
-\beamer@subsectionintoc {2}{1}{量子不可克隆原理}{13}{0}{2}
-\beamer@subsectionintoc {2}{2}{量子不可删除原理}{16}{0}{2}
-\beamer@subsectionintoc {2}{3}{BB84协议}{19}{0}{2}
-\beamer@subsectionintoc {2}{4}{B92协议}{26}{0}{2}
+\beamer@sectionintoc {1}{1.课程简介}{2}{0}{1}
+\beamer@sectionintoc {2}{2.量子信息学简介}{9}{0}{2}
+\beamer@sectionintoc {3}{3.量子比特}{19}{0}{3}
+\beamer@sectionintoc {4}{4.双量子比特}{27}{0}{4}
+\beamer@sectionintoc {5}{4.量子逻辑门}{34}{0}{5}
