@@ -1,0 +1,160 @@
+
+\section{厄密多项式及其性质}
+自然界广泛存在简谐振动，其量子力学固有解是厄密多项式。因此，了解厄密多项式的性质是很有必要的
+\subsection{生成函数}
+\begin{example} %1
+是否存在一个函数，它的展开系数刚好就是Hermite 多项式。试证明，二元函数$w(x,t)=e^{2xt-t^2}$是Hermite多项式的一个母函数。\\
+\end{example}
+
+\begin{proof}
+把函数做关于变量t的Taylor 展开：
+ \begin{equation*}
+w(x,t) =\sum_{n=0}^{\infty} \frac{1}{n!}  c_n(x) t^n
+\end{equation*}
+则需证明：$\displaystyle \left[  \frac{d^2}{dx^2} -2x\frac{d}{dx} +2n  \right] c_n(x)=0$ \\
+ (1)、由 $ \displaystyle  \frac{\partial w}{\partial x} =2t e^{2xt-t^2} =2t ~w(x,t) $ 得 \\ 
+$ \displaystyle \sum_{n=0}^{\infty} \frac{1}{n!}  c~'_n(x) t^n  = 2t  \sum_{n=0}^{\infty} \frac{1}{n!}  c_n(x) t^n  =  \sum_{n=0}^{\infty} \frac{1}{n!}  2c_{n}(x) t^{n+1} =  \sum_{n=1}^{\infty} \frac{n}{n!}  2c_{n-1}(x) t^{n}   $ \\
+比较系数，有：\\
+{ $c~'_n(x)=2nc_{n-1}(x)$} \\  
+$c~''_n(x)=2nc~'_{n-1}(x)=4n(n-1)c~_{n-2}(x)$ \\  
+（2）由 $ \displaystyle  \frac{\partial w}{\partial t} =2(x-t) e^{2xt-t^2} =2(x-t) ~w(x,t) $ 得 \\ 
+$ \displaystyle  \frac{\partial w}{\partial t} +2(t-x) ~w(x,t) =0$ \\ 
+把展开式代入上式\\ 
+{$ \displaystyle \sum_{n=1}^{\infty} \frac{1}{n!}n c_n(x) t^{n-1} +\sum_{n=0}^{\infty} \frac{1}{n!}2(t-x) c_n(x)t^n=0$ } \\ \vspace{0.3cm}
+{$ \displaystyle \sum_{n=0}^{\infty} \frac{1}{n!} c_{+1}(x) t^{n} +\sum_{n=0}^{\infty} \frac{-2x}{n!} c_n(x)t^n +\sum_{n=1}^{\infty}\frac{2n}{n!} c_{-1}(x)t^n=0$ } \\ 
+比较系数，有：\\
+{  $ c_{n+1}(x) -2xc_n(x) +2nc_{n-1} (x) =0 $} \\ 
+{  $ c_{n}(x) -2xc_{n-1}(x) +2(n-1)c_{n-2} (x) =0 $} \\ 
+（3）把 {  $c~'_n(x)=2nc_{n-1}(x)$},~~~~~{  $c~''_n(x)=4n(n-1)c~_{n-2}(x)$} 代入上式 \\  
+得：{ $ \displaystyle  c_{n}(x) - \frac{x}{n}c~'_{n}(x) +\frac{1}{2n}c~''_{n} (x) =0 $} \\
+整理，得：{ $\displaystyle \left[  \frac{d^2}{dx^2} -2x\frac{d}{dx} +2n  \right] c_n(x)=0$} \\ 
+即： $c_n(x)=H_n(x)  $ \textcolor{red}{证毕！}
+\end{proof}
+
+\begin{remark}
+还记得傅立叶变换吗，$	1, \cos(x), \sin (x), \cos(2x), \sin (2x), ..., \cos(nx), \sin (nx) $  构成正交完全集。 傅立叶级数是展开系数。
+  $	x^0, x^1, x^2, ..., x^n $  也构成正交完全集，所以一般的函数都可以做 Taylor 展开，  $w(x,t)=e^{2xt-t^2}$的展开系数正是厄密多项式。
+\end{remark}
+
+\subsection{递推公式}
+{  既然： $c_n(x)=H_n(x) $}  \\ 
+{  $c~'_n(x)=2nc_{n-1}(x)    $ }   \\ 
+{  $ ~\to~    H~'_n(x)=2nH_{n-1}(x)    $}   \\ 
+{  $ c_{n}(x) -2xc_{n-1}(x) +2(n-1)c_{n-2} (x) =0  $ }   \\ 
+{  $\to   H_{n}(x) -2xH_{n-1}(x) +2(n-1)H_{n-2} (x) =0  $ } \\
+有： $H_0(x)=1,  H_1(x)=2x, $
+
+\subsection{微分形式}
+{ $ \displaystyle w(x,t) =\sum_{n=0}^{\infty} \frac{1}{n!}  c_n(x) t^n $ }\\
+{ $ \displaystyle w(x,t) =\sum_{n=0}^{\infty} \frac{1}{n!}  H_n(x) t^n  $} \\
+由Taylor展式，知：\\
+{ $ \displaystyle  H_n(x) = \left[  \frac{\partial ^n w  }{\partial t^n}  \right] _{t=0} $} \\ 
+{ $ \displaystyle w(x,t) = e^{2xt-t^2} = e^{x^2}  e^{-(x-t)^2} $} \\ 
+{ $ \displaystyle  H_n(x) = \left[  \frac{\partial ~^n w  }{\partial t^n}  \right] _{t=0} $}\\ 
+{$ 	\displaystyle  =e^{x^2}   \left[  \frac{\partial ^n }{\partial t^n}  e^{-(x-t)^2}   \right] _{t=0}   $}  \\ 
+{$ 	\displaystyle  =(-1) ^n e^{x^2}   \left[  \frac{d~^n }{d~u^n}  e^{-u^2}   \right] _{u=x}   $}  \\ 
+{$ 	\displaystyle H_n(x) =(-1) ^n e^{x^2}  \frac{d~^n }{d~x^n}  e^{-x^2}   $}  \\ 
+
+\subsection{正交性}
+\begin{example} %1
+试证明Hermite 多项式是带权函数（$\rho(x) =exp(-x^2)$）的正交函数系：\\
+{$ \displaystyle  
+	\left\{  
+	\begin{array}{ccccc}
+		\int_{-\infty}^{+\infty} e^{-\xi^{2}} H_m(\xi) H_n(\xi)d\xi &=&0 ~~~~~~\\
+		\int_{-\infty}^{+\infty} e^{-\xi^{2}} H_n(\xi) H_n(\xi)d\xi &=&2^n n! \sqrt{\pi}  
+	\end{array}
+	\right.  
+	$} 
+\end{example} 
+\begin{proof} %1
+谐振子方程：{ $ \displaystyle \frac{\mathrm{d} ^2\Psi}{\mathrm{d} \xi^2} + \left( \lambda - \xi^2 \right) \Psi=0  $  }  \\
+有$\lambda=2n+1 $~\\
+$\to   \Psi''_n +(2n+1-\xi^2) \Psi_n =0$ \\
+解为： $u_n(x)=H_n(\xi) e^{-\xi^{2}/2}$ \\
+$u''_n+ (2n+1-\xi^2) u_n =0    ~, ~u''_m+ (2n+1-\xi^2) u_m =0  $\\
+$u_mu''_n +(2n+1-\xi^2) u_mu_n =0    ~, ~u_nu''_m + (2n+1-\xi^2) u_nu_m =0  $  \\ 
+$u_mu''_n -u_nu''_m +2(n-m)u_nu_m=0 $\\ 
+$ \int_{-\infty}^{+\infty} [u_mu''_n -u_nu''_m] d\xi  = [u_mu''_n -u_nu''_m] \left |_{-\infty} ^{+\infty}  \right. $
+$-\int_{-\infty}^{+\infty} [u'_mu'_n -u'_nu'_m] d\xi =0$\\ 
+因此	$ 2(n-m) \int_{-\infty}^{+\infty} u_nu_m d\xi =0$ \\ 
+即：{ $ \int_{-\infty}^{+\infty}  H_m(\xi) H_n(\xi)d\xi =0 $ }	
+由递推公式：\\
+{$H_{n} -2xH_{n-1} +2(n-1)H_{n-2} =0  $ } \\
+=> 	{ $H^2_{n}-2xH_n H_{n-1}+2(n-1) H_n H_{n-2} =0  $ }\\ 
+{$H_{n+1} -2xH_{n} +2nH_{n-1} =0  $ } \\
+=>   { $H_{n+1} H_{n-1}-2xH_{n} H_{n-1}+2nH^2_{n-1} =0  $ } \\
+两次相减，乘以权重函数，求积分, 得积分递推式：\\
+{$\int_{-\infty}^{+\infty} e^{-\xi^2} H^2 _n(\xi) d\xi =2n \int_{-\infty}^{+\infty} e^{-\xi^{2}} H^2 _{n-1}(\xi) d\xi$ }\\
+$= 2n \times 2(n-1) \int_{-\infty}^{+\infty} e^{-\xi^{2}} H^2 _{n-2}(\xi) d\xi$  \\
+ $= 2n \times 2(n-1) ... (2(n-n)) \int_{-\infty}^{+\infty} e^{-\xi^{2}} H^2 _{0}(\xi) d\xi$  \\
+ $= 2^n n! \int_{-\infty}^{+\infty} e^{-\xi^{2}} H^2 _{0}(\xi) d\xi$  \\	
+$= 2^n n! \int_{-\infty}^{+\infty} e^{-\xi^{2}} d\xi$  \\	
+ $= 2^n n! \sqrt{\pi} $ \\	
+\end{proof} %1
+\begin{remark}
+厄密多项式是正交完全集，一般函数都可按厄密多项式展开。
+\end{remark}
+
+\subsection{谐振子波函数的归一化}
+谐振子的解：.......\\ 
+{$  \displaystyle  \Psi_n(\xi) =N_n e^{-\xi ^2}  H_n(\xi)  $ }\\  
+归一化能量固有函数：\\  
+{ $  \displaystyle  \Psi_n(x) =  \left(  \frac{\alpha}{\sqrt{\pi} 2^n n! } \right) ^{1/2} e^{-a^2 x^2}  H_n(\alpha x)  $ } \\ 
+定态波函数： \\
+{ $  \displaystyle  \Psi_n(x,t) =  \Psi_n(x) e^{-\frac{i}{\hbar} E_n t } $} \\
+{$  \displaystyle = \left(  \frac{\alpha }{\sqrt{\pi} 2^n n! } \right) ^{1/2} e^{-a^2 x^2 -\frac{i}{\hbar} E_n t }  H_n(\alpha  x)  $ } \\  
+叠加解：\\
+{\large $  \displaystyle \Psi(x,t) =\sum a_n Psi_n(x,t)  $} \\
+下图给出了基态和第一激发态函数及概率分布\\
+%\usetikzlibrary {datavisualization.formats.functions} 
+\begin{tikzpicture}[baseline, scale=.7]
+	\datavisualization [ scientific axes, 
+	visualize as smooth line/.list={sin,cos}, style sheet=strong colors,
+	style sheet=vary dashing,
+	sin={label in legend={text=$\Psi_0(x)$}}, 
+	cos={label in legend={text=$\Psi_1(x) $}}, 
+	data/format=function ]
+	data [set=sin] {
+		var x : interval [-3:3];
+		func y = 1/sqrt(sqrt(pi))* exp(-0.5 * \value x * \value x  )  ;
+	}
+	data [set=cos] {
+		var x : interval [-3:3];
+		func y = 2*\value x /sqrt(2*sqrt(pi))* exp(-0.5 * \value x * \value x  )  ;
+	};
+\end{tikzpicture}
+%\usetikzlibrary {datavisualization.formats.functions} 
+\begin{tikzpicture}[baseline, scale=.7]
+	\datavisualization [ scientific axes, 
+	visualize as smooth line/.list={sin,cos}, style sheet=strong colors,
+	style sheet=vary dashing,
+	sin={label in legend={text=$|\Psi_0(x)|^2$}}, 
+	cos={label in legend={text=$|\Psi_1(x)|^2$}}, 
+	data/format=function ]
+	data [set=sin] {
+		var x : interval [-3:3];
+		func y = 1/sqrt(pi)* exp(- \value x * \value x  )  ;
+	}
+	data [set=cos] {
+		var x : interval [-3:3];
+		func y = 2*\value x * \value x /sqrt(pi)* exp(- \value x * \value x  )  ;
+	};
+\end{tikzpicture}
+
+\subsection{作业：}
+~~~\hspace*{\fill} \\
+1、将函数$f(x)=x^3+2x^2 +1$ 按厄米多项式展开\\ 
+参考答案：$f(x) =\frac{1}{8} H_3 + \frac{1}{2} H_2 +\frac{3}{4} H_1 + 2 H_0 $\\
+~~~\hspace*{\fill} \\
+2、写出厄米多项式的递推公式，并求 $H_n(0) ,   H'_n(0) , H_n(1) ,   H'_n(1)  $\\ 
+~~~\hspace*{\fill} \\
+3、求解如下初值问题\\
+\begin{equation*}
+\left\{ 
+  \begin{aligned}
+   & i \hbar \frac{\partial \Psi}{\partial t}  = \left[  -\frac{\hbar ^2}{2\mu} \frac{\partial ^2}{\partial x^2} +\frac{1}{2}  \mu \omega ^2 x  \right] \Psi \\
+   & \Psi(x, 0) =\psi(x)
+   \end{aligned} 
+\right.
+\end{equation*}

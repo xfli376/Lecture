@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{1.贝塞尔方程}{3}{0}{1}
+\beamer@sectionintoc {2}{2.贝塞尔函数与Gamma函数}{26}{0}{2}
+\beamer@sectionintoc {3}{3.贝塞尔函数的性质}{48}{0}{3}
+\beamer@sectionintoc {4}{4.贝塞尔函数的应用}{69}{0}{4}
+\beamer@sectionintoc {5}{5. Dirac函数}{77}{0}{5}
+\beamer@subsectionintoc {5}{1}{定义}{78}{0}{5}
+\beamer@subsectionintoc {5}{2}{性质}{82}{0}{5}
