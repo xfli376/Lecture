@@ -41,7 +41,7 @@
 \end{frame}
 \begin{frame}
 	\frametitle{含时薛定谔方程}
-	标准形式：   \\ 
+	标准形式：    
 	 \begin{equation*}
 		i\hbar \frac{\partial }{\partial t} \Psi (\overrightarrow{r},t ) =\left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\overrightarrow{r},t ) \right ]\Psi (\overrightarrow{r}, t ) 
 	\end{equation*}
@@ -198,10 +198,10 @@
 	\frametitle{}
 	固有值（能级）：{ $E_n = \dfrac{n^2\pi^2\hbar^2}{2\mu a^2} (n=1,2,3,...)$} \\
 	能级间隔：  $\triangle E = E_{n+1}-E_n=\dfrac{\pi^2 \hbar^2}{2\mu a^2} (2n+1)$ \\ 
-	\textbf{固有函数}： $ \Psi_n(x) = B_n\sin(\dfrac{n\pi}{a}x)  = \sqrt{\dfrac{2}{a}} \sin(\dfrac{n\pi}{a}x)$ \\ 
+	固有函数： $ \Psi_n(x) = B_n\sin(\dfrac{n\pi}{a}x)  = \sqrt{\dfrac{2}{a}} \sin(\dfrac{n\pi}{a}x)$ \\ 
 	\alert{归一化}： $ \int \limits_{0}^{a}  \Psi_n ^*(x)  \Psi_n(x)dx = \int \limits_{0}^{a}  |B_n| ^2 \sin^2(\dfrac{n\pi}{a}x) dx =1$  \\ 
 	系数：$B_n=\sqrt{\dfrac{2}{a}}$ \\ 
-	解（波函数）为： \\
+	解函数： \\
 	{  $ \displaystyle 
 		\Psi_n(x,t)= \left \{ 
 		\begin{array}{cccc}
@@ -210,6 +210,37 @@
 		\end{array}
 		\right.
 		$} \\	
+\end{frame}
+
+\begin{frame}
+	\frametitle{}
+  叠加解:
+	  \[\Psi_(x,t)= A_n \psi_n(x,t)\]
+
+  (1)给出定解条件,如何求$A_n$ \\ 
+  (2)势阱有变化.如何解方程\\ \vspace*{0.6em}
+	 {$ \displaystyle 
+   V(x)=\left \{ 
+   \begin{array}{cccc}
+	   0+1	~~ ~~ 0<x<a \\  
+	   +\infty ~~x<0, x>a\\
+   \end{array}
+   \right.
+   ;$} \\ \vspace*{0.3em}
+   {$ \displaystyle  V(x)=\left \{ 
+	  \begin{array}{cccc}
+		  0	~~ ~~ -a<x<a \\  
+		  +\infty ~~x<-a, x>a\\
+	  \end{array}
+	  \right.
+  ;$}\\ \vspace*{0.3em}
+  {$ \displaystyle   V(x)=\left \{ 
+	  \begin{array}{cccc}
+		  0	~~ ~~ -\frac{a}{2}<x<\frac{a}{2} \\  
+		  +\infty ~~x<-\frac{a}{2}, x>\frac{a}{2}\\
+	  \end{array}
+	  \right.
+   $} \\
 \end{frame}
 
 \begin{frame}
@@ -391,9 +422,9 @@
 		\begin{equation*}
 			F=-\frac{ \partial V}{\partial x}=-kx 
 		\end{equation*}	
-		 把势函数V(x) 写成弹性势：\\
+		 把势函数V(x) 改写成弹性势能：\\
 		\begin{equation*}
-			V(x)=\dfrac{1}{2} \mu \omega ^2 x^2 
+			U(x)=\dfrac{1}{2} \mu \omega ^2 x^2 
 		\end{equation*}
 	\end{block}	
 \end{frame}	
@@ -607,19 +638,19 @@
 	\frametitle{}
 	厄密方程的解为厄米多项式：
 	\begin{equation*}
-		H(\xi) =\sum_{m=0}^{M}  (-1)^m \frac{n! } {  m ! (n-2m)!}  2^{n-2m} \xi^{n-2m} ,  ~~~ M=[n/2]
+		H_n(\xi) =\sum_{m=0}^{M}  (-1)^m \frac{n! } {  m ! (n-2m)!}  2^{n-2m} \xi^{n-2m} ,  ~~~ M=[n/2]
 	\end{equation*}   
 	量子谐振子的解为
 	\begin{equation*}
-		\Psi_n(\xi) = N_n \exp(-\frac{\xi ^2}{2}) H(\xi) 
+		\Psi_n(\xi) = N_n \exp(-\frac{\xi ^2}{2}) H_n(\xi) 
 	\end{equation*}   
 	归一化解：（...）
 	\begin{equation*}
-		\Psi_n(x) = \left( \frac{\alpha}{\sqrt{\pi} 2^n n!}  \right) ^{1/2}  \exp(-\frac{ \alpha^2 x^2}{2}) H( \alpha x) 
+		\Psi_n(x) = \left( \frac{\alpha}{\sqrt{\pi} 2^n n!}  \right) ^{1/2}  \exp(-\frac{ \alpha^2 x^2}{2}) H_n( \alpha x) 
 	\end{equation*}  
 	定态波函数为
 	\begin{equation*}
-		\Psi_n(x,t) = \left( \frac{\alpha}{\sqrt{\pi} 2^n n!}  \right) ^{1/2}  \exp(-\frac{ \alpha^2 x^2}{2} -\frac{i}{\hbar} E_n t ) H( \alpha x) 
+		\Psi_n(x,t) = \left( \frac{\alpha}{\sqrt{\pi} 2^n n!}  \right) ^{1/2}  \exp(-\frac{ \alpha^2 x^2}{2} -\frac{i}{\hbar} E_n t ) H_n( \alpha x) 
 	\end{equation*}  	
 \end{frame}
 
@@ -751,7 +782,7 @@
 	$ \int\limits_{-\infty}^{+\infty} [u_mu''_n -u_nu''_m] d\xi  $\\
 	\hspace{2cm} 	$= [u_mu''_n -u_nu''_m] \left |_{-\infty} ^{+\infty}  \right. -\int\limits_{-\infty}^{+\infty} [u'_mu'_n -u'_nu'_m] d\xi =0$\\   
 	因此	$ 2(n-m) \int\limits_{-\infty}^{+\infty} u_nu_m d\xi =0$ \\   \vspace{0.3cm}
-	即：{ $ \int\limits_{-\infty}^{+\infty}  H_m(\xi) H_n(\xi)d\xi =0 $ }	
+	即：{ $ \int\limits_{-\infty}^{+\infty} e^{-\xi^{2}} H_m(\xi) H_n(\xi)d\xi =0 $ }	
 \end{frame}
 
 \begin{frame}

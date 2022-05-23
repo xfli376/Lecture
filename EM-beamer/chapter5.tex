@@ -667,20 +667,19 @@
 	\解 ~ 比较（1）式与Gamma函数的定义式的结构,
 	\[\Gamma(x)=\int_{0}^{\infty} t^{x-1} e^{-t} dt, \qquad (x>0)\]
 	\[\begin{aligned}
-		\int_{0}^{\infty} x^2 e^{-x^2} dx &= \int_{0}^{\infty} (x^2)^1 e^{-(x^2)} \frac{1}{2x}d(x^2)\\
+		\int_{0}^{\infty} x^2 e^{-x^2} dx &= \int_{0}^{\infty} x^2 e^{-(x^2)} \frac{1}{2x}d(x^2)\\
 		&= \frac{1}{2}\int_{0}^{\infty} (x^2)^{\frac{1}{2}} e^{-(x^2)} d(x^2)\\	
-		&= \frac{1}{2}\int_{0}^{\infty} t^{\frac{1}{2}} e^{-t} d(t)
+		&= \frac{1}{2}\int_{0}^{\infty} t^{\frac{3}{2}-1} e^{-t} d(t)
 	\end{aligned} \]
 \end{frame}
 
 \begin{frame}
 	  \frametitle{}
-	  \[\begin{aligned}
-		\int_{0}^{\infty} x^2 e^{-x^2} dx &= \frac{1}{2}\int_{0}^{\infty} t^{\frac{3}{2}-1} e^{-t} d(t)\\	
+	  \[\begin{aligned}	
 		&= \frac{1}{2}\Gamma(\frac{3}{2})  \\ 
-		&= \frac{1}{2}\Gamma(1+\frac{1}{2})  \\ 
-		&= \frac{1}{2} \frac{1}{2} \Gamma(\frac{1}{2})  \\ 
-		&= \frac{\sqrt{\pi}}{4} 
+		&= \frac{1}{2} \Gamma(1+\frac{1}{2}) \\
+		&= \frac{1}{2} (\frac{1}{2})!	\\
+		&= \frac{\sqrt{\pi}}{4}
 	\end{aligned} \]
 \end{frame}
 
@@ -1083,7 +1082,7 @@
 \begin{frame}
 	\begin{equation*}
 		\begin{split}
-				 &\int_0 ^{2\pi} G_k ^* (\theta) \varphi(r, \theta) d\theta =\sum_{n=0}^{\infty} \sum_{m=0}^{\infty} A_m ^n F_m ^n (r) \int_0 ^{2\pi} G_n(\theta) G_k(\theta) d\theta	\\ 
+				 &\int_0 ^{2\pi} G_k ^* (\theta) \varphi(r, \theta) d\theta =\sum_{n=0}^{\infty} \sum_{m=0}^{\infty} A_m ^n F_m ^n (r) \int_0 ^{2\pi} G^* _k(\theta) G_n(\theta)  d\theta	\\ 
 				 &\int_0 ^{2\pi} G_n  ^* (\theta) \varphi(r, \theta) d\theta = \sum_{m=0}^{\infty} A_m ^n F_m ^n (r)\\ 
 				 &\int_0 ^{R} \int_0 ^{2\pi} G_n ^* (\theta) r J_n (\frac{\mu_{k}^{n}}{R}r) \varphi(r, \theta) d\theta dr = \sum_{m=0}^{\infty} A_m ^n \int_0 ^{R} r J_n (\frac{\mu_{k}^{n}}{R}r)J_n (\frac{\mu_{m}^{n}}{R}r) dr \\
 				 &\int_0 ^{R} \int_0 ^{2\pi} G_n ^* (\theta) r J_n (\frac{\mu_{m}^{n}}{R}r) \varphi(r, \theta) d\theta dr = A_m ^n \frac{R^2}{2} [J_{n+1}(\mu_m ^n)]^2\\ 

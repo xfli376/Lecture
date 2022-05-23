@@ -66,13 +66,14 @@
     \end{aligned}
     $$
     发现存在：$|i\rangle\langle i$，称为函数的外积，有
-    \[\sum\limits_{i=1} ^n |i\rangle\langle i |\]
-    称为本征函数系的完全性。
+    \[\sum\limits_{i=1} ^n |i\rangle\langle i |=1\]
+    称为本征函数系的完全性(封闭性)。 
 \end{frame} 
 
 \begin{frame}
-    \frametitle{外积的矩阵表示}
-    若：$ \Psi =\sum a_n \varphi_n $\\
+    \frametitle{}
+    ~~\\
+    *对于：$ \Psi =\sum a_n \varphi_n $, 这种一般态，定义：$\hat{p} = |\Psi\rangle\langle \Psi |$\\
     右矢的矩阵形式：
     $$|\Psi\rangle = \begin{pmatrix}
         a_1\\
@@ -102,7 +103,6 @@
     $$ \hat{p}_i\Psi= |i\rangle\langle i | \Psi \rangle = \langle i | \Psi \rangle |i\rangle=a_i |i\rangle $$
     $$\Psi= \sum\limits_i ^n a_i |i\rangle = \sum\limits_i ^n \hat{p}_i\Psi$$
     可知： $ \hat{p}_i\Psi $ 是矢量$\Psi$ 在第$i$ 个本征矢上的投影， 因此称为{\color{red} 投影算符}\\
-    一般地，可定义：$\hat{p} = |\Psi\rangle\langle \Psi |$\\
     考察其在$i$态的平均值：
     $$ \begin{aligned}
     \bar{\hat{p}} &=\langle i |\hat{p} | i \rangle \\
@@ -123,7 +123,7 @@
             &=\sum\limits_{ij} \langle j| i\rangle  \omega_i \langle i |\hat{F} |j\rangle  \\
             &=\sum\limits_{j} \langle j | (\sum\limits_{i}| i \rangle  \omega_i \langle i |) \hat{F} |j\rangle  \\
     \end{aligned} $$
-    定义密度矩阵：$ \hat{\rho} = \sum\limits_{i}| i \rangle  \omega_i \langle i | $
+    定义密度矩阵：$ \hat{\rho} = \sum\limits_{i}| i \rangle  \omega_i \langle i | , \qquad \hat{\rho} = \sum\limits_{i}| \Psi_i \rangle  P_i \langle \Psi_i | \quad \text{(混态)} $
 \end{frame} 
  
 \begin{frame}  
@@ -148,26 +148,26 @@
  
 \subsection{狄拉克量子力学}
 
-\begin{frame}  
+\begin{frame} 
     \frametitle{狄拉克量子力学}  
-    量子态： $\hspace{1em}|\Psi \rangle, \qquad$ 位置波函数：$\hspace{1em} \langle x |\Psi \rangle$ \\ \vspace{0.2em}
+    量子态(无表象)： $\hspace{1em}|\Psi \rangle, \quad$ 位置表象：$\hspace{1em} \langle x |\Psi \rangle , \quad$ 动量表象：$\hspace{1em} \langle p_x |\Psi \rangle$ \\ \vspace{0.1em}
+    算符： $F, \quad$ 位置表象：$\hspace{1em} F(x, -i\hbar \frac{\partial }{\partial x}) , \quad$ 动量表象：$\hspace{1em} F(i\hbar \frac{\partial }{\partial p_x}, p_x) $ \\ \vspace{0.1em}
     展开式： $\hspace{1em}|\Psi \rangle =\sum\limits_{n=1} ^n a_n |n \rangle$ \\
-    内积：   $\hspace{2em}\langle \varphi | \Psi \rangle = (\varphi, \Psi)= \int \varphi^*\Psi d\tau $ \\  \vspace{0.2em}
-    归一化： $\hspace{1em}\langle \Psi | \Psi \rangle = (\Psi, \Psi)= \int \Psi^*\Psi d\tau = 1 $ \\ \vspace{0.2em}
-    正交归一： $\langle n | m \rangle = \delta_{nm} $ \\ \vspace{0.2em}
+    内积：   $\hspace{2em}\langle \varphi | \Psi \rangle = (\varphi, \Psi)= \int \varphi^*\Psi d\tau $ \\  \vspace{0.1em}
+    归一化： $\hspace{1em}\langle \Psi | \Psi \rangle = (\Psi, \Psi)= \int \Psi^*\Psi d\tau = 1 $ \\ \vspace{0.1em}
+    正交归一： $\langle n | m \rangle = \delta_{nm} $ \\ \vspace{0.1em}
     $ \hspace{5em} \langle \lambda | \lambda' \rangle = \delta(\lambda-\lambda') $\\ \vspace{0.2em}
-    表象： $\hspace{2em}\Psi(x)= \langle x | \Psi \rangle$ \\ \vspace{0.2em}
     展开系数： $ a_n= \langle n | \Psi \rangle$ \\ \vspace{0.2em}
     展开系数： $ a_n ^*= \langle \Psi | n \rangle$ \\ \vspace{0.2em}
-    平均值：  $\hspace{1em}\bar{F} = \langle \Psi |F | \Psi \rangle$ \\ \vspace{0.2em}
 \end{frame} 
  
 \begin{frame} 
+    平均值：  $\hspace{1em}\bar{F} = \langle \Psi |F | \Psi \rangle$ \\ \vspace{0.2em}
     矩阵元：  $\hspace{1em}F_{nm} = \langle n |F | m \rangle$ \\ \vspace{0.2em}
-    本征方程：$F|n\rangle =f_n |n\rangle$ \\ \vspace{0.2em}
     幺正变换：$S_{m\alpha} =\langle m| \alpha \rangle $ \\ \vspace{0.2em}
-    密度算符：$\rho = |\Psi\rangle\langle \Psi | $ \\ \vspace{0.2em}
-    密度矩阵： $\hat{\rho} = \sum\limits_{i}| i \rangle  \omega_i \langle i | $ \\ \vspace{0.2em}
+    投影算符：$p_i = |i\rangle\langle i |, \quad \text{封闭性:} \sum_i |i\rangle\langle i |=1 $ \\ \vspace{0.2em}
+    密度矩阵： $\hat{\rho} = \sum\limits_{i}| i \rangle  \omega_i \langle i |, \quad \hat{\rho} = \sum\limits_{i}| \Psi_i \rangle  P_i \langle \Psi_i | $ \\ \vspace{0.2em}
+    本征方程：$F|n\rangle =f_n |n\rangle$ \\ \vspace{0.2em}
     薛定谔方程：$$ i\hbar \frac{\partial }{\partial t} |\Psi(t)\rangle = H|\Psi(t)\rangle $$ 
     算符运动方程：$$ \frac{d\bar{A}(t)}{dt}=\overline{(\frac{\partial A(t) }{\partial t})}  +\frac{1}{i\hbar} \overline{[A(t),H(t)]}$$
 \end{frame} 
@@ -229,7 +229,20 @@
 \end{frame} 
 
 \begin{frame} 
-    4、求平均值公式的矩阵表示： 
+    4、求薛定谔方程在各表象中的形式： 
+    $$ \begin{aligned}
+    i \hbar \frac{\partial}{\partial t} |\Psi(t) \rangle &= H |\Psi(t) \rangle  , \quad \text{无表象}\\
+    i \hbar \frac{\partial}{\partial t} \langle x|\Psi(t) \rangle &= H (x, \hat{p}_x) \langle x|\Psi(t) \rangle  , \quad \text{位置表象}\\
+    i \hbar \frac{\partial}{\partial t} \langle x|\Psi(t) \rangle &= [- \frac{\hbar^2}{2\mu} \frac{\partial ^2 }{\partial x^2} + U(x)] \langle x|\Psi(t) \rangle  , \quad \text{位置表象}\\
+    i \hbar \frac{\partial}{\partial t} \langle p_x|\Psi(t) \rangle &= H (\hat{x}, p_x) \langle p_x|\Psi(t) \rangle  , \quad \text{动量表象}\\
+    i \hbar \frac{\partial}{\partial t} \langle p_x|\Psi(t) \rangle &=  [ \frac{p^2 _x}{2\mu} + U(i \hbar \frac{\partial }{\partial p_x}) ] \langle p_x|\Psi(t) \rangle  , \quad \text{动量表象}\\
+    i \hbar \frac{\partial}{\partial t} \langle n|\Psi(t) \rangle &=  \langle n|H|m \rangle \langle n |\Psi(t) \rangle  , \quad \text{Q表象}\\
+    \end{aligned}
+    $$
+\end{frame} 
+
+\begin{frame} 
+    5、求平均值公式的矩阵表示： 
     $$ \begin{aligned}
     \bar{F} &= \langle \Psi |F |\Psi \rangle  \\
     &= \langle \Psi |1 \cdot F \cdot 1 |\Psi \rangle  \\
@@ -240,7 +253,7 @@
 \end{frame} 
 
 \begin{frame} 
-    5、求两算符积的平均值： 
+    6、求两算符积的平均值公式的矩阵表示： 
     $$ \begin{aligned}
     \overline{GF} &= \langle \Psi |GF |\Psi \rangle  \\
     &= \langle \Psi |1 \cdot G \cdot 1 \cdot F \cdot 1 |\Psi \rangle  \\
@@ -249,6 +262,8 @@
     \end{aligned}
     $$
 \end{frame} 
+
+
 
 \section{4.量子力学绘景(Pictures)}
 
@@ -314,6 +329,16 @@
      \Note ~算符随时间的演化与波函数随时间的演化是等价的，他们都是幺正变换。
 \end{frame} 
 
+\begin{frame}
+      \frametitle{世界的变化}
+        \begin{center}
+             \includegraphics[width=0.8\textwidth]{figs/2022-04-10-10-07-10.png}
+        \end{center}   
+        \begin{quotation}
+            "我们必须把科学当艺术,然后才能从科学中得到完整的知识"  \\
+            \rightline{$\cdots$ [德国]~ 歌德 \hspace{3em}}   
+        \end{quotation}  
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
     \frametitle{课外作业}
@@ -322,6 +347,8 @@
         \item 基于位置算符的本征矢定义算符$\rho=\rs{x}{x}$, 试对任意态计算$\lcr{\psi}{\rho}{\psi}$
         \item 试证明在幺正变换下两个态的内积保持不变.
         \item 试证明在幺正变换下算符的本征值保持不变.
+        \item 试写出定态薛定谔方程和平均值公式在动量表象和Q表象中的具体形式 (Dirac)：
+        \item 设氢原子处于$\rs{\psi}=0.5Y_{11}+0.4Y_{20}$态 ,试求 $L_x$,$L_y$的可能值,取值概率及平均值 
     \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

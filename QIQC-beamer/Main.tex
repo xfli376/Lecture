@@ -5,36 +5,7 @@
 \RequirePackage{mybeamer}
 %%% sudo vim /usr/local/texlive/2021/texmf-dist/tex/xelatex/mybeamer
 %%%% sudo texhash
-\newcommand{\Pstate}{\dfrac{\rs{0}+\rs{1}}{\sqrt{2}}}
-\newcommand{\Mstate}{\dfrac{\rs{0}-\rs{1}}{\sqrt{2}}}
-\newcommand{\Qbit}[2]{\begin{bmatrix}
-    #1 \\
-    #2 
- \end{bmatrix}}
-\newcommand{\XGate}{\begin{bmatrix}
-    0 & 1 \\
-    1 & 0
- \end{bmatrix}}
- \newcommand{\ZGate}{\begin{bmatrix}
-    1 & 0 \\
-    0 & -1
- \end{bmatrix}}
 
- \newcommand{\SGate}{\begin{bmatrix}
-    1 & 0 \\
-    0 & i
- \end{bmatrix}}
-
- \newcommand{\RGate}{\begin{bmatrix}
-   e^{-i\varphi/2} & 0 \\
-    0 & e^{i\varphi/2}
- \end{bmatrix}}
-
- \newcommand{\HGate}
- {\frac{1}{\sqrt{2}}\begin{bmatrix}
-    1 & 1 \\
-    1 & -1
- \end{bmatrix}}
 
 % \newcommand{\Bell00}{\frac{1}{\sqrt{2}}\begin{bmatrix}
 %   1 \\
@@ -89,17 +60,16 @@
 
 %-----------章节-------------------------%
 %\include{beamerexamples.tex}             
-%
-%
-%
-\include{lecture1.tex}
+%\include{lecture1.tex}
 %\include{lecture2.tex}                   
 %\include{lecture3.tex}  
 %\include{lecture4.tex} 
 %\include{lecture5.tex} 
 %\include{lecture6.tex}  
 %\include{lecture7.tex} 
-%\include{lecture8.tex}    
+%\include{lecture8.tex}  
+%
+\include{lecture9.tex}    
 %--------------------------------------%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,5 +1,6 @@
 \documentclass[12pt,UTF8,aspectratio=169]{beamer} 
 \RequirePackage{mybeamer}
+%\includeonlyframes{current} % 只编译 \begin{frame}[label=current] \end{frame}
 %%% sudo vim /usr/local/texlive/2021/texmf-dist/tex/xelatex/mybeamer
 %%%% sudo texhash
 
@@ -34,8 +35,9 @@
 %\include{chapter2.tex}
 %\include{chapter3.tex}
 %\include{chapter4.tex}  
+%\include{chapter5.tex}   
 %
-\include{chapter5.tex}                        %
+\include{review.tex}                       %
 %-----------------------------------------------%
 
 
@@ -47,6 +49,8 @@
 	\end{center}
     \addtocounter{framenumber}{-1} 
 \end{frame}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

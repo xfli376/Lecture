@@ -149,13 +149,26 @@ $C^2$空间的另一个基：
    -1
 \end{bmatrix}=\Mstate \]
 
+$C^2$空间的又一个基：
+\[ \rs{+}\equiv\frac{1}{\sqrt{2}}\begin{bmatrix}
+    1 \\
+    i
+\end{bmatrix}=\YPstate; \qquad \rs{-}\equiv\frac{1}{\sqrt{2}}\begin{bmatrix}
+   1 \\
+   -i
+\end{bmatrix}=\YMstate \]
+
 \end{frame} 
 
-\begin{frame} 
-    \begin{center}
-        \includegraphics[width=0.7\textwidth]{figs/26.png}
-    \end{center} 
-\end{frame}
+%\begin{frame} 
+%    \begin{center}
+%        \begin{overpic} [width=0.7\textwidth]{figs/26.png}
+%            %\includegraphics[width=0.7\textwidth]{figs/26.png}
+%            \put(72,48){\small\bfseries \color{red}{$|1\rangle$}}
+%            \put(72,-1){\small\bfseries \color{red}{$|0\rangle$}}
+%        \end{overpic}   
+%    \end{center} 
+%\end{frame}
 
 
 \begin{frame}{}
@@ -225,7 +238,6 @@ $C^2$空间的另一个基：
             a_3b_1 ^* & a_3b_2 ^* & a_3b_3 ^* 
         \end{pmatrix}
         \]
-    \Tips ~ 内积是一个数，外积是一个矩阵！
 \end{frame}
 
 \section{2.物理量与算符}
@@ -274,14 +286,14 @@ $C^2$空间的另一个基：
     \Item 投影算符: 基矢的外积是一种投影算符，
     \end{itemize}
     对于展开式： 
-    \[\rs{\psi}=\sum_i a_i \rs{\phi_i}=\sum_i \rl{\phi_i}{\phi_i} \rs{\psi}=\sum_i p_i \rs{\psi} =\sum_i \rs{\psi_i}\]
-    有：\[p_i \rs{\psi} =\sum_i \rs{\psi_i}\]
+    \[\rs{\psi}=\sum_i a_i \rs{\phi_i}=\sum_i \rs{\phi_i} \lr{\phi_i}{\psi}=\sum_i p_i \rs{\psi} =\sum_i \rs{\psi_i}\]
+    有：\[p_i \rs{\psi} =\rs{\psi_i}\]
     即，外积$\rl{\phi_i}{\phi_i}$作用于$\rs{\psi}$，得到其在第$i$个基矢态上的投影分量！\\
 \end{frame}
 
 \begin{frame}    
     \begin{itemize}
-        \Item 测量算子: 量子信息学中常称投影算符为测量算子，定义为
+        \Item 测量算子: 常称投影算符为测量算子，定义为
         \end{itemize}
     \[M_0=\rl{0}{0}, \qquad M_1=\rl{1}{1} \]
     具有$2\times 2$的矩阵形式，
@@ -316,16 +328,13 @@ $C^2$空间的另一个基：
     \begin{itemize}
     \Item 密度算符: 任意态的外积是一种求概率密度的算符，简称密度算符，
     \end{itemize}
-    任意态的展开式：\[\rs{\psi}=\sum_i a_i \rs{\phi_i}\]
+    任意态的展开式：\[\rs{\psi}=\sum_i a_i \rs{i}\]
     任意态的外积：\[\rho=\rl{\psi}{\psi}\]
     求其在基矢态上的平均值：
-    \[\lcr{\phi_i}{\rho}{\phi_i}=\lcr{\phi_i}{\rl{\psi}{\psi}}{\phi_i}=\lr{\phi_i}{\psi}\lr{\psi}{\phi_i}
+    \[\lcr{i}{\rho}{i}=\lcr{i}{\rl{\psi}{\psi}}{i}=\lr{i}{\psi}\lr{\psi}{i}
     =a_i ^* a_i =|a_i|^2=\omega_i     
     \]    
-    密度算符的应用，平均值公式-3 
-    \[\overline{F}=tr(A\rho)\]
 \end{frame}
-
 
 \begin{frame}
     \frametitle{}
@@ -334,10 +343,22 @@ $C^2$空间的另一个基：
         \rs{\psi}&=F \rs{\Psi} \\
         \lr{i}{\psi}&= \lcr{i}{F}{\Psi} \\
         \lr{i}{\psi}&= \sum_j\lcr{i}{F}{j}\lr{j}{\Psi} \\
-        \rs{\psi_i}&= \sum_j F_{ij}\rs{\Psi_j} 
+        \lr{i}{\psi}&= \sum_j F_{ij}\lr{j}{\Psi}
     \end{aligned}\]  
     定义了算符矩阵元公式：\[ F_{ij}=\lcr{i}{F}{j}\]
     伴算符的矩阵等于原算符的厄密共轭：\[ F^{\dagger}=(F_{ij} ^*)^T\]
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \begin{itemize}
+    \Item 密度矩阵: 带概率密度的的外积算符，
+    \end{itemize}
+    纯态的展开式：\[\rs{\Psi}=\sum_i a_i \rs{i}\]
+    纯态的密度矩阵：\[ \rho_i = \rcl{i}{a_i a^* _i}{i} = \rcl{i}{\omega_i}{i} \]
+    混态的密度矩阵：\[\rho_i = \rcl{\Psi_i}{P_i}{\Psi_i} \]   
+    密度算符(矩阵)的应用，平均值公式-3 
+    \[\overline{F}=tr(F\rho)\]
 \end{frame}
 
 \begin{frame}
@@ -352,6 +373,8 @@ $C^2$空间的另一个基：
         &= \lcr{\psi}{A}{\psi}\\
     \end{aligned}\]    
 \end{frame}
+
+
 
 \begin{frame}
     \frametitle{}
@@ -369,7 +392,7 @@ $C^2$空间的另一个基：
     \end{itemize}
 \end{frame}
 
-\section{3.张量空间}
+\section{3.多粒子体系与张量空间}
 
 \begin{frame}
     \frametitle{张量空间}

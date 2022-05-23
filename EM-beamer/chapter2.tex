@@ -320,13 +320,16 @@
 	当$n= m \ne 0$时， \\   
 	$ \begin{array}{llll}
 		\int\limits_{0 }^{l}  X_n X_m dx&= \int\limits_{0 }^{l}  X_n X_n dx \\
-		&= \int\limits_{0 }^{l}   \sin ^2  \frac{n\pi~}{l} x dx \\
-		&=  \dfrac{l}{2}  
+		&= \int\limits_{0 }^{l}   \sin ^2  \frac{n\pi~}{l} x dx =  \dfrac{l}{2} \\
 	\end{array}$ \\
-	归一化系数：
-	\begin{equation*}
-		A=\sqrt{\frac{l}{2}}
-	\end{equation*}
+    正交归一性
+    \begin{equation*}
+        \int\limits_{0 }^{l}  X_n X_m dx =
+        \begin{cases}
+         0, \qquad (n=m) \\ 
+         \dfrac{l}{2} , \qquad (n \not =m) \\ 
+        \end{cases} 
+    \end{equation*} 
 \end{frame}	
 
 \begin{frame}
@@ -544,10 +547,10 @@
 		T= Bexp(-rt)
 	\end{equation*}
 	通解 ：$\displaystyle T_n=B_n  \exp(-(\dfrac{n\pi a}{l})^2 t)$ \\  
-	原方程的基本解为：\\ \vspace{0.3cm}
+	原方程的解为：\\ \vspace{0.3cm}
 	$\begin{array}{llll}
-		u_n(x,t) &= T_n(t)X_n(x)\\
-		&= B_n  \exp(-(\dfrac{n\pi a}{l})^2 t) \sin \dfrac{n\pi~}{l} x \\
+		u(x,t) &= \sum\limits_{n=1}^{\infty }T_n(t)X_n(x)\\
+		&= \sum\limits_{n=1}^{\infty }B_n  \exp(-(\dfrac{n\pi a}{l})^2 t) \sin \dfrac{n\pi~}{l} x \\
 	\end{array}$ \\ 
 \end{frame}	
 
@@ -734,39 +737,46 @@
 \end{frame}	
 
 \begin{frame}
-	\begin{alertblock}{定积分计算细节}
-		令 $\psi (x) = x^2 (\pi-x)^2$ ，求导：\\
-		$\displaystyle \begin{array}{lllllllll}
-			\psi ' (x) &=  2x(2x - \pi )(x - \pi ) \\
-			\psi '' (x) &=  2\pi ^2 -12\pi x+12x^2 \\
-			\psi ''' (x) &=  24x -12 \pi \\
-			\psi^{(4)} (x) &=  24  \\
-		\end{array}$ \\ 
-		令 $\nu^{(4)} (x) = \cos nx$ , 则：\\
-		$\displaystyle \begin{array}{lllllllll}
-			\nu ''' (x) &= \dfrac{1}{n} \sin nx \\
-			\nu '' (x) &= -\dfrac{1}{n^2} \cos nx \\
-			\nu ' (x) &= -\dfrac{1}{n^3} \sin nx \\
-			\nu (x) &= \dfrac{1}{n^4} \cos nx \\
-		\end{array}$ \\ 
+	\frametitle{}
+	\begin{alertblock}{分部积分计算不定积分}
+		\centering
+    \includegraphics[width=0.6\textwidth]{figs/2022-04-12-10-37-38.png}
 	\end{alertblock}
-\end{frame}	
+	反、对、幂、三、指的顺序
+\end{frame}
 
+\begin{frame}{}
+			\begin{alertblock}{分部积分计算定积分$\int_{0}^{\pi}   x^2 (\pi-x)^2   \cos nx dx $}
+				$\psi (x) = x^2 (\pi-x)^2$ ，则：\\
+				$\displaystyle \begin{array}{lllllllll}
+					\psi ' (x) &=  2x(2x - \pi )(x - \pi ) \\
+					\psi '' (x) &=  2\pi ^2 -12\pi x+12x^2 \\
+					\psi ''' (x) &=  24x -12 \pi \\
+					\psi^{(4)} (x) &=  24  \\
+				\end{array}$ \\ 
+				$\nu^{(4)} (x) = \cos nx$ , 则：\\
+				$\displaystyle \begin{array}{lllllllll}
+					\nu ''' (x) &= \dfrac{1}{n} \sin nx \\
+					\nu '' (x) &= -\dfrac{1}{n^2} \cos nx \\
+					\nu ' (x) &= -\dfrac{1}{n^3} \sin nx \\
+					\nu (x) &= \dfrac{1}{n^4} \cos nx \\
+				\end{array}$ \\ 
+			\end{alertblock}
+\end{frame}	
+		
 \begin{frame}
-	得：
-	\begin{equation*}
-		\int_{0}^{\pi}  \psi^{(4)} (x)  \nu (x)  dx = \frac{24}{n^4} \int_{0}^{\pi}  \cos nx dx =0
-	\end{equation*}
-	应用分部积分公式，有 \\
-	$\displaystyle \begin{array}{lllllllll}
-		&\int\limits_{0}^{\pi}  \psi (x) \nu^{(4)} (x)  dx \\
-		&= [ \psi \nu''' - \psi' \nu'' + \psi'' \nu' -\psi''' \nu ]|_0 ^\pi +	\int\limits_{0}^{\pi}  \psi^{(4)} (x)  \nu (x)  dx  \\
-		&=  [ \psi \nu''' - \psi' \nu'' + \psi'' \nu' -\psi''' \nu ]|_0 ^\pi 
-	\end{array}$ \\ 
-	所以:
-	\begin{equation*}
-		\int\limits_{0}^{\pi}  \psi (x) \nu^{(4)} (x)  dx = [-\psi''' \nu ]|_0 ^\pi =  -\dfrac{12 \pi}{n^4}  [\cos n\pi +1 ]
-	\end{equation*}
+			应用分部积分公式 \\
+			$\displaystyle \begin{array}{lllllllll}
+				\int\limits_{0}^{\pi}  \psi (x) \nu^{(4)} (x)  dx 
+				&= [ \psi \nu''' - \psi' \nu'' + \psi'' \nu' -\psi''' \nu ]|_0 ^\pi +	\int\limits_{0}^{\pi}  \psi^{(4)} (x)  \nu (x)  dx  \\
+				&=  [ \psi \nu''' - \psi' \nu'' + \psi'' \nu' -\psi''' \nu ]|_0 ^\pi 
+			\end{array}$ \\ 
+			* (1)式中：$\int_{0}^{\pi}  \psi^{(4)} (x)  \nu (x)  dx = \frac{24}{n^4} \int_{0}^{\pi}  \cos nx dx =0$ \\
+			(2)式中的第1和第3项等于零($\sin nx |_0 ^\pi$) \\
+			(3)式中第二项含 $2x(2x - \pi )(x - \pi )|_0 ^\pi$也为零, 因此有:
+			\begin{equation*}
+				\int\limits_{0}^{\pi}  \psi (x) \nu^{(4)} (x)  dx = [-\psi''' \nu ]|_0 ^\pi =  -\dfrac{12 \pi}{n^4}  [\cos n\pi +1 ]
+			\end{equation*}
 \end{frame}	
 
 \begin{frame}
@@ -1025,7 +1035,7 @@
 	$ \sum\limits_{n=1}^{\infty }  a_n  \sin (n \pi y) =0 $ ，=> $ a_n=0$ \\
 	因此：\\
 	$	u(x,y)    = \sum\limits_{n=1}^{\infty }  b_n \sinh (n\pi x )  \sin (n \pi y)  $ \\ 
-	代入 定解条件：$u(1,y) = \sin \pi y $， 得
+	代入定解条件：$u(1,y) = \sin \pi y $， 得
 	\begin{equation*}
 		u(1,y)    = \sum\limits_{n=1}^{\infty }  b_n \sinh (n\pi )  \sin (n \pi y)  = \sin \pi y
 	\end{equation*}
@@ -1156,17 +1166,16 @@
 	$R= C_n r^n,  ~~ (n=0,1,2,......) $		\\
 	基本解：\\ 
 	$\begin{array}{llll}
-		u_n(r,\theta) &=& (a_n\cos n\theta +b_n \sin n \theta ) r^n  \\ 
+		u_n(r,\theta) &=&  r^n(a_n \cos n\theta +b_n \sin n \theta )   \\ 
 	\end{array}$ \\ 	
 \end{frame}	
 
 \begin{frame}	
 	叠加解：\\ 
 	$\begin{array}{llll}
-		u(r, \theta) &=& \dfrac{1}{2} a_0 +\sum\limits_{n=1}^{\infty } (a_n\cos n\theta +b_n \sin n \theta ) r^n
+		u(r, \theta) &=& \dfrac{1}{2} a_0 +\sum\limits_{n=1}^{\infty }r^n (a_n  \cos n\theta +b_n \sin n \theta ) 
 	\end{array}$ \\ 
-	代入定解条件：$ u(r_0,\theta)=f (\theta)   $ \\ 
-	$ =  \dfrac{1}{2} a_0 +\sum\limits_{n=1}^{\infty } (a_n\cos n\theta +b_n \sin n \theta ) r_0^n $\\ 
+	代入定解条件：$ u(r_0,\theta)=f (\theta) =  \dfrac{1}{2} a_0 +\sum\limits_{n=1}^{\infty } (a_n\cos n\theta +b_n \sin n \theta ) r_0^n $\\ 
 	系数公式：\\ 
 	$  \displaystyle  a_n = \dfrac{1}{r_0 ^n \pi }  \int\limits_{0}^{2\pi} f(\theta) \cos n \theta d\theta $ \\ 
 	$  \displaystyle  b_n = \dfrac{1}{r_0 ^n \pi }  \int\limits_{0}^{2\pi} f(\theta) \sin n \theta d\theta $  \\ 	
@@ -1194,7 +1203,7 @@
 	$  \displaystyle  b_n = \dfrac{1}{r_0 ^n \pi }  \int\limits_{0}^{2\pi} A\cos(\theta) \sin n \theta d\theta =0 $  \\ 
 	叠加解：\\
 	$\begin{array}{llll}
-		u(r, \theta) &=& \dfrac{1}{2} a_0 +\sum\limits_{n=1}^{\infty } (a_n\cos n\theta +b_n \sin n \theta ) r^n \\
+		u(r, \theta) &=& \dfrac{1}{2} a_0 +\sum\limits_{n=1}^{\infty } (a_n r^n\cos n\theta +b_n \sin n \theta )  \\
 		&=& \dfrac{1}{2} a_0+ a_1 r\cos \theta \\
 		&=&  \dfrac{A}{r_0} r \cos \theta 
 	\end{array}$ \\ 

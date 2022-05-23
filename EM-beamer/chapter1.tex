@@ -12,6 +12,13 @@
 
 \section{1.课程介绍}
 
+\begin{frame} 
+	\begin{quotation}
+		"我们必须把科学当艺术,然后才能从科学中得到完整的知识"  \\
+		\rightline{$\cdots$ [德国]~ 歌德 \hspace{3em}}   
+	\end{quotation}
+\end{frame}
+
 \begin{frame}
 \frametitle{课程介绍}
 	\begin{center}
@@ -376,7 +383,7 @@
 		\begin{tikzpicture} [scale=0.5]
 	\draw  (-2,0) -- (2,0) node[below] {};
 	\draw [->] (0,0) -- (0,-2.6) node[below] {$x$};	
-	\draw [orange, domain=0:-1.98, samples=200] plot({sin(\x r *30},\x);
+	\draw [orange, domain=0:-1.98, samples=200] plot({sin(\x r *30)},\x);
 	\draw [fill, black, circle] (0,-2.2) circle(0.3ex) node[right] {$M$};
     \end{tikzpicture} 
 	\end{center}
@@ -427,7 +434,7 @@
 	\end{align*}
 	代回原方程并整理得
 	\begin{equation*}
-		\frac{d^2 v}{d t^2} +(\omega ^2 - \varepsilon ^2) u = 0,  ~~~ (\varepsilon < \omega)   
+		\frac{d^2 v}{d t^2} +(\omega ^2 - \varepsilon ^2) v = 0,  ~~~ (\varepsilon < \omega)   
 	\end{equation*}
 \end{frame}
 
@@ -873,45 +880,38 @@
 \subsection{傳里叶级数 }
 
 \begin{frame}
-\frametitle{傳里叶级数}
-	\textbf{\large 三角式}：\\
-	{\large  $\displaystyle f(x) =\dfrac{a_0}{2} +\sum_{n=1}^{\infty}  \left(  a_n \cos~ \frac{n\pi}{l} x +  b_n \sin~ \frac{n\pi}{l} x  \right) $ }\\	
-	{\large $\displaystyle a_n =\frac{1}{l}  \int_{-l}^{l}  f(\xi )   \cos~ \frac{n\pi}{l} \xi d\xi  $ }\\	
-	{\large $\displaystyle b_n =\frac{1}{l}  \int_{-l}^{l}  f(\xi )   \sin~ \frac{n\pi}{l} \xi d\xi   $ }\\	\vspace{0.3em}
-	
-	\begin{block} {Remark}
-	注：$n=0$项提出在前面 
-	\[1,\cos x,\sin x, \cos2x,\sin2x, \cdots,\cos nx,\sin nx, \cdots\] 在$[-\pi, \pi]$ 域下正交，
-	构成正交完全集
-	\end{block}
+    \frametitle{傳里叶级数与变换}
+        三角式: \\ 
+        { $\displaystyle f(x) =\dfrac{a_0}{2} +\sum_{n=1}^{\infty}  \left(  a_n \cos~ \frac{n\pi}{l} x +  b_n \sin~ \frac{n\pi}{l} x  \right) $ }\\	
+        { $\displaystyle a_n =\frac{1}{l}  \int_{-l}^{l}  f(\xi )   \cos~ \frac{n\pi}{l} \xi d\xi  $ }\\	
+        { $\displaystyle b_n =\frac{1}{l}  \int_{-l}^{l}  f(\xi )   \sin~ \frac{n\pi}{l} \xi d\xi   $ }\\	\vspace{0.3em}
+        复数式：\\
+        {$\displaystyle f(x) =\sum_{n=-\infty}^{+\infty}  c_n e^{i\omega_n x}, \qquad $  (不连续),   $ \qquad f(x) = \int_{-\infty} ^{+\infty} G(\omega) e^{i \omega x} d \omega $ (连续)}\\	
+        {$\displaystyle c_n =\frac{1}{2l}  \int_{-l}^{l}  f(\xi)    e^{-i\omega_n x}  d\xi  $ }\\
 \end{frame}
 
 \begin{frame}
-	\frametitle{课堂作业}
-	试证明下列等式成立
-	\[\int_{-\pi} ^{\pi} 1 \cdot \sin nx dx = \int_{-\pi} ^{\pi} 1 \cdot \cos nx dx =0\]
-	\[\int_{-\pi} ^{\pi}\sin nx\cdot \cos mx =0\]
-	\[\int_{-\pi} ^{\pi}\sin nx\cdot \sin mx =0, \qquad n\neq m\]
-	\[\int_{-\pi} ^{\pi}\cos nx\cdot \cos mx =0, \qquad n\neq m\]
+    \begin{exampleblock} {例*、试证明$\sin nx, \cos nx, e^{i\omega x}$  平方积}
+    ~~\\
+    \[ \begin{aligned}
+            &\int_{-l} ^{l} \left| \sin \frac{n\pi x}{l} \right|^2 dx = l \\
+            &\int_{-l} ^{l} \left| \cos \frac{n\pi x}{l} \right|^2 dx = l \\
+            &\int_{-l} ^{l} \left| e^{i \frac{n\pi}{l} x} \right|^2  dx = 2l \\
+            &\int_{-\infty} ^{+\infty} \left| e^{i \omega x} \right|^2  dx = 2\pi \\
+    \end{aligned}\]
+    \end{exampleblock}	
 \end{frame}
 
 \begin{frame}
-	\textbf{ \large 复数式：} \\  
-	{\large  $\displaystyle f(x) =\sum_{n=-\infty}^{+\infty}  c_n e^{i\omega_n x}, \qquad $  频域不连续 }\\	
-	{\large $\displaystyle c_n =\frac{1}{2l}  \int_{-l}^{l}  f(\xi)    e^{-i\omega_n x}  d\xi  $ }\\	
-	其中：{\large $\displaystyle   \omega_n=\frac{n\pi}{l} ,  n=...,-3,-2,-1,0,1,2,3,...   $} \\
-\end{frame}
-
-\begin{frame}
-	\textbf{\large 周期 ($2l$) 与 非周期  $l~\to ~\infty $  } \\
-	{\large  $\displaystyle f(x) =\lim_{l\to \infty} \sum_{n=-\infty}^{+\infty}  c_n e^{i\omega_n x} $ }\\	
-	\hspace{5em}{\large $\displaystyle =\lim_{l\to \infty} \sum_{n=-\infty}^{+\infty}  \frac{1}{2l}  [\int_{-l}^{l}  f(\xi)  e^{-i\omega_n x}  d\xi ]  e^{i\omega_n x}  $ }\\	
-	\hspace{5em}{\large $\displaystyle =\frac{1}{2\pi} \int_{-\infty}^{+\infty}  [\int_{-l}^{l}  f(\xi)  e^{-i\omega x}  d\xi ]  e^{i\omega x} d\omega $ }\\
-	\hspace{5em}{\large $\displaystyle =\frac{1}{2\pi} \int_{-\infty}^{+\infty}  G(\omega) e^{i\omega x} d\omega $ }\\
-	\begin{block} {Remark}
-	因为$ \int_{-\infty}^{+\infty} e^{-i\omega_2 x} e^{i\omega_1 x}  dx = 0, \quad (\omega_1 \ne \omega_2 )$,
-	构成正交完全集！
-	\end{block}
+    \begin{exampleblock} {例*、试证明$\sin nx, \cos nx, e^{i\omega x}$  正交性}
+    ~~\\
+    \[ \begin{aligned}
+            &\int_{-l} ^{l} \sin \frac{n\pi x}{l} \sin \frac{m\pi x}{l}  dx = 0 \\
+            &\int_{-l} ^{l} \cos \frac{n\pi x}{l} \cos \frac{m\pi x}{l}  dx = 0 \\
+            &\int_{-l} ^{l} e^{-i \frac{n\pi}{l} x} e^{i \frac{m\pi}{l} x}   dx = 0 \\
+            &\int_{-\infty} ^{+\infty}  e^{-i \omega_k x} e^{i \omega_{k'} x}   dx = 0 \\
+    \end{aligned}\]
+    \end{exampleblock}	
 \end{frame}
 
 \begin{frame}

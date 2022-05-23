@@ -3,9 +3,9 @@
 \beamer@subsectionintoc {2}{1}{伟大成就}{10}{0}{2}
 \beamer@subsectionintoc {2}{2}{普朗克公式}{18}{0}{2}
 \beamer@subsectionintoc {2}{3}{能量子假说}{26}{0}{2}
-\beamer@sectionintoc {3}{3.波粒二象性}{35}{0}{3}
-\beamer@subsectionintoc {3}{1}{光电效应}{42}{0}{3}
-\beamer@subsectionintoc {3}{2}{康普顿效应}{50}{0}{3}
-\beamer@subsectionintoc {3}{3}{氢原子光谱}{55}{0}{3}
-\beamer@subsectionintoc {3}{4}{光的波粒二象性}{62}{0}{3}
-\beamer@subsectionintoc {3}{5}{物质波假说}{66}{0}{3}
+\beamer@sectionintoc {3}{3.波粒二象性}{36}{0}{3}
+\beamer@subsectionintoc {3}{1}{光电效应}{43}{0}{3}
+\beamer@subsectionintoc {3}{2}{康普顿效应}{51}{0}{3}
+\beamer@subsectionintoc {3}{3}{氢原子光谱}{56}{0}{3}
+\beamer@subsectionintoc {3}{4}{光的波粒二象性}{63}{0}{3}
+\beamer@subsectionintoc {3}{5}{物质波假说}{67}{0}{3}
