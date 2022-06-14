@@ -1038,3 +1038,92 @@
 	\end{center}
     \addtocounter{framenumber}{-1} 
 \end{frame}
+
+\begin{frame} 
+\frametitle{}
+求解小阻尼振动微分方程 \\ 
+
+\alert{解、} 令 $\displaystyle  u(t)= exp(-\varepsilon t) v(t) ， \cdots  (\text{3分})$ \\ 
+求微分：	
+	\begin{align*}
+		\frac{d u}{d t } & =exp(-\varepsilon t) [-\varepsilon v +\frac{d v}{dt}]\\
+		\frac{d^2 u}{d t^2 } & =exp(-\varepsilon t) [\varepsilon ^2 v -2\varepsilon \frac{d v}{dt}+ \frac{d^2 v}{dt^2} ] \cdots  (\text{3分})  
+	\end{align*} 
+	代回原方程并整理得
+	\begin{equation*}
+		\frac{d^2 v}{d t^2} +(\omega ^2 - \varepsilon ^2) v = 0,  ~~~ (\varepsilon < \omega)   
+	\end{equation*}
+   令  $k^2 = \omega ^2 - \varepsilon ^2$ ,得标准型
+   \[\dfrac{d ^2 v}{d t^2} +k ^2 x = 0 \cdots  (\text{3分}) \]   
+   解得:  $\cdots \cdots $
+   \begin{equation*}
+    u(t)= exp(-\varepsilon t) v(t) =exp(-\varepsilon t) [ C_1 \cos k t +C_2 \sin k t,  ] \cdots (\text{6分}) 
+\end{equation*}	
+\end{frame}
+
+\begin{frame} 
+\frametitle{}
+\alert{解、} 由Gamma函数定义
+\[
+	\begin{aligned}
+		 \Gamma(x)&=\int_{0}^{\infty} t^{x-1} e^{-t} dt,    \\
+		 \Gamma(\frac{1}{2})&=\int_{0}^{\infty} t^{\frac{1}{2}-1} e^{-t} dt\\
+		 &=\int_{0}^{\infty} \frac{1}{\sqrt{t}} e^{-t} dt  \cdots  (\text{2分})\\
+         &\cdots \\
+         &=\sqrt{\pi}   \cdots  (\text{3分})
+	\end{aligned}	
+	\]
+\end{frame}
+
+\begin{frame} 
+\frametitle{}
+\[ \begin{aligned}
+    (m-\frac{1}{2})! &= \Gamma (m-\frac{1}{2}+1) \\
+                     &= \Gamma (m+\frac{1}{2}) \\
+                     &= \frac{(2m)!}{2^{2m} m!}\sqrt{\pi}   \cdots  (\text{3分}) \\ 
+                     \text{取}m&=1  \\ 
+                     (\frac{1}{2})! &=  \frac{\sqrt{\pi}}{2}  \cdots  (\text{2分}) 
+\end{aligned} \]
+\end{frame}
+
+\begin{frame} 
+\frametitle{}
+\alert{解、}  令 $x=exp(t) , (t=ln x)$，求微分并代入原方程\\
+\begin{equation*}
+    \frac{d y}{d x}  = 	\frac{d y}{d t}\frac{d t}{d x}= \frac{1}{ x}\frac{d y}{d t}  \to x \frac{d y}{d x}=	\frac{d y}{d t}
+\end{equation*} 
+\begin{equation*}
+    \frac{d ^2y}{d x^2}  = 	\frac{d }{d t} ( \frac{1}{ x}\frac{d y}{d t}  )\frac{d t}{d x}=  
+    \frac{1}{ x^2}(\frac{d ^2y}{d t^2} -	\frac{d y}{d t})   \to  	x^2 \frac{d^2 y}{d x^2} = \frac{d ^2y}{d t^2} -	\frac{d y}{d t}
+\end{equation*} 
+
+方程可转化为：
+\begin{equation*}
+    \frac{d^2 y}{d t^2}  +(n\pi)^2 y =0 
+\end{equation*}     
+这是振动方程，有通解：$	y(t)=C_1 \cos (n\pi t) +C_2 \sin (n\pi t) t$ \\
+代回变量，原方程的通解：
+\begin{equation*}
+    y(x)=C_1 \cos (n\pi \ln x) +C_2 \sin (n\pi\ln x)
+\end{equation*}    
+\end{frame}
+
+\begin{frame} 
+\frametitle{}
+\[ \begin{aligned}
+    \Gamma(x)&=\int_{0}^{\infty} t^{x-1} e^{-t} dt,   \cdots  (\text{2分})  \\
+	\Gamma(1)&=\int_{0}^{\infty} t^{1-1} e^{-t} dt \\	
+			&=\int_{0}^{\infty}  e^{-t} dt \\ 
+            &=1	 \cdots  (\text{3分}) 
+\end{aligned}\]
+\end{frame}
+
+\begin{frame} 
+\frametitle{}
+\[ \begin{aligned}
+    \Gamma(n+1)&=n!,   \cdots  (\text{2分})  \\
+	0!& =\Gamma(0+1)\\	
+			&=\Gamma(1) \\ 
+            &=1	 \cdots  (\text{3分}) 
+\end{aligned}\]
+\end{frame}

@@ -1,10 +1,8 @@
 %\section{课程简介}
-
-
 \begin{frame}
     \frametitle{课程简介}
     \begin{enumerate}
-        \Item 量子光学: is the study of the interaction of individual photons, in the wavelength range from the infrared to the ultraviolet, with ordinary matter - e.g. atoms, molecules, conduction electrons, etc. - described by nonrelativistic quantum mechanics. 
+        \Item 量子光学: is the study of the interaction of individual photons, in the wavelength range from the infrared to the ultraviolet, with ordinary matter - e.g. atoms, molecules, electrons, etc. - described by nonrelativistic quantum mechanics. 
         \Item 课程目标:       
         \begin{itemize}
           \item Grasp of the basic theory of quantum optics
@@ -25,21 +23,37 @@
 \begin{frame}
     \frametitle{教材}
       \begin{itemize}
-          \Item 《Quantum optics》  D.F.Walls, G.J.Milburn  Springer-Verlag   2008         
+          \Item 《Quantum optics》 Scully, Zubairy, 1997 (Cambridge)        
           \Item 《Quantum Optics: An Introduction》，Fox, Mark，2006
-          \Item 《Statistical Methods in Quantum Optics》Howard J. Carmichael, 1999 
-          \Item 《Mathematical Methods of Quantum Optics》Ravinder Rupchand Puri 2001
+          \Item 《Introductory Quantum Optics》, Gerry, Knight, 2004 (Cambridge)
+          \Item 《Statistical Methods in Quantum Optics》Howard, Carmichael, 1999 
+          \Item 《Mathematical Methods of Quantum Optics》Ravinder Rupchand Puri, 2001
+          \Item 《量子光学研究前沿》上海交通大学出版社出版，张卫平, 2014
+          \Item 《量子光学》科学出版社, 郭光灿, 2022
       \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame} 
+\frametitle{网络教学资源}
+
+牛津大学 Mark Fox (1)
+\href{https://www.bilibili.com/video/BV1PK4y1E79Z?t=3.2}{点这里}\\ {\vspace*{2.3em}}
+
+牛津大学 Mark Fox (2)
+\href{https://www.bilibili.com/video/BV1mb4y1j7mu/?spm_id_from=autoNext} {点这里} \\ {\vspace*{2.3em}}
+
+慕尼黑大学 Immanuel Bloch
+\href{https://www.bilibili.com/video/BV1Ky4y1W7C7?p=1} {点这里}
+     
+\end{frame}
+
 \begin{frame}
       \frametitle{量子光学相关专业}
       \begin{itemize}
-        \Item 光学专业 
-        \Item 光学工程专业  
-        \Item 量子信息学专业 (量子计算, 量子通信)   
-        \Item 其他与光相关的专业 (物理, 化学, 材料, 通信)   
+        \Item 光学 (光物理, 光化学, 光材料, 光谱精细结构)
+        \Item 光学工程 (激光,光电器件, 光电探测, 非经典光源,量子成像, 量子雷达)  
+        \Item 量子信息学 (量子计算, 量子通信, 量子精密测量, 量子传感,  超冷原子)    
     \end{itemize}  
 \end{frame}
 
@@ -49,22 +63,22 @@
     \begin{itemize}
         \Item 经典光学(麦克斯韦方程) \\
         不能解释: 黑体辐射, 光电效应, 康普顿效应, 原子光谱, 自发发射, 受激发射...
-        \Item 半经典光学(量子化粒子+经典光场)  \\
+        \Item 半经典光学(原子能级量子化+经典光场+光子假说)  \\
         不能解释: 延迟选择实验, 量子擦除实验, 相干态, 压缩态, 量子计算, 量子通信, 量子存储...
         \Item 量子光学(量子化粒子+量子化光场)  \\
-        能解释当前一切光学现象. 
+        解释当前一切光学(实验)现象. 
     \end{itemize}     
 \end{frame}
 
 \begin{frame}
     \frametitle{课程内容}
         \begin{enumerate}
-            \Item 经典和半经典光学（2学时）
-            \Item 量子力学基础（4学时）
-            \Item 量子化光场（10学时）
-            \Item 光子与光场统计（10学时）
-            \Item 光与原子相互作用（12学时）
-            \Item 量子光学应用前沿 （2学时）
+            \Item lecture-1   ~~~~半经典光
+            \Item lecture-2and3 ~ 量子力学基础与谐振子
+            \Item lecture-3and4 ~ 光场量子化
+            \Item lecture-6to9  ~~ 相干态与压缩态
+            \Item lecture-10to15 ~ 光场测量与光子统计
+            \Item lecture-16to20 ~ 光场中的原子
         \end{enumerate}
   \end{frame}
 
@@ -72,7 +86,7 @@
     \frametitle{}
     \Background[1] 
     \begin{center}
-    {\huge 第1讲：经典和半经典光学}
+    {\huge 第1讲：经典与半经典光学}
     \end{center}  
     \addtocounter{framenumber}{-1}   
 \end{frame}
@@ -81,7 +95,8 @@
 \begin{frame}
       \frametitle{本讲要点}
       \begin{enumerate}
-        \Item 经典和半经典光学主要成果
+        \Item 经典和半经典光学
+        \Item 经典和半经典光学主要成就
         \Item 经典和半经典光学所面临的困难
     \end{enumerate}
       
@@ -90,7 +105,7 @@
 \section{1. 经典光学}
 
 \begin{frame}
-      \frametitle{经典光学的主要成果:麦克斯韦方程}
+      \frametitle{经典光学的成果:麦克斯韦方程}
     介质中: 定义电位移矢量$\mathbf{D}$ 和磁场强度 $\mathbf{H}$
 \[ \mathbf{D}=\epsilon_0 \mathbf{E} + \mathbf{P} = \epsilon_0 \epsilon_r \mathbf{E} \, (*),  \qquad \mathbf{H}=\frac{1}{\mu_0} \mathbf{B} -\mathbf{M}= \frac{1}{\mu_0\mu_r}\mathbf{B} \, (*)\]
 麦克斯韦方程:
@@ -104,7 +119,7 @@
 \end{frame}
 
 \begin{frame}
-      \frametitle{}
+      \frametitle{电磁波}
     对于真空 ($\rho _f =0, \mathbf{J}_f =0 $),  \[ \mathbf{B} = \mu_0 \mathbf{H}, \qquad  \mathbf{D} = \epsilon_0 \mathbf{E} \]
 代入麦克斯韦方程(IV)
  \[ \nabla \times  \mathbf{H} = \mathbf{J}_f +  \cfrac{\partial \mathbf{D}}{\partial t } \]
@@ -142,19 +157,18 @@
         \includegraphics[width=0.8\textwidth]{figs/10.png}
    \end{center}
  考虑标量化.
- \begin{enumerate}x
+ \begin{enumerate}
      \item 线偏振 $\mathbf{E}(z,t) = E_x(z,t) \hat{e}_x $ 
      \item 圆偏振 $\mathbf{E}(z,t) = E_x(z,t) \hat{e}_{\sigma}, \qquad \text{with} \qquad \hat{e}_{\pm}= \mp \frac{1}{\sqrt{2}} (\hat{x} \pm \hat{y}) $
  \end{enumerate}
-
 \end{frame}
 
 \begin{frame}
       \frametitle{}
       ~~\\
-    \例 [1. 试求一维光学腔中的线偏振电磁场问题] {
+    \例 [1. 试求一维光学腔中的线偏振电磁场] {
       \begin{center}
-           \includegraphics[width=0.25\textwidth]{figs/1.png}
+           \includegraphics[width=0.4\textwidth]{figs/1.png}
       \end{center}  
       光学腔: $0\leq z\leq L$ \\  
       边界条件: $E_x(0)=E_x(L)=0$  
@@ -194,25 +208,27 @@
     解方程II : 	\[ T~^{''} +\lambda {c~^2 T}=0 \] \\ 
 	代入$\lambda_n$, 得：
 	$\displaystyle  T~^{''} +\lambda~_n c~^2 ~T=0 $ \\
-	变形：$\displaystyle  T~^{''} +\omega ~_n ^2 {c~^2 T}=0 $ \\ 
+	变形为：\[  T~^{''} +\omega ~_n ^2 {c~^2 T}=0 \]
 	特征方程有虚根，通解 ：\\
 	\hspace{3cm}	$\displaystyle 	T~_n=c~_n\cos \omega_n~c~t+ d~_n\sin \omega ~_n~c~t $  \\ \vspace{1em}
 \end{frame}
 
 \begin{frame}
     \frametitle{} 
-    原方程的基本解：\\
+    ~\\
+    原方程的基本解：\\ {\vspace*{0.3em}}
 	$\begin{array}{llll}
 		E_n (z,t) &=& T_n(t)Z_n(z)\\
 		&=& (c_n\cos \omega_nct+ d_n\sin \omega _nct ) \sin \omega_n z\\
         &=&a_n \exp(i \omega_n ct) \sin \frac{ n\pi z}{L} \\
 	\end{array}$ \\  {\vspace*{0.6em}}    
     \begin{enumerate}
+    %\IItem 基本解：$\displaystyle E_{n}(z,t) = a_n q_n (t) \sin (k_n z), \quad \text{with} \quad a_n = \left( \frac{2 \omega ^2}{V \epsilon_0}\right)^{1/2} $
     \IItem 基本解：$\displaystyle E_{n}(z,t) = a_n q_n (t) \sin (k_n z) $
     \IItem 叠加解：$\displaystyle E_{x}(z,t) = \sum\limits_{n=1}^{\infty } a_n q_n (t) \sin (k_n z)$
     \end{enumerate}	
-    把解代回由麦克斯韦方程(III), 得磁场: \\ 
-    ${\hspace*{2em}}$叠加解: $\displaystyle H_{y}(z,t) = \sum\limits_{n=1}^{\infty } a_n \frac{\epsilon_0}{k_n}q_n ' (t) \cos (k_n z)$ \\ {\vspace*{0.6em}}
+    把解代回由麦克斯韦方程(III), 得磁场叠加解 \\ 
+    \[ H_{y}(z,t) = \sum\limits_{n=1}^{\infty } a_n \frac{\epsilon_0}{k_n}q_n ' (t) \cos (k_n z)\] 
 \end{frame}
 
 \begin{frame}
@@ -222,8 +238,16 @@
     得自由场解 
     \[  E_{x}(z,t) = \frac{1}{2} E_{0x}(z) \exp [i(kz-\omega t)] \]
     ~~\\ 
-    \alert{波动光学基本结论}: 电磁场可分解为一系列基本模式的振动.\\ 
-    自由场是自由振动;存在电荷或电流等环境,则是受迫振动, 方程为:
+    电磁场的哈密顿(能量)
+    \[ H = \frac{1}{2} \int_V d V \left[ \epsilon_0 \mathbf{E^2}(\mathbf{r},t) + \frac{1}{\mu_0}\mathbf{B^2}(\mathbf{r},t)\right]\]
+\end{frame}
+
+\begin{frame} 
+\frametitle{波动光学基本结论}
+    电磁场是一系列基本振动模式的叠加.\\ 
+    \[ E_{x}(z,t) = \sum\limits_{n=1}^{\infty } a_n q_n (t) \sin (k_n z)\]
+    \[ H_{y}(z,t) = \sum\limits_{n=1}^{\infty } a_n \frac{\epsilon_0}{k_n}q_n ' (t) \cos (k_n z)\] 
+    自由场是自由振动;存在电荷或电流等环境,则是受迫振动, 波动方程为:
     \[\mathbf{E}_{tt} -c^2\nabla^2 \mathbf{E} = \mu_0 \frac{\partial ^2 \mathbf{P}  }{\partial t^2}\]  
 \end{frame}
 
@@ -237,7 +261,7 @@
           \item 原子光谱, 
           \item 光的发射与吸收...
       \end{itemize}
-      得增加一些量子观念(1900年)
+      * 对上述问题的解释导致量子力学的建立
 \end{frame}
 
 \section{2. 半经典光学}
@@ -256,8 +280,8 @@
 \begin{frame}
     \frametitle{半经典光学}     
     \begin{itemize}
-        \Item 量子化的粒子场
-        \Item 经典的光学场, (光子数目对应电磁场强度)
+        \Item 量子化原子能级
+        \Item 经典的光学场+光量子假说
     \end{itemize}  
 \end{frame}
 
@@ -273,7 +297,7 @@
      \[E_{x}=E_{0} \cos \left(\omega t\right)  \]
      光波所产生的能量可看做是对原子能级的微扰 
      \[\begin{aligned}
-        &\hat{H}^{\prime}=e\mathbf{E}\cdot \mathbf{r} = ex E_{x} \\
+        &\hat{H}^{\prime}=e\mathbf{r}\cdot\mathbf{E}  = ex E_{x} \\
         &=\frac{1}{2} \operatorname{ex} E_{0}\left[e^{i \omega t}+e^{-i \omega t}\right] \\
         &=\hat{F}\left[e^{i \omega t}+e^{-i \omega t}\right]
         \end{aligned}
@@ -304,13 +328,11 @@
     增加自旋, 解决光谱分裂问题 \\
     增加旋-轨耦合,解决复杂光谱问题 \\ 
     增加非线性效应,解决变频问题 \\
-    1956年后, 发展出非经典光源 (激光, 压缩光, 单光子), 
-    人类进入量子光学时代
 \end{frame}
 
 \begin{frame}
     \frametitle{半经典光学面临的困难}
-    半经典半量子光学 (量子化粒子场+经典光场), 取得了具大成功. \\ 
+    半经典半量子光学取得了具大成功. \\ 
     但不能解释如下光学现象
     \begin{itemize}
         \item 延迟选择实验
@@ -321,35 +343,38 @@
         \item 单光子源
         \item 量子隐形传态
     \end{itemize}
+    * 这些问题的解释导致第二次量子革命, 1956年后, 发展出非经典光源 (激光, 压缩光, 单光子), 人类进入量子光学时代.
 \end{frame}
 
 \begin{frame}
     \frametitle{惠勒延迟选择实验}
     \begin{center}
-        \includegraphics[width=0.7\textwidth]{figs/choose.png} \\
+        \includegraphics[width=0.6\textwidth]{figs/choose.png} \\
     \end{center} 
+    {\Bullet} 光子总是处于叠加
+    {\Bullet} 光路的说法是不成立的
 \end{frame}
 
-\begin{frame}
-    \frametitle{量子擦除实验}
-    \begin{center}
-        \includegraphics[width=0.6\textwidth]{figs/c1.png} \\
-    \end{center} 
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-    \begin{center}
-        \includegraphics[width=0.6\textwidth]{figs/c2.png} \\
-    \end{center} 
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-    \begin{center}
-        \includegraphics[width=0.6\textwidth]{figs/c3.png} \\
-    \end{center} 
-\end{frame}
+%\begin{frame}
+%    \frametitle{量子擦除实验}
+%    \begin{center}
+%        \includegraphics[width=0.6\textwidth]{figs/c1.%png} \\
+%    \end{center} 
+%\end{frame}
+%
+%\begin{frame}
+%    \frametitle{}
+%    \begin{center}
+%        \includegraphics[width=0.6\textwidth]{figs/c2.%png} \\
+%    \end{center} 
+%\end{frame}
+%
+%\begin{frame}
+%    \frametitle{}
+%    \begin{center}
+%        \includegraphics[width=0.6\textwidth]{figs/c3.%png} \\
+%    \end{center} 
+%\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}

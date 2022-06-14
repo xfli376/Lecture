@@ -1,2 +1,0 @@
-\beamer@sectionintoc {1}{1. 光学谐振腔}{5}{0}{1}
-\beamer@sectionintoc {2}{2. 原子与腔的相互作用}{9}{0}{2}

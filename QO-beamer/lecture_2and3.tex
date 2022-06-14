@@ -17,8 +17,8 @@
     \begin{itemize}
         \item 场是物质存在的基本形式
         \item 所有的粒子都是场的量子
-        \item 场的量子与量子力学中的粒子并不完全一样,在非相对论近似下两都可以拟合在一起
-        \item 光子无非相对论近似,不能被看做量子力学中的粒子
+        \item 场量子与量子力学的粒子并不完全一样,在非相对论近似下两者可拟合在一起
+        \item 光量子是光场的量子,无非相对论近似,不是量子力学中的粒子
     \end{itemize} 
 \end{frame}
 
@@ -68,7 +68,7 @@
             &(\psi, \varphi)= (\varphi,\psi)^* \\
             &(\psi, \varphi+\xi)= (\psi, \varphi) + (\psi, \xi)\qquad (\text{分配律})\\
             &(\psi, \varphi a)= (\psi, \varphi )a \\
-            &\Rightarrow (\psi a, \varphi )= (\psi, \varphi )a^* \\
+            &(\psi a, \varphi )= a^* (\psi, \varphi ) \\
             &(\psi,\psi)= c\ge 0\\
         \end{split}  
     \end{equation*}
@@ -142,8 +142,8 @@
    \begin{itemize}
        \Item 模（方）：$|\psi|^2= (\psi, \psi)=c$
        \Item 归一化： $|\psi|^2= (\psi, \psi)=c=1$
-       \Item 正交（线性无关）性:  $(\psi, \varphi)=0 $ \\
-       \Item 完全集: 有一组线性无关集，如果空间的任意矢量都可以在其上展开，则称它为一个完全集，记为$\{\phi_i\}$, 展开系数是内积 
+       \Item 正交性（线性无关）:  $(\psi, \varphi)=0 $ \\
+       \Item 完全集: 有一组线性无关集，如果空间的任意矢量都可以在其上展开，则称它为一个完全集，记为$\{\phi_i\}$
        \[\psi=\sum_i a_i \phi_i= \sum_i (\phi_i,\psi) \phi_i\]
        \Item 维度：最小完全集所包含矢量的数目相同，称这个数目为空间的维度
        \Item 正交归一完全集：对于一个n维的完全集，有：\[(\phi_i,\phi_j)=\delta_{ij}, \qquad i,j=1,2,3,\cdots, n \]
@@ -182,16 +182,16 @@ $C^2$空间的另一个基：
             \put(72,-1){\small\bfseries \color{red}{$|0\rangle$}}
         \end{overpic}   
     \end{center} 
-    若$\rs{0}, \rs{1}$描述Z方向的左右自旋, 则 $\rs{+}, \rs{-}$ 描述X方向的左右自旋. 
+    若$\rs{0}, \rs{1}$描述在Z方向自旋投影, 则 $\rs{+}, \rs{-}$ 描述在X方向的自旋投影. 
 \end{frame}
 
 \begin{frame}{}
     6、左矢与右矢\\
     考察内积： $(\psi,\psi)=\int\psi^*\psi d\tau$ \\
     同一波函数放在左边还是右边，意义有所不同： \\
-    右边是线性的：  $(\psi,a\psi)=a (\psi,\psi)$ \\
+    右边是线性的：  $(\psi,a\psi)=(\psi,\psi)a $ \\
     左边是反线性的：   $(a\psi,\psi)=a^* (\psi,\psi)$  \\
-    为了清楚地描述这种线性反线性特点，定义左矢和右矢, 称为狄拉克记号
+    为清楚描述线性反线性特点，定义左矢和右矢, 写狄拉克记号
     $$\langle \psi |, \qquad |\psi \rangle $$ 
     数乘性质： $$\langle a\psi | = \langle \psi |a^* $$
     $$ |a\psi \rangle = a|\psi \rangle$$ 
@@ -254,6 +254,33 @@ $C^2$空间的另一个基：
         \]
 \end{frame}
 
+\begin{frame} 
+\frametitle{}
+ \例 [3. 求如下波函数的外积]{
+ \[\rs{\psi}= a_1 \rs{1} + a_2 \rs{2}, \quad \rs{\varphi}= b_1 \rs{1} + b_2 \rs{2} \]}
+ \解 ~(1) 代数形式 
+   \[ \begin{aligned}
+    \rl{\psi}{\varphi} &= (a_1 \rs{1} + a_2 \rs{2}) (\ls{1}b_1 ^*  + \ls{2} b_2 ^* )\\
+      &= a_1 b_1 ^* \rl{1}{1} + a_2 b_2 ^* \rl{2}{2} + a_1 b_2 ^* \rl{1}{2} + a_2 b_1 ^* \rl{2}{1} \\
+   \end{aligned}\]   
+* 后两项为耦合项\\ 
+(2) 矩阵形式
+~ \[\rl{\psi}{\varphi} = \begin{pmatrix}
+    a_1  \\
+    a_2  
+\end{pmatrix}
+    \begin{pmatrix}
+    b_1 ^* &
+    b_2 ^* &
+\end{pmatrix}
+=  \begin{pmatrix}
+    a_1b_1 ^* & a_1b_2 ^*  \\
+    a_2b_1 ^* & a_2b_2 ^*  
+\end{pmatrix}
+\]
+* 非对称元为耦合项
+\end{frame}
+
 \section{2.物理量与算符}
 
 \begin{frame}
@@ -266,8 +293,7 @@ $C^2$空间的另一个基：
         \Item 算符相等: 对任意态$\rs{\psi}$, 恒有下式, 则 $A= B$ \[ A\rs{\psi}=B\rs{\psi}\]
         \Item 单位算符: \[I\Psi=\Psi \]
         \Item 算符的和:  
-        $$ (A+B)\Psi=A\Psi+B\Psi $$
-        存在交换律和结合律
+        $$ (A+B)\Psi=A\Psi+B\Psi $$   
     \end{itemize}
 \end{frame} 
 
@@ -276,11 +302,10 @@ $C^2$空间的另一个基：
  \begin{itemize}
     \Item 算符的积 
     $$ (AB)\Psi=A(B\Psi) $$
-    不存在交换律，即 \\
-    $AB=BA$ 或 $AB\ne BA$ 都有可能
-    \Item 对易子
+    * 不存在交换律，即 $AB=BA$ 或 $AB\ne BA$ 皆有可能 \\
+    定义对易子来描述 \\
     $$ [A,B]=AB-BA$$
-    若[A,B]=0,称两算符对易，否则不对易
+    若[A,B]=0,称两算符对易(可交换)，否则不对易(不可交换)
     \Item 逆算符  
     \[F^{-1}\rs{\psi}=\rs{\Psi} \] 
     \Item 线性算符 \[F (a\rs{\Psi} +b\rs{\psi}) = aF \rs{\Psi} +bF\rs{\psi}\]
@@ -349,7 +374,7 @@ $C^2$空间的另一个基：
     {\bullet} 测得的概率(密度) 
     \[\begin{aligned}
         \lcr{\Psi}{M_0 ^\dagger M_0}{\Psi} 
-        &= \lcr{0 }{a_0a_0} {0} \\ 
+        &= \lcr{0 }{a_0 ^* a_0} {0} \\ 
         &= \lr{0 }{0}a_0 ^* a_0 \\ 
         &= |a_0|^2 = p(0) 
     \end{aligned}\] 
@@ -361,7 +386,7 @@ $C^2$空间的另一个基：
     ~\\
     2. 算符的代数形式 \\ {\vspace*{0.3em}}
  {\Bullet}位置算符和动量算符
-\例[3.已知粒子的位置波函数$\psi(x,t)$，求动量的期望值]{}   
+\例[4.已知粒子的位置波函数$\psi(x,t)$，求动量的期望值]{}   
 \解~ 由概率诠释，位置期望值为
 \begin{equation*}
     \bar{x}=\int x|\psi(x, t)|^{2} d x=\int \psi^{*}(x, t) x \psi(x, t) d x
@@ -411,7 +436,7 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
     \end{itemize}
     求任意其他力学量的算符
     \end{tcolorbox1}
-    \alert{Bohm规则（1954）:} 经典物理学存在力学量F，它若是位置与动量的函数
+    \alert{Bohm规则（1）:} 经典物理学的力学量F，若是位置与动量的函数
     \[F(\vec{r},\vec{p})\]
     则其量子力学算符为：
     \[\hat{F}=F(\hat{\vec{r}},\hat{\vec{p}})\]
@@ -419,11 +444,11 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
 
 \begin{frame}
     \frametitle{}     
-{\Bullet}正则位置算符和正则动量算符
-  \[ \frac{\mathrm{d }q}{\mathrm{d }t} = \frac{\partial H(q,p) }{\partial p}, \frac{\mathrm{d }p}{\mathrm{d }t} = -\frac{ \partial H(q,p) }{\partial q} \]
-  存在对易关系
+{\Bullet}正则位置和正则动量
+  \[ \frac{\mathrm{d }q}{\mathrm{d }t} = \frac{\partial H(q,p) }{\partial p}, \quad \frac{\mathrm{d }p}{\mathrm{d }t} = -\frac{ \partial H(q,p) }{\partial q} \]
+  正则位置和正则动量算符的对易关系
   \[ [\hat{q},\hat{p}]=i\hbar\]
-  \alert{Bohm规则（:} 经典物理学存在力学量F，是正则位置与动量的函数
+  \alert{Bohm规则(2):} 经典物理学存在力学量F，是正则位置与动量的函数
   \[F(q,p)\]
   则其量子力学算符为：
   \[\hat{F}=F(\hat{q},\hat{p})\]
@@ -439,7 +464,7 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
         \lr{i}{\psi}&= \sum_j\lcr{i}{F}{j}\lr{j}{\Psi} \\
         \lr{i}{\psi}&= \sum_j F_{ij}\lr{j}{\Psi}
     \end{aligned}\]  
-    定义了算符矩阵元公式：\[ F_{ij}=\lcr{i}{F}{j}\]
+    算符矩阵元公式：\[ F_{ij}=\lcr{i}{F}{j}\]
     伴算符的矩阵等于原算符的厄密共轭：\[ F^{\dagger}=(F_{ij} ^*)^T\]
 \end{frame}
 
@@ -447,7 +472,7 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
     \frametitle{}
     4. 算符的本征方程
     \begin{itemize}
-        \Item 定义式: \[F \rs{\Psi}=f\rs{\Psi}\]
+        \Item 定义式: \[F \rs{n}=f_n\rs{n}\]
         \Item 相关定理：
         \begin{itemize}
             \IItem 厄密算符的本征值是实数
@@ -484,7 +509,7 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
 \end{frame} 
 
 \begin{frame} 
-    \例 [5、求薛定谔方程在各表象中的形式]{} 
+    \例 [求薛定谔方程在各表象中的形式]{} 
     $$ \begin{aligned}
     i \hbar \frac{\partial}{\partial t} |\Psi(t) \rangle &= H |\Psi(t) \rangle  , \quad \text{无表象}\\
     i \hbar \frac{\partial}{\partial t} \langle x|\Psi(t) \rangle &= H (x, \hat{p}_x) \langle x|\Psi(t) \rangle  , \quad \text{位置表象}\\
@@ -508,46 +533,41 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
 \end{frame}
 
 \begin{frame} 
- \frametitle{}
-      若光场可用场矢量$\rs{\psi}$描述, 则物理$F$的平均值为:
+ \frametitle{} ~\\
+      \例 [5. 若物体处于纯态, 即其状态能用一个态矢量$\rs{\psi}$描述, 求物理$F$的平均值] {
       \[ \begin{aligned}
           \overline{F} &= \lcr{\psi}{F}{\psi} \\
           &= \sum_n \lcr{\psi}{F}{n}\lr{n}{\psi}   \\
           &= \sum_n \lr{n}{\psi} \lcr{\psi}{F}{n} \\ 
           &=  \sum_n \lcr{n}{\rho F}{n} \\
           &= Tr (\rho F)
-      \end{aligned}\] 
-    式中定义了:
+      \end{aligned}\] }
+    式中定义了纯态$\rs{\psi}$的密度算符:
     \[\rho = \rl{\psi}{\psi}  \]
-    称为纯态$\rs{\psi}$的密度算符.
 \end{frame}
 
 \begin{frame} 
  \frametitle{}
-      若光场要用一系列场矢量\{$\rs{\psi}_i$\}描述, 且测量其处于$\rs{\psi}_i$的概率为$P_i$,($\sum_i P_i =1$), 则称光场处于混态. 
+ ~\\
+ \例 [5'. 若物体处于混态,则要用一系列场矢量\{$\rs{\psi_i}$\}描述. 设测量其处于$\rs{\psi_i}$的概率为$P_i$, 求物理$F$的平均值] { 
       \[ \begin{aligned}
         \overline{F} &= \sum_i P_i \overline{F_i}\\
         &= \sum_i P_i \ls{\psi_i}F \rs{\psi_i} \\ 
         &= \sum_i P_i \sum_n \lcr{\psi_i}{F}{n}\lr{n}{\psi_i} \\
         &= \sum_n\ls{n} (\sum_i P_i \rl{\psi_i}{\psi_i} )F \rs{n} \\ 
         &= \sum_n\ls{n} \rho F\rs{n} = Tr (\rho F)
-      \end{aligned}\]  
+      \end{aligned}\] } 
       式中定义了混态的密度算符:
-      \[\rho = \sum_i P_i\rl{\psi_i}{\psi_i}  \]
+      $\rho = \sum_i P_i\rl{\psi_i}{\psi_i} $ 
 \end{frame}
 
 \begin{frame} 
  \frametitle{密度算符的性质}
- 用密度算符求平均值, 纯态与混态系统的公式相同
+ 用密度算符求平均值, 纯态与混态的公式相同
  \[\overline{F} = Tr (\rho F) \]
- 因此,有必要弄清楚密度算符的性质
- \begin{itemize}
-    \Item 密度算符是对任意态的求概率密度的算符
-    \end{itemize}
-    求其在基矢态上的平均值：
-    \[\lcr{i}{\rho}{i}=\lcr{i}{\rl{\psi}{\psi}}{i}=\lr{i}{\psi}\lr{\psi}{i}
-    =a_i ^* a_i =|a_i|^2=\omega_i     
-    \] 
+ 因此,上述公式应用广泛  \\ {\vspace*{2.3em}}
+
+ 有必要了解密度算符的性质
  \end{frame}
  
  \begin{frame} 
@@ -568,7 +588,7 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
       \证~
       \[ \begin{aligned}
         Tr(\rho) &= \sum_n \sum_i \lcr{n}{P_i\rl{\psi_i}{\psi_i}}{n} \\
-        &= \sum_n \sum_i P_i\lcr{n}{\rl{\psi_i}{\psi_i}}{n}  \\
+        &= \sum_n \sum_i P_i \lr{n}{\psi_i} \lr{\psi_i}{n}  \\
         &= \sum_n \sum_i P_i a_n^* a_n \\ 
         &= \sum_i P_i \sum_n a_n^* a_n \\ 
         &= \sum_i P_i \\ 
@@ -595,7 +615,7 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
           \frametitle{}  
     \[ \begin{aligned}
         Tr(\rho^2) &= \sum_n \sum_i \lcr{n}{P^2_i\rl{\psi_i}{\psi_i}}{n} \\
-        &= \sum_n \sum_i P^2_i\lcr{n}{\rl{\psi_i}{\psi_i}}{n}  \\
+        &= \sum_n \sum_i P^2_i\lr{n}{\psi_i}\lr{\psi_i}{n}  \\
         &= \sum_n \sum_i P^2_i a_n^* a_n \\ 
         &= \sum_i P^2_i \sum_n a_n^* a_n \\ 
         &= \sum_i P^2_i \\ 
@@ -607,13 +627,13 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
 
 \begin{frame} 
     \frametitle{}
-       (4)  $\rho  \geq 0 $ \\ 
+       (4)  $\left\langle \rho \right\rangle   \geq 0 $ \\ 
        \证~
     \[ \begin{aligned}
         \rho & = \sum_i P_i\rl{\psi_i}{\psi_i} \\ 
         \left\langle \rho \right\rangle &= 
         \lcr{n}{\sum_i P_i\rl{\psi_i}{\psi_i}}{n} \\ 
-        &= \sum_i P_i \lcr{n}{\rl{\psi_i}{\psi_i}}{n}  \\
+        &= \sum_i P_i \lr{n}{\psi_i}\lr{\psi_i}{n}  \\
         &= \sum_i P_i \left|\lr{n}{\psi_i} \right|^2 \\
         & \geq 0
       \end{aligned}\]   
@@ -625,7 +645,8 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
       \证~
       \[ \begin{aligned}
         \rho &= \rl{\psi}{\psi}  \\ 
-        \rho^2 &= \rl{\psi}{\psi} \rl{\psi}{\psi}  \\ 
+        \rho^2 &= \rl{\psi}{\psi} \rl{\psi}{\psi} \\ 
+        &= \rs{\psi}\left\langle \psi | \psi \right\rangle \ls{\psi} \\ 
         &= \rl{\psi}{\psi}  \\ 
         &=  \rho 
       \end{aligned}\]
@@ -640,8 +661,37 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
      &=  \sum_i P_i \left[ H \rl{\psi_i}{\psi_i} -  \rl{\psi_i}{\psi_i} H \right] \\ 
      &=   \left[ H \sum_i P_i\rl{\psi_i}{\psi_i} - \sum_i P_i \rl{\psi_i}{\psi_i} H \right] \\ 
      &= [H \rho- \rho H] \\ 
-     &= [H, \rho]
+     &= [H, \rho] \\ 
+     ~\\ 
+     i \hbar \frac{\partial \rho}{\partial t} & = [\rho, H]
    \end{aligned}\] 
+\end{frame}
+
+\begin{frame} 
+\frametitle{}
+~\\
+    (7) 密度算符的矩阵形式
+    \[ \begin{aligned}
+       \rs{\Psi} & = a_1\rs{1} + a_2\rs{2} =  \begin{pmatrix}
+        a_1  \\
+        a_2 
+    \end{pmatrix} \\
+       \rho & = \rl{\Psi}{\Psi}  = \sum_{i,j=1,2} a_i a_j ^* \rl{i} {j}\\
+       \rho & = \begin{pmatrix}
+        a_1  \\
+        a_2 
+    \end{pmatrix} \begin{pmatrix}
+        a^* _1  &  a^* _2
+    \end{pmatrix}\\
+    &= \begin{pmatrix}
+        a_1a_1 ^* & a_1a_2 ^*  \\
+        a_2a_1 ^* & a_2a_2 ^*  
+    \end{pmatrix} \\ 
+    &= \begin{pmatrix}
+        \rho_{11} & \rho_{12}  \\
+        \rho_{21} & \rho_{22}  
+    \end{pmatrix} \\ 
+    \end{aligned}\]     
 \end{frame}
 
 \section{4.多粒子体系与张量空间}
@@ -649,12 +699,12 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
 \begin{frame}
     \frametitle{张量空间}
     \begin{tcolorbox4}[张量积]
-    对于多粒子体系，比如多量子比特系统，其所处的空间是子系统希尔伯特空间的张量积。也称直积空间。
+    对于多粒子体系，比如多光子系统，其所处的空间是子系统希尔伯特空间的张量积。也称直积空间。
     \end{tcolorbox4}
 \end{frame}
 
 \begin{frame}
-    \frametitle{1. 张量空间的计算基矢}
+    \frametitle{~1. 张量空间的计算基矢}
     子系统A是n维的，计算基（某厄密算符的本征函数系）为$$\{\rs{\phi_i}\},\quad (i=1,2,3,\cdots,n)$$ 
     子系统B是m维的，计算基为$$\{\rs{\varphi_j}\},\quad (j=1,2,3,\cdots,m)$$ 
     总系统是n张m维的张量空间，计算基为：$$\{\rs{\phi_i}\otimes\rs{\varphi_j}\},\quad (i=1,2,3,\cdots,n;\quad j=1,2,3,\cdots,m)$$ 
@@ -666,8 +716,8 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
     总体系的任意态是计算基矢的叠加态：
     \[ \rs{\Psi} = \sum_{i,j} ^{n,m} a_{ij}\rs{ij}\] \vspace{0.6em}
 
-    \例[6. 写出$C^2$空间的张量空间的计算基]{} 
-    \解~基由四个基矢构成$$\{\rs{00},\rs{01},\rs{10},\rs{11}\}$$
+    \例[7. 写出$C^2$空间的张量空间的计算基]{} 
+    \解~基由四个基矢构成$$\{\rs{\phi_i}\otimes\rs{\varphi_j}\}=\{\rs{00},\rs{01},\rs{10},\rs{11}\}$$
 
 矩阵表示是原矩阵的直积,例: 
 \[\rs{01} = \rs{0} \otimes \rs{1} =    
@@ -737,7 +787,7 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
 
 \begin{frame}
     \frametitle{}
-    双量子比特是四个计算基矢的叠加态：
+    双粒子态是四个计算基矢的叠加态：
     \[\rs{\psi} =\alpha_{00}\rs{00}+\alpha_{01}\rs{01}+\alpha_{10}\rs{10}+\alpha_{11}\rs{11}\]
     归一化条件：
     \[ \sum_{ij=0,1} |\alpha_{ij}|^2= 1\]
@@ -769,11 +819,10 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
     \begin{tcolorbox4}[1. 状态假设]
     量子体系的状态用希尔伯特空间的态矢量完全描述。
     \end{tcolorbox4}
-    \例[7. 量子比特就是2维希尔伯特空间的态矢量]{ 
-    \[\rs{\psi} = a_0 \rs{0} + a_1\rs{1}\]
-    它完全描述了$C^2$体系的所有可能状态}
+    \例[8. 两能级系统用量子比特描述, 它就是2维希尔伯特空间的态矢量]{ 
+    \[\rs{\psi} = a_1 \rs{1} + a_2\rs{2}\]
+    完全描述两能级系统的所有可能状态}
 \end{frame}
-
 
 \begin{frame}
     \frametitle{演化假设}
@@ -786,7 +835,7 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
 \end{frame}
 
 \begin{frame}
-    \例[8. 试证明薛定谔方程与酉变换等价]{}
+    \例[9. 试证明薛定谔方程与酉变换等价]{}
     \证~ 定义时间演化算符：
     $$ U(t,t_0) |\Psi(t_0)\rangle = |\Psi(t)\rangle  $$
     \alert{分析}：
@@ -818,8 +867,10 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
 
 \begin{frame}
  \frametitle{}
-    试证明算符的演化方程与薛定谔方程等价
-    \[ \frac{\mathrm{d A}}{\mathrm{d t}} = \frac{1}{i\hbar} [ A, H ] \]
+    试证明算符的演化方程与薛定谔方程等价 \\ \vspace*{2.3em}
+    \[ i\hbar\frac{\mathrm{d A}}{\mathrm{d t}} =  [A, H ] \]
+    ~\\ \vspace*{2.3em}
+    *参考密度算符运动方程的推导
 \end{frame}
 
 
@@ -840,18 +891,36 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
     \end{tcolorbox4}
 \end{frame}
 
+\begin{frame} 
+    \frametitle{}
+    ~ \\ 
+    {\Bullet}光与两能级原子相互作用体系的两种描述方法 \\ \vspace*{0.6em}
+    (1) 光场处于数态 $\rs{n}$,原子处于激发态 $\rs{2}$, 体系的状态为
+    \[ \rs{\psi_1}  = \rs{n} \rs{2}\]
+    原子放出一个光子后, 回到基态 $\rs{1}$, 光场则处于数态 $\rs{n+1}$, 体系的状态为 
+    \[\rs{\psi_2} = \rs{n+1} \rs{1}\]
+    体系的所有可能状态用叠加态描述 
+    \[\rs{\psi} = a_1 \rs{\psi_1} + a_2\rs{\psi_2}\]
+    \end{frame}
+    
+    \begin{frame} 
+        \frametitle{}
+        ~ \\ 
+        (2) 光场处于数态 $\rs{n}$,原子处于基态 $\rs{1}$, 体系的状态
+        \[ \rs{\psi_1}  = \rs{n} \rs{1}\]
+        原子吸收一个光子后, 进行激发态 $\rs{2}$, 光场则处于数态 $\rs{n-1}$, 体系的状态为 
+        \[\rs{\psi_2} = \rs{n-1} \rs{2}\]
+        体系的所有可能状态用叠加态描述 
+        \[\rs{\psi} = a_1 \rs{\psi_1} + a_2\rs{\psi_2}\]
+    \end{frame}
+
 \begin{frame}
     \frametitle{}
-    基于以上4条假设,可以在希尔伯特空间推导出整个量子力学! \\ 
+    基于以上4条假设,可以在希尔伯特空间推导整个量子力学(光学)! \\ 
 
 \end{frame}
 
 \section{6.实例}
-
-\begin{frame}
-    \frametitle{课堂作业}
-    \例 [9. 求解自由粒子在位置表象中的波函数]{}    
-\end{frame}
 
 \begin{frame}
     \frametitle{实例}
@@ -863,7 +932,7 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
     零边界条件求解(一维, $l$为弦长)
     \begin{enumerate}
         \IItem 固有值：$\displaystyle  \lambda~_n=\frac{n^2\pi~^2}{l~^2}$ 
-        \IItem 固有解：{\large $\displaystyle  X~_n(x)=\sin \frac{n\pi~}{l} x=\sin \omega_n x $}
+        \IItem 固有解：{$\displaystyle  X~_n(x)=\sin \frac{n\pi~}{l} x=\sin \omega_n x $}
         \IItem 基本解:
         $\displaystyle u_n(x,t) = (a_n\cos\frac{ n\pi at}{l}+ b_n\sin \frac{ n\pi at}{l}) \sin \frac{ n\pi x}{l} $ 
         \IItem 叠加解：
@@ -877,12 +946,12 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
       \begin{equation*}
           H=T+U = \frac{p^2 }{2m} + \dfrac{1}{2} m \omega ^2 x^2 
       \end{equation*}	
-      基于不对易关系
+      引入位置与动量算符,$\hat{x}$, $\hat{p}$, 存在对易关系:
       \[ [\hat{x}, \hat{p}] =i\hbar\] 
-      求哈密顿量算符
+      得哈密顿量的算符形式
       \begin{equation*}
       \begin{aligned}
-          \hat{H} &= \frac{\hat{p}^2 }{2m} + \dfrac{1}{2} m \omega ^2 x^2  
+          \hat{H} &= \frac{\hat{p}^2 }{2m} + \dfrac{1}{2} m \omega ^2 x^2  \\
                  &= - \frac{\hbar ^2}{2m} \frac{\partial^2 }{\partial x^2 }+ \dfrac{1}{2} m \omega ^2 x^2   
       \end{aligned}
       \end{equation*}	
@@ -890,9 +959,9 @@ $$\boxed{\bar{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x} $$
 
 \begin{frame}
     \frametitle{}
-    把哈密顿量算符代入定态薛定谔方程
+    把哈密顿量算符代入薛定谔方程, 分离出时间变量后, 得定态薛定谔方程
     \[ \hat{H}\rs{\Psi} =E \rs{\Psi} \]
-    求解薛定谔方程, 得: 
+    求解方程 (复杂, 略), 得: 
     \begin{enumerate}
       \IItem 固有值：$\displaystyle  E_n=(n+\frac{1}{2})\hbar \omega $ 
       \IItem 固有函数：{$\displaystyle  X~_n(x)= H(\alpha x) e^{-(\alpha x)^2 /2 }, \qquad \alpha =\sqrt{\frac{m \omega }{\hbar}} $}
@@ -977,11 +1046,10 @@ $ a \not =  a^\dagger $, 说明不具厄密性. 对于能量第n个本征态 \\
       &=  (E_n -  \hbar \omega ) a\rs{n} \\ 
 \end{aligned}
 \]
-也就是说 $a \rs{n} $ 也是能量本征态, 本征值为 $E_n -  \hbar \omega = E_{n-1} $ 即有一份能量$ \hbar \omega $ 被湮灭, 故称 $a$ 为 湮灭算符 \\ {\vspace*{0.3em}} 
+也就是说 $a \rs{n} $ 也是能量本征态, 本征值为 $E_n -  \hbar \omega = E_{n-1} $ 即有一份能量$ \hbar \omega $ 被湮灭, 故称 $a$ 为 湮灭算符 \\ {\vspace*{1.3em}} 
 
 * 存在对易关系:
 \[ [H, a ] = - a \hbar \omega \] 
-\[ [H, a^\dagger ] =  a^\dagger \hbar \omega \] 
 \end{frame}
 
 \begin{frame}
@@ -995,7 +1063,10 @@ $ a \not =  a^\dagger $, 说明不具厄密性. 对于能量第n个本征态 \\
         \end{aligned}
         \]
 也就是说 $a^\dagger\rs{n} $ 也是能量本性态, 本征值为 $E_n + \hbar \omega = E_{n+1} $ 即产生一份能量$ \hbar \omega $,
-故称 $a^\dagger$ 为产生算符
+故称 $a^\dagger$ 为产生算符 \\ {\vspace*{1.3em}} 
+
+* 存在对易关系:
+\[ [H, a^\dagger ] =  a^\dagger \hbar \omega \] 
 \end{frame}
 
 
@@ -1033,13 +1104,15 @@ H \rs{0} &= \frac{1}{2}\hbar \omega \rs{0}=E_0 \rs{0}
   \例 [11. 求粒子数算符$\hat{N}$的本征值和本征函数]{}
   \解~ \[ 
   \begin{aligned}
-      \hat{H}\rs{\Psi} & =E \rs{\Psi}  \\ 
+      \hat{H}\rs{n} & =E_n \rs{n}  \\ 
       \left(\hat{N} + \frac{1 }{2}\right) \hbar \omega \rs{n} & =E_n \rs{n}  \\ 
      \hat{N} \hbar \omega \rs{n} & =(E_n-\frac{1}{2} \hbar \omega) \rs{n}  \\ 
      \hat{N} \hbar \omega \rs{n} & = n \hbar \omega \rs{n}  \\ 
      \hat{N}   \rs{n} & = n  \rs{n}  \\ 
   \end{aligned} 
   \]
+  得 $\hat{N}$的本征值为$n$和本征态为 $\rs{n}$ \\ 
+  完毕!
 \end{frame}
 
 \begin{frame}
@@ -1125,7 +1198,7 @@ H \rs{0} &= \frac{1}{2}\hbar \omega \rs{0}=E_0 \rs{0}
 \end{frame}
 
 \begin{frame}
-    \frametitle{课堂作业}
+    \frametitle{}
     \例 [13. 求量子谐振子在真空态下的位置和动量的量子涨落]{\[ \Delta x \Delta p_x =\frac{\hbar}{2} \]}
     \解 (1) 算符解法: 
     \[\begin{aligned}
@@ -1180,7 +1253,7 @@ H \rs{0} &= \frac{1}{2}\hbar \omega \rs{0}=E_0 \rs{0}
 
     \begin{frame}
         \frametitle{课堂作业}
-        \解~(2)波函数解法: 位置真空态波函数为\[ \psi(x)=\lr{x}{0} = (\frac{m \omega }{\pi  \hbar})^{\frac{1}{4}}  \exp(- \frac{m \omega }{2 \hbar} x^2)\] 
+        \解~(2)波函数解法: 位置表象下真空态波函数为\[ \psi(x)=\lr{x}{0} = (\frac{m \omega }{\pi  \hbar})^{\frac{1}{4}}  \exp(- \frac{m \omega }{2 \hbar} x^2)\] 
         \[\begin{aligned}
             \overline{x} & = \int_{-\infty}^{+\infty} \psi^{*}(x) x \psi(x) d x  \\ 
             &= (\frac{m \omega }{\pi  \hbar})^{\frac{1}{2}}  \int_{-\infty}^{+\infty} \exp(\frac{m \omega }{2 \hbar} x^2) x \exp(- \frac{m \omega }{2 \hbar} x^2) d x  \\ 

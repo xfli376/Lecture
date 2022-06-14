@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  11 MAY 2022 01:02
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  14 JUN 2022 19:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1700,7 +1700,7 @@ Package rerunfilecheck Info: File `elegantnote-cn.out' has not changed.
 Here is how much of TeX's memory you used:
  56502 strings out of 476493
  1337402 string characters out of 5817124
- 2226374 words of memory out of 5000000
+ 2226375 words of memory out of 5000000
  75933 multiletter control sequences out of 15000+600000
  411689 words of font info for 101 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
