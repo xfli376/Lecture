@@ -17,7 +17,7 @@
     \addtocounter{framenumber}{-1}   
 \end{frame}
 
-\section{2. 数态表象 }
+\section{1. 数态表象 }
 
 \begin{frame} 
 \frametitle{数态表象的定义}
@@ -87,10 +87,10 @@
     &= \sum_i P_i a^*_{n} a_{n} \\ 
     &= \sum_i P_i \left|a_{n}\right|^2
   \end{aligned}\]  
-  总之:数态表象,是个很好的表象.
+  总之:数态表象,是个很好的表象. 量子光学通常做数态展开。
 \end{frame}
 
-\section{3. 相干态表象}
+\section{2. 相干态表象}
 
 \begin{frame} 
  \frametitle{相干态表象}
@@ -109,7 +109,8 @@
 
 \begin{frame} 
 \frametitle{}
-  例: 试证明 $\int  \alpha^k \rs{\alpha} d^2 \alpha =0, \quad k=1,2,\cdots $ \\
+~\\
+  例: 试证明相干态重要结论： $\int  \alpha^k \rs{\alpha} d^2 \alpha =0, \quad k=1,2,\cdots $ \\
   \证~ 把相干态做数态展开
   \[ \begin{aligned}
     \rs{\alpha} &=  e^{-\frac{\left|\alpha\right|^2}{2}}  \sum_n \frac{\alpha^n}{\sqrt{n!}} \rs{n} , \quad  \alpha= \left|\alpha\right| e^{i\varphi} \\
@@ -133,11 +134,11 @@
     &= - \alpha^* \rs{\alpha}\ls{\alpha} + a^{\dagger} \rs{\alpha}\ls{\alpha} \\ 
     \to a^{\dagger} \rl{\alpha}{\alpha} &= \left( \alpha^* + \frac{\partial }{\partial \alpha }\right) \rl{\alpha}{\alpha} 
   \end{aligned}\] 
-  情况不太好,好象所有计算都得展开到数态表象中进行. 
+  情况不太好,似乎对相干态所有计算都必需展开到数态中进行！
 \end{frame}
 
 \begin{frame} 
-  \frametitle{$R$ 表示}
+  \frametitle{~$R$ 表示}
   试着在自身表象计算密度算符...
   \[ \begin{aligned}
     \rho  &= \sum_\alpha\sum_\beta \rho_{\alpha \beta}\rl{\alpha}{\beta} \\
@@ -154,18 +155,18 @@
     R(\alpha^*, \beta) &= \lcr{\alpha} {\rho} {\beta} e^{\frac{1}{2}(\left|\alpha\right|^2+ \left| \beta\right|^2)} \\
     &= \sum_{n,m} \rho_{nm} \frac{(\alpha^*)^n (\beta)^m}{\sqrt{n! m!}}\\
   \end{aligned}\] 
-  把$\rho_{\alpha\beta} $用$R(\alpha^*, \beta) $ 取得后, 好象不用到数态表象中进行计算. \\ 
-  但是:由于相干态不正交,通过上式在数态中计算$R$函数是相当复杂的,且存在非对称元!
+  把$\rho_{\alpha\beta} $用$R(\alpha^*, \beta) $ 取待后, 好象可不到数态表象中进行计算了！\\ 
+  但是: 相干态不正交, 通过上式在数态中求$R(\alpha^*, \beta)$函数是相当复杂的,因为存在非对称元!
  \end{frame}
 
  \begin{frame} 
  \frametitle{相干态各种表示的基本思想}
-    密度算符的$R$表示还是太复杂, 有没有相对简单的表示呢? 比如只存在对角元$C$数且
-    能否这样:
+    密度算符的$R$表示还是太复杂, 有没有相对简单的表示呢? 比如只存在对角元$C$数， \\
+    对于正规序(normal)算符，能否这样:
     \[ \overline{F}^{(n)}(a, a^{\dagger}) = \left\langle \rho F \right\rangle = \int P(\alpha) F^{(n)} (\alpha, \alpha^{\dagger}) d^2 \alpha \]
-    或这样:
+    对于反正规序(anti-normal)算符，能否这样:
     \[ \overline{F}^{(a)}(a, a^{\dagger}) = \left\langle \rho F \right\rangle = \int Q(\alpha) F^{(a)}(\alpha, \alpha^{\dagger}) d^2 \alpha\]
-    或这样:
+    对于对称序（winger）算符，能否这样:
     \[ \overline{F}^{(s)}(a, a^{\dagger}) = \left\langle \rho F \right\rangle = \int W(\alpha) F^{(s)}(\alpha, \alpha^{\dagger}) d^2 \alpha\]
  \end{frame}
 
@@ -316,7 +317,7 @@
     &= \frac{1}{n!\pi^2}\int (- \left|\beta\right|^2)^n    e^{\beta^* \alpha - \beta a^*}  d^2 \beta \\ 
     \end{aligned}\]
     积分是发散的,不可能表示为一个正常函数.\\
-    但是,可以看出, 它是一个可以取负值的函数. 因此,在非经典光场, $P(\alpha) $失却了经典概率的含义. 表现出奇特的量子特性.
+    但是, 它是一个可以取负值的函数. 因此, 在非经典光场, $P(\alpha) $失却了经典概率的含义. 表现出奇特的量子特性.
     \end{frame}
 
     \begin{frame} 
@@ -451,7 +452,7 @@
     \frametitle{~$Winger$ 表示}
     (1) 对称排序密度算符定义$Winger$函数:
     \[ W(\alpha) =\frac{1}{\pi} \overline{\rho}^{(s)}(\alpha, \alpha^*)\]
-    (2) 对称排序排序算符的均值公式:
+    (2) 对称排序算符的均值公式:
     \[ \left\langle F^{(s)} (a, a^{\dagger}) \right\rangle = \int W(\alpha) \overline{F}^{(s)} (\alpha, \alpha^{*}) d^2 \alpha\]
     (3) 相干纯态$\rs{\beta}$的Winger函数:
     \[ W(\alpha) = \frac{2}{\pi} e^{-2\left| (\alpha-\beta) \right|^2}\]
@@ -462,10 +463,116 @@
     (4) 纯数态$\rs{n}$的Winger函数:
     \[ W(\alpha) = \frac{2}{\pi} (-1)^n e^{-2\left| \alpha\right|^2} L_n(4\left|\alpha\right|^2)\]
     式中, $L_n$是拉盖尔多项式 \\ {\vspace*{0.3em}}
-    (5) 与$P$函数的关系( 傅里叶变换)
+    (5) 与$P$函数的关系(傅里叶变换)
     \[W(\alpha) = \frac{2}{\pi} \int  d^2 \alpha' P(\alpha') e^{-2\left|(\alpha'-\alpha)\right|^2}\]
   \end{frame}
 
+  \section{3. 特征函数}
+
+  \begin{frame} 
+  \frametitle{随机变量的矩}
+      设有随机变量$x$, 其对应的可观测量$X$的概率密度为
+      \[ \rho (x) \ge 0, \qquad \text{with} ~ \int \rho (x) dx =1\]
+      第$n$阶矩定义为：
+      \[ \left\langle x^n \right\rangle =  \int x^n \rho (x) dx \]
+      如果所有阶的矩$\{\left\langle x^n \right\rangle \}$都知道， 则可求出$\rho (x)$
+  \end{frame}
+
+  \begin{frame} 
+  \frametitle{特征函数}
+     对所有阶的矩加权求和, 可得$e$指数的矩
+     \[ \begin{aligned}
+      \sum _{n=0} ^ \infty  \frac{(ik)^n}{n!} \left\langle x^n \right\rangle &= \int e^{ikx} \rho (x) dx\\
+      &= \left\langle e^{ikx} \right\rangle\\
+     \end{aligned}\] 
+     由$e$指数的矩定义特征函数
+     \[ C(k) \equiv \left\langle e^{ikx} \right\rangle\]
+     显然，特征函数与概率密度存在傅里叶变换关系
+     \[C (k) = \int e^{ikx} \rho (x) dk \]
+     \[\rho (x) = \frac{1}{2 \pi}\int e^{-ikx} C (k) dk \]
+  \end{frame}
+
+  \begin{frame} 
+  \frametitle{}
+     当然，可以从特征函数计算变量的矩
+     \[ \left\langle x^n \right\rangle = \left.\frac{1}{i^n} \frac{d^n }{d k^n} C(k)\right|_{k=0} \]
+  \end{frame}
+
+  \begin{frame} 
+  \frametitle{}
+     在量子力学相干表象里，根据算符排序的不同， 可定义三种特征函数
+     \[ \begin{aligned}
+      C_W (\lambda) & = Tr[\rho e^{\lambda a^{\dagger} -\lambda^* a}] \\ 
+      &= Tr[\rho D(\lambda)], \qquad \qquad  \text{(Wigner)} \\
+      C_N(\lambda) &= Tr[\rho e^{\lambda a^{\dagger}} e^{ -\lambda^* a}], \qquad  \text{(正规序)}\\
+      C_A(\lambda) &= Tr[\rho e^{-\lambda a^{\dagger}} e^{ \lambda^* a}], \qquad  \text{(反正规序)}\\
+     \end{aligned}\] 
+     三者的关系为：
+     \[  C_W (\lambda)  =  C_N(\lambda) e^{- \frac{1}{2}|\lambda|^2} = C_A(\lambda) e^{ \frac{1}{2}|\lambda|^2}\]
+     三者的统一定义：
+     \[  C(\lambda,s)= Tr[\rho e^{\lambda a^{\dagger} -\lambda^* a + s |\lambda|^2 /2}] \]
+     有\[C(\lambda,0) = C_W (\lambda), \quad C(\lambda,1) = C_N (\lambda) , \quad C(\lambda,-1) = C_A (\lambda)\] 
+  \end{frame}
+
+  \begin{frame} 
+  \frametitle{}
+   同理，从特征函数可计算各种排序的算符的矩（均值）
+   \[ \begin{aligned}
+    \left\langle a^{\dagger m} a ^n \right\rangle = Tr[\rho a^{\dagger m}a ^n ] = \left.\frac{\partial^{(m+n)} }{\partial \lambda ^m  \partial (-\lambda^*)^n } C_N (\lambda) \right|_{\lambda=0}\\
+    \left\langle a ^m a^{\dagger n}  \right\rangle = Tr[\rho a ^m a^{\dagger n} ] = \left.\frac{\partial^{(m+n)} }{\partial \lambda ^n  \partial (-\lambda^*)^m } C_A (\lambda) \right|_{\lambda=0}\\
+    \left\langle \{a^{\dagger m} a ^n\}_W \right\rangle = Tr[\rho\{a^{\dagger m} a ^n\}_W] = \left.\frac{\partial^{(m+n)} }{\partial \lambda ^m  \partial (-\lambda^*)^n } C_W (\lambda) \right|_{\lambda=0}
+   \end{aligned}\] 
+  \end{frame}
+
+  \begin{frame} 
+  \frametitle{}
+   例: 试证明特征函数$C_A (\lambda)$ 与$Q(\alpha)$存在傅里叶变换关系 \\ {\vspace*{0.6em}} 
+  \证~ 
+  \[ \begin{aligned}
+    C_A(\lambda) &= Tr[\rho e^{-\lambda a^{\dagger}} e^{ \lambda^* a}]\\
+    &= Tr[e^{ \lambda^* a}\rho e^{-\lambda a^{\dagger}} ]\\
+    &= \frac{1}{\pi} \int \left\langle \alpha | e^{ \lambda^* a}\rho e^{-\lambda a^{\dagger}}| \alpha\right\rangle d ^2 \alpha\\ 
+    &=  \int Q(\lambda) e^{ \lambda a^{*}-\lambda^* \alpha }  d ^2 \alpha
+   \end{aligned}\]
+   因此， 
+   \[ Q(\alpha) = \frac{1}{\pi^2} \int C_A(\lambda) e^{ \lambda^* \alpha- \lambda a^{*}}  d ^2 \lambda\]
+  \end{frame}
+
+  \begin{frame} 
+  \frametitle{}
+     同理，
+     \[ P(\alpha) = \frac{1}{\pi^2} \int C_N(\lambda) e^{ \lambda^* \alpha- \lambda a^{*}}  d ^2 \lambda\]
+     \[ W(\alpha) = \frac{1}{\pi^2} \int C_W(\lambda) e^{ \lambda^* \alpha- \lambda a^{*}}  d ^2 \lambda\]
+     代入
+     \[  C_W (\lambda)  =  C_N(\lambda) e^{- \frac{1}{2}|\lambda|^2}\]
+     有 \[ W(\alpha) = \frac{1}{\pi^2} \int C_N(\lambda) e^{- \frac{1}{2}|\lambda|^2} \exp(\lambda^* \alpha- \lambda a^{*})  d ^2 \lambda\]
+
+    因此，从特征函数，可以直接得到各概率函数 $ W(\alpha), P(\alpha), Q(\alpha)$表示
+  \end{frame}
+
+  \begin{frame} 
+  \frametitle{}
+       \begin{center}
+         \includegraphics[width=0.8\textwidth]{figs/2022-06-16-12-43-48.png}
+       \end{center}
+       一个平均光子数为10的相干态的$Q(\alpha)$函数 ($\alpha=x+iy$)
+  \end{frame}
+
+  \begin{frame} 
+    \frametitle{}
+         \begin{center}
+           \includegraphics[width=0.8\textwidth]{figs/2022-06-16-12-48-42.png}
+         \end{center}
+         数态$\rs{n}=\rs{3}$的$Q(\alpha)$函数 ($\alpha=x+iy$)
+    \end{frame}
+
+    \begin{frame} 
+      \frametitle{}
+           \begin{center}
+             \includegraphics[width=0.8\textwidth]{figs/2022-06-16-12-50-28.png}
+           \end{center}
+           数态$\rs{n}=\rs{3}$的W函数. 存在振荡和“负概率”区域（非经典效应）
+      \end{frame}
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \begin{frame} 
        \frametitle{课外作业}
@@ -473,7 +580,7 @@
            \item 试证明  \[Tr f(a, a^{\dagger}) = \frac{1}{\pi}Tr \int f(a, a^{\dagger}) \rl{\alpha}{\alpha} d^2 \alpha\]
            \item 试证明  \[Tr f(a, a^{\dagger}) = \frac{1}{\pi}Tr \int \ls{\alpha} f(a, a^{\dagger}) \rs{\alpha} d^2 \alpha\]
            \item 设压缩态为$\rs{\beta,\xi}$, 求光子数分布:
-           \[ p(n) = \left| \lr{n}{\beta,\xi} \right|^2\]
+           \[ P(n) = \left| \lr{n}{\beta,\xi} \right|^2\]
        \end{enumerate}
    \end{frame}
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

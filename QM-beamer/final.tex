@@ -1,0 +1,471 @@
+\documentclass[11pt,twoside]{article}
+
+\usepackage{2in1}% 两页放到一页上
+
+\usepackage{xeCJK}
+
+\usepackage{lastpage}
+
+%\usepackage{times} %use the Times New Roman fonts
+
+\usepackage{color}
+
+\usepackage{placeins}
+
+\usepackage{ulem}
+
+\usepackage{titlesec}
+
+\usepackage{graphicx}
+
+\usepackage{caption,subcaption}
+
+\usepackage{colortbl}
+
+\usepackage{listings}
+
+\usepackage{makecell}
+
+\usepackage{indentfirst}
+
+\usepackage{fancyhdr}
+
+\usepackage{setspace} % 行间距
+
+\usepackage{bm}%\boldsymbol 粗体
+
+\usepackage{amsmath,amsfonts,amsmath,times}
+
+\usepackage{amssymb}% 数学
+
+\usepackage{enumerate}% 编号
+
+%\usepackage[paperwidth=18.4cm,paperheight=26cm,top=1.5cm,bottom=2cm,right=2cm]{geometry} % 单页
+
+\usepackage[paperwidth=36.8cm,paperheight=26cm,top=2.5cm,bottom=2cm,right=2cm]{geometry}
+
+\lstset{language=C,keywordstyle=\color{red},showstringspaces=false,rulesepcolor=\color{green}}
+
+\oddsidemargin=0.5cm %奇数页页边距
+
+\evensidemargin=0.5cm %偶数页页边距
+
+%\textwidth=14.5cm %文本的宽度 单页
+
+\textwidth=30cm %文本的宽度 双页
+
+\newsavebox{\zdx}
+
+\newcommand{\putzdx}{\marginpar{
+
+\parbox{1cm}{\vspace{-1.6cm}
+
+\rotatebox[origin=c]{90}{
+
+\usebox{\zdx}
+
+}}
+
+}}
+
+\newcommand{\blank}{\uline{\textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}}}
+
+\newcommand{\me}{\mathrm{e}} %定义 对数常数e，虚数符号i,j以及微分算子d为直立体。
+
+\newcommand{\mi}{\mathrm{i}}
+
+\newcommand{\mj}{\mathrm{j}}
+
+\newcommand{\dif}{\mathrm{d}}
+
+\newcommand{\bs}{\boldsymbol}%数学黑体
+
+%通常我们使用的分数线是系统自己定义的分数线，即分数线的长度的预设值是分子或分母所占的最大宽度，如何让分数线的长度变长成，我们%可以在分子分母添加间隔来实现。如中文分式的命令可以定义为：
+
+%\newcommand{\chfrac[2]}{\cfrac{;#1;}{;#2;}}
+
+%\frac{1}{2} \qquad \chfrac{1}{2}
+
+%选择题
+
+\newcommand{\fourch}[4]{\\begin{tabular}{{4}{@{}p{3.5cm}}}(A)~#1 & (B)~#2 & (C)~#3 & (D)~#4\end{tabular}} % 四行
+
+\newcommand{\twoch}[4]{\
+\begin{tabular}{{2}{@{}p{7cm}}}(A)~#1 & (B)~#2\end{tabular}
+\\begin{tabular}{*{2}{@{}p{7cm}}}(C)~#3 &
+
+(D)~#4\end{tabular}} %两行
+
+\newcommand{\onech}[4]{\ (A)~#1 \ (B)~#2 \ (C)~#3 \ (D)~#4} % 一行
+
+\renewcommand{\headrulewidth}{0pt}
+
+\pagestyle{fancy}
+
+\begin{document}
+
+\fancyhf{}
+
+\fancyfoot[CO,CE]{\vspace{1mm}第,\thepage,页 , 共 ~\pageref{LastPage} 页}
+
+\sbox{\zdx}
+
+{\parbox{27cm}{
+
+\centering 班~级\underline{\makebox[34mm][c]{}}~\CJKfamily{song}学~号\underline{\makebox[34mm][c]{}}~\CJKfamily{song}姓~名\underline{\makebox[34mm][c]{}} ~ 试卷序号~\underline{\makebox[34mm][c]{}}\
+
+\vspace{3mm}
+
+密封位置线内不要答题，填写姓名、学号、班级和试卷序号。\
+
+%答题时学号
+
+\vspace{1mm}
+
+\dotfill{} 装\dotfill{}订\dotfill{}线\dotfill{} \
+
+}}
+
+\reversemarginpar
+
+\begin{spacing}{1.25}
+
+\begin{center}
+
+\begin{LARGE}
+
+\CJKfamily{li}世界一流大学\
+
+\underline{2016~-- 2017 }学年第~\underline{1} 学期期末考试\
+
+\underline{《电磁学》(150667)}试卷(A) 答题时间：\underline{120}分钟\
+
+使用班级：\underline{1550116} \quad 考试方式：\underline{闭卷}\
+
+\end{LARGE}
+
+\vspace{0.5cm}
+
+\begin{tabular}{|p{0.05\textwidth}|{7}{p{0.05\textwidth}|}p{0.08\textwidth}|}
+
+\hline
+
+\centering ~题~号 & \centering 一 & \centering 二 & \centering 三 %& \centering 六 & \centering 七 & \centering 八 & \centering 九 & \centering 十
+
+& ~~ 总~分 \rule{0pt}{6mm} \
+
+\hline
+
+\centering ~分~数 & & & & % & % & & & &
+
+\rule{0pt}{6mm} \\hline
+
+% \centering 计 & & & & & & & & & & & \
+
+% \centering 分 & & & & & & & & & & & \
+
+% \centering 人 & & & & & & & & & & & \ \hline
+
+\end{tabular}
+
+\end{center}
+
+\end{spacing}
+
+\setlength{\marginparsep}{1.7cm}
+
+\putzdx %%装订线--奇页数
+
+\begin{spacing}{1.3}
+
+\section{\hspace{5cm} 一、填空题~(每空~2 分，共~18 分)}
+
+\vspace{-2cm}
+
+\begin{tabular}{|p{0.05\textwidth}|p{0.05\textwidth}|}
+
+\hline
+
+% after \: \hline or \cline{col1-col2} \cline{col3-col4} ...
+
+\centering 阅卷人& \
+
+\hline
+
+\centering 得~~分 & \
+
+\hline
+
+\end{tabular}
+
+\begin{enumerate}%[(1)]
+
+\item 一线圈与电阻组成的LR电路中，线圈自感为$L$，电阻为$R$，电路的时间常量为~\blank .%$L/R$
+
+\item 一载流圆线圈，电流为$I$，半径为$a$，则在圆心处磁感应强度大小为~\blank.%$\mu_0 I/(2a)$
+
+\item 电量和符号都相同的三个点电荷$q$ 放在等边三角形的顶点上．为了不使它们由于斥力的作用而散开，可在三角形的中心放一符号相反的点电荷，则此点电荷的电量为~\blank.%$-q/\sqrt{3}$
+
+\item 质子束以$3.0\times 10^5 \mathrm {m/s}$的速率穿过磁感应强度大小为2.0T的匀强磁场，速度方向与磁感应强度方向夹角为30°，则一个质子受力为~\blank. %$4.8\times 10^{-14}\mathrm N$
+
+\item 纸筒长30cm，半径为3.0cm，密绕500匝线圈，则线圈的自感为~\blank.
+
+\item 电荷量为~$q$的自由电荷放入电容率为~$\varepsilon$的无穷大的电介质中，距此电荷~$r$处的电场强度的大小为~\blank .% $\frac{q}{4\pi\varepsilon r^2}$
+
+\item 已知电量为~$Q$的均匀带电圆环在轴线上的电势为$U=\frac{Q}{4\pi\varepsilon_0 \sqrt{x^2+a^2 }}$，其中~$a$为带电圆环半径，$x$ 为场点到带电圆环中心的距离，则场点$x$处电场强度为~\blank .%$\frac{Qx}{4π\varepsilon_0 (x^2+a^2 )^{3/2}}$
+
+\item 已知一螺绕环匝数为$N$，半径为$R$，电流为$I$，则内部磁感应强度为~\blank.%$\mu_0NI/(2\pi R)$
+
+\item 如图所示，通电螺线管外绕有一匝线圈，通电螺线管电流随时间变化，可以发现线圈中有电流产生，即线圈中会产生电动势，问此电动势的非静电力的来源为~\blank .
+
+\begin{figure}[h]
+
+\centering
+
+% Requires \usepackage{graphicx}
+
+\includegraphics[scale=0.5]{Induced-electric-field.png}\
+
+\caption{第9题图}
+
+\end{figure}
+
+\end{enumerate}
+
+\section{\hspace{5cm} 二、选择题~(每题~3 分, 共~ 27 分)}
+
+\vspace{-2cm}
+
+\begin{tabular}{|p{0.05\textwidth}|p{0.05\textwidth}|}
+
+\hline
+
+% after \: \hline or \cline{col1-col2} \cline{col3-col4} ...
+
+\centering 阅卷人& \
+
+\hline
+
+\centering 得~~分 & \
+
+\hline
+
+\end{tabular}
+
+\begin{enumerate}\setcounter{enumi}{9}
+
+\item 有两条长直导线，各载有5A的电流，分别沿x、y轴正方向流动，则在点(0.4m, 0.2m)处磁感应强$B$大小为~(\hspace{4em})%\[5pt]
+
+\fourch{$3.5\times 10^{-6}\mathrm T$ }{$2.5\times 10^{-6}\mathrm T$ }{$4.5\times 10^{-6}\mathrm T$ }{$5.5\times 10^{-6}\mathrm T$ }%B
+
+\begin{figure}[h]
+
+\centering
+
+% Requires \usepackage{graphicx}
+
+\includegraphics[scale=0.2]{Eflux.png}\
+
+\caption{第11题图}
+
+\end{figure}
+
+\item 如图所示，闭合曲面$S$ 内有一点电荷$q$ ，$P$为$S$ 面上一点，在$S$ 面外$A$点有一点电荷$q'$ ，若将$q'$ 移至$B$ 点，则~(\hspace{4em})
+
+\onech{穿过$S$ 面的电通量改变，$P$ 点的电场强度不变.}{穿过$S$ 面的电通量不变，$P $点的电场强度改变.}{穿过$S $面的电通量和$P$ 点的电场强度都不变.}{穿过$S$ 面的电通量和$P$ 点的电场强度都改变.}%B
+
+\newpage
+
+\putzdx %偶数页装订线
+
+\item 如图所示，导体棒$AB$在均匀磁场中绕$OO’$轴匀速转动，转轴方向与磁感应强度方向平行。$OO’$轴与导体棒$AB$垂直，且通过其中点C。 导体棒端点A和B与中点C的电势分别为$u_A$、$u_B$、$u_C$，则下列关系成立的是~(\hspace{4em})
+
+\begin{figure}[h]
+
+\centering
+
+% Requires \usepackage{graphicx}
+
+\includegraphics[scale=0.2]{rodrotate.png}\
+
+\caption{第12题图}
+
+\end{figure}
+
+\fourch{$u_A>u_B$.}{$u_B>u_C$.}{$u_C>u_A$.}{$u_A=u_B=u_C$.}%B
+
+\item 当一个带电体达到静电平衡时：~(\hspace{4em})
+
+\onech{表面上电荷密度较大处电势较高 }{表面曲率较大处电势较高 }{导体内部的电势比导体表面的电势高 }{导体内任一点与其表面上任一点的电势差等于零}%D
+
+\item 两个闭合的金属环，穿在一光滑的绝缘杆上，如习题图所示．当条形磁铁N极自右向左插向圆环时，两圆环的运动是：~(\hspace{4em})
+
+\twoch{边向左移动边分开}{边向右移动边合拢}{边向左移动边合拢}{边向右移动边分开}\
+
+\begin{figure}[h]
+
+\centering
+
+% Requires \usepackage{graphicx}
+
+\includegraphics[scale=0.2]{tworings.png}\
+
+\caption{第14题图}
+
+\end{figure}
+
+\item 下列物质是铁磁物质的是： ~(\hspace{4em})
+
+\fourch{锰 }{铜} {铁 }{水}%C
+
+\item 如图所示，在点电荷$q$的电场中有1, 2, 3 三个点， $U_{1,2}$表示点1和2之间的电势差，$U_{1,3}$表示点1和3之间的电势差，$U_{2,3}$ 表示点2和3之间的电势差，则以下关系成立的是： ~(\hspace{4em})
+
+\twoch{$U_{1,2}<U_{1,3}=U_{2,3}$ }{$U_{1,3}>U_{2,3}>U_{1,2}$} {$U_{1,2}>U_{1,3}>U_{2,3}$ }{$ U_{2,3}>U_{1,3}>U_{1,2}$}
+
+\begin{figure}[h]
+
+\centering
+
+% Requires \usepackage{graphicx}
+
+\includegraphics[scale=0.3]{q123.png}\
+
+\caption{第16题图}
+
+\end{figure}
+
+\item 带负电粒子垂直进入一个磁场，速度和受力方向如图所示，则磁感应强度方向为： ~(\hspace{4em})
+
+\fourch{水平向左}{竖直向上}{垂直纸面向里}{垂直纸面向外} %C
+
+\begin{figure}[h]
+
+\begin{minipage}[t]{0.5\linewidth}
+
+\centering
+
+\includegraphics[scale=0.3]{vFB.png}\
+
+\caption{第17题图}
+
+\end{minipage}
+
+\begin{minipage}[t]{0.5\linewidth}
+
+\centering
+
+\includegraphics[scale=0.3]{rectB.png}\
+
+\caption*{第18题图}
+
+\end{minipage}
+
+\end{figure}
+
+\item 如图所示，一矩形导体线框，有一半处于磁场中，从某时刻开始，磁感应强度大小开始增大，方向不变，则以下关于导体线框说法正确的是 ~(\hspace{4em})
+
+\twoch{导体线框会向纸面上方运动}{导体线框会向纸面下方运动}{导体线框会向右运动}{导体线框不运动}%C
+
+\end{enumerate}
+
+\newpage
+
+\putzdx %%装订线--奇页数
+
+\section{\hspace{5cm}三、计算题~(共~55 分。)}
+
+\vspace{-2cm}
+
+\begin{tabular}{|p{0.05\textwidth}|p{0.05\textwidth}|}
+
+\hline
+
+% after \: \hline or \cline{col1-col2} \cline{col3-col4} ...
+
+\centering 阅卷人& \
+
+\hline
+
+\centering 得~~分 & \
+
+\hline
+
+\end{tabular}
+
+\begin{enumerate}\setcounter{enumi}{18}
+
+\item (本题14分)如图所示，长直载流直导线与直角三角形回路abc共面，初始时刻，长为~$l_1$~的直角边与直导线距离为~$d$~，直角边bc 长为~$l_2$。 现在使回路以速率~$v$~向右运动，求在时刻~$t$~回路中的动生电动势。% 大学物理学习指导
+
+\begin{figure}[h]
+
+\raggedleft%centering
+
+% Requires \usepackage{graphicx}
+
+\includegraphics[scale=0.2]{triangleB.png}
+
+%\caption{第19题图}
+
+\end{figure}
+
+%\vspace{2cm}
+
+\item (本题14分)如图所示，一均匀带电的无限长直线段，电荷线密度$\lambda_1$ , 另有一均匀带电直线段, 长度为$l$ ,电荷密度为$\lambda_2$ ，两线互相垂直且共面，若带电线段近端距长直导线为$a$。求两带电线之间的相互作用力。%电磁学复习题与答案
+
+\begin{figure}[h]
+
+\raggedleft%centering
+
+% Requires \usepackage{graphicx}
+
+\includegraphics[scale=0.5]{twochargedrod.png}
+
+%\caption*{第19题图}
+
+\end{figure}
+
+\end{enumerate}
+
+\newpage
+
+\begin{enumerate}\setcounter{enumi}{20}
+
+\item (本题14分)如图，一半径为$R_1$ 的长直导线的外面，套有内半径为$R_2$ 的同轴薄导体圆筒，二者构成圆柱形电容器，它
+
+们之间充以相对介电常数为$\varepsilon_r$ 的均匀电介质．设导线和圆筒都均匀带电，且沿轴
+
+线单位长度带电量分别为$+\lambda$ 和$-\lambda$．求(1)电场的空间分布，(2)导线与圆筒之间的电势差，(3)单位长度的电容。
+
+\begin{figure}[h]
+
+\raggedleft%centering
+
+% Requires \usepackage{graphicx}
+
+\includegraphics[scale=0.5]{cylinder.png}
+
+%\caption{第19题图}
+
+\end{figure}
+
+\item (本题13分)电缆由导体圆柱和一同轴的导体圆筒构成，使用时电流$I$ 从导体流出，从另一导体流回，电流均匀分布在横截面上，如图所示，设圆柱体的半径为$r_1$ ，圆筒的内外半径分别为$r_2$和$r_3$，根据安培环路定理，求磁感应强度的空间分布．%大学物理学习指导PDF216
+
+\begin{figure}[h]
+
+\raggedleft%centering
+
+% Requires \usepackage{graphicx}
+
+\includegraphics[scale=0.2]{ampere.png}
+
+%\caption{第19题图}
+
+\end{figure}
+
+\end{enumerate}
+
+\end{spacing}
+
+\clearpage
+
+\end{document}

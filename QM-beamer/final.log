@@ -1,0 +1,1885 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.15)  15 JUN 2022 10:58
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**final
+(./final.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-10-12> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count178
+\c@section=\count179
+\c@subsection=\count180
+\c@subsubsection=\count181
+\c@paragraph=\count182
+\c@subparagraph=\count183
+\c@figure=\count184
+\c@table=\count185
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/twoinone/2in1.sty
+\evenpage=\count186
+\oddpage=\count187
+) (/usr/local/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-10-12 L3 programming layer (loader) 
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2021-10-12 L3 backend support: XeTeX
+ (|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count188
+\l__color_backend_stack_int=\count189
+\g__color_backend_stack_int=\count190
+\g__graphics_track_int=\count191
+\l__pdf_internal_box=\box50
+\g__pdf_backend_object_int=\count192
+\g__pdf_backend_annotation_int=\count193
+\g__pdf_backend_link_int=\count194
+))
+Package: xeCJK 2021/06/20 v3.8.7 Typesetting CJK scripts with XeLaTeX
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2021/06/20 v2.5.7 Document and package hooks (CTEX)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2021-08-27 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2021-08-27 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen139
+\l__xtemplate_tmp_int=\count195
+\l__xtemplate_tmp_muskip=\muskip16
+\l__xtemplate_tmp_skip=\skip49
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2021-08-27 L3 Experimental document command parser
+)
+\l__xeCJK_tmp_int=\count196
+\l__xeCJK_tmp_box=\box51
+\l__xeCJK_tmp_dim=\dimen140
+\l__xeCJK_tmp_skip=\skip50
+\g__xeCJK_space_factor_int=\count197
+\l__xeCJK_begin_int=\count198
+\l__xeCJK_end_int=\count199
+\c__xeCJK_CJK_class_int=\XeTeXcharclass1
+\c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
+\c__xeCJK_FullRight_class_int=\XeTeXcharclass3
+\c__xeCJK_HalfLeft_class_int=\XeTeXcharclass4
+\c__xeCJK_HalfRight_class_int=\XeTeXcharclass5
+\c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
+\c__xeCJK_CM_class_int=\XeTeXcharclass7
+\c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
+\l__xeCJK_last_skip=\skip51
+\g__xeCJK_node_int=\count266
+\c__xeCJK_CJK_node_dim=\dimen141
+\c__xeCJK_CJK-space_node_dim=\dimen142
+\c__xeCJK_default_node_dim=\dimen143
+\c__xeCJK_default-space_node_dim=\dimen144
+\c__xeCJK_CJK-widow_node_dim=\dimen145
+\c__xeCJK_normalspace_node_dim=\dimen146
+\l__xeCJK_ccglue_skip=\skip52
+\l__xeCJK_ecglue_skip=\skip53
+\l__xeCJK_punct_kern_skip=\skip54
+\l__xeCJK_last_penalty_int=\count267
+\l__xeCJK_last_bound_dim=\dimen147
+\l__xeCJK_last_kern_dim=\dimen148
+\l__xeCJK_widow_penalty_int=\count268
+
+Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
+(xtemplate)             argument(s) on line 2335.
+
+\l__xeCJK_fixed_punct_width_dim=\dimen149
+\l__xeCJK_mixed_punct_width_dim=\dimen150
+\l__xeCJK_middle_punct_width_dim=\dimen151
+\l__xeCJK_fixed_margin_width_dim=\dimen152
+\l__xeCJK_mixed_margin_width_dim=\dimen153
+\l__xeCJK_middle_margin_width_dim=\dimen154
+\l__xeCJK_bound_punct_width_dim=\dimen155
+\l__xeCJK_bound_margin_width_dim=\dimen156
+\l__xeCJK_margin_minimum_dim=\dimen157
+\l__xeCJK_kerning_total_width_dim=\dimen158
+\l__xeCJK_same_align_margin_dim=\dimen159
+\l__xeCJK_different_align_margin_dim=\dimen160
+\l__xeCJK_kerning_margin_width_dim=\dimen161
+\l__xeCJK_kerning_margin_minimum_dim=\dimen162
+\l__xeCJK_bound_dim=\dimen163
+\l__xeCJK_reverse_bound_dim=\dimen164
+\l__xeCJK_margin_dim=\dimen165
+\l__xeCJK_minimum_bound_dim=\dimen166
+\l__xeCJK_kerning_margin_dim=\dimen167
+\g__xeCJK_family_int=\count269
+\l__xeCJK_fam_int=\count270
+\g__xeCJK_fam_allocation_int=\count271
+\l__xeCJK_verb_case_int=\count272
+\l__xeCJK_verb_exspace_skip=\skip55
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count273
+\l__fontspec_language_int=\count274
+\l__fontspec_strnum_int=\count275
+\l__fontspec_tmp_int=\count276
+\l__fontspec_tmpa_int=\count277
+\l__fontspec_tmpb_int=\count278
+\l__fontspec_tmpc_int=\count279
+\l__fontspec_em_int=\count280
+\l__fontspec_emdef_int=\count281
+\l__fontspec_strong_int=\count282
+\l__fontspec_strongdef_int=\count283
+\l__fontspec_tmpa_dim=\dimen168
+\l__fontspec_tmpb_dim=\dimen169
+\l__fontspec_tmpc_dim=\dimen170
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/usr/local/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+File: xeCJK.cfg 2021/06/20 v3.8.7 Configuration file for xeCJK package
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: xetex.def on input line 149.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box52
+\UL@hyphenbox=\box53
+\UL@skip=\skip56
+\UL@hook=\toks16
+\UL@height=\dimen171
+\UL@pe=\count284
+\UL@pixel=\dimen172
+\ULC@box=\box54
+Package: ulem 2019/11/18
+\ULdepth=\dimen173
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box55
+\beforetitleunit=\skip57
+\aftertitleunit=\skip58
+\ttl@plus=\dimen174
+\ttl@minus=\dimen175
+\ttl@toksa=\toks17
+\titlewidth=\dimen176
+\titlewidthlast=\dimen177
+\titlewidthfirst=\dimen178
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+)
+\Gin@req@height=\dimen179
+\Gin@req@width=\dimen180
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen181
+\captionmargin@=\dimen182
+\captionwidth=\dimen183
+\caption@tempdima=\dimen184
+\caption@indent=\dimen185
+\caption@parindent=\dimen186
+\caption@hangindent=\dimen187
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count285
+\c@continuedfloat=\count286
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count287
+\c@subtable=\count288
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
+\col@sep=\dimen188
+\ar@mcellbox=\box56
+\extrarowheight=\dimen189
+\NC@list=\toks19
+\extratabsurround=\skip59
+\backup@length=\skip60
+\ar@cellbox=\box57
+)
+\everycr=\toks20
+\minrowclearance=\skip61
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count289
+\lst@gtempboxa=\box58
+\lst@token=\toks21
+\lst@length=\count290
+\lst@currlwidth=\dimen190
+\lst@column=\count291
+\lst@pos=\count292
+\lst@lostspace=\dimen191
+\lst@width=\dimen192
+\lst@newlines=\count293
+\lst@lineno=\count294
+\lst@maxwidth=\dimen193
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count295
+\lst@skipnumbers=\count296
+\lst@framebox=\box59
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (/usr/local/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+Package: xeCJK-listings 2021/06/20 v3.8.7 xeCJK patch file for listings
+\l__xeCJK_listings_max_char_int=\count297
+\l__xeCJK_listings_flag_int=\count298
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen194
+\c@nlinenum=\count299
+\TeXr@lab=\toks22
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip62
+\f@nch@O@elh=\skip63
+\f@nch@O@erh=\skip64
+\f@nch@O@olh=\skip65
+\f@nch@O@orh=\skip66
+\f@nch@O@elf=\skip67
+\f@nch@O@erf=\skip68
+\f@nch@O@olf=\skip69
+\f@nch@O@orf=\skip70
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/04/20 v2.17j AMS math features
+\@mathmargin=\skip71
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen195
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+LaTeX Info: Redefining \boldsymbol on input line 28.
+\pmbraise@=\dimen196
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count300
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count301
+\leftroot@=\count302
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count303
+\DOTSCASE@=\count304
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box60
+\strutbox@=\box61
+\big@size=\dimen197
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count305
+\c@MaxMatrixCols=\count306
+\dotsspace@=\muskip17
+\c@parentequation=\count307
+\dspbrk@lvl=\count308
+\tag@help=\toks24
+\row@=\count309
+\column@=\count310
+\maxfields@=\count311
+\andhelp@=\toks25
+\eqnshift@=\dimen198
+\alignsep@=\dimen199
+\tagshift@=\dimen256
+\tagwidth@=\dimen257
+\totwidth@=\dimen258
+\lineht@=\dimen259
+\@envbody=\toks26
+\multlinegap=\skip72
+\multlinetaggap=\skip73
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks28
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count312
+\Gm@cntv=\count313
+\c@Gm@tempcnt=\count314
+\Gm@bindingoffset=\dimen260
+\Gm@wd@mp=\dimen261
+\Gm@odd@mp=\dimen262
+\Gm@even@mp=\dimen263
+\Gm@layoutwidth=\dimen264
+\Gm@layoutheight=\dimen265
+\Gm@layouthoffset=\dimen266
+\Gm@layoutvoffset=\dimen267
+\Gm@dimlist=\toks29
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+\zdx=\box62
+
+
+Package xeCJK Warning: Fandol is being set as the default font for CJK text.
+(xeCJK)                Please make sure it has been properly installed.
+
+
+Package fontspec Warning: Font "FandolSong-Regular" does not contain requested
+(fontspec)                Script "CJK".
+
+
+Package fontspec Info: Font family 'FandolSong-Regular(0)' created for font
+(fontspec)             'FandolSong-Regular' with options
+(fontspec)             [Script={CJK},Extension={.otf},BoldFont={FandolSong-Bold},ItalicFont={FandolKai-Regular}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[FandolSong-Regular.otf]/OT:language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[FandolSong-Bold.otf]/OT:language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[FandolKai-Regular.otf]/OT:language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+LaTeX Font Info:    Trying to load font information for TU+ptm on input line 105.
+LaTeX Font Info:    No file TUptm.fd. on input line 105.
+
+LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 105.
+
+(./final.aux)
+\openout1 = `final.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 105.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 105.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 105.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 105.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 105.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 105.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 105.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 105.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 105.
+LaTeX Font Info:    Redeclaring math accent \check on input line 105.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 105.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 105.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 105.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 105.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 105.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/ptm/m/n on input line 105.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 105.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/ptm/m/n on input line 105.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/ptm/m/n --> TU/ptm/m/n on input line 105.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/ptm/m/it on input line 105.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/ptm/b/n on input line 105.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/phv/m/n on input line 105.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/pcr/m/n on input line 105.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/ptm/m/n --> TU/ptm/b/n on input line 105.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/ptm/b/it on input line 105.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/phv/b/n on input line 105.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/pcr/b/n on input line 105.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 105.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count315
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(125.64865pt, 864.50734pt, 56.9055pt)
+* v-part:(T,H,B)=(71.13188pt, 611.73427pt, 56.9055pt)
+* \paperwidth=1047.0615pt
+* \paperheight=739.77165pt
+* \textwidth=853.58267pt
+* \textheight=611.73427pt
+* \oddsidemargin=14.22636pt
+* \evensidemargin=14.22636pt
+* \topmargin=-1.1381pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=0.0pt
+* \footskip=30.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=65.04256pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=3.61371pt
+* \voffset=-36.135pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 127.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 127.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+Package xeCJK Warning: Unknown CJK family `song' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKfamilyfont{song}[...]{...}' to
+(xeCJK)                define it.
+
+
+Overfull \hbox (390.95435pt too wide) in paragraph at lines 127--128
+[]$[]$ 
+ []
+
+
+Package xeCJK Warning: Unknown CJK family `li' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKfamilyfont{li}[...]{...}' to define
+(xeCJK)                it.
+
+
+./final.tex:149: Package array Error:  Illegal pream-token (7): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 ...7}{p{0.05\textwidth}|}p{0.08\textwidth}|}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./final.tex:149: Package array Error:  Illegal pream-token (p{0.05\textwidth }|): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 ...7}{p{0.05\textwidth}|}p{0.08\textwidth}|}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./final.tex:155: Extra alignment tab has been changed to \cr.
+<template> ... width\arrayrulewidth }\endtemplate 
+                                                  
+l.155 &
+        ~~ 总~分 \rule{0pt}{6mm} \
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./final.tex:157: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.157 \hline
+            
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+./final.tex:159: Extra alignment tab has been changed to \cr.
+<template> ... width\arrayrulewidth }\endtemplate 
+                                                  
+l.159 \centering ~分~数 & & & &
+                              % & % & & & &
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 177--177
+[]$[]$ 
+ []
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 181.
+
+./final.tex:193: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.193 \hline
+            
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+./final.tex:195: Extra alignment tab has been changed to \cr.
+<template> ... width\arrayrulewidth }\endtemplate 
+                                                  
+l.195 \centering 得~~分 &
+                        \
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./final.tex:197: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.197 \hline
+            
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+LaTeX Warning: File `Induced-electric-field.png' not found on input line 227.
+
+./final.tex:227: Unable to load picture or PDF file 'Induced-electric-field.png'.
+<to be read again> 
+                   }
+l.227 ...cs[scale=0.5]{Induced-electric-field.png}
+                                                  \
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: Induced-electric-field.png Graphic file (type bmp)
+<Induced-electric-field.png>
+./final.tex:247: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.247 \hline
+            
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+./final.tex:249: Extra alignment tab has been changed to \cr.
+<template> ... width\arrayrulewidth }\endtemplate 
+                                                  
+l.249 \centering 得~~分 &
+                        \
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./final.tex:251: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.251 \hline
+            
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+./final.tex:259: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.259 ...athrm T$ }{$5.5\times 10^{-6}\mathrm T$ }
+                                                  %B
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./final.tex:259: Misplaced alignment tab character &.
+\fourch ...egin{tabular}{{4}{@{}p{3.5cm}}}(A)~#1 &
+                                                   (B)~#2 & (C)~#3 & (D)~#4\...
+l.259 ...athrm T$ }{$5.5\times 10^{-6}\mathrm T$ }
+                                                  %B
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:259: Misplaced alignment tab character &.
+\fourch ...lar}{{4}{@{}p{3.5cm}}}(A)~#1 & (B)~#2 &
+                                                   (C)~#3 & (D)~#4\end {tabu...
+l.259 ...athrm T$ }{$5.5\times 10^{-6}\mathrm T$ }
+                                                  %B
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:259: Misplaced alignment tab character &.
+\fourch ...@{}p{3.5cm}}}(A)~#1 & (B)~#2 & (C)~#3 &
+                                                   (D)~#4\end {tabular}
+l.259 ...athrm T$ }{$5.5\times 10^{-6}\mathrm T$ }
+                                                  %B
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:259: Misplaced \crcr.
+\endarray ->\crcr 
+                  \egroup \egroup \@arrayright \gdef \@preamble {}\CT@end 
+l.259 ...athrm T$ }{$5.5\times 10^{-6}\mathrm T$ }
+                                                  %B
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:259: Extra }, or forgotten \endgroup.
+\endarray ->\crcr \egroup 
+                          \egroup \@arrayright \gdef \@preamble {}\CT@end 
+l.259 ...athrm T$ }{$5.5\times 10^{-6}\mathrm T$ }
+                                                  %B
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./final.tex:259: Extra }, or forgotten \endgroup.
+\endarray ->\crcr \egroup \egroup 
+                                  \@arrayright \gdef \@preamble {}\CT@end 
+l.259 ...athrm T$ }{$5.5\times 10^{-6}\mathrm T$ }
+                                                  %B
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./final.tex:259: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.259 ...athrm T$ }{$5.5\times 10^{-6}\mathrm T$ }
+                                                  %B
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./final.tex:259: LaTeX Error: \begin{enumerate} on input line 255 ended by \end{tabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.259 ...athrm T$ }{$5.5\times 10^{-6}\mathrm T$ }
+                                                  %B
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./final.tex:259: Missing $ inserted.
+<inserted text> 
+                $
+l.259 ...athrm T$ }{$5.5\times 10^{-6}\mathrm T$ }
+                                                  %B
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Warning: File `Eflux.png' not found on input line 267.
+
+./final.tex:267: Unable to load picture or PDF file 'Eflux.png'.
+<to be read again> 
+                   }
+l.267 \includegraphics[scale=0.2]{Eflux.png}
+                                            \
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: Eflux.png Graphic file (type bmp)
+<Eflux.png>
+
+./final.tex:273: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.273 \item 如
+             图所示，闭合曲面$S$ 内有一点电荷$q$ ，$P$为$S$ 面上一点，在$S$ 面外$A$点有一点电荷$q'$ ，若将$q'...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 273
+[][]
+ []
+
+[1
+
+
+]
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 279--279
+[]$[]$ 
+ []
+
+
+./final.tex:281: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.281 \item 如
+             图所示，导体棒$AB$在均匀磁场中绕$OO’$轴匀速转动，转轴方向与磁感应强度方向平行。$OO’$轴与导体棒$AB$垂直，且通...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 281
+[][]
+ []
+
+
+LaTeX Warning: File `rodrotate.png' not found on input line 289.
+
+./final.tex:289: Unable to load picture or PDF file 'rodrotate.png'.
+<to be read again> 
+                   }
+l.289 \includegraphics[scale=0.2]{rodrotate.png}
+                                                \
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: rodrotate.png Graphic file (type bmp)
+<rodrotate.png>
+
+./final.tex:295: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.295 ...}{$u_B>u_C$.}{$u_C>u_A$.}{$u_A=u_B=u_C$.}
+                                                  %B
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./final.tex:295: Misplaced alignment tab character &.
+\fourch ...egin{tabular}{{4}{@{}p{3.5cm}}}(A)~#1 &
+                                                   (B)~#2 & (C)~#3 & (D)~#4\...
+l.295 ...}{$u_B>u_C$.}{$u_C>u_A$.}{$u_A=u_B=u_C$.}
+                                                  %B
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:295: Misplaced alignment tab character &.
+\fourch ...lar}{{4}{@{}p{3.5cm}}}(A)~#1 & (B)~#2 &
+                                                   (C)~#3 & (D)~#4\end {tabu...
+l.295 ...}{$u_B>u_C$.}{$u_C>u_A$.}{$u_A=u_B=u_C$.}
+                                                  %B
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:295: Misplaced alignment tab character &.
+\fourch ...@{}p{3.5cm}}}(A)~#1 & (B)~#2 & (C)~#3 &
+                                                   (D)~#4\end {tabular}
+l.295 ...}{$u_B>u_C$.}{$u_C>u_A$.}{$u_A=u_B=u_C$.}
+                                                  %B
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:295: Misplaced \crcr.
+<recently read> \crcr 
+                      
+l.295 ...}{$u_B>u_C$.}{$u_C>u_A$.}{$u_A=u_B=u_C$.}
+                                                  %B
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:295: Extra }, or forgotten \endgroup.
+\endarray ->\crcr \egroup 
+                          \egroup \@arrayright \gdef \@preamble {}\CT@end 
+l.295 ...}{$u_B>u_C$.}{$u_C>u_A$.}{$u_A=u_B=u_C$.}
+                                                  %B
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./final.tex:295: Extra }, or forgotten \endgroup.
+\endarray ->\crcr \egroup \egroup 
+                                  \@arrayright \gdef \@preamble {}\CT@end 
+l.295 ...}{$u_B>u_C$.}{$u_C>u_A$.}{$u_A=u_B=u_C$.}
+                                                  %B
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./final.tex:295: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.295 ...}{$u_B>u_C$.}{$u_C>u_A$.}{$u_A=u_B=u_C$.}
+                                                  %B
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./final.tex:295: LaTeX Error: \begin{spacing} on input line 179 ended by \end{tabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.295 ...}{$u_B>u_C$.}{$u_C>u_A$.}{$u_A=u_B=u_C$.}
+                                                  %B
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./final.tex:295: Missing $ inserted.
+<inserted text> 
+                $
+l.295 ...}{$u_B>u_C$.}{$u_C>u_A$.}{$u_A=u_B=u_C$.}
+                                                  %B
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./final.tex:297: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 \item 当
+             一个带电体达到静电平衡时：~(\hspace{4em})
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 297
+[][]
+ []
+
+
+./final.tex:301: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.301 \item 两
+             个闭合的金属环，穿在一光滑的绝缘杆上，如习题图所示．当条形磁铁N极自右向左插向圆环时，两圆环的运动是：~(\hspace{4em})
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 301
+[][]
+ []
+
+
+./final.tex:303: Package array Error:  Illegal pream-token (2): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.303 ...h{边向左移动边分开}{边向右移动边合拢}{边向左移动边合拢}{边向右移动边分开}
+                                                  \
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./final.tex:303: Package array Error:  Illegal pream-token (@{}p{7cm}): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.303 ...h{边向左移动边分开}{边向右移动边合拢}{边向左移动边合拢}{边向右移动边分开}
+                                                  \
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./final.tex:303: Misplaced alignment tab character &.
+<recently read> &
+                 
+l.303 ...h{边向左移动边分开}{边向右移动边合拢}{边向左移动边合拢}{边向右移动边分开}
+                                                  \
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:303: Misplaced \crcr.
+<recently read> \crcr 
+                      
+l.303 ...h{边向左移动边分开}{边向右移动边合拢}{边向左移动边合拢}{边向右移动边分开}
+                                                  \
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:303: Extra }, or forgotten \endgroup.
+\endarray ->\crcr \egroup 
+                          \egroup \@arrayright \gdef \@preamble {}\CT@end 
+l.303 ...h{边向左移动边分开}{边向右移动边合拢}{边向左移动边合拢}{边向右移动边分开}
+                                                  \
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./final.tex:303: Extra }, or forgotten \endgroup.
+\endarray ->\crcr \egroup \egroup 
+                                  \@arrayright \gdef \@preamble {}\CT@end 
+l.303 ...h{边向左移动边分开}{边向右移动边合拢}{边向左移动边合拢}{边向右移动边分开}
+                                                  \
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./final.tex:303: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.303 ...h{边向左移动边分开}{边向右移动边合拢}{边向左移动边合拢}{边向右移动边分开}
+                                                  \
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./final.tex:303: LaTeX Error: \begin{spacing} on input line 179 ended by \end{tabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.303 ...h{边向左移动边分开}{边向右移动边合拢}{边向左移动边合拢}{边向右移动边分开}
+                                                  \
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./final.tex:303: Missing $ inserted.
+<inserted text> 
+                $
+l.303 ...h{边向左移动边分开}{边向右移动边合拢}{边向左移动边合拢}{边向右移动边分开}
+                                                  \
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Warning: File `tworings.png' not found on input line 311.
+
+./final.tex:311: Unable to load picture or PDF file 'tworings.png'.
+<to be read again> 
+                   }
+l.311 \includegraphics[scale=0.2]{tworings.png}
+                                               \
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: tworings.png Graphic file (type bmp)
+<tworings.png>
+
+./final.tex:317: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.317 \item 下
+             列物质是铁磁物质的是： ~(\hspace{4em})
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 317
+[][]
+ []
+
+
+./final.tex:319: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.319 \fourch{锰 }{铜} {铁 }{水}
+                            %C
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./final.tex:319: Misplaced alignment tab character &.
+<recently read> &
+                 
+l.319 \fourch{锰 }{铜} {铁 }{水}
+                            %C
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:319: Misplaced alignment tab character &.
+<recently read> &
+                 
+l.319 \fourch{锰 }{铜} {铁 }{水}
+                            %C
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:319: Misplaced alignment tab character &.
+<recently read> &
+                 
+l.319 \fourch{锰 }{铜} {铁 }{水}
+                            %C
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:319: Misplaced \crcr.
+<recently read> \crcr 
+                      
+l.319 \fourch{锰 }{铜} {铁 }{水}
+                            %C
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:319: Too many }'s.
+\endarray ->\crcr \egroup 
+                          \egroup \@arrayright \gdef \@preamble {}\CT@end 
+l.319 \fourch{锰 }{铜} {铁 }{水}
+                            %C
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+./final.tex:319: Too many }'s.
+\endarray ->\crcr \egroup \egroup 
+                                  \@arrayright \gdef \@preamble {}\CT@end 
+l.319 \fourch{锰 }{铜} {铁 }{水}
+                            %C
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+./final.tex:319: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.319 \fourch{锰 }{铜} {铁 }{水}
+                            %C
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./final.tex:319: LaTeX Error: \begin{document} ended by \end{tabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.319 \fourch{锰 }{铜} {铁 }{水}
+                            %C
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./final.tex:319: Missing $ inserted.
+<inserted text> 
+                $
+l.319 \fourch{锰 }{铜} {铁 }{水}
+                            %C
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./final.tex:319: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.319 \fourch{锰 }{铜} {铁 }{水}
+                            %C
+Things are pretty mixed up, but I think the worst is over.
+
+
+./final.tex:321: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.321 \item 如
+             图所示，在点电荷$q$的电场中有1, 2, 3 三个点， $U_{1,2}$表示点1和2之间的电势差，$U_{1,3}$表示点...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 321
+[][]
+ []
+
+
+./final.tex:323: Package array Error:  Illegal pream-token (2): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.323 ...3}>U_{2,3}$ }{$ U_{2,3}>U_{1,3}>U_{1,2}$}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./final.tex:323: Package array Error:  Illegal pream-token (@{}p{7cm}): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.323 ...3}>U_{2,3}$ }{$ U_{2,3}>U_{1,3}>U_{1,2}$}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./final.tex:323: Misplaced alignment tab character &.
+\twoch ...\begin{tabular}{*{2}{@{}p{7cm}}}(C)~#3 &
+                                                   \par (D)~#4\end {tabular}
+l.323 ...3}>U_{2,3}$ }{$ U_{2,3}>U_{1,3}>U_{1,2}$}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:323: Misplaced \crcr.
+\endarray ->\crcr 
+                  \egroup \egroup \@arrayright \gdef \@preamble {}\CT@end 
+l.323 ...3}>U_{2,3}$ }{$ U_{2,3}>U_{1,3}>U_{1,2}$}
+                                                  
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:323: Too many }'s.
+\endarray ->\crcr \egroup 
+                          \egroup \@arrayright \gdef \@preamble {}\CT@end 
+l.323 ...3}>U_{2,3}$ }{$ U_{2,3}>U_{1,3}>U_{1,2}$}
+                                                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+./final.tex:323: Too many }'s.
+\endarray ->\crcr \egroup \egroup 
+                                  \@arrayright \gdef \@preamble {}\CT@end 
+l.323 ...3}>U_{2,3}$ }{$ U_{2,3}>U_{1,3}>U_{1,2}$}
+                                                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+./final.tex:323: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.323 ...3}>U_{2,3}$ }{$ U_{2,3}>U_{1,3}>U_{1,2}$}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./final.tex:323: LaTeX Error: \begin{document} ended by \end{tabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.323 ...3}>U_{2,3}$ }{$ U_{2,3}>U_{1,3}>U_{1,2}$}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./final.tex:323: Missing $ inserted.
+<inserted text> 
+                $
+l.323 ...3}>U_{2,3}$ }{$ U_{2,3}>U_{1,3}>U_{1,2}$}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./final.tex:323: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.323 ...3}>U_{2,3}$ }{$ U_{2,3}>U_{1,3}>U_{1,2}$}
+                                                  
+Things are pretty mixed up, but I think the worst is over.
+
+
+LaTeX Warning: File `q123.png' not found on input line 331.
+
+./final.tex:331: Unable to load picture or PDF file 'q123.png'.
+<to be read again> 
+                   }
+l.331 \includegraphics[scale=0.3]{q123.png}
+                                           \
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: q123.png Graphic file (type bmp)
+<q123.png>
+
+./final.tex:337: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.337 \item 带
+             负电粒子垂直进入一个磁场，速度和受力方向如图所示，则磁感应强度方向为： ~(\hspace{4em})
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 337
+[][]
+ []
+
+
+./final.tex:339: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.339 \fourch{水平向左}{竖直向上}{垂直纸面向里}{垂直纸面向外}
+                                          %C
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./final.tex:339: Misplaced alignment tab character &.
+<recently read> &
+                 
+l.339 \fourch{水平向左}{竖直向上}{垂直纸面向里}{垂直纸面向外}
+                                          %C
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:339: Misplaced alignment tab character &.
+<recently read> &
+                 
+l.339 \fourch{水平向左}{竖直向上}{垂直纸面向里}{垂直纸面向外}
+                                          %C
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:339: Misplaced alignment tab character &.
+<recently read> &
+                 
+l.339 \fourch{水平向左}{竖直向上}{垂直纸面向里}{垂直纸面向外}
+                                          %C
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:339: Misplaced \crcr.
+<recently read> \crcr 
+                      
+l.339 \fourch{水平向左}{竖直向上}{垂直纸面向里}{垂直纸面向外}
+                                          %C
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:339: Too many }'s.
+\endarray ->\crcr \egroup 
+                          \egroup \@arrayright \gdef \@preamble {}\CT@end 
+l.339 \fourch{水平向左}{竖直向上}{垂直纸面向里}{垂直纸面向外}
+                                          %C
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+./final.tex:339: Too many }'s.
+\endarray ->\crcr \egroup \egroup 
+                                  \@arrayright \gdef \@preamble {}\CT@end 
+l.339 \fourch{水平向左}{竖直向上}{垂直纸面向里}{垂直纸面向外}
+                                          %C
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+./final.tex:339: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.339 \fourch{水平向左}{竖直向上}{垂直纸面向里}{垂直纸面向外}
+                                          %C
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./final.tex:339: LaTeX Error: \begin{document} ended by \end{tabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.339 \fourch{水平向左}{竖直向上}{垂直纸面向里}{垂直纸面向外}
+                                          %C
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./final.tex:339: Missing $ inserted.
+<inserted text> 
+                $
+l.339 \fourch{水平向左}{竖直向上}{垂直纸面向里}{垂直纸面向外}
+                                          %C
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./final.tex:339: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.339 \fourch{水平向左}{竖直向上}{垂直纸面向里}{垂直纸面向外}
+                                          %C
+Things are pretty mixed up, but I think the worst is over.
+
+
+LaTeX Warning: File `vFB.png' not found on input line 347.
+
+./final.tex:347: Unable to load picture or PDF file 'vFB.png'.
+<to be read again> 
+                   }
+l.347 \includegraphics[scale=0.3]{vFB.png}
+                                          \
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: vFB.png Graphic file (type bmp)
+<vFB.png>
+
+LaTeX Warning: File `rectB.png' not found on input line 357.
+
+./final.tex:357: Unable to load picture or PDF file 'rectB.png'.
+<to be read again> 
+                   }
+l.357 \includegraphics[scale=0.3]{rectB.png}
+                                            \
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: rectB.png Graphic file (type bmp)
+<rectB.png>
+
+./final.tex:365: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.365 \item 如
+             图所示，一矩形导体线框，有一半处于磁场中，从某时刻开始，磁感应强度大小开始增大，方向不变，则以下关于导体线框说法正确的是 ~(...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 365
+[][]
+ []
+
+
+./final.tex:367: Package array Error:  Illegal pream-token (2): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.367 ...纸面上方运动}{导体线框会向纸面下方运动}{导体线框会向右运动}{导体线框不运动}
+                                                  %C
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./final.tex:367: Package array Error:  Illegal pream-token (@{}p{7cm}): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.367 ...纸面上方运动}{导体线框会向纸面下方运动}{导体线框会向右运动}{导体线框不运动}
+                                                  %C
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./final.tex:367: Misplaced alignment tab character &.
+<recently read> &
+                 
+l.367 ...纸面上方运动}{导体线框会向纸面下方运动}{导体线框会向右运动}{导体线框不运动}
+                                                  %C
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:367: Misplaced \crcr.
+<recently read> \crcr 
+                      
+l.367 ...纸面上方运动}{导体线框会向纸面下方运动}{导体线框会向右运动}{导体线框不运动}
+                                                  %C
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./final.tex:367: Too many }'s.
+\endarray ->\crcr \egroup 
+                          \egroup \@arrayright \gdef \@preamble {}\CT@end 
+l.367 ...纸面上方运动}{导体线框会向纸面下方运动}{导体线框会向右运动}{导体线框不运动}
+                                                  %C
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+./final.tex:367: Too many }'s.
+\endarray ->\crcr \egroup \egroup 
+                                  \@arrayright \gdef \@preamble {}\CT@end 
+l.367 ...纸面上方运动}{导体线框会向纸面下方运动}{导体线框会向右运动}{导体线框不运动}
+                                                  %C
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+./final.tex:367: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.367 ...纸面上方运动}{导体线框会向纸面下方运动}{导体线框会向右运动}{导体线框不运动}
+                                                  %C
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./final.tex:367: LaTeX Error: \begin{document} ended by \end{tabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.367 ...纸面上方运动}{导体线框会向纸面下方运动}{导体线框会向右运动}{导体线框不运动}
+                                                  %C
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./final.tex:367: Missing $ inserted.
+<inserted text> 
+                $
+l.367 ...纸面上方运动}{导体线框会向纸面下方运动}{导体线框会向右运动}{导体线框不运动}
+                                                  %C
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./final.tex:367: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.367 ...纸面上方运动}{导体线框会向纸面下方运动}{导体线框会向右运动}{导体线框不运动}
+                                                  %C
+Things are pretty mixed up, but I think the worst is over.
+
+
+./final.tex:369: LaTeX Error: \begin{document} ended by \end{enumerate}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369 \end{enumerate}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./final.tex:369: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.369 \end{enumerate}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
+[2]
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 373--373
+[]$[]$ 
+ []
+
+./final.tex:379: Undefined control sequence.
+<argument> {\CT@arc@ 
+                     \vline }
+l.379 ...r}{|p{0.05\textwidth}|p{0.05\textwidth}|}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./final.tex:379: Undefined control sequence.
+<argument> {\CT@arc@ 
+                     \vline }
+l.379 ...r}{|p{0.05\textwidth}|p{0.05\textwidth}|}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./final.tex:379: Undefined control sequence.
+<argument> {\CT@arc@ 
+                     \vline }
+l.379 ...r}{|p{0.05\textwidth}|p{0.05\textwidth}|}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./final.tex:381: Undefined control sequence.
+\hline ... \hrule \let \@width \@height {\CT@arc@ 
+                                                  \vline }\futurelet \reserv...
+l.381 \hline
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./final.tex:387: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.387 \hline
+            
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+./final.tex:387: Undefined control sequence.
+\hline ... \hrule \let \@width \@height {\CT@arc@ 
+                                                  \vline }\futurelet \reserv...
+l.387 \hline
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./final.tex:389: Extra alignment tab has been changed to \cr.
+<template> ... width\arrayrulewidth }\endtemplate 
+                                                  
+l.389 \centering 得~~分 &
+                        \
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./final.tex:391: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.391 \hline
+            
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+./final.tex:391: Undefined control sequence.
+\hline ... \hrule \let \@width \@height {\CT@arc@ 
+                                                  \vline }\futurelet \reserv...
+l.391 \hline
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: File `triangleB.png' not found on input line 405.
+
+./final.tex:405: Unable to load picture or PDF file 'triangleB.png'.
+<to be read again> 
+                   }
+l.405 \includegraphics[scale=0.2]{triangleB.png}
+                                                
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: triangleB.png Graphic file (type bmp)
+<triangleB.png>
+
+LaTeX Warning: File `twochargedrod.png' not found on input line 421.
+
+./final.tex:421: Unable to load picture or PDF file 'twochargedrod.png'.
+<to be read again> 
+                   }
+l.421 ...udegraphics[scale=0.5]{twochargedrod.png}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: twochargedrod.png Graphic file (type bmp)
+<twochargedrod.png>
+
+LaTeX Warning: File `cylinder.png' not found on input line 445.
+
+./final.tex:445: Unable to load picture or PDF file 'cylinder.png'.
+<to be read again> 
+                   }
+l.445 \includegraphics[scale=0.5]{cylinder.png}
+                                               
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: cylinder.png Graphic file (type bmp)
+<cylinder.png>
+
+LaTeX Warning: File `ampere.png' not found on input line 459.
+
+./final.tex:459: Unable to load picture or PDF file 'ampere.png'.
+<to be read again> 
+                   }
+l.459 \includegraphics[scale=0.2]{ampere.png}
+                                             
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: ampere.png Graphic file (type bmp)
+<ampere.png>
+./final.tex:467: Extra \endgroup.
+\restore@spacing ...vskip \baselineskip \endgroup 
+                                                  \vskip -\parskip \vskip -\...
+l.467 \end{spacing}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+
+./final.tex:467: LaTeX Error: \begin{document} ended by \end{spacing}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.467 \end{spacing}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./final.tex:467: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.467 \end{spacing}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+[3] 
+AED: lastpage setting LastPage
+(./final.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 10980 strings out of 476493
+ 247235 string characters out of 5817124
+ 846206 words of memory out of 5000000
+ 31225 multiletter control sequences out of 15000+600000
+ 417892 words of font info for 95 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 71i,11n,81p,283b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Error 256 (driver return code) generating output;
+file final.pdf may not be valid.

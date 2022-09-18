@@ -223,7 +223,7 @@
     \begin{aligned}
         D(\alpha) &=\exp \left(\alpha a^{\dagger}-\alpha^{*} a\right) \\
         D (\alpha_1+ \alpha_2) &= \exp \left((\alpha_1+ \alpha_2) a^{\dagger}-(\alpha_1+\alpha_2)^{*} a\right) \\
-        &= D (\alpha_1) D(\alpha_2) \\
+        &= exp[-iIm(\alpha \beta^*)]D (\alpha_1) D(\alpha_2) \\
         & ~ \\
         D (\alpha) \rs{0} &= \rs{\alpha} \\
         D (\alpha_1+ \alpha_2) \rs{0} &= \rs{\alpha_1+ \alpha_2} \\
@@ -371,10 +371,9 @@
  \证~湮灭算符不厄密, 总可以写成两厄密算符的如下形式
  \[ a = X_1 + i X_2, \, a ^\dagger = X_1 - i X_2, \qquad \text{with}\qquad  [X_1, X_2]= \frac{i}{2} \]
  对应场的正交分量算符: 
- \[ \hat{X}_{1} =\frac{1}{2}\left(a + a^{\dagger}\right)\]
- \[ \hat{X}_{2} = \frac{1}{2 i}\left(a - a^{\dagger}\right)\]
+ \[ X_{1} =\frac{1}{2}\left(a + a^{\dagger}\right) = \sqrt{\frac{\omega}{2 \hbar} }~q\]
+ \[ X_{2} = \frac{1}{2 i}\left(a - a^{\dagger}\right)= \sqrt{\frac{}{2 \hbar\omega} }~p\]
 \end{frame}
-
 
 \begin{frame}
  \frametitle{}
@@ -538,6 +537,32 @@
        即, 随着时间的推移, 相干态只是获得一个相位振荡, 它还是湮灭算符的本征态, 所以相干特性不随时间发生变化. 这正是实验上发现稳定相干条纹的前提.
 \end{frame}
 
+\begin{frame} 
+\frametitle{}
+     数态在正则位置表象中的波函数
+     \[\left\langle q|n \right\rangle = (2^n n!)^{-1/2} ( \frac{\omega}{\pi \hbar})^{1/4} \exp(-\xi^2 /2) H_n (\xi), \quad \text{with}~~ \xi= q/\sqrt{\omega/\hbar}\]
+     相干态在正则位置表象中的波函数
+     \[\begin{aligned}
+         \left\langle q| \alpha \right\rangle & = \left\langle q \left| e^{-\frac{1}{2}\left|\alpha\right|^2}  \sum_{n=0} ^{+\infty}  \frac{\alpha^n}{\sqrt{n!}} \right| n \right\rangle \\
+         &=( \frac{\omega}{\pi \hbar})^{1/4} e^{-|\alpha|^2 /2} e^{\xi^2 /2} e^{-(\xi - \alpha/\sqrt{2})^2}  \\
+     \end{aligned}\] 
+    因此，t时刻的波函数为： 
+    \[\psi_\alpha (q,t) = \left\langle q| \alpha(t) \right\rangle = ( \frac{\omega}{\pi \hbar})^{1/4} e^{-|\alpha|^2 /2} e^{\xi^2 /2} e^{-(\xi - \alpha e^{-i \omega t/\sqrt{2}})^2} \]
+    是一个中心位置随时间振荡的高斯函数！(频率$\omega/\sqrt{2}$)
+\end{frame}
+
+\begin{frame} 
+    \frametitle{}
+        \begin{center}
+        \animategraphics[height=2in,loop]{30}{gif/test-}{1}{80} 
+        \end{center} 
+    相干态在正则位置表象表现为: 
+    \begin{enumerate}
+      \item 波包的形状保持不变
+      \item 在中心位置附近做周期性振荡
+    \end{enumerate}  
+    \end{frame}
+
 \begin{frame}
  \frametitle{}
     \begin{center}
@@ -548,18 +573,6 @@
      \item 场矢大小保持不变
      \item 相位随时间发生周期性振荡(频率$\omega$)
  \end{enumerate}
-\end{frame}
-
-\begin{frame} 
-\frametitle{}
-    \begin{center}
-    \animategraphics[height=2in,loop]{30}{gif/test-}{1}{80} 
-    \end{center} 
-相干态在位置表象表现为: 
-\begin{enumerate}
-  \item 波包的形状保持不变
-  \item 在中心位置附近做周期性振荡(频率$\omega$)
-\end{enumerate}  
 \end{frame}
 
 \section{5. 相干态表象}
@@ -740,8 +753,9 @@
     \frametitle{课外作业}
     \begin{enumerate}
         \item 试证明相干态是最小不确定度乘积态
-        \item 试求相干态在位置表象中的波函数
-        \item 试求位置表像里,相干态随时间的振荡表达式
+        \item 试求相干态在正则位置表象中的波函数
+        \[\left\langle q| \alpha \right\rangle = ( \frac{\omega}{\pi \hbar})^{1/4} e^{-|\alpha|^2 /2} e^{\xi^2 /2} e^{-(\xi - \alpha/\sqrt{2})^2}  , \quad \text{with}~~ \xi= \frac{q}{\sqrt{\omega/\hbar}}\]
+        \item 试求正则位置表象中相干态随时间的振荡表达式
         \item 证明
         \[D^\dagger (\alpha) a^\dagger D (\alpha) = a^\dagger + \alpha^* \]
         \[ \rs{\alpha }\ls{\alpha } a= \left( \alpha + \frac{\partial }{\partial \alpha^*} \rs{\alpha }\ls{\alpha } \right)\]
