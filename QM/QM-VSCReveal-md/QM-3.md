@@ -11,31 +11,21 @@ verticalSeparator: "^[\\r\\n?|\\n]--[\\r\\n?|\\n]$"
 ---
 
 
+## **<center> <font color=blue> 量子力学与统计物理 </font> </center>**
 
+<center> <font color=blue> Quantum mechanics and statistical physics </font> </center>
 
-量子力学与统计物理{style=background:#003377; width:800px}
----------------
-
-Quantum mechanics and statistical physics 
-<br>
 <br>
 <br>
 
-::: block
+**<center><font color=#FFA500 face="娃娃体-简" >李小飞</font>** <font color=blue> @ 光电科学与工程学院</font></center>
 
-**<font color=#FFA500 face="娃娃体-简" >李小飞</font>** 
-@ 光电科学与工程学院
 <br>
 
-:fa-anchor: 
+<center><font color=blue> 2023-03-01 </font> </center>
 
-2023-03-01 
-{style=background:none;width:960px}
 
-::: 
-
-<!-- .slide: data-background="images/uestclogo-1.png" data-background-opacity="0.05"-->
-
+<!-- .slide: data-background="images/uestclogo-1.png" data-background-opacity="1.0"-->
 
 ---
 
@@ -43,42 +33,380 @@ Quantum mechanics and statistical physics
 
 <br>
 
-- 物体的状态用波函数描述 {.fragment .fade-up} 
+- 波粒二象性
+- 波函数假说
+- 波函数的统计解释
+- 态叠加原理
+- 薛定谔方程
+
+
+--
+
+### **:fa-leaf: 量子力学基本原理**
+ 
+- [x] 波函数公设：微观体系的状态由希尔伯特空间的一个波函数（态矢量）完全描述 
+
+- [x] 演化公设：态矢量随时间的演化服从薛定谔方程
+
+- [ ] 算符公设：微观体系的物理量由希尔伯特空间的厄密算符表示
+
+- [ ] 对易公设：位置算符与正则动量算符之间存在对易关系
+
+  $$ [X_i, P_j] = i \bar{h} \delta_{ij} $$
+
+- [ ] 全同粒子公设： 全同粒子的态矢量具有交换对称性
+
+---
+
+
+# 第三章 量子力学中的力学量
+
+
+--
+
+### :fa-leaf: **学习方法的转变**
+
+- 前面两章，我们回到了量子力学建立的时代，跟随的大家的脚步，针对大量经典**实验**，通过深入地**逻辑**分析，获得了量子力学的一些知识，并对前两个公设有了较为基本的认识。
+ 
+- 从现在开始，我们将基于**数学**建立起严格的量子力学体系
+
+<center><img src="figs/333.png" width=440, height=330></center>
+
+---
+
+
+###  1. 希尔伯特空间与第一公设 
+
+
+--
+
+#### :fa-paper-plane: 加法，数乘和内积  
+
+`\begin{aligned}
+ \text{1、定义加法} \quad  &\xi=\psi+\varphi\\
+  &\psi+\varphi=\varphi+\psi \qquad (\text{交换律})\\
+  &(\psi+\varphi)+\xi=\psi+(\varphi+\xi) \qquad (\text{合律})\\  &\psi+\text{O}= \psi \qquad (\text{零元})\\
+  &\psi+\varphi= \text{O} \qquad (\text{逆元})
+\end{aligned}`{class="fragment"}
+
+
+
+--
+
+
+`
+\[
+\begin{aligned}
+\text{2、定义数乘} \quad &\varphi=\psi a\\
+&\psi 1= \psi \qquad (\text{1元})\\
+&(\psi a)b=\psi (ab) \qquad (\text{结合律})\\
+&\psi(a+b)= \psi a+ \psi b \qquad (\text{第一分配律})\\
+&(\psi+\varphi) a = \psi a +\varphi a \qquad (\text{第二律}) \\
+\text{3、定义内积} \quad &(\psi, \varphi)=c \\
+ &(\varphi,\psi)= c^*
+\end{aligned}
+\]
+`{class="fragment"}
+
+
+--
+
+
+$\color{#FFA500}{\text{例-1：}}$  对于定义在3维矢量空间的两矢量，求它们的内积{class="fragment"}
+
+$$\psi=x_1\vec{i}+y_1\vec{j}+z_1\vec{k}, \qquad \varphi=x_2\vec{i}+y_2\vec{j}+z_2\vec{k}$${class="fragment"}
+
+$\color{#FFA500}{\text{解：}}$ 这是实空间 $$(\psi, \varphi) = \psi \cdot \varphi= x_1x_2+y_1y_2+z_1z_2=c $$ {class="fragment"}
+
+$$(\varphi, \psi) = (\psi, \varphi)^* = c^* = c $$ {class="fragment"}
+
+--
+
+`$\color{#FFA500}{\text{例-2：}}$ 有定义在$C^3$空间的列矩阵，求内积
+\[\psi=
+        \begin{pmatrix}
+                a_1\\
+                a_2\\
+                a_3
+        \end{pmatrix}, \qquad 
+        \varphi =\begin{pmatrix}
+            b_1\\
+            b_2\\
+            b_3
+    \end{pmatrix}
+\]`{class="fragment"}
+
+`$\color{#FFA500}{\text{解：}}$  
+\[(\psi, \varphi) = \begin{pmatrix}
+        a_1 ^* &
+        a_2 ^* &
+        a_3 ^*
+    \end{pmatrix}
+        \begin{pmatrix}
+        b_1\\
+        b_2\\
+        b_3
+    \end{pmatrix}
+    =a_1 ^* b_1 +a_2 ^* b_2 +a_3 ^* b_3
+    =c 
+    \]`{class="fragment"}
+
+`\[(\varphi,\psi) = \begin{pmatrix}
+        b_1 ^* &
+        b_2 ^* &
+        b_3 ^*
+    \end{pmatrix}
+        \begin{pmatrix}
+        a_1\\
+        a_2\\
+        a_3
+    \end{pmatrix}
+    =b_1 ^* a_1 +b_2 ^* a_2 +b_3 ^* a_3
+    =c^* 
+\]`{class="fragment"}
+
+--
+
+$\color{#FFA500}{\text{例-3：}}$  求定义在实空间的两函数的内积 {class="fragment"}
+
+`\[\psi(x)=\sin nx, \varphi(x)=\sin mx\]`{class="fragment"}
+
+`$\color{#FFA500}{\text{解：}}$
+\[(\psi, \varphi)=\int_{-l} ^{l} \sin(nx) \sin(mx) dx=\begin{cases}
+         0, \qquad n\neq m \\
+        \dfrac{l}{2} , \qquad n=m
+    \end{cases}
+\]`{class="fragment"}
+
+--
+
+$\color{#FFA500}{\text{例-4：}}$ 求定义在复数空间的两函数的内积 {class="fragment"}
+
+$\color{#FFA500}{\text{解：}}${class="fragment"}
+
+`\[(\psi, \varphi)=\int_a ^b \psi^*(x)  \varphi(x) dx=c\]
+\[(\varphi,\psi)=\int_a ^b \varphi^*(x)\psi(x) dx = (\int_a ^b \varphi(x)\psi^*(x) dx) ^* =c^*\]`{class="fragment"}
+
+这正好是量子力学里的计算！{class="fragment"}
+
+--
+
+#### :fa-paper-plane: 内积的性质：{class="fragment"}
+
+`\[(\psi, \varphi)= (\varphi,\psi)^* \]
+    \[(\psi, \varphi+\xi)= (\psi, \varphi) + (\psi, \xi)\qquad (\text{分配律})\]
+    \[(\psi, \varphi a)= (\psi, \varphi )a \]
+    \[(\psi a, \varphi )= (\psi, \varphi )a^* \]    
+    \[(\Psi,c_1\psi_1+c_2\psi_2)=(\Psi,c_1\psi_1)+(\Psi,c_2\psi_2)\]
+\[(\psi,\psi)= c\ge 0\]`{class="fragment"}
+
+--
+
+
+#### :fa-paper-plane: 左矢与右矢： {class="fragment"}
+
+考察内积：{class="fragment"}
+
+$$(\psi,\psi) = \int \psi^* \psi d \tau $$ {class="fragment"}
+
+同一波函数放在左边还是右边，意义不同{class="fragment"}
+
+右边是线性的而左边是反线性的：  
+$$(\psi, a \psi)= a (\psi,\psi)$$ 
+$$(a\psi, \psi)= a^* (\psi, \psi)$${class="fragment"}
+
+为了清楚地描述这种线性反线性特点，定义**左矢**和**右矢**
+$$\langle \psi |, \qquad |\psi \rangle $$  {class="fragment"}
+
+--
+
+
+则内积可定成：
+$$(\psi,\varphi)\equiv \langle \psi | \varphi \rangle $$ {class="fragment"}
+
+线性与反线性:
+$$\langle a\psi | = \langle \psi |a^* ,\qquad |a\psi \rangle = a|\psi \rangle$$ {class="fragment"}
+
+这种记号，称为 Dirac (迪拉克) 记号 {class="fragment"}
+
+--
+
+#### :fa-paper-plane: 常见空间的定义 {class="fragment"}
+
+- 矢量空间：满足加法和数乘两种运算的集合 {class="fragment"}
+
+- 内积空间：满足加法、数乘和内积三种运算的集合 {class="fragment"}
   
-- 波函数随时间的演化服从薛定谔方程 {.fragment .fade-up} 
+- 希尔伯特空间:  完全的内积空间 {class="fragment"}
+  
+
+*完全性：对于给定的任意小实数$\varepsilon$，总有数N存在，当 m, n>N时，下式成立
+$$ (\psi_m -\psi_n, \psi_m -\psi_n )< \varepsilon $${class="fragment"}
+
+
+--
+
+#### :fa-paper-plane: 理解第一公设 {class="fragment"}
+
+- 查看我们以前学习到的波函数，它恰好是可进行加法、数乘和内积三种运算的。{class="fragment"}
+
+- 因此，一个体系的所有状态的波函数的集合构成一个希尔伯特空间。{class="fragment"}
+  
+- 反过来说，正好是量子力学第一条公设：{class="fragment"}
+
 
 <br>
 
-这是物体运动状态的问题，下面学习求力学量 
-{.fragment .fade-up} 
+$\color{#FFA500}{\text{微观体系的状态用希尔伯特空间的（波函数）态矢量描述：}}$  {class="fragment"}
+
+
 
 
 ---
 
 
-# 第三章 力学量表示
 
----
+###  2. 算符代数
 
-## 第六讲：力学量算符
+
+--
+
+#### :fa-paper-plane: 算符的定义  {class="fragment"}
+
+描述希尔伯特空间矢量之间的映射关系有符号。{class="fragment"}
+
+- 即：算符作用于一个态矢量，将映射到另一个态矢量。
+    $$\hat{F} |\Psi \rangle = |\varphi \rangle $$ {class="fragment"}
+ 
+- $\color{#FFA500}{\text{Tips:}}$ 在不引起不明意义的条件下，为简单见可略去算符上面的帽子 {class="fragment"}
+
+
+--
+
+#### :fa-paper-plane: 算符的运算 {class="fragment"}
+
+**(1) 算符相等**  {class="fragment"}
+
+对任意波函数，有
+$$ A\Psi=B\Psi \to A=B $$ {class="fragment"}
+
+**(2) 算符的和** {class="fragment"}
+
+$$ (A+B)\Psi=A\Psi+B\Psi $$ {class="fragment"}
+
+- 交换律 {class="fragment"}
+
+$$A+B=B+A$$ {class="fragment"}
+
+- 结合律 {class="fragment"}
+
+$$ (A+B)+C=A+(B+C)$$ {class="fragment"}
+
+--
+
+**(3) 算符的积** {class="fragment"}
+
+$$ (AB)\Psi=A(B\Psi) $$ {class="fragment"}
+
+- 交换律不成立 {class="fragment"}
+
+>即 $AB=BA$ 或 $AB\ne BA$ 都有可能 {class="fragment"}
+
+- 对易子 {class="fragment"}
+
+$$ [A,B]=AB-BA$$ {class="fragment"}
+
+若$$[A,B]=0$$ {class="fragment"}
+
+称两算符对易，否则不对易 {class="fragment"}
+
+--
+
+
+**(4) 逆算符** {class="fragment"}
+
+$$ F|\Psi> = |\psi> $$
+$$ F^{-1}|\psi> = |\Psi> $$ {class="fragment"}
+
+**(5) 伴算符** {class="fragment"}
+        
+$$ F|\Psi> = |\psi> $$
+$$ <\psi| = <\Psi| F^{\dagger} $$ {class="fragment"}
+        
+- 内积形式：{class="fragment"}
+
+$$ (\varphi,F\Psi)=(\varphi,\psi)$$ 
+$$ (F^\dagger \Psi,\varphi)=(\psi,\varphi)$$ {class="fragment"}
+
+
+--
+
+**(6) 自伴算符** {class="fragment"}
+ 
+$$ F^{\dagger} = F $$ {class="fragment"}
+        
+- 性质：{class="fragment"}
+
+$$ (\Psi, F \psi) = (F \Psi, \psi)$$  
+$$<\Psi|F^{\dagger}|\psi> = (<\psi|F|\Psi>)^* $$ {class="fragment"}
+
+自伴性也称厄密性，**自伴算符** = **厄密算符** {class="fragment"}
+
+
+--
+
+
+**(7) 幺正(酉)算符**  {class="fragment"}  
+
+$$ F^{\dagger}F = FF^{\dagger}=I $${class="fragment"}
+
+- 性质：{class="fragment"}
+
+$$ F^{\dagger} = F^{-1} $$ {class="fragment"}
+     
+$\color{#FFA500}{\text{Tips:}}$  厄密算符: $ F=F^{\dagger}$ ， 幺正算符: $ F^{-1} = F^{\dagger}$ ，幺正厄密算符：$ F = F^{-1} = F^{\dagger}$ {class="fragment"}
+
 
 <br>
 
-- 平均值问题
+ 
+**(8) 线性算符** {class="fragment"}
+
+对任意函数，有{class="fragment"}
+        
+$$F(c_1\psi_1+c_2\psi_2 ) = c_1(F\psi_1)+c_2(F\psi_2 )$$ {class="fragment"}
+
+--
+
+
+**(8) 算符的本征方程** {.fragment .fade-up} 
+
+$$ F |\psi> = f |\psi> $$ {.fragment .fade-up} 
+
+称 $f$ 是算符$F$的本征值，$\psi$是属于本征值$f$的本征函数 {.fragment .fade-up} 
+
+- 比如： 定态薛定谔方程就是哈密顿算符的本征方程 {.fragment .fade-up} 
+
+$$ H |\psi> = E |\psi> $$ {.fragment .fade-up} 
+
+- 解所有力学量算符的本征方程，就可以得到体系的所有物理量的可能值。{.fragment .fade-up}
   
-- 算符的获得 
-  
-- 算符代数
-  
-- 所有可观测力学量算符都是线性厄密算符
+因此，$\color{#FFA500}{\text{微观体系的物理量由希尔伯特空间的\`厄密\`算符表示}}$  {.fragment .fade-up}
 
 ---
 
-### :fa-leaf: 平均值问题 
 
-$\color{yellow}{例1：}$ 已知粒子的位置波函数$\psi(x,t)$，求位置和动量的平均值
 
-$\color{yellow}{解：}$ 根据统计解释，位置的平均值为：$\hspace{15em}$ {class="fragment"}
+### 3. 力学量算符的获得 
+
+
+--
+
+#### :fa-paper-plane: 位置与动量算符
+
+$\color{#FFA500}{\text{例-5：}}$ 已知粒子的位置波函数$\psi(x,t)$，求位置和动量的平均值{class="fragment"}
+
+$\color{#FFA500}{\text{解：}}$ 根据统计解释，位置的平均值为： {class="fragment"}
 
 `\begin{aligned}
 \overline{x} & = \int x | \psi(x, t) | ^{2} d x \\ 
@@ -91,7 +419,7 @@ $$\overline{p}_x=\int c^*(p_x, t) p c(p_x, t) d p_x$$ {class="fragment"}
 
 --
 
-- 但现在动量波函数未知， 可考虑傅里叶变换 {class="fragment"}  
+- 但现在动量波函数未知! 可考虑傅里叶变换 {class="fragment"}  
 
 ` 
 \[\begin{equation*}
@@ -109,25 +437,29 @@ $$\overline{p}_x=\int c^*(p_x, t) p c(p_x, t) d p_x$$ {class="fragment"}
 
 - 傅里叶变换， 得
 $$\overline{p} =\int \psi^{*}(x) (-i\hbar\frac{d}{d x}) \psi(x)  d x$$ {class="fragment"}
-- 若定义计算符号 
-$$ \hat{p}_x = -i \hbar \frac{d}{dx} $$  {class="fragment"}
+
+- 若定义计算符号   
+$$ \hat{p}_x = -i \hbar \frac{d}{dx}, \qquad \to \qquad \hat{\vec{p}} = -i \hbar \nabla  $$  {class="fragment"}
+
 - 上式可写成         
 $$\overline{p}_x=\int \psi^{*}(x) \hat{p}_x \psi(x) d x $$ {class="fragment"}
   
 
 --
 
-- 称 $\hat{p}_x $ 是位置空间（表象）的动量算符 {class="fragment"}
+- 称 $\hat{\vec{p}} = -i \hbar \nabla $ 是位置空间（表象）的动量算符 {class="fragment"}
   
-- 对于任意力学量F，若定义有算符$\hat{F}$， {class="fragment"}
+- 对于任意力学量F，若存在算符$\hat{F}$， {class="fragment"}
 
-  则其期望值为：
+则其期望值为：
   $$\overline{F}=\int \psi^{*}(x) \hat{F} \psi(x) d x $$ {class="fragment"}
 
---
+- 很明显： $$ \hat{\vec{r}} = \vec{r}$$ {class="fragment"}
+
+---
 
 
-### :fa-leaf: 算符的获得
+#### :fa-paper-plane: 任意算符的获得
 
 $\color{red}{命题：}$ 如何获得任意力学量F的算符 $\hat F$ {class="fragment"}
 
@@ -141,9 +473,8 @@ $\color{red}{方案：}$
 \end{cases} 
 ` {class="fragment"}
 
-- 经典物理学具备的力学量：
+- 经典物理学具备的力学量, 一般是位置与动量的函数：$$F(\vec{r},\vec{p})$$，{class="fragment"}
 
-    一般是位置与动量的函数：$F(\vec{r},\vec{p})$，
 则量子力学算符为：$$ \hat{F}=F(\hat{\vec{r}},\hat{\vec{p}})$$ {class="fragment"}
 
 --
@@ -158,128 +489,16 @@ $\color{red}{方案：}$
 
 $\color{red}{Tips:}$  若 $F(\vec{r},\vec{p})$ 含 $(\vec{r}^m \cdot \vec{p}^n)$ 项，则进行特殊处理 {.fragment .fade-up}   
 
-- 经典物理学不具备的的力学量：
-   
-   其算符将在量子力学进行定义，比如：自旋（S），宇称（P），$\dots$ {.fragment .fade-up} 
+- 经典物理学不具备的的力学量，其算符将在量子力学中定义 {.fragment .fade-up} 
+  
+比如：自旋（S），宇称（P），$\dots$ {.fragment .fade-up} 
 
 
 
 ---
 
 
-<!-- .slide:  data-auto-animate -->
-### 算符假设 （Basic assumption 3/5）
-
-
---
-
-
-
-<!-- .slide:  data-auto-animate -->
-### 算符假设 （Basic assumption 3/5）
-
-力学量用算符描述
-
-
----
-
-
-### 算符代数
-
-- 算符定义：算符是一种计算符号，它作用于态函数将使其变成另个态函数
-        $$ \hat{F} \Psi=\varphi$$ {.fragment .fade-up} 
-
-
-- 单位算符:
-        $$ I\Psi=\Psi $$ {.fragment .fade-up} 
-
-- 算符相等 : 对于任意波函数$\Psi$，有
-        $$ A\Psi=B\Psi \to A=B $$ {.fragment .fade-up} 
-
---
-
-- 算符的和 : 
-        $$ (A+B)\Psi=A\Psi+B\Psi $$ 
-    交换律
-        $$A+B=B+A $$
-    结合律   $$(A+B)+C=A+(B+C)$$ {.fragment .fade-up} 
-
---
-
-- 算符的积: 
-        $$ (AB)\Psi=A(B\Psi) $$
-    不存在交换律
-        $$AB=BA \quad or\quad AB\ne BAv$$ 
-    定义对易子: 
-        $$ [A,B]=AB-BA$$
-        若[A,B]=0，称两算符对易，否则不对易 {.fragment .fade-up} 
-   
-
---
-
-
-- 逆算符: 
-        $$ F\Psi=\varphi $$
-        $$ F^{-1}\\varphi=\Psi $$ {.fragment .fade-up} 
-
-- \*函数的内积: 
-        $$ \int \Psi^* \varphi d \tau \equiv (\Psi,\varphi) \equiv \langle \Psi | \varphi \rangle $$ {.fragment .fade-up} 
-
-并称 $ \langle \psi|$为左矢， $|\psi \rangle $为右矢 {.fragment .fade-up} 
-
---
-
-- \*内积基本性质：{.fragment .fade-up} 
-  1. $$ (\Psi,\varphi)^* =(\varphi,\Psi)$$  {.fragment .fade-up} 
-  2. $$ (\Psi,c_1\varphi_1+c_2\varphi_2)=(\Psi,c_1\varphi_1)+(\Psi,c_2\varphi_2)$$  {.fragment .fade-up} 
-  3. $$ (\Psi,c\varphi)=c(\Psi,\varphi)$$  {.fragment .fade-up} 
-  4. $$ (c\Psi,\varphi)=c^*(\Psi,\varphi)$$  {.fragment .fade-up} 
-
---
-
-- 伴算符: 
-    $$ F|\Psi> = |\varphi> $$
-    $$ <\varphi| = <\Psi|F^{\dagger} $$ {.fragment .fade-up} 
-
-伴算符内积表示：
-        $$ (\varphi,F\Psi)=(\varphi,\varphi)=(F^\dagger \Psi,\varphi)$$  {.fragment .fade-up} 
-
---
-
-- 自伴算符: 
-  $$ F^{\dagger} = F $$ {.fragment .fade-up} 
-
-- 厄密算符: 自伴算符也称厄密算符
-$$ (\Psi,F\psi)=(F\Psi,\psi)$$  {.fragment .fade-up} 
-
-试判断下列算符哪些是厄密算符：
-$$\frac{d}{dx},\quad  i\frac{d}{dx},\quad  4\frac{d^2 }{dx^ 2} $$ {.fragment .fade-up} 
-
---
-
-- 幺正(酉)算符: 
-    $$ F^{\dagger}F = FF^{\dagger}=I $$
-    性质：
-    $$ F^{\dagger} = F^{-1} $$    {.fragment .fade-up}    
-
---
-
-- 线性算符：对任意态函数，
-    $$F(c_1\psi_1+c_2\psi_2 ) = c_1(F\psi_1)+c_2(F\psi_2 )$$ {.fragment .fade-up} 
-
-例：试判断下列算符哪些是线性算符：
-    $$ 4 x^2 + \frac{d^2 }{dx^2 },\quad  \[ \]^2,\quad  \sum\limits_{n=1} ^{N} $$ {.fragment .fade-up} 
-
---
-
-- 算符的本征方程：
-  $$ F \psi=f\psi$$ {.fragment .fade-up} 
-
-称 $f$ 是算符$F$的本征值，$\psi$是属于本征值$f$的本征函数 {.fragment .fade-up} 
-
----
-
-### 所有可观测力学量算符都是线性厄密
+### 4. 所有可观测力学量算符都是线性厄密算符
 
 $\color{red}{命题1:}$ 所有可观测力学量算符都是线性算符 {.fragment .fade-up}  
 
@@ -348,52 +567,63 @@ $$\left(\psi_{2}, \hat{F} \psi_{1}\right) =\left(\hat{F} \psi_{2}, \psi_{1}\righ
 证毕！ {.fragment .fade-up} 
    
 
+--
+
+#### 结论
+
+- 微观体系的物理量由希尔伯特空间的厄密算符表示
+
+--
+
+<!-- .slide: data-background="images/uestclogo-8.png" data-background-opacity="1.0"-->
+
+# <center> <font color ="FF0000"> A & Q </font></center>
+
+
 ---
 
-### 结论
+### :fa-leaf: 作 业
 
-- 力学量用算符描述，
-  
-- 所有可观测力学量算符都是线性厄密算符
+1. 你是如何理解“微观体系的物理量由希尔伯特空间的厄密算符表示”的？
+   
+2. 试指出下列哪些算符是线性算符，哪些是厄密算符？并说明理由
 
----
+   $$ 4 x^2 \frac{d^2} {dx^2}, [~]^2, \sum_{k=1}^n,  \frac{d}{dx}, i\frac{d}{dx}, 4\frac{d^2}{d x^2}$$ 
 
-<!-- .slide: data-background="images/uestclogo.png" data-background-opacity="0.07"-->
-### A & q
-
-
----
+--
 
 
-### **前情回顾** 
+
+
+#### **前情回顾** 
 
 <br>
 
-- 物体的状态用波函数描述 {.fragment .fade-up} 
-  
-- 波函数随时间的演化服从薛定谔方程 {.fragment .fade-up} 
-  
-- 力学量用算符描述， {.fragment .fade-up} 
-  
-- 所有可观测力学量算符都是线性厄密算符 {.fragment .fade-up} 
+### **:fa-leaf: 量子力学基本原理**
+ 
+- [x] 波函数公设：微观体系的状态由希尔伯特空间的一个波函数（态矢量）完全描述 
 
-<br>
+- [x] 演化公设：态矢量随时间的演化服从薛定谔方程
 
+- [x] 算符公设：微观体系的物理量由希尔伯特空间的**厄密算符**表示
 
----
+- [ ] 对易公设：位置算符与正则动量算符之间存在对易关系  
 
+  $$ [X_i, P_j] = i \bar{h} \delta_{ij} $$ 
 
-### 第七讲、厄密算符的性质
+- [ ] 全同粒子公设： 全同粒子的态矢量具有交换对称性
 
-- 运算性质
-- 本征性质
-- 希尔伯特空间
 
 
 ---
 
 
-### 厄密算符的运算性质
+### 5、厄密算符的性质
+
+---
+
+
+#### :fa-paper-plane:   厄密算符的运算性质
 
 - 两厄米算符之和仍为厄米算符
 - 当且仅当两厄米算符对易时，它们之积才是厄米算符。
@@ -515,7 +745,7 @@ $$A_+=\dfrac{1}{2} (A+A^+), \qquad A_+=\dfrac{1}{2i} (A-A^+) $$
 ---
 
 
-### 厄密算符的本征性质
+#### :fa-paper-plane:   厄密算符的本征性质
 
 - 厄米算符的本征值为实数
 - 任意态下平均值为实数的算符必为厄米算符
@@ -807,9 +1037,9 @@ $\color{red}{证明:}$ 封闭性与完备性互为充要条件
 \end{equation*}
 `  
 
----
+--
 
-### 波函数与矩阵
+#### :fa-paper-plane:   波函数与矩阵的关系
 
 `
 \begin{equation*}
@@ -823,77 +1053,79 @@ $\color{red}{证明:}$ 封闭性与完备性互为充要条件
 本征函数系{$\psi_n$}张开的空间叫Hilbert空间,有 $$\Psi\Leftrightarrow(c_1,c_2,\cdots)^T$$
 
 
-
 --
 
-
-### Hilbert空间的定义
-
-`
-\begin{equation*}
-        \begin{split}
-            \text{1、定义加法} \quad  &\xi=\psi+\varphi\\
-            &\psi+\varphi=\varphi+\psi \qquad (\text{交换律})\\
-            &(\psi+\varphi)+\xi=\psi+(\varphi+\xi) \qquad (\text{结合律})\\
-            &\psi+\text{O}= \psi \qquad (\text{零元})\\
-            &\psi+\varphi= \text{O} \qquad (\text{逆元})\\
-        \end{split}  
-\end{equation*}
-`
-    
-`\begin{equation*}
-        \begin{split}
-            \text{2、定义数乘} \quad &\varphi=\psi a\\
-            &\psi 1= \psi \qquad (\text{1元})\\
-            &(\psi a)b=\psi (ab) \qquad (\text{结合律})\\
-            &\psi(a+b)= \psi a+ \psi b \qquad (\text{第一分配律})\\
-            &(\psi+\varphi) a= \psi a +\varphi a \qquad (\text{第二分配律})\\
-        \end{split}  
-    \end{equation*}
-`
-
---
-
-`
-\begin{equation*}
-        \begin{split}
-            \text{3、定义内积} \quad &c=(\psi, \varphi)\\
-            &(\psi, \varphi)= (\varphi,\psi)^* \\
-            &(\psi, \varphi+\xi)= (\psi, \varphi) + (\psi, \xi)\qquad (\text{分配律})\\
-            &(\psi, \varphi a)= (\psi, \varphi )a \\
-            &\Rightarrow (\psi a, \varphi )= (\psi, \varphi )a^* \\
-            &(\psi,\psi)= c\le 0\\
-        \end{split}  
-    \end{equation*}
-`
-  
-
---
-
-
-- 矢量空间：满足加法和数乘两种运算的集合
-- 内积空间：满足加法、数乘和内积三种运算的集合
-- 希尔伯特空间:  完全的内积空间
-       
- 完全性：对给定任意小的实数$\varepsilon$，总有数N存在，当m, n>N时，有
-$$ (\psi_m -\psi_n, \psi_m -\psi_n )< \varepsilon $$
-
-
---
-
-### 希尔伯特空间表述量子力学
+#### 希尔伯特空间表述量子力学
 
 - 希尔伯特空间的**态矢量**描述体系的状态
    
-- 希尔伯特空间的**线性厄米算符**描述体系的力学量
+- 希尔伯特空间的**厄米算符**描述体系的力学量
    
 - 算符的本征函数系构成希尔伯特空间的一个正交归一完全基
   
 
+--
+
+<!-- .slide: data-background="images/uestclogo-8.png" data-background-opacity="1.0"-->
+
+# <center> <font color ="FF0000"> A & Q </font></center>
+
+
 ---
 
-<!-- .slide: data-background="images/uestclogo.png" data-background-opacity="0.07"-->
-### A & q
+#### :fa-paper-plane: 作 业  
+
+1. 试指出下列波函数哪些相互正交，并说明理由
+   `$$ |\psi_1> = \begin{bmatrix} 
+       1 \\
+       1 \\
+       0 \\
+       0 \\
+   \end{bmatrix},   
+    |\psi_2> = \begin{bmatrix} 
+       0 \\
+       0 \\
+       0 \\
+       1 \\
+   \end{bmatrix},   
+    |\psi_3> = \begin{bmatrix} 
+       0 \\
+       1 \\
+       0 \\
+       1 \\
+   \end{bmatrix}  $$` 
+
+--
+
+
+2. 已知某体系力学量$A$有两正交归一本征态$\psi_1$, $\psi_2$, 相应本征值为$a_1$, $a_2$. 力学量$B$两正交归一本征态$\varphi_1$, $\varphi_2$, 相应本征值为$b_1$, $b_2$. 若有如下关系：
+   `$$ \psi_1 = \frac{1}{5}(3\varphi_1+4i\varphi_2), \psi_2 = \frac{1}{5}(4\varphi_1-3i\varphi_2)  $$`
+现对某态$\Psi$测量A，得值$a_1$后再测量B，然后再测量A，试问第二次测得值为 $a_1$的概率是多少？
 
 
 ---
+
+ ### 6、常见力学量算符的本征方程
+
+
+--
+
+
+---
+
+ ### 7、对易不对易关系
+
+--
+
+
+---
+
+ ### 8、不确定性原理
+
+--
+
+---
+
+ ### 9、守恒定律
+
+--

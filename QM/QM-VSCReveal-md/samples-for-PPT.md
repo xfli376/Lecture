@@ -12,8 +12,8 @@ verticalSeparator: "^[\\r\\n?|\\n]--[\\r\\n?|\\n]$"
 
 <!-- .slide: data-background="images/2021-12-03-05-23-33.png" -->
 
-# 量子力学与统计物理 {style=background:green;width:960px}
-### Quantum mechanics and statistical physics
+## 量子力学与统计物理 {style=background:green;width:960px}
+#### Quantum mechanics and statistical physics
 
 <br>
 
@@ -25,7 +25,7 @@ verticalSeparator: "^[\\r\\n?|\\n]--[\\r\\n?|\\n]$"
 ---
 
 
-### 1、请选择PPT转场方式
+## 1、请选择PPT转场方式
 
 
 You can select from different transitions
@@ -50,7 +50,7 @@ reveal.js comes with a few themes built in:
 
 ---
 
-## 背影设置
+## 3. 背影设置
 
 <!-- .slide: data-background="#ff0000" -->
 ## 1-color Backgrounds
@@ -61,25 +61,25 @@ Set `data-background="#ffffff"` on a slide to change the background color. All C
 
 <!-- .slide: data-background="images/2021-12-03-05-23-33.png" -->
 
-## 2-Image Backgrounds
+### 2-Image Backgrounds
 
 --
 
 <!-- .slide: data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000" -->
 
-## 3-Video Backgrounds
+### 3-Video Backgrounds
 
 --
 
 <!-- .slide: data-background="http://i.giphy.com/90F8aUepslB84.gif" -->
 
-## 4-GIF Backgrounds
+### 4-GIF Backgrounds
 
 --
 
 <!-- .slide: data-transition="slide" data-background="#4d7e65" data-background-transition="zoom" -->
 
-## 5-Background Transitions
+### 5-Background Transitions
 
 Different background transitions are available via the backgroundTransition option. This one's called "zoom".
 
@@ -87,7 +87,7 @@ Different background transitions are available via the backgroundTransition opti
 
 <!-- .slide: data-transition="slide" data-background="#b5533c" data-background-transition="zoom" -->
 
-## Background Transitions
+### 5-Background Transitions
 
 You can override background transitions per-slide.
 
@@ -99,9 +99,8 @@ A thin wrapper for MathJax
 
 ---
 
-### The Lorenz Equations
+### 方法-1
 
-- 方法-1
 <div>
 \[
 \begin{aligned}
@@ -115,9 +114,8 @@ A thin wrapper for MathJax
 --
 
 
-### The Cauchy-Schwarz Inequality
+### 方法-2
 
-- 方法-2
 <script type="math/tex; mode=display">
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 </script>
@@ -126,19 +124,15 @@ A thin wrapper for MathJax
 --
 
 
-### The probability of getting \(k\) heads when flipping \(n\) coins is
+### 方法-3
 
-- 方法-3
-  
 <p>
 \[P(E) = {n \choose k} p^k (1-p)^{ n-k} \]
 </p>
 
 --
 
-### An Identity of Ramanujan
-
-- 方法-4
+### 方法-4
   
 <span>
 \[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\ldots} } } } \]
@@ -148,15 +142,8 @@ A thin wrapper for MathJax
 
 --
 
-### Maxwell’s Equations
 
-<span>
- \[ \begin{aligned} \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\ \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\ \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\ \nabla \cdot \vec{\mathbf{B}} & = 0 \end{aligned} \]
-</span>
-
---
-
-- 方法-5
+### 方法-5
 
 <section data-markdown>
  这是一个行内公式 $ J(\theta_0,\theta_1) = \sum_{i=0} $
@@ -168,7 +155,7 @@ A thin wrapper for MathJax
 
 ---
 
-- 方法-6
+### 方法-6
 
 `
 \[\begin{aligned}
@@ -179,18 +166,6 @@ A thin wrapper for MathJax
 `
 
 ---
-
-- 方法-7
-
-### The Cauchy-Schwarz Inequality
-
-<script type="math/tex; mode=display">
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-</script>
-                    
-
----
-
 
 
 ### The Lorenz Equations
@@ -203,7 +178,7 @@ A thin wrapper for MathJax
 
 ---
 
-### line-numbers
+## 5. 代码块 
 
 ```javascript {data-line-numbers}
 function add(x, y) {
@@ -214,26 +189,10 @@ function add(x, y) {
 ---
 
 
-## 3、 vscode-reveal  简介
-
-This extension let you display a reveal.js presentation directly from an opened markdown document.
-
----
-
-## Features
+## 6、文内 ID 链接 
 
 - [Markdown](#markdown)
 - [Status bar](#statusbar)
-- [Sidebar and navigation](#sidebar)
-- [Theme](#theme)
-- [Highlight Theme](#highlight)
-- [Reveal.js Options](#options)
-- [YAML Front Matter](#frontmatter)
-- [Open preview on right side](#preview)
-- [Open in browser](#browser)
-- [Print to PDF](#pdf)
-- [Export static Website](#htmlexport)
-- [Plugins](#plugins)
 
 --
 
@@ -247,13 +206,8 @@ Since Reveal.js use marked to parse the markdown string you can use this in your
 If you need a sample file you can get it here:
 https://raw.githubusercontent.com/evilz/vscode-reveal/master/sample.md
 
+
 --
-
-<section data-markdown>
-  $$ J(\theta_0,\theta_1) = \sum_{i=0} $$
-</section>
-
----
 
 
 ## <a id="statusbar"></a> Status bar
@@ -262,9 +216,9 @@ As soon as your markdown document has at least two slides, slides counter will a
 
 **Now in version 2**, you can see a list of all your slides on the sidebar.
 
---
+---
 
-## <a id="theme"></a> Theme
+## 7、主题（Theme）
 
 reveal.js comes with a few themes built in:
 - Black (default)
@@ -287,6 +241,7 @@ You can set the theme of reveal.js
 
 --
 
+## 8、自定义主题
 If you want a custom theme 
 - add custom style to a CSS file (my-theme.css) in the same folder that your markdown.
 
@@ -300,25 +255,9 @@ customTheme : "my-theme"
 
 --
 
-## <a id="highlight"></a> Highlight Theme
-
-- code block in your markdown will be highlighted by highlight.js.
-- set `revealjs.highlightTheme` parameter of VSCode, 
-- or set it using front-matter.
-
-```
----
-highlightTheme : "other theme"
----
-```
-
-- Get the theme list via https://highlightjs.org/
-  
 
 
---
-
-## <a id="frontmatter"></a> YAML Front Matter
+## 9、文件头 YAML Front Matter
 
 You can change settings directly in your markdown file using front matter style. You can change all extention settings like this :
 
@@ -331,25 +270,10 @@ transition: "zoom"
 
 --
 
-## <a id="preview"></a> Open preview on right side
-
-To display the preview on the right side you can :
-- click on slide count in status bar
-- click split icon in sidebar header
-- call command `Revealjs: Show presentation by side`
 
 --
 
-## <a id="browser"></a> Open in browser
-
-To display presentation in the browser you can:
-- click on server address in the status bar
-- click the icon in sidebar header
-- call command `Revealjs: Open presentation in a browser`
-
---
-
-## <a id="pdf"></a> Print to PDF
+## 10、导出 （Print to PDF）
 
 To export your presentation to pdf you can:
 - click on PDF icon in the sidebar
@@ -375,6 +299,8 @@ This will try to launch Chrome in headless or your default browser it takes abou
 
 
 ---
+
+## 11、 数据作图 
 
 ### Bar chart with CSV data
 
@@ -415,53 +341,8 @@ My second dataset, 45, 40, 25, 4
 
 ---
 
-### 代码块
 
-```html
-<section>
-  <pre><code>
-  // Useless comment.
-  alert('hi');
-  </pre></code>
-  <p class="fragment" data-code-focus="1">
-    This focuses on the comment.
-  </p>
-  <p class="fragment" data-code-focus="1-2">
-    Another fragment.
-  </p>
-</section>
-```
-
---
-
-### 使用fragment对代码行加亮
-
-```html 
-<section>
-  <pre><code>
-  // Useless comment.
-  alert('hi');
-  </pre></code>
-  <p class="fragment" data-code-focus="1">
-    This focuses on the comment.
-  </p>
-  <p class="fragment" data-code-focus="1-2">
-    Another fragment.
-  </p>
-</section>
-``` 
-
-This section is a slide. {.fragment .current-only data-code-focus=1-12}
-
-This will be highlighted by `highlight.js`. {.fragment .current-only data-code-focus=2-5}
-
-This fragment focuses on the first line. {.fragment .current-only data-code-focus=6-8}
-
-This fragment focuses on lines 1 and 2. {.fragment .current-only data-code-focus=9-11}
-
----
-
-### fragment 支持的动画
+## 12、fragment 动画
 
 使用实例-grow：{.fragment .grow}
 
@@ -519,13 +400,13 @@ This fragment focuses on lines 1 and 2. {.fragment .current-only data-code-focus
 
 ---
 
-### Video 
+## 13、 Video 
 <video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
 
 ---
 
 
-### 使用说明
+## 14、使用说明
 
 1. Zoom
    - Zoom anywhere on your presentation
@@ -544,38 +425,31 @@ This fragment focuses on lines 1 and 2. {.fragment .current-only data-code-focus
 
 <!-- .slide:  data-auto-animate -->
 
-# Auto-Animate
+## 15、各种动画
 
 ---
 
 <!-- .slide:  data-auto-animate -->
 
-# Auto-Animate {style="margin-top: 100px; color: red;}
+## 15、各种动画 {style="margin-top: 100px; color: red;}
 
 
 ---
 
 <!-- .slide:  data-auto-animate -->
 
-# Implicit
-
----
-
-<!-- .slide:  data-auto-animate -->
-
-# Implicit
+## 15、各种动画 {style="margin-top: 100px; color: red;}
 # Animation
 
----
-
-<!-- .slide:  data-auto-animate -->
-
-::: {data-id="box" style="height: 50px; background: salmon;"}
+::: {data-id="box" style="height: 1px; background: salmon;"}
 :::
 
 ---
 
 <!-- .slide:  data-auto-animate -->
+
+## 15、各种动画 {style="margin-top: 100px; color: green;}
+# Animation
 
 ::: {data-id="box" style="height: 200px; background: blue;"}
 :::
@@ -671,6 +545,11 @@ c(3);
 
 ---
 
+## 16、不显示
+
+---
+
+
 <!-- .slide: data-visibility="hidden" -->
 Hidden Slides
 -------------
@@ -681,13 +560,13 @@ This slide is visible in the source, but hidden when the presentation is viewed.
 ---
 
 
+## 16、自动调整字体大小 
 Add the `r-fit-text` class to auto-size text
 ## FIT TEXT {class="r-fit-text"}
 
 
 ---
 
-### 自适应调整字体
 
 `
 \[\small \begin{equation*}
@@ -715,10 +594,11 @@ Add the `r-fit-text` class to auto-size text
 </span>
 </font>
 
+
 ---
 
 
-## Fragments
+## 17、碎片演示 （Fragments）
 
 Hit the next arrow...{class="fragment"}
 
@@ -734,7 +614,7 @@ This slide has fragments which are also stepped through in the notes window.
 
 ---
 
-## Fragment Styles
+## 18、各种碎片演示风格（Styles）
 
 There's different types of fragments, like:
 
@@ -758,7 +638,7 @@ Highlight <span class="fragment highlight-red">red</span> <span class="fragment 
 ---
 
 
-### 字体大小与颜色
+## 19、 字体大小与颜色
 
 <font face="华文仿宋" >华文仿宋</font>
 <font face="华文仿宋" >华文仿宋</font>
@@ -774,9 +654,17 @@ Highlight <span class="fragment highlight-red">red</span> <span class="fragment 
 <font size=7 color=green >green</font>
 
 
+
+
 ---
 
-# Planuml
+## 20、各种流程图
+
+---
+
+
+
+## Planuml
 
 ```plantuml
 Bob -> Alice : hello
@@ -784,7 +672,7 @@ Bob -> Alice : hello
 
 ---
 
-# dot
+## dot
 
 ```dot
 digraph example1 {
@@ -795,7 +683,7 @@ digraph example1 {
 
 ---
 
-# ditaa
+## ditaa
 
 ```ditaa {style=background-color:red}
     +--------+   +-------+    +-------+
@@ -820,6 +708,10 @@ graph TD;
     B-->D;
     C-->D;
 ```
+
+---
+
+## 21、各种分栏
 
 ---
 
@@ -891,6 +783,11 @@ Column 2 Content
 
 ---
 
+## 21、备注
+
+---
+
+
 ## You can add Speaker note using 
 
 
@@ -905,7 +802,7 @@ note: Always thank audience !
 
 ---
 
-### 使用HTML语法
+## 22、使用HTML语法
 
 <section>
    <h3>Title</h3>
@@ -916,29 +813,12 @@ note: Always thank audience !
 
 ---
 
-### 使用Markdown语法
+## 23、 使用Markdown语法
 
 <section data-markdown>
   $$ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\ldots} } } } $$
 </section> 
 
-
----
-
-
-### 使用Markdown语法
-
-`
-\begin{equation*}
-        \begin{split}
-            \hat{p}_x \psi_{p_x} & = p_x \psi_{p_x} \\
-            -i \hbar \frac{\partial}{\partial x} psi_{\vec p} & = p_x \psi_{p_x} \\
-            \frac{1}{\psi_{p_{x}}} \frac{\partial}{\partial x} \psi_{p_{x}} & = \frac{i p_{x}}{\hbar}\\
-            \psi_{p_{x}} & = A e^{\frac{i}{\hbar} p_x x} \\
-            \psi_{p_{x}} & = \frac{1}{\sqrt{2\pi\hbar}}e^{\frac{i}{\hbar}p_x x}
-        \end{split} 
-\end{equation*}
-`
 
 ---
 
