@@ -2,7 +2,7 @@
 theme : "night"
 transition: "slide"
 highlightTheme: "monokai"
-logoImg: "images/uestclogo.jpg"
+logoImg: "images/uestclogo.jpeg"
 slideNumber: false
 title: "smaples for vscode reveal "
 enableTitleFooter: false
