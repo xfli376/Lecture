@@ -1,5 +1,6 @@
 ---
-theme : "my-theme"
+theme : "black"
+customTheme : "my-theme"
 transition: "convex"
 highlightTheme: "monokai"
 # logoImg: "images/uestclogo.jpeg"
@@ -253,14 +254,14 @@ Nobel Prize in physics（1954) {.fragment .fade-up}
 
 --
 
-- $ \color{red} {Tips：} $ {.fragment .fade-up} 
+$ \color{red} {Tips：} $ {.fragment .fade-up} 
   - $\Psi$ and $C\Psi$ describe the same state 
     $$\frac{C\Psi(x_1)}{C\Psi(x_2)} = \frac{\Psi(x_1)}{\Psi(x_2)}$$ {.fragment .fade-up} 
   
   - $\Psi$ and $e^{i\omega}\Psi$ describe the same state 
     $$ |e^{i\omega} \Psi|^2 = e^{-i\omega} e^{i\omega} |\Psi|^2 = |\Psi|^2 $$ {.fragment .fade-up} 
 
-两相同的波函数叠加, 在测量上并没有什么不同！这与经典波叠是完全不同的。
+  - 两相同的波函数叠加, 在测量上并没有什么不同！这与经典波叠是完全不同的。  {.fragment .fade-up} 
 
 --
 
@@ -306,11 +307,11 @@ $\color{#FFA500}{\text{解：}}$ assuming the normalized wavefunction is  $$\Psi
 --
 
 <span>
-\[\begin{equation*}
+\[\begin{equation*} 
         \begin{split}
             \int_{-\infty} ^\infty |C\Psi_p (x,t)|^2 dx &=1  \\
             C^2 \int_0 ^\infty \Psi_p (x) \Psi_{p'} ^* (x) dx &=\delta (p-p')  \\
-            C^2 \int_0 ^\infty e^{\frac{i}{\hbar}(p-p')x} dx =&=\delta (p-p')\\
+            C^2 \int_0 ^\infty e^{\frac{i}{\hbar}(p-p')x} dx &=\delta (p-p')\\
             C^2 2\pi \hbar \delta (p-p') &=\delta(p-p') \\
             C&= \frac{1}{\sqrt{2\pi \hbar}}
         \end{split} 
@@ -319,8 +320,9 @@ $\color{#FFA500}{\text{解：}}$ assuming the normalized wavefunction is  $$\Psi
 
 --
 
-`with the defination of $\delta$ funcation,
-\[ \delta(x)=\int_{-\infty}^{+\infty} \frac{d k}{2 \pi} e^{i k x}\]`{.fragment .fade-up} 
+with the defination of $\delta$ funcation,{.fragment .fade-up}
+
+`\[ \delta(x)=\int_{-\infty}^{+\infty} \frac{1}{\sqrt{2 \pi}} e^{i k x}dk\]`{.fragment .fade-up} 
 
 We get the normalized plane wavefunction
 $$ \Psi(x,t)=\frac{1}{\sqrt{2\pi \hbar}} e^{\frac{i}{\hbar}px-Et} $$ {.fragment .fade-up} 
@@ -478,13 +480,15 @@ based on statistical interpretation, the possiblity density of electron reaches 
 --
 
 <!-- .slide:  data-auto-animate --> 
-### 态叠加原理表述 (Born)
+### :fa-paper-plane: 态叠加原理表述 (Born)
 
 
 --
 
 <!-- .slide:  data-auto-animate --> 
-### 态叠加原理表述 (Born) {style="color: #FF0000;"}
+### :fa-paper-plane: 态叠加原理表述 (Born) {style="color: #FF0000;"}
+
+--
 
 - 如果 $\psi_1$ 、 $\psi_2$、 $\cdots$、$\psi_n$ 是粒子可能的状态，那么它们的线性叠加也是粒子可能的状态（叠加态）
  $$ \Psi=c_1 \psi_1+ c_2\psi_2+\cdots+c_n\psi_n $$ {.fragment .fade-up} 

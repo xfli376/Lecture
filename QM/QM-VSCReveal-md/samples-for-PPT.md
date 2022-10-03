@@ -25,7 +25,7 @@ verticalSeparator: "^[\\r\\n?|\\n]--[\\r\\n?|\\n]$"
 ---
 
 
-## 1、请选择PPT转场方式
+## 1、请选择PPT转场方式 {style=background:red;width:850px;height=150px}
 
 
 You can select from different transitions
@@ -65,7 +65,7 @@ Set `data-background="#ffffff"` on a slide to change the background color. All C
 
 --
 
-<!-- .slide: data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000" -->
+<!-- .slide: data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4" data-background-color="#000000" -->
 
 ### 3-Video Backgrounds
 
@@ -99,80 +99,36 @@ A thin wrapper for MathJax
 
 ---
 
-### 方法-1
-
-<div>
-\[
-\begin{aligned}
-\dot{x} &amp; = \sigma(y-x) \\
-\dot{y} &amp; = \rho x - y - xz \\
-\dot{z} &amp; = -\beta z + xy
-\end{aligned} 
-\]
-</div>
-
---
-
-
-### 方法-2
-
-<script type="math/tex; mode=display">
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-</script>
-                   
-
---
-
-
-### 方法-3
-
-<p>
-\[P(E) = {n \choose k} p^k (1-p)^{ n-k} \]
-</p>
-
---
-
-### 方法-4
-  
-<span>
-\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\ldots} } } } \]
-</span>
-
-
-
---
-
-
-### 方法-5
-
-<section data-markdown>
- 这是一个行内公式 $ J(\theta_0,\theta_1) = \sum_{i=0} $
-</section>
-
-<section data-markdown>
-  这是一个块公式 $$ J(\theta_0,\theta_1) = \sum_{i=0} $$
-</section>
-
----
-
-### 方法-6
 
 `
-\[\begin{aligned}
+$\begin{aligned}
 \dot{x} & = \sigma(y-x) \\
 \dot{y} & = \rho x - y - xz \\
 \dot{z} & = -\beta z + xy
-\end{aligned} \]
-`
+\end{aligned} $
+` 
 
 ---
 
+`
+$$
+\begin{aligned}
+\dot{x} & = \sigma(y-x) \\
+\dot{y} & = \rho x - y - xz \\
+\dot{z} & = -\beta z + xy
+\end{aligned} 
+$$` 
 
-### The Lorenz Equations
+---
 
 `
-\[\begin{aligned} \dot{x} & = \sigma(y-x) \\ \dot{y} & = \rho x - y - xz \\ \dot{z} & = -\beta z + xy \end{aligned} \]
-` {class="fragment"}
+$ \begin{aligned}
+\dot{x} & = \sigma(y-x) \\
+\dot{y} & = \rho x - y - xz \\
+\dot{z} & = -\beta z + xy
+\end{aligned}   
+$
+` 
 
 
 

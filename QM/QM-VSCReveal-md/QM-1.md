@@ -1,5 +1,6 @@
 ---
-theme : "my-theme"
+theme : "black"
+customTheme : "my-theme"
 transition: "convex"
 highlightTheme: "monokai"
 # logoImg: "images/uestclogo.jpeg"
@@ -952,3 +953,10 @@ Electron interference patterns (Jonsson, 1961)
 
 4. 试述什么是波粒二象性，从波粒二象性角度说明经典物理学当时所面临的困难
 
+
+--
+
+
+# <center> <font color = #FFA500> Thanks </font></center> 
+
+note: thanks for your attention

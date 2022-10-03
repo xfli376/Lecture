@@ -9,7 +9,7 @@
 - [x] vscode 
 - [x] vscode-reveal. (插件) 
 - [ ] Markdown Checkboxes
-- [ ] Markdown Emoji 
+- [ ] Markdown Emoji  
 
 
 --
