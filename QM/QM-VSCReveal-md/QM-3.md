@@ -475,7 +475,7 @@ $\color{red}{方案：}$
 
 - 经典物理学具备的力学量, 一般是位置与动量的函数：$$F(\vec{r},\vec{p})$$，{class="fragment"}
 
-则量子力学算符为：$$ \hat{F}=F(\hat{\vec{r}},\hat{\vec{p}})$$ {class="fragment"}
+则量子力学算符为-Bohm规则（1954)：$$ \hat{F}=F(\hat{\vec{r}},\hat{\vec{p}})$$ {class="fragment"}
 
 --
 
@@ -485,15 +485,30 @@ $\color{red}{方案：}$
 
 角动量：$ \vec{L}=\vec{r}\times\vec{p} \to \hat{\vec{L}}=\hat{\vec{r}}\times \hat{\vec{p}}$ {.fragment .fade-up} 
 
-<br>
+
+--
+
 
 $\color{red}{Tips:}$  若 $F(\vec{r},\vec{p})$ 含 $(\vec{r}^m \cdot \vec{p}^n)$ 项，则进行特殊处理 {.fragment .fade-up}   
+
+对于连乘项 
+`\[\vec{r}^m\cdot\vec{p}^n\]` {.fragment .fade-up}   
+
+采用如下方式进行取代
+`\[\frac{1}{2}(\hat{\vec{r}}^m\cdot\hat{\vec{p}}^n+\hat{\vec{p}}^n\cdot\hat{\vec{r}}^m)\]` {.fragment .fade-up}   
 
 - 经典物理学不具备的的力学量，其算符将在量子力学中定义 {.fragment .fade-up} 
   
 比如：自旋（S），宇称（P），$\dots$ {.fragment .fade-up} 
 
 
+--
+
+$\color{#FFA500}{\text{例-1：}}$ 求经典物理量$F=x^2p_x$的量子力学算符表示 
+$\color{#FFA500}{\text{解：}}$  根据Bohm规则，有：
+`\[\begin{aligned}
+        \hat{F}=\frac{1}{2} (\hat{x}^2 \hat{p}_x + \hat{p}_x \hat{x}^2 ) 
+\end{aligned}\]` 
 
 ---
 
@@ -589,6 +604,10 @@ $$\left(\psi_{2}, \hat{F} \psi_{1}\right) =\left(\hat{F} \psi_{2}, \psi_{1}\righ
 2. 试指出下列哪些算符是线性算符，哪些是厄密算符？并说明理由
 
    $$ 4 x^2 \frac{d^2} {dx^2}, [~]^2, \sum_{k=1}^n,  \frac{d}{dx}, i\frac{d}{dx}, 4\frac{d^2}{d x^2}$$ 
+
+3. 试证明处于定态的粒子的动量平均值不随时间变化
+   
+4. 设氢原子处于基态$\psi_{100}$,求径向位置r,动量和动能的平均值.
 
 --
 
@@ -1041,6 +1060,7 @@ $\color{red}{证明:}$ 封闭性与完备性互为充要条件
 
 #### :fa-paper-plane:   波函数与矩阵的关系
 
+态的展开系数构成系数矩阵:
 `
 \begin{equation*}
     \begin{split}
@@ -1095,18 +1115,27 @@ $\color{red}{证明:}$ 封闭性与完备性互为充要条件
        1 \\
    \end{bmatrix}  $$` 
 
+2. 试证明如下两个态正交
+   `\[ \rs{\psi_1}=\sin nx,\qquad \rs{\psi_2}=\sin mx,\qquad  \left|x\right|<l\]`
+
 --
 
 
-2. 已知某体系力学量$A$有两正交归一本征态$\psi_1$, $\psi_2$, 相应本征值为$a_1$, $a_2$. 力学量$B$两正交归一本征态$\varphi_1$, $\varphi_2$, 相应本征值为$b_1$, $b_2$. 若有如下关系：
+3. 已知某体系力学量$A$有两正交归一本征态$\psi_1$, $\psi_2$, 相应本征值为$a_1$, $a_2$. 力学量$B$两正交归一本征态$\varphi_1$, $\varphi_2$, 相应本征值为$b_1$, $b_2$. 若有如下关系：
    `$$ \psi_1 = \frac{1}{5}(3\varphi_1+4i\varphi_2), \psi_2 = \frac{1}{5}(4\varphi_1-3i\varphi_2)  $$`
 现对某态$\Psi$测量A，得值$a_1$后再测量B，然后再测量A，试问第二次测得值为 $a_1$的概率是多少？
+
+4. 试证当且仅当两厄密算符A,B对易时,它们的积才是厄密的.
+
+5. P51 3.2, 3.5, 3.6, 3.8, 3.9, 3.12, 3.13 
 
 
 ---
 
  ### 6、常见力学量算符的本征方程
 
+
+- 《量子化就是本征值问题》 $\hspace{2em}$ -- 薛定谔(1926)
 
 --
 
