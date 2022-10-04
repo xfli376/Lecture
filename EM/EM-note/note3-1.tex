@@ -1,0 +1,254 @@
+\renewcommand{\thechapter}{}
+\chapter{第三章~~薛定谔方程 I（6学时）} 
+\renewcommand{\thechapter}{3}
+ ~~~\hspace*{\fill} \\
+\begin{itemize}
+\item \textbf{主要内容}：Schrödinger方程分离变量法、量子谐振子与Hermite多项式，Hermite多项式的性质。
+\item \textbf{重点和难点：}一维Schrödinger方程分解的物理意义，无限深势井的Schrödinger方程推导，Hermite多项式性质。
+\item \textbf{掌握：}一维Schrödinger方程的分离变量法、量子谐振子模型与分析方法、Hermite多项式性质。
+\item \textbf{理解：}Hermite多项式的递推公式。
+\item \textbf{了解：}Hermite方程的求解过程。
+\end{itemize}
+
+薛定谔方程是量子力学的基本方程，地位相当于牛顿力学中的牛顿第二定理。薛丁谔方程的解称为波函数，完全描述体系的状态。
+
+\section{薛定谔方程分离变量法}
+\subsection{方程的建立}
+\begin{example} %1
+物质波的状态由波函数$\psi(\overrightarrow{r},t)$完全描述，试建立波函数所满足的方程 。\\
+\textbf{ 观点1：}  最小作用量原理方法  \\ 
+\textbf{ 观点2：}  波动性和粒子性相结合的方法  \\ 
+\textbf{ 观点3：}  基本假设，不能从其他原理推导出来 \\
+\end{example}
+
+\subsection{含时薛定谔方程}
+1926年，奥地利物理学家薛定谔，提出描述物质状态的波函数$\psi(\overrightarrow{r},t)$服从如下方程：\\
+ \begin{equation*}
+  i\hbar \frac{\partial }{\partial t} \Psi (\overrightarrow{r},t ) =\left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\overrightarrow{r}t ) \right ]\Psi (\overrightarrow{r}, t ) 
+ \end{equation*}
+若取 $ \displaystyle  i\hbar \frac{\partial }{\partial t} ~~\to ~~ \hat{E} ~~, ~~  -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r},t ) ~~\to ~~ \hat{H} $ ，
+方程有如下算符形式：   \\ 
+ \begin{equation*}
+  \hat{E} ~ \Psi (\overrightarrow{r},t )  = \hat{H} ~ \Psi (\overrightarrow{r},t )  
+\end{equation*}
+
+\begin{remark}
+薛定谔方程为什么难求解？\\ 
+实际体系的势函数：$V(\vec{r},t ) $一般比较复杂\\ 
+多粒子体系的波函数：$ \displaystyle  \Psi (\vec{r},t ) =\Psi (\vec{r_1},\vec{r_2},...,\vec{r_n},t ) $  \\ 
+多粒子体系的哈密顿量： $ \displaystyle  \hat{H} ~=\sum_{i=1}^{n} -\frac{\hbar^2}{2\mu }\nabla ^2 _i + \sum_{i,j=1, i\ne j}^{n}  V(\vec{r_i},\vec{r_j},t ) $ \\ 
+分离变量法可能吗？条件呢？
+\end{remark}
+
+\subsection{定态薛定谔方程}
+若势函数不显含时间 t，则时间变量可分离 \\
+方程： { $ \displaystyle i \hbar \frac{\partial }{\partial t} \Psi (\vec{r},t ) =\left [- \frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r},t ) $}  \\ 
+\textbf{解：} 设  $\Psi (\vec{r},t )  = \Psi (\vec{r} ) f(t) $ , 代回方程 \\ 
+{ $ \displaystyle i\hbar \Psi (\vec{r})  \frac{\partial }{\partial t} f(t)=f(t) \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) $}  \\ 	
+{ $ \displaystyle i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)= \frac{1}{\Psi (\vec{r}) } \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E $}  \\ 	
+得两个微分方程：\\ 
+{I、 $ \displaystyle  i\hbar \frac{1}{f(t)}  \frac{\partial }{\partial t} f(t)=E $ } \\ 
+解方程，得：$\displaystyle  f(t) =e^{-iEt/\hbar}$ \\
+{II、$\displaystyle   \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(\vec{r}) \right ]\Psi (\vec{r}) =E \Psi (\vec{r})  $  } \\ 
+方程II称为定态薛定谔方程。
+\subsection{单粒子定态薛定谔方程}
+	{$\displaystyle   \left [ -\frac{\hbar^2}{2\mu }\nabla ^2 + V(x,y,z) \right ]\Psi (x,y,z) =E \Psi (x,y,z)  $  } \\ \vspace{0.3cm}
+能否求解，依赖于势函数的具体形式..... \\ \vspace{0.3cm}
+如果 $ V(x,y,z)=V_1(x)+V_2(y)+V_3(z) $，则方程可分离变量： \\ 
+设： $\Psi(x,y,z)=X(x)Y(y)Z(z)$~~,~~ $ E=E_x+E_y+E_z$， 则： \\ 
+{$\displaystyle  \frac{\partial^2  \Psi}{\partial  x^2}  =  \frac{\partial ^2 }{\partial  x^2} (XYZ) = \frac{d^2X}{ x^2} YZ ; ~~  \frac{\partial^2  \Psi}{\partial  y^2}  =\frac{d^2Y}{ y^2} ZX ; ~~  \frac{\partial^2  \Psi}{\partial  z^2}  = \frac{d^2Z}{ z^2} XY  $  } \\ 
+方程变为： \\ 
+{$\displaystyle  YZ \left [ -\frac{\hbar^2}{2\mu } \frac{d^2X}{dx^2} \right ]  +  ZX \left [ -\frac{\hbar^2}{2\mu } \frac{d^2Y}{dy^2} \right ]  + XY \left [ -\frac{\hbar^2}{2\mu } \frac{d^2Z}{dz^2} \right ] $}  \\ 
+{$\displaystyle  =\left [ -(V_1-E_x) - (V_1-E_y) - (V_1-E_z)  \right ]  XYZ  $  } \\ 
+两边同除以XYZ，得到三个一维薛定谔方程：\\ 
+{ $ \displaystyle
+\begin{cases}
+		\left [ -\frac{\hbar^2}{2\mu} \frac{\mathrm{d} ^2}{\mathrm{d} x^2} +V_1(x) \right ]X(x)=E_xX(x) \\  
+		\\
+		\left [ -\frac{\hbar^2}{2\mu} \frac{\mathrm{d} ^2}{\mathrm{d} y^2} +V_2(y) \right ]Y(y)=E_yY(y) \\  
+		\\
+		\left [ -\frac{\hbar^2}{2\mu} \frac{\mathrm{d} ^2}{\mathrm{d} z^2} +V_3(z) \right ]Z(z)=E_zZ(z) \\
+\end{cases}
+	$}\\
+
+\begin{remark}
+	定态薛定谔方程容易求解吗？\\ 
+	实际体系的势函数：$V(\vec{r}) $一般比较复杂\\ 
+	多粒子体系的波函数：$ \displaystyle  \Psi (\vec{r},t ) =\Psi (\vec{r_1},\vec{r_2},...,\vec{r_n},t ) $  \\ 
+	多粒子体系的哈密顿量： $ \displaystyle  \hat{H} ~=\sum_{i=1}^{n} -\frac{\hbar^2}{2\mu }\nabla ^2 _i + \sum_{i,j=1, i\ne j}^{n}  V(\vec{r_i},\vec{r_j},t ) $ \\ 
+	分离变量法依然很难！！！
+\end{remark}
+
+
+\begin{example} %3
+设有一粒子处于如下一维无限深势阱中，求解薛定谔方程\\
+ { $ \displaystyle 
+	V(x)=\left \{ 
+	\begin{array}{cccc}
+	     0	~~ ~~ 0<x<a \\  
+		+\infty ~~x<0, x>a\\
+	\end{array}
+	\right.
+	$} \\
+\end{example}
+\begin{proof}
+势函数不显含时间t，只要求解如下定态薛定谔方程\\
+{  $ \displaystyle 
+	\left \{ 
+	\begin{array}{cccc}
+		\left [ -\frac{\hbar^2}{2\mu} \frac{\mathrm{d} ^2}{\mathrm{d} x^2} +0 \right ]\Psi(x)=E\Psi(x)  ~~ ~~ 0<x<a,~~~~~ (1)  \\ 
+	     \\	
+		\left [ -\frac{\hbar^2}{2\mu} \frac{\mathrm{d} ^2}{\mathrm{d} x^2} +\infty \right ]\Psi(x)=E\Psi(x)  ~~ ~~ x<0,~ x>a ~~~~~(2)  \\
+	\end{array}
+	\right.
+	$} \\
+很明显，方程（2）的解为  $\Psi(x) = 0$ \\ 
+令 $ k^2= \frac{2\mu E}{\hbar ^2} $, 方程（1）可变为如下边值问题:  \\ 
+{ $ \displaystyle 
+\begin{cases}
+		\Psi''(x) + k^2	\Psi(x)=0  \\
+		\Psi(0)=0~,~~ \Psi(a)=0 ~~~~~
+\end{cases}
+	$} \\
+很明显，特征方程有两虚根，所以方程的通解为：\\
+$  \displaystyle	\Psi(x) = A\cos(kx) +B\sin(kx) $   \\ 
+代入定解条件，得： A=0， $\sin ka =0$ \\ 
+  $ka=n\pi $ => $k=\frac{n\pi}{a} = \sqrt{\frac{2\mu E}{\hbar ^2}}$    \\ 
+得量子化能级：{ $E_n = \frac{n^2\pi^2\hbar^2}{2\mu a^2} (n=1,2,3,...)$}\\
+固有函数为： $ \Psi_n(x) = B_n\sin(\frac{n\pi}{a}x) $ 	 \\ 
+***归一化： $ \displaystyle \int_{0}^{a}  \Psi_n ^*(x)  \Psi_n(x)dx = \int_{0}^{a}  |B_n| ^2 \sin^2(\frac{n\pi}{a}x) dx =1$  \\ 
+得系数：$B_n=\sqrt{\frac{2}{a}}$ \\ 
+归一化固有函数： $ \Psi_n(x)= \sqrt{\frac{2}{a}} \sin(\frac{n\pi}{a}x) $ \\ 
+则波函数为： \\
+{  $ \displaystyle 
+	\Psi_n(x,t)= \left \{ 
+	\begin{array}{cccc}
+		\sqrt{\frac{2}{a}} \sin(\frac{n\pi}{a}x) e^{-\frac{i}{\hbar} E_n t} ~~~~   0<x<a \\
+		0 ~~~~~~~~~~~~~~~~~~~~~~~ x<0,x>a  
+	\end{array}
+	\right.
+	$} \\
+\end{proof}	
+
+\begin{remark}
+1、 金属中的自由电子被限制在一个有限的范围（金属内）运动，在金属外出现的概率为零，可粗略近似为无限深势阱 \\ 
+2、 能级间隔：  $\triangle E = E_{n+1}-E_n=\frac{\pi^2 \hbar^2}{2\mu a^2} (2n+1)$   \\ 
+$\bullet $ 当导线的直径（a）很小时，能级量子化非常明显。 \\ 
+$\bullet $ 宏观物体的质量 ($\mu$) 很大，能级量子化现象消失。 \\ 
+\\
+%\usetikzlibrary {datavisualization.formats.functions} 
+%\usetikzlibrary {datavisualization.formats.functions} 
+\begin{tikzpicture}[baseline, scale=.6]
+	\datavisualization [ scientific axes, 
+	visualize as smooth line/.list={sin,cos,tan}, style sheet=strong colors,
+	style sheet=vary dashing,
+	sin={label in legend={text=$\Psi_1$}}, 
+	cos={label in legend={text=$\Psi_2 $}}, 
+	tan={label in legend={text=$\Psi_3 $}}, 
+	data/format=function ]
+	data [set=sin] {
+		var x : interval [0:1];
+        func y = sin(pi* \value x r ) * 1.414;
+	}
+	data [set=cos] {
+		var x : interval [0:1];
+       func y = sin(2*pi* \value x r ) * 1.414;
+	}
+	data [set=tan] {
+		var x : interval [0:1];
+       func y = sin(3*pi* \value x r ) * 1.414;
+    };
+\end{tikzpicture}
+\begin{tikzpicture}[baseline, scale=.6]
+	\datavisualization [ scientific axes, 
+	visualize as smooth line/.list={sin,cos,tan}, style sheet=strong colors,
+	style sheet=vary dashing,
+	sin={label in legend={text=$|\Psi_1|^2$}}, 
+	cos={label in legend={text=$|\Psi_2|^2$}}, 
+	tan={label in legend={text=$|\Psi_3|^2$}}, 
+	data/format=function ]
+	data [set=sin] {
+		var x : interval [0:1];
+		func y = sin(pi* \value x r ) *sin(pi* \value x r ) *2;
+	}
+	data [set=cos] {
+		var x : interval [0:1];
+		func y = sin(2*pi* \value x r ) *sin(2*pi* \value x r ) *2;
+	}
+	data [set=tan] {
+		var x : interval [0:1];
+		func y = sin(3*pi* \value x r ) * sin(3*pi* \value x r ) *2;
+	};
+\end{tikzpicture}
+\end{remark}
+
+\begin{example} %3
+	设有一粒子处于如下一维无限深势阱中，求解薛定谔方程\\
+	{ $ \displaystyle 
+		V(x)=\left \{ 
+		\begin{array}{cccc}
+			0	~~ ~~ |x|<a \\  
+			+\infty ~~|x|>a\\
+		\end{array}
+		\right.
+		$} \\
+\end{example}
+\begin{proof}	
+势函数与上例存在平移关系， $x' =x+a/2$\\
+有：  $  \sin(\frac{n\pi}{a}x') =\sin(\frac{n\pi}{a} (x+a/2)) =\sin \frac{n\pi}{a} x \cos \frac{n\pi}{2} + \cos \frac{n\pi}{a} x \sin \frac{n\pi}{2}  $ \\ 
+n为偶数时， $ \Psi_{2m}(x)= B_{2m} \sin(\frac{2m\pi}{a}x) $,  $E_{2m} = \frac{2m^2\pi^2\hbar^2}{\mu a^2} $ \\
+n为奇数时， $ \Psi_{2m+1}(x)= B_{2m+1} \cos(\frac{(2m+1)\pi}{a}x) $,  $E_{2m+1} = \frac{(2m+1)^2\pi^2\hbar^2}{2\mu a^2} $ \\
+归一化，求出系数 ... 
+\end{proof}	
+
+\begin{example} %3
+求解一维无限深势阱的非定常问题 \\
+{ $ \displaystyle 
+\begin{cases}
+i\hbar \frac{\partial }{\partial t} \Psi = -\frac{\hbar^2}{2\mu } \frac{\partial ^2 \Psi }{\partial ^2  x ^2 } , ~~ (0<x<L, t>0) \\
+\Psi (0,t) =0, ~~ \Psi (L,t) =0 \\
+\Psi (x,0) =f(x)  \\
+\end{cases}
+$} \\
+\end{example}
+\begin{proof}	
+令$\Psi (x,t) =\Psi (x) T(t) $ ,  代回方程， 得：\\
+{ $ \displaystyle 
+	\begin{cases}
+		\Psi''(x) + k^2	\Psi(x)=0  \\
+		\Psi(0)=0~,~~ \Psi(a)=0 ~~~~~
+	\end{cases}
+	$} \\
+固有值：{ $E_n = \frac{n^2\pi^2\hbar^2}{2\mu a^2} (n=1,2,3,...)$}\\
+固有函数： $ \Psi_n(x) = \sin(\frac{n\pi}{a}x) $ 	 \\ 
+时间函数： $T_n(t)  = \exp(-i E_n t /\hbar) $ \\
+方程的级数解为：  $ \Psi(x,t)  = \sum_{n=1}^{\infty}  B_n \exp(-i E_n t /\hbar)  \sin(\frac{n\pi}{a}x)  $ \\
+取 t=0, 代入初值条件， 得：  $ f(x)= \sum_{n=1}^{\infty}  B_n \sin(\frac{n\pi}{a}x)  $ \\
+得系数：  $ B_n= \frac{2}{a} \int_{0} ^{a}  \sin(\frac{n\pi}{a}x) dx, ~~ (n=1,2,3,...) $ \\
+\end{proof}	
+
+\subsection{作业：}
+~~~\hspace*{\fill} \\
+1、求定态薛定谔方程\\ 
+$\begin{array}{lllllllll}
+	& \begin{cases}
+		\Psi'' (x) +\frac{2\mu E}{\hbar ^2} \Psi(x) =0,~~ |x|<a/2 \\
+		\Psi(-a/2) =\Psi(a/2) =0\\
+	\end{cases}\\	
+\end{array}$ \\ 
+2、求解初边值问题\\
+$\begin{array}{lllllllll}
+	& \begin{cases}
+		i\hbar \frac{\partial }{\partial t} \Psi = -\frac{\hbar^2}{2\mu } \frac{\partial ^2 \Psi }{\partial ^2  x ^2 } , ~~ (0<x<L, t>0) \\
+		\Psi (0,t) =0, ~~ \Psi (L,t) =0 \\
+		\Psi (x,0) =f(x)  \\
+	\end{cases}\\
+\end{array}$ \\ 
+3、求三维无限势阱问题\\
+$ ~~~~	V(x,y,z)=\left \{ 
+\begin{array}{cccc}
+	0	~~ ,~~ 0<x,y,z<a \\  
+	+\infty ,~~others\
+\end{array}
+\right.
+ $ 

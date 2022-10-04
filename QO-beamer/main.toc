@@ -1,3 +1,0 @@
-\beamer@sectionintoc {1}{1. 数态表象 }{4}{0}{1}
-\beamer@sectionintoc {2}{2. 相干态表象}{10}{0}{2}
-\beamer@sectionintoc {3}{3. 特征函数}{39}{0}{3}
