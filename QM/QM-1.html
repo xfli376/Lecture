@@ -1,0 +1,1348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>量子力学与统计物理</title>
+
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Hakim El Hattab">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/reset.css">
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/reveal.css">
+  <link rel="stylesheet" href="libs/fontawesome/css/font-awesome.min.css">
+
+  <!-- highlight Theme -->
+  
+  <link rel="stylesheet" href="libs/highlight.js/11.3.1/styles/monokai.min.css">
+  
+	
+		
+	<link rel="stylesheet" href="libs/reveal.js/4.3.1/plugin/chalkboard/style.css">
+	
+	
+	
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/plugin/customcontrols/style.css">
+
+
+
+  <!-- Revealjs Theme -->
+  
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/theme/black.css" id="theme">
+  
+
+  <link rel="stylesheet" href="libs/styles/tasklist.css">
+    <link rel="stylesheet" href="libs/styles/iota.css">
+	<link rel="stylesheet" href="libs/styles/layout.css">
+
+  <!-- Revealjs Theme -->
+  
+  <link rel="stylesheet" href="my-theme.css">
+
+   <!-- css list -->
+	
+
+   
+
+</head>
+
+<body>
+
+   
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      
+
+
+    
+        <section data-background="QM-beamer/images/uestclogo-1.png" data-background-opacity="1.0">
+            
+            <h2><strong><center> <font color=blue> 量子力学与统计物理 </font> </center></strong></h2>
+<center> <font color=blue> Quantum mechanics and statistical physics </font> </center>
+<br>
+<br>
+<p><strong><center><font color=#FFA500 face="娃娃体-简" >李小飞</font></strong> <font color=blue> @ 光电科学与工程学院</font></center></p>
+<br>
+<center><font color=blue> 2023-03-01 </font> </center>
+<!-- .slide: data-background="QM-beamer/images/uestclogo-1.png" data-background-opacity="1.0"-->
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h1>第一章 绪论</h1>
+<aside class="notes"> # 章
+note: ## 第X讲
+note: ### N、主题<br>
+note: ### <i class="fa fa-leaf"></i> 无次序主题
+note: #### <i class="fa fa-paper-plane"></i> 分主题
+note: ##### <i class="fa fa-fire"></i>    再分主题
+note: ###### <i class="fa fa-leaf"></i></aside>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3><i class="fa fa-leaf"></i> 课程简介</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-248093"><label class="task-list-item-label" for="task-item-248093"> 课程目标</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1754819"><label class="task-list-item-label" for="task-item-1754819"> 分数构成</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9548995"><label class="task-list-item-label" for="task-item-9548995"> 教学效果</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6160325"><label class="task-list-item-label" for="task-item-6160325"> 参考书目</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6577833"><label class="task-list-item-label" for="task-item-6577833"> 三条军规</label></li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i> 课程目标</h4>
+<ol>
+<li>Learn the formal theory of Quantum Mechanics</li>
+<li>How physical systems are described in Quantum Mechanics.</li>
+<li>How to solve problems in Quantum Mechanics</li>
+</ol>
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i> 分数构成</h4>
+<ol>
+<li>Normal results： 20%</li>
+<li>Midterm examination results： 20%</li>
+<li>Final examination results ：60%</li>
+</ol>
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i> 教学效果</h4>
+<img src="QM-beamer/figs/exam1.png" width=800, height=400>
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i> 参考书目：</h4>
+<ol>
+<li>《量子力学》卷I，II， 曾谨言， 科学出版社， 2008</li>
+<li>Principles of quantum mechanics, shankar</li>
+<li>Modern quantum mechanics, shankar</li>
+<li>Lectures on quantum mechanics, weinberg</li>
+<li class="fragment highlight-blue">Principles of quantum mechanics, Dirac</li>
+</ol>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h4><i class="fa fa-paper-plane"></i> 三条军规</h4>
+<ul>
+<li class="fragment fade-up">
+<p>Rule 1. Objects are wave-particles and can be in states of superposition </p>
+</li>
+<li class="fragment fade-up">
+<p>Rule 2. Rule 1 holds as long as you don’t measure </p>
+</li>
+<li class="fragment fade-up">
+<p>Rule 3. Measurement gives random results </p>
+</li>
+</ul>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>第一讲 能量子假说</h2>
+<br>
+<ul>
+<li>经典物理学的伟大成就</li>
+<li>黑体辐射实验</li>
+<li>普朗克能量子假说</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section data-auto-animate>
+            <!-- .slide:  data-auto-animate -->
+<h3>1、经典物理学伟大成就</h3>
+<br>
+<center>
+<table>
+    <tr>
+        <td> <img src="QM-beamer/figs/2021-12-01-22-37-50.png" width=300, height=300>  </td>
+        <td> <img src="QM-beamer/figs/2021-12-01-22-40-38.png" width=300, height=300>  </td>
+        <td> <img src="QM-beamer/figs/2021-12-01-22-44-42.png" width=300, height=300>  </td>
+    </tr>
+</table>
+</center>
+<h4 class="fragment fade-up"><i class="fa fa-paper-plane"></i> 建立三大学科群</h4>
+<ol>
+<li class="fragment fade-up">牛顿力学 </li>
+<li class="fragment fade-up">电磁学  </li>
+<li class="fragment fade-up">统计力学 </li>
+</ol>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<p align="left"> Lord Kelvin said (1900) : </p>
+<p align="left">  &quot;There is nothing new to be discovered in physics now. All that remains is more and more precise measurements" &quot; </p>  
+<center><img src="QM-beamer/figs/2021-12-01-22-57-55.png" width=300, height=300></center>
+<p class="fragment fade-up">&quot;But, the beauty and clearness … is obscured by two small puzzling clouds &quot; </p>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h4><i class="fa fa-paper-plane"></i> 两朵乌云-1: 迈克尔逊-莫雷实验</h4>
+<img src="QM-beamer/figs/michel.png" width=600, height=400> 
+<ul>
+<li class="fragment fade-up">
+<p>直接导致相对论的建立</p>
+</li>
+<li class="fragment fade-up">
+<p>改变了人们对时间和空间的基本看法</p>
+</li>
+</ul>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h4><i class="fa fa-paper-plane"></i> 两朵乌云-2: 黑体辐射实验</h4>
+<img src="QM-beamer/figs/2021-12-01-23-47-27.png" width=600, height=400> 
+<ul>
+<li class="fragment fade-up">
+<p>直接导致量子力学的建立 </p>
+</li>
+<li class="fragment fade-up">
+<p>改变了人们对物质的基本看法</p>
+</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i> 现代物理学的二大基石</h4>
+<img src="QM-beamer/figs/stone.png " width=800, height=600> 
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>2. 黑体辐射实验</h3>
+<br>
+<p><strong><font color=#FFA500 >黑体的定义：</font></strong>  吸收所有电磁辐射的理想物体</p>
+<img src="QM-beamer/figs/2022-09-27-05-18-57.png " width=400 height=400 >
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i> 实验结果</h4>
+<img src="QM-beamer/figs/blackbody_radn_curves.png " width=800, height=350> 
+<p class="fragment fade-up">找到一个数学公式来描述黑体辐射的所有曲线</p>
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i> 三大公式</h4>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7155471"><label class="task-list-item-label" for="task-item-7155471"> Wien's formula</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-137308"><label class="task-list-item-label" for="task-item-137308"> Rayleigh-Jeans formula</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1502090"><label class="task-list-item-label" for="task-item-1502090"> Planck's formula</label></li>
+</ul>
+<img src="QM-beamer/figs/threelaws.png" width=600, height=400> 
+            </section>
+        
+            <section >
+                <h5><i class="fa fa-fire"></i>   维恩公式</h5>
+<p>$$
+\rho(\nu) d \nu=c_{1} \nu^{3} e^{-c_{2} \nu / T} d \nu
+$$</p>
+<ul>
+<li class="fragment fade-up">Derived from electromagnetism (1893)</li>
+<li class="fragment fade-up">Described well only in high frequency region</li>
+<li class="fragment fade-up">Nobel Prize in physics（1911) </li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h5><i class="fa fa-fire"></i>  瑞-琼公式</h5>
+<p>$$
+\rho(\nu, T) d \nu=\frac{8 \pi}{c^{3}} \nu^{2} k T d \nu
+$$</p>
+<ul>
+<li class="fragment fade-up">
+<p>Derived from thermodynamics (1900)</p>
+</li>
+<li class="fragment fade-up">
+<p>Described well only in low frequency region</p>
+</li>
+<li class="fragment fade-up">
+<p>Nobel Prize in physics（1904） </p>
+</li>
+<li class="fragment fade-up">
+<p><strong>Ultraviolet Catastrophe</strong>
+$$ \int_0 ^\infty \frac{8 \pi}{c^{3}} \nu^{2} k T d \nu \to \infty  $$</p>
+</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h5><i class="fa fa-fire"></i>  普朗克公式</h5>
+<p>$$
+\rho(\nu, T) d \nu=\frac{8 \pi}{c^{3}} \frac{h \nu^{3} }{e^{h \nu / K T}-1} d \nu
+$$
+where h is Planck constant
+$$~h=6.6260693(11)\times10^{-34} J\cdot S $$</p>
+<ul>
+<li class="fragment fade-up">Obtained from experimental data via interpolation technique (1900-4) </li>
+<li class="fragment fade-up">Described well in whole frequency region </li>
+<li class="fragment fade-up">Nobel Prize in physics（1918） </li>
+</ul>
+
+            </section>
+        
+            <section >
+                <p><strong><font color=#FFA500 >问题：</font></strong></p>
+<p>如何从经典物理学导出普朗克公式!</p>
+<br>
+<br>
+<p class="fragment fade-up"><strong><font color=#FFA500 >解答：</font></strong> </p>
+<p class="fragment fade-up"><strong>1900-12-14</strong>, 普朗克给出了自己的解决方案 </p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section data-auto-animate>
+            
+            <!-- .slide:  data-auto-animate -->
+<h3>3. 普朗克能量子假说</h3>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section data-auto-animate>
+            <!-- .slide:  data-auto-animate -->
+<h3 style="color: #FF0000;">3. 普朗克能量子假说</h3>
+<ul>
+<li class="fragment fade-up">
+<p>Black body consists of millions of oscillators</p>
+</li>
+<li class="fragment fade-up">
+<p>The oscillators can only radiate at a discrete amounts of energy
+$$    E=n\varepsilon $$</p>
+</li>
+<li class="fragment fade-up">
+<p>The unit of the energy (quanta) determined by the oscillator’ frequency
+$$   \varepsilon=h\nu  $$</p>
+</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i> 不连续对平均辐射能的影响</h4>
+<p><code class="fragment">Boltzmann distribution law  \[\frac{N_{i}}{N}=\frac{\exp \left(-\frac{E_{i}}{k T}\right)}{\sum_{i} \exp \left(\frac{-E_{i}}{k T}\right)} \] </code></p>
+<p><code class="fragment">If energy is continuous，the distribution between $E - E+dE$ :  \[ \omega=\frac{e^{-E / k T}}{\int\limits_{0}^{\infty} e^{-E / k T} d E} \] </code></p>
+
+            </section>
+        
+            <section >
+                <p class="fragment"><code>The average energy   \[\begin{aligned} &lt; E &gt;   &amp; = \int\limits_{0}^{\infty} E \frac{e^{-E / k T}}{\int\limits_{0}^{\infty} e^{-E / k T} d E} d E  \\ \end{aligned} \] </code></p>
+<p class="fragment"><code>\[\hspace{8em}\begin{aligned} &amp; = -kT (E e ^{-E / k T} \vert_{0}^{\infty}- \int\limits_{0}^{\infty} e^{-E / k T} d E)  \\ &amp; = \color{red}{kT}  \end{aligned} \]</code></p>
+
+            </section>
+        
+            <section >
+                <p class="fragment"><code>If energy is discrete，the distribution : \[   \frac{e^{-E / k T}}{\int\limits_{0}^{\infty} e^{-E / k T} d E}  \] </code></p>
+<p class="fragment"><code>\[   \to \frac{e^{-E / k T}}{\sum\limits_{0}^{\infty} e^{-E / k T}}  \]</code></p>
+<p class="fragment"><code>\[   \to \frac{e^{-nh\nu / k T}}{\sum\limits_{0}^{\infty} e^{-nhv / k T}}  \]</code></p>
+
+            </section>
+        
+            <section >
+                <p class="fragment"><code>The average energy is \[\begin{aligned} &lt; E &gt;  &amp; = \sum\limits_{0}^{\infty} nh\nu\frac{e^{-nh\nu / k T}}{\sum\limits_{0}^{\infty} e^{-nh\nu / k T}}  \\ \end{aligned}  \] </code></p>
+<p><code class="fragment">\[\hspace{2em}\begin{aligned} &amp; = -h\nu \frac{d}{dx} \frac{n e^{-nx}}{\sum\limits_{0}^{\infty} e^{-nx}}   \\ &amp; = \color{red}{\frac{h\nu}{e^{h\nu/kT}-1}}  \end{aligned}  \]</code></p>
+
+            </section>
+        
+            <section >
+                <p><code class="fragment">Difference from continuous to discrete \[ \text{(Continuous)} \quad k T \rightarrow \frac{h \nu}{e^{ h \nu / k T}-1} \quad \text{(Discrete)}   \] </code></p>
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i> 对瑞-金公式的影响</h4>
+<p class="fragment fade-up"><code>Replacing the $kT$ in Rayleigh-Jeans  \begin{equation*} \rho(\nu, T) d \nu=\frac{8 \pi}{c^{3}} \nu^{2} k T d \nu  \end{equation*} by $\dfrac{h \nu}{e^{ h \nu / k T}-1}$</code></p>
+<p class="fragment fade-up">\begin{equation*}
+\rho(\nu, T) d \nu=\frac{8 \pi}{c^{3}} \frac{h \nu^{3} }{e^{h \nu / K T}-1} d \nu
+\end{equation*}</p>
+<p class="fragment fade-up">It is exactly the Planck’s formula</p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3><i class="fa fa-heartbeat"></i> 讨 论</h3>
+<ol>
+<li>
+<p>通过普朗克，你学到了什么?</p>
+</li>
+<li>
+<p>普朗克黑体辐射公式和能量量子化观念哪个影响会更大？</p>
+</li>
+</ol>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h4><i class="fa fa-paper-plane"></i>  Revolutionary Significance</h4>
+<div data-id="box" style="height: 1px; background: salmon;" class=""></div>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h4 style="color: #FF0000;"><i class="fa fa-paper-plane"></i>  Revolutionary Significance</h4>
+<div data-id="box" style="height: 200px; background: blue;" class="">
+<ul>
+<li class="fragment fade-up">
+<p>Broke through the constraints of classical physics </p>
+</li>
+<li class="fragment fade-up">
+<p>Opened the door of quantum mechanics</p>
+</li>
+</ul>
+</div>
+<br>
+
+            </section>
+        
+            <section >
+                <h3><i class="fa fa-leaf"></i> The End</h3>
+<div class="block">
+<p>In 1927, <strong>Dirac</strong> got the Planck’s formula from Quantum Mechanism.</p>
+</div>
+<br>
+<ul>
+<li class="fragment fade-up">
+<p>实际上，除了普朗克，还有德拜，艾伦菲斯特，劳厄，洛伦兹, 庞加莱，泡利，玻色，爱因斯坦等人从多角度推导过普朗克公式</p>
+</li>
+<li class="fragment fade-up">
+<p>每一次推导都给物理学带来了新的知识 </p>
+</li>
+</ul>
+
+            </section>
+        
+            <section data-background="QM-beamer/images/uestclogo-8.png" data-background-opacity="1.0">
+                <!-- .slide: data-background="QM-beamer/images/uestclogo-8.png" data-background-opacity="1.0"-->
+<h1><center> <font color ="FF0000"> A &amp; Q </font></center></h1>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3><i class="fa fa-leaf"></i> 作业</h3>
+<ol>
+<li>试述普朗克能量子假说的主要内容</li>
+<li>由普朗克公式导出维恩位移定律</li>
+<li>由普朗克公式导出维恩公式和瑞利—金斯公式</li>
+</ol>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>第二讲 波粒二象性</h2>
+<br>
+<ul>
+<li>
+<p>光的波粒二象性</p>
+</li>
+<li>
+<p>德布罗意物质波假说</p>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>1. 光的波粒二象性</h3>
+<ul>
+<li class="fragment">
+<p>光是粒子还是波？</p>
+</li>
+<li class="fragment">
+<p>是一个困扰人类2000多年的问题</p>
+</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i>  波与粒子的不可调和性</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:right"><strong>粒子性</strong></th>
+<th><strong>波动性</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">确定的位置、能量、动量</td>
+<td>确定的波长、振幅、相位</td>
+</tr>
+<tr>
+<td style="text-align:right">两个粒子不能同时占据同一位置</td>
+<td>可以同时出现在同一位置</td>
+</tr>
+<tr>
+<td style="text-align:right">同一粒子也不能同时占据多个位置</td>
+<td>可以同时占据多个位置</td>
+</tr>
+<tr>
+<td style="text-align:right">存在碰撞现象</td>
+<td>衍射、干涉，无碰撞</td>
+</tr>
+</tbody>
+</table>
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i>  光的波动说</h4>
+<table><tr>
+<td> <img src="QM-beamer/figs/2021-12-02-15-46-16.png" width=400, height=400> </td>
+<td> <img src="QM-beamer/figs/2022-09-09-18-15-54.png" width=400, height=400> </td>
+</tr></table>
+
+            </section>
+        
+            <section >
+                <p>光是一定波长范围内的<strong>电磁波</strong></p>
+<img src="QM-beamer/figs/2021-12-02-16-23-16.png " width="800px" >
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i> 光的波动说面临的困难</h4>
+<ul>
+<li>黑体辐射</li>
+<li>光电效应</li>
+<li>康普顿效应</li>
+<li>氢原子光谱</li>
+</ul>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3><i class="fa fa-leaf"></i> 光电效应</h3>
+<p class="fragment"><strong><font color=#FF8500 >光电效应的定义：</font></strong>
+光照射到金属上，引起其电性质发生变化的现象称为光电效应。(光电子发射, 光电导效应和光生伏特效应)</p>
+<p class="fragment"><strong><font color=#FF8500 >实验发现：</font></strong>
+<img src="QM-beamer/figs/2021-12-02-16-01-21.png" width="500px" ></p>
+<p class="fragment">瞬时性. 临界频率. 光电子能量由光的频率决定</p>
+
+            </section>
+        
+            <section >
+                <p class="fragment"><strong><font color=#FF8500 >理论解释：</font></strong>
+1905年, 爱因斯坦推导普朗克公式$\cdots$</p>
+<ul>
+<li class="fragment">Plank’s Law was consistent with experment but not with existing theory</li>
+<li class="fragment">Rayleigh-Jeans Law was consistent with existing theory but not with experiment</li>
+<li class="fragment">For treating Ultraviolet Catastrophe, he proposed the light quantum hypothesis</li>
+<li class="fragment">Using light quantum hypothesis, he explained the Photoelectric effect</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3><i class="fa fa-leaf"></i> 光量子假说</h3>
+<ul>
+<li class="fragment">Light likes particles with unit energy (quanta).
+$$ E=h\nu $$</li>
+<li class="fragment">The energy of n light quantum is
+$$ n h \nu $$</li>
+<li class="fragment">The momentum of light quantum is (1918)
+$$ p=\frac{E}{c}=\frac{h\nu}{c}=\frac{h}{\lambda} $$</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i> 光电效应公式</h4>
+<p>$$\frac{1}{2}m_eV_0^2=h\nu-W $$</p>
+<p>基于这个公式，爱因斯坦成功解释了实验</p>
+
+            </section>
+        
+            <section style="text-align: left;">
+                <h4><i class="fa fa-paper-plane"></i>  解释实验</h4>
+<!-- .slide: style="text-align: left;" -->
+<ul>
+<li>
+<p>瞬时性：光是粒子，能量被电子瞬时吸收</p>
+</li>
+<li>
+<p>临界频率：</p>
+</li>
+</ul>
+<p>$$\nu_0=\frac{W}{h} $$</p>
+<ul>
+<li>光电子能量与光的频率决定:</li>
+</ul>
+<p>$$E_k=h\nu-W $$</p>
+<ul>
+<li>Nobel Prize in physics（1921）</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i> 测定普朗克常数</h4>
+<p><code class="fragment">\begin{aligned} \frac{1}{2}m_eV_0^2 &amp; =h\nu-W  \\ y &amp; =kx-b \end{aligned}</code></p>
+<ul>
+<li class="fragment">1916年，密立根测定普朗克常数</li>
+<li class="fragment">Nobel Prize in physics（1923）</li>
+</ul>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h4><i class="fa fa-paper-plane"></i>  Revolutionary Significance</h4>
+<div data-id="box" style="height: 1px; background: salmon;" class=""></div>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h4 style="color: #FF0000;"><i class="fa fa-paper-plane"></i>  Revolutionary Significance</h4>
+<div data-id="box" style="height: 200px; background: blue;" class="">
+<ul>
+<li class="fragment fade-up">
+<p>揭示能量子的本质：在于光本身是量子化的，具有粒子性 </p>
+</li>
+<li class="fragment fade-up">
+<p>揭示光的本质：光既具波动性又具粒子性。</p>
+</li>
+</ul>
+</div>
+
+            </section>
+        
+            <section >
+                <p><strong>普朗克:</strong></p>
+<p class="fragment fade-up">在近代物理学结出硕果的那些重大问题中，很难找到一个问题是爱因斯坦没有做出过重要贡献的 $\dots$</p>
+<p class="fragment fade-up">在他的各种推测中，他有时可能也曾经没有中标的, $\dots$ </p>
+<p class="fragment fade-up">例如他的光量子假设，就有点迷失了方向$\dots$</p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3><i class="fa fa-leaf"></i> 康普顿效应</h3>
+<br>
+<p class="fragment"><strong><font color=#FF8500 >康普顿效应的定义：</font></strong> 光通过实物时，散射光中存在不同于原波长的成份，且其波长的增量随散射角而变化，这种现象称为康普顿效应（Compton Effect）</p>
+
+            </section>
+        
+            <section >
+                <img src="QM-beamer/figs/comptonscattering.png" width=550 >
+
+            </section>
+        
+            <section style="text-align: left;">
+                <h4><i class="fa fa-paper-plane"></i>  波长-角度关系</h4>
+<p class="fragment fade-up">$$\lambda_{out}-\lambda_{in}=\lambda_e(1-\cos \theta)$$</p>
+<!-- .slide: style="text-align: left;" -->
+<p class="fragment fade-up"><strong><font color=#FF8500 >推导：</font></strong></p>
+<p class="fragment fade-up">电子能量
+$$ E^2 =m_e c^2 = p^2 c^2 +m_0 ^2 c^4 $$ </p>
+<p class="fragment fade-up">光子能量
+$$ E =pc $$ </p>
+
+            </section>
+        
+            <section >
+                <p>能量守恒
+<code>\begin{aligned}   E_i + m_0 c^2 &amp;= E_o + m_ec^2 \\   (E_i -E_o + m_0 c^2)^2 &amp;= E_e ^2\\   (p_i c-p_o c + m_0 c^2) ^2 &amp;= p_e ^2 c^2 +m_0 ^2 c^4 \\   (p_i-p_o)^2 +2 m_0 (p_i c-p_o c) &amp;= p_e ^2 \end{aligned}</code></p>
+
+            </section>
+        
+            <section >
+                <p>动量守恒
+<code>\begin{aligned}   \vec{p}_i -\vec{p}_o &amp;= \vec{p}_e \\   (\vec{p}_i -\vec{p}_o)\cdot (\vec{p}_i -\vec{p}_o)  &amp;= \vec{p}_e\cdot \vec{p}_e   \\   p_i ^2 + p_o ^2 -2p_i p_o \cos \theta &amp;= p_e ^2  \\   p_i ^2 + p_o ^2 -2p_i p_o \cos \theta &amp;= (p_i-p_o)^2 +2 m_0 (p_i c-p_o c) \\   \frac{1}{p_o} -\frac{1}{p_i} &amp;= \frac{1}{m_0 c} (1-\cos \theta) \\   \lambda_o -\lambda_i &amp;= \frac{h}{m_0 c} (1-\cos \theta)  \\   \lambda_{out}-\lambda_{in} &amp;=\lambda_e(1-\cos \theta) \end{aligned}</code></p>
+<p class="fragment fade-up">结束！</p>
+
+            </section>
+        
+            <section >
+                <p><strong>康普顿效应</strong>表明：</p>
+<ol>
+<li>
+<p>光与电子发生了“弹性碰撞”</p>
+</li>
+<li>
+<p>波长为$\lambda$ 的光子具有确定动量 $$p=\frac{h}{\lambda}$$</p>
+</li>
+<li>
+<p>动量守衡定律适用了量子体系</p>
+</li>
+</ol>
+<br>
+<p class="fragment fade-up">Nobel Prize in physics（1927）</p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3><i class="fa fa-leaf"></i>  氢原子光谱</h3>
+<img src="QM-beamer/figs/hydspe.png" width=800, height=300>
+<p class="fragment fade-up">经验公式：$\dfrac{1}{\lambda}=R_H c (\dfrac{1}{m^2} -\dfrac{1}{n^2})$</p>
+
+            </section>
+        
+            <section >
+                <h4><i class="fa fa-paper-plane"></i> Rutherford 原子模型与氢原子光谱不符</h4>
+<img src="QM-beamer/figs/utherford_atom.png" width=800, height=450>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3><i class="fa fa-leaf"></i> 玻尔的氢原子模型</h3>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3 style="color: #FF0000;"><i class="fa fa-leaf"></i> 玻尔的氢原子模型  </h3>
+<ol>
+<li class="fragment fade-up">Stationary state: Electrons move around the nucleus only in certain allowed circular orbits with fixed momentum
+$$ L=n \frac{h}{2\pi}= n \hbar,\qquad (\oint p_i dq_i = n_i h)$$</li>
+</ol>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3 style="color: #FF0000;"><i class="fa fa-leaf"></i> 玻尔的氢原子模型  </h3>
+<ol>
+<li>
+<p>Stationary state: Electrons move around the nucleus only in certain allowed circular orbits with fixed momentum
+$$ L=n \frac{h}{2\pi}= n \hbar,\qquad (\oint p_i dq_i = n_i h)$$</p>
+</li>
+<li class="fragment fade-up">
+<p>Quantum transition: Electron can jump between stationary state orbits when absorbed or emitted a photon with energy
+$$h\nu=E_n -E_m $$</p>
+</li>
+</ol>
+
+            </section>
+        
+            <section >
+                <p>定态轨道半径</p>
+<span>
+\[\begin{equation*}
+        \begin{split}
+            m\frac{v^2}{r}&=\frac{1}{4\pi\epsilon_0} \frac{e^2}{r^2} \\
+            L&=mvr =n\hbar \\
+            r_n&= n^2 (\frac{\epsilon_0 h^2}{m\pi e^2}) =n^2 r_1   
+        \end{split} 
+     \end{equation*}
+\]</pan>
+            </section>
+        
+            <section >
+                <p>定态能量</p>
+<span>
+\[\begin{equation*}
+        \begin{split}
+            E_n &= T + U \\
+            &= \frac{1}{2}mv^2- \frac{1}{4\pi\epsilon_0} \frac{e^2}{r_n ^2} \\
+            &= \frac{1}{n^2} (-\frac{m e^4}{8 \epsilon_0 ^2 h^2}) \\
+            &= \frac{E_1}{n^2}
+        \end{split}  
+\end{equation*}
+\]</pan>
+            </section>
+        
+            <section >
+                <p><code class="fragment">光谱公式   \begin{aligned}   \nu&amp;=\frac{E_n -E_m}{h} \\   &amp;= \frac{m e^4}{4\pi \hbar ^3} [\frac{1}{m^2} -\frac{1}{n^2}] \end{aligned} </code></p>
+<p><code class="fragment">Rydberg 常数   \begin{equation*}         \begin{split}             R_{theo}&amp;= \frac{m e^4}{4\pi \hbar ^3 c} \\             &amp; =1.0973731\times 10^7 m^{-1} \\             R_{exp}&amp;=1.0974\times10^7 m^{-1}          \end{split}     \end{equation*}</code></p>
+<ul>
+<li class="fragment fade-up">Nobel Prize in physics（1922）</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <center><img src="QM-beamer/figs/2022-09-29-11-26-45.png" width=600, height=350></center>
+<ul>
+<li>
+<p>1905年爱因斯坦提出的光子概念，不受名人的重视，普朗克说他“迷失了方向”</p>
+</li>
+<li>
+<p>1913年，28岁的玻尔把光子概念作用于卢瑟福原子模型，成功破解氢原子光谱问题</p>
+</li>
+</ul>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section data-auto-animate>
+            <!-- .slide:  data-auto-animate -->
+<h3><i class="fa fa-leaf"></i> 光的波粒二象性</h3>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3 style="color: #FF0000;"><i class="fa fa-leaf"></i> 光的波粒二象性 </h3>
+<p><code class="fragment fade-up">\begin{cases}     \text{Light behaves like waves }\\     \text{$\qquad$ Interference} \\     \text{$\qquad$ Diffraction}  \end{cases}</code></p>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h3 style="color: #FF0000;"><i class="fa fa-leaf"></i> 光的波粒二象性 </h3>
+<p><code>\begin{cases}     \text{Light behaves like waves }\\     \text{$\qquad$ Interference} \\     \text{$\qquad$ Diffraction}  \end{cases}</code></p>
+<p class="fragment fade-up"><code>\begin{cases}   \text{Light behaves like particles}\\     \text{$\qquad$ Photoelectric effect} \\     \text{$\qquad$ Compton effect} \\     \text{$\qquad$ Atomic spectrum } \end{cases}</code></p>
+<ul>
+<li class="fragment fade-up">Light behaving like waves and particles is called <strong>wave-particle duality of light</strong></li>
+</ul>
+
+            </section>
+        
+            <section data-background="QM-beamer/images/uestclogo-1.png" data-background-opacity="1">
+                <!-- .slide: data-background="QM-beamer/images/uestclogo-1.png" data-background-opacity="1"-->
+<h3><strong><i class="fa fa-leaf"></i> 学术讨论</strong></h3>
+<h4>How can light be both particle and wave ?</h4>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>2. 德布罗意物质波假说</h3>
+
+            </section>
+        
+            <section >
+                <h3><i class="fa fa-leaf"></i> hypothesis of matter wave</h3>
+<ul>
+<li class="fragment fade-up">
+<p>In 1923, de Broglie states that if light which is classically a wave could behave as a particle,
+then classical particles could also behave as quantum waves.</p>
+</li>
+<li class="fragment fade-up">
+<p>The relationship between the wave property and particle property should be
+$$\lambda=\frac{h}{p}, \qquad \nu =\frac{E}{h}$$</p>
+</li>
+</ul>
+
+            </section>
+        
+            <section data-auto-animate>
+                <!-- .slide:  data-auto-animate -->
+<h4><i class="fa fa-paper-plane"></i> 氢原子电子的德布罗意波长</h4>
+<p class="fragment fade-up"><code>\begin{aligned}   L&amp;=n\hbar \\   \vec r \cdot \vec p &amp; =  n\frac{h}{2 \pi} \\   2\pi r&amp;=  n\frac{h}{p}\\   2\pi r&amp;=  n\lambda \to \color{red} {l=n\lambda}   \end{aligned}</code></p>
+
+            </section>
+        
+            <section >
+                <h4>电子衍射实验 （Davisson and Germer，1927）</h4>
+<img src="QM-beamer/figs/2022-09-29-12-04-19.png" width=600, height=500>
+            </section>
+        
+            <section >
+                <p>基于布拉格方程 $ 2d\sin \theta=n\lambda $</p>
+<img src="QM-beamer/figs/scatting.png" width=400, height=200> 
+<p class="fragment fade-up">求得实验中电子波长约为 0.16x $nm$, 正好与理论上的电子的德布罗意波长一样!</p>
+<ul>
+<li class="fragment fade-up">Nobel Prize in physics（1937)</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3><i class="fa fa-leaf"></i> de Broglie</h3>
+<div class="block">
+<ul>
+<li>
+<p>Extended the wave-particle duality from light to particles</p>
+</li>
+<li>
+<p>discovered the wave nature of electrons.</p>
+</li>
+<li class="fragment fade-up">
+<p>Nobel Prize in physics（1929)</p>
+</li>
+</ul>
+</div>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section data-background-video="QM-beamer/figs/doubleslite-n.mp4" .slide:data-background-color="#000000">
+            
+            <!-- .slide: data-background-video="QM-beamer/figs/doubleslite-n.mp4" .slide:data-background-color="#000000" -->
+<h6>单电子双缝干涉实验</h6>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p><img src="QM-beamer/figs/ds-1.jpeg" width=500, height=150> <img src="QM-beamer/figs/ds-2.jpeg" width=500, height=150> <img src="QM-beamer/figs/ds-3.jpeg" width=500, height=150><br>
+Electron interference patterns (Jonsson, 1961)</p>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3><i class="fa fa-paper-plane"></i> Conclusion</h3>
+<div class="block">
+<ul style="background:green;width:850px">
+<li>Wave-particle duality is the inherent attribute of matter</li>
+</ul>
+</div>
+
+            </section>
+        
+            <section >
+                <h3><i class="fa fa-paper-plane"></i> Big problem</h3>
+<div class="block">
+<ul style="background:red;width:850px;height:120px">
+<li>How to interpret the world where waves are particles and particles are waves</li>
+</ul>
+</div>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section data-background="QM-beamer/images/uestclogo-8.png" data-background-opacity="1.0">
+            
+            <!-- .slide: data-background="QM-beamer/images/uestclogo-8.png" data-background-opacity="1.0"-->
+<h1><center> <font color ="FF0000"> A &amp; Q </font></center></h1>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3><i class="fa fa-leaf"></i> 作业</h3>
+<ol>
+<li>
+<p>计算氢原子第一玻尔半径上电子的德布罗意波长</p>
+</li>
+<li>
+<p>计算一个静态电子经100 V电势差加速后的德布罗意波长</p>
+</li>
+<li>
+<p>He-Ne 激光器发射波长为633 nm的激光。若该激光器功率为1 mW，求每秒钟发射多少光子</p>
+</li>
+<li>
+<p>试述什么是波粒二象性，从波粒二象性角度说明经典物理学当时所面临的困难</p>
+</li>
+</ol>
+
+            </section>
+        
+            <section >
+                <h1><center> <font color = #FFA500> Thanks </font></center></h1>
+<aside class="notes"> thanks for your attention</aside>
+
+            </section>
+        
+
+    </section>
+    
+
+
+    </div>
+
+
+  </div>
+
+  <div class="line top"></div>
+  <div class="line bottom"></div>
+  <div class="line left"></div>
+  <div class="line right"></div>
+
+  <script src="libs/reveal.js/4.3.1/reveal.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/notes/notes.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/markdown/markdown.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/highlight/highlight.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/math/math.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/fullscreen/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/animate/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/animate/svg.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/Chart.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/d3.v3.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3.patch.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/queue.v1.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/topojson.v1.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/function-plot.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/customcontrols/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/embed-tweet/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/chart/chart.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/chart/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/verticator/verticator.js"></script>
+
+<script src="libs/reveal.js/4.3.1/plugin/zoom/zoom.js"></script>
+
+<script src="libs/reveal.js/4.3.1/plugin/menu/menu.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/chalkboard/plugin.js"></script>
+
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/plugin.js"></script>  -->
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/recorder.js"></script>-->
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/RecordRTC.js"></script>-->
+
+  
+
+<script>
+  const printPlugins = [
+      RevealNotes,
+      RevealHighlight,
+      RevealMath.MathJax3,
+      RevealAnimate,
+      RevealChalkboard, 
+			RevealEmbedTweet,
+			RevealChart,
+		];
+
+		const plugins =  [...printPlugins,
+		RevealZoom, 
+		
+				RevealMarkdown, 
+				RevealMenu, 
+				RevealFullscreen,
+				RevealAnything,
+				//RevealAudioSlideshow,
+				//RevealAudioRecorder,
+				RevealCustomControls, 
+				// poll
+				// question
+				// seminar
+				Verticator 
+				 ]
+
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+      controlsTutorial: false,
+      controlsLayout: 'bottom-right',
+      controlsBackArrows: 'faded',
+      progress: true,
+      slideNumber: false,
+      //#showSlideNumber "all" "print" "speaker"
+      hash: true, //# hash: false,
+      //# respondToHashChanges: true,
+      //# history: false,
+      keyboard: true,
+      //#keyboardCondition: null,
+      overview: false,
+      center: true,
+      touch: false,
+      loop: false,
+      rtl: false,
+      //#navigationMode: 'default', linear grid
+      shuffle: false,
+      fragments: true,
+      fragmentInURL: false,
+      embedded: false,
+      help: false,
+      //#pause: true
+      showNotes: false,
+      autoPlayMedia: false, // TODO fix this to a nullable value
+      //#preloadIframes: null. true false
+      //#autoAnimate: true
+      //#autoAnimateMatcher: null,
+      //#autoAnimateEasing: 'ease',
+      //autoAnimateDuration: 1.0,
+      //#autoAnimateUnmatched: true
+      //#autoAnimateStyles: []
+      autoSlide: 0, // TODO fix this to a falseable value
+      autoSlideStoppable: true,
+      autoSlideMethod: '0',
+      defaultTiming: 120,
+      mouseWheel: true,
+      //#previewLinks: false
+      //#postMessage: true, // TODO : this can cause issues with the vscode api ???
+      //#postMessageEvents: false,
+      //#focusBodyOnPageVisibilityChange: true,
+      transition: 'convex',
+      transitionSpeed: 'default',
+      backgroundTransition: 'fade',
+      //#pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+      //#pdfSeparateFragments: true,
+      //#pdfPageHeightOffset: -1,
+      viewDistance: 2,
+      //#mobileViewDistance: 2,
+      display: 'block',
+      //#hideInactiveCursor: true,
+      //#hideCursorTime: 5000
+
+      // Parallax Background
+      parallaxBackgroundImage: '',
+      parallaxBackgroundSize: '',
+      parallaxBackgroundHorizontal: 0,
+      parallaxBackgroundVertical: 0,
+
+      //Presentation Size
+      width: 960,
+			height: 700,
+			margin: 0.04,
+      minScale: 0.2,
+      maxScale: 2,
+      disableLayout: false,
+
+      audio: {
+        prefix: 'audio/', // audio files are stored in the "audio" folder
+        suffix: '.ogg', // audio files have the ".ogg" ending
+        textToSpeechURL: null, // the URL to the text to speech converter
+        defaultNotes: false, // use slide notes as default for the text to speech converter
+        defaultText: false, // use slide text as default for the text to speech converter
+        advance: 0, // advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+        autoplay: false, // automatically start slideshow
+        defaultDuration: 5, // default duration in seconds if no audio is available
+        defaultAudios: true, // try to play audios with names such as audio/1.2.ogg
+        playerOpacity: 0.05, // opacity value of audio player if unfocused
+        playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+        startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+      },
+      
+      chalkboard: { // font-awesome.min.css must be available
+        //src: "chalkboard/chalkboard.json",
+        storage: "chalkboard-demo",
+      },
+      
+			customcontrols: {
+					controls: [
+      						{
+						  id: 'toggle-overview',
+						  title: 'Toggle overview (O)',
+						  icon: '<i class="fa fa-th"></i>',
+						  action: 'Reveal.toggleOverview();'
+						}
+						,
+      {
+        icon: '<i class="fa fa-pen-square"></i>',
+        title: 'Toggle chalkboard (B)',
+        action: 'RevealChalkboard.toggleChalkboard();'
+      },
+      {
+        icon: '<i class="fa fa-pen"></i>',
+        title: 'Toggle notes canvas (C)',
+        action: 'RevealChalkboard.toggleNotesCanvas();'
+      }
+      
+				]
+			},
+			chart: {
+					defaults: { 
+						color: 'lightgray', // color of labels
+						scale: { 
+							beginAtZero: true, 
+							ticks: { stepSize: 1 },
+							grid: { color: "lightgray" } , // color of grid lines
+						},
+					},
+					line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] }, 
+					bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+					pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+					radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+			},
+			math: {
+				mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+				config: 'TeX-AMS_HTML-full',
+				// pass other options into `MathJax.Hub.Config()`
+				TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+				anything: [ 
+				{
+		className: "plot",
+		defaults: {width:500, height: 500, grid:true},
+		initialize: (function(container, options){ options.target = "#"+container.id; functionPlot(options) })
+	 },
+	 {
+		className: "chart",  
+		initialize: (function(container, options){ container.chart = new Chart(container.getContext("2d"), options);  })
+	 },
+	 {
+		className: "anything",
+		initialize: (function(container, options){ if (options && options.initialize) { options.initialize(container)} })
+	 },
+					],
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: (window.location.search.match(/print-pdf/gi) ? printPlugins : plugins ) 
+		});
+			
+
+
+	    // Change chalkboard theme : 
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+			Reveal.getPlugin("RevealChalkboard").configure(config);
+			input.blur();
+		}
+
+		// // Handle the message inside the webview
+        // window.addEventListener('message', event => {
+
+        //     const message = event.data; // The JSON data our extension sent
+
+        //     switch (message.command) {
+        //         case 'refactor':
+        //             Reveal.toggleHelp();
+        //     }
+        // });
+
+		if (window.location.search.match(/print-pdf-now/gi)) {
+      		setTimeout(() => {
+				window.print();
+			  }, 2500);
+			
+    }
+</script>
+
+</body>
+
+</html>
