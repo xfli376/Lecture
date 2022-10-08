@@ -759,6 +759,16 @@ note: Always thank audience !
  </section>
 
 
+--
+
+
+<div class="grid">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+</div>
+
 ---
 
 ## 23、 使用Markdown语法
@@ -768,10 +778,92 @@ note: Always thank audience !
 </section> 
 
 
+
 ---
 
+## 24、 canvas 作图
 
-### The END
+<canvas class="stretch" data-chart="line">
+My first dataset,  65, 59, 80, 81, 56, 55, 40
+<!-- This is a comment -->
+My second dataset, 28, 48, 40, 19, 86, 27, 90
+<!-- 
+{ 
+"data" : {
+	"labels" : ["Enero", "Febrero", "Marzo", "Avril", "Mayo", "Junio", "Julio"],
+	"datasets" : [{ "borderColor": "#0f0", "borderDash": ["5","10"] }, { "borderColor": "#0ff" } ]
+	}
+}
+-->
+</canvas>
+
+
+--
+
+<div style="height:480px">
+<canvas data-chart="bar" data-chart-src="data.csv">
+<!-- 
+{
+"data" : {
+"datasets" : [{ "backgroundColor": "#0f0" }, { "backgroundColor": "#0ff" } ]
+},
+"options": { "scales": { "x": { "stacked": true }, "y": { "stacked": true } } }
+}
+-->
+</canvas>
+</div>
+
+
+---
+
+```plantuml
+@startmindmap
+* root node
+	* some first level node
+		* second level node
+		* another second level node
+	* another first level node
+@endmindmap
+```
+
+---
+
+## 25. iframe
+
+---
+
+/i/https://www.evilznet.com/
+
+---
+
+<!-- .slide: data-fullscreen-->
+
+<iframe  class="stretch" data-src="https://www.evilznet.com/" ></iframe> 
+
+---
+
+<!-- .slide: data-background-iframe="https://www.evilznet.com/"  -->
+
+---
+
+### Javascript libraries
+
+You can use external javascript libraries e.g. to insert function plots and charts.
+
+<div class="plot" id="myplot1" style="background-color:#fff; width:500px; height:500px; margin: 0 auto;">
+<!--
+{
+ "target":"#myplot1",
+ "height":500,
+ "width":"500",
+ "xAxis":{"domain":[-3.145,3.145]},
+ "yAxis":{"domain":[-2.2,2.2]},
+ "grid":false,
+ "disableZoom": true,
+ "data":[{"fn":"sin(1*x)+0.9*sin(2*x)+0.01*sin(30*x)+0.001*sin(40*x)+0.001*sin(50*x)","color":"darkred"}]
+}
+-->
+</div>
 
 
 ---

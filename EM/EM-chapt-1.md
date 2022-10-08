@@ -417,27 +417,13 @@ $\color{#FFA500}{\text{Tips：}}$ 当策动函数为多项式函数，三角函�
 ---
 
 
-解的分析：这是两个不同频率的波的叠加 
+解的分析：这是固固有频率和策动频率两种波的线性叠加 
 
-note: python {data-trim data-line-numbers="|1-2|7-7"}
-import numpy as np
-import matplotlib.pyplot as plt
-plt1 =plt.subplot(211)
-plt2 =plt.subplot(212)
-x = np.arange(- np.pi, np.pi, 0.001)
-y1 = np.cos(x*100)+ np.sin(x*90)
-y2 = np.exp(-0.9*x)*np.cos(x*100)+ np.sin(x*90)
-plt1.plot(x, y1, linewidth=1.0, color='w')
-plt2.plot(x, y2, linewidth=1.0, color='w')
-plt.savefig("./figs/my.png")
-plt.show();
+<center><img src="EM-beamer/figs/my.svg" width=800, height=350></center>
 
-
-<center><img src="EM-beamer/figs/my.png" width=800, height=350></center>
-
-如果两频率相近，发生共振。
-
-如果是衰减波，最后只留下策动 
+- 如果两频率相近，发生共振。{.fragment .fade-up}
+- 器件的工作频率在远离固有频率。{.fragment .fade-up}
+- 如果是衰减波，最后只留下策动频率波。{.fragment .fade-up}
 
 --
 
@@ -482,7 +468,7 @@ $\color{#FFA500}{\text{Tips：}}$  现实工程里的数理方程远比《工程
 
 ---
 
-## 2. 常微分方程的基本解法
+### 2. 常微分方程的基本解法
 
 ---
 
@@ -856,7 +842,7 @@ $$y(x) =c_0y_1(x)+c_1 y_2(x)$$ {.fragment .fade-up}
 ---
 
 
-### 第二讲 傳里叶级数与傅里叶变换
+## 第二讲 傳里叶级数与傅里叶变换
 
 ---
 
