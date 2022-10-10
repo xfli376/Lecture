@@ -12,17 +12,18 @@
 
     <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-    <link href="libs/impress.js/css/impress-common.css" rel="stylesheet" />
-    <link href="libs/impress.js/css/impress-demo.css" rel="stylesheet" />
+    <link href="../../others/impress.js/css/impress-common.css" rel="stylesheet" />
 
-    <link href="libs/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../others/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="./my-presentation.css" rel="stylesheet" />
 
     <script>
         MathJax = {
           tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
         };
     </script>
-    <script id="MathJax-script" async src="libs/mathjax/es5/tex-chtml.js"></script>
+    <script id="MathJax-script" async src="../../others//mathjax/es5/tex-chtml.js"></script>
 
 </head>
 
@@ -61,7 +62,8 @@
 -->
 
 <!-- Some images that are fixed to background in the css -->
-<img id="bg1" class="bg" src="QM-beamer/images/uestclogo-1.png">
+<img id="bg-1" class="imgbg" src="../EM/EM-beamer/images/uestclogo-18.png">
+
 
 <div id="impress"
     data-transition-duration="1000"
@@ -82,29 +84,16 @@
         of `step`. These step elements are positioned, rotated and scaled by impress.js   
     -->
 
-    <div id="first" class="step" data-x="-2500" data-y="-2500" data-z="3000" data-autoplay="200" data-scale="6">
+    <div id="TITLE" class="step" data-x="-3000" data-y="-3000" data-z="0" data-autoplay="200" data-scale="1"> 
         <h1>量子力学与统计物理</h1>
         <h2>Quantum mechanics and statistical physics</h2>
         <br/>
-        <p>李小飞 <i class="fa fa-at" aria-hidden="true"></i> 光电科学与技术学院</p>
+        <h2>李小飞 <span class="at"><i class="fa fa-at" aria-hidden="true"></i></span> 光电科学与技术学院</h2>
+        <br/>
+        <span class="date"> 2023-03-01 </span>
     </div>
-
-    <!--
-        
-        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-        
-        So in the example below it'll be `step-2`.
-        
-        The hash part of the url when this step is active will be `#/step-2`.
-        
-        You can also use `#step-2` in a link, to point directly to this particular step.
-        
-        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-        
-    -->
-    <div id="TOC" class="step" data-x="1000" data-y="-1000">
+    <div id="TOC" class="step" data-x="-1500" data-y="-1500" data-z="0" data-scale="1">
+        <h1>主要内容：</h1>
         <ol>
             <li>第一章 绪论</li>
             <li>第二章 波函数与薛定谔方程</li>
@@ -113,12 +102,11 @@
         </ol>
     </div>
 
-    <div class="step" data-x="2000" data-y="-1000">
+    <div id=“chapter” class="step" data-x="0" data-y="0" data-z="0" data-scale="1" >
         <q> $$x^2 + y^2 = z^2 $$ </q>
         <q> $x^2 + y^2 = z^2 $ </q>
         <q> \[x^2 + y^2 = z^2 \]</q>
         <q> \(x^2 + y^2 = z^2 \)</q>
-
     </div>
 
     <!--
@@ -131,99 +119,39 @@
         down (4 times) to make it back to its correct size.
         
     -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">then you should try</span>
-        <h1>impress.js<sup>*</sup></h1>
-        <span class="footnote"><sup>*</sup> no rhyme intended</span>
-    </div>
-
-    <!--
-        
-        This element introduces rotation.
-        
-        Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
-        element should be rotated by 90 degrees clockwise.
-        
-    -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>It’s a <strong>presentation tool</strong> <br/>
-        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
-    </div>
 
     <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
         <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
     </div>
 
-    <!--
-        
-        And now it gets really exciting! We move into third dimension!
-        
-        Along with `data-x` and `data-y`, you can define the position on third (Z) axis, with
-        `data-z`. In the example below we use `data-z="-3000"` meaning that element should be
-        positioned far away from us (by 3000px).
-        
-    -->
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>and <b>tiny</b> ideas</p>
+    <div id="beginning" class="step " data-rel-position="relative" data-x="0" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
+        Front beginning
     </div>
+    <div  class="step " data-rel-z="-200" data-rel-y="1500" data-scale="1">
+        Inside Front</div>
+    <div  class="step " data-rel-z="-200" data-rel-y="1500" data-scale="1">
+        Inside Right</div>
+    <div  class="step " data-rel-z="-200" data-rel-y="1500" data-scale="0.6">
+        Right</div>
+    <div  class="step " data-rel-z="-200" data-rel-y="1500" data-scale="0.6">
+        Back</div>
+    <div  class="step " data-rel-z="-200" data-rel-y="1500" data-scale="0.6">
+        Inside Back</div>
+    <div  class="step " data-rel-z="-200" data-rel-y="1500" data-scale="0.6">
+        Inside Top</div>
+    <div class="step " data-rel-z="-200" data-rel-y="1500" data-scale="0.6">
+        Top</div>
+    <div  class="step " data-rel-z="-200" data-rel-y="1500" data-scale="0.6">
+        Left</div>
+    <div  class="step " data-rel-z="-200" data-rel-y="1500" data-scale="0.6">
+        Inside Left</div>
+    <div  class="step " data-rel-z="-200" data-rel-y="1500" data-scale="0.6">
+        Inside Bottom</div>
+    <div  class="step " data-rel-z="-200" data-rel-y="1500" data-scale="0.6">
+        Bottom</div>
 
-    <!--
-        
-        This step here doesn't introduce anything new when it comes to data attributes, but you
-        should notice in the demo that some words of this text are being animated.
-        It's a very basic CSS transition that is applied to the elements when this step element is
-        reached.
-        
-        At the very beginning of the presentation all step elements are given the class of `future`.
-        It means that they haven't been visited yet.
-        
-        When the presentation moves to given step `future` is changed to `present` class name.
-        That's how animation on this step works - text moves when the step has `present` class.
-        
-        Finally when the step is left the `present` class is removed from the element and `past`
-        class is added.
-        
-        So basically every step element has one of three classes: `future`, `present` and `past`.
-        Only one current step has the `present` class.
-        
-        Note: data-x/y/z attributes, if not defined, by default will inherit the value of the 
-        previous step. So to get back to 0 on the z-axis, we must set it to 0.
-        See src/plugins/rel/README.md for more information.
-        
-    -->
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-z="0" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
-    </div>
-
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
-    </div>
-
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/impress/impress.js">use the source</a>, Luke!</q>
-    </div>
-
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
-    </div>
-
-    <!--
-        
-        And the last one shows full power and flexibility of impress.js.
-        
-        You can not only position element in 3D, but also rotate it around any axis.
-        So this one here will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and
-        10 degrees (clockwise) around Y axis.
-        
-        You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
-        as `data-rotate` (these two are basically aliases).
-        
-    -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
+    <div id="finlly" class="step" data-rel-reset="all" data-x="0" data-y="0" data-z="0" data-rotate-y="10">
+        finlly = beginning
     </div>
 
     <!--
@@ -305,7 +233,7 @@ if ("ontouchstart" in document.documentElement) {
     Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
     
 -->
-<script src="libs/impress.js/js/impress.js"></script>
+<script src="../../others/impress.js/js/impress.js"></script>
 <script>impress().init();</script>
 
 <!--
