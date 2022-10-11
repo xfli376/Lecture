@@ -1,26 +1,30 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js </title>
-    
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <title>工程数学｜UESTC </title>
+
+    <meta name="description"
+        content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
 
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link
+        href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
+        rel="stylesheet" />
 
     <link href="../../others/impress.js/css/impress-common.css" rel="stylesheet" />
 
     <link href="../../others/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
 
-    <link href="./my-presentation.css" rel="stylesheet" />
+    <link href="./presentation.css" rel="stylesheet" />
 
     <script>
         MathJax = {
-          tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
         };
     </script>
     <script id="MathJax-script" async src="../../others//mathjax/es5/tex-chtml.js"></script>
@@ -29,54 +33,24 @@
 
 <body class="impress-not-supported">
 
-<!--
+    <!--
     For example this fallback message is only visible when there is `impress-not-supported` class on body.
 -->
-<div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-</div>
-
-<!--
-    
-    Now that's the core element used by impress.js.
-    
-    Only `id` is important here as that's how the script find it.
-    
-    I have used all of them below.
-
-    To change the duration of the transition between slides use `data-transition-duration="2000"` giving it
-    a number of ms. It defaults to 1000 (1s).
-    
-    When authoring impress.js presentations, you should target some screen size, which you can define here.
-    The default is 1024 x 768.  
-    
-    
-    You can also control the perspective with `data-perspective="500"` giving it a number of pixels.
-    It defaults to 1000. You can set it to 0 if you don't want any 3D effects.
-
-    Plugins:
-    
-    We set the default time for autoplay plugin to 7 seconds. Autoplay will automatically advance
-    to next slide after a timeout expires.
--->
-
-<!-- Some images that are fixed to background in the css -->
-<img id="bg-1" class="imgbg" src="../EM/EM-beamer/images/uestclogo-18.png">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a
+            simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
 
 
-<div id="impress"
-    data-transition-duration="1000"
-    
-    data-width="1024"
-    data-height="768"
-    data-max-scale="10"
-    data-min-scale="0"
-    data-perspective="1000"
-    
-    data-autoplay="14">
+    <!-- Some images that are fixed to background in the css -->
+    <img id="bg-1" class="imgbg" src="../EM/EM-beamer/images/uestclogo-18.png">
 
-    <!--
+    <!---Begin--Begin--Begin--Begin--Begin--Begin -->
+    <div id="impress" data-transition-duration="1000" data-width="1024" data-height="768" data-max-scale="10"
+        data-min-scale="0" data-perspective="1000" data-autoplay="14">
+
+        <!--
         
         Here is where interesting thing start to happen.
         
@@ -84,408 +58,1127 @@
         of `step`. These step elements are positioned, rotated and scaled by impress.js   
     -->
 
-    <div id="TITLE" class="step" data-x="-3000" data-y="-3000" data-z="-3000" data-autoplay="200" data-scale="2"> 
-        <h1>工程数学</h1>
-        <h2>Engineering Mathematics</h2>
-        <br/>
-        <h2>李小飞 <span class="at"><i class="fa fa-at" aria-hidden="true"></i></span> 光电科学与技术学院</h2>
-        <br/>
-        <span class="date"> 2023-03-01 </span>
-    </div>
+        <div id="TITLE" class="step" data-x="-3000" data-y="-3000" data-z="-3000" data-autoplay="200" data-scale="2">
+            <h1>工程数学</h1>
+            <h2>Engineering Mathematics</h2>
+            <br />
+            <h2>李小飞 <span class="at"><i class="fa fa-at" aria-hidden="true"></i></span> 光电科学与技术学院</h2>
+            <br />
+            <span class="date"> 2023-03-01 </span>
+        </div>
 
-    <div id="introd" class="step" data-x="-1500" data-y="-3000" data-z="-2500">
-        <h2>1. 课程简介：</h2>
-        <img src="../EM/EM-beamer/figs/fig1-2-2.png" width=550, height=400>
-        <p>17世纪微积分出现，物理学家写方程，数学物理学家解方程，试图通过方程的解来理解大千世界</p>
-    </div>
+        <div id="toc" class="step" data-rel-x="2200" data-rel-y="0">
+            <br>
+            <h2>Table of Contents</h2>
+            <br>
+            <li>课程简介</li>
+            <li>常微分方程</li>
+            <li>傅里叶变换</li>
 
-    <div  class="step" data-rel-position="relative" data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
-        <h3>数学分支：</h3>
-        <img src="../EM/EM-beamer/figs/fig1-1.png" width=800, height=450>
-        <p>数学：逻辑，算术，分析，统计，结构</p>
-    </div>
+            <div class="notes">
+                <p>Table of Contents, with links to other slides of this same presentation.</p>
 
-    <div  class="step" data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
-        <h3>分数构成：</h3>
+                <p>Note that instead of absolute positioning we use relative positioning,
+                    with the data-rel-x and data-rel-y attributes. This means the step is
+                    positioned relative to the foregoing step. In other words, this is
+                    equivalent to data-x="0" data-y="-3000".</p>
+            </div>
+        </div>
 
-        <ul>
-        <li>平时成绩： 15%</li>
-        <li>课堂测试： 15%</li>
-        <li>期末考试： 70%</li>
-        </ul>
-        
-    </div>
+        <div id="introd" class="step" data-x="-1500" data-y="-3000" data-z="-2500">
+            <br>
+            <h2>1. 课程简介：</h2>
+            <br>
+            <img src="../EM/EM-beamer/figs/fig1-2-2.png" width=550, height=350>
+            <p>17世纪微积分出现，物理学家写方程，数学物理学家解方程，试图通过方程的解来理解大千世界</p>
+        </div>
 
-    <div  class="step"  data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
-        <h3>教学效果：</h3>
-        <img src="../EM/EM-beamer/figs/exam1.png" width=800, height=500>
-    </div>
+        <div class="step" data-rel-position="relative" data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <h3>数学分支：</h3>
+            <img src="../EM/EM-beamer/figs/fig1-1.png" width=800, height=450>
+            <p>数学：逻辑，算术，分析，统计，结构</p>
+        </div>
 
-    <div  class="step"  data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
-        <h3>教学内容：</h3>
-        <ul>
-            <li>第一章 绪论</li>
-            <li>第二章 偏微分方程</li>
-            <li>第三章 薛定谔方程</li>
-            <li>第四章 氢原子薛定谔方程</li>
-            <li>第五章 特殊函数及其应用</li>
-        </ul>
-    </div>
-    <div  class="step"  data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
-        <h3>参考书目：</h3>
-        <ul>
-            <li>教材：《工程数学讲义》 李明奇，钟尔杰，国防工业出版社， 待出版</li>
-            <li>Mathematics for Physicists》 Shaw, G.</li>
-            <li>《数学物理方法》 姚瑞正，梁家宝 ，武汉大学出版社，1992</li>
-            <li>《数学物理方程与特殊函数》南京工学院教研组，人民教育出版社，1983</li>
-            <li>《数学物理方程》孙振绮，机械工业出版社，2004</li>
-        </ul>
-    </div>
+        <div class="step" data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <br>
+            <br>
+            <h3>分数构成:</h3>
+            <br>
 
-    <div id="bigman" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0"> 
-        <h2>2. 数理名家</h2>
-        <ul>
+            <li class="substep">平时成绩： 15%</li>
+            <li class="substep">课堂测试： 15%</li>
+            <li class="substep">期末考试： 70%</li>
+
+
+        </div>
+
+        <div class="step" data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <h3>教学效果：</h3>
+            <img src="../EM/EM-beamer/figs/exam1.png" width=800, height=500>
+        </div>
+
+        <div class="step" data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <br>
+            <h3>课时分配:</h3>
+            <br>
+            <ul>
+                <li>第一章 绪论 (4)</li>
+                <li>第二章 偏微分方程（6）</li>
+                <li>第三章 薛定谔方程（8）</li>
+                <li>第四章 氢原子薛定谔方程（8）</li>
+                <li>第五章 特殊函数及其应用（6）</li>
+            </ul>
+        </div>
+        <div class="step" data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <br>
+            <h3>参考书目：</h3>
+            <br>
+            <ul>
+                <li>教材：《工程数学讲义》 李明奇，钟尔杰，国防工业出版社， 待出版</li>
+                <li>Mathematics for Physicists》 Shaw, G.</li>
+                <li>《数学物理方法》 姚瑞正，梁家宝 ，武汉大学出版社，1992</li>
+                <li>《数学物理方程与特殊函数》南京工学院教研组，人民教育出版社，1983</li>
+                <li>《数学物理方程》孙振绮，机械工业出版社，2004</li>
+            </ul>
+        </div>
+
+        <div id="bigman" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <br>
+            <h2>2. 数理名家</h2>
+            <br>
+
             <li>拉普拉斯（法）</li>
             <li>泊松（法）</li>
             <li>勒让德（法）</li>
             <li>傅里叶（法）</li>
             <li>格林（英）</li>
             <li>贝塞尔（德）</li>
-        </ul>
-    </div>
 
-    <div  class="step " data-rel-x="0" data-rel-y="-1000"  data-rel-z="500">
-        <h3>拉普拉斯</h3>
-        <img src="../EM/EM-beamer/figs/fig1-3-1.png" width=800, height=450>
-        <p>乾隆年间生成，解拉普拉斯方程，开数理方程先河</p>
-    </div>
-    <div  class="step " data-rel-x="0" data-rel-y="-1000"  data-rel-z="500">
-        <h3>泊松</h3>
-        <img src="../EM/EM-beamer/figs/fig1-3-4.png" width=800, height=450>
-        <p>泊松方程: 发现Laplace方程只是Poisson方程的特例</p>
-    </div>
-    <div  class="step " data-rel-x="0" data-rel-y="-1000"  data-rel-z="500">
-        <h3>勒让德</h3>
-        <img src="../EM/EM-beamer/figs/fig1-3-5.png" width=800, height=450>
-        <p>勒让德方程: 发现球坐标系Laplace方程与勒让德方程等效</p>
-    </div>
-    <div  class="step " data-rel-x="0" data-rel-y="-1000"  data-rel-z="500">
-        <h3>傅里叶</h3>
-        <img src="../EM/EM-beamer/figs/fig1-3-3.png" width=800, height=450>
-        <p> 分离变量法，积分变换法，傅里叶级数，傅里叶变换，叠加原理</p>
-    </div>
-    <div  class="step " data-rel-x="0" data-rel-y="-1000"  data-rel-z="500">
-        <h3>格林</h3>
-        <img src="../EM/EM-beamer/figs/fig1-3-2.png" width=800, height=450>
-        <p> 格林函数: Laplace方程和泊松方程的解都是格林函数的叠加</p>
-    </div>
-    <div  class="step " data-rel-x="0" data-rel-y="-1000"  data-rel-z="500">
-        <h3>贝塞尔</h3>
-        <img src="../EM/EM-beamer/figs/fig1-3-2.png" width=800, height=450>
-        <p> 柱坐标系下Laplace方程是贝塞尔方程，解是一系列贝塞尔函数的叠加</p>
-    </div>
-    <div  class="step " data-rel-x="0" data-rel-y="-1000"  data-rel-z="500">
-        <h3>新方程与新解法</h3>
-        <ul>
-            <li>薛定谔方程</li>
-            <li>爱因斯坦场方程</li>
-        </ul>
-    </div>
+        </div>
 
-    <div id="ODE" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0"> 
-        <h2>3. 常微分方程</h2>
-        <ul>
-            <li>衰减、增长模型</li>
+        <div class="step " data-rel-x="0" data-rel-y="-1000" data-rel-z="500">
+            <h3>拉普拉斯</h3>
+            <img src="../EM/EM-beamer/figs/fig1-3-1.png" width=800, height=450>
+            <p>乾隆年间生成，解拉普拉斯方程，开数理方程先河</p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="-1000" data-rel-z="500">
+            <h3>泊松</h3>
+            <img src="../EM/EM-beamer/figs/fig1-3-4.png" width=800, height=450>
+            <p>泊松方程: 发现Laplace方程只是Poisson方程的特例</p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="-1000" data-rel-z="500">
+            <h3>勒让德</h3>
+            <img src="../EM/EM-beamer/figs/fig1-3-5.png" width=800, height=450>
+            <p>勒让德方程: 发现球坐标系Laplace方程与勒让德方程等效</p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="-1000" data-rel-z="500">
+            <h3>傅里叶</h3>
+            <img src="../EM/EM-beamer/figs/fig1-3-3.png" width=800, height=450>
+            <p> 分离变量法，积分变换法，傅里叶级数，傅里叶变换，叠加原理</p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="-1000" data-rel-z="500">
+            <h3>格林</h3>
+            <img src="../EM/EM-beamer/figs/fig1-3-2.png" width=800, height=450>
+            <p> 格林函数: Laplace方程和泊松方程的解都是格林函数的叠加</p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="-1000" data-rel-z="500">
+            <h3>贝塞尔</h3>
+            <img src="../EM/EM-beamer/figs/fig1-3-2.png" width=800, height=450>
+            <p> 柱坐标系下Laplace方程是贝塞尔方程，解是一系列贝塞尔函数的叠加</p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="-1000" data-rel-z="500">
+            <br>
+            <h3>新方程:</h3>
+            <br>
+
+            <li class="substep">薛定谔方程</li>
+            <br>
+            <li class="substep">爱因斯坦场方程</li>
+            <br>
+            <li class="substep">...</li>
+
+        </div>
+
+        <div id="lecture-1" class="step " data-rel-x="2000" data-rel-y="0" data-rel-z="0" data-rotate-z="85">
+            <br>
+            <br>
+            <h2>第一讲 常微分方程</h2>
+            <br>
+            <br>
+            <li>衰减与增长模型</li>
             <li>振动模型</li>
             <li>通用解法</li>
-        </ul>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <h2> 1. 一阶微分方程的数学模型</h2>
+            <br>
+            <p><span class="exam">例-1：</span>求解放射性衰减方程</p>
+            $$\frac{du}{dt} = - r u, \qquad u(t_0) = u_0$$
+            <p><span class="answer">解：</span>方程可分离变量</p>
+            \begin{aligned}
+            \frac{du}{u} &= - rdt\\
+            \ln u &=-rt+C\\
+            u(t)&=C'exp(-rt) \\
+            \end{aligned}
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <p>代入定解条件（t=0), 有</p>
+            \begin{aligned}
+            u(t_0) & = C'exp(-rt_0) \\
+            & = u_0 \\
+            \implies C' & =u_0
+            \end{aligned}
+            方程的解为：
+            $$ u(t)=u_0 exp(-rt) $$
+            <p class="substep">显然，这是一个指数哀减。当$r>0$时, 当$t \to \infty$， $u(t) \to 0$ </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            衰减过程的一个重要参数是半衰期（T）
+            <p><span class="answer">解：</span>在T时刻，体系的质量只有原来的一半</p>
+            \begin{aligned}
+            \frac{1}{2}u_0 &=u(T) \\
+            & =u_0 exp(-rT) \\
+            T &=\frac{1}{r} \ln 2 \\
+            & \approx \frac{1}{r} \times 0.6931
+            \end{aligned}
+            <p><span class="substep over"> 结束！ </span></p>
+        </div>
+
+        <div class="step" data-rel-x="1000" data-rel-y="1000" data-rel-z="-500" data-scale="4">
+            <span class="exam"> 例-2：</span> 求人口增长的模型(逻辑斯蒂)
+            <br>
+            <span class="answer"> 解：</span>方程可分离变量
+            \begin{aligned}
+            \frac{1}{u(1-u / K)}du &=r d t \\
+            \frac{u / K+(1-u / K)}{u(1-u / K)} d u &=r d t \\
+            (\frac{1}{K-u}+\frac{1}{u} ) d u &=r d t \\
+            -\ln (K-u)+\ln u &=r t+C \\
+            \end{aligned}
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            \begin{aligned}
+            &\ln \frac{u}{K-u} = r t+C\\
+            &\frac{u}{K-u} = \exp (r t+C)\\
+            &u(t) = \frac{K}{1+ \exp (-r t-C)}
+            \end{aligned}
+
+            <p>参数C由初始条件确定</p>
+            <br>
+            <p class="substep"> <span class="tips"> TIPS: </span> 一生二, 二生三, 三生万物? </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <h2> 2. 二阶常微分方程的数学模型</h2>
+            <br>
+            <span class="exam"> 例-3: </span> 建立简谐振动微分方程
+            <center><img src="../EM/EM-beamer/figs/auto.gif" width=500, height=250></center>
+
+            <span class="answer"> 解: </span> 根据牛顿第二定律和胡克力定律，有
+
+            \begin{equation*}
+            F= -k x, ~~ F=Ma= M\frac{d ^2 x}{d t^2}
+            \end{equation*}
+        </div>
+
+
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            整理
+            $$\frac{d ^2 x}{d t^2} +\frac{k}{M} x =0$$
+
+            写成标准数理方程
+            \begin{cases}
+            x^{\prime \prime} +\omega ^2 x = 0 \qquad (1) \\
+            \\
+            x(t)\left |_{t=0} =x_0 \right. \qquad (2) \\
+            x^{\prime}(t) \left |_{t=0} =0 \right. \qquad (3)
+            \end{cases}
+
+            <p class="substep">（2）和（3）分别是初始位置和速度，统称<span class="item"> 初始条件 </span> </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <span class="answer"> 解方程: </span>
+            这是二阶常系数齐次微分方程, 可通过辅助方程求解
+            \begin{aligned}
+            u^2+\omega ^2&=0 \\
+            u_{1, 2} &=\pm i\omega
+            \end{aligned}
+            原方程的基本解
+            $$ \begin{cases}
+            x_{1} =\cos \omega t \\
+            x_{2} =\sin \omega t
+            \end{cases} $$
+            通解： $x(t)=C_1 \cos \omega t +C_2 \sin \omega t $ <br>
+            代入定解条件, 得特解：
+            $$x(t)=x_0 \cos \omega t $$
+        </div>
+
+        <div id="eg_4" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+
+            <span class="exam"> 例-4: </span> 考虑空气阻力， 有如下小阻尼振动微分方程， 试求解
+            \begin{equation*}
+            \frac{d^2 x}{d t^2} +2\varepsilon \frac{d x}{dt} +\omega ^2 x = 0 , ~~~ (\varepsilon \ll \omega)
+            \end{equation*}
+
+            <span class="answer"> 解: </span> 令 $ x(t)= exp(-\varepsilon t) u(t) $, 微分
+
+            $$
+            \begin{aligned}
+            \frac{d x}{d t } & =exp(-\varepsilon t) [-\varepsilon u +\frac{d u}{dt}]\\
+            \frac{d^2 x}{d t^2 } & =exp(-\varepsilon t) [\varepsilon ^2 u -2\varepsilon \frac{d u}{dt}+ \frac{d^2
+            u}{dt^2} ]
+            \end{aligned}
+            $$
+
+            代回方程并整理
+            $$ \frac{d^2 u}{d t^2} +(\omega ^2 - \varepsilon ^2) u = 0, \quad (\varepsilon \ll \omega) $$
+
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            令 $k^2 =\omega ^2 - \varepsilon ^2 >0 $, 得简谐振动方程标准型
+            $$\frac{d^2 u}{d t^2} +k ^2 u = 0$$
+
+            由公式得
+            \begin{equation*}
+            u(t)=C_1 \cos k t +C_2 \sin k t
+            \end{equation*}
+
+            方程的通解
+            \begin{equation*}
+            x(t)= exp(-\varepsilon t) \left[ C_1 \cos \sqrt{k} t +C_2 \sin \sqrt{k} t \right]
+            \end{equation*}
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            如存在定解条件，则一样可以写出特解，比如：
+
+            \begin{equation*}
+            x(t)= x_0 exp(-\varepsilon t) \cos \sqrt{\omega ^2 - \varepsilon ^2} t
+            \end{equation*}
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            很明显，振幅呈指数衰减！
+            <center><img src="../EM/EM-beamer/figs/harmonic_damped.gif" width=500, height=300></center>
+        </div>
+        <div id="eg_5" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+
+            <span class="exam"> 例-5: </span> 考虑加上周期性的策动力 $p \sin \omega_0 t$， 则有如下非齐次振动方程， 试求解
+            \begin{equation*}
+            \frac{d^2 x}{d t^2} +\omega ^2 x = p \sin \omega_0 t , ~~~ (\varepsilon \ll \omega)
+            \end{equation*}
+
+            <span class="answer"> 解: </span> 对应齐次方程的通解：
+
+            \begin{equation*}
+            u(t)=C_1 \cos \omega t +C_2 \sin \omega t
+            \end{equation*}
+
+            因此，可以设非齐次方程的特解为：
+            $$ u(t) =C \sin \omega_0 t $$ {.fragment .fade-up}
+
+            <p class="substep">问题转化为求 $C$ （待定系数法） </p>
+        </div>
+
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            把特解代回原方程
+            $$ \begin{aligned}
+            C(\omega^2-\omega_{0} ^2 ) \sin(\omega_0 t)& =p\sin(\omega_0 t)\\
+            C & = \frac{p}{\omega^2-\omega_{0} ^2 }
+            \end{aligned} $$
+
+            原方程的解为：对应齐次方程的通解+特解
+            $$ x(t)= C_1 \cos \omega t +C_2 \sin \omega t+ \frac{p}{\omega^2-\omega_{0} ^2 } \sin (\omega_0 t) $$
+
+            <span class="tips"> TIPS: </span> 当策动函数为多项式函数，三角函数等与通解形式相类似型时， 待定系数法通常可确定特解。对于一般性的情况，可采用常数变易法求解。
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <span class="item">分析：</span> 这是固固有频率和策动频率两种波的线性叠加
+
+            <center><img src="../EM/EM-beamer/figs/my.svg" width=800, height=350></center>
+
+
+            <li class="substep">如果两频率相近，发生<span class="item">共振</span> 。</li>
+            <li class="substep">器件的工作频率要远离固有频率。</li>
+            <li class="substep">如果是衰减波，最后只留下策动频率波。</li>
+
+
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            如果既有策动又有空气阻尼，方程为：
+
+            \begin{equation*}
+            \frac{d^2 x}{d t^2} +2\varepsilon \frac{d x}{dt} +\omega ^2 x = f(t) , ~~~ (\varepsilon \ll \omega)
+            \end{equation*}
+
+            如果策动还与位置相关，则方程为：
+
+            \begin{equation*}
+            \frac{d^2 x}{d t^2} +2\varepsilon \frac{d x}{dt} +\omega ^2 x = f(x, t) , \qquad(\varepsilon \ll \omega)
+            \end{equation*}
+
+            如果阻尼系数是位置的函数（比如空间密度不是常数），则方程为：
+
+            \begin{equation*}
+            \frac{d^2 x}{d t^2} +2\varepsilon(x) \frac{d x}{dt} +\omega ^2 x = f(x, t) , \quad(\varepsilon \ll \omega)
+            \end{equation*}
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            如果再考虑到阻尼导致弹簧温度变化，进而影响弹性系数，则方程为：
+
+            \begin{equation*}
+            \frac{d^2 x}{d t^2} +2\varepsilon(x) \frac{d x}{dt} +\omega^2 (t) x = f(x, t) , ~~~ (\varepsilon \ll \omega)
+            \end{equation*}
+
+            如果弹簧不同的位置温度变化不一样，则方程为：
+
+            \begin{equation*}
+            \frac{d^2 x}{d t^2} +2\varepsilon(x) \frac{d x}{dt} +\omega^2 (x,t) x = f(x, t) , ~~~ (\varepsilon \ll
+            \omega)
+            \end{equation*}
+
+            <p class="substep"><span class="tips"> TIPS: </span> 现实工程里的数理方程远比《工程数学》教材上的方程复杂！建立方程并求解是工科学校学生的一项基本功。 </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <br>
+            <h2>3. 常微分方程的通用解法</h2>
+            <br>
+            <li>常数变易法</li>
+            <li>特征方程</li>
+            <li>变量代换法></li>
+            <li>级数展开法</li>
+        </div>
+
+        <div id="eg_6" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+
+            <span class="exam"> 例-6: </span> 求解一阶常系数线性非齐次常微分方程
+            $$ y'+py=f(x)$$
+
+            <span class="answer"> 解: </span> 对应的齐次方程是衰减数学模型，有解：
+            $$y=C exp(-px)$$
+
+            采用常数变易法，设非齐次方程的解为
+            $$y(x) =C(x) exp(-px)$$
+
+            求导
+            $$ \begin{aligned}
+            y'&= -p C(x) exp(-px) + C'(x) exp(-px) \\
+            py &= p C(x) exp(-px)
+            \end{aligned} $$
+
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            代入原方程, 得
+            $$ exp(-px)C'(x) = f(x)$$
+            解得
+            $$ C(x) = \int exp(px) f (x)dx + c $$
+
+            原方程的（通）解为
+            $$ \begin{aligned}
+            y(x) &=C(x) exp(-px) \\
+            &= \left(\int exp(px) f (x)dx + c\right) exp(-px)
+            \end{aligned}$$
+
+            <span class="item">分析：</span> 做指数哀减，哀减幅度由初始条件和自由项共同决定
+
+        </div>
+
+        <div id="eg_7" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+
+            <span class="exam"> 例-7: </span> 求一阶非齐次变系数微分方程:
+            \begin{equation*}
+            y^{\prime}+P(x) y=Q(x)
+            \end{equation*}
+
+            <span class="answer"> 解: </span> 对应的齐次方程为：
+
+            \begin{equation*}
+            y^{\prime}+P(x) y=0
+            \end{equation*}
+
+            分离变量法得通解
+            $$y=Ce^{-\int P(x)dx}$$
+
+            常数变易，令： $C=C(x)$，得
+            $$
+            y=C(x)e^{-\int P(x)dx}
+            $$
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            求导并代回原方程
+            $$
+            C^{\prime}(x)=\frac {Q(x)} {e^{-\int P(x)dx}}
+            $$
+
+            积分得
+            $$
+            C(x)=\int Q(x)e^{\int P(x)dx} dx+c
+            $$
+
+            原方程得解
+            $$
+            y=\left(\int Q(x)e^{\int P(x)dx} dx+c\right)e^{-\int P(x)dx}
+            $$
+        </div>
+        <div id="eg_8" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <span class="exam"> 例-8: </span> 求解二阶常系数非齐次常微分方程
+            $$ y^{\prime \prime}+py'+qy=f(x) $$
+
+            <span class="answer"> 解: </span> 对应的齐次方程为：
+            $$ y^{\prime \prime}+py'+qy=0 $$
+
+            特征方程
+            $$ \lambda^2 +p\lambda +q=0 $$
+
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            解有三种情况：
+
+            $$ \begin{aligned}
+            两相异实根：& \lambda_1 \ne \lambda_2 \\
+            两相同实根：& \lambda_1 = \lambda_2 \\
+            两共轭复根：& \lambda_1=\alpha+i\beta , \lambda_2=\alpha-i\beta
+            \end{aligned}$$
+
+            对应的齐次方程的通解：
+
+            $$ \begin{aligned}
+            两相异实根：y=& C_1 exp(\lambda_1 x)+ C_2 exp (\lambda_2 x) \\
+            两相同实根：y=& (C_1+C_2x) exp (\lambda_1 x) \\
+            两共轭复根：y=& exp(\alpha x) [C_1 \cos (\beta x)+ C_2 sin (\beta x)]
+            \end{aligned}$$
+
+            根据自由项的特点，再通过待定系数法或常数变易法求解非齐次常微分方程。
+        </div>
+
+        <div id="eg_9" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+
+            <span class="exam"> 例-9: </span> 求解二阶常系数非齐次常微分方程的初值问题
+            \begin{cases}
+            u^{\prime \prime} +\omega ^2 u =f, (t>0)\\
+            \\
+            u(0)=0, u'(0)=0
+            \end{cases}
+
+            <span class="answer"> 解: </span> 这是振动数学模型，齐次方程有通解：
+            $$ u=C_1 \cos(\omega t)+C_2 \sin(\omega t) $$
+
+            由于$f$的函数形式不明，不能写出特解。采用常数变易，设非齐次方程的解为
+            $$ u=C_1 (t) \cos(\omega t)+C_2 (t) \sin(\omega t) $$
+
+        </div>
+
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            求导
+            $$ \begin{aligned}
+            u'& =[C'_1(t) \cos(\omega t)+C'_2(t) \sin(\omega t)] \\
+            &+ [ - \omega C_1(t) \sin(\omega t)+ \omega C_2(t) \cos(\omega t) ]
+            \end{aligned} $$
+
+            令 $$[C'_1(t) \cos(\omega t)+C'_2(t) \sin(\omega t)]=0 \qquad (1) $$
+
+            再求导
+            $$ u^{\prime \prime}= [ - \omega C'_1(t) \sin(\omega t)+ \omega C'_2(t) \cos(\omega t) ] -\omega^2 u $$
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            代回原方程
+            $$ [ - \omega C'_1(t) \sin(\omega t)+ \omega C'_2(t) \cos(\omega t) ] =f \qquad( 2) $$
+
+            联立（1）（2）， 得方程组
+            $$\qquad \begin{bmatrix}
+            \cos(\omega t) & \sin(\omega t) \\
+            -\omega \sin(\omega t) & \omega\cos(\omega t)
+            \end{bmatrix}
+            \begin{bmatrix}
+            C'_1(t)\\
+            C'_2(t)
+            \end{bmatrix} =
+            \begin{bmatrix}
+            0\\
+            f
+            \end{bmatrix} $$
+
+            求解：
+            \begin{cases}
+            C'_1(t)=\dfrac{f}{\omega} \sin(\omega t) \\
+            C'_2(t)=\dfrac{f}{\omega} \cos(\omega t)
+            \end{cases}
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            积分得
+            \begin{cases}
+            C_1(t)=\dfrac{1}{\omega} [\int_{0}^{\tau} \sin(\omega \tau) f(\tau) d\tau +c_1 ]\\
+            C_2(t)=\dfrac{1}{\omega} [\int_{0}^{\tau} \cos(\omega \tau) f(\tau) d\tau +c_2 ]\
+            \end{cases}
+
+            原方程的通解：
+            \begin{aligned}
+            u=&\dfrac{1}{\omega}\cos(\omega t)[\int_{0}^{\tau} \sin(\omega \tau) f(\tau) d\tau +c_1 ] \\
+            &+\dfrac{1}{\omega} \sin(\omega t) [\int_{0}^{\tau} \cos(\omega \tau) f(\tau) d\tau +c_2 ]
+            \end{aligned}
+
+            代入定解条件，得 $c_1=c_2=0$
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            原方程的解为：
+            \begin{aligned}
+            u=&\dfrac{1}{\omega}\cos(\omega t)\left[\int_{0}^{\tau} \sin(\omega \tau) f(\tau) d\tau \right] \\
+            &+\dfrac{1}{\omega} \sin(\omega t) \left[\int_{0}^{\tau} \cos(\omega \tau) f(\tau) d\tau \right]
+            \end{aligned}
+
+            <p><span class="substep over"> 结束！ </span></p>
+
+        </div>
+        <div id="eg_10" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+
+            <span class="exam"> 例-10: </span> 求二阶变系数齐次常微分方程（欧拉方程-1）
+            $$ x^2 \frac{d^2 y}{d x^2} +x \frac{d y}{d x} +n^2 y =0 $$
+
+            <span class="answer"> 解: </span> 作变量代换,令 $x=exp(t) , (t=ln x)$，求微分：
+
+            $$
+            \frac{d y}{d x} = \frac{d y}{d t}\frac{d t}{d x}= \frac{1}{ x}\frac{d y}{d t} \implies x \frac{d y}{d x}=
+            \frac{d y}{d t}
+            $$
+
+            $$ \frac{d ^2y}{d x^2} = \frac{d }{d t} ( \frac{1}{ x}\frac{d y}{d t} )\frac{d t}{d x}=
+            \frac{1}{ x^2}(\frac{d ^2y}{d t^2} - \frac{d y}{d t}) $$
+
+            $$ x^2 \frac{d^2 y}{d x^2} = \frac{d ^2y}{d t^2} - \frac{d y}{d t} $$
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            代回原方程并整理，得
+            $$ \frac{d^2 y}{d t^2} +n^2 y =0 $$
+
+            这是振动数学模型，有通解：
+            $$ u=C_1 \cos(n t)+C_2 \sin(n t) $$
+
+            把 $t=ln x$ 代入，得原方程的通解
+            $$ y(x)=C_1 \cos (n \ln x) +C_2 \sin (n \ln x) $$
+
+            <p><span class="substep over"> 结束！ </span></p>
+        </div>
+
+        <div id="eg_11" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+
+
+            <span class="exam"> 例-11: </span> 求二阶变系数齐次常微分方程（欧拉方程-2）
+            $$ x^2 \frac{d^2 y}{d x^2} +2x \frac{d y}{d x} -n(n+1) y =0 $$
+
+            <span class="answer"> 解: </span> 令 $x=exp(t) , (t=ln x)$，求微分：
+
+            $$
+            \frac{d y}{d x} = \frac{d y}{d t}\frac{d t}{d x}= \frac{1}{ x}\frac{d y}{d t} \implies x \frac{d y}{d x}=
+            \frac{d y}{d t}
+            $$
+
+            $$ \frac{d ^2 y}{d x^2} = \frac{d }{d t} ( \frac{1}{ x}\frac{d y}{d t} )\frac{d t}{d x}=
+            \frac{1}{ x^2}(\frac{d ^2y}{d t^2} - \frac{d y}{d t}) $$
+
+            $$ x^2 \frac{d^2 y}{d x^2} = \frac{d^2 y}{d t^2} - \frac{d y}{d t} $$
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            代回原方程并整理，得
+            $$ \frac{d^2 y}{d t^2 } +\frac{dy}{dt}-n(n+1) y =0 $$
+
+            这是含哀减项的非标准振动数学模型，写特征方程
+            $$ \lambda^2 +\lambda -n(n+1) =0 $$
+
+            两相异实根：$ \lambda_1 =n, \quad \lambda_2 = -(n+1) $ <br>
+
+            方程的解为：
+            $$ y(t)=C_1 \exp (nt) +C_2 \exp (-(n+1) t) $$
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            代入 $t=ln x$, 原方程得解：
+            $$ y(x)=C_1 x^n +C_2 x^{-(n+1) } $$
+
+            <p class="substep"><span class="tips"> TIPS: </span> 考虑其他更复杂的方程形式 </p>
+
+            <li class="substep">系数是其他形式的二阶欧拉方程</li>
+            <li class="substep">非齐式二阶欧拉方程</li>
+            <li class="substep">高阶欧拉方程</li>
+        </div>
+
+
+        <div id="eg_12" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+
+            <span class="exam"> 例-12: </span> 求二阶变系数非齐次常微分方程（欧拉方程-3）
+            $$ x^2 \frac{d^2 y}{d x^2} -2x \frac{d y}{d x} +2y = \ln^2( x) -2 \ln(x) $$
+
+            <span class="answer"> 解: </span> 令 $x=exp(t) , (t=ln x)$，求微分并代回原方程
+
+            $$
+            \frac{d^2 y}{d t^2} -3\frac{dy}{dt} +2 y =t^2 -2t $$
+
+            <p>这是含哀减项和策动项（自由项）的非标准振动数学模型，</p>
+
+            先写齐次方程的特征方程
+            $$ \lambda^2 -3\lambda + 2 =0 $$
+
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            有两相异实根
+            $$ \lambda_1 =1, \lambda_2 =2 $$
+
+            通解：
+            $$y_1 =C_1 e^t +C_2 e^{2t} $$
+
+            <p>现在有二条路可走 </p>
+            <li>特解+通解 </li>
+            <li>常数变易法 </li>
+
+            考虑自由项（$ \ln^2( x) -2 \ln(x) = t^{2} -2 t $ ），令特解为：
+            $$ y_2 = a t^2 +bt+c $$
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            把特解代回原方程, 并求解得
+            $$ y_2=\frac{1}{2} t^2+\frac{1}{2}t+\frac{1}{4} $$
+
+            原方程得解
+            $$ y= y_1 + y_2 =C_1 e^t +C_2 e^{2t}+\frac{1}{2} t^2+\frac{1}{2}t+\frac{1}{4} $$
+
+            代入 $t=ln x $, 得
+            $$ y(x)=C_1 x +C_2 x^2+\frac{1}{2} \ln ^2 x+\frac{1}{2}\ln x+\frac{1}{4} $$
+
+            <p><span class="substep over"> 结束！ </span></p>
+        </div>
+
+        <div id="eg_13" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <span class="exam"> 例-13: </span> 求二阶变系数齐次常微分方程（n 阶厄米方程）
+            $$ \frac{d^2 y}{d x^2} -2x \frac{d y}{d x} +2n y =0 $$
+
+            <span class="answer"> 解: </span> 设方程有级数解
+            $$ y=\sum_{k=0}^{\infty} c_k x^k $$
+
+            <p class="substep"> 问题转化为求 { $c_k$ } </p>
+        </div>
+
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            求导：
+            \begin{aligned}
+            y' &= \sum\limits_{k=1}^{\infty} k c_k x^{k-1} \\
+            &= \sum\limits_{k=0}^{\infty} (k+1) c_{k+1} x^{k}\\
+            \end{aligned}
+
+            \begin{aligned}
+            y'' &= \sum\limits_{k=2}^{\infty} k (k-1) c_k x^{k-2} \\
+            &= \sum\limits_{k=0}^{\infty} (k+2) (k+1) c_{k+2} x^k
+            \end{aligned}
+
+            <li class="substep">(注意：<span class="item">脚标变换</span> 大法！) </li>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            代回原方程：
+            $$ \sum_{k=0}^{\infty} [ (2n -2k)c_k +(k+2)(k+1) c_{k+2} ] x^k =0 $$
+
+            一个多项式为零，要求所有项的系数为零
+            $$ (2n -2k)c_k +(k+2)(k+1) c_{k+2} =0 $$
+
+            得系数递推式：
+            $$ c_{k+2} = \frac{ 2(k-n)}{(k+2)(k+1) } c_k, ( k=0,1,2,3, \cdots )$$
+
+            这是隔项递推，如果知道 $c_0, c_1$ ， 则所有的 $c_k$ 都可得。
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            试推一下：
+            $$\begin{cases}
+            c_2 =- \frac{2n}{2!} c_0\\
+            c_4 = \frac{2^2n(n-2)}{4!} c_0 \\
+            c_6 = -\frac{2^3n(n-2)(n-4)}{6!} c_0 \\
+            \cdots
+            \end{cases} $$
+
+            偶数阶：
+            $$c_{2m} = (-1) ^m \frac{2^m n(n-2)(n-4) \cdots (n-2m+2) } {(2m)!} c_0 $$
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            同理，奇数阶:
+            $$ c_{2m+1} = (-1) ^m \frac{2^m (n-1) (n-3)(n-5)...(n-2m+1) } {(2m+1)!} c_1 $$
+
+            令：
+            \begin{cases}
+            y_1(x) = [1- \dfrac{2n}{2!} x^2+ \dfrac{2^2n(n-2)}{4!} x^4 -\cdots ] \\
+            y_2(x) = [x- \dfrac{2(n-1)}{3!} x^3+ \dfrac{2^2(n-1)(n-3) }{5!}x^5 -\cdots ]
+            \end{cases}
+
+            原方程得解：
+            $$y(x) =c_0y_1(x)+c_1 y_2(x)$$
+
+        </div>
+
+        <div id="lecture-2" class="step " data-rel-x="3000" data-y="0" data-rel-z="500" data-rotate-z="85">
+            <br>
+            <br>
+            <h2>第二讲 傳里叶级数与傅里叶变换 </h2>
+            <br>
+            <li>数学公式</li>
+            <li>物理意义</li>
+            <li>正交完全集</li>
+
+        </div>
+        <div id="maths" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="500">
+            <br>
+            <h2>1. 数学公式</h2>
+            <br>
+
+            如果$f(x)$是定义于$(-\infty,+\infty)$的周期函数（$T=2l$）, 则可表示成如下级数形式：
+            $$ \begin{cases}
+            f(x) =\dfrac{a_0}{2} +\sum\limits_{n=1}^{\infty} \left( a_n \cos~ \dfrac{n\pi}{l} x + b_n \sin~
+            \dfrac{n\pi}{l} x \right) \\
+            a_n =\dfrac{1}{l} \int\limits_{-l}^{l} f(\xi ) \cos~ \dfrac{n\pi}{l} \xi d\xi \\
+            b_n =\dfrac{1}{l} \int\limits_{-l}^{l} f(\xi ) \sin~ \dfrac{n\pi}{l} \xi d\xi
+            \end{cases} $$
+
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="-45" data-scale="5">
+
+            如果$f(x)$不是周期函数，则有如下变换形式
+            $$ \begin{cases}
+            f(x) =\int\limits_{-\infty}^{+\infty} G(\omega) e^{i\omega x} d\omega\\
+            G(\omega) = \dfrac{1}{2\pi} \int\limits_{-\infty}^{+\infty} f(x) e^{-i\omega x} dx
+            \end{cases} $$
+
+            当然，上式可以写成对称形式
+            $$ \begin{cases}
+            f(x) = \dfrac{1}{\sqrt{2\pi} }\int\limits_{-\infty}^{+\infty} G(\omega) e^{i\omega x} d\omega\\
+            G(\omega) = \dfrac{1}{\sqrt{2\pi} } \int\limits_{-\infty}^{+\infty} f(x) e^{-i\omega x} dx
+            \end{cases} $$
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            如果考虑频率量子化， 则有：
+            $$ \begin{cases}
+            f(x) = \dfrac{1}{\sqrt{2\pi} }\sum c_n e^{i\omega_n x} \\
+            c_n =\dfrac{1}{\sqrt{2\pi} } \int\limits_{-\infty}^{\infty} f(x) e^{-i\omega_n x} d x
+            \end{cases} $$
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <br>
+            <h2>2. 物理意义</h2>
+            <br>
+
+            考察: 周期性策动下谐振子的解（例-5）
+            $$ \begin{aligned}
+            x(t) & = C_1 \cos \omega t +C_2 \sin \omega t+ \frac{p}{\omega^2-\omega_{0} ^2 } \sin (\omega_0 t) \\
+            & = a_0 /2 + a_1 \cos \omega _1 t +b_1 \sin \omega _1 t + a_2 \cos \omega _2 t +b_2 \sin \omega _2 t
+            \end{aligned} $$
+
+            <span class="item">注：</span> $a_0$是零率的振幅，$a_1$和$b_1$是基率的振幅，$a_2$和$b_2$是策动率的振幅
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            如果存在多级策动，效果如下
+            <center><img src="../EM/EM-beamer/figs/fourier2.gif" width=600, height=300></center>
+
+            其波函数应是各率波函数的线性叠加（具有周期性）
+            $$ f(x) =\dfrac{a_0}{2} +\sum\limits_{n=1}^{\infty} \left( a_n \cos~ \dfrac{n\pi}{l} x + b_n \sin~
+            \dfrac{n\pi}{l} x \right) $$
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            上例表明：一个方波信号可以用{$\sin \omega_n x, \cos \omega_n x$} 函数的叠加来表示
+            <center><img src="../EM/EM-beamer/figs/fourier.gif" width=600, height=200></center>
+
+            那么，是否任意的周期函数$f(x)$也可以用$\left\{\cos \omega_n x,\sin \omega_n x \right\}$函数的叠加来表示呢？ <br>
+
+            <br>
+
+            <p class="substep">（物理 $ \implies $ 数学） </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            结论（傅里叶）: <br>
+            <br>
+            <li class="substep" >周期函数可以 </li>
+            <br>
+            <li class="substep" >非周期函数也可以</li>
+            <br>
+            <li class="substep" >奥秘在于正交集！</li>
+       
+
+        </div>
+        <div id="orthogonality" class="step " data-rel-x="2000" data-rel-y="0" data-rel-z="0">
+            <br>
+            <br>
+            <h2>3. 正交完全集</h2>
+            <br>
+            <br>
+            <li>{$ \cos \omega_n x,\sin \omega_n x $} 是一个正交完全集 </li>
+            <br>
+            <li>{$e^{i \omega_n x} $ } 也是一个正交完全集 </li>
+
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <br>
+            例如：{$\vec{i}$, $\vec{j}$, $\vec{k}$ }构成三维矢量空间的一个正交完全集
+            <br>
+            <li><span class="item">完全集：</span> 空间的任意矢量都可以用各基矢的线性叠加来表示</li>
+            $$ \vec{P} = x\vec{i}+y\vec{j}+z\vec{k} = \sum\limits_{n=1}^3 x_n \vec{e}_n$$
+            并称 $x_n$ 是矢量 $\vec{P}$ 在对应基矢$\vec{e}_n$上的投影, 内积表示：
+            $$ x_n \equiv (\vec{e}_n, \vec{P}) = \vec{e}_n \cdot \vec{P} $$
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <li><span class="item">正交：</span> 两矢量的内积为零</li>
+            $$( \vec{P}_1, \vec{P}_2 ) = 0$$
+            <li><span class="item">正交集：</span> 集中的所有矢量两两正交</li>
+            $$( \vec{e}_n, \vec{e}_m) = 0$$
+            <li><span class="item">正交完全集</span> ：既是正交集又是完全集：</li>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <br>
+            <h3>三角正交完全集</h3>
+            <br>
+            {$1, \cos x, \sin x, \cos 2x, \sin 2x,\cdots $}构成一个正交完全集 <br>
+            <br>
+            <li>正交性：任意两函数的内积等于零, 比如： </li>
+            $$ \begin{aligned}
+            (\cos n x, \sin m x ) & = \int\limits_{-\infty}^{+\infty} (\cos n x)^* (\sin m x) d x \\
+            & = 0
+            \end{aligned} $$
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            <li>完全性: 任意周期函数$f(x)$可以用此集做线性展开</li>
+            $$ f(x) =\dfrac{a_0}{2} +\sum\limits_{n=1}^{\infty} \left( a_n \cos~ \dfrac{n\pi}{l} x + b_n \sin~
+            \dfrac{n\pi}{l} x \right) $$
+
+            <li>展开系数： 是 $f(x)$在对应基矢上的投影</li>
+            $$ \begin{aligned}
+            a_n & = (\cos n x, f(x) ) \\
+            & = \int\limits_{-\infty}^{+\infty} (\cos n x)^* f(x) d x \\
+            &= \dfrac{1}{l} \int\limits_{-l}^{+l} f(x) \cos n x d x
+            \end{aligned} $$
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            同理，
+            $$ \begin{aligned}
+            b_n & = (\sin n x, f(x) ) \\
+            & = \int\limits_{-\infty}^{+\infty} (\sin n x)^* f(x) d x \\
+            &= \dfrac{1}{l} \int\limits_{-l}^{+l} f(x) \sin n x d x
+            \end{aligned} $$
+
+            <p class="substep">
+            <blockquote>一种数学方法的成功，不是由于巧妙的谋略或者幸运的偶遇，而是因为它表达着物理真理的某个方面 -- 沙顿</blockquote>
+            </p>
+        </div>
+
+        <div id="eg_14" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+
+            <span class="exam"> 例-14: </span> 求下列函数的傳里叶展开式
+            $$ f(x)=\begin{cases}
+            1 , \quad x \in [0, \pi] \\
+            -1 ,\quad x \in [-\pi, 0]
+            \end{cases} $$
+
+            <span class="answer"> 解: </span> 延拓成周期函数 （$T=2\pi$），<br>
+
+            这是奇函数，展开式中应只有$sin$函数，只需计算 $b_n$
+
+            $$b_n = \dfrac{1}{l} \int\limits_{-l}^{+l} f(x) \sin n x d x $$
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            代入周期
+            $$ \begin{aligned}
+            b_n & = \dfrac{1}{\pi} \int\limits_{-\pi}^{+\pi} f(x) \sin n x d x \\
+            &= \dfrac{1}{\pi} \int\limits_{0}^{+\pi} f(x) \sin n x d x +\dfrac{1}{\pi} \int\limits_{-\pi}^{0} (-1) \sin
+            n x d x \\
+            &= \dfrac{2}{\pi}\int\limits_{0}^{+\pi} f(x) \sin n x d x \\
+            &= \frac{2}{n\pi} [\cos nx ] \vert_0 ^\pi = \frac{2}{n\pi} [ (-1) ^n -1]
+            \end{aligned} $$
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            只有当$n$为奇数时，$b_n$不为零
+            $$b_{2k+1} = \frac{2}{n\pi} [ (-1) ^n -1] = -\frac{4}{(2k+1)\pi}$$
+
+            代回傳里叶展开式， 得：
+            $$ f(x) = -\dfrac{4}{\pi} \sum_{n=0}^{\infty} \dfrac{1}{2k+1} \sin(2k+1) dx $$
+
+            <p><span class="over"> 结束！ </span></p>
+        </div>
+        <div id="eg_15" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+
+            <span class="exam"> 例-15: </span> 量子力学中,某体系的坐标表象波函数如下，求动量表象波函数
+            $$\Psi(x)=\frac{1}{\sqrt{2\pi \hbar}} \int_{-\infty}^{+\infty} c(p) e^{\frac{i}{\hbar} px} dp $$
+
+            <span class="answer"> 解: </span> 傳里叶变换
+            $$ \begin{cases}
+            f(x) =\int\limits_{-\infty}^{+\infty} G(\omega) e^{i\omega x} d\omega\\
+            G(\omega) = \dfrac{1}{2\pi} \int\limits_{-\infty}^{+\infty} f(x) e^{-i\omega x} dx
+            \end{cases} $$
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            把波函数写成公式的形式
+            $$\Psi(x)= \int_{-\infty}^{+\infty} [\frac{\sqrt{\hbar} }{\sqrt{2\pi}} c(p)] e^{i\frac{p}{\hbar} x} d
+            (\frac{p}{\hbar}) $$
+
+            有
+            $$[\frac{\sqrt{\hbar} }{\sqrt{2\pi}} c(p)]= \dfrac{1}{2\pi} \int_{-\infty}^{+\infty} \Psi(x)
+            e^{-i\frac{p}{\hbar} x} d (x) $$
+            $$ c(p)= \dfrac{1}{\sqrt{2\pi \hbar}} \int_{-\infty}^{+\infty} \Psi(x) e^{-i\frac{p}{\hbar} x} d (x) $$
+        </div>
+
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <br>
+            <h3>4. 性质 (P24)</h3>
+            <br>
+
+            线性： $F[\alpha f_1 +\beta f_2]=\alpha F[f_1]+ \beta F[f_2]$ <br>
+
+            延迟： $F[e^{i\omega_0x} f(x)] = G(\omega-\omega_0) $ <br>
+
+            位移： $F[ f(x\pm x_0)] = e^{i\omega x_0 } F[f(x)]=e^{i\omega x_0 }G(\omega) $ <br>
+
+            伸缩： $F[ f(\alpha x)] = \frac{1}{|\alpha |}G(\frac{\omega}{\alpha }) $ <br>
+
+            微分： $F[ f^{n} (x)] = (i\omega ) ^n F[f(x)]= (i\omega )^n G(\omega) $ <br>
+
+            积分： $F[ \int_{x_0}^{x} f (\xi) d\xi ] = \frac{1}{\omega} F[f(x)]=\frac{1}{\omega} G(\omega) $
+        </div>
+
+        <div id="homework" class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="homework"> 作 业： </span> </p>
+
+            1. 求函数的傳里叶展开式：
+
+            $$ f(x)=\begin{cases}
+            \pi +x , \quad x \in [-\pi, 0] \\
+            \pi -x ,\quad x \in [0, \pi]
+            \end{cases}$$
+
+            2. 分离变量法解方程
+            \begin{equation*}
+            \frac{dy}{dt} = r y (1-\frac{y}{K}), ~~~~ y(t_0) = y_0
+            \end{equation*}
+
+            3. 幂级数法解方程
+            \begin{equation*}
+            \frac{d^2 y}{d x^2} -2x \frac{d y}{d x} +2n y =0
+            \end{equation*}
+        </div>
+
+        <div id="Thanks" class="step " data-x="-2000" data-y="0" data-z="1000" , data-rotate="-45">
+
+            <center> <span class="Thanks">Thanks</span> </center>
+
+        </div>
+
+
     </div>
 
-    <div  class="step " data-rel-x="0" data-rel-y="1000"  data-rel-z="-500">
-        <p><span class = "exam" >例-1：</span>求解放射性衰减方程</p>
-        $$\frac{du}{dt}	= - r u, \qquad u(t_0) = u_0$$
-        <p><span class = "ans" >解：</span>方程可分离变量</p>
-        \begin{aligned}
-        \frac{du}{u} &= - rdt\\
-        \ln u &=-rt+C\\
-        u(t)&=C'exp(-rt) \\ 
-        \end{aligned}
-    </div>
 
-    <div  class="step " data-rel-x="0" data-rel-y="1000"  data-rel-z="-500">
-        <p>代入定解条件（t=0), 有</p>
-        \begin{aligned}
-        u(t_0) & = C'exp(-rt_0) \\
-        & = u_0 \\
-        \implies C' & =u_0
-        \end{aligned} 
-        方程的解为：
-        $$ u(t)=u_0 exp(-rt) $$ 
-        显然，这是一个指数哀减。当$r>0$时, 当$t \to \infty$， $u(t) \to 0$
-    </div>
 
-    <div  class="step " data-rel-x="0" data-rel-y="1000"  data-rel-z="-500">
-        衰减过程的一个重要参数是半衰期（T）
-        <p><span class = "ans" >解：</span>在T时刻，体系的质量只有原来的一半</p>
-        \begin{aligned}
-        \frac{1}{2}u_0 &=u(T) \\
-        & =u_0 exp(-rT) \\
-        T &=\frac{1}{r} \ln 2  \\
-        & \approx \frac{1}{r} \times 0.6931  
-        \end{aligned}
-        <span class = "over" >结束！</span>
-    </div>
 
-    <div class="step" data-x="0" data-y="0" data-z="0" data-scale="4">
-        <span class= "exam"> 例-2：</span> 求人口增长的模型(逻辑斯蒂)
-        <br>
-        <span class = "ans"> 解：</span>方程可分离变量
-        \begin{aligned}
-		\frac{1}{u(1-u / K)}du &=r d t \\
-		\frac{u / K+(1-u / K)}{u(1-u / K)} d u &=r d t	\\
-		(\frac{1}{K-u}+\frac{1}{u} ) d u &=r d t \\
-		-\ln (K-u)+\ln u &=r t+C \\
-	    \end{aligned}
-    </div>
+
+
+
+    <div id="impress-toolbar"></div>
+
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+        }
+    </script>
+
+    <script src="../../others/impress.js/js/impress.js"></script>
+    <script>impress().init();</script>
 
     <!--
-        
-        This element introduces rotation.
-        
-        Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
-        element should be rotated by 90 degrees clockwise.
-        
-    -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>It’s a <strong>presentation tool</strong> <br/>
-        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
-    </div>
-
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
-    </div>
-
-    <!--
-        
-        And now it gets really exciting! We move into third dimension!
-        
-        Along with `data-x` and `data-y`, you can define the position on third (Z) axis, with
-        `data-z`. In the example below we use `data-z="-3000"` meaning that element should be
-        positioned far away from us (by 3000px).
-        
-    -->
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>and <b>tiny</b> ideas</p>
-    </div>
-
-    <!--
-        
-        This step here doesn't introduce anything new when it comes to data attributes, but you
-        should notice in the demo that some words of this text are being animated.
-        It's a very basic CSS transition that is applied to the elements when this step element is
-        reached.
-        
-        At the very beginning of the presentation all step elements are given the class of `future`.
-        It means that they haven't been visited yet.
-        
-        When the presentation moves to given step `future` is changed to `present` class name.
-        That's how animation on this step works - text moves when the step has `present` class.
-        
-        Finally when the step is left the `present` class is removed from the element and `past`
-        class is added.
-        
-        So basically every step element has one of three classes: `future`, `present` and `past`.
-        Only one current step has the `present` class.
-        
-        Note: data-x/y/z attributes, if not defined, by default will inherit the value of the 
-        previous step. So to get back to 0 on the z-axis, we must set it to 0.
-        See src/plugins/rel/README.md for more information.
-        
-    -->
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-z="0" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
-    </div>
-
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
-    </div>
-
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/impress/impress.js">use the source</a>, Luke!</q>
-    </div>
-
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
-    </div>
-
-    <!--
-        
-        And the last one shows full power and flexibility of impress.js.
-        
-        You can not only position element in 3D, but also rotate it around any axis.
-        So this one here will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and
-        10 degrees (clockwise) around Y axis.
-        
-        You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
-        as `data-rotate` (these two are basically aliases).
-        
-    -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
-    </div>
-
-    <!--
-        
-        So to summarize of all the possible attributes used to position presentation steps, we have:
-        
-        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
-            the canvas in pixels; their default value is 0;
-        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
-            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
-            are exactly the same;
-        * `data-scale` - defines the scale of step element; default value is 1
-        
-        These values are used by impress.js in CSS transformation functions, so for more information consult
-        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
-        
-    -->
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
-    </div>
-
-</div>
-
-<!--
-    This is a UI plugin. You can read more about plugins in src/plugins/README.md.
-    For now, I'll just tell you that this adds some graphical controls to navigate the
-    presentation. In the CSS file you can style them as you want. We've put them bottom right.
--->
-<div id="impress-toolbar"></div>
-
-<!--
-    
-    Hint is not related to impress.js in any way.
-    
-    But it can show you how to use impress.js features in creative way.
-    
-    When the presentation step is shown (selected) its element gets the class of "active" and the body element
-    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
-    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
-    the id of `first`) is active, body element gets a class of `impress-on-first`.
-    
-    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
-    the first step of presentation is visible for a couple of seconds.
-    
-    ...
-    
-    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
-    It's just a quick and dirty workaround to get different hint text for touch devices.
-    In a real world it should be at least placed in separate JS file ... and the touch content should be
-    probably just hidden somewhere in HTML - not hard-coded in the script.
-    
-    Just sayin' ;)
-    
--->
-<!----
-<div class="hint">
-    <p>Use a spacebar or arrow keys to navigate. <br/>
-       Press 'P' to launch speaker console.</p>
-</div>
--->
-
-<script>
-if ("ontouchstart" in document.documentElement) { 
-    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
-}
-</script>
-
-<!--
-    
-    Last, but not least.
-    
-    To make all described above really work, you need to include impress.js in the page.
-    I strongly encourage to minify it first.
-    
-    In here I just include full source of the script to make it more readable.
-    
-    You also need to call a `impress().init()` function to initialize impress.js presentation.
-    And you should do it in the end of your document. Not only because it's a good practice, but also
-    because it should be done when the whole document is ready.
-    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
-    
--->
-<script src="../../others/impress.js/js/impress.js"></script>
-<script>impress().init();</script>
-
-<!--
-    
-    The `impress()` function also gives you access to the API that controls the presentation.
-    
-    Just store the result of the call:
-    
-        var api = impress();
-    
-    and you will get three functions you can call:
-    
+        var api = impress();  
         `api.init()` - initializes the presentation,
         `api.next()` - moves to next step of the presentation,
         `api.prev()` - moves to previous step of the presentation,
-        `api.goto( stepIndex | stepElementId | stepElement, [duration] )` - moves the presentation to the step given by its index number
-                id or the DOM element; second parameter can be used to define duration of the transition in ms,
-                but it's optional - if not provided default transition duration for the presentation will be used.
-    
-    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
-    Don't worry, it wont initialize the presentation again.
-    
-    For some example uses of this API check the last part of the source of impress.js where the API
-    is used in event handlers.
+        `api.goto( stepIndex | stepElementId | stepElement) 
     
 -->
 
 </body>
+
 </html>
-
-<!--
-    
-    Now you know more or less everything you need to build your first impress.js presentation, but before
-    you start...
-    
-    Oh, you've already cloned the code from GitHub?
-    
-    You have it open in text editor?
-    
-    Stop right there!
-    
-    That's not how you create awesome presentations. This is only a code. Implementation of the idea that
-    first needs to grow in your mind.
-    
-    So if you want to build great presentation take a pencil and piece of paper. And turn off the computer.
-    
-    Sketch, draw and write. Brainstorm your ideas on a paper. Try to build a mind-map of what you'd like
-    to present. It will get you closer and closer to the layout you'll build later with impress.js.
-    
-    Get back to the code only when you have your presentation ready on a paper. It doesn't make sense to do
-    it earlier, because you'll only waste your time fighting with positioning of useless points.
-    
-    If you think I'm crazy, please put your hands on a book called "Presentation Zen". It's all about 
-    creating awesome and engaging presentations.
-    
-    Think about it. 'Cause impress.js may not help you, if you have nothing interesting to say.
-    
--->
-
-<!--
-    
-    Are you still reading this?
-    
-    For real? I'm impressed! 
-    
-    But now, take my advice and take some time off. Make yourself a cup of coffee, tea,
-    or anything you like to drink.
-    
-    Cheers!
-    
--->
-
