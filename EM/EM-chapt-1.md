@@ -386,7 +386,7 @@ $$\frac{d^2 u}{d t^2} +k ^2 u = 0$$ {.fragment .fade-up}
 
 $\color{#FFA500}{\text{例-5：}}$ 考虑加上周期性的策动力 $p  \sin \omega_0 t$， 则有如下非齐次振动方程， 试求解
 ` \begin{equation*}
-    \frac{d^2 x}{d t^2} +\omega ^2 x = p \sin \omega_0 t ,  ~~~ (\varepsilon \ll \omega)   
+    \frac{d^2 u}{d t^2} +\omega ^2 u = p \sin \omega_0 t ,  ~~~ (\varepsilon \ll \omega)   
   \end{equation*} `
 
 $\color{#FFA500}{\text{解：}}$  对应齐次方程的通解：{.fragment .fade-up}
@@ -431,19 +431,19 @@ $\color{#FFA500}{\text{Tips：}}$ 当策动函数为多项式函数，三角函�
 如果既有策动又有空气阻尼，方程为：{.fragment .fade-up}
 
 ` \begin{equation*}
-    \frac{d^2 x}{d t^2} +2\varepsilon \frac{d x}{dt} +\omega ^2 x = f(t) ,  ~~~ (\varepsilon \ll \omega)   
+    \frac{d^2 u}{d t^2} +2\varepsilon \frac{d u}{dt} +\omega ^2 u = f(t) ,  ~~~ (\varepsilon \ll \omega)   
   \end{equation*} ` {.fragment .fade-up}
 
 如果策动还与位置相关，则方程为： {.fragment .fade-up}
 
 ` \begin{equation*}
-    \frac{d^2 x}{d t^2} +2\varepsilon \frac{d x}{dt} +\omega ^2 x = f(x, t) ,  ~~~ (\varepsilon \ll \omega)   
+    \frac{d^2 u}{d t^2} +2\varepsilon \frac{d u}{dt} +\omega ^2 u = f(x, t) ,  ~~~ (\varepsilon \ll \omega)   
   \end{equation*} ` {.fragment .fade-up}
 
 如果阻尼系数是位置的函数（比如空间密度不是常数），则方程为：{.fragment .fade-up}
 
 ` \begin{equation*}
-    \frac{d^2 x}{d t^2} +2\varepsilon(x) \frac{d x}{dt} +\omega ^2 x = f(x, t) ,  ~~~ (\varepsilon \ll \omega)   
+    \frac{d^2 u}{d t^2} +2\varepsilon(x) \frac{d u}{dt} +\omega ^2 u = f(x, t) ,  ~~~ (\varepsilon \ll \omega)   
   \end{equation*} ` {.fragment .fade-up}
 
 --
@@ -451,13 +451,13 @@ $\color{#FFA500}{\text{Tips：}}$ 当策动函数为多项式函数，三角函�
 如果再考虑到阻尼导致弹簧温度变化，进而影响弹性系数，则方程为：{.fragment .fade-up}
 
 ` \begin{equation*}
-    \frac{d^2 x}{d t^2} +2\varepsilon(x) \frac{d x}{dt} +\omega^2 (t)  x = f(x, t) ,  ~~~ (\varepsilon \ll \omega)   
+    \frac{d^2 u}{d t^2} +2\varepsilon(x) \frac{d u}{dt} +\omega^2 (t)  u = f(x, t) ,  ~~~ (\varepsilon \ll \omega)   
   \end{equation*} ` {.fragment .fade-up}
 
 如果弹簧不同的位置温度变化不一样，则方程为：{.fragment .fade-up}
 
 ` \begin{equation*}
-    \frac{d^2 x}{d t^2} +2\varepsilon(x) \frac{d x}{dt} +\omega^2 (x,t)  x = f(x, t) ,  ~~~ (\varepsilon \ll \omega)   
+    \frac{d^2 u}{d t^2} +2\varepsilon(x) \frac{d u}{dt} +\omega^2 (x,t)  u = f(x, t) ,  ~~~ (\varepsilon \ll \omega)   
   \end{equation*} ` {.fragment .fade-up}
 
 

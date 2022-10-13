@@ -134,8 +134,8 @@
             <h3>参考书目：</h3>
             <br>
             <ul>
-                <li>教材：《工程数学讲义》 李明奇，钟尔杰，国防工业出版社， 待出版</li>
-                <li>Mathematics for Physicists》 Shaw, G.</li>
+                <li> 教材：《工程数学讲义》 李明奇，钟尔杰，国防工业出版社， 待出版</li>
+                <li>《Mathematics for Physicists》 Shaw, G.</li>
                 <li>《数学物理方法》 姚瑞正，梁家宝 ，武汉大学出版社，1992</li>
                 <li>《数学物理方程与特殊函数》南京工学院教研组，人民教育出版社，1983</li>
                 <li>《数学物理方程》孙振绮，机械工业出版社，2004</li>
@@ -308,8 +308,8 @@
             <span class="answer"> 解方程: </span>
             这是二阶常系数齐次微分方程, 可通过辅助方程求解
             \begin{aligned}
-            u^2+\omega ^2&=0 \\
-            u_{1, 2} &=\pm i\omega
+            \lambda^2+\omega ^2&=0 \\
+            \lambda_{1, 2} &=\pm i\omega
             \end{aligned}
             原方程的基本解
             $$ \begin{cases}
@@ -321,12 +321,14 @@
             $$x(t)=x_0 \cos \omega t $$
         </div>
 
-        <div  class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
 
             <span class="exam"> 例-4: </span> 考虑空气阻力， 有如下小阻尼振动微分方程， 试求解
             \begin{equation*}
             \frac{d^2 x}{d t^2} +2\varepsilon \frac{d x}{dt} +\omega ^2 x = 0 , ~~~ (\varepsilon \ll \omega)
             \end{equation*}
+            数学上，也有写成：
+            $$ \frac{\mathrm{d}^2x}{\mathrm{d}t^2} + 2\zeta\omega_0\frac{\mathrm{d}x}{\mathrm{d}t} + \omega^2_0 x = 0$$
 
             <span class="answer"> 解: </span> 令 $ x(t)= exp(-\varepsilon t) u(t) $, 微分
 
@@ -337,13 +339,11 @@
             u}{dt^2} ]
             \end{aligned}
             $$
-
-            代回方程并整理
-            $$ \frac{d^2 u}{d t^2} +(\omega ^2 - \varepsilon ^2) u = 0, \quad (\varepsilon \ll \omega) $$
-
         </div>
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
             data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            代回方程并整理
+            $$ \frac{d^2 u}{d t^2} +(\omega ^2 - \varepsilon ^2) u = 0, \quad (\varepsilon \ll \omega) $$
 
             令 $k^2 =\omega ^2 - \varepsilon ^2 >0 $, 得简谐振动方程标准型
             $$\frac{d^2 u}{d t^2} +k ^2 u = 0$$
@@ -353,14 +353,15 @@
             u(t)=C_1 \cos k t +C_2 \sin k t
             \end{equation*}
 
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
             方程的通解
             \begin{equation*}
             x(t)= exp(-\varepsilon t) \left[ C_1 \cos \sqrt{k} t +C_2 \sin \sqrt{k} t \right]
             \end{equation*}
-        </div>
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            如存在定解条件，则一样可以写出特解，比如：
+
+            如存在定解条件，则可以定常，比如为：
 
             \begin{equation*}
             x(t)= x_0 exp(-\varepsilon t) \cos \sqrt{\omega ^2 - \varepsilon ^2} t
@@ -371,7 +372,7 @@
             很明显，振幅呈指数衰减！
             <center><img src="../EM/EM-beamer/figs/harmonic_damped.gif" width=500, height=300></center>
         </div>
-        <div  class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
 
             <span class="exam"> 例-5: </span> 考虑加上周期性的策动力 $p \sin \omega_0 t$， 则有如下非齐次振动方程， 试求解
             \begin{equation*}
@@ -381,11 +382,11 @@
             <span class="answer"> 解: </span> 对应齐次方程的通解：
 
             \begin{equation*}
-            u(t)=C_1 \cos \omega t +C_2 \sin \omega t
+            x_1(t)=C_1 \cos \omega t +C_2 \sin \omega t
             \end{equation*}
 
             因此，可以设非齐次方程的特解为：
-            $$ u(t) =C \sin \omega_0 t $$ {.fragment .fade-up}
+            $$ x_2(t) =C \sin \omega_0 t
 
             <p class="substep">问题转化为求 $C$ （待定系数法） </p>
         </div>
@@ -406,7 +407,7 @@
         </div>
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
             data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            <span class="item">分析：</span> 这是固固有频率和策动频率两种波的线性叠加
+            <span class="item">分析：</span> 这是固有频率和策动频率两种波的线性叠加
 
             <center><img src="../EM/EM-beamer/figs/my.svg" width=800, height=350></center>
 
@@ -457,7 +458,10 @@
 
             <p class="substep"><span class="tips"> TIPS: </span> 现实工程里的数理方程远比《工程数学》教材上的方程复杂！建立方程并求解是工科学校学生的一项基本功。 </p>
         </div>
-
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            阻尼系数与振荡
+            <center><img src="../EM/EM-beamer/figs/damped.svg" width=500></center>
+        </div>
         <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
             <br>
             <h2>3. 常微分方程的通用解法</h2>
@@ -468,7 +472,7 @@
             <li>级数展开法</li>
         </div>
 
-        <div  class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
 
             <span class="exam"> 例-6: </span> 求解一阶常系数线性非齐次常微分方程
             $$ y'+py=f(x)$$
@@ -543,7 +547,7 @@
             y=\left(\int Q(x)e^{\int P(x)dx} dx+c\right)e^{-\int P(x)dx}
             $$
         </div>
-        <div  class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
             <span class="exam"> 例-8: </span> 求解二阶常系数非齐次常微分方程
             $$ y^{\prime \prime}+py'+qy=f(x) $$
 
@@ -576,7 +580,7 @@
             根据自由项的特点，再通过待定系数法或常数变易法求解非齐次常微分方程。
         </div>
 
-        <div  class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
 
             <span class="exam"> 例-9: </span> 求解二阶常系数非齐次常微分方程的初值问题
             \begin{cases}
@@ -666,7 +670,7 @@
             <p><span class="substep over"> 结束！ </span></p>
 
         </div>
-        <div  class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
 
             <span class="exam"> 例-10: </span> 求二阶变系数齐次常微分方程（欧拉方程-1）
             $$ x^2 \frac{d^2 y}{d x^2} +x \frac{d y}{d x} +n^2 y =0 $$
@@ -700,7 +704,7 @@
             <p><span class="substep over"> 结束！ </span></p>
         </div>
 
-        <div  class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
 
 
             <span class="exam"> 例-11: </span> 求二阶变系数齐次常微分方程（欧拉方程-2）
@@ -798,7 +802,7 @@
             <p><span class="substep over"> 结束！ </span></p>
         </div>
 
-        <div  class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
             <span class="exam"> 例-13: </span> 求二阶变系数齐次常微分方程（n 阶厄米方程）
             $$ \frac{d^2 y}{d x^2} -2x \frac{d y}{d x} +2n y =0 $$
 
@@ -882,7 +886,7 @@
             <li>正交完全集</li>
 
         </div>
-        <div  class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="500">
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="500">
             <br>
             <h2>1. 数学公式</h2>
             <br>
@@ -935,6 +939,7 @@
 
             <span class="item">注：</span> $a_0$是零率的振幅，$a_1$和$b_1$是基率的振幅，$a_2$和$b_2$是策动率的振幅
         </div>
+
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
             data-rotate-y="0" data-rotate-z="0" data-scale="5">
             如果存在多级策动，效果如下
@@ -961,15 +966,15 @@
             data-rotate-y="0" data-rotate-z="0" data-scale="5">
             结论（傅里叶）: <br>
             <br>
-            <li class="substep" >周期函数可以 </li>
+            <li class="substep">周期函数可以 </li>
             <br>
-            <li class="substep" >非周期函数也可以</li>
+            <li class="substep">非周期函数也可以</li>
             <br>
-            <li class="substep" >奥秘在于正交集！</li>
-       
+            <li class="substep">奥秘在于正交集！</li>
+
 
         </div>
-        <div  class="step " data-rel-x="2000" data-rel-y="0" data-rel-z="0">
+        <div class="step " data-rel-x="2000" data-rel-y="0" data-rel-z="0">
             <br>
             <br>
             <h2>3. 正交完全集</h2>
@@ -1044,6 +1049,12 @@
             </p>
         </div>
 
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <center><img src="../EM/EM-beamer/figs/my.svg" width=550, height=300></center>
+            <center><img src="../EM/EM-beamer/figs/fft.svg" width=550, height=300></center>
+            <center><p>两图互为傅里叶变换 </p></center> 
+        </div>
         <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
 
             <span class="exam"> 例-14: </span> 求下列函数的傳里叶展开式
@@ -1080,7 +1091,7 @@
 
             <p><span class="over"> 结束！ </span></p>
         </div>
-        <div  class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
 
             <span class="exam"> 例-15: </span> 量子力学中,某体系的坐标表象波函数如下，求动量表象波函数
             $$\Psi(x)=\frac{1}{\sqrt{2\pi \hbar}} \int_{-\infty}^{+\infty} c(p) e^{\frac{i}{\hbar} px} dp $$
@@ -1123,7 +1134,7 @@
             积分： $F[ \int_{x_0}^{x} f (\xi) d\xi ] = \frac{1}{\omega} F[f(x)]=\frac{1}{\omega} G(\omega) $
         </div>
 
-        <div  class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
             <p><span class="homework"> 作 业： </span> </p>
 
             1. 求函数的傳里叶展开式：
