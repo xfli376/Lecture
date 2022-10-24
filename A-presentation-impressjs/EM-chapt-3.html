@@ -47,8 +47,8 @@
     <img id="bg-1" class="imgbg" src="../EM/EM-beamer/images/uestclogo-18.png">
 
     <!---Begin--Begin--Begin--Begin--Begin--Begin -->
-    <div id="impress" data-transition-duration="1000" data-width="1024" data-height="768" data-max-scale="10"
-        data-min-scale="0" data-perspective="1000" data-autoplay="14">
+    <div id="impress" data-transition-duration="1000" data-width="1280" data-height="768" data-max-scale="10"
+        data-min-scale="0" data-perspective="1000" data-autoplay="0">
 
         <!--
         
@@ -71,7 +71,7 @@
             <br>
             <h2>第三章 薛定谔方程</h2>
             <br>
-            <li>薛定谔方程简介</li>
+            <li>分离变量</li>
             <li>无限深势阱</li>
             <li>谐振子</li>
             <li>厄密方程</li>
@@ -84,467 +84,195 @@
 
         <div id="introd" class="step" data-x="-1500" data-y="-3000" data-z="-2500">
             <br>
-            <h4>1. 薛定谔方程简介：</h4>
+            <h4>量子力学基本原理：</h4>
             <br>
-            <li class="substep"><span class="item"> 偏微分方程(PDE)： </span> 指未知函数是多元函数的微分方程.</li>
-            <li class="substep"><span class="item"> 数理方程: </span> 这些方程的来源和应用通常具有物理背景, 又称数学物理方程 </li>
-            <li class="substep"><span class="item"> 二阶偏微分方程: </span>
-                $$ au_{xx}+2bu_{xy}+cu_{yy}+du_x+eu_y+fu=g $$</li>
-            <li class="substep"><span class="item"> 分类: </span>根据$\Delta=b^2-ac$， 可分为三类：
-                <ul>
-                    <li>椭圆型($\Delta&lt;0$): 波动方程</li>
-                    <li>双曲型($\Delta&gt;0$): 拉普拉斯（泊松）方程</li>
-                    <li>抛物型 ($\Delta=0$): 热传导方程</li>
-                </ul>
+            <li class="substep"><span class="item"> 波函数公设： </span> 微观体系的状态由希尔伯特空间的一个波函数（态矢量 $\Psi$）完全描述.</li>
+            <li class="substep"><span class="item"> 算符公设: </span> 微观体系的物理量由希尔伯特空间的厄密算符表示 </li>
+            <li class="substep"><span class="item"> 演化公设: </span>
+                波函数随时间的演化服从薛定谔方程
+            <li class="substep"><span class="item"> 对易公设: </span> 位置算符与正则动量算符之间存在对易关系
+                $\hspace{5em} [X_\alpha, P_\beta] = i \hbar{h} \delta_{\alpha \beta} $
             </li>
+            <li class="substep"><span class="item"> 全同性公设: </span> 全同粒子体系的状态具有交换不变性 </li>
+            <br>
+            <p class="substep"><span class="item"> 统计诠释: </span> 波函数的模方（$|\Psi|^2$）与找到粒子的概率成比例 </p>
         </div>
 
         <div id="lecture-1" class="step " data-rel-x="2000" data-rel-y="0" data-rel-z="0" data-rotate="45">
             <br>
             <br>
-            <h2>第一讲 波动方程</h2>
+            <h2>第一讲 薛定谔方程分离变量</h2>
             <br>
             <br>
             <li>方程的建立</li>
-            <li>方程的求解</li>
-            <li>固有函数正交</li>
+            <li>分离变量</li>
 
         </div>
 
         <div class="step " data-rel-x="1000" data-rel-y="1000" data-rel-z="-500">
             <h3> 1. 方程的建立</h3>
             <br>
-            <span class="exam"> 例-1: </span> 考虑均匀柔软的细弦线，二端固定，受到扰动后在平衡位置作微小运动。求位移函数 $u(x，t)$所满足的方程。
-            <center><img src="../EM/EM-beamer/figs/2022-10-08-21-14-04.png" width=600, height=200></center>
-            <span class="answer"> 解: </span> 建立如图坐标系, 取任意微元$ds$进行受力分析。临元存在拉力$T_1, T_2$
-
+            <span class="exam"> 例-1: </span> 考虑一个微观粒子，试建立其状态函数$\Psi $所满足的方程$\cdots $
+            <center><img src="../QM/QM-beamer/figs/schroginger.png" width=500 height=300> </center>
+            <p class="substep">"It is not possible to derive it from anything you know. It came out of the <i
+                    class="fa fa-heartbeat" aria-hidden="true"></i> of Schr$\ddot{o}$dinger $\qquad$ -- R. P. Feynman "
+            </p>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
-            正交分解：
-
-            <li class="substep">水平方向：$T_2\cos \alpha _2=T_1\cos \alpha _1=T_0$</li>
-
-            <li class="substep">竖直方向：$T_2 \sin \alpha_2 - T_1 \sin \alpha_1 = ma =(\rho ds) u_{tt} $</li>
-            <p class="substep">代入$T_0$, 有：$$T_0 (\tan \alpha_2 - \tan \alpha_1 )=\rho ds u_{tt}$$ </p>
-            <p class="substep">斜率就是一阶导数，同时小角度条件下$ds \simeq dx$</p>
-            <p class="substep">$$T_0[u_x(x+dx,t)-u_x(x,t)]=\rho dx ~u_{tt}$$ </p>
-            <p class="substep">整理
-                $$\frac{T_0}{\rho}\times\frac{u_x(x+dx,t)-u_x(x,t)}{dx}=u_{tt}$$ </p>
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
-            <p>基于导数定义，得波动方程：
-                $$ u_{tt}=a^2u_{xx} $$ </p>
-
-            <p class="substep">定解条件: </p>
-            <li class="substep">初始条件
-                $$ u(x,t) | _{t=0} = \psi (x), \quad u_t (x,t) | _{t=0} = \Psi (x) $$ </li>
-            <li class="substep">边界条件
-                $$ u(x,t) | _{x=0} = 0, u(x,t) | _{x=l} = 0 $$</li>
-        </div>
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
-            <p>若质点受外力作用(比如风)，则有：
-
-                $$ u_{tt} =a^2 u_{xx} +f(x,t) $$ </p>
-
-            <p class="substep"> <span class="tips"> TIPS: </span> </p>
-            <li class="substep">波动方程描述物体在平衡位置附近做小幅震荡的规律，比如: 琴弦、鼓膜、耳机等的机械震动，</li>
             <br>
-            <li class="substep">也描述声波、地震波、引力波等的运动。</li>
+            <h4>薛定谔方程</h4>
+            <br>
+            <p class="substep big"> \begin{equation*}
+                i\hbar \frac{\partial }{\partial t} \Psi (\overrightarrow{r},t ) =\left [ -\frac{\hbar^2}{2\mu }\nabla
+                ^2 + V(\overrightarrow{r},t ) \right ]\Psi (\overrightarrow{r}, t )
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="1000" data-rel-z="-500">
+            <h3> 2. 分离变量</h3>
+            <p class="substep">多粒子体系波函数：
+                $$ \Psi (\vec{r_1},\vec{r_2},...,\vec{r_n},t ) $$ </p>
+            <p class="substep">多粒子体系哈密顿:
+                \begin{equation*}
+                \hat{H} ~=\sum_{i=1}^{n}(-\frac{\hbar^2}{2\mu }\nabla ^2 _i + V(\vec{r_i},t)) + \sum_{i,j=1, i\ne j}^{n}
+                U(\vec{r_i},\vec{r_j})
+                \end{equation*}
+            </p>
+            <p class="substep">代回薛定谔方程，得 </p>
+            <p class="substep small">
+                \begin{equation*}
+                i\hbar \frac{\partial }{\partial t} \Psi (\vec{r_1},\vec{r_2},...,\vec{r_n},t ) =\left [
+                \sum_{i=1}^{n}(-\frac{\hbar^2}{2\mu }\nabla ^2 _i + V(\vec{r_i},t)) + \sum_{i,j=1, i\ne j}^{n}
+                U(\vec{r_i},\vec{r_j}) \right ]\Psi (\vec{r_1},\vec{r_2},...,\vec{r_n},t )
+                \end{equation*}
+            </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <h4>分离变量-1: 时间</h4>
+            <br>
+            <p class="substep">为简单计，令 $ \mathrm{R}= (\vec{r_1},\vec{r_2},...,\vec{r_n}) $ </p>
+            <p class="substep"> 方程可写成
+                \begin{equation*}
+                i\hbar \frac{\partial }{\partial t} \Psi (\mathrm{R},t ) =\left [ \sum_{i=1}^{n}(-\frac{\hbar^2}{2\mu
+                }\nabla ^2 _i + V(\vec{r_i},t)) + \sum_{i,j=1, i\ne j}^{n} U(\vec{r_i},\vec{r_j}) \right ]\Psi
+                (\mathrm{R},t )
+                \end{equation*}
+            </p>
+            <p class="substep">若势函数$V(\vec{r},t ) $不显含时间$t$，则可分离时间变量 </p>
         </div>
 
         <div class="step" data-rel-x="2000" data-rel-y="1000" data-rel-z="-500" data-scale="4" data-rotate-x="45">
-            <h3> 2. 方程的求解</h3>
-            <br>
-            <span class="exam"> 例-2: </span> 求解如下一维波动方程
-            \begin{cases}
-            u_{tt} = a^2 u_{xx} \qquad (0 < x < l) \\ u(x,t)|_{t=0}=\psi (x) ,\qquad u_t (x,t)|_{t=0}=\Psi (x) \\
-                u(x,t)|_{x=0}=0, \qquad u(x,t)|_{x=l}=0 \end{cases} <span class="answer"> 解: </span> (傅里叶) 设
-                $u(x,t)=T(t)X(x) $，代回方程, 得：
-
-                $$ T^{\prime\prime} (t) X(x) = a ^2 T(t) X ^{\prime\prime}(x) $$
-
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
-            整理得
-            $$ \dfrac{ T^{\prime\prime}}{ a^2 T} = \dfrac{X^{\prime\prime} }{X} $$
-
-            <p class="substep">上式恒成立，可令
-                $$ \dfrac{ T^{\prime\prime}}{ a^2 T} = \dfrac{X^{\prime\prime} }{X} = -\lambda $$ </p>
-
-            <p class="substep">得两个常微分方程 </p>
+            <p class="substep">令 $\Psi (\mathrm{R},t ) = \Psi (\mathrm{R} ) f(t) $ , 代回方程 </p>
+            <p class="substep">$$i\hbar \Psi (\mathrm{R}) \frac{\partial }{\partial t} f(t)=f(t) \left [
+                \sum_{i=1}^{n}(-\frac{\hbar^2}{2\mu }\nabla ^2 _i + V(\vec{r_i})) + \sum_{i,j=1, i\ne j}^{n}
+                U(\vec{r_i},\vec{r_j}) \right ]\Psi (\mathrm{R}) $$
+                $$ \displaystyle i\hbar \frac{1}{f(t)} \frac{\partial }{\partial t} f(t)= \frac{1}{\Psi (\mathrm{R}) }
+                \left [ \sum_{i=1}^{n}(-\frac{\hbar^2}{2\mu }\nabla ^2 _i + V(\vec{r_i})) + \sum_{i,j=1, i\ne j}^{n}
+                U(\vec{r_i},\vec{r_j}) \right ]\Psi (\mathrm{R}) $$ </p>
+            <p class="substep"> 令上式恒等于$E$ </p>
 
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
-            <li class="substep">方程（I）：</li>
-            <p class="substep">\begin{cases}
-                X ^{\prime\prime} +\lambda X=0, \quad 0 < x < l \\ X(0)=0, \quad X(l)=0 \end{cases} </p>
+            得两个微分方程:
+            <p class="substep">I、演化（方程） \[ \displaystyle i\hbar \frac{1}{f(t)} \frac{\partial }{\partial t} f(t)=E \]
+            </p>
+            <p class="substep">解得：$\displaystyle f(t) =e^{-iEt/\hbar}$ </p>
+            <p class="substep">II、固有值问题
+                \[ \left [ \sum_{i=1}^{n}(-\frac{\hbar^2}{2\mu }\nabla ^2 _i + V(\vec{r_i})) + \sum_{i,j=1, i\ne j}^{n}
+                U(\vec{r_i},\vec{r_j}) \right ]\Psi (\mathrm{R}) =E \Psi (\mathrm{R}) \]</p>
+            <p class="substep">方程-II，也称为定态薛定谔方程 </p>
+            <li class="substep">求解难度由相互作用势决定</li>
+        </div>
 
-                    <li class="substep">方程（II）：</li>
-                    <p class="substep">$$ T^{\prime\prime} +\lambda {a^2 T}=0 $$ </p>
-
-                    <p class="substep"> <span class="tips"> TIPS: </span> </p>
-                    <p class="substep">经分离变量，偏微分方程转化为两个常微分方程！ </p>
-
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <h4>分离变量-2: 单粒子薛定谔方程</h4>
+            <p class="substep">现考虑无相互作用体系，定态薛定谔方程为： </p>
+            <p class="substep">\begin{aligned}
+                \sum_{i=1}^{n}(-\frac{\hbar^2}{2\mu }\nabla ^2 _i + V(\vec{r_i})) \Psi (\mathrm{R}) &=E \Psi
+                (\mathrm{R}) \\
+                \sum_{i=1}^{n}H_i \Psi (\mathrm{R}) &=\sum_{i=1}^{n} E_i \Psi (\mathrm{R})
+                \end{aligned} </p>
+            <p class="substep">若令: $\Psi (\mathrm{R})=\Psi (\vec{r_1},\vec{r_2},\cdots ,\vec{r_n})= \Psi _1 (\vec{r_1})
+                \Psi _2 (\vec{r_2})\cdots \Psi _n (\vec{r_n})$ </p>
+            <p class="substep">方程化为：
+                $$ \sum_{i=1}^{n}H_i \Psi _i (\vec{r_i}) =\sum_{i=1}^{n} E_i \Psi _i (\vec{r_i}) $$ </p>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
             data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            解方程（I）
-            $$ X ^{\prime\prime} +\lambda X=0 $$
 
-            <p class="substep">特征（辅助）方程
-                $$ \mu^2 +\lambda =0 $$ </p>
+            根据线性方程的性质，只需求
+            $$ H_i \Psi _i (\vec{r_i}) = E_i \Psi _i (\vec{r_i}) $$
+            <p class="substep"> 去掉下标，方程变为：
+                $$ H \Psi (\vec{r}) = E \Psi (\vec{r}) $$
+            </p>
+            <p class="substep">这是单粒子体系的薛定谔方程 </p>
+            <p class="substep">写成标准型
+                $$\left [ -\dfrac{\hbar^2}{2\mu }\nabla ^2 + V(x,y,z) \right ] \Psi (x,y,z) = E \Psi (x,y,z)$$ </p>
+            <li class="substep"> 求解难度势能函数决定 </li>
+        </div>
 
-            <p class="substep">根为:
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h4>分离变量-3: 一维薛定谔方程</h4>
+            <p class="substep">若势能函数可以写成
+                $$ V(x,y,z) = V_1 (x) + V_2 (y) + V_3 (z) $$ </p>
+            <p class="substep">则有：
+                \begin{aligned}
+                H & = -\dfrac{\hbar^2}{2\mu }\nabla ^2 + V(x,y,z) \\
+                & = -\dfrac{\hbar^2}{2\mu } (\frac{\partial ^2}{\partial x^2 }+ \frac{\partial ^2}{\partial y^2 } +
+                \frac{\partial ^2}{\partial z^2 })+ (V_1 (x) + V_2 (y) + V_3 (z)) \\
+                &= \sum_{i=1} ^3 (-\dfrac{\hbar^2}{2\mu } \frac{\partial ^2}{\partial x_i ^2} + V_i (x_i)) = H_x + H_y +
+                H_z
+                \end{aligned} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            因此， 能量可定成
+            $$ E = E_x + E_y + E_z$$
+            <p class="substep">此时，若令
+                $$\Psi (x,y,z) = \Psi _1 (x) + \Psi _2 (y) + \Psi _3 (z) + $$ </p>
+            <p class="substep">代回方程，得三个一维薛定谔方程
                 \begin{cases}
-                \mu~_1 =+\sqrt{-\lambda}\\
-                \mu~_2 =-\sqrt{-\lambda}
+                \hat{H}(x)\Psi_1 (x)=E_x \Psi_1 (x) \\
+                \hat{H}(y)\Psi _2 (y)=E_y \Psi _2 (y) \\
+                \hat{H}(z)\Psi _3 (z)=E_z \Psi _3 (z)
                 \end{cases} </p>
         </div>
-
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
             data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            $\bullet$ 分情况讨论：
-
-            <p class="substep"> (1) 相异实根（$\lambda < 0$） </p>
-
-                    <p class="substep">写出通解：$$ X(x)=A e^{\sqrt{-\lambda}x} + B e^{-\sqrt{-\lambda}x} $$ </p>
-
-                    <p class="substep">代入定解条件$X(0)=0, \quad X(l)=0$, 得定解方程组：
-                        \begin{cases}
-                        A + B = 0 \\
-                        A e^{\sqrt{-\lambda}l} + B e^{-\sqrt{-\lambda} l} =0
-                        \end{cases} </p>
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            写成矩阵形式
-            $$ \left[
-            \begin{array}{lll}
-            1 & 1\\
-            e ^{\sqrt{-\lambda} l} & e~^{-\sqrt{-\lambda} l}
-            \end{array}
-            \right]
-            \left[
-            \begin{array}{ll}
-            A\\
-            B
-            \end{array}
-            \right]
-            =\left[
-            \begin{array}{ll}
-            0\\
-            0
-            \end{array}
-            \right] $$
-
-            <p class="substep">有解条件为系数行列式为零：
-                $$ \begin{vmatrix}
-                1 & 1 \\
-                e^{\sqrt{-\lambda} l} & e ^{-\sqrt{-\lambda} l}
-                \end{vmatrix}
-                = 0 $$ </p>
-
-            <p class="substep">很明显，这个行列式不等于0， 所以无非零解 </p>
-        </div>
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            (2) 相同实根（$\lambda = 0$），
-
-            <p class="substep">写出通解： $$ X(x) = Ax + B $$ </p>
-
-            <p class="substep">分别取$x=0, x=l$, 得定解方程组：
-                $$\left\{
-                \begin{array}{lll}
-                B=0\\
-                Al+B=0
-                \end{array} \right. $$ </p>
-
-            <p class="substep">也无非零解 </p>
-        </div>
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            (3) 虚根（$\lambda >0$），即： $$ \mu~_1 = i \sqrt{\lambda}, \quad \mu _2 = - i \sqrt{\lambda}$$
-
-            <p class="substep">写出通解：$$ X(x)=A\cos \sqrt{\lambda}x+ B\sin \sqrt{\lambda}x $$ </p>
-
-            <p class="substep">分别取$x=0, x=l$, 得定解方程组：
-                $$ \left[
-                \begin{array}{lll}
-                1&0\\
-                \cos( {\sqrt{\lambda}~l}) &\sin ({\sqrt{\lambda}~l})
-                \end{array}
-                \right]
-                \left[
-                \begin{array}{ll}
-                A\\
-                B
-                \end{array}
-                \right]=
-                \left[
-                \begin{array}{ll}
-                0\\
-                0
-                \end{array}
-                \right] $$ </p>
-
-        </div>
-
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            由系数行列式为零，得：
-            $$ \sin ({\sqrt{\lambda}~l})=0 $$
-
-            <p class="substep">有
-                $$ \sqrt{\lambda} l = n \pi \quad (n = 1, 2, 3, \cdots ) $$ </p>
-
-            <p class="substep">解得</p>
-            <li class="substep">固有值：$ \lambda~_n = \dfrac{n^2 \pi~^2 }{l~^2 }$ </li>
-
-            <p class="substep">把固有值代入通解， 得：</p>
-            <li class="substep">固有函数：$ X~_n=A_n\sin \dfrac{n\pi~}{l} x = A_n \sin \omega_n x $</li>
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-
-            解方程II : $$ T~^{\prime\prime} +\lambda {a~^2 T}=0 $$
-
-            <p class="substep">代入固有值 $\lambda_n = \dfrac{n^2 \pi~^2 }{l~^2 }$
-                $$ T_n ^{\prime\prime} +\lambda~_n a~^2 ~T=0 $$ </p>
-
-            <p class="substep">改写为：
-                $$ T_n ^{\prime\prime} + (\omega_n a)^2 T=0 $$ </p>
-
-            <p class="substep">根据特征方程只有虚根，写出通解 ：
-                $$ T _n = C _n \cos \omega_n a t+ D _n \sin \omega _n a t $$ </p>
-
-
-        </div>
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            两个方程的解相结合，得原方程的基本解：
-            $$ \begin{array}{llll}
-            u_n(x,t) &= T_n(t)X_n(x)\\
-            &=(a_n\cos \omega_nat+ b_n\sin \omega _nat ) \sin \omega_n x\\
-            &=(a_n\cos\dfrac{ n\pi a}{l}t+ b_n\sin \dfrac{ n\pi a}{l}t) \sin \dfrac{ n\pi }{l}x
-            \end{array} $$
-
-            <p class="substep">叠加解 (解函数)：
-                $$ \begin{array}{llll}
-                u(x,t) &=&\sum\limits_{n=1}^{\infty } u_n(x,t)\\
-                &=& \sum\limits_{n=1}^{\infty } (a_n\cos\dfrac{ n\pi a}{l}t+ b_n\sin \frac{ n\pi a}{l}t) \sin \dfrac{
-                n\pi }{l}x
-                \end{array} $$ </p>
-
-            <p class="substep">需确定系数 $a_n, b_n$！ </p>
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            $$ u(x,t)= \sum\limits_{n=1}^{\infty } (a_n\cos\dfrac{ n\pi a}{l}t + b_n\sin \frac{ n\pi a}{l}t) \sin
-            \dfrac{ n\pi }{l}x $$
-
-            <p class="substep">代入定解条件-1: (初始位置)
-                $u(x,0)= \varphi (x)$ </p>
-            <p class="substep"> $$\varphi (x)=\sum_{n=1}^{\infty } a_n \sin \dfrac{ n\pi }{l}x $$ </p>
-
-            <p class="substep">由傳里叶变换公式得系数： （注意：积分区间导致因子变化）
-                $$ a_n = \frac{2}{l}\int\limits_{0 }^{l} \varphi (x) \sin \dfrac{ n\pi }{l}x dx $$ </p>
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            代入定解条件-2: （初始速度）
-            $ u_t(x,0)= \Psi (x)$
-
-            <p class="substep">$$\Psi (x)=\sum_{n=1}^{\infty } b_n \frac{ n\pi a}{l} \sin \frac{ n\pi }{l}x $$ </p>
-
-            <p class="substep">由傳里叶变换公式，得：
-                \begin{aligned}
-                b_n \frac{ n\pi a}{l} & = \frac{2}{l}\int\limits_{0 }^{l} \Psi (x) \sin \dfrac{ n\pi }{l}x dx \\
-                b_n &= \frac{2} { n\pi a} \int\limits_{0 }^{l} \Psi (x) \sin \dfrac{ n\pi }{l}x dx
-                \end{aligned} </p>
-
-            <p><span class="substep over"> 结束！ </span></p>
-        </div>
-
-        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
-            <br>
-            <h3>叠加解的思考与讨论：</h3>
-            <br>
-            <li class="substep">数学理解: 线性方程解的线性组合，依然是方程的解</li>
-
-            <li class="substep">物理理解: It is not complicated. It is just a lot of it.</li>
-
-            <li class="substep">核心成果: 傅里叶级数与傅里叶变换 </li>
-
-        </div>
-
-        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0" data-rotate-x="45">
-            <h2>3. 固有函数正交</h2>
-            <br>
-            <span class="exam"> 例-6: </span> 试证明所有固有函数($X~_n= \sin \dfrac{n\pi~}{l} x$) 两两正交
-
-            <p class="substep"><span class="answer"> 证明: </span> 固有函数是固有方程的解
-                \begin{array}{llll}
-                &X_n ^{\prime \prime}+\lambda_n X_n=0 \qquad (1) \\
-                &X_m ^{\prime \prime}+\lambda_m X_m=0 \qquad (2)
-                \end{array} </p>
-
-            <p class="substep">$X_m$乘(1)式，$X_n$乘(2)式, 得：
-                \begin{array}{llll}
-                &X_m X_n ^{\prime \prime}+\lambda_n X_m X_n=0 \qquad (3)\\
-                &X_nX_m ^{\prime \prime}+\lambda_m X_n X_m=0 \qquad (4)
-                \end{array} </p>
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            (3)-(4)：
-            \begin{array}{llll}
-            & (\lambda_n - \lambda_m) X_n X_m= X_n X_m ^{\prime \prime}-X_m X_n ^{\prime \prime}
-            \end{array}
-
-
-            <p class="substep">两边同时积分：
-                \begin{array}{llll}
-                (\lambda_n - \lambda_m )& \int\limits_{0 } ^{l} X_n X_m dx = \int\limits_{0} ^{l} [ X_n X_m
-                ^{\prime\prime} - X_m X_n ^{\prime\prime} ] dx \\
-                & = [ X_n X_m ^{'} - X_m X_n ^{'} ] _0 ^{l} - \int\limits_{0} ^{l} [ X_n ^{'} X_m ^{'} - X_m ^{'} X_n
-                ^{'} ] dx
-                \end{array} </p>
-
-            <li class="substep">等式右边的两项分别为零：</li>
-
-        </div>
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            因此等式左边也等于零
-            $$ (\lambda_n-\lambda_m) \int\limits_{0 }^{l} X_n X_m dx=0 $$
-
-            <p class="substep">由于 $\lambda_n \ne \lambda_m$, 得：
-                $$ \int\limits_{0 }^{l} X_n X_m dx=0 , \qquad (n\ne m) $$ </p>
-
-            <p class="substep">即： 固有函数两两正交 </p>
-
-            <p><span class="substep over"> 结束！ </span></p>
-
-        </div>
-
-        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
-
-            <span class="exam"> 例-4: </span> 试证明所有固有函数平方可积 <br>
-            <span class="answer"> 证明: </span> 当 $ n = m \ne 0$时，
-            \begin{array}{llll}
-            \int\limits_{0 }^{l} X_n X_m dx&= \int\limits_{0 }^{l} X_n X_n dx \\
-            &= \int\limits_{0 }^{l} \sin ^2 \dfrac{n\pi~}{l} x dx \\
-            &= \dfrac{l}{2} \\
-            &= \dfrac{T}{2}
-            \end{array}
-
-            <p><span class="substep over"> 结束！ </span></p>
-
-        </div>
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-
-            正交性和平方可积性写在一起
-            \begin{equation*}
-            \int\limits_{0 }^{l} X_n X_m dx =
-            \begin{cases}
-            0, \qquad (n=m) \\
-            \\
-            \dfrac{l}{2} , \qquad (n \not =m)
-            \end{cases}
-            \end{equation*}
-
-            <p class="substep">通常写成正交归一性
-                \begin{aligned}
-                \dfrac{2}{l} \int\limits_{0 }^{l} X_n X_m dx & =
+            <p class="substep">同理，若势能函数可以写成
+                $$ V(x,y,z) = V(r,\theta,\varphi) = V_1 (r) + V_2 (\theta) + V_3 (\varphi) $$ </p>
+            <p class="substep">则也可得三个一维薛定谔方程
                 \begin{cases}
-                0, \qquad (n=m) \\
-                \\
-                1, \qquad (n \not =m)
-                \end{cases}\\
-                &= \delta _{nm}
-                \end{aligned}</p>
-        </div>
-
-        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
-            <span class="exam"> 例-5: </span> 求解定常问题
-            \begin{cases}
-            u_{tt} =u_{xx},\quad (0 < x < 1, t> 0)\\
-                u(0,t) =u(1,t)=0 \\
-                u(x,0) =\sin \pi x, \quad u_t (x,0)=0
-                \end{cases}
-
-                <span class="answer"> 解: </span> 这是零边界条件下的波动方程:
-
-                <li class="substep">固有值：$$ \lambda_n =\dfrac{n^2 \pi ^2}{l ^2 }= n^2 \pi^2 $$</li>
-
-                <li class="substep">固有函数：$$ X_n = \sin \dfrac{n\pi}{l} x = \sin n \pi x $$</li>
+                \hat{H}(r)\Psi_1 (x)=E_r \Psi_1 (r) \\
+                \hat{H}(\theta)\Psi _2 (\theta)=E_\theta \Psi _2 (\theta) \\
+                \hat{H}(\varphi)\Psi _3 (\varphi)=E_\varphi \Psi _3 (\varphi)
+                \end{cases} </p>
+            <li class="substep">原则上，基于当今数学知识，一维薛定谔方程都是可求解的！</li>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
             data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h3>课堂作业</h3>
+            <p class="substep">1. 求解自由粒子（势能函数 V(x,y,z) =0 ）定态薛定谔方程
+                $$\left [ -\dfrac{\hbar^2}{2\mu }\nabla ^2 + V(x,y,z) \right ] \Psi (x,y,z) = E \Psi (x,y,z)$$ </p>
+            <p class="substep">2. 求解稳恒势场（V(x,y,z,t) =c） 中质量为$m$的粒子的薛定谔方程</p>
+        </div>
 
-            <li>解函数:</li>
-            \begin{array}{llll}
-            u(x,t)&=& \sum\limits_{n=1}^{\infty } (a_n\cos\dfrac{ n\pi at}{l}+ b_n\sin \dfrac{ n\pi at}{l}) \sin \dfrac{
-            n\pi x}{l}\\
-            &= &\sum\limits_{n=1}^{\infty } (a_n\cos n\pi t+ b_n\sin n\pi t ) \sin n\pi x \\
-            \end{array}
-
-            <p class="substep">初始位置决定 $a_n$ </p>
-            <p class="substep">\begin{aligned}
-                a_n&= \dfrac{2}{l} \int\limits_{0 }^{l} \varphi (x) \sin \dfrac{ n\pi x}{l} dx = 2 \int\limits_{0 }^{1}
-                \sin(\pi x) \sin n\pi x dx \\
-                & = 2 \int\limits_{0 }^{1} \sin(\pi x) \sin \pi x dx = 1 \quad (n=1)
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="homework"> 作 业： </span></p>
+            <p>1. 求解处于如下势场中粒子的薛定谔方程
+                \begin{aligned}
+                1)\quad V(x,y,z,t) &= \sin x + \cos y + z \\
+                2)\quad V(x,y,z,t) &= e^{x} + y^2 \\
                 \end{aligned} </p>
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-
-            <p>初始速度决定 $b_n$ </p>
-            <p class="substep">\begin{array}{lllllllll}
-                b_n&= \dfrac{2} { n\pi a} \int\limits_{0 }^{l} \Psi (x) \sin \dfrac{ n\pi x}{l} dx \\
-                &= \dfrac{2} { n\pi} \int\limits_{0 }^{1} 0 \sin n\pi x dx \\
-                &=0
-                \end{array} </p>
-            <p class="substep">代回，得定常解函数：
-                $$ u(x,t) = \cos(\pi t) \sin(\pi x) $$ </p>
-
-            <p><span class="substep over"> 结束！ </span></p>
-
-        </div>
-
-        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
-            <p><span class="homework"> 作 业： </span>求波动方程的定常问题 </p>
-            \begin{aligned}
-            1. & \begin{cases}
-            u_{tt} =a^2u_{xx},\quad 0 < x < l, t> 0 \\
-                u(0,t) =u(l,t)=0 \\
-                u(x,0) =sin \dfrac{\pi x}{l} , u_t (x,0)=\sin \pi x
-                \end{cases}\\
-                2. &\begin{cases}
-                u_{tt} =a^2u_{xx} ,\quad 0 < x < 1, t> 0 \\
-                    u(0,t) =u(1,t)=0 \\
-                    u(x,0) =3sin \dfrac{3\pi x}{2} +6\sin(\dfrac{5\pi x}{2}), u_t (x,0)=0
-                    \end{cases} \\
-                    3. &\begin{cases}
-                    u_{tt} =u_{xx} ,\quad -1 < x < 1, t> 0\\
-                        u(-1,t) =u(1,t)=0 \\
-                        u(x,0) =\sin 4\pi x , u_t (x,0) = x (1-x)
-                        \end{cases}
-                        \end{aligned}
+            <p>2. 求解自由粒子（势能函数 V(x,y,z) =0 ） 的定态薛定谔方程
+                $$\left [ -\dfrac{\hbar^2}{2\mu }\nabla ^2 + V(x,y,z) \right ] \Psi (x,y,z) = E \Psi (x,y,z)$$ </p>
+            <p> 3. 如果势场（V）不显含位置变量，试分析薛定谔可否分离变量 </p>
         </div>
 
         <div class="step " data-x="-2000" data-y="0" data-z="1000" , data-rotate-y="-45">
@@ -556,447 +284,198 @@
         <div id="lecture-2" class="step " data-rel-x="3000" data-y="0" data-rel-z="800" data-rotate-z="45">
             <br>
             <br>
-            <h2>第二讲 热传导方程 </h2>
+            <h2>第二讲 无限深势阱 </h2>
             <br>
-            <li>方程的建立</li>
-            <li>方程的求解</li>
-            <li>三类边界条件</li>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
-            <h3> 1. 方程的建立</h3>
-            <br>
-            <span class="exam"> 例-1: </span>
-            实验发现，热量总是从温度高的地方传向温度低的地方，服从傅里叶热传导定律：
-            \begin{equation*}
-            q=-k\nabla u
-            \end{equation*}
 
-            <p class="substep">式中，$q$是热流强度 （定义为单位时间通过单位横截面积的热量）； $k$ 是材料的导热系数 ；$\nabla $ 是梯度算子~$(\frac{\partial
-                }{\partial x} +\frac{\partial }{\partial y} +\frac{\partial }{\partial z})$,u是温度函数。 </p>
-            <br>
-            <p class="substep">试建立温度函数$u(x,y,z,t)$所满足的方程 </p>
-
+            <p><span class="exam"> 例-1: </span> 一粒子处于如下一维无限深方型势阱
+                <img class="imgmixed" src="../EM/EM-beamer/figs/square-potential-well.svg" width=400 height=400>
+                $$V(x,t)=\begin{cases}
+                0, \qquad 0 < x < a \\ \\ +\infty, \qquad x < 0, x> a
+                    \end{cases}$$
+                    求解含时薛定谔方程
+            </p>
+            <p class="substep"><span class="answer"> 解: </span> 势函数不显含时间t，含时薛定谔方程可分离变量，时间演化方程已求得（见前），现求一维定态薛定谔方程： </p>
+            <p class="substep">\begin{cases}
+                \left [ -\dfrac{\hbar^2}{2\mu} \dfrac{\mathrm{d} ^2}{\mathrm{d} x^2} +0 \right ]\Psi(x) &= E\Psi(x),
+                \qquad 0 < x < a \qquad (1) \\ \left [ -\dfrac{\hbar^2}{2\mu} \dfrac{\mathrm{d} ^2}{\mathrm{d} x^2}
+                    +\infty \right ]\Psi(x) &=E\Psi(x), \qquad x < 0, x> a \qquad(2) \\
+                    \end{cases} </p>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
-            <img src="../EM/EM-beamer/figs/21.jpg" align=right width="300px" height="+300px">
-            <span class="answer"> 解: </span> 傅里叶热传导定律有分量形式
+            <p>方程（2）的解为 $$\Psi(x) = 0, \qquad (x < 0, x> a) $$ </p>
+            <p class="substep">解方程（1）：令 $ k^2= \dfrac{2\mu E}{\hbar ^2} $, 方程是如下边值问题 </p>
 
-            $q_{x_i}=-k \dfrac{\partial }{\partial x_{i}} u$
-
-            考虑单位时间介质任意小体积~x~方向的净流入：
-            <p class="substep">$$\begin{aligned}
-                (q_x|_{x+dx} &-q_x|_x)dydz \\
-                &=-\dfrac{\partial q_x }{\partial x} dxdydz\\
-                &= \dfrac{\partial }{\partial x} (k\dfrac{\partial u}{\partial x})dxdydz
-                \end{aligned}$$ </p>
-            <p class="substep">总的热量净流入：
-                $$[\frac{\partial }{\partial x} (k_x\frac{\partial u}{\partial x}) + \frac{\partial }{\partial y}
-                (k_y\frac{\partial u}{\partial y}) + \frac{\partial }{\partial z} (k_z\frac{\partial u}{\partial z})
-                ]dxdydz $$ </p>
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
-            流入的热量导致介质温度发生变化（热量守恒定律）
-            \begin{equation*}
-            c \rho \frac{\partial u}{\partial t}dxdydz=[\frac{\partial }{\partial x} (k_x\frac{\partial u}{\partial x})
-            + \frac{\partial }{\partial y} (k_y\frac{\partial u}{\partial y}) + \frac{\partial }{\partial z}
-            (k_z\frac{\partial u}{\partial z}) ]dxdydz
-            \end{equation*}
-            其中c是比热，$\rho$ 是质量密度 <br>
-            <p class="substep"> 对于各向同性介质：
+            <p class="substep">\begin{cases}
+                \Psi ^{\prime\prime} (x) + k^2 \Psi(x)=0 \\
+                \\
+                \Psi(0)=0, \qquad \Psi(a)=0 \qquad
+                \end{cases} </p>
+            <p class="substep">特征方程有两虚根，写出通解：
                 \begin{equation*}
-                c \rho \frac{\partial u }{\partial t}=k[\frac{\partial }{\partial x} (\frac{\partial u}{\partial x}) +
-                \frac{\partial }{\partial y} (\frac{\partial u}{\partial y}) + \frac{\partial }{\partial z}
-                (\frac{\partial u}{\partial z}) ]
-                \end{equation*} </p>
-            <p class="substep">\begin{equation*}
-                \frac{\partial u }{\partial t}=\frac{k}{c\rho}[\frac{\partial }{\partial x} (\frac{\partial u}{\partial
-                x}) + \frac{\partial }{\partial y} (\frac{\partial u}{\partial y}) + \frac{\partial }{\partial z}
-                (\frac{\partial u}{\partial z}) ]
-                \end{equation*} </p>
-            <p class="substep">\begin{equation*}
-                u_t=a^2 [u_{xx} +u_{yy} +u_{zz}]
+                \Psi(x) = A\cos(kx) +B\sin(kx)
                 \end{equation*} </p>
 
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
-            得方程
-            <p>\begin{equation*}
-                u_t=a^2 \nabla ^2 u
-                \end{equation*} </p>
-            <br>
-            <p class="substep">对于一维导线：$\displaystyle u_t= a^2 u_{xx}$ </p>
-            <p class="substep">如果有热源$F(x,y,z,t)$,令 $f=\dfrac{F}{c\rho}$：
-                $$ u_t= a^2 u_{xx}+f$$ </p>
-            <p class="substep">如果时间足够长，温度应不再随时间变化 ($u_t =0$)， </p>
-            <li class="substep">无源$Laplace$ 方程： $ \nabla ^2 u =0$ </li>
-            <li class="substep">有源$Poisson$ 方程： $ \nabla ^2 u =-f$ </li>
-            <br>
+            <p>取$x=0$, 代入通解，得：
+                $$ (A \cos(kx) +B\sin(kx))|_{x=0} =0 \quad \implies \quad A=0 $$ </p>
+            <p class="substep">取$x=a$, 代入通解，得：
+                $$ B\sin(ka)=0 $$ </p>
+
+            <p class="substep">有：$ka=n\pi, \qquad (n=1,2,3,\cdots)$ </p>
+            <p class="substep">结合 $ k^2= \dfrac{2\mu E}{\hbar ^2} $， 得: </p>
+            <li class="substep">固有值 ：$ E_n = \dfrac{n^2\pi^2\hbar^2}{2\mu a^2},\quad (n=1,2,3,...)$</li>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <p>把$A=0$和固有值$E_n$代入通解，得 </p>
+            <li class="substep">固有函数： $ \Psi_n(x) = B_n \sin(\dfrac{n\pi}{a}x)$</li>
+            <p class="substep">根据波函数的统计诠释，全空间找到粒子的概率应为1: </p>
+            <p class="substep">\begin{aligned}
+                1&= \int\limits_{\infty}^{+\infty} |\Psi(x)|^2 dx \\
+                &= \int\limits_{0}^{a} \Psi_n ^*(x) \Psi_n(x)dx \\
+                &=\int \limits_{0}^{a} |B_n| ^2 \sin^2(\dfrac{n\pi}{a}x) dx
+                \end{aligned} </p>
         </div>
 
         <div class="step" data-rel-x="1000" data-rel-y="1000" data-rel-z="-500" data-scale="4">
-            <h3> 2. 方程的求解</h3>
-            <br>
-            <span class="exam"> 例-2: </span> 对于有限长导线，求解一维热传导方程
-            \begin{cases}
-            u_{t}=a^2u_{xx} ,~~~~ (0 < x < l, t> 0)\\
-                u(x,t)|_{t=0}= \psi (x) \\
-                u(x,t)|_{x=0} = 0, ~~~ u(x,t)|_{x=l} = 0
-                \end{cases}
-                <p class="substep"><span class="answer"> 解: </span> (傅里叶) 方程可分离变量, $u(x,t)=T(t)X(x) $，代回方程, 得： </p>
-
-                <p class="substep">\begin{equation*}
-                    T~^{'}(t)X(x) =a~^2 T(t)X~^{''}(x)
-                    \end{equation*} </p>
-                <p class="substep">\begin{equation*}
-                    \frac{T~^{'}}{a~^2 T}=\frac{X~^{''} }{X} =-\lambda
-                    \end{equation*} </p>
-
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
-            整理得两个常微分方程
-            <p class="substep">方程（I）：
+            $$B_n = \sqrt{\dfrac{2}{a}}$$
+            <p class="substep">归一化的固有函数： $ \Psi_n(x) = \sqrt{\dfrac{2}{a}} \sin(\dfrac{n\pi}{a}x)$ </p>
+            <p class="substep">解函数：
+                $$\Psi_n(x,t)=
                 \begin{cases}
-                X^{\prime \prime} +\lambda X=0 ~~,~~ 0 < x < l \\ X(0)=0 ~,~X(l)=0 \end{cases} </p>
-                    <p class="substep">方程（II）：
-                        \begin{cases}
-                        T^{'} +\lambda {a^2 T} = 0 \\
-                        \cdots
-                        \end{cases} </p>
-
+                \sqrt{\dfrac{2}{a}} \sin(\dfrac{n\pi}{a}x) e^{-\dfrac{i}{\hbar} E_n t}\qquad (0 < x < a) \\ \\ 0 \qquad
+                    \qquad \qquad \qquad (x < 0 , x> a)
+                    \end{cases}$$ </p>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
-            方程（I）
-            \begin{cases}
-            X^{\prime \prime} +\lambda X=0 ~~,~~ 0 < x < l \\ X(0)=0 ~,~X(l)=0 \end{cases} <p class="substep">是原固有值问题
-                </p>
-                <li class="substep">固有值：$$ \lambda~_n=\frac{n^2\pi~^2}{l~^2}$$ </li>
-                <li class="substep">固有函数：$$X~_n= \sin \frac{n\pi~}{l} x $$</li>
-
+            叠加解：
+            $$ u(x,t) =\sum_{n=1}^\infty a_n \Psi_n(x,t)$$
+            <br>
+            <li class="substep">给出初值条件,可求得$a_n$.</li>
+            <h4 class="substep">课堂作业</h4>
+            <p class="substep">如已知 $u(x,t)|_{t=0} = \sin(\dfrac{5\pi}{a}x) $, 求体系的波函数和能量值 </p>
         </div>
 
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            解方程（II）
-            $$T^{'} +\lambda {a^2 T} = 0$$
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <p><span class="exam"> 例-2: </span> 设有一粒子处于如下一维无限深势阱
+                <img class="imgmixed" src="../EM/EM-beamer/figs/square-potential-well.svg" width=400 height=400>
+                $$V(x)=\left \{
+                \begin{array}{cccc}
+                0 ~~ ~~ |x| < \dfrac{a}{2} \\ +\infty ~~|x|> \dfrac{a}{2}\\
+                    \end{array}
+                    \right.$$
+                    求解薛定谔方程
+            </p>
 
-            <p class="substep">代入$\lambda_n$, 得：
-                $$ T~^{'} +\lambda~_n a~^2 ~T=0 $$ </p>
-            <p class="substep">变形：$$ T~^{'} + rT=0 $$ </p>
-            <p class="substep">这是衰减数学模型
-                $$T_n=B_n \exp(-(\dfrac{n\pi a}{l})^2 t)$$</p>
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            原方程的叠加解：
+            <p class="substep"><span class="answer"> 解: </span> 势函数与上例存在平移关系 </p>
+            <p class="substep">令$x' =x+a/2$, 有：</p>
             <p class="substep">\begin{aligned}
-                u(x,t) &= \sum\limits_{n=1}^{\infty }T_n(t)X_n(x)\\
-                &= \sum\limits_{n=1}^{\infty } B_n \exp(-(\dfrac{n\pi a}{l})^2 t) \sin \dfrac{n\pi~}{l} x \\
+                \sin(\dfrac{n\pi}{a}x') &=\sin(\dfrac{n\pi}{a} (x+a/2)) \\
+                &=\sin \dfrac{n\pi}{a} x \cos \dfrac{n\pi}{2} + \cos \dfrac{n\pi}{a} x \sin \dfrac{n\pi}{2}
                 \end{aligned} </p>
-            <p class="substep">代入定解条件：
-                $ \displaystyle u(x,0)= \psi(x)$ </p>
-            <p class="substep">$$\psi (x)=\sum\limits_{n=1}^{\infty } B_n \sin \dfrac{ n\pi }{l} x$$ </p>
-        </div>
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            <p>由傳里叶变换公式，得系数：
-                $ B_n= \dfrac{2}{l}\int\limits_{0 }^{l} \psi (x) \sin \dfrac{ n\pi }{l} x dx , ~~~ (n=1,2,3,...) $ </p>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
             data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            <span class="exam"> 例-3: </span> 对于有限长的导线，在具体的初值条件下求解一维热传导方程(实例)
-            $\displaystyle \begin{cases}
-            u_{t} =u_{xx} ,~~ 0 < x < L, ~~t> 0\\
-                u(0,t) =0, ~~u(L,t)=0 \\
-                u(x,0) =x(L-x)
-                \end{cases}$
-                <p class="substep"><span class="answer"> 解: </span> 写出零边界条件确定的固有值和固有函数: </p>
-                <li class="substep">固有值：$\lambda~_n = \dfrac{n^2 \pi^2 }{l^2 }= (\dfrac{n\pi }{L}) ^2$ </li>
-                <li class="substep">固有函数：$ X_n=\sin \dfrac{n\pi}{l} x=\sin \dfrac{n\pi}{L} x $ </li>
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            解函数（叠加解）：
-            $$\begin{array}{llll}
-            u(x,t)&=\sum\limits_{n=1}^{\infty } B_n \exp(-(\dfrac{n\pi a}{l})^2 t) \sin \dfrac{n\pi~}{l} x\\
-            &= \sum\limits_{n=1}^{\infty } B_n \exp(-(\dfrac{n\pi a}{L})^2 t) \sin \dfrac{n\pi~}{L} x \\
-            \end{array}$$
-            <p class="substep">展开系数：
-                $$ \begin{array}{lllllllll}
-                B_n&= \dfrac{2}{l}\int_{0 }^{l} \psi (x) \sin \dfrac{ n\pi }{l} x dx \\
-                &= \dfrac{2}{L}\int_{0 }^{L} x(L-x) \sin \dfrac{ n\pi }{L} x dx \\
-                &=\dfrac{2}{L} \times 2\times (\dfrac{L 2}{n\pi})^3 [1-\cos n \pi ]
-                \end{array}$$ </p>
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            $$ \begin{array}{lllllllll}
-            &= 4 \dfrac{L^2}{(n\pi)^3}[1-(-1)^n ] \\
-            &= 8 \dfrac{L^2}{((2k+1)\pi)^3}
-            \end{array}$$
-
-            <p class="substep">把$B_n$代回，得具体解函数：$$ u(x,t) = (\dfrac{8L^2}{\pi ^3}) \sum_{k=0}^{\infty}
-                \dfrac{1}{(2k+1)^3}
-                \exp(-(\dfrac{(2k+1)\pi a}{L})^2 t) \sin \dfrac{(2k+1)\pi~}{L} x $$ </p>
-
-            <p><span class="substep over"> 结束！ </span></p>
-        </div>
-
-
-        <div class="step " data-x="5000" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>n为偶数： $E_{2m} = \dfrac{2m^2\pi^2\hbar^2}{\mu a^2} $ </p>
+            <p class="substep">$\hspace{2cm}\Psi_{2m}(x)= B_{2m} \sin(\dfrac{2m\pi}{a}x) $ </p>
+            <p class="substep">n为奇数： $E_{2m+1} = \dfrac{(2m+1)^2\pi^2\hbar^2}{2\mu a^2} $ </p>
+            <p class="substep">$\hspace{2cm} \Psi_{2m+1}(x)= B_{2m+1} \cos(\dfrac{(2m+1)\pi}{a}x) $ </p>
+            <p class="substep">求归一化系数 $\cdots$ </p>
             <br>
-            <h2>3. 三类边界条件</h2>
-            <br>
-            <span class="exam"> 例-4: </span> 求解第二类零边界条件热传导方程
-            \begin{cases}
-            u_{t} =u_{xx} ~~,~~ 0 < x < l, t>0\\
-                u_x (0,t) =0, u_x (l,t)=0 \\
-                u(x,0) =\psi(x)
-                \end{cases}
-                <p class="substep"><span class="answer"> 解: </span> 类似的，经分离变量，偏微分方程可转化为 </p>
-                <p class="substep">方程（I）：
-                    \begin{aligned}
-                    X^{\prime \prime} +\lambda X=0 ~~,~~ 0 < x < l \\ X'(0)=0 ,\qquad X' (l)=0 \end{aligned}</p>
+            <p class="substep">直接求解 !$\cdots$ </p>
         </div>
 
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            <p>方程（II）：
-                $T~^{'} +\lambda {a~^2 T}=0$
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p>前三个波函数 </p>
+            <p>
+                <center><img class="imgmixed" src="../EM/EM-beamer/figs/square-potential-well-wavs.svg" width=600
+                        height=600></center>
             </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <span class="exam"> 例-3: </span> 如果把例-2中的势阱宽改为2a，求体系的能量本征值和本征函数
+            <p><span class="answer"> 解: </span> 做势阱的平移与伸缩，得解： </p>
+            <li class="substep">本征值: $E_n = \dfrac{n^2\pi^2\hbar^2}{8m a^2} \quad (n=1,2,3,...)$ </li>
+            <li class="substep">本征函数: $ \Psi_n(x)= \sqrt{\dfrac{2}{a}} \sin(\dfrac{n\pi}{a}(x+a)) $</li>
             <br>
-            <p class="substep"> 解方程I : </p>
-            <p class="substep"> 注意到方程（I）是导数边界条件，不是原固有值问题。因此不能直接写出固有值和固有函数 </p>
+            <p class="substep"> <span class="tips"> TIPS: </span> 注意总结基于坐标轴平移和伸缩直接写本征值值和本征函数的方法。 </p>
+        </div>
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="exam"> 例-4: </span> 求任意形态无限深势阱
+                <center><img src="../EM/EM-beamer/figs/complex-well-psi-E-3.00.png" width=800 height=450></center>
+            </p>
 
-            <p class="substep">基于以前讨论，只有在$\lambda >0 $ 即特征方程有虚根时，方程才有非零解。 </p>
-            <p class="substep">通解为：
-                \begin{equation*}
-                X=A\cos \sqrt{\lambda} x + B \sin \sqrt{\lambda} x
-                \end{equation*} </p>
-            <p class="substep">为了使用导数边界条件，先对上式求导：
-                \begin{equation*}
-                X' (x)=\sqrt{\lambda} [-A\sin \sqrt{\lambda} x + B \cos \sqrt{\lambda} x]
-                \end{equation*} </p>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
             data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            <p>代入导数边界条件（分别取$x = 0, x = l$），得方程组 </p>
-            <p class="substep">
-                $$\left[
-                \begin{array}{lll}
-                0&1\\
-                -\sin( {\sqrt{\lambda}~l}) &\cos ({\sqrt{\lambda}~l})
-                \end{array}
-                \right]
-                \left[
-                \begin{array}{ll}
-                A\\
-                B
-                \end{array}
-                \right]
-                =\left[
-                \begin{array}{ll}
-                0\\
-                0
-                \end{array}
-                \right]$$ </p>
-
-            <p class="substep">系数行列式为零时，有$ \sin\sqrt{\lambda}~l =0$，解得新的： </p>
-            <li class="substep">固有值：$\lambda_n =(\dfrac{n\pi}{l})^2 ~~,~~ (n = 0, 1,2,\cdots )$</li>
-
-            <p class="substep">代回方程组，得待定系数：$ [A, B] ^T =[1, 0] ^T$, 解得新的： </p>
-            <p class="substep">固有函数：
-                \begin{equation*}
-                X_n=\cos \dfrac{n\pi}{l} x~,~~~ (n=0,1,2,\cdots )
-                \end{equation*} </p>
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            <p>解函数（叠加解）：
-                \begin{equation*}
-                u(x,t)=\sum\limits_{n=0}^{\infty } B_n \exp(-(\frac{n\pi a}{l})^2 t) \cos \frac{n\pi~}{l} x
-                \end{equation*} </p>
-            <p class="substep">展开系数：
+            <p><span class="exam"> 例-5: </span> 求解一维无限深势阱的非定常问题
                 \begin{cases}
-                B_0&= \dfrac{1}{l} \int_{0}^{l} \psi(x) dx \\
-                B_n&= \dfrac{2}{l} \int_{0}^{l} \psi(x) \cos \dfrac{n\pi}{l} xdx ,~~ (n=1,2,\cdots )
+                i\hbar \dfrac{\partial }{\partial t} \Psi (x,t) = -\dfrac{\hbar^2}{2\mu } \dfrac{\partial ^2 \Psi (x,t)
+                }{\partial ^2 x ^2 } \qquad (0 < x < L, t> 0) \\
+                    \Psi (0,t) = 0, \qquad \Psi (L,t) =0 \\
+                    \Psi (x,0) = f(x)
+                    \end{cases} </p>
+            <p class="substep"><span class="answer"> 解: </span> 令$\Psi (x,t) =\Psi (x) T(t) $ ,
+                代回方程，得时间演化方程（已解）和定态薛定谔方程 </p>
+            <p class="substep">\begin{cases}
+                \Psi''(x) + k^2 \Psi(x)=0 \\
+                \Psi(0)=0,\qquad \Psi(L)=0 \qquad
                 \end{cases} </p>
+            <p class="substep"> <span class="tips"> TIPS: </span> 与例-1中的方程相类同。</p>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
             data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            <p><span class="item"> 小结： </span> 导数零边界条件下： </p>
-            <li> 固有值：$\lambda_n =(\frac{n\pi}{l})^2 ~~,~~ (n = 0,1,2,\cdots )$ </li>
-            <li> 固有函数：$ X_n=\cos \dfrac{n\pi}{l} x$</li>
-
-            <p> <span class="tips"> TIPS: </span> </p>
-            <li class="substep">固有函数由$\sin$函数变为$\cos$函数</li>
-            <br>
-            <li class="substep">存在 n=0 项, 因为
-                $$\cos \frac{n\pi}{l} = \cos \frac{0\pi}{l} =1$$</li>
+            <p class="substep">固有值： $E_n = \dfrac{n^2\pi^2\hbar^2}{2\mu L^2} (n=1,2,3,...)$ </p>
+            <p class="substep">固有函数： $ \Psi_n(x) = \sin(\dfrac{n\pi}{L}x) $ </p>
+            <p class="substep">时间函数： $T_n(t) = \exp(-i E_n t /\hbar) $ </p>
+            <p class="substep">叠加解：$ \Psi(x,t) = \sum\limits_{n=1}^{\infty} B_n \exp(-i E_n t /\hbar)
+                \sin(\dfrac{n\pi}{L}x) $ </p>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
             data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            <span class="exam"> 例-5: </span> 求解第二类零边界条件热传导方程的定常问题
-            \begin{cases}
-            u_{t} =u_{xx} ~~,~~ 0 < x < \pi, t>0\\
-                u_x (0,t) =0, u_x (l,t)=0 \\
-                u(x,0) =x^2 (\pi-x)^2
-                \end{cases}
-                <p class="substep"><span class="answer"> 解: </span> 导数边界条件，确定的固有值和固有函数为: </p>
-                <li class="substep">固有值：$\lambda~_n=\dfrac{n^2\pi~^2}{l~^2 }= (\dfrac{n\pi }{\pi}) ^2 = n^2$ </li>
-                <li class="substep">固有函数：$X~_n=\cos \dfrac{n\pi~}{l} x=\cos nx $ </li>
-                <li class="substep">解函数：
-                    \begin{array}{llll}
-                    u(x,t)&= \sum\limits_{n=0}^{\infty } B_n \exp(-(\dfrac{n\pi a}{l})^2 t) \cos \dfrac{n\pi~}{l} x\\
-                    \end{array} </li>
+            取 t=0, 代入初值条件， 得：
+            <p class="substep">$$ f(x)= \sum\limits_{n=1}^{\infty} B_n \sin(\dfrac{n\pi}{L}x) $$ </p>
+            <p class="substep">傅里叶变换公式，得系数
+                $$B_n= \dfrac{2}{L} \int\limits_{0} ^{L} \sin(\dfrac{n\pi}{L}x) dx, ~~ (n=1,2,3,...) $$ </p>
         </div>
+
+
 
         <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
-            代入$ t = 0$定解条件, 得：
-            <p class="substep">\begin{array}{lllllllll}
-                B_0&=\dfrac{2}{l} \int_{0}^{l} \psi(x) dx \\
-                &= \dfrac{2}{\pi} \int_{0}^{\pi} x^2 (\pi-x)^2 dx \\
-                &=\dfrac{\pi ^4}{15}
-                \end{array} </p>
-            <p class="substep">\begin{array}{lllllllll}
-                B_n&=\dfrac{2}{l} \int_{0}^{l} \psi(x) \cos \dfrac{n\pi}{l} xdx \\
-                &= \dfrac{2}{\pi} \int_{0}^{\pi} x^2 (\pi-x)^2 \cos nx dx \\
-                &= \dfrac{2}{\pi} \times (-\dfrac{12 \pi}{n^4}) [\cos n\pi +1 ]
-                \end{array} </p>
+            <p><span class="homework"> 作 业： </span> </p>
+            <p>1、求定态薛定谔方程
+                \begin{cases}
+                \Psi'' (x) +\dfrac{2\mu E}{\hbar ^2} \Psi(x) =0,~~ |x| < \frac{a}{2} \\
+                    \Psi(-\frac{a}{2})=\Psi(\frac{a}{2})=0 \end{cases} </p>
+                    <p>2、求解非定常问题
+                        \begin{cases}
+                        i\hbar \dfrac{\partial }{\partial t} \Psi = -\dfrac{\hbar^2}{2\mu } \dfrac{\partial ^2 \Psi
+                        }{\partial ^2 x ^2 } , ~~ (0 < x < L, t>0) \\
+                            \Psi (0,t) =0, ~~ \Psi (L,t) =0 \\
+                            \Psi (x,0) =f(x) \\
+                            \end{cases} </p>
         </div>
-
         <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
-            \begin{aligned}
-            B_n&= -\dfrac{24}{n^4} [ (-1)^n +1 ]\\
-            &=-\dfrac{3}{k^4}, \quad (k=1,2,3,\cdots )
-            \end{aligned}
-            <p class="substep">代入，得解函数：$u(x,t) = \dfrac{\pi ^4}{30} - \sum_{n=1}^{\infty } \dfrac{3}{n^4} \exp(-(2ka)^2 t)
-                \cos (2kx), \qquad (k=1,2,3,\cdots )$ </p>
-            <br>
-        </div>
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            <h4>可以直接计算$n_0$项 </h4>
-            <p class="substep">$u(x,t)= \sum\limits_{n=0}^{\infty } B_n \exp(-(\dfrac{n\pi a}{l})^2 t) \cos
-                \dfrac{n\pi~}{l} x$ </p>
-            <p class="substep">代入初值条件： $x^2 (\pi-x)^2= \sum\limits_{n=0}^{\infty } B_n \cos \dfrac{n\pi~}{l} x$ </p>
-            <p class="substep">取出第0项： $x^2 (\pi-x)^2= B_0 \cos \dfrac{0\pi~}{l} x $ </p>
-            <p class="substep">积分： $$\int\limits_{0} ^ \pi x^2 (\pi-x)^2 dx = \int\limits_{0} ^ \pi B_0 dx $$ </p>
-        </div>
+            <p> 3、求三维无限势阱问题
+                $$V(x,y,z)=\left \{
+                \begin{array}{cccc}
+                0,\qquad 0 < x , y , z < a \\ +\infty , \qquad \qquad \text{others} \end{array} \right. $$ </p>
+                    <p>4. 基于坐标轴平移和伸缩法，写出由例-1求例-3本征值值和本征函数步骤 </p>
 
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            <p>$$\dfrac{1}{6} \int\limits_{0} ^ \pi (\pi-x)^4 dx = B_0 \pi $$ </p>
-            <p class="substep">
-                $$B_0 = \dfrac{1}{6\pi} \int\limits_{0} ^ \pi (\pi-x)^4 dx = \dfrac{\pi ^4}{30} $$ </p>
-        </div>
 
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            <h4>分部积分法计算不定积分 </h4>
-            <center><img src="../EM/EM-beamer/figs/2022-04-12-10-37-38.png" width="800" height="510"></center>
-            <p class="substep">对、幂、三、指数函数的顺序进行 </p>
-        </div>
-
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-            data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            <span class="item"> 实例： </span> 计算定积分
-            $$\int_{0}^{\pi} x^2 (\pi-x)^2 \cos nx dx $$
-            <p class="substep"><span class="answer"> 解: </span> 求导</p>
-            <p class="substep">
-            <table align="center">
-                <tr>
-                    <td>$\psi (x) = x^2 (\pi-x)^2$</td>
-                    <td>$\nu^{(4)} (x) = \cos nx$ </td>
-                </tr>
-                <tr>
-                    <td>
-                        \begin{aligned}
-                        \psi ^{\prime} (x) &= 2x(2x - \pi )(x - \pi ) \\
-                        \psi ^{\prime \prime} (x) &= 2\pi ^2 -12\pi x+12x^2 \\
-                        \psi ^{\prime \prime \prime} (x) &= 24x -12 \pi \\
-                        \psi^{(4)} (x) &= 24
-                        \end{aligned}
-                    </td>
-                    <td>
-                        \begin{aligned}
-                        \nu ^{\prime \prime \prime} (x) &= 1/n \sin nx \\
-                        \nu ^{\prime \prime} (x) &= -1/n^2 \cos nx \\
-                        \nu ^{\prime} (x) &= -1/n^3 \sin nx \\
-                        \nu (x) &= 1/n^4 \cos nx
-                        \end{aligned}
-                    </td>
-                </tr>
-            </table>
-            </p>
-        </div>
-
-        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
-            应用分部积分公式
-            <p class="substep">\begin{array}{lllllllll}
-                \int\limits_{0}^{\pi} \psi (x) \nu^{(4)} (x) dx
-                &= [ \psi \nu^{\prime \prime \prime} - \psi' \nu^{\prime \prime} + \psi^{\prime \prime} \nu'
-                -\psi^{\prime \prime \prime} \nu ]|_0 ^\pi + \int\limits_{0}^{\pi} \psi^{(4)}
-                (x) \nu (x) dx \\
-                &= [ \psi \nu^{\prime \prime \prime} - \psi' \nu^{\prime \prime} + \psi^{\prime \prime} \nu'
-                -\psi^{\prime \prime \prime} \nu ]|_0 ^\pi
-                \end{array} </p>
-            <p class="substep">(1)式中：$\int_{0}^{\pi} \psi^{(4)} (x) \nu (x) dx = \dfrac{24}{n^4} \int_{0}^{\pi} \cos
-                nx
-                dx =0$ </p>
-            <p class="substep">(2)式中的第1和第3项等于零($\sin nx |_0 ^\pi$) </p>
-            <p class="substep">(3)式中第二项含 $2x(2x - \pi )(x - \pi )|_0 ^\pi$, 也为零,</p>
-        </div>
-
-        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
-            <p class="substep">因此:
-                \begin{aligned}
-                \int\limits_{0}^{\pi} \psi (x) \nu^{(4)} (x) dx &= [-\psi^{\prime \prime \prime} \nu ]|_0 ^\pi\\
-                &=-\dfrac{12 \pi}{n^4} [\cos n\pi +1 ]
-                \end{aligned}</p>
-        </div>
-
-        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
-            <p><span class="homework"> 作 业： </span> 1. 求第三类边界条件固有值问题</p>
-            <p class="substep">
-                $$\begin{array}{lllllllll}
-                III & \begin{cases}
-                X^{\prime \prime} (x) + \lambda X =0 ~~,~~ 0 < x < L \\ X' (0)=0, X (L)=0 \end{cases}\\ & \begin{cases}
-                    \lambda_n=\dfrac{(2n+1)^2 \pi ^2}{4l^2}\\ X_n (x)=\cos \sqrt{\lambda} x \end{cases}\\ IV
-                    &\begin{cases} X'' (x) + \lambda X=0 ~~,~~ 0 < x < L \\ X (0)=0, X' (L)=0 \end{cases} \\ &
-                    \begin{cases} \lambda_n=\dfrac{(2n+1)^2 \pi ^2}{4l^2}\\ X_n(x)=\sin \sqrt{\lambda} x \end{cases}
-                    \end{array}$$ </p>
-        </div>
-
-        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
-            <p><span class="homework"> 作 业： </span> 2、求解热传导方程初边值问题 </p>
-            <p class="substep">
-                \begin{array}{lllllllll}
-                &\begin{cases}
-                u_{t} =a^2u_{xx} ~~,~~ 0 < x < l, t>0\\
-                    u(0,t) =u(l,t)=0 \\
-                    u(x,0) =x (l-x)
-                    \end{cases}\\
-                    &\begin{cases}
-                    u_{t} =a^2u_{xx} ~~,~~ 0 < x < l, t>0\\
-                        u_x(0,t) =u_x(l,t)=0 \\
-                        u(x,0) =x(l-x/2)
-                        \end{cases}
-                        \end{array} </p>
         </div>
 
         <div class="step " data-x="-2000" data-y="0" data-z="1000" , data-rotate-x="-45">
@@ -1005,454 +484,651 @@
 
         </div>
 
-        <div id="lecture-3" class="step " data-rel-x="3000" data-y="0" data-rel-z="500" data-rotate-z="45" data-rotate-x="25">
+        <div id="lecture-3" class="step " data-rel-x="3000" data-y="0" data-rel-z="500" data-rotate-z="45"
+            data-rotate-x="25">
             <br>
             <br>
-            <h2>第三讲 拉普拉斯方程 </h2>
+            <h2>第三讲 量子谐振子与厄密方程 </h2>
             <br>
-            <li>方程的建立</li>
-            <li>求解</li>
-            <li>区域边界</li>
+            <li>相互作用势</li>
+            <li>解量子谐振子</li>
+            <li>厄密方程</li>
 
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
-            <h3> 1. 方程的建立</h3>
-            <br>
-            <span class="exam"> 例-1: </span> 对于质量为M的质点，试建立其引力场 $u(x,y,z,t)$ 所满足的方程
-            <center><img src="../EM/EM-beamer/figs/my2.svg" width=500, height=240></center>
-            <span class="answer"> 解: </span> 建立如图坐标系, 在空间任一点（x,y,z）放置
-
-            试验质点m, 根据万有引力定律，它感受的引力为：
-
-            $$ \overrightarrow{F} = - G \dfrac{Mm}{r^3} \overrightarrow{r}, \quad r=\sqrt{x^2 +y^2 +z^2} $$
-
+            <h3> 1. 相互作用势</h3>
+            <span class="exam"> 例-1: </span> 求Lennard-Jones势在平衡位置的二阶近似
+            <center><img src="../EM/EM-beamer/figs/2022-10-15-12-47-57.png" width=600, height=350></center>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
-            M所激发的引力场强为
-            $$ \overrightarrow{A} =\dfrac{GM}{r^3} \overrightarrow{r} $$
-
-            <p class="substep">取无穷远处场强为零，则引力势场为
-                $$ u = -\int_{r}^{\infty} \overrightarrow{A}\cdot d \overrightarrow{r} $$ </p>
-
-            <p class="substep">有: $\overrightarrow{A} =-\nabla u $， 则
-                $$ \nabla \cdot \overrightarrow{A} = \nabla \cdot \left(-\nabla u\right)= -\nabla ^2 u, \qquad
-                (1) $$
-            </p>
+            <p><span class="answer"> 解: </span> 在平衡位置 （$x=a$）附近可泰勒展开
+                \begin{equation*}
+                V(x)=V(a) +\frac{1}{1!} \frac{\partial V}{\partial x} |_{x=a} (x-a) +\frac{1}{2!} \frac{\partial ^2
+                V}{\partial x ^2} |_{x=a} (x-a) ^2 + \cdots
+                \end{equation*} </p>
+            <p class="substep">一阶导应为零，二阶近似可写为
+                $$\displaystyle \begin{array}{lllllllll}
+                V(x) &\approx V(a)+\dfrac{1}{2!} \dfrac{\partial ^2 V}{\partial x ^2} |_{x=a} (x-a) ^2 \\
+                & =V_0+\dfrac{1}{2} k (x-a) ^2
+                \end{array}$$ </p>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
-            现在考虑质量为$M$ 密度为 $\rho$的物体。封闭球面S内的质量通量为
-            $$ \oint_{S} \overrightarrow{A} \cdot d \overrightarrow{S} = \frac{GM}{r^2} 4\pi r^2 =\int_V 4\pi G
-            \rho
-            d\tau $$
-
-            <p class="substep">由高斯定理可知：
-                $$ \oint_{S} \overrightarrow{A} \cdot d \overrightarrow{S} =\int_V \nabla \cdot
-                \overrightarrow{A} d\tau
-                $$ </p>
-
-            <p class="substep">$$ \implies \nabla \cdot \overrightarrow{A} = 4\pi G \rho \qquad (2) $$ </p>
-
-            <p class="substep">联立（1）（2）式，得泊松方程：
-                $$ \nabla ^2 u= -4\pi G \rho $$ </p>
-        </div>
-        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
-            对于无源区域，有拉普拉斯方程
-            $$ \nabla ^2 u =0 $$
-
-            <p class="substep">定义拉普拉斯算子：
-                $$ \triangle = \nabla ^2 = \frac{\partial ^2}{\partial x^2} +\frac{\partial^2 }{\partial y^2}
-                +\frac{\partial^2 }{\partial z^2} $$ </p>
-
-            <p class="substep">拉普拉斯方程为：
-                $$ \triangle u =0 $$ </p>
-
-            <p class="substep"> <span class="tips"> TIPS: </span> 拉普拉斯方程和泊松方程是描述各种场的基本方程。比如引力场，电磁场等。</p>
+            <p>取坐标原点为（$a, V_0 $）， 得：
+                \begin{equation*}
+                V(x)=\dfrac{1}{2} k x^2
+                \end{equation*} </p>
+            <p class="substep">弹簧力正是势函数V(x) 在平衡位置附近的二阶近似
+                \begin{equation*}
+                F=-\frac{ \partial V}{\partial x}=-kx
+                \end{equation*} </p>
+            <p class="substep">把势函数V(x) 改写成弹性势能：
+                \begin{equation*}
+                U(x)=\dfrac{1}{2} \mu \omega ^2 x^2
+                \end{equation*} </p>
         </div>
 
         <div class="step" data-rel-x="1000" data-rel-y="1000" data-rel-z="-500" data-scale="4">
-            <h3> 2. 方程的求解</h3>
+            <h3> 2. 解量子谐振子</h3>
             <br>
-            <span class="exam"> 例-2: </span> 求解矩形区域拉普拉斯方程
-            \begin{cases}
-            u_{xx} +u_{yy} =0,\qquad (0 < x < a, 0 < y < b )\\ u(x,0)=f_1 (x), \quad u(x,b)=f_2 (x) \\ u(0,y)=g_1 (y),
-                \quad u(a,y)=g_2 (y) \end{cases} <br>
-                <p class="substep"><span class="answer"> 解: </span> 这是
-                    第一类边界条件，但不是零边界条件! </p>
-                <p class="substep"> 先处理一下！ </p>
-
+            <p><span class="exam"> 例-2: </span> 把势函数代入薛定谔方程,得量子谐振子方程</p>
+            <p class="substep">\begin{equation*}
+                i\hbar \frac{\partial }{\partial t} \Psi (x,t ) =[ -\frac{\hbar^2}{2\mu } \frac{d ^2}{x^2} + \frac{1}{2}
+                \mu \omega ^2 x^2 ] \Psi (x, t )
+                \end{equation*}</p>
+            <p class="substep"><span class="answer"> 解: </span> 令$\Psi (x,t) =\Psi(x) T(t) $ , 代回方程 </p>
+            <p class="substep">时间和位置分离变量： </p>
+            <p class="substep">解得时间函数： $$T(t) = \exp(-i E t /\hbar) $$ </p>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
-            可转化：<br>
-            A) \begin{cases}
-            u_{xx} +u_{yy} =0 ,~~~~ (0 < x < a, 0 < y < b)\\ u(x,0)=0, u(x,b)=0 \\ u(0,y)=g_1 (y) , u(a,y)=g_2 (y)
-                \end{cases} B) \begin{cases} u_{xx} +u_{yy}=0 ,~~~~ (0 < x < a, 0 < y < b )\\ u(x,0)=f_1 (x) ,
-                u(x,b)=f_2 (x) \\ u(0,y)=0, u(a,y)=0 \end{cases} <br>
-
-                <p class="substep">当然，还可进一步分解成四个边值问题！ </p>
-
+            <p>位置函数满足定态薛定谔方程
+                \begin{equation*}
+                \left [ -\frac{\hbar^2}{2\mu} \frac{\mathrm{d} ^2}{\mathrm{d} x^2} +\frac{1}{2}\mu \omega^2 x^2 \right
+                ]\Psi(x)=E\Psi(x)
+                \end{equation*} </p>
+            <p class="substep">整理
+                \begin{equation*}
+                \frac{1}{\dfrac{\mu\omega}{\hbar}} \frac{\mathrm{d} ^2\Psi}{\mathrm{d} x^2} + \left ( \frac{2E}{\omega
+                \hbar} -\frac{\mu \omega}{\hbar} x^2 \right )\Psi=0
+                \end{equation*} </p>
+            <p class="substep">令：$ \xi =\alpha x$，做伸缩变换
+                \begin{equation*}
+                \frac{\mathrm{d} \Psi}{\mathrm{d} x} =\frac{\mathrm{d} \Psi}{\mathrm{d} \xi} \frac{\mathrm{d}
+                \xi}{\mathrm{d} x} = \alpha \frac{\mathrm{d} \Psi}{\mathrm{d} \xi}
+                \end{equation*} </p>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
-            <p class="substep">$$ (I) \begin{cases}
-                u_{xx} +u_{yy} =0 ,~~~~ (0 < x < a, 0 < y < b)\\ u(x,0)=0, u(x,b)=0 \\ u(0,y)=g_1 (y) , u(a,y)=0
-                    \end{cases}$$ </p>
-                    <p class="substep">$$ (II) \begin{cases} u_{xx} +u_{yy}=0 ,~~~~ (0< x < a, 0 < y < b)\\ u(x,0)=0,
-                            u(x,b)=0 \\ u(0,y)=0, u(a,y)=g_2 (y) \end{cases} $$ </p>
-                            <p class="substep">$$ (III) \begin{cases} u_{xx} +u_{yy}=0 ,~~~~ (0 < x < a, 0 < y < b)\\
-                                    u(x,0)=f_1 (x) , u(x,b)=0 \\ u(0,y)=0, u(a,y)=0 \end{cases} $$ </p>
-                                    <p class="substep">$$ (IV) \begin{cases} u_{xx} +u_{yy}=0
-                                        ,~~~~ (0 < x < a, 0 < y < b)\\ u(x,0)=0, u(x,b)=f_2 (x) \\ u(0,y)=0, u(a,y)=0
-                                            \end{cases} $$ </p>
+            <p>\begin{equation*}
+                \frac{\mathrm{d} \Psi ^2 }{\mathrm{d} x ^2} =\frac{\mathrm{d}}{\mathrm{d} x} ( \alpha \frac{\mathrm{d}
+                \Psi}{\mathrm{d} \xi} ) = \alpha ^2 \frac{\mathrm{d} ^2 \Psi}{\mathrm{d} \xi ^2}
+                \end{equation*} </p>
+            <p class="substep">代回方程， 得
+                \begin{equation*}
+                \left[ \frac{\hbar ^2 \alpha ^2 }{2\mu} \frac{\mathrm{d}}{\mathrm{d} \xi ^2} + (E- \frac{\mu \omega ^2
+                \xi ^2}{2 \alpha ^2} ) \right] \Psi(\xi) =0
+                \end{equation*} </p>
+            <p class="substep">同除二阶导数项系数， 得
+                \begin{equation*}
+                \left[ \frac{\mathrm{d}}{\mathrm{d} \xi ^2} + \frac{2\mu}{\hbar ^2 \alpha ^2 } (E- \frac{\mu \omega ^2
+                \xi ^2}{2 \alpha ^2} ) \right] \Psi(\xi) =0
+                \end{equation*} </p>
+
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
             data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            解方程（I）
-            $$ \begin{cases}
-            u_{xx} +u_{yy} =0 ,~~~~ (0 < x < 1, 0 < y < 1 )\\ u(x,0)=0, u(x,1)=0 \\ u(0,y)=\sin \pi y, u(1,y)=0
-                \end{cases} $$ <p class="substep">设有 $ u(x,y)=X(x) Y(y)$ ，代回原方程，得
-                $$ X^{\prime\prime} (x)Y(y) +X(x)Y~^{\prime\prime}(y)=0 $$ </p>
-
-                <p class="substep">$$ -\frac{X~^{\prime\prime}}{X} = \frac{Y~^{\prime\prime} }{Y} =-\lambda $$
-                </p>
+            <p>令 $\dfrac{\mu ^2 \omega ^2 }{\hbar ^2 \alpha ^ 4}=1 $，得伸缩系数：
+                \begin{equation*}
+                \alpha ^2= \frac{\mu\omega}{\hbar}
+                \end{equation*} </p>
+            <p class="substep">引入特征值
+                \begin{equation*}
+                \lambda = \frac{2E}{\omega \hbar}
+                \end{equation*} </p>
+            <p class="substep">得二阶变系数常微分方程
+                \begin{equation*}
+                \left[ \frac{\mathrm{d} ^2\Psi}{\mathrm{d} \xi^2} + \left( \lambda - \xi^2 \right) \right] \Psi=0
+                \end{equation*} </p>
         </div>
 
         <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
             data-rotate-y="0" data-rotate-z="0" data-scale="5">
-            得两个常微分方程：
-            $$ (i) \begin{cases}
-            Y~^{\prime\prime} +\lambda Y=0 ~~,~~ 0 < y < 1 \\ Y(0)=0 ~~,~~Y(1)=0 \end{cases} $$ $$ (ii) \begin{cases}
-                X~^{'} -\lambda X=0 ~~,~~ 0 < x < 1 \\ X(0)=\sin \pi y~~,~~X(1)=0 \end{cases} $$ </div>
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-                    方程（i）是一类零边界条件固有值问题，解为：
-
-                    <li class="substep">固有值：$ \lambda_n = \dfrac{n^2 \pi^2 }{l^2} =n^2 \pi^2 $</li>
-
-                    <li class="substep">固有函数： $\displaystyle Y_n= \sin \dfrac{n\pi~}{l} y = \sin n \pi y \qquad
-                        (1) $
-                    </li>
-                </div>
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-                    把 $ \lambda_n = n^2 \pi^2 $ 代入方程（ii），得：
-                    <p class="substep">$$ X^{\prime\prime} - n^2 \pi^2 X=0 \qquad (2) $$ </p>
-
-                    <p class="substep">特征方程有两相异实根 $\pm n \pi$, 通解为：
-                        $$ X_n(x)=C_n exp(n\pi x )+ D_n exp(-n\pi x ) $$ </p>
-                </div>
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-                    结合（1）（2），方程 (I) 的基本解：
-
-                    <p class="substep">$$ \begin{array}{llll}
-                        u_n(x,y) &= X(x)Y(y)\\
-                        &= [C_n exp(n\pi x )+ D_n exp(-n\pi x )] \sin (n \pi y) \\
-                        &= [a_n \cosh (n\pi x )+ b_n \sinh(n\pi x ) ]\sin (n \pi y)
-                        \end{array} $$ </p>
-
-                    <p class="substep">叠加解：
-                        $$ u(x, y) = \sum\limits_{n=1}^{\infty } [a_n \cosh (n\pi x )+ b_n \sinh (n\pi x ) ]
-                        \sin (n \pi
-                        y) $$ </p>
-
-                </div>
-
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-                    代入定解条件-1：$ u(0,y)=0$,
-                    <p class="substep">$$ u(0, y) = \sum\limits_{n=1}^{\infty } [a_n \cosh (n\pi 0 )+ b_n \sinh
-                        (n\pi 0
-                        ) ] \sin (n \pi y) =0 $$ </p>
-                    <p class="substep">$$ \sum\limits_{n=1}^{\infty } a_n \sin (n \pi y) =0， \implies a_n=0 $$
-                    </p>
-
-                    <p class="substep">代入定解条件：$u(1,y) = \sin \pi y $， </p>
-                    <p class="substep">$$ u(1,y) = \sum\limits_{n=1}^{\infty } [a_n \cosh (n\pi )+ b_n \sinh
-                        (n\pi ) ]
-                        \sin (n \pi y) = \sin \pi y $$ </p>
-                </div>
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-
-                    $$ \sum\limits_{n=1}^{\infty } b_n \sinh (n\pi ) \sin (n \pi y) = \sin \pi y $$
-                    <p class="substep">方程两边同乘 $\sin \pi y$, 并对全区域积分 </p>
-
-                    <p class="substep">$$ \begin{aligned}
-                        & \sum\limits_{n=1}^{\infty } b_n \sinh (n\pi ) \int\limits_{0}^{1} \sin (n \pi y) \sin
-                        \pi y dy
-                        = \int\limits_{0}^{1} \sin \pi y \sin \pi y dy \\
-                        & b_1 \sinh (\pi ) \int\limits_{0}^{1} \sin (\pi y) \sin \pi y dy = \int\limits_{0}^{1}
-                        \sin \pi
-                        y \sin \pi y dy \\
-                        & b_1 = \frac{1}{\sinh\pi}, \quad (b_n=0 \quad \text{when} \quad n>1)
-                        \end{aligned} $$ </p>
-
-
-                </div>
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-                    代回叠加解
-
-                    <p class="substep">$$ \begin{aligned}
-                        u(x, y) & = \sum\limits_{n=1}^{\infty } [a_n \cosh (n\pi x )+ b_n \sinh (n\pi x ) ] \sin
-                        (n \pi
-                        y) \\
-                        &= \frac{1}{\sinh\pi} \sinh (\pi x ) \sin ( \pi y)
-                        \end{aligned} $$ </p>
-
-                    <p class="substep">方程（I）求解结束 </p>
-                </div>
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-
-                    同理，可以求出方程（II）（III）（IV）的解，
-
-                    <p class="substep">则矩形区域拉普拉斯方程的解为：
-                        $$ u(x,y) = u_I (x,y) + u_{II}(x,y) + u_{III}(x,y) + u_{IV}(x,y) $$ </p>
-
-                    <p><span class="substep over"> 结束！ </span></p>
-                </div>
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-                    <p> <span class="tips"> TIPS: </span> 双曲函数:</p>
-                    <p>$\begin{cases}
-                        &\sinh(x) = -i \sin(ix) = \dfrac{e^x -e^{-x}}{2} \\
-                        &\cosh(x) = \cos(ix) = \dfrac{e^x +e^{-x}}{2}
-                        \end{cases}$ </p>
-
-                    <p>
-                        <img src="../EM/EM-beamer/figs/my3.svg" align=right width=500, height=400>
-                    </p>
-                </div>
-
-
-                <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
-                    <h2>3. 区域边界条件 </h2>
-                    <br>
-                    拉普拉斯算符在不同坐标系中有着不同的微分形式
-                    <li class="substep">直角坐标 $(x,y,z): $ $ \displaystyle \nabla ^{2} = \frac{\partial
-                        ^2}{\partial x^2}
-                        +\frac{\partial^2 }{\partial y^2} +\frac{\partial^2 }{\partial z^2}$</li>
-
-                    <li class="substep">球坐标 $(r,\theta, \varphi )$ ：
-                        $ \displaystyle \nabla ^{2} =\frac{1}{r^2} \frac{\partial }{\partial r}
-                        (r^2\frac{\partial
-                        }{\partial r} )+
-                        \frac{1}{r^2 \sin \theta } \frac{\partial }{\partial \theta } (\sin \theta
-                        \frac{\partial
-                        }{\partial \theta } )
-                        +\frac{1}{r^2 \sin^2 \theta } \frac{\partial^2}{\partial\varphi ^2}$</li>
-
-                    <li class="substep">极坐标~ $ (r,\theta)$ ：
-                        $ \displaystyle \nabla ^{2} =\frac{\partial ^2 }{\partial r^2 } +\frac{1}{r }
-                        \frac{\partial
-                        }{\partial r } +
-                        \frac{1}{r^2 } \frac{\partial ^2 }{\partial \theta ^2 } $</li>
-
-                    <li class="substep">分别对应：求一个接地金属方型框，金属球壳，金属圆环，金属柱面等环境的内部电场等应用场景。</li>
-                </div>
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-
-                    <span class="exam"> 例-3: </span> 求圆域拉普拉斯方程
-                    $$ \left \{
-                    \begin{array}{cc}
-                    \displaystyle { \frac{\partial^2 u }{\partial r^2 } +\frac{1}{r } \frac{\partial u
-                    }{\partial r } +
-                    \frac{1}{r^2 } \frac{\partial ^2 u }{\partial \theta ^2
-                    } } =0, ~~ 0 < r < r_0 \\ u(r_0,\theta )=f(\theta ) ,\qquad 0 < \theta < 2 \pi \qquad \qquad
-                        \end{array} \right. $$ <p class="substep"><span class="answer"> 解: </span> 方程可分离变量，令
-                        $$\displaystyle u(r,\theta)=R( r ) \Theta(\theta)$$ </p>
-
-                        <p class="substep">分别对$r$和$\theta$求导，并代回原方程，得：
-                            $$ R^{\prime\prime}\Theta +\dfrac{1}{r^2} R\Theta^{\prime\prime}
-                            +\dfrac{1}{r}R'\Theta=0 $$
-                        </p>
-                </div>
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-                    整理得
-                    <p class="substep">$$ \dfrac{r^2 R^{\prime\prime}
-                        +rR'}{R}=-\dfrac{\Theta^{\prime\prime}}{\Theta}
-                        =\lambda $$ </p>
-
-                    <p class="substep">得两个常微分方程
-                        $$ (I)\quad \begin{cases}
-                        &\Theta ^{\prime\prime} + \lambda \theta =0 \\
-                        &\Theta(\theta +2 \pi )=\Theta (\theta)
-                        \end{cases} $$ </p>
-
-                    <p class="substep">$$(II)\quad r^2 R^{\prime\prime} +r R' -\lambda R =0 $$ </p>
-
-                </div>
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-                    求方程（I）
-                    \begin{cases}
-                    &\Theta ^{\prime\prime} + \lambda \theta =0 \\
-                    &\Theta(\theta +2 \pi )=\Theta (\theta)
-                    \end{cases}
-
-                    <p class="substep">特征方程分析表明，当 $\lambda > 0 $ 时，方程有非平凡解，通解为
-                        $$ \Theta(\theta)=A\cos \sqrt{\lambda } \theta+B\sin \sqrt{\lambda }\theta $$ </p>
-
-                    <p class="substep">代定系数有两个, 而只有一个初始位置条件
-                        $$\Theta(2 \pi )=\Theta (0)$$ </p>
-
-                    <p class="substep">再构造一个初始速度条件
-                        $$\Theta'(2 \pi )=\Theta’ (0)$$ </p>
-                </div>
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-                    代入通解，得定系数方程组
-                    $$ \left [
-                    \begin{array}{lll}
-                    \cos (\sqrt {\lambda} 2\pi )-1 & \sin (\sqrt {\lambda} 2\pi )\\
-                    -\sin (\sqrt {\lambda} 2\pi ) & \cos (\sqrt {\lambda} 2\pi )-1
-                    \end{array} \right]
-                    \left [
-                    \begin{array}{lll}
-                    A\\
-                    B
-                    \end{array} \right]
-                    =
-                    \left [
-                    \begin{array}{lll}
-                    0\\
-                    0
-                    \end{array} \right] $$
-
-                    <p class="substep">有解条件为
-                        $$(\cos (\sqrt {\lambda} 2\pi )-1 ) ^2 + \sin ^2 (\sqrt {\lambda} 2\pi ) =0$$ </p>
-
-                    <p class="substep">$$\cos (\sqrt {\lambda} 2\pi)=1$$ </p>
-                </div>
-
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-                    解得：
-                    <p class="substep">固有值： $\lambda = n^2, \quad (n =0,1,2,\cdots) $ </p>
-
-                     <p class="substep">把$\lambda = n^2$代回通解，得： </p>
-                    <li class="substep">固有函数： $\Theta _n (\theta)=A_n\cos n \theta +B_n \sin n \theta $</li>
-                    <p><span class="substep over"> 方程（I）求解结束 </span></p>
-                </div>
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-                    再把 $\lambda = n^2$ 代回方程（II）, 有：
-                    $$ r^2 R'' +r R' -n^2R =0 $$
-
-                    <p class="substep">这是欧拉方程，有通用解法： </p>
-
-                    <p class="substep">令 $ r=exp(t) $ ，有 $t=\ln r$， 求导 </p>
-
-                    <p class="substep">\begin{aligned}
-                        \frac{dR}{dr} &=\frac{dR}{dt} \frac{dt}{dr} =\frac{1}{r} \frac{dR}{dt} \\
-                        \frac{d^2 R}{d r^2} &=-\frac{1}{r^2}\frac{dR}{dt} + \frac{1}{r} \frac{d}{dr}
-                        (\frac{dR}{dt} ) \\
-                        &= \frac{1}{r^2} (\frac{d^2 R}{dt^2}-\frac{dR}{dt} )
-                        \end{aligned} </p>
-
-                </div>
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-                    代回, 得： $ \dfrac{d^2 R}{dt^2} -n^2 R =0 $
-                    <p class="substep">由特征方程有两相异实根，写出通解
-                        $$ R_n=C_nexp(nt)+D_n exp(-nt) $$ </p>
-
-                    <p class="substep">代回$t=\ln r$， 得：
-                        $$ R_n=C_n r^n +D_nr^{-n} $$ </p>
-
-                    <p class="substep">第二项发散，应删除
-                        $$ R_n= C_n r^n, ~~ (n=0,1,2,\cdots ) $$ </p>
-                </div>
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-                    原方程的基本解：
-                    \begin{aligned}
-                    u_n(r,\theta) &= R_n (r) \Theta _n(\theta) \\
-                    &= (a_n \cos n\theta +b_n \sin n \theta )r^n
-                    \end{aligned}
-
-                    <p class="substep">叠加解：
-                        $$u(r, \theta) = \dfrac{1}{2} a_0 +\sum\limits_{n=1}^{\infty } (a_n \cos n\theta +b_n
-                        \sin n
-                        \theta ) r^n $$ </p>
-                </div>
-
-                <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
-                    data-rotate-y="0" data-rotate-z="0" data-scale="5">
-
-                    代入定解条件：$ u(r_0,\theta)=f (\theta)$
-                    $$ f (\theta)= \dfrac{1}{2} a_0 +\sum\limits_{n=1}^{\infty } (a_n\cos n\theta +b_n \sin n
-                    \theta )
-                    r_0^n $$
-
-                    <p class="substep">系数：
-                        $$ a_n = \dfrac{1}{r_0 ^n \pi } \int\limits_{0}^{2\pi} f(\theta) \cos n \theta d\theta
-                        $$
-                        $$ b_n = \dfrac{1}{r_0 ^n \pi } \int\limits_{0}^{2\pi} f(\theta) \sin n \theta d\theta
-                        $$ </p>
-                    <p><span class="substep over"> 结束！ </span></p>
-                </div>
-
-                <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
-                    <p><span class="homework"> 作 业： </span> 1、求解固有值问题</p>
-
-                    \begin{cases}
-                    Y~^{''} +\lambda Y=0 ~~,~~ 0 < y < 2 \pi \\ Y(0)=Y(2\pi) , ~~ Y'(0)=Y'(2\pi) \end{cases} 2、求解圆域边值问题
-                        \begin{cases} \dfrac{\partial^2 u }{\partial r^2 } +\dfrac{1}{r } \dfrac{\partial u }{\partial r
-                        } + \dfrac{1}{r^2 } \dfrac{\partial ^2 u }{\partial \theta ^2 }=0, ~~ 0 < r < 1\\
-                        u(1,\theta)=A\cos 2 \theta +B \cos 4 \theta \\ \end{cases} 3、求解矩形域边值问题 \begin{cases} u_{xx}
-                        +u_{yy}=0 ,~~~~ (0 < x, y < 1)\\ u(x,0)=u(0,y)=u(x,1)=0 \\ u(1,y)=\sin 2\pi y \end{cases}
-                        \begin{cases} u_{xx} +u_{yy}=0 ,~~~~ (0 < x, y < 1 )\\ u(1,y)=u(0,y)=u(x,0)=0 \\ u(x,1)=\sin
-                        n\pi x \end{cases} </div>
-
-                        <div class="step " data-x="-2000" data-y="0" data-z="1000" , data-rotate-y="-45">
-
-                            <center> <span class="Thanks">Thanks</span> </center>
-
-                        </div>
-
-
-                </div>
-
-
-
-
-
-
-
-                <div id="impress-toolbar"></div>
-
-                <script>
-                    if ("ontouchstart" in document.documentElement) {
-                        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
-                    }
-                </script>
-
-                <script src="../../others/impress.js/js/impress.js"></script>
-                <script>impress().init();</script>
-
-                <!--
+            <p> (1)考虑渐近行为， 当 $ |x| \to \infty, \xi \to \infty$，有 $ \xi ^2 \gg \lambda $，方程可近似为 </p>
+            <p class="substep">\begin{equation*}
+                \left(\frac{\mathrm{d} ^2}{\mathrm{d} \xi^2} - \xi^2 \right) \Psi=0
+                \end{equation*} </p>
+            <p class="substep">方程并无表达式解，但通过检验平方指数函数的导数
+                \begin{equation*}
+                \frac{d^2 }{d \xi ^2} \exp(\frac{\xi ^2}{2}) =(\xi ^2 +1) \exp(\frac{\xi ^2}{2})
+                \end{equation*} </p>
+            <p class="substep">\begin{equation*}
+                \frac{d^2 }{d \xi ^2} \exp( - \frac{\xi ^2}{2}) =(\xi ^2 -1) \exp( - \frac{\xi ^2}{2})
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>当 $ \xi \to \infty$， 这两导数可近似为：
+                \begin{equation*}
+                (\xi ^2 ) \exp( \frac{\xi ^2}{2}) ~~, ~~ (\xi ^2 ) \exp( - \frac{\xi ^2}{2})
+                \end{equation*} </p>
+            <p class="substep">因此，极限状态解应与如下函数相关联
+                \begin{equation*}
+                C_1 \exp( \frac{\xi ^2}{2}) + C_2 \exp( - \frac{\xi ^2}{2})
+                \end{equation*} </p>
+            <p class="substep">考虑到波函数的有界性，应删除发散项（第一项），得极限状态波函数的简洁形式
+                \begin{equation*}
+                \Psi_\infty (\xi) \sim C_2 \exp( - \frac{\xi ^2}{2})
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> (2) 非极限状态，作常数变异，解函数可写成：
+                \begin{equation*}
+                \Psi(\xi) = H(\xi) e^{-\xi^2/2 }
+                \end{equation*}
+                问题等价为求级数 H ！</p>
+            <p class="substep">求导：
+                \begin{equation*}
+                \Psi'(\xi) = H'(\xi) e^{-\xi^2/2 } - H(\xi) \xi e^{-\xi^2/2 }
+                \end{equation*} </p>
+            <p class="substep">\begin{equation*}
+                \Psi''(\xi) = \left[ \left( \xi^2 -1 \right) H -2\xi H' +H'' \right] e^{-\xi^2/2}
+                \end{equation*}</p>
+            <p class="substep">代回原方程 $$ \dfrac{\mathrm{d} ^2\Psi}{\mathrm{d} \xi^2} + \left( \lambda - \xi^2 \right)
+                \Psi=0 $$ </p>
+        </div>
+
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>得关于$H(\xi)$的方程：
+                \begin{equation*}
+                H'' -2 \xi H' +(\lambda -1) H=0
+                \end{equation*} </p>
+            <p class="substep">取$\lambda -1= 2n $，方程转化为n阶厄密方程
+                \begin{equation*}
+                H'' -2 \xi H' +2n H=0
+                \end{equation*} </p>
+            <p class="substep">由 $\lambda -1= 2n, \lambda = \dfrac{2E}{\hbar \omega}$ </p>
+            <p class="substep">解出能量固有值(能级)
+                \begin{equation*}
+                E_n=\left(n+\frac{1}{2}\right) \hbar \omega, \qquad ( n=0,1,2, \cdots )
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h3> 3. 解厄密方程</h3>
+            <br>
+            <p><span class="exam"> 例-3: </span> 试通过求解n阶厄密方程，得量子谐振子的固有函数（能量本征态）
+                \begin{equation*}
+                H'' -2 \xi H' +2n H=0
+                \end{equation*} </p>
+            <p class="substep"><span class="answer"> 解: </span> 做幂级数展开：
+                \begin{equation*}
+                H=\sum_{k=0}^{\infty} c_k \xi ^k
+                \end{equation*} </p>
+            <p class="substep">求一阶导和二阶导，并代回厄密方程 $\cdots$ </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>得系数递推式-1：
+                \begin{equation*}
+                c_{k+2} = \frac{ 2(k-n)}{(k+2)(k+1) } c_k, ~~ \left( k=0,1,2,3, \cdots \right)
+                \end{equation*} </p>
+            <p class="substep">偶数阶：
+                \begin{equation*}
+                c_{2m} = (-1) ^m \frac{2^mn(n-2)(n-4) ... (n-2m+2) } {(2m)!} c_0
+                \end{equation*} </p>
+            <p class="substep">当 $2m>n$时，有 $ c_{2m} =0$
+                \begin{equation*}
+                c_{k} = (-1) ^m \frac{2^mn !! } {k!} c_0, ~~~(2m=k)
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> 奇数阶：
+                \begin{equation*}
+                c_{2m+1} = (-1) ^m \frac{2^m (n-1) (n-3)(n-5)...(n-2m+1) } {(2m+1)!} c_1
+                \end{equation*} </p>
+            <p class="substep">当$2m+1>n$时，有 $ c_{2m+1} =0$
+                \begin{equation*}
+                c_{k} = (-1) ^m \frac{2^m n!! }{k!} c_1, ~~~ (2m+1=k)
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>两者结合，幂级数得解
+                $$\begin{cases}
+                y_1(\xi) = [1- \dfrac{2n}{2!} \xi^2+ \dfrac{2^2n(n-2)}{4!} \xi^4 -... ] \\
+                \\
+                y_2(\xi) = [\xi- \dfrac{2(n-1)}{3!} \xi^3+ \dfrac{2^2(n-1)(n-3) }{5!}\xi^5 -... ]
+                \end{cases}$$ </p>
+            <p class="substep">n阶厄密方程的解：
+                \begin{equation*}
+                H(\xi) =c_0y_1(\xi)+c_1 y_2(\xi).
+                \end{equation*} </p>
+            <p class="substep">量子谐振子的固有函数：
+                \begin{equation*}
+                \Psi(\xi) = H(\xi)e^{-\xi^2/2 }
+                \end{equation*} </p>
+        </div>
+
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p>根据波函数的有界性性质，$H(\xi)$应是多项式, 称为厄密多项式。 </p>
+            <br>
+            <p class="substep">分析系数递推式：
+                \begin{equation*}
+                c_{k+2} = \frac{ 2(k-n)}{(k+2)(k+1) } c_k, ~~ \left( k=0,1,2,3, \cdots \right)
+                \end{equation*}
+            </p>
+            <p class="substep">当 $k=n$时，$c_{k+2}=0, c_{k+4}=0, \cdots $ </p>
+            <p class="substep">即: $n$ 阶厄密方程的解-厄密多项式的最高阶正好为$n$ </p>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <span class="exam"> 例-4: </span> 试把厄密多项式做降幂排列
+            <p class="substep"><span class="answer"> 解: </span> 系数递推式-1：
+                \begin{equation*}
+                c_{k+2} = \frac{ 2(k-n)}{(k+2)(k+1) } c_k, ~~ \left( k=0,1,2,3, \cdots \right)
+                \end{equation*} </p>
+            <p class="substep">反过来写
+                \begin{equation*}
+                c_{k-2} = -\frac{k(k-1) } { 2(n-k+2)} c_k
+                \end{equation*} </p>
+            <p class="substep">厄密多项式最高阶为$n$，令系数 $c_n = 2^n $, 则 $k=n$, 代入上式：
+                \begin{equation*}
+                c_{n-2} = -\frac{n(n-1) } { 2\times 2} c_n
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>令 $k=n-2$, 代入上式：
+                \begin{aligned}
+                c_{n-4} &= -\frac{(n-2)(n-3) } { 2\times 4} c_{n-2} \\
+                &= (-1)^2 \frac{n(n-1)(n-2) (n-3) } { (2\times 2) \times (2\times 4) } 2^n
+                \end{aligned} </p>
+            <p>令 $k=n-4$, 代入上式：
+                \begin{aligned}
+                c_{n-6} &= -\frac{(n-4)(n-5) } { 2\times 6} c_{n-2} \\
+                &= (-1)^2 \frac{n(n-1)(n-2) (n-3)(n-4)(n-5) } { (2\times 2) \times (2\times 4)\times(2\times 6) } 2^n
+                \end{aligned} </p>
+
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>得系数递推式-2
+                \begin{aligned}
+                c_{n-2m} &= (-1)^m \frac{n! } { 2^m (2m) !! (n-2m)!} 2^n \\
+                &= (-1)^m \frac{n! } { m ! (n-2m)!} 2^{n-2m}
+                \end{aligned} </p>
+            <p class="substep">上式无论 n 是奇数还是偶数都成立，若令$M=[\frac{n}{2}]$, 得厄米多项式表达式：
+                \begin{equation*}
+                H_n(\xi) =\sum_{m=0}^{M} (-1)^m \frac{n! } { m ! (n-2m)!} 2^{n-2m} \xi^{n-2m} , \qquad M=[n/2]
+                \end{equation*} </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> 量子谐振子的本征函数
+                \begin{equation*}
+                \Psi_n(\xi) = N_n \exp(-\frac{\xi ^2}{2}) H_n(\xi)
+                \end{equation*} </p>
+            <p class="substep">归一化本征函数：（...）
+                \begin{equation*}
+                \Psi_n(x) = \left( \frac{\alpha}{\sqrt{\pi} 2^n n!} \right) ^{1/2} \exp(-\frac{ \alpha^2 x^2}{2}) H_n(
+                \alpha x)
+                \end{equation*} </p>
+            <p class="substep">定态波函数为
+                \begin{equation*}
+                \Psi_n(x,t) = \left( \frac{\alpha}{\sqrt{\pi} 2^n n!} \right) ^{1/2} \exp(-\frac{ \alpha^2 x^2}{2}
+                -\frac{i}{\hbar} E_n t ) H_n( \alpha x)
+                \end{equation*} </p>
+        </div>
+
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>叠加解：
+                $$u(x,t)=\sum_n a_n \Psi_n(x,t) $$ </p>
+            <p class="substep">由初始条件，确定系数 $a_n, \cdots $ </p>
+            <br>
+            <br>
+            <p><span class="substep over"> 结束！ </span></p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>量子谐振子的前三个本征函数
+                <img class=imgmixed src="../EM/EM-beamer/figs/qm-harmonic-oscillator.svg" width=800, height=600>
+            </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="homework"> 作 业： </span> </p>
+            <p>1、计算积分
+                $$\begin{array}{lllllllll}
+                &\int\limits_{0}^{+\infty} e^{-x^2 /2} dx
+                \end{array}$$ </p>
+            <p>2、 根据厄米多项式表达式，写出前五个厄米多项式，并分析$H'_n (x)$ 与$H_{n-1} (x)$  之间的联系 </p>
+            <p>3、 求解厄米方程
+                $$\begin{array}{lllllllll}
+                & \dfrac{d^2 H}{d x^2} -2x \dfrac{d y}{d x} +4n H =0
+                \end{array}$$ </p>
+        </div>
+
+        <div class="step " data-x="-2000" data-y="0" data-z="1000" , data-rotate-y="-45">
+
+            <center> <span class="Thanks">Thanks</span> </center>
+
+        </div>
+
+        <div id="lecture-4" class="step" data-x="3000" data-y="100" data-z="700" data-rotate="45" data-rotate-x="25">
+            <br>
+            <br>
+            <h2>第四讲 厄密多项式 </h2>
+            <br>
+            <li>生成函数</li>
+            <li>性质</li>
+            <li>归一化系数</li>
+        </div>
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <br>
+            <h3>1. 厄密方程多项式生成函数 </h3>
+            <br>
+            <p><span class="exam"> 例-1: </span> 试证明下列函数是厄密多项式的生成函数
+                \begin{equation*}
+                w(x,t)=e^{2xt-t^2}
+                \end{equation*}</p>
+            <p class="substep"><span class="answer"> 分析: </span> 所谓生成函数，即它的某种展开系数恬好就是Hermite 多项式 </p>
+            <p class="substep">把函数做关于变量t的Taylor 展开：
+                \begin{equation*}
+                w(x,t) =\sum_{n=0}^{\infty} \frac{1}{n!} c_n(x) t^n
+                \end{equation*} </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>需证明：
+                \begin{equation*}
+                \left[ \frac{d^2}{dx^2} -2x\frac{d}{dx} +2n \right] c_n(x)=0
+                \end{equation*} </p>
+            <p class="substep"><span class="proof"> 证明： </span>
+                对位置求导 $$ \dfrac{\partial w}{\partial x} =2t e^{2xt-t^2} =2t ~w(x,t)
+                $$
+            </p>
+            <p class="substep"> 把展开式代入上式
+                \begin{aligned}
+                \sum\limits_{n=0}^{\infty} \dfrac{1}{n!} c~'_n(x) t^n = 2t \sum\limits_{n=0}^{\infty} \dfrac{1}{n!}
+                c_n(x) t^n
+                \end{aligned} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>\begin{aligned}
+                \sum\limits_{n=0}^{\infty} \dfrac{1}{n!} c~'_n(x) t^n
+                &= \sum\limits_{n=0}^{\infty} \dfrac{1}{n!} 2c_{n}(x) t^{n+1}\\
+                &= \sum\limits_{n=1}^{\infty} \dfrac{1}{n!} 2nc_{n-1}(x) t^{n}
+                \end{aligned} </p>
+            <p>两多项式相等，必对应系数相等
+                $$c'_n(x)=2nc_{n-1}(x) \quad (1) $$ </p>
+            <p class="substep">再求导：
+                $$ c''_n(x)=2nc~'_{n-1}(x)=4n(n-1)c_{n-2}(x) \quad (2)$$ </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>
+                <li>对时间求导</li>
+                \begin{aligned}
+                &\dfrac{\partial w}{\partial t} =2(x-t) e^{2xt-t^2} =2(x-t) ~w(x,t) \\
+                &\dfrac{\partial w}{\partial t} +2(t-x) ~w(x,t) =0 \\
+                \end{aligned}
+            </p>
+            <p class="substep">把展开式代入上式
+                \begin{aligned}
+                \sum\limits_{n=1}^{\infty} \dfrac{1}{n!}n c_n(x) t^{n-1} +\sum\limits_{n=0}^{\infty} \dfrac{1}{n!}2(t-x)
+                c_n(x)t^n&=0\\
+                \sum\limits_{n=1}^{\infty} \dfrac{1}{n!}n c_n(x) t^{n-1} +\sum\limits_{n=0}^{\infty} \dfrac{-2x}{n!}
+                c_n(x)t^n +\sum\limits_{n=0}^{\infty}\dfrac{2}{n!} c_n(x)t^{n+1}&=0
+                \end{aligned} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            <p class="substep">$$\sum\limits_{n=0}^{\infty} \dfrac{1}{n!} c_{n+1}(x) t^{n} +\sum\limits_{n=0}^{\infty}
+                \dfrac{-2x}{n!}
+                c_n(x)t^n +\sum\limits_{n=1}^{\infty}\dfrac{2n}{n!} c_{n-1}(x)t^n =0$$ </p>
+            <p class="substep">系数有关系式 $$c_{n+1}(x) -2xc_n(x) +2nc_{n-1} (x) =0 \quad (3) $$ </p>
+            <p class="substep">降阶，有：
+                $$c_{n}(x) -2xc_{n-1}(x) +2(n-1)c_{n-2} (x) =0 \quad (4) $$ </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>把（1）（2）式代入 (4)
+                \begin{aligned}
+                &c_{n}(x) -2xc_{n-1}(x) +2(n-1)c_{n-2} (x) =0 \quad (4) \\
+                & c_{n}(x) - \dfrac{x}{n}c~'_{n}(x) +\dfrac{1}{2n}c~''_{n} (x) =0 \\
+                &\left[ \dfrac{d^2}{dx^2} -2x\frac{d}{dx} +2n \right] c_n(x)=0
+                \end{aligned} </p>
+            <p class="substep">即有： $c_n(x)=H_n(x) $ </p>
+            <br>
+            <p><span class="substep over"> 证毕！ </span></p>
+        </div>
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <br>
+            <h3>2. 厄密方程多项式性质</h3>
+            <br>
+            <p class="substep"><span class="exam"> 例-2: </span> 试证明厄密方程多项式存在如下递推式
+                \begin{aligned}
+                &H_0(x)=1, H_1(x)=2x \qquad (a)\\
+                &H_{n}(x) -2xH_{n-1}(x) +2(n-1)H_{n-2} (x) =0 \qquad (b) \\
+                &H'_n(x)=2nH_{n-1}(x) \qquad (c)
+                \end{aligned} </p>
+            <p class="substep"><span class="proof"> 证明： </span> 既然： $c_n(x)=H_n(x) $, </p>
+            <p class="substep">由生成函数的Taylor 展开式，直接得证 （a）。 </p>
+            <p class="substep">由生成函数一节的（4）式， 直接得证 （b） </p>
+            <p class="substep">由生成函数一节的（1）式， 直接得证 （c） </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="exam"> 例-3: </span> 试证明厄密方程多项式具有如下微分形式
+                $$ H_n(x) =(-1) ^n e^{x^2} \frac{d~^n }{d~x^n} e^{-x^2} $$ </p>
+            <p class="substep"><span class="proof"> 证明： </span> 生成函数的Taylor 展开
+                \begin{aligned}
+                w(x,t) &=\sum_{n=0}^{\infty} \frac{1}{n!} c_n(x) t^n \\
+                &=\sum_{n=0}^{\infty} \frac{1}{n!} H_n(x) t^n
+                \end{aligned} </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"> Taylor 展开系数公式
+                \begin{aligned}
+                H_n(x) &= \left[ \frac{\partial ~^n w }{\partial t^n} \right] _{t=0} \\
+                &=e^{x^2} \left[ \frac{\partial ^n }{\partial t^n} e^{-(x-t)^2} \right] _{t=0} \\
+                &=(-1) ^n e^{x^2} \left[ \frac{d~^n }{d~u^n} e^{-u^2} \right] _{u=x} \\
+                &= (-1) ^n e^{x^2} \frac{d~^n }{d~x^n} e^{-x^2}
+                \end{aligned} </p>
+            <p><span class="substep over"> 证毕！ </span></p>
+        </div>
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="exam"> 例-4: </span> 试证明厄密多项式带权正交归一性
+                \begin{cases}
+                \int\limits_{-\infty}^{+\infty} e^{-\xi^{2}} H_m(\xi) H_n(\xi)d\xi &=0 \\
+                \int\limits_{-\infty}^{+\infty} e^{-\xi^{2}} H_n(\xi) H_n(\xi)d\xi &=2^n n! \sqrt{\pi}
+                \end{cases} </p>
+            <p class="substep"><span class="proof"> 证明： </span> (1) 正交性： 把$\lambda=2n+1 $代入谐振子方程
+                $$ \dfrac{\mathrm{d} ^2\Psi}{\mathrm{d} \xi^2} + \left( \lambda - \xi^2 \right) \Psi=0 $$ </p>
+            <p class="substep">得方程： $\Psi''_n +(2n+1-\xi^2) \Psi_n =0$ </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> $u_n(x)=H_n(\xi) e^{-\xi^{2}/2}$ 是方程的解</p>
+            <p class="substep">必有：
+                $$ u''_n +(2n+1-\xi^2) u_n =0 \qquad (1)$$
+                $$ u''_m +(2m+1-\xi^2) u_m =0 \qquad (2)$$ </p>
+            <p class="substep"> (1)乘 $u_m$, (2)乘 $u_n$, 得
+                $$ u_mu''_n +(2n+1-\xi^2) u_mu_n =0 \qquad (3)$$
+                $$ u_nu''_m +(2m+1-\xi^2) u_nu_m =0 \qquad (4)$$
+        </div>
+        </p>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">(3)-(4), 并整理
+                $$ -2(n-m)u_nu_m = u_mu''_n -u_nu''_m $$ </p>
+            <p class="substep">两端全空间积分
+                \begin{aligned}
+                -2(n-m)\int\limits_{-\infty}^{+\infty}&u_nu_m d\xi = \int\limits_{-\infty}^{+\infty} [u_mu''_n
+                -u_nu''_m] d\xi \\
+                &= [u_mu''_n -u_nu''_m] \left |_{-\infty} ^{+\infty} \right. -\int\limits_{-\infty}^{+\infty} [u'_mu'_n
+                -u'_nu'_m] d\xi \\
+                &= 0
+                \end{aligned} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <li>当$(n-m)\ne 0$ 时, 有：</li>
+            <p class="substep">\begin{aligned}
+                \int\limits_{-\infty}^{+\infty}u_nu_m d\xi & =0 \\
+                \int\limits_{-\infty}^{+\infty} e^{-\xi^{2}} H_m(\xi) H_n(\xi)d\xi &=0
+                \end{aligned} </p>
+            <p class="substep">即： 厄密多项式带权正交。 </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">（2）归一性： 递推公式
+                $$ H_{n} -2xH_{n-1} +2(n-1)H_{n-2} =0 $$ </p>
+            <p class="substep">乘$H_{n}$ $$H^2_{n}-2xH_n H_{n-1}+2(n-1) H_n H_{n-2} =0 $$ </p>
+            <p class="substep"> 递推公式 $$ H_{n+1} -2xH_{n} +2nH_{n-1} =0 $$ </p>
+            <p class="substep">乘$H_{n-1}$ $$H_{n+1} H_{n-1}-2xH_{n} H_{n-1}+2nH^2_{n-1} =0 $$ </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">
+            <p class="substep">两次相减
+                $$H^2 _n(\xi) -H_{n+1} H_{n-1}=2n H^2 _{n-1}(\xi) - 2(n-1) H_n H_{n-2}$$ </p>
+            <p class="substep">乘以权重函数再积分, 得积分递推式：
+                $$\int\limits_{-\infty}^{+\infty} e^{-\xi^2} H^2 _n(\xi) d\xi =2n \int\limits_{-\infty}^{+\infty}
+                e^{-\xi^{2}} H^2 _{n-1}(\xi) d\xi $$ </p>
+            <p class="substep">$$= 2n \times 2(n-1) \int\limits_{-\infty}^{+\infty} e^{-\xi^{2}} H^2 _{n-2}(\xi) d\xi$$
+            </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">\begin{aligned}
+                &= 2n \times 2(n-1) ... (2(n-n)) \int\limits_{-\infty}^{+\infty} e^{-\xi^{2}} H^2 _{0}(\xi) d\xi \\
+                &= 2^n n! \int\limits_{-\infty}^{+\infty} e^{-\xi^{2}} H^2 _{0}(\xi) d\xi \\
+                &= 2^n n! \int\limits_{-\infty}^{+\infty} e^{-\xi^{2}} d\xi \\
+                &= 2^n n! \sqrt{\pi}
+                \end{aligned} </p>
+            <p><span class="substep over"> 证毕！ </span></p>
+        </div>
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <h3>3. 求波函数的归一化系数 </h3>
+            <p class="substep"><span class="exam"> 例-3: </span> 固有解如下，求归一化系数 $N_n$
+                $$ \Psi_n(\xi) = N_n \exp(-\frac{\xi ^2}{2})
+                H(\xi)$$ </p>
+            <p class="substep"><span class="answer"> 解: </span> 把波函数代入归一化公式
+                \begin{aligned}
+                1 &= \int\limits_{-\infty}^{+\infty} \Psi_n ^* (\xi)\Psi_n(\xi) d\xi \\
+                &= \int\limits_{-\infty}^{+\infty} [N_n \exp(-\frac{\xi ^2}{2}) H(\xi) ]^2 d\xi
+                \end{aligned}
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            <p class="substep"> $$1=N^2 _n 2^n n! \sqrt{\pi}$$ </p>
+            <p class="substep"> $$\implies N_n=\dfrac{1}{(2^n n! \sqrt{\pi}) ^{1/2}}$$ </p>
+
+            <p class="substep">注意: 这是 $H(\xi)$的归一化 </p>
+            <p class="substep">考虑到$\xi = \alpha x, \Psi_n(x)$ 的归一化系数要做相应的变换, 因此， </p>
+            <p class="substep">$$N_n=\left( \dfrac{\alpha}{\sqrt{\pi} 2^n n! } \right) ^{1/2} $$ </p>
+
+        </div>
+
+
+
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p class="substep">归一化固有函数：
+                $$\Psi_n(x) = \left( \dfrac{\alpha}{\sqrt{\pi} 2^n n! } \right) ^{1/2} e^{-a^2 x^2} H_n(\alpha x)$$ </p>
+            <p class="substep">定态波函数：
+                \begin{aligned}
+                \Psi_n(x,t) &= \Psi_n(x) e^{-\dfrac{i}{\hbar} E_n t } \\
+                &= \left( \dfrac{\alpha }{\sqrt{\pi} 2^n n! } \right) ^{1/2} e^{-a^2 x^2 -\dfrac{i}{\hbar} E_n t }
+                H_n(\alpha x)
+                \end{aligned} </p>
+        </div>
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p> 课堂测试: </p>
+            <p>求处于如下势场：
+                \begin{equation*}
+                V(x)= \frac{1}{2} \mu \omega ^2 x^2 +\mu
+                \end{equation*}
+                中粒子的能量固有值和定态波函数 </p>
+        </div>
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="homework"> 作 业： </span> 1、将函数$f(x)=x^3+2x^2 +1$ 按厄米多项式展开 </p>
+            <p>参考答案：$f(x) =\dfrac{1}{8} H_3 + \dfrac{1}{2} H_2 +\dfrac{3}{4} H_1 + 2 H_0 $ </p>
+            <p>2、写出厄米多项式的递推公式，并求 $H_n(0) , H'_n(0) , H_n(1) , H'_n(1) $ </p>
+            <p>3、求解初值问题
+                \begin{equation*}
+                \left\{
+                \begin{aligned}
+                & i \hbar \dfrac{\partial \Psi}{\partial t} = \left[ -\dfrac{\hbar ^2}{2\mu} \dfrac{\partial
+                ^2}{\partial x^2} +\dfrac{1}{2} \mu \omega ^2 x ^2 \right] \Psi \\
+                & \Psi(x, 0) =\psi(x)
+                \end{aligned}
+                \right.
+                \end{equation*} </p>
+            <p> 4、电荷为q的谐振子，受到沿 x 方向的外电场$\xi $的作用时，势场如下，求能量固有值和定态波函数
+                \begin{equation*}
+                V(x)= \frac{1}{2} \mu \omega ^2 x^2 +q\xi x
+                \end{equation*} </p>
+
+        </div>
+
+        <div class="step " data-x="-2000" data-y="0" data-z="2000">
+
+            <center> <span class="Thanks">Thanks</span> </center>
+
+        </div>
+
+    </div>
+
+
+    <div id="impress-toolbar"></div>
+
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+        }
+    </script>
+
+    <script src="../../others/impress.js/js/impress.js"></script>
+    <script>impress().init();</script>
+
+    <!--
         var api = impress();  
         `api.init()` - initializes the presentation,
         `api.next()` - moves to next step of the presentation,

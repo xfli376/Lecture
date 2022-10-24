@@ -739,7 +739,7 @@
 	\end{equation*}	
 	\alert{证明：} 对于母函数的形式级数：
 	\begin{equation*}
-		w(x, z)=(1-2zx+z^2{-1/2})=\sum_{n=0}^{\infty} P_{n}(x) z^{n}
+		w(x, z)=(1-2zx+z^2)^{-1/2}=\sum_{n=0}^{\infty} P_{n}(x) z^{n}
 	\end{equation*}	
 	求关于z的偏导：
 	\begin{equation*}
@@ -749,10 +749,10 @@
 
 \begin{frame}
 	\begin{equation*}
-		\frac{\partial w}{\partial z}=	(x-z)(1-2zx+z^2){-3/2}
+		\frac{\partial w}{\partial z}=	(x-z)(1-2zx+z^2)^{-3/2}
 	\end{equation*}		
 	\begin{equation*}
-		(1-2zx+z^2)\frac{\partial w}{\partial z}=(x-z)(1-2zx+z^2){-1/2}
+		(1-2zx+z^2)\frac{\partial w}{\partial z}=(x-z)(1-2zx+z^2)^{-1/2}
 	\end{equation*}		
 	\begin{equation*}
 		(1-2zx+z^2)\frac{\partial w}{\partial z}-(x-z)w=0
@@ -1016,7 +1016,7 @@
 
 \begin{frame}
 	\frametitle{作业}
-	1、将$x=\cos x$ 代入勒让德多项式,写出前4个勒让德多项式表达式 \\
+	1、将$x=\cos x$ 代入勒让德多项式,写出前5个勒让德多项式表达式 \\
 	2、求$x^4$的勒让德展开式\\
 	3、计算积分
 	\begin{equation*}
@@ -1547,7 +1547,7 @@ $$ \begin{aligned}
 	固有值
 	\[\begin{cases}
 		 m^2, ~~~ (m=0,\pm 1,\pm 2,\cdots,\pm l) \\
-		l(l+1), ~~~ (l=1, 2,\cdots, n-1) \\ 
+		l(l+1), ~~~ (l=0,1, 2,\cdots, n-1) \\ 
 	\end{cases}\]
 	固有函数：
 	\[

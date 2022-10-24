@@ -52,9 +52,9 @@ verticalSeparator: "^[\\r\\n?|\\n]--[\\r\\n?|\\n]$"
 
 - [ ] 对易公设：位置算符与正则动量算符之间存在对易关系
 
-    $$ [X_\alpha, P_\beta] = i \bar{h} \delta_{\alpha \beta} $$
+    $$ [X_\alpha, P_\beta] = i \hbar \delta_{\alpha \beta} $$
 
-- [ ] 全同粒子公设： 全同粒子体系的状态具有交换不变性
+- [ ] 全同性公设： 全同粒子体系的状态具有交换不变性
 
 ---
 

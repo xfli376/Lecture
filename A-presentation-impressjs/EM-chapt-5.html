@@ -1,0 +1,1274 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>工程数学｜UESTC </title>
+
+    <meta name="description"
+        content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link
+        href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
+        rel="stylesheet" />
+
+    <link href="../../others/impress.js/css/impress-common.css" rel="stylesheet" />
+
+    <link href="../../others/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="./presentation.css" rel="stylesheet" />
+
+    <script>
+        MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+        };
+    </script>
+    <script id="MathJax-script" async src="../../others//mathjax/es5/tex-chtml.js"></script>
+
+</head>
+
+<body class="impress-not-supported">
+
+    <!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a
+            simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+
+    <!-- Some images that are fixed to background in the css -->
+    <img id="bg-1" class="imgbg" src="../EM/EM-beamer/images/uestclogo-18.png">
+
+    <!---Begin--Begin--Begin--Begin--Begin--Begin -->
+    <div id="impress" data-transition-duration="1000" data-width="1280" data-height="768" data-max-scale="10"
+        data-min-scale="0" data-perspective="1000" data-autoplay="0">
+
+        <!--
+        
+        Here is where interesting thing start to happen.
+        
+        Each step of the presentation should be an element inside the `#impress` with a class name
+        of `step`. These step elements are positioned, rotated and scaled by impress.js   
+    -->
+
+        <div id="TITLE" class="step" data-x="-3000" data-y="-3000" data-z="-3000" data-autoplay="200" data-scale="2">
+            <h1>工程数学</h1>
+            <h2>Engineering Mathematics</h2>
+            <br />
+            <h2>李小飞 <span class="at"><i class="fa fa-at" aria-hidden="true"></i></span> 光电科学与技术学院</h2>
+            <br />
+            <span class="date"> 2023-03-01 </span>
+        </div>
+
+        <div id="toc" class="step" data-rel-x="2200" data-rel-y="0">
+            <br>
+            <h2>第五章 特殊函数及其应用</h2>
+            <br>
+            <li>贝塞尔方程</li>
+            <li>贝塞尔函数</li>
+            <li>伽㐷函数</li>
+            <li>贝塞尔函数的应用</li>
+            <li>Dirac函数</li>
+
+            <div class="notes">
+                <p>Table of Contents, with links to other slides of this same presentation.</p>
+            </div>
+        </div>
+
+
+
+        <div id="lecture-1" class="step " data-rel-x="2000" data-rel-y="0" data-rel-z="0" data-rotate="45">
+            <br>
+            <br>
+            <h2>第一讲 贝塞尔方程</h2>
+            <br>
+            <br>
+            <li>贝塞尔方程的建立</li>
+            <li>解塞尔方程</li>
+
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="1000" data-rel-z="-500">
+            <h2> 1. 贝塞尔方程的建立</h2>
+            <center><img class="imgmixed" src="../EM/EM-beamer/figs/2022-10-24-12-55-52.png" width=350 height=350>
+            </center>
+            <br>
+            <p><span class="exam"> 例-1: </span> 对于半径为$r_0$的侧面绝缘薄均匀圆盘，边界温度始终保持为0度，求盘的初始温度已知时的温度分布函数。</p>
+            <p class="substep"><span class="answer"> 解: </span> 这是温度场，服从热传导方程：
+                \[ \begin{cases}
+                u_t=a^2 \nabla ^2 ~~~~ (0 < x^2 +y^2 < r_0 ^2, t> 0)\\
+                    \\
+                    u(x,y,t)|_{x^2+y^2=r_0 ^2}= 0 \\
+                    u(x,y,t)|_{t=0} = \Psi(x,y)
+                    \end{cases}\]
+            </p>
+            <li class="substep">圆域边界条件与$\theta$，若使用极坐标系，则可分离变量</li>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <h5>极坐标拉普拉斯</h5>
+            <p class="substep"> 写出坐标变换关系
+                \[ \begin{cases}
+                x=r\cos \theta\\
+                y=r\sin \theta
+                \end{cases}\]
+            </p>
+            <p class="substep">对函数 $ u(x,y)= u(r\cos \theta,r\sin \theta)$ 求导
+                \begin{aligned}
+                \frac{\partial u}{\partial r}&=\frac{\partial u}{\partial x } \frac{\partial x}{\partial r }+
+                \frac{\partial u}{\partial y } \frac{\partial y}{\partial r } = \cos \theta \frac{\partial u}{\partial x
+                } + \sin \theta \frac{\partial u}{\partial y } \\
+                \frac{\partial u}{\partial \theta}&=\frac{\partial u}{\partial x } \frac{\partial u}{\partial \theta }+
+                \frac{\partial u}{\partial y } \frac{\partial y}{\partial \theta } = -r \sin \theta \frac{\partial
+                u}{\partial x } + r\cos \theta \frac{\partial u}{\partial y } \\
+                \end{aligned} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <p>写成矩阵:
+                \[
+                \begin{aligned}
+                &\begin{bmatrix}
+                \dfrac{\partial u}{\partial r} \\
+                \dfrac{\partial u}{\partial \theta}
+                \end{bmatrix}
+                =
+                \begin{bmatrix}
+                \cos \theta & \sin \theta \\
+                -r \sin \theta& r\cos \theta \\
+                \end{bmatrix}
+                \begin{bmatrix}
+                \dfrac{\partial u}{\partial x} \\
+                \dfrac{\partial u}{\partial y}
+                \end{bmatrix}\\
+                &\begin{bmatrix}
+                \dfrac{\partial u}{\partial r} \\
+                \dfrac{\partial u}{\partial \theta}
+                \end{bmatrix}
+                =
+                \begin{bmatrix}
+                1 & 0 \\
+                0 & r \\
+                \end{bmatrix}
+                \begin{bmatrix}
+                \cos \theta & \sin \theta \\
+                -\sin \theta& \cos \theta \\
+                \end{bmatrix}
+                \begin{bmatrix}
+                \dfrac{\partial u}{\partial x} \\
+                \dfrac{\partial u}{\partial y}
+                \end{bmatrix}\\
+                &\begin{bmatrix}
+                \dfrac{\partial u}{\partial x} \\
+                \dfrac{\partial u}{\partial y}
+                \end{bmatrix}
+                =
+                \begin{bmatrix}
+                \cos \theta & -\sin \theta \\
+                \sin \theta& \cos \theta \\
+                \end{bmatrix}
+                \begin{bmatrix}
+                1 & 0 \\
+                0 & 1/r \\
+                \end{bmatrix}
+                \begin{bmatrix}
+                \dfrac{\partial u}{\partial r} \\
+                \dfrac{\partial u}{\partial \theta}
+                \end{bmatrix}\\
+                \end{aligned}
+                \]</p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            \[
+            \begin{aligned}
+            &\begin{bmatrix}
+            \dfrac{\partial u}{\partial x} \\
+            \dfrac{\partial u}{\partial y}
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+            \cos \theta & -\sin \theta \\
+            \sin \theta& \cos \theta \\
+            \end{bmatrix}
+            \begin{bmatrix}
+            \dfrac{\partial u}{\partial r} \\
+            \dfrac{1}{r} \dfrac{\partial u}{\partial \theta}
+            \end{bmatrix}\\
+            &\begin{bmatrix}
+            \dfrac{\partial u}{\partial x} \\
+            \dfrac{\partial u}{\partial y}
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+            \vec{e}_r & \vec{e}_\theta
+            \end{bmatrix}
+            \begin{bmatrix}
+            \dfrac{\partial u}{\partial r} \\
+            \dfrac{1}{r} \dfrac{\partial u}{\partial \theta}
+            \end{bmatrix} \\
+            \\
+            &\nabla= \vec{e}_r \dfrac{\partial }{\partial r} + \vec{e}_\theta \dfrac{1}{r} \dfrac{\partial }{\partial
+            \theta}
+            \end{aligned}
+            \]
+        </div>
+
+        <div class="step" data-rel-x="2000" data-rel-y="1000" data-rel-z="-500" data-scale="4" data-rotate-x="45">
+            \begin{aligned}
+            \nabla ^2 =\nabla \cdot \nabla
+            &= (\vec{e}_r \dfrac{\partial }{\partial r} + \vec{e}_\theta \dfrac{1}{r}\frac{\partial }{\partial
+            \theta})\cdot (\vec{e}_r \dfrac{\partial }{\partial r} + \vec{e}_\theta \dfrac{1}{r} \dfrac{\partial
+            }{\partial \theta})\\
+            &= \vec{e}_r \cdot\frac{\partial }{\partial r} (\vec{e}_r \frac{\partial }{\partial r} + \vec{e}_\theta
+            \frac{1}{r} \frac{\partial }{\partial \theta})+ \vec{e}_\theta \cdot \frac{1}{r} \frac{\partial }{\partial
+            \theta} (\vec{e}_r \frac{\partial }{\partial r} + \vec{e}_\theta \frac{1}{r} \frac{\partial }{\partial
+            \theta})\\
+            &=\vec{e}_r \cdot (\frac{\partial \vec{e}_r}{\partial r} \frac{\partial }{\partial r} + \vec{e}_r
+            \frac{\partial ^2 }{\partial r ^2}+ \frac{\partial \vec{e}_\theta}{\partial r} \frac{1}{r}\frac{\partial
+            }{\partial \theta}+ \vec{e}_\theta\frac{\partial }{\partial r} (\frac{1}{r}\frac{\partial }{\partial
+            \theta})) \\
+            &\hspace{1em} + \vec{e}_\theta \cdot (\frac{1}{r}\frac{\partial \vec{e}_r}{\partial \theta} \frac{\partial
+            }{\partial r} + \vec{e}_r \frac{1}{r} \frac{\partial }{\partial \theta} \frac{\partial }{\partial r} +
+            \frac{1}{r} \frac{\partial \vec{e}_\theta}{\partial \theta} \frac{1}{r} \frac{\partial }{\partial \theta} +
+            \vec{e}_\theta \frac{1}{r} \frac{\partial }{\partial \theta} (\frac{1}{r} \frac{\partial }{\partial \theta}
+            )
+            ) \\
+            &=\vec{e}_r \cdot (0 \frac{\partial }{\partial r} + \vec{e}_r \frac{\partial ^2 }{\partial r ^2}+
+            0\frac{\partial }{\partial \theta}+ \vec{e}_\theta\frac{\partial }{\partial r} (\frac{1}{r}\frac{\partial
+            }{\partial \theta})) \\
+            &\hspace{1em} + \vec{e}_\theta \cdot (\vec{e}_\theta \frac{1}{r}\frac{\partial }{\partial r} + \vec{e}_r
+            \frac{1}{r} \frac{\partial }{\partial \theta} \frac{\partial }{\partial r} + \frac{1}{r} (-\vec{e}_r)
+            \frac{1}{r} \frac{\partial }{\partial \theta} + \vec{e}_\theta \frac{1}{r^2} \frac{\partial ^2 }{\partial
+            \theta ^2}
+            ) \\
+            &= \frac{\partial^2 }{\partial r^2 } +\frac{1}{r } \frac{\partial }{\partial r } +\frac{1}{r^2 }
+            \frac{\partial ^2 }{\partial \theta ^2}
+            \end{aligned}
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <h5>极坐标热传导方程</h5>
+            <p class="substep"> \[\begin{cases}
+                \displaystyle u_t=a^2 [ { \frac{\partial^2 u }{\partial r^2 } +\frac{1}{r } \frac{\partial u }{\partial
+                r } +
+                \frac{1}{r^2 } \frac{\partial ^2 u }{\partial \theta ^2
+                } }], \quad (0 < r < r_0, 0 < \theta < 2 \pi, t>0)\\
+                    \\
+                    u(r,\theta,t)|_{r=r_0} =0 \\
+                    u(r,\theta,t)|_{t=0} =\Psi(r,\theta) \end{cases} \] </p>
+            <p class="substep">分离变量， 令：$u(r,\theta,t) =R(r)\Theta(\theta)T(t)$, 代回原方程： </p>
+            <p class="substep">\begin{equation*}
+                R\Theta T'=a^2 [ R'' \Theta T + \dfrac{1}{r} R' \Theta T + \dfrac{1}{r^2} R \Theta '' T(t) ]
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <p class="substep">整理：
+                \begin{equation*}
+                \frac{T'}{a^2T} =\frac{R''}{R}+\frac{1}{r} \frac{R'}{R} +\frac{1}{r^2} \frac{\Theta ''} {\Theta}
+                =-\lambda
+                \end{equation*} </p>
+            <p class="substep">转化为，方程-1：
+                \begin{equation*}
+                T'(t)+\lambda a^2T(t)=0
+                \end{equation*}
+                这是衰减模型，已求解！ </p>
+            <p class="substep">方程-2:
+                \begin{equation*}
+                r^2 \frac{R'' (r)}{R(r)}+r \frac{R'(r)}{R(r)} + \lambda r^2 +\frac{\Theta ''(\theta)} {\Theta (\theta)}
+                =0
+                \end{equation*}
+                固有值问题，可继续分离变量 </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>整理：
+                \begin{equation*}
+                r^2 \frac{R'' (r)}{R(r)}+r \frac{R'(r)}{R(r)} + \lambda r^2 =-\frac{\Theta ''(\theta)} {\Theta (\theta)}
+                =\mu
+                \end{equation*} </p>
+            <p class="substep">角向固有值问题：
+                $$ \begin{cases}
+                \Theta ''(\theta)+\mu \Theta (\theta) =0 \\
+                \Theta (\theta) = \Theta (\theta+2\pi) \\
+                \Theta' (\theta) = \Theta' (\theta+2\pi)
+                \end{cases} $$ </p>
+            <p class="substep">径向固有值问题：
+                $$ \begin{cases}
+                r^2 R'' (r)+r R'(r) +( \lambda r^2 -\mu)R(r)=0 \\
+                R(r_0)=0
+                \end{cases} $$ </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>角向固有值问题有解 </p>
+            <p class="substep">固有值：
+                \begin{equation*}
+                \mu=n^2, \qquad (n=0,1,2,3...)
+                \end{equation*} </p>
+            <p class="substep">固有函数：
+                \begin{aligned}
+                \Theta_n(\theta) &= a_n \cos(n\theta)+b_n \sin(n\theta)\\
+                &= \frac{1}{\sqrt{2\pi}} e^{-i n \theta } \\
+                \end{aligned}
+            </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">把$\mu=n^2$,代回径向方程，得径向固有值问题：
+                \[ \boxed{ \begin{cases}
+                r^2 R'' (r)+r R'(r) +( \lambda r^2 -n^2)R(r)=0 \\
+                \\
+                R(r_0)=0
+                \end{cases} }\] </p>
+            <p class="substep">这是贝塞尔方程! </p>
+        </div>
+
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"><span class="exam"> 例-2: </span> 试证明圆域波动方程的径向固有值问题也是贝塞尔方程 </p>
+            <p class="substep"><span class="answer"> 解: </span> 圆域波动方程为
+                $$\begin{cases}
+                u_{tt}=a^2 \nabla ^2 ~~~~ (0 < x^2 +y^2 < r_0 ^2, t>0)\\
+                    u(x,y,t)|_{x^2+y^2=r_0 ^2}= 0 \\
+                    u(x,y,t)|_{t=0}= \Psi(x,y) \\
+                    u_t (x,y,t)|_{t=0}= \varphi (x,y)
+                    \end{cases} $$ </p>
+            <p class="substep">考察与热传导方程的区别,发现使用极坐标拉普拉斯后,整个分离变量过程与热传导方程高度一致,(*P115) </p>
+            <p class="substep">径向固有值问题也是贝塞尔方程！
+                $$\begin{cases}
+                r^2 R'' (r)+r R'(r) +( \lambda r^2 -n^2)R(r)=0 \\
+                R(r_0)=0
+                \end{cases} $$ </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <h2> 2. 解贝塞尔方程</h2>
+            <br>
+            <p>贝塞尔方程是圆域极坐标条件下的普适的一个径向本征方程 </p>
+            <p>\[\begin{cases}
+                r^2 R'' (r)+r R'(r) +( \lambda r^2 -n^2)R(r)=0, \quad (0 < r < r_0) \\ R(r_0)=0 \end{cases} \] </p>
+                    <br>
+                    <p class="substep">预处理, 令:
+                        \begin{equation*}
+                        x=\sqrt{\lambda} r, ~~~~y(x)= R(r) =R(\frac{x}{\sqrt{\lambda}})
+                        \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>求导
+                \[
+                \begin{aligned}
+                &\frac{dy}{dx} = \frac{dR}{dr} \frac{dr}{dx} = \frac{1}{ \sqrt{\lambda}} \frac{dR}{dr}\\
+                &\frac{d^2y}{dx^2} = \frac{1}{\lambda} \frac{dR^2}{dr^2}\\
+                \end{aligned}
+                \] </p>
+            <p class="substep">代回,得：
+                \begin{equation*}
+                \boxed{x^2\frac{d^2y}{dx^2} + x\frac{dy}{dx} +(x^2 -n^2)y=0}
+                \end{equation*}
+                称为n整数阶贝塞尔方程 </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>贝塞尔方程
+                \begin{equation*}
+                \boxed{x^2\frac{d^2y}{dx^2} + x\frac{dy}{dx} +(x^2 -n^2)y=0}
+                \end{equation*} </p>
+            <p>欧拉方程：
+                \begin{equation*}
+                x^2\frac{d^2y}{dx^2} + x\frac{dy}{dx} +n^2y=0
+                \end{equation*} </p>
+            <p class="substep">两者都是变系数微分方程，区别在贝塞尔方程的零阶也是变系数</p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>欧拉方程通过变量代换(令$t=\ln x $) 可转化为常系数微分方程
+                \[ \frac{d^2y}{dt^2} - n^2y=0 \] </p>
+            <p class="substep">若同样令$t=\ln x $, 则贝塞尔方程转化为
+                \[ \frac{d^2y}{dt^2} +(x^2-n^2)y=0 \]</p>
+            <p class="substep">依然是变系数微分方程,无法进一步进行求解. </p>
+            <li class="substep">因此,贝塞尔方程没有通常意义的初等函数表达式解 </li>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p><span class="exam"> 例-2: </span> 求解贝塞尔方程
+                \begin{equation*}
+                x^2\frac{d^2y}{dx^2} + x\frac{dy}{dx} +( x^2 -n^2)y=0
+                \end{equation*} </p>
+            <p class="substep"><span class="answer"> 解: </span> 没有通常意义的初等函数表达式解,即没有通常意义的级数解 </p>
+            <p class="substep">设方程有如下非一般意义的级数解
+                \begin{equation*}
+                y=\sum\limits_{k=0}^{\infty} a_k x^{s+k}, \qquad (a_0 \not =0)
+                \end{equation*} </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">求导
+                \begin{equation*}
+                y'=\sum\limits_{k=0}^{\infty} (s+k) a_k x^{s+k-1}
+                \end{equation*} </p>
+            <p class="substep">\begin{equation*}
+                y''=\sum\limits_{k=0}^{\infty} (s+k) (s+k-1) a_k x^{s+k-2}
+                \end{equation*} </p>
+            <p class="substep">代回：
+                \[\small{x^2\sum\limits_{k=0}^{\infty} (s+k) (s+k-1) a_k x^{s+k-2} + x\sum\limits_{k=0}^{\infty} (s+k)
+                a_k
+                x^{s+k-1} +( x^2 -n^2)\sum\limits_{k=0}^{\infty} a_k x^{s+k}=0} \] </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>整理(注意第三项的脚标变换)
+                \begin{equation*}
+                \sum\limits_{k=0}^{\infty} [(s+k) ^2 -n^2] a_k x^{s+k} + \sum\limits_{k=2}^{\infty} a_{k-2} x^{s+k} =0
+                \end{equation*} </p>
+            <p class="substep"> 第一项(k=0)系数应为零：
+                \begin{equation*}
+                (s+k) ^2 -n^2=0,~~ \to s_1=-n, \qquad s_2=n.
+                \end{equation*} </p>
+            <p class="substep"> 第二项(k=1)系数应为零：
+                \begin{equation*}
+                [(s+k) ^2 -n^2] a_1=0,\qquad \to a_1=0.
+                \end{equation*} </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"> 后面各项系数都为零：
+                \begin{equation*}
+                [(s+k) ^2 -n^2] a_k+ a_{k-2}=0, ~~~ (k=2,3,4,...)
+                \end{equation*} </p>
+            <p class="substep"> 存在递推关系：
+                \begin{equation*}
+                a_k=-\frac{1}{(s+k) ^2 -n^2 } a_{k-2}
+                \end{equation*} </p>
+            <p class="substep">这是隔项递推，因为$a_1=0$,所以所有的奇数项为零 \[a_{2m+1}=0\] </p>
+            <p class="substep"> 代入$s=n$ (-n 不影响解题过程),得偶数项为:</p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>
+                \begin{aligned}
+                a_{2m}&=\frac{-1}{(n+2m) ^2 -n^2 } a_{2m-2} \\ &=\frac{-1}{2m (2n+2m) } a_{2m-2} \\
+                \end{aligned}
+            </p>
+            <p class="substep">一直递推：
+                \begin{equation*}
+                a_{2m}=(-1)^m \frac{1}{2^{2m} m! (n+m) (n+m-1)... (n+1) } a_0
+                \end{equation*} </p>
+            <p class="substep"> 取：$a_0=1/2^n n!$， 得：
+                \begin{equation*}
+                a_{2m}=(-1)^m \frac{1}{2^{2m+n} m! (n+m) ! }
+                \end{equation*} </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>得贝塞尔方程的解：
+                \begin{equation*}
+                y(x) = \sum\limits_{m=0}^{\infty} a_{2m} x^{n+2m}
+                \end{equation*} </p>
+
+            <br>
+
+            <p class="substep">这是无穷级数，做收敛性分析
+                \begin{equation*}
+                \lim\limits_{m\to \infty}|\frac{ a_{2m+2}} {a_{2m}}|= \lim\limits_{m\to \infty}\frac{ 1}{4(m+1)(n+m+1)}
+                =0
+                \end{equation*} </p>
+            <p class="substep">说明此级数必为某函数的展开式，称之为贝塞尔函数。 </p>
+
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+
+            <br>
+
+
+            <p> 记为: \[\boxed{J_n(x) = \sum\limits_{m=0}^{\infty} a_{2m} x^{n+2m}}
+                \] </p>
+            称为n阶贝塞尔函数!
+
+            <br>
+            <br>
+            <p class="substep">贝塞尔函数在除$x=0$点外的整个实数轴上收敛! </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <li>零阶贝塞尔函数
+                \begin{equation*}
+                J_0(x) = \sum\limits_{m=0}^{\infty} (-1)^m \frac{1}{m! m! } (\frac{x}{2})^{2m}
+                \end{equation*} </li>
+            <li>n阶贝塞尔函数
+                \begin{equation*}
+                J_n(x) = \sum\limits_{m=0}^{\infty} (-1)^m \frac{1}{m! (n+m) ! } (\frac{x}{2})^{n+2m}
+                \end{equation*} </li>
+            <li>第二类贝塞尔函数(自学)
+                \begin{equation*}
+                Y_{\alpha}(x)=\frac{J_{\alpha}(x) \cos (\alpha \pi)-J_{-\alpha}(x)}{\sin (\alpha \pi)}
+                \end{equation*} </li>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h5>前5个贝塞尔函数</h5>
+            <center><img src="../EM/EM-beamer/figs/bessel.png" width=800 height=500></center>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            <br>
+
+
+            <center><img class="imgmixed" src="../EM/EM-beamer/figs/fig1-3-6.png" width=500 height=500></center>
+            <li>贝塞尔（Bessel，Friedrich Wilhelm，1784～1846）德国天文学家，数学家，天体测量学的奠基人.</li>
+            <br>
+            <p>贝塞尔函数: 是解决物理学、天文学、光学和信息学等有关问题的重要工具。 </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="homework"> 作 业： </span></p>
+            <p>1. 由圆域波动方程导出贝塞尔方程 </p>
+            <p>2. 求衰减模型
+                \begin{equation*}
+                T'(t)+\lambda a^2T(t)=0
+                \end{equation*} </p>
+            <p>3. 求角向固有值及归一化固有函数：
+                \[ \begin{cases}
+                \Theta ''(\theta)+\mu \Theta (\theta) =0 \\
+                \Theta (\theta) = \Theta (\theta+2\pi) \\
+                \Theta' (\theta) = \Theta' (\theta+2\pi)
+                \end{cases} \] </p>
+            <p>4. 写出n阶贝塞尔函数 </p>
+        </div>
+
+        <div class="step " data-x="-2000" data-y="0" data-z="1000" , data-rotate-y="-45">
+
+            <center> <span class="Thanks">Thanks</span> </center>
+
+        </div>
+
+        <div id="lecture-2" class="step " data-rel-x="3000" data-y="0" data-rel-z="800" data-rotate-z="45">
+            <br>
+            <h2>第二讲 贝塞尔函数的性质及应用 </h2>
+            <br>
+            <li>伽㐷函数</li>
+            <li>贝塞尔函数性质</li>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <h2>1. 伽㐷函数</h2>
+            <br>
+            <center><img class="imgmixed" src="../EM/EM-beamer/figs/2022-04-02-08-43-23.png" width=500 height=380>
+            </center>
+            <p class="substep">为进一步讨论贝塞尔函数，先学习Gamma函数
+            </p>
+            <br>
+
+            <li class="substep">1728年，哥德巴赫在考虑数列插值问题, 比如我们会算2!,3!,如何算2.5!呢?</li>
+            <li class="substep">哥德巴赫写信请教尼古拉斯·伯努利和他的弟弟丹尼尔·伯努利, 欧拉当时正好与丹尼尔·伯努利在一起</li>
+            <li class="substep">1729 年, 欧拉解决了这个问题! </li>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <br>
+            <br>
+            <h4>伽㐷函数的定义</h4>
+            <br>
+            <p class="substep"> Euler创造的$\Gamma$函数,将积分和阶乘联系在起来！
+                \begin{equation*}
+                \Gamma(x)=\int_{0}^{\infty} t^{x-1} e^{-t} dt, \qquad (x>0)
+                \end{equation*} </p>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <p> <span class="exam"> 性质-1: </span> \[
+                \Gamma(1)=1
+                \] </p>
+            <p class="substep"><span class="answer"> 证明: </span>在定义式令 $x =1$
+                \[ \begin{aligned}
+                \Gamma(1)&=\int_{0}^{\infty} t^{x-1} e^{-t} dt\\
+                &=\int_{0}^{\infty} t^{1-1} e^{-t} dt \\
+                &=\int_{0}^{\infty} e^{-t} dt \\
+                &=1
+                \end{aligned}\] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <p><span class="exam"> 性质-2: </span> 伽㐷函数存在递推式
+                \(\quad \Gamma(x+1)=x \Gamma(x)\)</p>
+
+            <p class="substep"><span class="answer"> 证明: </span> 由定义式，有
+                \begin{equation*}
+                \begin{split}
+                \Gamma(x+1)&= \int_{0}^{\infty} t^{x+1-1} e^{-t} dt \\
+                &= -t^x e^{-t} |_0 ^\infty + x \int_{0}^{\infty} t^{x-1} e^{-t} dt \\
+                &= x \int_{0}^{\infty} t^{x-1} e^{-t} dt \\
+                &=x \Gamma(x)
+                \end{split}
+                \end{equation*} </p>
+            <li class="substep"> 推论：$\displaystyle \quad\Gamma(x+n)=(x+n-1)(x+n-2)\cdots (x+1)x\Gamma(x)$</li>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="exam"> 性质-3: </span> 自变量为正整数的伽㐷函数与阶乘有如下关系 \begin{equation*}
+                \Gamma(n+1)=n!
+                \end{equation*}
+            </p>
+            <p class="substep"><span class="answer"> 证明: </span> 由递推公式，有 \begin{equation*}
+                \begin{split}
+                \Gamma(x+1)&=x \Gamma(x) \\
+                \Gamma(n+1)&=n \Gamma(n) \\
+                &=n(n-1)\cdots 1 \Gamma(1) \\
+                &=n! \times 1 \\
+                &=n!
+                \end{split}
+                \end{equation*} </p>
+            <br>
+            <li class="substep">阶乘只是$\Gamma(x)$在特殊位置的取值!</li>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <br>
+            <h5>伽㐷函数与阶乘的关系图</h5>
+            <center><img class="imgmixed" src="../EM/EM-beamer/figs/gamma-1.svg" width=500 height=500></center>
+            <br>
+            <p class="substep">现有如下问题： </p>
+            <br>
+            <li class="substep">$\Gamma(1)$ 是谁的阶乘？ </li>
+            <li class="substep">$\Gamma(0)$是多少？ </li>
+            <li class="substep">$\Gamma(3.5) = (2.5)$！$\quad$ ? </li>
+            <li class="substep">能否延拓到负实数域？ </li>
+            <li class="substep">能否延拓到复数域？</li>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p><span class="exam"> 性质-4: </span> 半正整数$\Gamma$函数有性质
+                \begin{equation*}
+                \begin{split}
+                \Gamma(\frac{1}{2}) &=\sqrt{\pi} \\
+                \Gamma(n+\frac{1}{2}) &= \frac{(2n-1)!!}{2^n} \sqrt{\pi}
+                \end{split}
+                \end{equation*}
+            </p>
+            <p class="substep"><span class="answer"> 证明: </span> (1) 由Gamma函数定义
+                \begin{aligned}
+                \Gamma(x)&=\int_{0}^{\infty} t^{x-1} e^{-t} dt, \qquad (x>0) \\
+                \Gamma(\frac{1}{2})&=\int_{0}^{\infty} t^{\frac{1}{2}-1} e^{-t} dt\\
+                &=\int_{0}^{\infty} \frac{1}{\sqrt{t}} e^{-t} dt\\
+                \end{aligned}</p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>令$x=\sqrt{t}$, 代入, 得：
+                $$\quad\begin{aligned}
+                \Gamma(\frac{1}{2})
+                &=2\int_{0}^{\infty} e^{-x^2} dx\\
+                &=2\sqrt{\iint_{0}^{\infty} e^{-x^2} e^{-y^2} dxdy}\\
+                &=2\sqrt{\int_{0}^{\frac{\pi}{2}} \int_{0}^{\infty} e^{-r^2} r dr d\theta}\\
+                &=2\sqrt{\frac{\pi}{2} \int_{0}^{\infty} r e^{-r^2} dr }\\
+                &=2\sqrt{\frac{\pi}{2}[-\frac{1}{2} e^{-r^2}]_{0}^{\infty} }=\sqrt{\pi}
+                \end{aligned}
+                $$</p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <p>(2) 由递推公式 $\Gamma(1+x)= x \Gamma(x) ,\qquad (x > 0)$ </p>
+            <p> \[ \begin{aligned} \Gamma(1+\frac{1}{2}) &=\frac{1}{2} \Gamma(\frac{1}{2})=\frac{1}{2} \sqrt{\pi}\\
+                \Gamma(2+\frac{1}{2})&=\Gamma(1+\frac{3}{2})=\frac{3}{2}
+                \Gamma(1+\frac{1}{2})=\frac{3}{2}\frac{1}{2}\sqrt{\pi}\\ \Gamma(3+\frac{1}{2})&=\frac{5}{2}
+                \frac{3}{2}\frac{1}{2}\sqrt{\pi}\\ \Gamma(n+\frac{1}{2})&=\frac{(2n-1)!!}{2^n}\sqrt{\pi}\\
+                &=\frac{(2n)!}{2^{2n} n!}\sqrt{\pi} \end{aligned} \]</p>
+            <p><span class="substep over"> 证毕! </span></p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <p><span class="exam"> 性质-5: </span> 半正整数阶乘有性质
+                \begin{equation*}
+                \begin{split}
+                (\frac{1}{2})! &= \frac{\sqrt{\pi}}{2} \\
+                (m-\frac{1}{2})! &=\frac{(2m)!}{2^{2m} m!}\sqrt{\pi}
+                \end{split}
+                \end{equation*}
+            </p>
+            <p class="substep"><span class="answer"> 证明: </span> 把阶乘公式从正整数向正实数延拓
+                \[\Gamma(n+1)=n!\qquad \implies \qquad \Gamma(x+1)=x!, (x>0)\]</p>
+            <p class="substep">(1) 取:$x=m-\dfrac{1}{2}, \qquad (m=1,2,3, \cdots )$ </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> \[ \begin{aligned}
+                (m-\frac{1}{2})! &= \Gamma (m-\frac{1}{2}+1) \\
+                &= \Gamma (m+\frac{1}{2}) \\
+                &= \frac{(2m)!}{2^{2m} m!}\sqrt{\pi}
+                \end{aligned} \] </p>
+            <p class="substep">(2) 上式取$m=1$
+                \[(\frac{1}{2})! = \frac{\sqrt{\pi}}{2} \] </p>
+            <p><span class="substep over"> 证毕! </span></p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="exam"> 性质-6: </span> 半负整数$\Gamma$函数的值
+                \begin{split}
+                \Gamma(-\frac{1}{2}) &=-2\sqrt{\pi} \\
+                \Gamma(-\frac{3}{2}) &=\frac{4}{3}\sqrt{\pi}
+                \end{split}
+            </p>
+            <p class="substep"><span class="answer"> 证明: </span> 把递推公式从正实数向实数延拓!
+                \[\Gamma(1+x)=x \Gamma(x), (x > 0)\quad \implies \quad \Gamma(1+x)=x \Gamma(x), (-\infty < x <
+                    +\infty)\]</p>
+                    <p class="substep">(1) 取:$x=-\dfrac{1}{2}$ 代入 </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>\[
+                \begin{aligned}
+                \Gamma(-\frac{1}{2})&= -2 \Gamma(1-\frac{1}{2})\\
+                &=-2 \Gamma(\frac{1}{2})\\
+                &=-2 \sqrt{\pi}
+                \end{aligned}
+                \] </p>
+            <p class="substep">(2) 取:$x=-\dfrac{3}{2}$ 代入 </p>
+            <p class="substep"> \[
+                \begin{aligned}
+                \Gamma(-\frac{3}{2})&= -\frac{2}{3} \Gamma(1-\frac{3}{2})\\
+                &=-\frac{2}{3} \Gamma(-\frac{1}{2})\\
+                &=(-\frac{2}{3})(-2 \sqrt{\pi}) =\frac{4}{3}\sqrt{\pi}
+                \end{aligned}
+                \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <br>
+            <p class="substep">实际上，按照阶乘的定义， 从正整数向负整数延拓时，则会出现严重问题, 比如 </p>
+            <p class="substep">\[ n! =(n-1)(n-2)(n-3)\cdots 1\]
+                \[ (-1)! =(-1)(-2)(-3)\cdots -\infty ? \]
+                \[\Gamma(0)= (-1)! \quad ? , \qquad \Gamma(-1)=?, \cdots\] </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="exam"> 性质-7: </span> Gamma函数在零和负整数处的极限为无穷大
+                \begin{split}
+                \lim\limits_{x\to -n }\Gamma(x) &=\pm\infty, \qquad (n=0,1,2, \cdots) \\
+                \frac{1}{\Gamma(-n)} &=0, \qquad (n=0,1,2, \cdots)
+                \end{split}
+            </p>
+            <p class="substep"><span class="answer"> 证明: </span> 由递推公式
+                \begin{split}
+                \Gamma(x)&=\frac{1}{x} \Gamma(x+1) \\
+                \lim\limits_{x\to 0 } \Gamma(x)&= \lim\limits_{x\to 0 } \frac{1}{x} \Gamma(x+1) =\lim\limits_{x\to 0 }
+                \frac{1}{x} \Gamma(1)=\infty \\
+                \lim\limits_{x\to -1 } \Gamma(x)&=\lim\limits_{x\to -1 } \frac{1}{x} \Gamma(x+1) = \lim\limits_{x\to 0 }
+                \frac{1}{x-1} \Gamma(x) =-\infty
+                \end{split} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> 依次类推，有
+                \begin{aligned}
+                \lim\limits_{x\to -n } \Gamma(x)&=\lim\limits_{x\to -n } \frac{1}{x} \Gamma(x+1) \\
+                &= \lim\limits_{x\to -(n-1) } \frac{1}{x-1} \Gamma(x) \\
+                &=\pm\infty \\
+                \end{aligned}
+            </p>  
+
+            <p class="substep"> 即：延拓到实数域后, $\Gamma$函数存在奇点$x = 0,-1,-2,\cdots$ </p>
+            <p class="substep"> 进一步延拓到复数域, 这些奇点依然存在
+            </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> 实数域Gamma函数</p>
+            <center><img src="../EM/EM-beamer/figs/gamma-2.svg" width=800 height=500>
+            </center>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> 复数域Gamma函数</p>
+            <center><img src="../EM/EM-beamer/figs/2022-03-26-17-20-10.png" width=800 height=500>
+            </center>
+        </div>
+
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h2>2. 贝塞尔函数性质</h2>
+            <p class="substep"> 有了Gamma函数，就可以讨论贝塞尔函数的性质了 </p>
+            <p class="substep"> <span class="exam"> 性质-1: </span> 负数阶贝塞尔函数与正数阶贝塞尔函数有如下关系
+                \begin{equation*}
+                J_{-n}(x)=(-1)^n J_n(x)
+                \end{equation*} </p>
+            <p class="substep"><span class="answer"> 证明: </span> 用$\Gamma$ 函数重写贝塞尔函数： </p>
+            <p class="substep"> \begin{equation*}
+                J_n(x) = \sum\limits_{m=0}^{\infty} (-1)^m \frac{1}{m! (n+m) ! } (\frac{x}{2})^{n+2m}
+                \end{equation*} </p>
+            <p class="substep">\begin{equation*}
+                J_n(x) = \sum\limits_{m=0}^{\infty} (-1)^m \frac{1}{m! \Gamma(n+m+1) } (\frac{x}{2})^{n+2m}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p>负数阶塞尔函数
+                \begin{equation*}
+                J_{(-n)}(x) = \sum\limits_{m=0}^{\infty} (-1)^m \frac{1}{m! \Gamma(-n+m+1) } (\frac{x}{2})^{-n+2m}
+                \end{equation*}
+            </p>
+
+            <p class="substep"> 对于 $m < n $ 的项，分母中的Gamma函数为无穷大，因此都为零,去除： \begin{equation*}
+                    J_{(-n)}(x)=\sum\limits_{m=n}^{\infty} (-1)^m \frac{1}{m! \Gamma(-n+m+1) } (\frac{x}{2})^{-n+2m}
+                    \end{equation*} </p>
+
+                    <p class="substep">为了方便描述，令 $m-n=k$, 有 $m=n+k $,
+                        \begin{equation*}
+                        J_{(-n)}(x) = (-1)^n\sum\limits_{k=0}^{\infty} (-1)^k \frac{1}{(n+k)! \Gamma(k+1) }
+                        (\frac{x}{2})^{n+2k}
+                        \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <br>
+            <p> 写回阶乘形式\begin{equation*}
+                J_{-n} (x) = (-1)^n\sum\limits_{k=0}^{\infty} (-1)^k \frac{1}{(n+k)! k! } (\frac{x}{2})^{n+2k} =(-1)^n
+                J_{n} (x)
+                \end{equation*} </p>
+            <p><span class="substep over"> 证毕！ </span></p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p class="substep"> <span class="exam"> 性质-2: </span> 半整数阶贝塞尔函数与三角函数有如下关系
+                \begin{equation*}
+                J_{1/2} (x) =\sqrt{\frac{2}{\pi x}} \sin x, \qquad J_{-1/2} (x) =\sqrt{\frac{2}{\pi x}} \cos x
+                \end{equation*} </p>
+            <p class="substep"><span class="answer"> 证明: </span> 用$\Gamma$ 函数重写半整数阶贝塞尔函数： </p>
+            <p class="substep"> \begin{equation*}
+                J_n(x) = \sum\limits_{m=0}^{\infty} (-1)^m \frac{1}{m! \Gamma(n+m+1) } (\frac{x}{2})^{n+2m}
+                \end{equation*}
+                \begin{equation*}
+                J_{1/2}(x) = \sum\limits_{m=0}^{\infty} (-1)^m \frac{1}{m! \Gamma(1/2+m+1) } (\frac{x}{2})^{1/2+2m}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>计算其中的$\Gamma$ 函数
+                \begin{equation*}
+                \begin{split}
+                \Gamma(1/2+m+1) &= (\frac{2m+1}{2}) \Gamma(1/2+m) \\
+                & = (\frac{2m+1}{2}\frac{2m-1}{2}) \Gamma(1/2+m-1) \\
+                &\cdots \cdots \\
+                & = \frac{(2m+1)!!}{2^{m+1}} \Gamma(1/2) \\
+                & = \frac{(2m+1)!!}{2^{m+1}} \sqrt{\pi} \\
+                \end{split}
+                \end{equation*} </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>代回
+                \begin{aligned}
+                J_{1/2}(x) &= \sum\limits_{m=0}^{\infty} (-1)^m \frac{1}{m! \Gamma(1/2+m+1) } (\frac{x}{2})^{1/2+2m} \\
+                &= \sum\limits_{m=0}^{\infty} (-1)^m \frac{1}{m! \frac{(2m+1)!!}{2^{m+1}} \sqrt{\pi} }
+                (\frac{x}{2})^{1/2+2m} \\
+                &= \sqrt{\frac{2}{\pi x}} \sum\limits_{m=0}^{\infty} (-1)^m \frac{x^{2m+1}}{(2m+1)!} \\
+                &= \sqrt{\frac{2}{\pi x}} \sin x \\
+                \end{aligned}
+            </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>同理，有
+                \begin{equation*}
+                J_{-1/2}(x) = \sqrt{\frac{2}{\pi x}} \cos x
+                \end{equation*} </p>
+            <p><span class="substep over"> 证毕！ </span></p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p> <span class="exam"> 性质-3: </span> 贝塞尔函数的导数与递推式
+                \begin{equation*}
+                \begin{split}
+                \frac{d}{d x}\left[x^{n} J_{n}(x)\right]= &x^{n} J_{n-1}(x),\qquad \cdots (1) \\
+                \frac{d}{d x}\left[x^{-n} J_{n}(x)\right]=& -x^{-n} J_{n+1}(x) ,\qquad \cdots (2) \\
+                2 n J_{n}(x)=&xJ_{n-1}(x)+x J_{n+1}(x) ,\qquad \cdots (3) \\
+                2 J_{n}^{\prime}(x)=&J_{n-1}(x)-J_{n+1}(x) ,\qquad \cdots (4)
+                \end{split}
+                \end{equation*}
+            </p>
+            <p class="substep"><span class="answer"> 证明: </span> 对贝塞尔函数表达式两端同乘$x^n$
+                \begin{equation*}
+                x^n J_n(x) = x^n \sum\limits_{m=0}^{\infty} (-1)^m \frac{1}{m! \Gamma(n+m+1) } (\frac{x}{2})^{n+2m}
+                \end{equation*} </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>求导：
+                \begin{split}
+                \frac{d}{dx} [x^n J_n(x)]&= \frac{d}{dx}\sum\limits_{m=0}^{\infty} (-1)^m
+                \frac{1}{m! \Gamma(n+m+1) } (\frac{x^{2n+2m}}{2^{n+2m}})\\
+                &=\sum\limits_{m=0}^{\infty} (-1)^m
+                \frac{1}{m! \Gamma(n+m+1) } (\frac{(2n+2m)x^{2n-1+2m}}{2^{n+2m}})\\
+                &=x^n\sum\limits_{m=0}^{\infty} (-1)^m
+                \frac{1}{m! \Gamma(n-1+m+1) } (\frac{x^{n-1+2m}}{2^{n-1+2m}})\\
+                &=x^n J_{n-1}(x) ,\qquad \cdots (1)
+                \end{split} </p>
+            <p class="substep"><span class="answer"> （1）式证毕！ </span> </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>同理，得证（2）式
+                \[\frac{d}{d x}\left[x^{-n} J_{n}(x)\right]=-x^{-n} J_{n+1}(x) ,\qquad \cdots (2) \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>把(1)(2)二式左端求导
+                \begin{split}
+                \frac{d}{dx} [x^n J_n(x)] &=n x^{n-1} J_n(x) + x^n J'_n(x)=x^n J_{n-1}(x) \\
+                \frac{d}{d x}\left[x^{-n} J_{n}(x)\right]&=-n x^{-n-1} J_n(x) + x^{-n} J'_n(x)= -x^{-n} J_{n+1}(x)
+                \end{split} </p>
+            <p class="substep"> 两式消去$J'_n(x)$ \begin{equation*}
+                2 n J_{n}(x)=x J_{n-1}(x)+x J_{n+1}(x) ,\qquad \cdots (3)
+                \end{equation*} </p>
+            <p class="substep">两式消去$J_n(x)$
+                \begin{equation*}
+                2 J_{n}^{\prime}(x)=J_{n-1}(x)-J_{n+1}(x) ,\qquad \cdots (4)
+                \end{equation*} </p>
+            <p class="substep"><span class="answer">证毕！ </span> </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> <span class="exam"> 性质-4: </span> 证明n阶贝塞尔函数零点近似公式
+                \[ \mu_{m}^{n} \approx m \pi+\frac{n \pi}{2}+\frac{3 \pi}{4}\]
+            </p>
+            <p class="substep"><span class="answer"> 证明: </span> 对n阶贝塞尔方程
+                \begin{equation*}
+                x^2\frac{d^2y}{dx^2} + x\frac{dy}{dx} +(x^2 -n^2)y=0
+                \end{equation*}</p>
+            <p class="substep">做变量代换 \[ y=\frac{u}{\sqrt{x}}\]
+            </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            <p>得到关于 u(x)的方程：
+                \begin{equation*}
+                u'' +[1+\frac{\frac{1}{4}-n^2}{x^2}] u=0
+                \end{equation*} </p>
+
+            <p class="substep">当$x \implies \infty $时， 有方程：
+                \begin{equation*}
+                u'' + u=0
+                \end{equation*} </p>
+            <p class="substep">通解为：\[u=A\cos(x+\theta)\] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">确定参数A和相位$\theta$ (不证),得n阶贝塞尔函数的渐近公式
+                \begin{equation*}
+                J_{n}(x) \approx \sqrt{\frac{2}{\pi x}} \cos \left(x-\frac{n \pi}{2}-\frac{\pi}{4}\right)
+                \end{equation*} </p>
+            <p class="substep"> 令$J_{n}(x)=0$,得n阶贝塞尔函数的零点近似公式：
+                \begin{equation*}
+                \mu_{m}^{n} \approx m \pi+\frac{n \pi}{2}+\frac{3 \pi}{4}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>对于圆域热传导方程或波动方程，其径向方程为
+                \[\begin{cases}
+                r^2 R'' (r)+r R'(r) +( \lambda r^2 -n^2)R(r)=0 \\
+                R(r_0)=0
+                \end{cases} \] </p>
+            <li class="substep">解函数为n阶贝塞尔函数$R(r)=J_n(x) = J_n(\sqrt{\lambda}r)$ </li>
+            <br>
+            <li class="substep">零边界条件 $R(r_0)=0 \quad \implies \quad J_n(\sqrt{\lambda}r_0)=0$ </li>
+            <br>
+            <p class="substep">因此零边界的本征解, 正是贝塞尔函数的零点! </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>基此确定: </p>
+            <p class="substep">(1)固有值：
+                \[ \sqrt{\lambda}r_0 = \mu_{m}^{n} \qquad \to \qquad \lambda_m ^n =(\frac{\mu_{m}^{n}}{r_0})^2 \] </p>
+            <p class="substep"> (2)固有函数：\[R_m ^n(r) = J_n (\frac{\mu_{m}^{n}}{r_0}r) \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> <span class="exam"> 性质-5: </span> n阶贝塞尔函数有如下零点递推式
+                \[ J'_n(\mu_m ^n)= - J_{n+1}(\mu_m ^n)\]
+            </p>
+            <p class="substep"><span class="answer"> 证明: </span> 由微分公式(2)
+                \begin{split}
+                \frac{d}{d x}\left[x^{-n} J_{n}(x)\right]=& -x^{-n} J_{n+1}(x) ,\qquad \cdots (2) \\
+                -n x^{-n-1} J_n(x) + x^{-n} J'_n(x)&= -x^{-n} J_{n+1}(x) \\
+                -n J_n(x) + x J'_n(x)&= -x J_{n+1}(x) \\
+                -n 0 + x J'_n(\mu_m ^n)&= -x J_{n+1}(\mu_m ^n) \\
+                J'_n(\mu_m ^n)&= - J_{n+1}(\mu_m ^n)
+                \end{split}</p>
+            <p class="substep"><span class="answer">证毕！ </span> </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> <span class="exam"> 性质-6: </span> 贝塞尔函数具有正交归一性
+
+            </p>
+            <p class="substep"><span class="answer"> 证明: </span> （1）正交性：</p>
+            <p class="substep"> 对径向方程做等价变换
+                \begin{equation*}
+                r^2 R''+r R' +(\lambda r^2 -n^2)R=0
+                \end{equation*} </p>
+            <p class="substep"> 代入本征值\begin{equation*}
+                r R''+ R' +((\frac{\mu_{m}^{n}}{r_0})^2 r -\frac{n^2}{r})R=0
+                \end{equation*} </p>
+            <p class="substep"> 合并前两项\begin{equation*}
+                (r R')' +((\frac{\mu_{m}^{n}}{r_0})^2 r -\frac{n^2}{r})R=0
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            <p> 为简单计，令：\[J_n (\frac{\mu_{m}^{n}}{r_0}r)=R_1, \qquad J_n (\frac{\mu_{k}^{n}}{r_0}r) =R_2\] </p>
+            <p class="substep"> 它们是方程的解 \begin{equation*}
+                (r R_1')' +((\frac{\mu_{m}^{n}}{r_0})^2 r -\frac{n^2}{r})R_1=0 \cdots (1)
+                \end{equation*}
+                \begin{equation*}
+                (r R_2')' +((\frac{\mu_{m}^{n}}{r_0})^2 r -\frac{n^2}{r})R_2=0 \cdots (2)
+                \end{equation*} </p>
+            <p class="substep">$(1)\times R_2, (2)\times R_1,$所得两式相减，并积分 </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>
+                \begin{aligned}
+                \int_0 ^{r_0}
+                &\left[\left( \frac{\mu_{m}^{(n)}}{r_0}\right)^{2}-\left(\frac{\mu_{k}^{(n)}}{r_0}\right)^{2}\right] r
+                R_{1} R_{2} dr
+                =\int_0 ^{r_0} [R_{1}\left(r R_{2}^{\prime}\right)^{\prime}-R_{2}\left(r R_{1}^{\prime}\right)^{\prime}]
+                dr \\
+                =& [r R_1 R_2']|_0 ^{r_0} - [r R_2 R_1']|_0 ^{r_0} + \int_0 ^{r_0} r R_2' R_1 dr - \int_0 ^{r_0} rR_1'
+                R_2 dr\\
+                =& \int_0 ^{r_0} rR_2'R_1 dr - \int_0 ^{r_0} rR_1'R_2 dr \\
+                =& 0 \\
+                \end{aligned} </p>
+            当两本征值不等时，有 \[ \int_0 ^{r_0} r
+            R_{1} R_{2} dr = 0 \]
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>即： \[ \int_0 ^{r_0} r
+                J_n (\frac{\mu_{m}^{n}}{r_0}r) J_n (\frac{\mu_{k}^{n}}{r_0}r) dr = 0 \] </p>
+            <p class="substep">(2) 归一性：由本征方程
+                \begin{equation*}
+                r^2 R''+r R' +(\lambda r^2 -n^2)R=0
+                \end{equation*} </p>
+            <p class="substep"> \begin{equation*}
+                2r^2 R'R''+2r (R')^2 +(\lambda r^2 -n^2)R'R=0
+                \end{equation*} </p>
+            <p class="substep">整理：
+                \begin{equation*}
+                [r^2 (R')^2 + (\lambda r^2 -n^2)R^2]'=2 \lambda rR^2
+                \end{equation*} </p>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"> 两边积分 \begin{equation*}
+                \begin{split}
+                \int_0 ^{r_0} r R^2 dr =& \frac{1}{2\lambda} \int_0 ^{r_0} [r^2 (R')^2 + (\lambda r^2 -n^2)R^2]' dr \\
+                =& \frac{1}{2\lambda} |r^2 (R')^2 + (\lambda r^2 -n^2)R^2 |_0 ^{r_0} \\
+                =& \frac{1}{2\lambda} r_0^2 (R'(r_0))^2 \\
+                =& \frac{1}{2} r_0^2 [J'_n(\mu_m ^n)]^2 \\
+                =& \frac{r_0^2}{2} [J_{n+1}(\mu_m ^n)]^2
+                \end{split}
+                \end{equation*} </p>
+            <p class="substep"><span class="answer">证毕！ </span> </p>
+        </div>
+
+        　<div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h3></h3>
+            <p class="substep"> <span class="exam"> 应用实例: </span> 求解圆域热传导方程
+                $$\left\{
+                \begin{array}{l}
+                \dfrac{\partial u}{\partial t}=a^{2}\left(\dfrac{\partial^{2} u}{\partial r^{2}}+\dfrac{1}{r}
+                \dfrac{\partial u}{\partial r}+\dfrac{1}{r^{2}} \dfrac{\partial^{2} u}{\partial \theta^{2}}\right), 0 <
+                    r < R, 0 < \theta < 2 \pi \\ \left. u\right|_{r=R}=0,\left.u\right|_{t=0}=\varphi(r, \theta)
+                    \end{array} \right. $$ </p>
+                    <p class="substep"><span class="answer"> 解: </span> 令
+                        \begin{equation*}
+                        u(r,\theta,t)= T(t) V(r, \theta)
+                        \end{equation*} </p>
+                    <p class="substep">代入方程，进行第一次分离变量，得衰减方程：\[T'+\lambda a^2 T=0, \qquad \cdots (1) \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>及亥姆霍兹方程:
+                $$
+                \begin{cases}
+                \dfrac{\partial^{2} V}{\partial r^{2}}+\dfrac{1}{r} \dfrac{\partial V}{\partial r}+\dfrac{1}{r^{2}}
+                \dfrac{\partial^{2} V}{\partial \theta^{2}}+\lambda V=0, \quad 0 < r < R , 0 \leq \theta \leq 2 \pi \\
+                    \\ \left.V\right|_{r=R}=0, 0 \leq \theta \leq 2 \pi \end{cases} $$ </p>
+                    <p class="substep">令 \( \displaystyle V(r, \theta) =F(r)G(\theta)\) 代入亥姆霍兹方程， 得两个方程 </p>
+                    <p class="substep"> \[G''+\mu G=0, \qquad \cdots (2) \] </p>
+                    <p class="substep"> \[r^2 F''+r F' +(\lambda r^2 -\mu )F=0, \qquad \cdots (3) \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            <p>方程（1）的解为：\[T(t)=Ae^{-\lambda a^2 t}\] </p>
+            <p class="substep">方程（2）的解为：\[G(\theta)=C_1\cos\sqrt{\mu}\theta + C_2\sin \sqrt{\mu}\theta \] </p>
+            <p class="substep">由周期性边界条件，有$G(2\pi)=G(0)$, 必有$\cos \sqrt{\mu}\theta =1 $, 得 </p>
+            <p class="substep">固有值：
+                \[\mu = n^2, \qquad (n=0,1,2,\cdots)\] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>固有函数：
+                \[G_0(\theta)=\frac{1}{2}a_0, G_n(\theta)= a_n\cos n \theta + b_n \sin n \theta, \qquad
+                (n=1,2,\cdots)\] </p>
+            <p class="substep">也可写成 \[ G_n(\theta)=a_n e^{-i n \theta} =\frac{1}{\sqrt{2\pi}} e^{-i n \theta} \] </p>
+            <br>
+            <p class="substep">将固有值代入方程（3），得方程
+                \[r^2 F''+r F' +(\lambda r^2 -n^2 )F=0 \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> 令 $x=\sqrt{\lambda} r, \quad y(x)=F(x/\sqrt{\lambda})$, 方程转化为标准整数贝赛尔方程：
+                \begin{equation*}
+                x^2\frac{d^2y}{dx^2} + x\frac{dy}{dx} +(x^2 -n^2)y=0
+                \end{equation*} </p>
+            <p class="substep">则方程3的解可用贝赛尔函数的零点表示</p>
+            <p class="substep"> 固有值：
+                \[\lambda_m ^n =(\frac{\mu_{m}^{n}}{R})^2 \] </p>
+            <p class="substep"> 固有函数：\[F_m ^n(r) = J_n (\frac{\mu_{m}^{n}}{R}r) \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <br>
+            <p> 原方程的基本解为：
+                \begin{equation*}
+                u_m ^n (r,\theta,t) =F_m ^n (r) G_n(\theta) e^{-\lambda_m a^2 t}
+                \end{equation*} </p>
+            <p class="substep"> 叠加解为：
+                \begin{equation*}
+                u (r,\theta,t) =\sum_{n=0}^{\infty} \sum_{m=0}^{\infty} A_m ^n F_m ^n (r) G_n(\theta) e^{-\lambda_m a^2
+                t}
+                \end{equation*} </p>
+
+            <p class="substep"> 尚需由初值条件定系数$A_m ^n \cdots $ </p>
+
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>\begin{equation*}
+                \begin{split}
+                &\varphi(r, \theta)=\sum_{n=0}^{\infty} \sum_{m=0}^{\infty} A_m ^n F_m ^n (r) G_n(\theta) \\
+                &\int_0 ^{2\pi} G_k ^* (\theta) \varphi(r, \theta) d\theta =\sum_{n=0}^{\infty} \sum_{m=0}^{\infty} A_m
+                ^n F_m ^n (r) \int_0 ^{2\pi} G^* _k(\theta) G_n(\theta) d\theta \\
+                &\int_0 ^{2\pi} G_n ^* (\theta) \varphi(r, \theta) d\theta = \sum_{m=0}^{\infty} A_m ^n F_m ^n (r)\\
+                &\int_0 ^{R} \int_0 ^{2\pi} G_n ^* (\theta) r J_n (\frac{\mu_{k}^{n}}{R}r) \varphi(r, \theta) d\theta dr
+                = \sum_{m=0}^{\infty} A_m ^n \int_0 ^{R} r J_n (\frac{\mu_{k}^{n}}{R}r)J_n (\frac{\mu_{m}^{n}}{R}r) dr
+                \\
+                &\int_0 ^{R} \int_0 ^{2\pi} G_n ^* (\theta) r J_n (\frac{\mu_{m}^{n}}{R}r) \varphi(r, \theta) d\theta dr
+                = A_m ^n \frac{R^2}{2} [J_{n+1}(\mu_m ^n)]^2
+                \end{split}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> 得系数
+                \[A_m ^n= \frac{2}{R^2[J_{n+1}(\mu_m ^n)]^2} \int_0 ^{R} \int_0 ^{2\pi} G_n ^* (\theta) r J_n
+                (\frac{\mu_{m}^{n}}{R}r) \varphi(r, \theta) d\theta dr \] </p>
+
+            <p><span class="substep over"> 结束！ </span></p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="homework"> 作 业： 1. 证明 \begin{equation*}
+                    J_{-1/2}(x) = \sqrt{\frac{2}{\pi x}} \cos x
+                    \end{equation*} </p>
+            <p>2. 证明 \begin{equation*}
+                \frac{d}{d x}\left[x^{-n} J_{n}(x)\right]=-x^{-n} J_{n+1}(x)\\
+                \end{equation*} </p>
+            <p>3. 证明 \[(\frac{1}{2})! = \frac{\sqrt{\pi}}{2}, \quad \Gamma(-\frac{1}{2}) =-2\sqrt{\pi} \] </p>
+        </div>
+
+
+
+        <div class="step " data-x="-2000" data-y="0" data-z="1000">
+
+            <center> <span class="Thanks">Thanks</span> </center>
+
+        </div>
+
+
+    </div>
+
+    <div id="impress-toolbar"></div>
+
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+        }
+    </script>
+
+    <script src="../../others/impress.js/js/impress.js"></script>
+    <script>impress().init();</script>
+
+    <!--
+        var api = impress();  
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( stepIndex | stepElementId | stepElement) 
+    
+-->
+
+</body>
+
+</html>

@@ -145,7 +145,7 @@ a:focus {
   position: relative;
   width: 1280px;
   height: 768px;
-  padding: 150px;
+  padding: 140px; /* for logo*/
   margin: 0 0;
 
   -webkit-box-sizing: border-box;
@@ -163,9 +163,16 @@ imgbg {
   position: fixed;
   z-index: -200;
   opacity: 0;
-  height: 50%;
   width: auto;
 }
+
+/*imgbg {
+  position: fixed;
+  z-index: -200;
+  opacity: 0;
+  height: 50%;
+  width: auto;
+} */
 
 #bg-1 {
   left: 0px;
@@ -212,16 +219,18 @@ h6 {
   color:#003399
 }
 
+th,
+td
+{
+width:100px;
+height:50px;
+text-align :center;
+}  
+
 
 .impress-enabled .step {
   margin: 0;
   opacity: 0.075;
-
-  -webkit-transition: opacity 1s;
-  -moz-transition:    opacity 1s;
-  -ms-transition:     opacity 1s;
-  -o-transition:      opacity 1s;
-  transition:         opacity 1s;
 }
 
 .impress-enabled .step.active { 
@@ -271,26 +280,15 @@ h6 {
 /*** TOC ** */
 #TOC {}
 
-/*
-For 'big thoughts' with centered text and custom font sizes.
-*/
-#big {
-    width: 600px;
+
+.step .big {
     text-align: center;
-    font-size: 60px;
-    line-height: 1;
+    font-size: 50px;
+    line-height: 50px;
 }
-
-#big strong,
-#big b {
-    display: block;
-    font-size: 250px;
-    line-height: 250px;
-}
-
-#big .thoughts {
-    font-size: 90px;
-    line-height: 150px;
+.step .small {
+  text-align: center;
+  font-size: 25px;
 }
 
 .step .exam, 
@@ -307,11 +305,17 @@ For 'big thoughts' with centered text and custom font sizes.
 
 .step .Thanks {
   padding: 100px;
-  color:#003399;
+  color: #ff8800;
   display: block;
   font-size: 150px;
   line-height: 200px;
+  text-shadow: 10px 10px 10px rgba(91, 114, 89, 0.95);
+}
 
+.step .imgmixed {
+  position: relative;
+  margin-top: -100px; 
+  float:right;
 }
 
 

@@ -1,0 +1,2116 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>工程数学｜UESTC </title>
+
+    <meta name="description"
+        content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link
+        href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
+        rel="stylesheet" />
+
+    <link href="../../others/impress.js/css/impress-common.css" rel="stylesheet" />
+
+    <link href="../../others/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="./presentation.css" rel="stylesheet" />
+
+    <script>
+        MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+        };
+    </script>
+    <script id="MathJax-script" async src="../../others//mathjax/es5/tex-chtml.js"></script>
+
+</head>
+
+<body class="impress-not-supported">
+
+    <!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a
+            simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+
+    <!-- Some images that are fixed to background in the css -->
+    <img id="bg-1" class="imgbg" src="../EM/EM-beamer/images/uestclogo-18.png">
+
+    <!---Begin--Begin--Begin--Begin--Begin--Begin -->
+    <div id="impress" data-transition-duration="1000" data-width="1280" data-height="768" data-max-scale="10"
+        data-min-scale="0" data-perspective="1000" data-autoplay="0">
+
+        <!--
+        
+        Here is where interesting thing start to happen.
+        
+        Each step of the presentation should be an element inside the `#impress` with a class name
+        of `step`. These step elements are positioned, rotated and scaled by impress.js   
+    -->
+
+        <div id="TITLE" class="step" data-x="-3000" data-y="-3000" data-z="-3000" data-autoplay="200" data-scale="2">
+            <h1>工程数学</h1>
+            <h2>Engineering Mathematics</h2>
+            <br />
+            <h2>李小飞 <span class="at"><i class="fa fa-at" aria-hidden="true"></i></span> 光电科学与技术学院</h2>
+            <br />
+            <span class="date"> 2023-03-01 </span>
+        </div>
+
+        <div id="toc" class="step" data-rel-x="2200" data-rel-y="0">
+            <br>
+            <h2>第四章 氢原子薛定谔方程</h2>
+            <br>
+            <li>氢原子分离变量</li>
+            <li>角向方程与勒让德多项式</li>
+            <li>径向方程与拉盖尔多项式</li>
+            <li>勒让德与拉盖尔多项式性质</li>
+            <li>氢原子的量子描述</li>
+
+            <div class="notes">
+                <p>Table of Contents, with links to other slides of this same presentation.</p>
+            </div>
+        </div>
+
+        <div id="introd" class="step" data-x="-1500" data-y="-3000" data-z="-2500">
+            <br>
+            <h4>氢原子：</h4>
+            <center><img class="imgmixed" src="../EM/EM-beamer/figs/h-atom.png" width=500 height=500></center>
+            <li class="substep">氢原子是自然界最简单的原子，基于经典物理学，可写出其哈密顿</li>
+            <li class="substep">代入经典物理定律，得到的结果与实验不符</li>
+            <li class="substep">代入薛定谔方程，得到的结果与实验相符</li>
+            <li class="substep">解氢原子是建立和相信量子力学的基础 </li>
+        </div>
+
+
+
+        <div id="lecture-1" class="step " data-rel-x="2000" data-rel-y="0" data-rel-z="0" data-rotate="45">
+            <br>
+            <br>
+            <h2>第一讲 氢原子分离变量</h2>
+            <br>
+            <br>
+            <li>氢原子哈密顿</li>
+            <li>相对坐标系</li>
+
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="1000" data-rel-z="-500">
+            <h4> 1. 氢原子哈密顿</h4>
+            <br>
+            <p class="substep"><span class="exam"> 例-1: </span> 写出自由氢原子的哈密顿 </p>
+            <p class="substep"><span class="answer"> 解: </span> 多粒子体系哈密顿:
+                \begin{equation*}
+                \hat{H} ~=\sum_{i=1}^{n}(-\frac{\hbar^2}{2\mu }\nabla ^2 _i + V(\vec{r_i},t)) + \sum_{i,j=1, i\ne j}^{n}
+                U(\vec{r_i},\vec{r_j})
+                \end{equation*}
+            </p>
+            <p class="substep"> 双粒子体系哈密顿:
+                \begin{equation*}
+                \hat{H} ~=\sum_{i=1}^{2}(-\frac{\hbar^2}{2\mu }\nabla ^2 _i + V(\vec{r_i},t)) + \sum_{i,j=1, i\ne j}^{2}
+                U(\vec{r_i},\vec{r_j})
+                \end{equation*}
+            </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <center><img class="imgmixed" src="../EM/EM-beamer/figs/h-atom-1.png" width=400 height=350></center>
+            <p class="substep"> 氢原子哈密顿:
+                \begin{aligned}
+                \hat{H} = & (-\frac{\hbar^2}{2\mu }\nabla ^2 _{\vec{r_1}}
+                + V(\vec{r_1},t)) \\ & + (-\frac{\hbar^2}{2\mu }\nabla ^2 _{\vec{r_2}} + V(\vec{r_2},t)) \\
+                & +
+                U(\vec{r_1},\vec{r_2})
+                \end{aligned}
+            </p>
+            <li class="substep">自由体系（外势为零） $V(\vec{r_1},t) = V(\vec{r_2},t) = 0$ </li>
+            <li class="substep">相互作用势（库仑势） $$U(| \vec{r_1}-\vec{r_2} | )=-\frac{e_s ^2}{| \vec{r_1}-\vec{r_2} |} ~~,~~~
+                e_s
+                =\frac{Ze}{\sqrt{4\pi\epsilon_0}}$$ </li>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <p class="substep">势函数$V+U$不显含时间$t$，分离时间变量 </p>
+            <br>
+            <li class="substep">时间函数：$\displaystyle f(t) =e^{-iEt/\hbar}$</li>
+            <br>
+            <li class="substep">空间函数是固有值问题的解：$$ -\left[\frac{\hbar^2}{2\mu }\nabla ^2 _{\vec{r_1}}
+                -\frac{\hbar^2}{2\mu }\nabla ^2 _{\vec{r_2}}-\frac{e_s ^2}{| \vec{r_1}-\vec{r_2} |}
+                \right]\psi(\vec{r_1},\vec{r_2}) = E\psi(\vec{r_1},\vec{r_2})$$ </li>
+            <p class="substep"> <span class="tips"> TIPS: </span> 这是一个6维势，无法分离变量, 决定着求解难度.</p>
+        </div>
+
+        <div class="step" data-rel-x="2000" data-rel-y="1000" data-rel-z="-500" data-scale="4" data-rotate-x="45">
+            <h4> 2. 质心坐标系与相对坐标系</h4>
+            <br>
+            <center><img class="imgmixed" src="../EM/EM-beamer/figs/h-atom-2.png" width=300 height=250></center>
+            <p class="substep">令：
+                \begin{aligned}
+                & \begin{cases}
+                \vec{r} (x,y,z)= \vec{r_1}-\vec{r_2} , \qquad \text{(相对坐标)} \\
+                \vec{R} (X,Y,Z)= \dfrac{ m_1\vec{r_1}+ m_2\vec{r_2} }{ m_1+m_2} , \qquad \text{(质心坐标)}
+                \end{cases}\\
+                &\begin{cases}
+                m = \dfrac{m_1m_2}{m_1+m_2}, \qquad \text{(折合质量)}\\
+                M= m_1+m_2, \qquad \text{(质心质量)}
+                \end{cases}
+                \end{aligned} </p>
+             <p class="substep"> 新旧坐标之间的函数关系
+                $\begin{cases}
+                \vec{r_1}= f_1(\vec{r},\vec{R}) \\
+                \vec{r_2}= f_2(\vec{r},\vec{R})
+                \end{cases} $</p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <p class="substep">新坐标系下的拉普拉斯: </p>
+            <p class="substep"> 对坐标关系函数求导
+                \begin{equation*}
+                \begin{split}
+                \dfrac{d}{dx_1}= &\dfrac{\partial}{\partial X} \dfrac{\partial X}{ \partial x_1} +\dfrac{\partial
+                }{\partial x} \dfrac{\partial x}{\partial x_1}
+                = \dfrac{m_1}{M} \dfrac{\partial }{ \partial X} +\dfrac{\partial }{\partial x} \\
+                \dfrac{d^2}{dx^2 _1}= &\dfrac{m^2 _1}{M^2 } \dfrac{\partial^2 }{ \partial X^2} + \dfrac{2m _1}{M }
+                \dfrac{\partial^2 }{ \partial X \partial x}+\dfrac{\partial ^2 }{\partial x^2} \\
+                \nabla ^2 _1= &\dfrac{m^2 _1}{M^2 } \nabla ^2 _R + \dfrac{2m _1}{M } (\dfrac{\partial^2 }{ \partial X
+                \partial x} + \dfrac{\partial^2 }{ \partial Y \partial y} + \dfrac{\partial^2 }{ \partial Z \partial z})
+                + \nabla ^2 _r \qquad (1) \\
+                \nabla ^2 _2= &\dfrac{m^2 _2}{M^2 } \nabla ^2 _R - \dfrac{2m _2}{M } (\dfrac{\partial^2 }{ \partial X
+                \partial x} + \dfrac{\partial^2 }{ \partial Y \partial y} + \dfrac{\partial^2 }{ \partial Z \partial z})
+                + \nabla ^2 _r \qquad (2)
+                \end{split}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <p class="substep"> (1)+(2), 可求得
+                \begin{equation*}
+                \dfrac{1}{m_1}\nabla ^2 _1 + \dfrac{1}{m_2}\nabla ^2 _2 = \dfrac{1}{M}\nabla ^2 _R+ \dfrac{1}{m}\nabla
+                ^2 _r
+                \end{equation*} </p>
+            <p class="substep">代回方程，
+                $$ -\left[\frac{\hbar^2}{2\mu }\nabla ^2 _{\vec{r_1}}
+                -\frac{\hbar^2}{2\mu }\nabla ^2 _{\vec{r_2}}-\frac{e_s ^2}{| \vec{r_1}-\vec{r_2} |}
+                \right]\psi(\vec{r_1},\vec{r_2}) = E\psi(\vec{r_1},\vec{r_2})$$ </p>
+
+            <p class="substep">得新坐标系下的定态薛定谔方程：
+                \begin{equation*}
+                \left[-\frac{\hbar^2}{2 M} \nabla_R ^2 -\frac{\hbar^2}{2 m} \nabla_r ^2 +U(\vec{r} ) \right] \Psi
+                (\vec{R},\vec{r}) =E \Psi (\vec{R},\vec{r})
+                \end{equation*} </p>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            <p class="substep">令： $\Psi (\vec{R},\vec{r}) = R(\vec{R}) r (\vec{r}) $, 代入新方程，可实现变量分离 </p>
+            <p class="substep">得质心运动方程（1）：
+                \begin{equation*}
+                -\frac{\hbar^2}{2 M} \nabla_R ^2 R (\vec{R}) =E_c R (\vec{R}) ..... (1)
+                \end{equation*} </p>
+            <p class="substep">解为自由粒子平面波：
+                \begin{equation*}
+                R (\vec{R},t)=-\frac{1}{(2\pi\hbar)^{3/2}}e^{-\frac{i}{\hbar}(E_c t -\vec{p}\cdot\vec{R})}
+                \end{equation*} </p>
+            <p class="substep">相对运动方程（2）：
+                \begin{equation*}
+                \left[-\frac{\hbar^2}{2 m} \nabla ^2 +U(\vec{r}) \right] r (\vec{r}) =E r (\vec{r}) ..... (2)
+                \end{equation*} </p>
+
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"> 这是核与核外电子相对质心的运动方程, 不失一般性，可写为
+                \begin{equation*}
+                \left[-\frac{\hbar^2}{2 m} \nabla ^2 +U(\vec{r}) \right] \Psi (\vec{r}) =E \Psi (\vec{r}) ..... (2)
+                \end{equation*} </p>
+            <p class="substep">求解难度由相互作用势决定
+                $$ U(\vec{r})=U(| \vec{r_1}-\vec{r_2} | )=-\frac{e_s ^2}{| \vec{r_1}-\vec{r_2} |} = -\frac{e_s ^2}{r}
+                ~~,~~~ r =\sqrt{x^2+y^2+z^2} $$ </p>
+            <p class="substep">它不能写成$X(x)+Y(y)+Z(z)$的形式，因此不能在(x,y,z)坐标系分离变量 </p>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h4>3. 球坐标系拉普拉斯算子</h4>
+            <center><img class="imgmixed" src="../EM/EM-beamer/figs/2022-03-28-22-51-18.png" width=450 height=400>
+            </center>
+            <p class="substep">但是， 有： \begin{aligned}
+                U(\vec{r}) &= -\frac{e_s ^2}{r} \\
+                &= U(r) + \Theta(\theta)+\varPhi(\varphi) \\
+                \end{aligned}
+                在$(r,\theta, \varphi)$标系下是天然地可变量分离的！</p>
+            <br>
+            <p class="substep">因此，得先求球坐标系拉普拉斯算子 </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">（x，y，z） 与 $(r,\theta, \varphi)$有如下关系：
+                $$\begin{cases}
+                x= r\sin \theta \cos \varphi \\
+                y= r\sin \theta \sin \varphi \\
+                z=r\cos \theta
+                \end{cases} $$ </p>
+            <p class="substep"> 对函数$u(x,y,z)$，进行 $r, \theta, \varphi $求导，
+                $$\begin{cases}
+                \dfrac{\partial {u}}{\partial {r}}=\dfrac{\partial {u}}{\partial x} \dfrac{\partial {x}}{\partial
+                {r}}+\dfrac{\partial u}{\partial {y}} \dfrac{\partial {y}}{\partial {r}}+\dfrac{\partial u}{\partial z}
+                \dfrac{\partial z}{\partial {r}} \\
+                \dfrac{\partial {u}}{\partial \theta}=\dfrac{\partial {u}}{\partial x} \dfrac{\partial{x}}{\partial
+                \theta}+\dfrac{\partial u}{\partial {y}} \dfrac{\partial {y}}{\partial
+                \theta}+\dfrac{\partial{u}}{\partial z} \dfrac{\partial z}{\partial \theta} \\
+                \dfrac{\partial {u}}{\partial \varphi}=\dfrac{\partial u}{\partial x} \dfrac{\partial{x}}{\partial
+                \varphi}+\dfrac{\partial u}{\partial y} \dfrac{\partial y}{\partial \varphi}+\dfrac{\partial u}{\partial
+                z} \dfrac{\partial z}{\partial \varphi}
+                \end{cases} $$ </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"> 矩阵形式
+                $$\small{\left[\begin{array}{ccc}
+                \dfrac{\partial u}{\partial r} \\
+                \dfrac{\partial u}{\partial \theta} \\
+                \dfrac{\partial u}{\partial \varphi}
+                \end{array}\right]
+                =
+                \left[\begin{array}{ccc}
+                \sin \theta \cos \varphi & \sin \theta \sin \varphi & \cos \theta \\
+                r \cos \theta \cos \varphi & r \cos \theta \sin \varphi & -r \sin \theta \\
+                -r \sin \theta \sin \varphi & r \sin \theta \cos \varphi & 0
+                \end{array}\right]
+                \left[\begin{array}{ccc}
+                \dfrac{\partial u}{\partial x} \\
+                \dfrac{\partial u}{\partial y} \\
+                \dfrac{\partial u}{\partial z}
+                \end{array}\right]
+                }$$ </p>
+            <p class="substep">转化为
+                $$\small{ \left[\begin{array}{ccc}
+                \dfrac{\partial u}{\partial r} \\
+                \dfrac{\partial u}{\partial \theta} \\
+                \dfrac{\partial u}{\partial \varphi}
+                \end{array}\right]
+                =
+                \left[\begin{array}{ccc}
+                1 & 0 & 0 \\
+                0 & r & 0 \\
+                0 & 0 & r \sin \theta
+                \end{array}\right]
+                \left[\begin{array}{ccc}
+                \sin \theta \cos \varphi & \sin \theta \sin \varphi & \cos \theta \\ \
+                \cos \theta \cos \varphi & \cos \theta \sin \varphi & - \sin \theta \\
+                -\sin \varphi & \cos \varphi & 0
+                \end{array}\right]
+                \left[\begin{array}{ccc}
+                \dfrac{\partial u}{\partial x} \\
+                \dfrac{\partial u}{\partial y} \\
+                \dfrac{\partial u}{\partial z}
+                \end{array}\right]}$$ </p>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"> 逆运算 $$ \small{
+                \left[\begin{array}{ccc}
+                \dfrac{\partial u}{\partial x} \\
+                \dfrac{\partial u}{\partial y} \\
+                \dfrac{\partial u}{\partial z}
+                \end{array}\right]
+                =
+                \left[\begin{array}{ccc}
+                \sin \theta \cos \varphi & \cos \theta \cos \varphi & -\sin \varphi \\
+                \sin \theta \sin \varphi & \cos \theta \sin \varphi & \cos \varphi \\
+                \cos \theta & -\sin \theta & 0
+                \end{array}\right]
+                \left[\begin{array}{ccc}
+                \dfrac{\partial u}{\partial r} \\
+                \dfrac{1}{r}\dfrac{\partial u}{\partial \theta} \\
+                \dfrac{1}{r \sin \theta}\dfrac{\partial u}{\partial \varphi}
+                \end{array}\right]
+                } $$ </p>
+
+            <p class="substep"> 中间是单位矢量矩阵 $$\small{
+                \left[\begin{array}{ccc}
+                \dfrac{\partial u}{\partial x} \\
+                \dfrac{\partial u}{\partial y} \\
+                \dfrac{\partial u}{\partial z}
+                \end{array}\right]
+                =
+                \left[\begin{array}{ccc}
+                {\vec{e}_r}& {\vec{e}_\theta} & {\vec{e}_\varphi}
+                \end{array}\right]
+                \left[\begin{array}{ccc}
+                \dfrac{\partial u}{\partial r} \\
+                \dfrac{1}{r}\dfrac{\partial u}{\partial \theta} \\
+                \dfrac{1}{r \sin \theta}\dfrac{\partial u}{\partial \varphi}
+                \end{array}\right]
+                } $$ </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">球坐标系下, 有:
+                \begin{equation*}
+                \nabla=\vec{e}_{r} \frac{\partial}{\partial r}+\frac{1}{r} \vec{e}_{\theta} \frac{\partial}{\partial
+                \theta}+\frac{1}{r \sin \theta} \vec{e}_{\varphi} \frac{\partial}{\partial \varphi}
+                \end{equation*} </p>
+            <p class="substep">\begin{equation*}
+                \begin{split}
+                \nabla ^2&=\nabla \cdot \nabla \\
+                &=(\vec{e}_{r} \frac{\partial}{\partial r}+\frac{1}{r} \vec{e}_{\theta} \frac{\partial}{\partial
+                \theta}+\frac{1}{r \sin \theta} \vec{e}_{\varphi} \frac{\partial}{\partial \varphi}) \cdot (\vec{e}_{r}
+                \frac{\partial}{\partial r}+\frac{1}{r} \vec{e}_{\theta} \frac{\partial}{\partial \theta}+\frac{1}{r
+                \sin
+                \theta} \vec{e}_{\varphi} \frac{\partial}{\partial \varphi}) \\
+                &=\frac{\partial ^2}{\partial r^2} + ( \frac{1}{r} \frac{\partial}{\partial r} + \frac{1}{r^2}
+                \frac{\partial^2} {\partial \theta ^2} ) + (\frac{1}{r} \frac{\partial}{\partial r} + \frac{\cos
+                \theta}{r^2
+                \sin \theta} \frac{\partial} {\partial \theta } + \frac{1}{r^2 \sin^2 \theta }
+                \frac{\partial^2}{\partial\varphi ^2} )\\
+                &=\frac{1}{r^2} \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} )+
+                \frac{1}{r^2 \sin \theta } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial
+                \theta
+                } )
+                +\frac{1}{r^2 \sin^2 \theta } \frac{\partial^2}{\partial\varphi ^2}
+                \end{split}
+                \end{equation*} </p>
+            <p class="substep"> <span class="tips"> TIPS: </span> 利用球坐标单位矢的(1)正交归一性和(2)微分性质计算（见讲义 15页）</p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"> 直角坐标~ $(x,y,z) $ 下:
+                \begin{equation*}
+                \nabla ^{2} = \dfrac{\partial ^2}{\partial x^2} +\dfrac{\partial^2 }{\partial y^2} +\dfrac{\partial^2
+                }{\partial z^2}
+                \end{equation*} </p>
+            <p class="substep">球坐标~ $(r,\theta, \varphi )$ 下：
+                \begin{aligned}
+                \nabla ^{2} & =\frac{1}{r^2} \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} )+
+                \frac{1}{r^2 \sin \theta } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial
+                \theta } )
+                +\frac{1}{r^2 \sin^2 \theta } \frac{\partial^2}{\partial\varphi ^2} \\
+                &= \frac{1}{r^2} \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} )-
+                \frac{1}{r^2 } L^2
+                \end{aligned}
+            </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">角向(方)算子 (数学)：
+                \begin{equation*}
+                L^2 = - \left[ \frac{1}{ \sin \theta } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial
+                }{\partial \theta } )
+                +\frac{1}{ \sin^2 \theta } \frac{\partial^2}{\partial\varphi ^2} \right]
+                \end{equation*} </p>
+            <p class="substep">角动量(方)算子 (物理)：
+                \begin{equation*}
+                L^2 = -\hbar ^2 \left[ \frac{1}{ \sin \theta } \frac{\partial }{\partial \theta } (\sin \theta
+                \frac{\partial }{\partial \theta } )
+                +\frac{1}{ \sin^2 \theta } \frac{\partial^2}{\partial\varphi ^2} \right]
+                \end{equation*} </p>
+            <p class="substep">动量的切向分量
+                \begin{equation*}
+                p_ \perp ^2 = \frac{L^2}{r^2}
+                \end{equation*} </p>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"> 动量的径向分量
+                \[ p_r ^2 = -\hbar ^2 \frac{1}{r^2} \frac{\partial }{\partial r} (r^2\frac{\partial
+                }{\partial r} ) \] </p>
+            <p class="substep">动量算子:
+                \[ \hspace{1em}\hat{p}^2 =-\hbar ^2 \nabla ^{2}
+                \]
+                \[ \hat{p} =-i\hbar \nabla \quad \text{or} \quad i\hbar \nabla\]</p>
+            <p class="substep">球坐标系动量算子:
+                \[ \hat{p} =-i\hbar ( \vec{e}_{r} \frac{\partial}{\partial r}+\frac{1}{r} \vec{e}_{\theta}
+                \frac{\partial}{\partial \theta}+\frac{1}{r \sin \theta} \vec{e}_{\varphi} \frac{\partial}{\partial
+                \varphi})
+                \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">坐标变换关系
+                \begin{cases}
+                x= r\sin \theta \cos \varphi \\
+                y= r\sin \theta \sin \varphi \\
+                z=r\cos \theta
+                \end{cases} </p>
+            <p class="substep">矩阵形式：
+                $$
+                \left[\begin{array}{ccc}
+                x \\
+                y \\
+                z
+                \end{array}\right]
+                =
+                \left[\begin{array}{ccc}
+                r\sin \theta \cos \varphi \\
+                r\sin \theta \sin \varphi \\
+                r\cos \theta
+                \end{array}\right]
+                =
+                r \vec{e}_r$$ </p>
+
+            <p class="substep"> \[ \implies \hat{\vec{r}}=r \vec{e}_r \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">角动量定义式: $\displaystyle \qquad \vec{L}= \vec{r}\times \vec{p} $ </p>
+            <p class="substep">球坐标系下, 角动量算子：
+                \begin{equation*}
+                \hat{L}= \hat{r}\times \hat{p} = -i \hbar r \vec{e}_r \times \nabla
+                \end{equation*}
+                \begin{equation*}
+                \hat{L}= -i \hbar ( \vec{e}_{\varphi} \frac{\partial}{\partial \theta} - \frac{1}{\sin \theta}
+                \vec{e}_{\theta} \frac{\partial}{\partial \varphi} )
+                \end{equation*} </p>
+            <p class="substep">\begin{equation*}
+                \begin{split}
+                \hat{L} ^2 &= - \hbar ^2 ( e_{\varphi} \frac{\partial}{\partial \theta} - \frac{1}{\sin \theta}
+                e_{\theta} \frac{\partial}{\partial \varphi} ) \cdot ( e_{\varphi} \frac{\partial}{\partial \theta} -
+                \frac{1}{\sin \theta} e_{\theta} \frac{\partial}{\partial \varphi} ) \\
+                &= - \hbar ^2 (\frac{1}{\sin \theta } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial
+                }{\partial \theta } )
+                +\frac{1}{\sin^2 \theta } \frac{\partial^2}{\partial\varphi ^2} )
+                \end{split}
+                \end{equation*} </p>
+            <p class="substep">完全自洽! </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">同理，可得角动量的Z分量 (不证)：
+                \begin{equation*}
+                \hat{L}_z= -i \hbar \frac{\partial }{\partial\varphi }
+                \end{equation*} </p>
+            <br>
+            <p><span class="substep over"> 结束！ </span></p>
+
+            <br>
+            <p class="substep"> <span class="tips"> TIPS: </span> 算符的计算对矢量的叉乘和点乘有较高要求，注意理清其中的细节！</p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p class="substep"> 球坐标哈密顿 （折合质量$m$计为 $\mu$）：
+                \begin{equation*}
+                \begin{split}
+                H&=-\frac{\hbar^2}{2 \mu r^2} \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} ) +
+                \frac{\hbar^2}{2 \mu r^2} L^2 -\frac{e_s ^2}{r} \\
+                &= \frac{1}{2 \mu } p_r ^2 + \frac{1}{2 \mu r^2} L^2 -\frac{e_s ^2}{r}
+                \end{split}
+                \end{equation*} </p>
+            <p class="substep"> 球坐标系氢原子定态方程：
+                \begin{equation*}
+                \left[ (\frac{1}{2 \mu } p_r ^2 -\frac{e_s ^2}{r}) +\frac{1}{2 \mu } p_ \perp ^2 \right] \Psi
+                (r,\theta,\varphi) =E \Psi (r,\theta,\varphi)
+                \end{equation*}
+                方程可做动量的径向/切向分离 $\cdots$ </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">为与数学统一,本课程暂不考虑物理意义, 仅采用角向(方)算子 $L^2$（与角动量(方)算子差~$\hbar ^2$）进行计算:
+                \begin{equation*}
+                L^2 = -\left[ \frac{1}{ \sin \theta } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial
+                }{\partial \theta } )
+                +\frac{1}{ \sin^2 \theta } \frac{\partial^2}{\partial\varphi ^2} \right]
+                \end{equation*} </p>
+            <p class="substep">球坐标系下方程为：
+                \begin{equation*}
+                \left[-\frac{\hbar^2}{2 \mu r^2} \frac{\partial }{\partial r} (r^2\frac{\partial }{\partial r} ) +
+                \frac{\hbar ^2 }{2 \mu r^2} L^2 -\frac{e_s ^2}{r} \right] \Psi
+                =E\Psi
+                \end{equation*} </p>
+            <p class="substep">数学上的径向/角向分离变量，令：
+                \begin{equation*}
+                \Psi=R (r) Y(\theta,\varphi)
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            <p class="substep"> 代回原方程，得：
+                \begin{equation*}
+                \frac{ L^2 Y}{Y}= \frac{1}{R} \frac{\partial }{\partial r} (r^2\frac{\partial R }{\partial r} ) +
+                \frac{2 \mu r^2} {\hbar^2}(E+ \frac{e_s ^2}{r} )=\lambda
+                \end{equation*} </p>
+            <p class="substep"> 氢原子的定态方程在球坐标系下变量分离,得两方程： </p>
+            <p class="substep">(1)角向方程：
+                \begin{equation*}
+                L^2 Y=\lambda Y
+                \end{equation*} </p>
+            <p class="substep">(2)径向方程：
+                \begin{equation*}
+                \frac{d}{d r} (r^2\frac{d R }{d r} ) + \frac{2 \mu r^2} {\hbar^2}(E+ \frac{e_s ^2}{r} ) R =\lambda R
+                \end{equation*} </p>
+            <p class="substep">下面分别求解角向/径向方程... </p>
+        </div>
+
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="homework"> 作 业： </span></p>
+            <p>1. 写出基向量($\vec{e}_r, \vec{e}_\theta, \vec{e}_\varphi$) 点积和叉积的运算法则 </p>
+            <p>2. 试说明坐标变换与分离变量的关系 </p>
+            <p>3. 求偏分
+                \begin{equation*}
+                \frac{\partial }{\partial \theta} e_\theta, \qquad \frac{\partial }{\partial \theta} e_r
+                \end{equation*} </p>
+            <p>4. 角向算子与角动量算子有什么区别？ </p>
+            <p>5. 为什么比氢原子更复杂体系的薛定谔方程都不可以精确求解? </p>
+
+        </div>
+
+        <div class="step " data-x="-2000" data-y="0" data-z="1000" , data-rotate-y="-45">
+
+            <center> <span class="Thanks">Thanks</span> </center>
+
+        </div>
+
+        <div id="lecture-2" class="step " data-rel-x="3000" data-y="0" data-rel-z="800" data-rotate-z="45">
+            <br>
+            <h2>第二讲 角向方程与勒让德多项式 </h2>
+            <br>
+            <li>角向方程分离变量</li>
+            <li>解勒让德方程</li>
+            <li>勒让德多项式</li>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <h4>1. 角向方程分离变量</h4>
+            <p class="substep">角向方程：
+                \begin{equation*}
+                L^2 Y=\lambda Y
+                \end{equation*} </p>
+            <p class="substep">令 $\lambda=l(l+1) $ <a href="https://zhuanlan.zhihu.com/p/133865994">（见课外参考)</a></p>
+            <p class="substep">
+                \begin{equation*}
+                L^2 Y=l(l+1) Y
+                \end{equation*} </p>
+            <p class="substep">代入角向算子得：
+                \begin{equation*}
+                \left[ \frac{1}{ \sin \theta } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial
+                \theta } )
+                +\frac{1}{ \sin^2 \theta } \frac{\partial^2}{\partial\varphi ^2} +l(l+1) \right] Y=0
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <p class="substep">可经/纬分离，令 \begin{equation*}
+                Y(\theta,\varphi)= \Theta(\theta) \Phi(\varphi)
+                \end{equation*} </p>
+            <p class="substep"> 代回方程
+                \begin{equation*}
+                \Phi \frac{1}{\sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)+\Theta
+                \frac{1}{\sin ^{2} \theta} \frac{d^{2} \Phi}{d \varphi^{2}}+l(l+1) \Theta \Phi=0
+                \end{equation*} </p>
+            <p class="substep">整理
+                \begin{equation*}
+                \frac{\sin ^{2} \theta}{\Theta \sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d
+                \theta}\right)+\sin ^{2} \theta l(l+1)=-\frac{1}{\Phi} \frac{d^{2} \Phi}{d \varphi^{2}}=\lambda
+                \end{equation*} </p>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <p>得两常微分方程 </p>
+            <p class="substep">（1）经度方程：
+                \begin{equation*}
+                \frac{d^{2} \Phi}{d \varphi^{2}}+\lambda \Phi=0,\qquad (0 < \varphi\le 2\pi) \end{equation*} </p>
+                    <p class="substep">（2）纬度方程：
+                        \begin{equation*}
+                        \frac{1}{\sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d
+                        \theta}\right)+\left[l(l+1)-\frac{\lambda}{\sin ^{2} \theta}\right] \Theta=0, \quad (0 < \theta
+                            \le \pi) \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="-500">
+            <p><span class="exam"> 例-1: </span> 求解经度方程
+                \[\begin{cases}
+                \dfrac{d^{2} \Phi}{d \varphi^{2}}+\lambda \Phi=0,0 < \varphi < 2 \pi \\ \Phi(0)=\Phi(2 \pi),
+                    \Phi^{\prime}(0)=\Phi^{\prime}(2 \pi) \end{cases}\] </p>
+
+                    <p class="substep"><span class="answer"> 解: </span> 当特征方程有两虚根时，有解 </p>
+                    <br>
+                    <li class="substep">固有值: $\lambda=m^2, ~~~ (m=0,\pm 1,\pm 2,\cdots, \pm l) $ </li>
+                    <li class="substep">固有函数: $\Phi_m (\varphi)=A\cos m\varphi+B\sin m\varphi = A_m e^{im\varphi}$ </li>
+        </div>
+
+        <div class="step" data-rel-x="1000" data-rel-y="1000" data-rel-z="-500" data-scale="4">
+            <p> 归一化系数 ： </p>
+            <p class="substep">\begin{equation*}
+                \begin{split}
+                \int_{0}^{2\pi} |\Phi_m (\varphi)|^2 d\varphi &= 1 \\
+                \int_{0}^{2\pi} A_m e^{im\varphi} A_m e^{-im\varphi} d\varphi &= 1 \\
+                A^2_m \int_{0}^{2\pi} 1 d\varphi &= 1 \\
+                A^2_m 2\pi &= 1 \\
+                A_m&=\frac{1}{\sqrt{2\pi}}
+                \end{split}
+                \end{equation*} </p>
+
+            <li class="substep">归一化固有函数: $\Phi_m (\varphi)=\dfrac{1}{\sqrt{2\pi}} e^{im\varphi}$</li>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="exam"> 例-2: </span> 求解纬度方程
+                \begin{equation*}
+                \frac{1}{\sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d
+                \theta}\right)+\left[l(l+1)-\frac{\lambda}{\sin ^{2} \theta}\right] \Theta=0, \quad (0 < \theta \le \pi)
+                    \end{equation*} </p>
+                    <p class="substep"><span class="answer"> 解: </span> 把固有值$\lambda=m^2$代回纬度方程，得m阶连带勒让德方程： </p>
+
+                    <p class="substep">\begin{equation*}
+                        \boxed{\frac{1}{\sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d
+                        \theta}\right)+\left[l(l+1)-\frac{m^{2}}{\sin ^{2} \theta}\right] \Theta=0}
+                        \end{equation*} </p>
+                    <p class="substep"> <span class="tips"> TIPS: </span> 注意到 $m^2 \le l(l+1)$时， 方程才有解 (见后)， 因此有：
+                        \[(m=0,\pm 1,\pm 2,\cdots, \pm l) \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">微分展开，得：
+                \begin{equation*}
+                \frac{d^{2} \Theta}{d \theta^{2}}+\frac{\cos \theta}{\sin \theta} \frac{d \Theta}{d
+                \theta}+\left[l(l+1)-\frac{m^{2}}{\sin ^{2} \theta}\right] \Theta=0
+                \end{equation*} </p>
+            <p class="substep">(勒让德)令：$x=\cos \theta$, $y(x)= y(\cos \theta) =\Theta (\theta)$, 有：
+                \begin{equation*}
+                \frac{d x}{d \theta} =-\sin \theta
+                \end{equation*} </p>
+            <p class="substep">\begin{equation*}
+                \frac{d \Theta}{d \theta} =\frac{d y}{d x}\frac{d x}{d \theta} =-\sin \theta \frac{d y}{d x}
+                \end{equation*} </p>
+            <p class="substep">\begin{equation*}
+                \frac{ d^2 \Theta }{d \theta ^2} =\sin ^2 \theta \frac{d^2 y}{d x^2} -\cos \theta \frac{d y}{d x}
+                \end{equation*} </p>
+        </div>
+
+
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <p>代回方程,注意到因 \( \cos\theta =x \) , 有\( \sin\theta =1-x^2 \) </p>
+            <br>
+            <p class="substep">得标准连带勒让德方程：
+                \begin{equation*}
+                \left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d
+                x}+\left[l(l+1)-\frac{m^{2}}{1-x^{2}}\right] y=0, \quad (|x|\le 1)
+                \end{equation*} </p>
+            <p class="substep">当 m=0，就是(0阶)勒让德方程：
+                \begin{equation*}
+                \left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+l(l+1)y=0
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <h4>2. 解勒让德方程</h4>
+            <br>
+            <p><span class="exam"> 例-3: </span> 解勒让德方程
+                \begin{equation*}
+                \boxed{\left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+l(l+1)y=0}
+                \end{equation*}
+            </p>
+
+            <p class="substep"><span class="answer"> 解: </span> (勒让德)令方程有级数解 \( y=\sum_{k=0}^{\infty} a_k x ^k \)</p>
+            <p class="substep">求导，并代回方程，得：
+                \begin{equation*}
+                \sum_{k=0}^{\infty}\left\{(k+1)(k+2) a_{k+2}+[l(l+1)-k(k+1)] a_{k}\right\} x^{k}=0
+                \end{equation*} </p>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> 系数项应为零：
+                \begin{equation*}
+                (k+1)(k+2) a_{k+2}+[l(l+1)-k(k+1)] a_{k}=0
+                \end{equation*} </p>
+            <p class="substep">得递推式：
+                \begin{equation*}
+                a_{k+2}=-\frac{(l-k)(l+k+1)}{(k+1)(k+2) }a_{k}
+                \end{equation*} </p>
+            <li class="substep">k为偶数：
+                \begin{equation*}
+                y_{1}(x)=\left[1-\frac{l(l+1)}{2} x^{2}+\frac{l(l+1)(l+3)(l-2)}{4 !} x^{4}+\cdots\right]
+                \end{equation*}</li>
+
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <li class="substep">k为奇数：
+                \begin{equation*}
+                y_{2}(x)=\left[x-\frac{(l-1)(l+2)}{3 !} x^{3}+\frac{(l+2)(l+3)(l-1)(l-3)}{5 !} x^{5}+\cdots\right]
+                \end{equation*}</li>
+            <p class="substep">级数解：\[ y(x)= a_{0}y_{1}(x) + a_{1} y_{2}(x) \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h5>倒序排列</h5>
+            <p class="substep">递推式
+                \begin{equation*}
+                a_{k+2}=-\frac{(l-k)(l+k+1)}{(k+1)(k+2) }a_{k}
+                \end{equation*}
+                表明这不是无穷级数，而是多项式，最高阶为$k=l$，可以倒序排列</p>
+            <p class="substep">逆向递推式
+                \begin{equation*}
+                a_{k-2}=-\frac{(k-1)(k) }{(l-k+2)(l+k-1)}a_{k}
+                \end{equation*}</p>     
+            <p class="substep">记 $k=l=n$， 得: \( \quad a_{n-2}=-\dfrac{(n-1) n}{2(2n-1)} a_{n} \) </p>
+
+        </div>
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p>令最高阶项系数: \[a_n=\frac{(2n)!}{2^n (n!)^2} = \frac{(2n-2)!\times 2n \times (2n-1)}{2^n (n-1)!\times n \times
+                (n-2)!\times n \times (n-1) } \] </p>
+            <p class="substep">得逆向递推式：
+                \begin{equation*}
+                a_{n-2}=-\frac{(2 n-2) !}{2^{n} 1! (n-1) !(n-2) !}
+                \end{equation*} </p>  
+            <p class="substep">\begin{equation*}
+                a_{n-2\times2}=(-)^2\frac{(2 n-2\times2) !}{2^{n} 2! (n-2) !(n-2\times2) !}
+                \end{equation*} </p>  
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>一般式：
+                \[ a_{n-2 m}=(-1)^{m} \dfrac{(2 n-2 m) !}{2^{n} m !(n-m) !(n-2 m) !} \]
+            </p>  
+
+            <p class="substep"> 勒让德方程的多项式解: \[y(x) = \sum_{(n-2 m)=0/1}^{n} a_{n-2 m} x^{n-2 m} \] </p>
+
+
+            <p class="substep"> 这个式子很不好看！令 \( k=n-2m \) ，则有 \[ k=0/1, \to m=[n/2]\] \[ k=l=n, \to m=0 \]
+            </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">代入上式，得到一个好看的
+                \begin{aligned}
+                y(x) &= \sum_{(n-2 m)=0/1}^{n} a_{n-2 m} x^{n-2 m} \\
+                &= \sum_{k=0/1}^{n} a_{k} x^{k} \\
+                &= \sum_{m=0}^{[n /
+                2]} a_k x^{k} \\
+                &=\sum_{m=0}^{[n / 2]}(-1)^{m} \frac{(2 n-2 m) !}{2^{n} m !(n-m)
+                !(n-2 m)
+                !} x^{n-2 m}
+                \end{aligned} </p>
+        </div>
+
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>上式中，$m$是多项式求和指标，$n=l$才是量子数。所以写成 </p>
+            <p class="substep">\[P_n(x)=P_l(x)=\sum_{m=0}^{[n / 2]}(-1)^{m} \frac{(2 n-2 m) !}{2^{n} m !(n-m)
+                !(n-2 m)
+                !} x^{n-2 m} \] </p>
+            <p class="substep">称为勒让德多项式 </p>
+            <br>
+            <p><span class="substep over"> 结束！ </span></p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="exam"> 例-4: </span> 基于勒让德多项式表达式，求前5个具体形式\[P_n(x)=\sum_{m=0}^{[n / 2]}(-1)^{m} \frac{(2 n-2
+                m)
+                !}{2^{n} m !(n-m)
+                !(n-2 m)
+                !} x^{n-2 m} \]
+            </p>
+            <p class="substep"><span class="answer"> 解: </span> 依次取$n=0,1,2,3,4$,求得m的最高项$\max(m)=[n/2]$ </p>
+            <p class="substep">（1）取$n=0$, $\max(m)=[n/2]=0, m=0$, 代入， 得 $P_0(x)$ </p>
+            <p class="substep">（2）取$n=1$, $\max(m)=[n/2]=0, m=0$, 代入， 得 $P_1(x)$ </p>
+            <p class="substep">（3）取$n=2$, $\max(m)=[n/2]=1, m=0,1$, 代入， 得 $P_2(x)$ </p>
+            <p class="substep">（4）取$n=3$, $\max(m)=[n/2]=1, m=0,1$, 代入， 得 $P_3(x)$ </p>
+            <p class="substep">(5）取$n=4$, $\max(m)=[n/2]=2, m=0,1,2$, 代入， 得 $P_4(x)$ </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <br>
+            <h5>前5个勒让德多项式</h5>
+            <br>
+            <p>\[\small{\begin{array}{|l|l|}
+                \hline P_{0}(x)=1 & P_{0}(\cos\theta)=1\\
+                \hline P_{1}(x)=x & P_{1}(\cos \theta)=\cos \theta \\
+                \hline P_{2}(x)=\dfrac{1}{2}\left(3 x^{2}-1\right) & P_{2}(\cos \theta)=\dfrac{1}{4}[3 \cos 2 \theta+1]
+                \\
+                \hline P_{3}(x)=\dfrac{1}{2}\left(5 x^{3}-3 x\right) & P_{3}(\cos \theta)=\dfrac{1}{8}[5 \cos 3 \theta+3
+                \cos \theta] \\
+                \hline P_{4}(x)=\dfrac{1}{8}\left(35 x^{4}-30 x^{2}+3\right) & P_{4}(\cos \theta)=\dfrac{1}{64}[35 \cos
+                4
+                \theta+20 \cos 2 \theta+9] \\
+                \hline
+                \end{array}} \] </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <h4>连带勒让德多项式</h4>
+            <p class="substep"> 勒让德方程：
+                \begin{equation*}
+                \left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+l(l+1)y=0
+                \end{equation*} </p>
+            <p class="substep">解为勒让德多项式
+                \begin{equation*}
+                P_{l}(x)=\frac{1}{2^{l} l !} \frac{d^{l}}{d x^{l}}\left(x^{2}-1\right)^{l}, \quad(l=0,1,2,3, \cdots
+                \cdots)
+                \end{equation*} </p>  
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">连带勒让德方程：
+                \begin{equation*}
+                \left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d
+                x}+\left[l(l+1)-\frac{m^{2}}{1-x^{2}}\right] y=0
+                \end{equation*} </p>
+            <p class="substep">解为连带勒让德多项式
+                \begin{equation*}
+                P^m _{l}(x)= (1-x^2) ^ {m/2 } \frac{d^{m}}{d x^{m} } P_l(x), \quad(m < l, l=0,1,2,3, \cdots \cdots)
+                    \end{equation*} </p>  
+                    <p class="substep">关系： $m$阶连带勒让德多项式 $P^m _{l}(x)$是勒让德多项式$P_l(x)$ 的$m$次微分式 </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <li>思路：</li>
+            <p class="substep">把勒让德多项式 $P_{l}(x) $ 代入勒让德方程，然后对勒让德方程逐级求导, m次后得连带勒让德方程
+            </p>
+            <p class="substep">\begin{equation*}
+                \begin{split}
+                &\left(1-x^{2}\right) P'' _l (x) -2 x P' _l (x)+l(l+1)P_l(x)=0 \\
+                &\left(1-x^{2}\right) P^{3} _l (x) -2(1+1) x P'' _l (x)+(l(l+1)-1(1+1)P'_l(x)=0 \\
+                &\left(1-x^{2}\right) P^{4} _l (x) -2(2+1) x P^{3} _l (x)+(l(l+1)-2(2+1)P''_l(x)=0 \\
+                & \cdots \cdots\\
+                &\left(1-x^{2}\right) P^{m+2} _l (x) -2(m+1) x P^{m+1} _l (x)+(l(l+1)-m(m+1)P^{m} _l(x)=0 \\
+                \end{split}
+                \end{equation*} </p>
+            <p class="substep">即： 连带勒让德多项式 $P^{m} _l (x) $ 是连带勒让德方程的解,($m < l$) </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h4>连带勒让德多项式性质：(不证)</h4>
+            <p class="substep">(1) 正交性：
+                \begin{equation*}
+                \int_{-1}^{1} P^m _{l'}P^m _{l} dx =0 ,\cdots (l'\ne l)
+                \end{equation*} </p>
+            <p class="substep">(2) 归一性：
+                \begin{equation*}
+                \int_{-1}^{1} P^m _l P^m _l dx = \frac{(l+m)!}{(l-m)!}\frac{2}{2l+1}
+                \end{equation*} </p>
+            <p class="substep">(3) 递推式：
+                \begin{equation*}
+                (l+1-m)P^m _{l+1} -(2l+1)x P^m _l + (l+m) P^m _{l-1} =0
+                \end{equation*}</p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <h4>球谐函数</h4>
+            <p class="substep">氢原子角向方程:
+                \begin{equation*}
+                \left[ \frac{1}{ \sin \theta } \frac{\partial }{\partial \theta } (\sin \theta \frac{\partial }{\partial
+                \theta } )
+                +\frac{1}{ \sin^2 \theta } \frac{\partial^2}{\partial\varphi ^2} +l(l+1)\right] Y=0
+                \end{equation*} </p>
+            <p class="substep">解为球谐函数：
+                \begin{equation*}
+                Y_{lm}(\theta,\varphi)= \Theta_{lm}(\theta) \Phi_m (\varphi)
+                \end{equation*} </p>
+            <p class="substep">经度函数为：
+                \begin{equation*}
+                \Phi_m (\varphi)=\frac{1}{\sqrt{2\pi}} e^{im\varphi}, \qquad (m=0,\pm 1, \pm 2, \cdots \pm l)
+                \end{equation*} </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">纬度函数为：
+                \begin{equation*}
+                \Theta_{lm}(\theta)= P^m _{l}(\cos \theta) , \quad(m \le l, l=0 1,2,3, \cdots (n-1))
+                \end{equation*}   </p>
+            <p class="substep"> <span class="tips"> TIPS: </span> $n$ 由径向方程决定!</p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h4>球谐函数归一化</h4>
+            <p>\begin{equation*}
+                Y_{lm} (\theta,\varphi)= A_{lm} P_l ^m (cos \theta) e^{im\varphi}
+                \end{equation*} </p>
+            <p class="substep">\begin{equation*}
+                \begin{split}
+                \iint |Y_{lm}| ^2 d \sigma & =1 \\
+                \iint A^2_{lm} |P_l ^m (cos \theta)|^2 |\Phi (\varphi)|^2 d \sigma & =1 \\
+                A^2_{lm} 2\pi \int_{0}^{\pi} |P_l ^m (cos \theta)|^2 \sin \theta d\theta &=1 \\
+                A^2_{lm} 2\pi \frac{(l+m)!}{(l-m)!} \frac{2}{2l+1} &=1 \\
+                A_{lm} &= \sqrt{\frac{(2l+1)(l-m)!}{4\pi (l+m)!}}
+                \end{split}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">取经度函数的实部和虚部,球谐函数化为
+                \[Y_{lm}=A_{lm} P^m _l(\cos\theta) \Phi_m (\varphi)=A_{lm}\begin{cases}
+                P^m _l(\cos\theta) \cos m \varphi\\
+                P^m _l(\cos\theta) \sin m \varphi\\
+                \end{cases}\] </p>
+            <br>
+            <p class="substep"> <span class="tips"> TIPS: </span> 谐波是指频率为基波频率整数倍的波,比如:</p>
+            <li class="substep">琴弦的一维谐波</li>
+            <li class="substep">鼓面的二维谐波</li>
+            <li class="substep">球谐函数描述的是球面上的三维谐波</li>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>每一基波都有自己的谐波! </p>
+            <p>球谐函数$Y_{l} ^{m}$的三角排布 </p>
+            <center><img class="imgmixed" src="../EM/EM-beamer/figs/ylm.gif" width=500 height=500></center>
+            <p>
+                <br>
+            <table>
+                <tr>
+                    <td>$Y_{0} ^{0}$</td>
+                </tr>
+                <tr>
+                    <td>$Y_{1} ^{0}$</td>
+                    <td>$Y_{1} ^{1}$</td>
+                </tr>
+                <tr>
+                    <td>$Y_{2} ^{0}$ </td>
+                    <td>$Y_{2} ^{1}$ </td>
+                    <td>$Y_{2} ^{2}$ </td>
+                </tr>
+                <tr>
+                    <td>$Y_{3} ^{0}$</td>
+                    <td>$Y_{3} ^{1}$</td>
+                    <td>$Y_{3} ^{2}$ </td>
+                    <td>$Y_{3} ^{3}$ </td>
+                </tr>
+                <tr>
+                    <td>$Y_{4} ^{0}$</td>
+                    <td>$Y_{4} ^{1}$</td>
+                    <td>$Y_{4} ^{2}$ </td>
+                    <td>$Y_{4} ^{3}$ </td>
+                    <td>$Y_{4} ^{4}$ </td>
+                </tr>
+                <tr>
+                    <td>$Y_{5} ^{0}$</td>
+                    <td>$Y_{5} ^{1}$</td>
+                    <td>$Y_{5} ^{2}$ </td>
+                    <td>$Y_{5} ^{3}$ </td>
+                    <td>$Y_{5} ^{4}$ </td>
+                    <td>$Y_{5} ^{5}$ </td>
+                </tr>
+            </table>
+            </p>
+            <br>
+            <li class="substep">称 $l$ 为自由度,描述一个基波有多少个谐波</li>
+            <li class="substep">称 $m$ 为阶, 阶高的称为高阶谐波.</li>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h5>课堂作业</h5>
+            <br>
+            <p>1. 求 $x^3 $的勒让德展开式 </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="homework"> 作 业： </span> </p>
+            <p>1. 求解经度方程
+                \[\begin{cases}
+                \dfrac{d^{2} \Phi}{d \varphi^{2}}+\lambda \Phi=0,0 < \varphi < 2 \pi \\ \Phi(0)=\Phi(2 \pi),
+                    \Phi^{\prime}(0)=\Phi^{\prime}(2 \pi) \end{cases}\] </p>
+                    <p>2. 将$x=\cos x$ 代入勒让德多项式,写出前5个勒让德多项式表达式 </p>
+                    <p>3. 求$x^4$的勒让德展开式 </p>
+                    <p>4. 计算积分
+                        \begin{equation*}
+                        \int_{-1}^{1} (x^2+x) P_l(x) dx, \qquad \int_{-1}^{1} x^k P_l(x) dx, \quad(k < l ) \qquad
+                            \int_{-1}^{1} x^l P_l(x) dx \end{equation*} </p>
+        </div>
+
+
+
+        <div class="step " data-x="-2000" data-y="0" data-z="1000">
+
+            <center> <span class="Thanks">Thanks</span> </center>
+
+        </div>
+
+        <div id="lecture-3" class="step" data-x="-600" data-y="800" data-z="-2000">
+            <br>
+            <h2>第三讲 径向方程与拉盖尔多项式 </h2>
+            <br>
+            <li>解径向方程</li>
+            <li>解拉盖方程</li>
+            <li>拉盖尔多项式</li>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <h3> 1. 解径向方程</h3>
+            <p class="substep"> <span class="exam"> 例-1: </span> 求解径向方程
+                \begin{equation*}
+                \boxed{\frac{d}{d r} (r^2\frac{d R }{d r} ) + \frac{2 \mu r^2} {\hbar^2}(E+ \frac{e_s ^2}{r} ) =\lambda
+                R}
+                \end{equation*} </p>
+            <p class="substep"><span class="answer"> 解: </span> 取$ \lambda =l(l+1)$ 代入
+                \begin{equation*}
+                \frac{d}{d r} (r^2\frac{d R }{d r} ) + \frac{2 \mu r^2} {\hbar^2}(E+ \frac{e_s ^2}{r} ) R=l(l+1) R
+                \end{equation*} </p>
+            <p class="substep">\begin{equation*}
+                \frac{d^2 R}{d r^2} + \frac{2}{r^2}\frac{d R }{d r} + \frac{2 \mu} {\hbar^2}(E+ \frac{e_s ^2}{r} ) R-
+                \frac{l(l+1)}{r^2} R=0
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <p class="substep">进行伸缩变换, 令
+                \begin{aligned}
+                \xi &=\alpha r\\
+                U(\xi)&=R(\xi /\alpha) \\
+                \alpha&=\sqrt{-\dfrac{8\mu E}{\hbar^2}} \\
+                \beta&=\dfrac{2\mu e^2 _s}{\alpha \hbar^2}
+                \end{aligned}
+            </p>
+            <p class="substep">代入，得一般形式：
+                \begin{equation*}
+                \frac{d^2 U}{d \xi ^2} + \frac{2}{\xi }\frac{d U }{d \xi} -[ \frac{1} {4} -\frac{\beta}{\xi} +
+                \frac{l(l+1)}{\xi ^2}] U=0 \cdots (1)
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <p>方程太复杂，先考虑解的渐近行为： </p>
+            <p class="substep">(1) $r\to \infty$, $\xi \to \infty$, 有方程：
+                \begin{equation*}
+                \frac{d^2 U}{d \xi ^2} - \frac{1} {4} U=0
+                \end{equation*} </p>
+            <p class="substep">特征方程有两互异实根，通解为：
+                \begin{equation*}
+                U=C_1 exp(\frac{1}{2}\xi ) +C_2 exp(-\frac{1}{2}\xi )
+                \end{equation*} </p>
+            <p class="substep">考虑到有界性，有特解：
+                \begin{equation*}
+                U_\infty = C exp(-\frac{1}{2}\xi )
+                \end{equation*} </p>
+        </div>
+
+        <div class="step" data-rel-x="1000" data-rel-y="1000" data-rel-z="-500" data-scale="4">
+            <p>(2) $r\to 0$, $\xi \to 0$，化为欧拉方程：
+                \begin{equation*}
+                \frac{d^2 U}{d \xi ^2} + \frac{2}{\xi }\frac{d U }{d \xi} +[ - \frac{l(l+1)}{\xi ^2}] U=0
+                \end{equation*} </p>
+            <p class="substep">通解为：
+                \begin{equation*}
+                U=C_1 \xi ^{-(l+1)}+C_2 \xi ^ l
+                \end{equation*} </p>
+            <p class="substep">考虑到有界性，有特解：
+                \begin{equation*}
+                U_0=C \xi ^ l
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            　<p>兼顾两种情况后，可考虑常数变异，令方程的解为：
+                \begin{equation*}
+                U=L(\xi) \xi ^ l exp(-\frac{1}{2}\xi )
+                \end{equation*} </p>
+            <p class="substep">问题变为求级数或多项式 $L(\xi)$ </p>
+            <p class="substep">求导，并把结果代回原方程（1），得
+                \begin{equation*}
+                \xi L'' + [2(l+1) -\xi] L' +[\beta -(l+1)] L =0
+                \end{equation*} </p>
+            <p class="substep">令 $m=2l+1, \qquad n=\beta-(l+1)$, 方程变为连带拉盖方程
+                \begin{equation*}
+                \boxed{x L'' + [m+1 -x] L' +n L =0}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500">
+            <p>取 $m=0$, 得数学上的拉盖方程：
+                \begin{equation*}
+                \boxed{x y'' + [1 -x] y' +n y =0}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <h3> 2. 解拉盖方程</h3>
+            <p><span class="exam"> 例-2: </span> 求解拉盖方程
+                \begin{equation*}
+                \boxed{x y'' + [1 -x] y' +n y =0}
+                \end{equation*} </p>
+            <p class="substep"><span class="answer"> 解: </span> 设方程有级数解
+                \begin{equation*}
+                y=\sum_{k=0}^{\infty} c_k x^k
+                \end{equation*} </p>
+            <p class="substep">求导，代回方程， 得
+                \begin{equation*}
+                \sum_{k=0}^{\infty} [(n-k)c_k +(k+1)^2 c_{k+1} ] x^k =0
+                \end{equation*} </p>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>有系数递推式：
+                \begin{equation*}
+                c_{k+1}=-\frac{n-k}{(k+1)^2} c_k, \qquad (k=0,1,2,\cdots)
+                \end{equation*} </p>
+            <p class="substep">反复递推，有：
+                \begin{equation*}
+                c_{k}=(-1)^k \frac{n(n-1)\cdots (n-k+1)}{(k!)^2} c_0, \qquad (k=1,2,\cdots, n)
+                \end{equation*} </p>
+            <p class="substep">当$k=n$时，最高项系数为：
+                \begin{equation*}
+                c_{n}=(-1)^n \frac{1}{n!} c_0,
+                \end{equation*} </p>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">级数解转化为多项式解，取
+                \begin{equation*}
+                c_{0}=n!, \quad c_{n}=(-1)^n = (-1)^k
+                \end{equation*} </p>
+            <p class="substep">拉盖多项式的系数为：
+                \begin{equation*}
+                c_{k}=(-1)^k \frac{(n!) ^2}{(k!)^2 (n-k)!}, \qquad (k=0,1,2,\cdots, n)
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">拉盖多项式：
+                \begin{equation*}
+                \begin{split}
+                L_n(x) &=\sum_{k=0}^{n} c_{k} x^k \\
+                &= \sum_{k=0}^{n} (-1)^k \frac{(n!)^2 }{(k!)^2 (n-k)!}x^k \\
+                &= \sum_{k=0}^{n} (-1)^k \frac{(n!) }{(k!) (n-k)!} \frac{n!}{k!}x^k \\
+                &= \sum_{k=0}^{n} (-1)^k C^k _n \frac{n!}{k!}x^k, \qquad (k=0,1,2,\cdots, n)
+                \end{split}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p class="substep"><span class="exam"> 例-3: </span> 试证明拉盖多项式具有如下微分形式
+                \begin{equation*}
+                L_n(x) =e^x \frac{d ^n}{d x^n} (x^n e^{-x})
+                \end{equation*} </p>
+            <p class="substep"><span class="answer"> 证明: </span> 由高阶导莱布尼兹公式
+                \begin{equation*}
+                (u\cdot v) ^{(n)} =\sum_{k=0}^{n} C^k _n u^{(k) }V^{(n-k)},
+                \end{equation*} </p>
+            <p class="substep">得：
+                \begin{equation*}
+                \begin{split}
+                (e^{-x}\cdot x^n) ^{(n)}&= \sum_{k=0}^{n} C^k _n [ e ^{-x}]^{(k)} [(x^n)^{(n-k)}]\\
+                \end{split}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">\begin{equation*}
+                \begin{split}
+                (e^{-x}\cdot x^n) ^{(n)} &= \sum_{k=0}^{n} C^k _n [(-1)^k e ^{-x}] [ \frac{n!}{k!} x^k]\\
+                e^x \frac{d^n }{d x^n} (e^{-x}\cdot x^n) &=e^x \sum_{k=0}^{n} C^k _n [(-1)^k e ^{-x}] [ \frac{n!}{k!}
+                x^k]\\
+                &= \sum_{k=0}^{n} (-1)^k C^k _n \frac{n!}{k!}x^k \\
+                &=L_n (x)
+                \end{split}
+                \end{equation*} </p>
+            <br>
+            <p><span class="substep over"> 证毕！ </span></p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>依次取$ n=0,1,2,3,4,\cdots $,计算前几项， 得 </p>
+            <p class="substep"> \begin{equation*}
+                \begin{split}
+                L_0(x)&=1\\
+                L_1(x)&=1-x\\
+                L_2(x)&=2-4x+x^2\\
+                L_3(x)&=6-18x+9x^2-x^3\\
+                \end{split}
+                \end{equation*} </p>
+            <p class="substep"> <span class="tips"> TIPS: </span> 你喜欢求导还是多项式计算呢？</p>
+        </div>
+
+
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h4>连带拉盖多项式</h4>
+            <p class="substep">拉盖方程
+                \begin{equation*}
+                \boxed{x H'' + [1 -x] H' +n H =0}
+                \end{equation*} </p>
+            <p class="substep">解为拉盖多项式 \[L_n(x)=\sum_{k=0}^{n} (-1)^k C^k _n \frac{n!}{k!}x^k, \qquad
+                (k=0,1,2,\cdots, n) \] </p>
+            <p class="substep">量子力学中定义了广义拉盖多项式
+                \[L^0 _n (x)= \frac{1} {n!} L_n (x) = \frac{1} {n!} \sum_{k=0}^{n} (-1)^k C^k _n \frac{n!}{k!}x^k \]</p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"> 连带拉盖方程
+                \begin{equation*}
+                \boxed{x H'' + [m+1 -x] H' +n H =0}
+                \end{equation*}</p>
+            <p class="substep">解为连带拉盖多项式
+                \[L^m _n (x)= \frac{1} {n!} \sum_{k=0}^{n} (-1)^k C^k _n \frac{(n+m)!}{(m+k)!}x^k \] </p>
+            <p class="substep">微分形式为：
+                \begin{equation*}
+                L^m _n(x) =\frac{x^{-m}e^x }{n!} \frac{d ^n}{d x^n} (x^{m+n} e^{-x})
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h4>连带拉盖多项式的性质</h4>
+            <p class="substep">(1)递推式：
+                \begin{equation*}
+                (n+1) L^m _{n+1} = (2n+1+m -x) L^m _n - (n+m) L_{n-1}
+                \end{equation*} </p>
+            <p class="substep">(2)正交性：
+                \begin{equation*}
+                \int_{0}^{\infty} e^{-x} x^m L^m _n L^ m _k dx =0, \qquad (k\ne n)
+                \end{equation*} </p>
+            <p class="substep">(3)归一性：
+                \begin{equation*}
+                \int_{0}^{\infty} e^{-x} x^m [L^m _{n}]^2 dx = \frac{(n+m)!}{n!}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"> (4)归一性推论：
+                \[\int_{0}^{\infty} e^{-x} x^{m+1} [L^m _{n}]^2 dx = \frac{(n+m)!}{n!} (2n+m+1) \]
+            </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <h4>能量固有值问题</h4>
+            <p class="substep">注意参量关系
+                \begin{aligned}
+                \xi&=\alpha r \\
+                U(\xi)&=R(\xi /\alpha) \\
+                \alpha &=\sqrt{-\dfrac{8\mu E}{\hbar^2}} \\
+                \beta &=\dfrac{2\mu e^2 _s}{\alpha \hbar^2} = n\\
+                m&= 2l+1\\
+                \beta-(l+1)&\ge 0
+                \end{aligned} </p>
+            <p class="substep">氢原子能量固有值：
+                $E_n =- \dfrac{1}{n^2} \dfrac{\mu e^4 _s }{2 \hbar ^2}, \qquad (n=1,2,3,\cdots)$ </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">固有解
+                \begin{equation*}
+                R_{nl} (r) =N_{nl}R(r)=N_{nl} \xi ^l L_{n-(l+1)} ^{2l+1} (\xi) e^{-\xi/2} , \qquad (\xi =\alpha r)
+                \end{equation*} </p>
+
+            <p class="substep">量子数:
+                \begin{aligned}
+                n&=1,2,3,\cdots \\
+                l&=0,1,2,3,\cdots, n-1 \\
+                m&=0, \pm 1, \pm 2, \cdots, \pm l
+                \end{aligned} </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <h4>求归一化系数</h4>
+            <center><img class="imgmixed" src="../EM/EM-beamer/figs/dt.png" width=500 height=500></center>
+            <p class="substep"> 球坐标系下的体系元 \begin{aligned}
+                dS&=(rd\theta)\cdot (r\sin \theta d \varphi ) \\
+                &=r^2 \sin \theta d\theta d \varphi \\
+                d \tau &=dS \cdot dr = r^2 \sin \theta dr d\theta d \varphi
+                \end{aligned} </p>
+            <br>
+            <br>
+            <br>
+            <p class="substep">要求解函数的$N_{nl}$
+                \begin{equation*}
+                R_{nl} (r) =N_{nl}R(r)=N_{nl} \xi ^l L_{n-l-1} ^{2l+1} (\xi) e^{-\xi/2} , \qquad (\xi =\alpha r)
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            <p>$ \displaystyle \iiint \Psi(r,\theta,\varphi) d \tau =1 $ </p>
+
+            <p class="substep">$ \displaystyle \iiint |N_{nl} R (r) Y_{lm} (\theta,\varphi)| ^2 r^2 \sin \theta dr
+                d\theta d\varphi =1
+                $ </p>
+
+            <p class="substep">$ \displaystyle \int_{0}^{\infty} N^2_{nl} R^2 (r) r^2 dr =1$ </p>
+
+            <p class="substep">$ \displaystyle \frac{1}{\alpha ^3} \int_{0}^{\infty} N^2_{nl} R^2 (\xi) \xi^2 d\xi =1$
+            </p>
+
+            <p class="substep">$\displaystyle \frac{1}{\alpha ^3} \int_{0}^{\infty} N^2_{nl} \xi ^{2l+2} [L_{n-l-1}
+                ^{2l+1} (\xi)]^2
+                e^{-\xi} d\xi =1$ </p>
+
+            <p class="substep">$ \displaystyle \frac{1}{\alpha ^3} \int_{0}^{\infty} N^2_{nl} \xi ^{M+1} [L_N ^M
+                (\xi)]^2 e^{-\xi}
+                d\xi =1 $ </p>
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <br>
+            <p>
+                $\displaystyle \frac{1}{\alpha ^3} N^2_{nl} \frac{(N+M)!}{N!} (2N+M+1) =1
+                $</p>
+            <br>
+            <p class="substep">
+                $ \displaystyle N^2 _{nl} \frac{2n [(n+1)!]^3} {\alpha^3 (n-l-1)!} =1$
+            </p>
+            <br>
+            <p class="substep">
+                $ \displaystyle N_{nl} =\sqrt{\alpha^3 \frac{ (n-l-1)!}{2n [(n+1)!]^3}}$
+            </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <h5>课堂测试</h5>
+            <p>1. 求 $L_4(x)$的具体形式 </p>
+            <p>2. 求 $x^4 $的拉盖尔展开式 </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <span class="homework"> 作 业： </span>
+            <p>1. 解欧拉方程：
+                \begin{equation*}
+                \frac{d^2 U}{d \xi ^2} + \frac{2}{\xi }\frac{d U }{d \xi} +[ - \frac{l(l+1)}{\xi ^2}] U=0
+                \end{equation*}</p>
+            <p>2. 计算积分
+                \begin{equation*}
+                \int_{-1}^{1} (x^2+x) L_n(x) dx, \qquad \int_{-1}^{1} x^k L_n(x) dx, \quad(k < n) \qquad \int_{-1}^{1}
+                    x^n L_n(x) dx \end{equation*} </p>
+        </div>
+
+        <div class="step " data-x="-2000" data-y="0" data-z="1000" , data-rotate-y="-45">
+
+            <center> <span class="Thanks">Thanks</span> </center>
+
+        </div>
+
+        <div id="lecture-4" class="step" data-x="3000" data-y="100" data-z="700" data-rotate="45" data-rotate-x="25">
+            <br>
+            <br>
+            <h2>第四讲 勒让德与拉盖尔多项式的性质 </h2>
+            <br>
+            <li>勒让德多项式性质</li>
+            <li>拉盖尔多项式性质</li>
+        </div>
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <br>
+            <h3>1. 勒让德多项式性质 </h3>
+            <br>
+            <p><span class="exam"> 性质-1: </span> 勒让德多项式具有生成函数
+                \begin{equation*}
+                w(x, z)=\left(1-2 z x+z^{2}\right)^{-1 / 2}
+                \end{equation*} </p>
+            <p class="substep"><span class="answer"> 分析: </span> 即要证
+                \begin{equation*}
+                \left(1-2 z x+z^{2}\right)^{-1 / 2}=\sum_{n=0}^{\infty} P_n(x) z^n
+                \end{equation*} </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"><span class="proof"> 证明： </span> 由二项式定理：
+                \begin{equation*}
+                (1+v)^{p}=\sum_{k=0}^{\infty} \frac{p(p-1) \cdots(p-k+1)}{k !} v^{k}
+                \end{equation*}
+            </p>
+            <p class="substep"> 取$p=-1/2$， 得：
+                \begin{aligned}
+                (1+v)^{-1/2}&=\sum_{k=0}^{\infty} (-1)^{k}\frac{\frac{1}{2}\frac{3}{2} \cdots \frac{2k-1}{2}}{k !}
+                v^{k}\\
+                &=\sum_{k=0}^{\infty} (-1)^{k}\frac{\frac{1}{2}\frac{2}{2}\frac{3}{2} \frac{4}{2} \cdots
+                \frac{2k-1}{2}\frac{2k}{2}} {(k !)^2} v^{k}\\
+                &=\sum_{k=0}^{\infty}(-1)^{k} \frac{(2 k) !}{2^{2 k}(k !)^{2}} v^{k}
+                \end{aligned}</p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>取$v=-2zx+z^2=-z(2x-z)$， 有：
+                \begin{equation*}
+                v^{k}=(-1)^{k} z^{k}(2 x-z)^{k}=(-1)^{k} z^{k} \sum_{m=0}^{k} C_{k}^{m}(2 x)^{k-m}(-z)^{m}
+                \end{equation*} </p>
+            <p class="substep">代回
+                \begin{equation*}
+                \left(1-2 z x+z^{2}\right)^{-\frac{1}{2}}=\sum_{k=0}^{\infty} \frac{(2 k) !}{2^{2 k}(k !)^{2}}
+                \sum_{m=0}^{k}(-1)^{m} C_{k}^{m}(2 x)^{k-m} z^{k+m}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">令：$k+m=n$，则有关$z^{n}$的展开系数为
+                \begin{equation*}
+                \begin{split}
+                \sum_{k+m=n}\frac{(2 k) !}{2^{2 k}(k !)^{2}} & (-1)^{m} C_{k}^{m}(2 x)^{k-m}\\
+                &=\sum_{m=0}^{n} \frac{(2 (n-m)) !}{2^{2 (n-m)}((n-m) !)^{2}}(-1)^{m} C_{n-m}^{m}(2 x)^{n-2m}\\
+                &=\sum_{m=0}^{n}(-1)^{m} \frac{(2 n-2m) !}{2^{2 (n-m)}((n-m) !)^{2}} \frac{(n-m) !}{m!(n-2 m) !}2^{n-2
+                m}x^{n-2 m}\\
+                &=\sum_{m=0}^{n}(-1)^{m} \frac{(2 n-2 m) !}{2^{n} m !(n-m) !(n-2 m) !} x^{n-2 m} \\
+                &=P_{n}(x)
+                \end{split}
+                \end{equation*}</p>
+            <p><span class="substep over"> 证毕！ </span></p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p class="substep"><span class="exam"> 性质-2: </span> 勒让德多项式具有如下递推关系
+                \begin{equation*}
+                (n+1) P_{n+1}(x)-(2 n+1) x P_{n}(x)+n P_{n-1}(x)=0
+                \end{equation*} </p>
+            <p class="substep"><span class="proof"> 证明： </span> 对于母函数形式级数：
+                \begin{equation*}
+                w(x, z)=(1-2zx+z^2)^{-1/2}=\sum_{n=0}^{\infty} P_{n}(x) z^{n}
+                \end{equation*} </p>
+            <p class="substep">求关于z的偏导：
+                \begin{equation*}
+                \frac{\partial w}{\partial z}=\sum_{n=1}^{\infty} n P_{n}(x) z^{n-1}=\sum_{n=0}^{\infty}(n+1) P_{n+1}
+                z^{n} \qquad (1)
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+
+            <p>对母函数代数式求导\begin{equation*}
+                \frac{\partial w}{\partial z}= (x-z)(1-2zx+z^2)^{-3/2}
+                \end{equation*} </p>
+            <p class="substep">\begin{equation*}
+                (1-2zx+z^2)\frac{\partial w}{\partial z}=(x-z)(1-2zx+z^2)^ {-1/2}
+                \end{equation*} </p>
+
+            <p class="substep">\begin{equation*}
+                (1-2zx+z^2)\frac{\partial w}{\partial z}-(x-z)w=0
+                \end{equation*} </p>
+            <p class="substep">代入（1）式，得 </p>
+
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> \begin{equation*}
+                (1-2zx+z^2)\sum_{n=0}^{\infty}(n+1) P_{n+1} z^{n}-(x-z)\sum_{n=0}^{\infty} P_{n}(x) z^{n}=0
+                \end{equation*} </p>
+            <p class="substep">整理
+                \begin{equation*}
+                \sum_{n=1}^{\infty} [(n+1)P_{n+1} -(2n+1)x P_n + nP_{n-1} ] z^{n}=0
+                \end{equation*} </p>
+            <p class="substep">由系数项等于零，得证！ </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="exam"> 性质-3: </span> 勒让德多项式具有正交归一性
+                \[\int_{-1}^{1} P_mP_n dx =\begin{cases}
+                &0, \qquad (n \ne m) \\
+                &\dfrac{2}{2n+1}, \quad n = m
+                \end{cases} \] </p>
+            <p class="substep"><span class="proof"> 证明： </span> (1) 正交性： 勒让德多项式满足勒让德方程($n=l$)\begin{equation*}
+                \left(1-x^{2}\right) P'' _n (x) -2 x P' _n (x)+n(n+1)P_n(x)=0
+                \end{equation*} </p>
+            <p class="substep">前二项合并：$$[\left(1-x^{2}\right) P' _n (x)]' +n(n+1)P_n(x)=0 \cdots (1)$$
+            </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p> 同理：
+                \begin{equation*}
+                [\left(1-x^{2}\right) P' _m (x)]' + m (m+1)P_m(x)=0 \cdots (2)
+                \end{equation*} </p>
+            <p class="substep"> (1)乘 $P_m$, (2)乘 $P_n$, 再两次相减
+                \[ [n(n+1) -m (m+1)] P_mP_n = P_n [\left(1-x^{2}\right) P' _m]' - P_m [(1- x^{2} ) P'_n ]' \]</p>
+            <p class="substep">两边积分，其中右边为
+                \begin{aligned}
+                &= \int_{-1}^{1} \left\{P_n [\left(1-x^{2}\right) P' _m] '-P_m [\left(1-x^{2}\right) P' _n ]'\right\}dx
+                \end{aligned}</p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">分部积分
+                \begin{equation*}
+                \begin{split}
+                = &\left\{P_n [\left(1-x^{2}\right) P' _m] - P_m [\left(1-x^{2}\right) P' _n ]\right\}|_{-1} ^{1} \\
+                &-\int_{-1}^{1} [\left(1-x^{2}\right) P' _nP' _m -\left(1-x^{2}\right) P' _mP' _n ] dx \\
+                =&0
+                \end{split}
+                \end{equation*} </p>
+            <p class="substep">因此，式子的左端
+                \begin{equation*}
+                [n(n+1) -m (m+1)]\int_{-1}^{1} P_mP_n dx =0
+                \end{equation*} </p>
+            <p class="substep">当$ n \ne m$时，有
+                \( \displaystyle \int_{-1}^{1} P_mP_n dx =0 \) </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">（2）归一性： 递推公式
+                \begin{equation*}
+                nP_{n} -(2n-1)x P_{n-1} + (n-1)P_{n-2} =0
+                \end{equation*} </p>
+            <p class="substep">乘$P_{n}$ $$nP ^2 _{n} =(2n-1)x P_n P_{n-1} - (n-1)P_nP_{n-2} $$ </p>
+            <p class="substep">积分 \begin{equation*}
+                \int_{-1}^{1} P ^2 _{n} dx = \frac{(2n-1)}{n} \int_{-1}^{1} x P_n P_{n-1} dx , \cdots (1)
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">递推式也可写成
+                \begin{equation*}
+                (n+1)P_{n+1} -(2n+1)x P_{n} + nP_{n-1} =0
+                \end{equation*}
+            </p>
+            <p class="substep">变形
+                \begin{equation*}
+                x P_{n}=\frac{n+1}{2n+1}P_{n+1} + \frac{n}{2n+1}P_{n-1} , \cdots (2)
+                \end{equation*} </p>
+            <p class="substep">把(2)代入(1)式右边，得积分递推式
+                \begin{align*}
+                \int_{-1}^{1} P ^2 _{n} dx &= \frac{2n-1}{2n+1}\int_{-1}^{1} P^2_{n-1} dx \\
+                &= \frac{2n-1}{2n+1} \cdot \frac{2(n-1)-1}{2(n-1)+1} \int_{-1}^{1} P^2_{n-2} dx \\
+                \end{align*}
+            </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">反复递推：
+
+                \begin{aligned}
+                \int_{-1}^{1} P ^2 _{n} dx &= \frac{1}{2n+1}\int_{-1}^{1} P^2_{0} dx \\
+                &= \frac{1}{2n+1}\int_{-1}^{1} 1 dx \\
+                &= \frac{2}{2n+1} \\
+                \end{aligned}
+            </p>
+            <p><span class="substep over"> 证毕！ </span></p>
+        </div>
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p class="substep"><span class="exam"> 例-1: </span> 利用勒让德多项式正交性计算积分：
+                $$ \int_{-1}^{+1} x^2 P _{n}(x) dx $$ </p>
+            <p class="substep"><span class="answer"> 解: </span> 由 $$ P_{n}(x)=\dfrac{1}{2^{n} n !} \dfrac{d^{n}}{d
+                x^{n}}\left(x^{2}-1\right)^{n} $$</p>
+            <p class="substep">得：\begin{equation*}
+                P_0(x)=1, P_1(x)=x, P_2(x)= \dfrac{1}{2}(3x^2-1)
+                \end{equation*} </p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">令 \[x^2 = a_2 P_2(x) + a_1 P_1(x) + a_0 P_0(x) \] </p>
+            <p class="substep">代入，得
+                \begin{aligned}
+                x^2 &= a_2 \dfrac{1}{2}(3x^2-1) + a_1 x + a_0 \\
+                &= a_2 \dfrac{3}{2}x^2 + a_1 x + (a_0- a_2 \dfrac{1}{2})
+                \end{aligned} </p>
+            <p class="substep">由各幂次系数相等，得$x^2$的勒让德多项式展开式：
+                $$ x^2 =\dfrac{2}{3}P_2+\dfrac{1}{3}P_0$$ </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p class="substep"> 代回原式，得
+                \begin{equation*}
+                \int_{-1}^{+1} x^2 P _{n} dx = \int_{-1}^{+1} (\dfrac{2}{3}P_2+\dfrac{1}{3}P_0) P _{n} dx
+                \end{equation*} </p>
+            <p class="substep">分情况讨论：(1) $n=0$,
+                \begin{equation*}
+                \int_{-1}^{+1} x^2 P _{n} dx = \int_{-1}^{+1} \dfrac{1}{3}P_0 P _{0} dx=\dfrac{1}{3} \frac{2}{2n+1} =
+                \dfrac{2}{3}
+                \end{equation*} </p>
+            <p class="substep">(2) $n=2$,
+                \begin{equation*}
+                \int_{-1}^{+1} x^2 P _{n} dx = \int_{-1}^{+1} \dfrac{2}{3}P_2 P _{2} dx= \dfrac{2}{3}\frac{2}{2n+1} =
+                \dfrac{4}{15}
+                \end{equation*} </p>
+
+        </div>
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p class="substep">(3) $ n\neq 0,2$
+                \begin{equation*}
+                \int_{-1}^{+1} x^2 P _{n} dx = 0
+                \end{equation*} </p>
+            <br>
+            <p class="substep"> <span class="tips"> TIPS: </span> 记住
+                \begin{equation*}
+                \begin{split}
+                1&= P_0 \\
+                x&=P_1\\
+                x^2&=\dfrac{1}{3}(2P_2+P_0)\\
+                x^3&=\dfrac{1}{5}(2P_3+3P_1)
+                \end{split}
+                \end{equation*}</p>
+            <p class="substep">则可有效提高解题效率。 </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h2>2. 拉盖多项式的性质</h2>
+            <p class="substep"><span class="exam"> 性质-1: </span> 拉盖多项式具有生成函数: $\displaystyle w(t,x) =\dfrac{e^{-xt/(1-t)
+                } } {1-t}$
+            </p>
+            <p class="substep"><span class="answer"> 证明: </span> 对函数在$t=0$做泰勒展开
+                \begin{equation*}
+                \begin{split}
+                w(t,x) &= \sum_{n=0}^{\infty} \frac{d^n w}{d t^n} |_{t=0} \frac{t^n}{n!} \\
+                &= \sum_{n=0}^{\infty} e^x \frac{d^n }{d x^n} (e^{-x}\cdot x^n) \frac{t^n}{n!}\\
+                &= \sum_{n=0}^{\infty} L_n \frac{t^n}{n!}
+                \end{split}
+                \end{equation*} </p>
+            <p><span class="substep over"> 证毕！ </span></p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"><span class="exam"> 性质-2: </span> 拉盖多项式递推式:
+                \begin{equation*}
+                \begin{split}
+                L_{n+1} &= (2n+1-x) L_n -n^2 L_{n-1} \\
+                L_1 &=(1-x) L_0
+                \end{split}
+                \end{equation*}
+            </p>
+            <p class="substep"><span class="answer"> 证明: </span> 母函数对t求导
+                \begin{equation*}
+                \begin{split}
+                w(t,x) &=\frac{e^{-xt/(1-t) } } {1-t}\\
+                \frac{\partial w}{\partial t} &= [\frac{1}{(1-t)^2} -\frac{x}{(1-t)^3}] e^{-xt/(1-t) } \\
+                (1-t)^2 \frac{\partial w}{\partial t} &= [1 -t-x] w , \cdots \cdots (1)
+                \end{split}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+
+            <p> 对生成式求导
+                \begin{equation*}
+                \begin{split}
+                w(t,x) &= \sum_{n=0}^{\infty} L_n \frac{t^n}{n!} \\
+                \frac{\partial w}{\partial t} &= \sum_{n=1}^{\infty} L_n \frac{t^{n-1}}{(n-1)!} \\
+                &= \sum_{n=0}^{\infty} L_{(n+1)} \frac{t^n}{(n)!} \\
+                &= \sum_{n=2}^{\infty} L_{(n-1)} \frac{t^{n-2}}{(n-2)!}
+                \end{split}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">代入（1），并计算其左边
+                \begin{equation*}
+                (1-t)^2 \frac{\partial w}{\partial t} = \sum_{n=0}^{\infty} L_{n+1} \frac{t^n}{(n)!} -2
+                \sum_{n=1}^{\infty} L_{n} \frac{t^n}{(n-1)!} + \sum_{n=2}^{\infty} L_{n-1} \frac{n(n-1)}{(n)!} t^n
+                \end{equation*} </p>
+            <p class="substep">计算（1）的右边
+                \begin{equation*}
+                \begin{split}
+                [1 -t-x] w &= (1-x)w -t w \\
+                & = \sum_{n=0}^{\infty} (1-x) L_n \frac{t^n}{n!} - \sum_{n=0}^{\infty} L_n \frac{t^{n+1}}{n!} \\
+                &= \sum_{n=0}^{\infty} (1-x) L_n \frac{t^n}{n!} - \sum_{n=1}^{\infty} L_{n-1} \frac{t^n}{(n-1)!}
+                \end{split}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep">左边=右边, 有：
+                \begin{aligned}
+                \sum_{n=0}^{\infty} & L_{n+1} \frac{t^n}{(n)!} -2
+                \sum_{n=1}^{\infty} L_{n} \frac{t^n}{(n-1)!} + \sum_{n=2}^{\infty} L_{n-1} \frac{n(n-1)}{(n)!} t^n \\
+                &= \sum_{n=0}^{\infty} (1-x) L_n \frac{t^n}{n!} - \sum_{n=1}^{\infty} L_{n-1} \frac{t^n}{(n-1)!}
+                \end{aligned} </p>
+            <p class="substep">整理,由系数项为零，得递推式！
+                \begin{equation*}
+                L_{n+1} = (2n+1-x) L_n -n^2 L_{n-1}
+                \end{equation*} </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p class="substep"><span class="exam"> 性质-3: </span> 拉盖多项式带权($e^{-x}$)正交归一
+                \begin{equation*}
+                \int_{0}^{\infty} e^{-x} L _{n} L _{m} dx =
+                \begin{cases}
+                & 0 \qquad (n \ne m) \\
+                & (n!)^2 \qquad (n = m)
+                \end{cases}
+                \end{equation*}
+            </p>
+            <p class="substep"><span class="answer"> 证明: </span> (1) 正交性，拉盖多项式满足拉盖方程：
+                \begin{equation*}
+                \begin{split}
+                x L_n'' + [1 -x] L_n' +n L_n &=0 \\
+                [xe^{-x} L_n'] ' +n e^{-x} L_n &=0 \\
+                L_m[xe^{-x} L_n'] ' +n e^{-x} L_m L_n &=0 \quad (1)
+                \end{split}
+                \end{equation*}
+            </p>
+            <p class="substep">同理，有：
+                \[L_n [xe^{-x} L_m'] ' +m e^{-x} L_n L_m =0 \quad (2) \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p>(1)-(2), 并两端积分
+                \begin{aligned}
+                (m-n) \int_{0}^{\infty} e^{-x} L_n L_m dx &= \int_{0}^{\infty} [L_n [xe^{-x} L' _m] ' - L_m[xe^{-x} L'
+                _n] '] dx \\
+                &= -\int_{0}^{\infty} L'_n [xe^{-x} L' _m] dx + L'_m[xe^{-x} L' _n] dx \\
+                &= \int_{0}^{\infty} [xe^{-x} L' _m L' _n - xe^{-x} L' _n L' _m] dx \\
+                &=0
+                \end{aligned} </p>
+            <p class="substep">当$ (n \ne m) $时， 有 \[\int_{0}^{\infty} e^{-x} L_n L_m dx =0 \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"> (2) 归一性，由递推式
+                \begin{aligned}
+                L_{n+1} &= (2n+1-x) L_n -n^2 L_{n-1} \\
+                L_{n} &= (2n-1-x) L_{n-1} -(n-1)^2 L_{n-2} \\
+                L^2 _{n} e^{-x} &= e^{-x} (2n-1-x) L_n L_{n-1} - e^{-x} (n-1)^2 L_n L_{n-2} \quad (1)\\
+                L_{n-1}L_{n+1} e^{-x} &= e^{-x} (2n+1-x) L_{n-1} L_n - e^{-x} n^2 L^2 _{n-1} \quad (2) \\
+                \end{aligned} </p>
+            <p class="substep">(1)-(2), 并积分，应用正交性后，得递推式
+                \begin{aligned}
+                \int_{0}^{\infty} e^{-x} L^2 _{n} dx &= n^2 \int_{0}^{\infty} e^{-x} L^2 _{n-1} dx \\
+                \end{aligned}
+            </p>
+
+
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p></p>一直向下递推， 得：
+            \begin{aligned}
+            \int_{0}^{\infty} e^{-x} L^2 _{n} dx &= n^2 \int_{0}^{\infty} e^{-x} L^2 _{n-1} dx \\
+            &= (n!)^2 \int_{0}^{\infty} e^{-x} L^2 _{0} dx \\
+            &= (n!)^2 \int_{0}^{\infty} e^{-x} dx \\
+            &= (n!)^2
+            \end{aligned} </p>
+
+            <br>
+            <p><span class="substep over"> 证毕！ </span></p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="homework"> 课堂作业：</p>
+            <p>1. 计算积分
+                \[\int_{0}^{\infty} e^{-x} (x^3+2x^2 +1) L_{n} dx\] </p>
+            <p>2. 计算积分
+                \[\int_{0}^{\infty} (x^3+2x^2 +1) P_{n}dx\] </p>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <p><span class="homework"> 作 业： </span> 1、已知 $ f(x)= 8-12x+10x^2-x^3 $, 计算积分
+                \[\int_{0}^{\infty} e^{-x} f^2(x) dx\]</p>
+            <p>2. 利用 $[xe^{-x} L_n'] ' +n e^{-x} L_n =0 $, 证明拉盖多项式的正交性 </p>
+            <p>3. 计算 \[\int_{0}^{2\pi} [P_1(\cos x)+P_3(\cos x)]^2 dx\] </p>
+        </div>
+
+        <div class="step " data-x="-2000" data-y="0" data-z="2000">
+
+            <center> <span class="Thanks">Thanks</span> </center>
+
+        </div>
+
+        <div id="lecture-5" class="step " data-rel-x="3000" data-y="0" data-rel-z="500" data-rotate-z="45"
+            data-rotate-x="25">
+            <br>
+            <br>
+            <h2>第五讲 氢原子的量子描述 </h2>
+            <br>
+            <li>分离变量过程</li>
+            <li>六个解函数</li>
+            <li>氢原子波函数</li>
+
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <h2>1. 分离变量过程</h2>
+
+            <p class="substep"><span class="answer"> 第一次分离变量: </span>当不考虑外场时，氢原子势为库仑势，不显含时，时间与空间变量可分离
+                \[\Psi (\vec{r_1},\vec{r_2},t)=\Psi (\vec{r_1},\vec{r_2})f(t) \]
+            </p>
+            <li class="substep">时间方程：\[ \displaystyle i\hbar \frac{1}{f(t)} \frac{\partial }{\partial t} f(t)=E \]</li>
+            <li class="substep">空间函数服从定态薛定谔方程
+                \begin{equation*}
+                \left[-\frac{\hbar^2}{2 m_1} \nabla_1 ^2 -\frac{\hbar^2}{2 m_2} \nabla_2 ^2 +U(| \vec{r_1}-\vec{r_2} | )
+                \right] \Psi (\vec{r_1},\vec{r_2}) =E \Psi (\vec{r_1},\vec{r_2})
+                \end{equation*}
+            </li>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"><span class="answer"> 第二次分离变量: </span>改用质心相对坐标系，质心运动和相对运动变量分离
+                \[\Psi (\vec{r_1},\vec{r_2})= R(\vec{R})\Psi(\vec{r})\] </p>
+            <li class="substep">质心解函数：\begin{equation*}
+                R (\vec{R},t)=-\frac{1}{(2\pi\hbar)^{3/2}}e^{-\frac{i}{\hbar}(E_c t -\vec{p}\cdot\vec{R})}
+                \end{equation*}</li>
+            <li class="substep"> 相对运动方程
+                \begin{equation*}
+                \left[-\frac{\hbar^2}{2 m} \nabla ^2 +U(\vec{r}) \right] \Psi (\vec{r}) =E \Psi (\vec{r}) ..... (2)
+                \end{equation*} </li>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"><span class="answer"> 第三次分离变量: </span>改用球坐标系，径向和角向变量分离
+                \[\begin{equation*}
+                \Psi(r,\theta,\varphi )=R(r) Y(\theta,\varphi)
+                \end{equation*} \] </p>
+            <li class="substep">径向方程：
+                \begin{equation*}
+                \frac{d}{d r} (r^2\frac{d R }{d r} ) + \frac{2 \mu r^2} {\hbar^2}(E+ \frac{e_s ^2}{r} ) R =\lambda R
+                \end{equation*}</li>
+            <li class="substep"> 角向方程
+                \begin{equation*}
+                L^2 Y=\lambda Y
+                \end{equation*} </li>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <p class="substep"><span class="answer"> 第四次分离变量: </span>
+                经/纬分离
+                \[\begin{equation*}
+                Y(\theta,\varphi)= \Theta(\theta) \Phi(\varphi)
+                \end{equation*} \] </p>
+            <li class="substep">经度方程：
+                \begin{equation*}
+                \frac{d^{2} \Phi}{d \varphi^{2}}+\lambda \Phi=0,\qquad (0 < \varphi\le 2\pi) \end{equation*}</li>
+            <li class="substep"> 纬度方程
+                \begin{equation*}
+                \frac{1}{\sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d
+                \theta}\right)+\left[l(l+1)-\frac{\lambda}{\sin ^{2} \theta}\right] \Theta=0, \quad (0 < \theta \le \pi)
+                    \end{equation*} </li>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <h2>2. 六个解函数</h2>
+            <li class="substep">时间解函数：
+                \begin{equation*}
+                f(t) =e^{-iE_n t/\hbar}
+                \end{equation*}</li>
+            <li class="substep">径向解函数：
+                \[R_{nl} (r) =\sqrt{(\frac{2}{n a_0})^3 \frac{ (n-l-1)!}{2n [(n+1)!]^3}} (\frac{2}{n a_0}r) ^l L_{n-l-1}
+                ^{2l+1} (\frac{2}{n a_0}r) e^{-\frac{r}{n a_0}}\]</li>
+            <p class="substep"> <span class="tips"> TIPS: </span> 径向量子数决定能量本征值，因此称为主量子数
+                \[ E_n =- \frac{1}{n^2} \frac{\mu e^4 _s }{2 \hbar ^2} =\frac{E_1}{n^2}, \qquad (n=1,2,3,\cdots) \]</p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <li class="substep">纬度解函数：
+                \begin{equation*}
+                \Theta_{lm}(\theta)= P^m _{l}(\cos \theta)
+                \end{equation*}</li>
+            <p class="substep"> <span class="tips"> TIPS: </span> 称$l$为角量子数，决定波函数的空间取向
+                \[
+                l(l+1), \qquad (l=0, 1, 2,\cdots, n-1) \\
+                \]</p>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <li class="substep">经度解函数：
+                \begin{equation*}
+                \Phi_m (\varphi)=\frac{1}{\sqrt{2\pi}} e^{im\varphi}
+                \end{equation*}</li>
+            <p class="substep"> <span class="tips"> TIPS: </span> ；称$m$为磁量子数，决定波函投影分量:
+                \[ \lambda=m^2, ~~~ (m=0,\pm 1,\pm 2,\cdots,\pm l)\]</p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <li class="substep">角向解函数：
+                \begin{equation*}
+                Y_{lm} (\theta,\varphi)= \sqrt{\frac{(2l+1)(l-m)!}{4\pi (l+m)!}} P_l ^m (cos \theta) e^{im\varphi}
+                \end{equation*}</li>
+            <p class="substep"> <span class="tips"> TIPS: </span> 量子数为
+                \[\begin{cases}
+                &m, \qquad (m=0,\pm 1,\pm 2,\cdots,\pm l) \\
+                &l(l+1), \quad (l=0, 1, 2,\cdots, n-1)
+                \end{cases} \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <li class="substep">角动能解函数：
+                \begin{equation*}
+                Y_{lm} (\theta,\varphi)= \sqrt{\frac{(2l+1)(l-m)!}{4\pi (l+m)!}} P_l ^m (cos \theta) e^{im\varphi}
+                \end{equation*}</li>
+            <p class="substep"> <span class="tips"> TIPS: </span> 本征值
+                \[\begin{cases}
+                L_z &= m\hbar , \qquad (m=0,\pm 1,\pm 2,\cdots,\pm l)\\
+                L ^2 &= l(l+1)\hbar ^2, \quad (l=0, 1, 2,\cdots, n-1)
+                \end{cases} \] </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <br>
+            <center><img class="imgmixed" src="../EM/EM-beamer/figs/LandL2.png" width=500 height=500></center>
+            <li>角动量大小 $$L^2=l(l+1) \hbar^2$$
+                $$L=\sqrt{l(l+1)}\hbar $$</li>
+            <li>角动量Z分量
+                \begin{aligned}
+                L^2_z& =m^2\hbar^2 \\
+                L_z& =m\hbar \\
+                \end{aligned} </li>
+            <li>大小和方向皆量子化</li>
+        </div>
+
+        <div class="step " data-rel-x="1000" data-rel-y="0" data-rel-z="0">
+            <h2>3. 氢原子波函数</h2>
+            <br>
+            <p class="substep">考虑自旋后，氢原子波函数如下：
+                \[ \large{\begin{equation*}
+                \Psi_{nlmm_s}(r, \theta, \varphi, s)= R_{nl} (r) Y_{lm} (\theta,\varphi)S_{m_s}(s)
+                \end{equation*}} \] </p>
+
+            <br>
+            <p class="substep"> <span class="tips"> TIPS: </span> 四个量子数</p>
+            <li class="substep">主量子数: $n=1,2,3,\cdots$, 能级,轨道能量 (主 K，L，M, N, O, P, Q)</li>
+            <li class="substep">角量子数: $l=0,1,2,\cdots, n-1$, 角动量大小, 轨道形状 (次 s, p, d, f)</li>
+            <li class="substep">磁量子数: $m=0,\pm 1,\pm 2,\cdots, \pm l$, 角动量方向, 轨道空间取向 </li>
+            <li class="substep">自旋量子数: $m_s=\pm 1/2$</li>
+
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <center><img src="../EM/EM-beamer/figs/orbitals.png" width=800 height=600></center>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h5>能级与光谱</h5>
+            <br>
+            <center><img class="imgmixed" src="../EM/EM-beamer/figs/spectra.png" width=500 height=500></center>
+            <p>$\begin{aligned}
+                E_n &= - \frac{1}{n^2} \frac{\mu e^4 _s }{2 \hbar ^2} \\
+                &=\frac{E_1}{n^2}\\
+                \\
+                \nu& =\frac{E_n -E_m}{h} \\
+                & = R_H c [\frac{1}{m^2} -\frac{1}{n^2}] \\
+                \end{aligned}$ </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <h5>轨道形态</h5>
+            <li class="substep">径向分布: $r-r+dr$找到粒子的概率
+                \[ \begin{aligned}
+                \omega_{nl} dr &= \int _{\varphi=0} ^{2\pi} \int _{\theta=0} ^{\pi} |R_{nl}(r)Y_{lm}(\theta,\varphi)|^2
+                r^2\sin \theta dr d\theta d \varphi \\
+                &= R^2_{nl}(r) r^2 dr \\
+                \end{aligned}\]</li>
+            <li class="substep">角向分布: $(\theta,\varphi)-(\theta+d\theta,\varphi+d\varphi)$找到粒子的概率
+                \[ \begin{aligned}
+                \omega_{lm} d \Omega &= \int _{r=0} ^{\infty} |R_{nl}(r)Y_{lm}(\theta,\varphi)|^2 r^2dr d \Omega \\
+                &= |Y_{lm}|^2 d \Omega
+                \end{aligned}\] </li>
+            <p class="substep">代入径向函数和球谐函数，做图！ </p>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            <center><img src="../EM/EM-beamer/figs/2022-03-25-19-35-50.png" width=800 height=460></center>
+        </div>
+
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            电子云:
+            <center><img src="../EM/EM-beamer/figs/2022-03-30-18-45-45.png" width=600 height=500></center>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            电子云:
+            <center><img src="../EM/EM-beamer/figs/2022-03-30-18-46-37.png" width=600 height=500></center>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            电子云:
+            <center><img src="../EM/EM-beamer/figs/2022-03-30-18-48-34.png" width=600 height=500></center>
+        </div>
+        <div class="step " data-rel-x="0" data-rel-y="1000" data-rel-z="500" data-rotate="0" data-rotate-x="0"
+            data-rotate-y="0" data-rotate-z="0" data-scale="5">
+            电子云:
+            <center><img src="../EM/EM-beamer/figs/2022-03-30-18-49-45.png" width=600 height=500></center>
+        </div>
+
+        <div class="step " data-rel-x="3000" data-rel-y="0" data-rel-z="0">
+            <p><span class="homework"> 作 业： </span> </p>
+            <p>1. 试述你对氢原子的认识 </p>
+            <p>2. 给出$2p_x$轨道的量子数并计算其空间分布 </p>
+            <p>3. 解方程
+                \begin{equation*}
+                \frac{d^2 U}{d \xi ^2} + \frac{2}{\xi }\frac{d U }{d \xi} +[\frac{\beta}{\xi} - \frac{l(l+1)}{\xi ^2}]
+                U=0
+                \end{equation*} </p>
+            <p>4. 写出 $L_1 (x)$ 和 $L_1 ^0 (x)$ 之间的关系式 </p>
+            <p>5. 写出角量和角动量本征值之间的关系 </p>
+        </div>
+        <div class="step " data-x="-2000" data-y="0" data-z="2000">
+
+            <center> <span class="Thanks">Thanks</span> </center>
+
+        </div>
+    </div>
+
+    <div id="impress-toolbar"></div>
+
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+        }
+    </script>
+
+    <script src="../../others/impress.js/js/impress.js"></script>
+    <script>impress().init();</script>
+
+    <!--
+        var api = impress();  
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( stepIndex | stepElementId | stepElement) 
+    
+-->
+
+</body>
+
+</html>
