@@ -230,7 +230,7 @@ text-align :center;
 
 .impress-enabled .step {
   margin: 0;
-  opacity: 0.075;
+  opacity: 0.01;
 }
 
 .impress-enabled .step.active { 

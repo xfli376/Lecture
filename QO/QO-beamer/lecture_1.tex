@@ -2,11 +2,12 @@
 \begin{frame}
     \frametitle{课程简介}
     \begin{enumerate}
-        \Item 量子光学: is the study of the interaction of individual photons, in the wavelength range from the infrared to the ultraviolet, with ordinary matter - e.g. atoms, molecules, electrons, etc. - described by nonrelativistic quantum mechanics. 
+        \Item 量子光学: 采用非相对量子力学，研究从红外到紫外光子与一般性的物质，比如电子，原子，分子之间的相互作用的一门学科
+        \pause
         \Item 课程目标:       
         \begin{itemize}
-          \item Grasp of the basic theory of quantum optics
-          \item Know of the common application frontiers of quantum optics
+          \item 掌握量子光学的基本理论
+          \item 了解量子光学的前沿应用
       \end{itemize}
     \end{enumerate}
 \end{frame}
@@ -14,9 +15,9 @@
 \begin{frame} 
   \frametitle{分数构成}
       \begin{enumerate}
-          \Item Normal results 20\%
-          \Item Group discussion 30\%
-          \Item Project final report 50\%
+          \Item 平时成绩 20\%
+          \Item 课堂讨论 30\%
+          \Item 期末考试 50\%
       \end{enumerate}
 \end{frame}
 
@@ -26,8 +27,10 @@
           \Item 《Quantum optics》 Scully, Zubairy, 1997 (Cambridge)        
           \Item 《Quantum Optics: An Introduction》，Fox, Mark，2006
           \Item 《Introductory Quantum Optics》, Gerry, Knight, 2004 (Cambridge)
+          \pause
           \Item 《Statistical Methods in Quantum Optics》Howard, Carmichael, 1999 
           \Item 《Mathematical Methods of Quantum Optics》Ravinder Rupchand Puri, 2001
+          \pause
           \Item 《量子光学研究前沿》上海交通大学出版社出版，张卫平, 2014
           \Item 《量子光学》科学出版社, 郭光灿, 2022
       \end{itemize}
@@ -53,7 +56,7 @@
       \begin{itemize}
         \Item 光学 (光物理, 光化学, 光材料, 光谱精细结构)
         \Item 光学工程 (激光,光电器件, 光电探测, 非经典光源,量子成像, 量子雷达)  
-        \Item 量子信息学 (量子计算, 量子通信, 量子精密测量, 量子传感,  超冷原子)    
+        \Item 量子信息学 (量子计算, 量子通信, 量子精密测量, 量子传感,  超冷原子，量子图像处理)    
     \end{itemize}  
 \end{frame}
 
@@ -63,10 +66,12 @@
     \begin{itemize}
         \Item 经典光学(麦克斯韦方程) \\
         不能解释: 黑体辐射, 光电效应, 康普顿效应, 原子光谱, 自发发射, 受激发射...
+        \pause
         \Item 半经典光学(原子能级量子化+经典光场+光子假说)  \\
-        不能解释: 延迟选择实验, 量子擦除实验, 相干态, 压缩态, 量子计算, 量子通信, 量子存储...
+        不能解释: 延迟选择实验, 量子擦除实验, 相干态, 压缩态, 量子计算, 量子通信, 量子存储，...
+        \pause
         \Item 量子光学(量子化粒子+量子化光场)  \\
-        解释当前一切光学(实验)现象. 
+        解释当前所有光学(实验)实验现象. 
     \end{itemize}     
 \end{frame}
 
@@ -105,11 +110,11 @@
 \section{1. 经典光学}
 
 \begin{frame}
-      \frametitle{经典光学的成果:麦克斯韦方程}
+      \frametitle{经典光学的主要成果:麦克斯韦方程}
     介质中: 定义电位移矢量$\mathbf{D}$ 和磁场强度 $\mathbf{H}$
 \[ \mathbf{D}=\epsilon_0 \mathbf{E} + \mathbf{P} = \epsilon_0 \epsilon_r \mathbf{E} \, (*),  \qquad \mathbf{H}=\frac{1}{\mu_0} \mathbf{B} -\mathbf{M}= \frac{1}{\mu_0\mu_r}\mathbf{B} \, (*)\]
+\pause
 麦克斯韦方程:
-
 \[ \begin{aligned}
         \text{I}~~~ \hspace*{2em}&\nabla \cdot \mathbf{D} =\rho _f  \\  
         \text{II}~~ \hspace*{2em}&\nabla \cdot \mathbf{B} = 0  \\  
@@ -121,9 +126,11 @@
 \begin{frame}
       \frametitle{电磁波}
     对于真空 ($\rho _f =0, \mathbf{J}_f =0 $),  \[ \mathbf{B} = \mu_0 \mathbf{H}, \qquad  \mathbf{D} = \epsilon_0 \mathbf{E} \]
+    \pause
 代入麦克斯韦方程(IV)
  \[ \nabla \times  \mathbf{H} = \mathbf{J}_f +  \cfrac{\partial \mathbf{D}}{\partial t } \]
 得: \[ \nabla \times \mathbf{B} = \mu_0\epsilon_0 \cfrac{\partial \mathbf{E}} {\partial t } \]
+\pause
 由麦克斯韦方程(III)
 \[    
 \begin{aligned}
@@ -143,23 +150,26 @@
   得:
   \[
   \nabla^2 \mathbf{E}= \mu_0\epsilon_0 \cfrac{\partial ^2 \mathbf{E}} {\partial t^2 }\]
-  由于$ c= \frac{1}{\sqrt{\mu_0\epsilon_0}} $, 方程可写为
+  \pause
+  定义$ c= \frac{1}{\sqrt{\mu_0\epsilon_0}} $, 方程写为
   \[\boxed{\mathbf{E}_{tt} =c^2\nabla^2 \mathbf{E}}\]
   ~~\\
-  这是波动方程标准型(见数理方程), 这表明光波就是电磁波 \\ 若给出定解条件, 方程可求解 \\  
+  \pause
+  这是波动方程标准型(见数理方程), 表明光波就是电磁波 \\ 若给出定解条件, 方程可求解 \\  
 \end{frame}
 
 \begin{frame}
- \frametitle{}
+ \frametitle{光的偏振}
  \[\mathbf{E}_{tt} =c^2\nabla^2 \mathbf{E}\]
- 这是矢量方程. 描述光的偏振. 
+ 这是矢量方程. 对应光的偏振. 
    \begin{center}
-        \includegraphics[width=0.8\textwidth]{figs/10.png}
+        \includegraphics[width=0.7\textwidth]{figs/10.png}
    \end{center}
+   \pause
  考虑标量化.
  \begin{enumerate}
      \item 线偏振 $\mathbf{E}(z,t) = E_x(z,t) \hat{e}_x $ 
-     \item 圆偏振 $\mathbf{E}(z,t) = E_x(z,t) \hat{e}_{\sigma}, \qquad \text{with} \qquad \hat{e}_{\pm}= \mp \frac{1}{\sqrt{2}} (\hat{x} \pm \hat{y}) $
+     \item 圆偏振 $\mathbf{E}(z,t) = E_\sigma(z,t) \hat{e}_{\sigma}, \qquad \text{with} \qquad \hat{e}_{\pm}= \mp \frac{1}{\sqrt{2}} (\hat{x} \pm \hat{y}) $
  \end{enumerate}
 \end{frame}
 
@@ -173,17 +183,17 @@
       光学腔: $0\leq z\leq L$ \\  
       边界条件: $E_x(0)=E_x(L)=0$  
     }
-    \解  设 $\displaystyle  E_x(z,t)=T(t)Z(z) $，代入波动方程 
-    \[\mathbf{E}_{tt} =c^2\nabla^2 \mathbf{E}\]
 \end{frame}
 
 \begin{frame}
       \frametitle{} 
+      \解  方程可分离变量，设 $\displaystyle  E_x(z,t)=T(t)Z(z) $，代入波动方程 
+      \[\mathbf{E}_{tt} =c^2\nabla^2 \mathbf{E}\]
     得：
 	\begin{equation*}
 		 T~^{''}(t)Z(z) =c~^2 T(t)Z~^{''}(z) 
 	\end{equation*}
-	分离变量, 令: {\hspace*{2em}}
+	令: {\hspace*{2em}}
       $$ \dfrac{T~^{''}}{c~^2 T}=\dfrac{Z~^{''} }{Z} =-\lambda $$ \\ \vspace{0.3cm}
     转化为两常微分方程 \\ \vspace{0.3cm}
     方程（I）：
@@ -200,15 +210,25 @@
 
 \begin{frame}
       \frametitle{}
-    特征（辅助）方程法解方程(I)  
+    解方程(I) ：
+    $\displaystyle  \begin{cases}
+        Z~^{''} +\lambda Z=0  ~~,~~ 0<z<L\\
+        Z(0)=0 ~,~Z(L)=0
+    \end{cases}$ \\
+    ~~~\\
+    分析：这是一类边界条件固有值问题，由数理方程直接给出 
     \begin{enumerate}
     \IItem 固有值：$\displaystyle  \lambda_n=\frac{n^2\pi^2}{L^2}= \omega^2 _n, \quad k_n=\frac{\omega_n}{c} $ 
     \IItem 固有解：$\displaystyle  E_n(z)=\sin (\omega_n z) $
     \end{enumerate}
-    解方程II : 	\[ T~^{''} +\lambda {c~^2 T}=0 \] \\ 
-	代入$\lambda_n$, 得：
-	$\displaystyle  T~^{''} +\lambda~_n c~^2 ~T=0 $ \\
-	变形为：\[  T~^{''} +\omega ~_n ^2 {c~^2 T}=0 \]
+\end{frame}
+
+\begin{frame}
+    \frametitle{} 
+    解方程（II） : 	\[ T~^{''} +\lambda {c~^2 T}=0 \] \\ 
+	代入方程（I）的固有值$\lambda_n$, 得：
+	$$ T~^{''} +\lambda~_n c~^2 ~T=0 $$ \\
+	变形为：\[  T~^{''} +\omega_n ^2 {c^2 T}=0 \]
 	特征方程有虚根，通解 ：\\
 	\hspace{3cm}	$\displaystyle 	T~_n=c~_n\cos \omega_n~c~t+ d~_n\sin \omega ~_n~c~t $  \\ \vspace{1em}
 \end{frame}
@@ -240,11 +260,12 @@
     ~~\\ 
     电磁场的哈密顿(能量)
     \[ H = \frac{1}{2} \int_V d V \left[ \epsilon_0 \mathbf{E^2}(\mathbf{r},t) + \frac{1}{\mu_0}\mathbf{B^2}(\mathbf{r},t)\right]\]
+
 \end{frame}
 
 \begin{frame} 
 \frametitle{波动光学基本结论}
-    电磁场是一系列基本振动模式的叠加.\\ 
+    电磁场是一系列基本（振动）模式的叠加.\\ 
     \[ E_{x}(z,t) = \sum\limits_{n=1}^{\infty } a_n q_n (t) \sin (k_n z)\]
     \[ H_{y}(z,t) = \sum\limits_{n=1}^{\infty } a_n \frac{\epsilon_0}{k_n}q_n ' (t) \cos (k_n z)\] 
     自由场是自由振动;存在电荷或电流等环境,则是受迫振动, 波动方程为:
@@ -319,7 +340,7 @@
 
 \begin{frame}
       \frametitle{}
-      基于光子数目决定电磁场强度的基本假设, 得辐射场强度
+      基于光子数目对应电磁场强度的基本假设, 得辐射场强度
     \[\begin{aligned}
         J_{m k} &=N_{m} A_{m k} \hbar \omega_{m k} \\
         &=N_{m} \frac{4 e^{2} \omega_{m k}^{4}}{3 c^{3}}\left|\vec{r}_{k m}\right|^{2} 
@@ -351,7 +372,7 @@
     \begin{center}
         \includegraphics[width=0.6\textwidth]{figs/choose.png} \\
     \end{center} 
-    {\Bullet} 光子总是处于叠加
+    {\Bullet} 光子总是处于叠加态
     {\Bullet} 光路的说法是不成立的
 \end{frame}
 
